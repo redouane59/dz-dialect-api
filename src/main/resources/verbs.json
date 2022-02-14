@@ -1,0 +1,68 @@
+[
+  {
+    "fr_value": "être",
+    "conjugators": [
+      {
+        "tense": "PAST",
+        "conjugations": [
+          {
+            "person": "P1",
+            "translation": {
+              "fr_value": "j'étais",
+              "dz_value": "kount"
+            }
+          },
+          {
+            "person": "P2M",
+            "translation": {
+              "fr_value": "tu étais",
+              "dz_value": "kount"
+            }
+          },
+          {
+            "person": "P2F",
+            "translation": {
+              "fr_value": "tu étais",
+              "dz_value": "kounti"
+            }
+          },
+          {
+            "person": "P3M",
+            "translation": {
+              "fr_value": "il était",
+              "dz_value": "kaan"
+            }
+          },
+          {
+            "person": "P3F",
+            "translation": {
+              "fr_value": "elle était",
+              "dz_value": "kenet"
+            }
+          },
+          {
+            "person": "P4",
+            "translation": {
+              "fr_value": "on était",
+              "dz_value": "kouna"
+            }
+          },
+          {
+            "person": "P5",
+            "translation": {
+              "fr_value": "vous étiez",
+              "dz_value": "kountou"
+            }
+          },
+          {
+            "person": "P6",
+            "translation": {
+              "fr_value": "ils étaient",
+              "dz_value": "kanou"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
