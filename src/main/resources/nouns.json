@@ -1,0 +1,68 @@
+[
+  {
+    "fr_root": "maison",
+    "gender": "F",
+    "type": "PLACE",
+    "nouns": [
+      {
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "maison"
+          },
+          {
+            "lang": "DZ",
+            "value": "dar"
+          }
+        ]
+      },
+      {
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "maisons"
+          },
+          {
+            "lang": "DZ",
+            "value": "diar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fr_root": "rue",
+    "gender": "F",
+    "type": "PLACE",
+    "nouns": [
+      {
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "rue"
+          },
+          {
+            "lang": "DZ",
+            "value": "zon9a"
+          }
+        ]
+      },
+      {
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "rues"
+          },
+          {
+            "lang": "DZ",
+            "value": "zna9"
+          }
+        ]
+      }
+    ]
+  }
+]

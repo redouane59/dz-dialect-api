@@ -1,6 +1,7 @@
 package io.github.Redouane59.dz.function.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
+import java.util.Optional;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,13 +11,17 @@ import lombok.NoArgsConstructor;
 @Getter
 public class Translation {
 
-  @JsonProperty("fr_value")
-  private String frValue;
-  @JsonProperty("dz_value")
-  private String dzValue;
+  private Lang   lang;
+  private String value;
 
-  @Override
-  public String toString() {
-    return dzValue + "->" + frValue;
+  public static String printTranslations(List<Translation> translations) {
+    Optional<Translation> dzTranslation = translations.stream().filter(o -> o.getLang() == Lang.DZ).findAny();
+    Optional<Translation> frTranslation = translations.stream().filter(o -> o.getLang() == Lang.FR).findAny();
+    String                dzString      = "";
+    String                frString      = "";
+    dzString = dzTranslation.orElse(new Translation()).getValue();
+    frString = frTranslation.orElse(new Translation()).getValue();
+    return dzString + " -> " + frString;
   }
+
 }

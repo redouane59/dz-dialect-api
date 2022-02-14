@@ -1,22 +1,29 @@
-package io.github.Redouane59.dz.function.model;
+package io.github.Redouane59.dz.function.model.adjective;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.github.Redouane59.dz.function.model.Gender;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
-public class Adjectivator {
+@NoArgsConstructor
+public class AdjectiveRoot {
 
   List<Adjective> adjectives = new ArrayList<>();
+  @JsonProperty("fr_root")
+  private String frRoot;
 
-  public Adjectivator(Translation m, Translation f, Translation p) {
+  // @todo to remove
+  /*public AdjectiveRoot(Translation m, Translation f, Translation p) {
     adjectives.add(new Adjective(Gender.M, true, m));
     adjectives.add(new Adjective(Gender.F, true, f));
     adjectives.add(new Adjective(Gender.X, false, p));
 
-  }
+  } */
 
-  public Adjective getAdjectiveByCriterion(Gender gender, boolean singular) {
+  public Adjective getAdjective(Gender gender, boolean singular) {
     Adjective result = null;
     for (Adjective adjective : adjectives) {
       if (adjective.isSingular() == singular && (adjective.getGender() == gender || gender == Gender.X)) {

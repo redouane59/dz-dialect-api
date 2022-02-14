@@ -1,0 +1,96 @@
+[
+  {
+    "fr_root": "petit",
+    "adjectives": [
+      {
+        "gender": "M",
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "petit"
+          },
+          {
+            "lang": "DZ",
+            "value": "sghir"
+          }
+        ]
+      },
+      {
+        "gender": "F",
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "petite"
+          },
+          {
+            "lang": "DZ",
+            "value": "sghira"
+          }
+        ]
+      },
+      {
+        "gender": "X",
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "petits"
+          },
+          {
+            "lang": "DZ",
+            "value": "sghaar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fr_root": "grand",
+    "adjectives": [
+      {
+        "gender": "M",
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "grand"
+          },
+          {
+            "lang": "DZ",
+            "value": "kbir"
+          }
+        ]
+      },
+      {
+        "gender": "F",
+        "singular": true,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "grande"
+          },
+          {
+            "lang": "DZ",
+            "value": "kbira"
+          }
+        ]
+      },
+      {
+        "gender": "X",
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "grands"
+          },
+          {
+            "lang": "DZ",
+            "value": "kbar"
+          }
+        ]
+      }
+    ]
+  }
+]

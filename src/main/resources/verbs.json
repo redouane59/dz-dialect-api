@@ -7,59 +7,107 @@
         "conjugations": [
           {
             "person": "P1",
-            "translation": {
-              "fr_value": "j'étais",
-              "dz_value": "kount"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "j'étais"
+              },
+              {
+                "lang": "DZ",
+                "value": "kount"
+              }
+            ]
           },
           {
             "person": "P2M",
-            "translation": {
-              "fr_value": "tu étais",
-              "dz_value": "kount"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "tu étais"
+              },
+              {
+                "lang": "DZ",
+                "value": "kount"
+              }
+            ]
           },
           {
             "person": "P2F",
-            "translation": {
-              "fr_value": "tu étais",
-              "dz_value": "kounti"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "tu étais"
+              },
+              {
+                "lang": "DZ",
+                "value": "kounti"
+              }
+            ]
           },
           {
             "person": "P3M",
-            "translation": {
-              "fr_value": "il était",
-              "dz_value": "kaan"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "il était"
+              },
+              {
+                "lang": "DZ",
+                "value": "kaan"
+              }
+            ]
           },
           {
             "person": "P3F",
-            "translation": {
-              "fr_value": "elle était",
-              "dz_value": "kenet"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "elle était"
+              },
+              {
+                "lang": "DZ",
+                "value": "kenet"
+              }
+            ]
           },
           {
             "person": "P4",
-            "translation": {
-              "fr_value": "on était",
-              "dz_value": "kouna"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "on était"
+              },
+              {
+                "lang": "DZ",
+                "value": "kouna"
+              }
+            ]
           },
           {
             "person": "P5",
-            "translation": {
-              "fr_value": "vous étiez",
-              "dz_value": "kountou"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "vous étiez"
+              },
+              {
+                "lang": "DZ",
+                "value": "kountou"
+              }
+            ]
           },
           {
             "person": "P6",
-            "translation": {
-              "fr_value": "ils étaient",
-              "dz_value": "kanou"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "ils étaient"
+              },
+              {
+                "lang": "DZ",
+                "value": "kanou"
+              }
+            ]
           }
         ]
       },
@@ -68,62 +116,115 @@
         "conjugations": [
           {
             "person": "P1",
-            "translation": {
-              "fr_value": "je suis",
-              "dz_value": "rani"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "je suis"
+              },
+              {
+                "lang": "DZ",
+                "value": "rani"
+              }
+            ]
           },
           {
             "person": "P2M",
-            "translation": {
-              "fr_value": "tu es",
-              "dz_value": "rak"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "tu es"
+              },
+              {
+                "lang": "DZ",
+                "value": "rak"
+              }
+            ]
           },
           {
             "person": "P2F",
-            "translation": {
-              "fr_value": "tu es",
-              "dz_value": "raki"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "tu es"
+              },
+              {
+                "lang": "DZ",
+                "value": "raki"
+              }
+            ]
           },
           {
             "person": "P3M",
-            "translation": {
-              "fr_value": "il est",
-              "dz_value": "rahou"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "il est"
+              },
+              {
+                "lang": "DZ",
+                "value": "rahou"
+              }
+            ]
           },
           {
             "person": "P3F",
-            "translation": {
-              "fr_value": "elle est",
-              "dz_value": "rahi"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "elle est"
+              },
+              {
+                "lang": "DZ",
+                "value": "rahi"
+              }
+            ]
           },
           {
             "person": "P4",
-            "translation": {
-              "fr_value": "on est",
-              "dz_value": "rana"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "on est"
+              },
+              {
+                "lang": "DZ",
+                "value": "rana"
+              }
+            ]
           },
           {
             "person": "P5",
-            "translation": {
-              "fr_value": "vous êtes",
-              "dz_value": "rakoum"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "vous êtes"
+              },
+              {
+                "lang": "DZ",
+                "value": "rakoum"
+              }
+            ]
           },
           {
             "person": "P6",
-            "translation": {
-              "fr_value": "ils sont",
-              "dz_value": "rahoum"
-            }
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "ils sont"
+              },
+              {
+                "lang": "DZ",
+                "value": "rahoum"
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "complements": [
+      "PLACE",
+      "ADJECTIVE"
+    ],
+    "type": "STATE"
   }
 ]

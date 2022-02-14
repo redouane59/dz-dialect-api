@@ -1,5 +1,6 @@
-package io.github.Redouane59.dz.function.model;
+package io.github.Redouane59.dz.function.model.verb;
 
+import io.github.Redouane59.dz.function.model.Gender;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
@@ -12,7 +13,8 @@ public class Conjugator {
   private final List<Conjugation> conjugations = new ArrayList<>();
   private       Tense             tense;
 
-  public Conjugator(Tense tense, Translation p1x, Translation p2m, Translation p2f, Translation p3m, Translation p3f,
+  // @todo to remove
+  /* public Conjugator(Tense tense, Translation p1x, Translation p2m, Translation p2f, Translation p3m, Translation p3f,
                     Translation p4x, Translation p5x, Translation p6x) {
     this.tense = tense;
     conjugations.add(new Conjugation(Person.P1, p1x));
@@ -23,7 +25,7 @@ public class Conjugator {
     conjugations.add(new Conjugation(Person.P4, p4x));
     conjugations.add(new Conjugation(Person.P5, p5x));
     conjugations.add(new Conjugation(Person.P6, p6x));
-  }
+  } */
 
   public Conjugation getConjugationByCriteria(Gender gender, boolean singular) {
     Conjugation result = null;
