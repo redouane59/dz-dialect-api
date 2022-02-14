@@ -1,6 +1,5 @@
 package io.github.Redouane59.dz.function.model;
 
-import io.github.Redouane59.dz.function.model.Tense.Gender;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;

@@ -14,4 +14,9 @@ public class Translation {
   private String frValue;
   @JsonProperty("dz_value")
   private String dzValue;
+
+  @Override
+  public String toString() {
+    return dzValue + "->" + frValue;
+  }
 }

@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.function;
+package io.github.Redouane59.dz.function.googlesheets;
 
 import static io.github.Redouane59.dz.function.helper.Config.APPLICATION_NAME;
 import static io.github.Redouane59.dz.function.helper.Config.JSON_FACTORY;
@@ -15,14 +15,14 @@ import java.util.List;
 import java.util.Random;
 import org.junit.jupiter.api.Test;
 
-public class TestGenerateRandomSentence {
+public class GoogleSheetsTest {
 
   NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
   Sheets           service        = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
       .setApplicationName(APPLICATION_NAME)
       .build();
 
-  public TestGenerateRandomSentence() throws GeneralSecurityException, IOException {
+  public GoogleSheetsTest() throws GeneralSecurityException, IOException {
   }
 
   @Test

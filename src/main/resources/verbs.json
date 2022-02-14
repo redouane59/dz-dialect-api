@@ -62,6 +62,67 @@
             }
           }
         ]
+      },
+      {
+        "tense": "PRESENT",
+        "conjugations": [
+          {
+            "person": "P1",
+            "translation": {
+              "fr_value": "je suis",
+              "dz_value": "rani"
+            }
+          },
+          {
+            "person": "P2M",
+            "translation": {
+              "fr_value": "tu es",
+              "dz_value": "rak"
+            }
+          },
+          {
+            "person": "P2F",
+            "translation": {
+              "fr_value": "tu es",
+              "dz_value": "raki"
+            }
+          },
+          {
+            "person": "P3M",
+            "translation": {
+              "fr_value": "il est",
+              "dz_value": "rahou"
+            }
+          },
+          {
+            "person": "P3F",
+            "translation": {
+              "fr_value": "elle est",
+              "dz_value": "rahi"
+            }
+          },
+          {
+            "person": "P4",
+            "translation": {
+              "fr_value": "on est",
+              "dz_value": "rana"
+            }
+          },
+          {
+            "person": "P5",
+            "translation": {
+              "fr_value": "vous êtes",
+              "dz_value": "rakoum"
+            }
+          },
+          {
+            "person": "P6",
+            "translation": {
+              "fr_value": "ils sont",
+              "dz_value": "rahoum"
+            }
+          }
+        ]
       }
     ]
   }
