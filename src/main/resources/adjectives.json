@@ -1,6 +1,6 @@
 [
   {
-    "fr_root": "petit",
+    "id": "petit",
     "adjectives": [
       {
         "gender": "M",
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "fr_root": "grand",
+    "id": "grand",
     "adjectives": [
       {
         "gender": "M",

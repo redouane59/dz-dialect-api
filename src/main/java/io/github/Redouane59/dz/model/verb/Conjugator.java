@@ -1,6 +1,6 @@
-package io.github.Redouane59.dz.function.model.verb;
+package io.github.Redouane59.dz.model.verb;
 
-import io.github.Redouane59.dz.function.model.Gender;
+import io.github.Redouane59.dz.model.Gender;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;

@@ -1,14 +1,16 @@
-package io.github.Redouane59.dz.function.model;
+package io.github.Redouane59.dz.model;
 
 import java.util.List;
 import java.util.Optional;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@Setter
 public class Translation {
 
   private Lang   lang;

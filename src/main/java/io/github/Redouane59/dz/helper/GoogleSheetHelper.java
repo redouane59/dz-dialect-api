@@ -1,7 +1,4 @@
-package io.github.Redouane59.dz.function.helper;
-
-import static io.github.Redouane59.dz.function.helper.Config.JSON_FACTORY;
-import static io.github.Redouane59.dz.function.helper.Config.TOKENS_DIRECTORY_PATH;
+package io.github.Redouane59.dz.helper;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -40,12 +37,12 @@ public class GoogleSheetHelper {
     if (in == null) {
       throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
     }
-    GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+    GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(Config.JSON_FACTORY, new InputStreamReader(in));
 
     // Build flow and trigger user authorization request.
     GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-        HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
-        .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
+        HTTP_TRANSPORT, Config.JSON_FACTORY, clientSecrets, SCOPES)
+        .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(Config.TOKENS_DIRECTORY_PATH)))
         .setAccessType("offline")
         .build();
     LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();

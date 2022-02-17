@@ -1,7 +1,7 @@
-package io.github.Redouane59.dz.function.model.noun;
+package io.github.Redouane59.dz.model.noun;
 
-import io.github.Redouane59.dz.function.model.AbstractWord;
-import io.github.Redouane59.dz.function.model.Gender;
+import io.github.Redouane59.dz.model.Gender;
+import io.github.Redouane59.dz.model.AbstractWord;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

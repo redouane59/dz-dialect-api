@@ -1,22 +1,10 @@
 package io.github.Redouane59.dz.function.googlesheets;
 
-import static io.github.Redouane59.dz.function.helper.Config.APPLICATION_NAME;
-import static io.github.Redouane59.dz.function.helper.Config.JSON_FACTORY;
-import static io.github.Redouane59.dz.function.helper.Config.SPREADSHEET_ID;
-import static io.github.Redouane59.dz.function.helper.GoogleSheetHelper.getCredentials;
+import org.junit.jupiter.api.Disabled;
 
-import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.http.javanet.NetHttpTransport;
-import com.google.api.services.sheets.v4.Sheets;
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import org.junit.jupiter.api.Test;
-
+@Disabled
 public class GoogleSheetsTest {
-
+/*
   NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
   Sheets           service        = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
       .setApplicationName(APPLICATION_NAME)
@@ -25,7 +13,9 @@ public class GoogleSheetsTest {
   public GoogleSheetsTest() throws GeneralSecurityException, IOException {
   }
 
+
   @Test
+  @Disabled
   public void testGenerateVerbPlaceWIthSentences() throws IOException, GeneralSecurityException {
     // 1. get all the infinitive verbs which have place & choose a random one
     // @todo replace object by classes
@@ -65,6 +55,6 @@ public class GoogleSheetsTest {
 
       System.out.println(conjugatedVerbDz + " " + placeDz + " -> " + conjugatedVerbFr + " " + placeFr);
     }
-  }
+  } */
 
 }

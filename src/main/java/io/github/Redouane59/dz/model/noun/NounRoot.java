@@ -1,8 +1,9 @@
-package io.github.Redouane59.dz.function.model.noun;
+package io.github.Redouane59.dz.model.noun;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.github.Redouane59.dz.function.model.Gender;
-import io.github.Redouane59.dz.function.model.Lang;
+import io.github.Redouane59.dz.model.Gender;
+import io.github.Redouane59.dz.model.Lang;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import lombok.Getter;
@@ -12,11 +13,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class NounRoot {
 
-  List<Noun> nouns;
-  @JsonProperty("fr_root")
-  private String   frRoot;
-  private WordType type;
-  private Gender   gender;
+  private final Gender   gender = Gender.X;
+  private final WordType type   = WordType.UNDEFINED;
+  List<Noun> nouns = new ArrayList<>();
+  @JsonProperty("id")
+  private String id;
 
   public Optional<Noun> getNoun(boolean singular) {
     return nouns.stream().filter(o -> o.isSingular() == singular).findAny();

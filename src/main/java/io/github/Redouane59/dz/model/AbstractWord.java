@@ -1,17 +1,18 @@
-package io.github.Redouane59.dz.function.model;
+package io.github.Redouane59.dz.model;
 
-import java.util.List;
 import java.util.Optional;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@SuperBuilder
 public class AbstractWord {
 
-  private List<Translation> translations;
+  private CustomList<Translation> translations = new CustomList<>();
 
   public Optional<String> getTranslation(Lang lang) {
     for (Translation translation : translations) {
