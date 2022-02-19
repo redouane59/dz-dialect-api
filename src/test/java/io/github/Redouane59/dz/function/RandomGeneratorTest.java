@@ -4,14 +4,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.Redouane59.dz.helper.Config;
-import io.github.Redouane59.dz.model.Sentence;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.generator.SentenceGenerator;
+import io.github.Redouane59.dz.model.sentence.Sentence;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class RandomGeneratorTest {
-
 
   @Test
   public void generateAllTest() {
@@ -30,4 +29,5 @@ public class RandomGeneratorTest {
     String            result            = Config.OBJECT_MAPPER.writeValueAsString(sentenceGenerator.generateRandomSentences());
     assertNotNull(result);
   }
+
 }

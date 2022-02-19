@@ -16,6 +16,15 @@ public class Translation {
   private Lang   lang;
   private String value;
 
+
+  public static String concatTranslations(Translation... translations) {
+    StringBuilder result = new StringBuilder();
+    for (Translation translation : translations) {
+      result.append(translation.getValue()).append(" ");
+    }
+    return result.toString();
+  }
+
   public static String printTranslations(List<Translation> translations) {
     Optional<Translation> dzTranslation = translations.stream().filter(o -> o.getLang() == Lang.DZ).findAny();
     Optional<Translation> frTranslation = translations.stream().filter(o -> o.getLang() == Lang.FR).findAny();

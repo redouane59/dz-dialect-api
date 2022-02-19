@@ -1,34 +1,35 @@
 package io.github.Redouane59.dz.model.verb;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.github.Redouane59.dz.model.noun.WordType;
-import java.util.ArrayList;
+import io.github.Redouane59.dz.model.WordType;
+import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.Collectors;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Getter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Verb {
+@Getter
+public class Verb extends AbstractWord {
 
-  @JsonProperty("id")
-  private String           id;
-  @JsonProperty("conjugators")
-  private List<Conjugator> conjugators = new ArrayList<>();
-  @JsonProperty("complements")
-  private List<WordType>   complements = new ArrayList<>();
-  private VerbType         type;
+  private List<Conjugator> conjugators;
+  @JsonProperty("possible_complements")
+  private List<WordType>   possibleComplements;
+  @JsonProperty("verb_type")
+  private VerbType         verbType;
 
-  public Conjugation getRandomConjugation(List<Tense> tenses) {
+  public Optional<PossessiveWord> getRandomConjugation(List<Tense> tenses) {
     // get all possible conjugation
     List<Conjugator> matchingConjugator = conjugators.stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());
-    int              index              = new Random().nextInt(matchingConjugator.size());
-    Conjugator       conjugator         = matchingConjugator.get(index);
+    if (matchingConjugator.isEmpty()) {
+      return Optional.empty();
+    }
+    int        index      = new Random().nextInt(matchingConjugator.size());
+    Conjugator conjugator = matchingConjugator.get(index);
     index = new Random().nextInt(conjugator.getConjugations().size());
-    return conjugator.getConjugations().get(index);
+    return Optional.of(conjugator.getConjugations().get(index));
   }
 }

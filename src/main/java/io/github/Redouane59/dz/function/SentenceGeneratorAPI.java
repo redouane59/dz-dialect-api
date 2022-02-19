@@ -4,32 +4,51 @@ import com.google.cloud.functions.HttpFunction;
 import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
 import io.github.Redouane59.dz.helper.Config;
-import io.github.Redouane59.dz.model.Sentence;
 import io.github.Redouane59.dz.model.generator.SentenceGenerator;
+import io.github.Redouane59.dz.model.sentence.Sentence;
+import io.github.Redouane59.dz.model.sentence.Sentences;
+import io.github.Redouane59.dz.model.verb.Tense;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.entity.ContentType;
 
 @Slf4j
 public class SentenceGeneratorAPI implements HttpFunction {
 
+  private final String countArg  = "count";
+  private final String tensesArg = "tenses";
+
   @Override
   public void service(final HttpRequest httpRequest, final HttpResponse httpResponse) throws IOException {
     LOGGER.debug("service called");
-    BufferedWriter writer     = httpResponse.getWriter();
-    String         stringBody = httpRequest.getReader().lines().collect(Collectors.joining());
-    BodyArgs       bodyArgs   = BodyArgs.builder().build();
-    if (!stringBody.isEmpty()) {
-      bodyArgs = Config.OBJECT_MAPPER.readValue(stringBody, BodyArgs.class);
+    BufferedWriter writer   = httpResponse.getWriter();
+    BodyArgs       bodyArgs = BodyArgs.builder().build();
+    try {
+      int count = Integer.parseInt(httpRequest.getFirstQueryParameter(countArg).orElse("1"));
+      bodyArgs.setCount(count);
+      String tenses = httpRequest.getFirstQueryParameter(tensesArg).orElse(Tense.PAST + "," + Tense.PRESENT + "," + Tense.FUTURE);
+      if (!tenses.isEmpty()) {
+        bodyArgs.setTenses(Arrays.stream(tenses.split(",", -1)).map(Tense::valueOf)
+                                 .collect(Collectors.toList()));
+      }
+      System.out.println(httpRequest.getQueryParameters());
+      SentenceGenerator sentenceGenerator = new SentenceGenerator(bodyArgs);
+      List<Sentence>    sentenceList      = sentenceGenerator.generateRandomSentences();
+      Sentences result = Sentences.builder().sentences(sentenceList)
+                                  .count(sentenceList.size()).build();
+      httpResponse.setContentType(ContentType.APPLICATION_JSON.getMimeType());
+      writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
+    } catch (Exception e) {
+      writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(List.of(e.getMessage())).build()));
+      httpResponse.setStatusCode(400);
+    } finally {
+      LOGGER.debug("service finished");
     }
-    SentenceGenerator sentenceGenerator = new SentenceGenerator(bodyArgs);
-    List<Sentence>    result            = sentenceGenerator.generateRandomSentences();
-    httpResponse.setContentType("application/json;charset=UTF-8");
-    writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
-    LOGGER.debug("service finished");
   }
 
-// gcloud functions deploy generate-sentence --entry-point io.github.Redouane59.dz.function.SentenceGeneratorAPI --runtime java11 --trigger-http --memory 128MB --timeout=50 --allow-unauthenticated
+// gcloud functions deploy generate-sentence --entry-point io.github.Redouane59.dz.function.SentenceGeneratorAPI --runtime java11 --trigger-http --memory 128MB --timeout=20 --allow-unauthenticated
 }

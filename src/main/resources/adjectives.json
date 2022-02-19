@@ -1,7 +1,7 @@
 [
   {
     "id": "petit",
-    "adjectives": [
+    "values": [
       {
         "gender": "M",
         "singular": true,
@@ -44,11 +44,12 @@
           }
         ]
       }
-    ]
+    ],
+    "word_type": "ADJECTIVE"
   },
   {
     "id": "grand",
-    "adjectives": [
+    "values": [
       {
         "gender": "M",
         "singular": true,
@@ -91,6 +92,7 @@
           }
         ]
       }
-    ]
+    ],
+    "word_type": "ADJECTIVE"
   }
 ]

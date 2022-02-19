@@ -1,11 +1,11 @@
 [
   {
     "id": "maison",
-    "gender": "F",
-    "type": "PLACE",
-    "nouns": [
+    "word_type": "PLACE",
+    "values": [
       {
         "singular": true,
+        "gender": "F",
         "translations": [
           {
             "lang": "FR",
@@ -19,6 +19,7 @@
       },
       {
         "singular": false,
+        "gender": "F",
         "translations": [
           {
             "lang": "FR",
@@ -34,11 +35,11 @@
   },
   {
     "id": "rue",
-    "gender": "F",
-    "type": "PLACE",
-    "nouns": [
+    "word_type": "PLACE",
+    "values": [
       {
         "singular": true,
+        "gender": "F",
         "translations": [
           {
             "lang": "FR",
@@ -52,6 +53,7 @@
       },
       {
         "singular": false,
+        "gender": "F",
         "translations": [
           {
             "lang": "FR",

@@ -2,21 +2,22 @@ package io.github.Redouane59.dz.model.generator;
 
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.helper.DB;
-import io.github.Redouane59.dz.model.CustomList;
-import io.github.Redouane59.dz.model.Sentence;
-import io.github.Redouane59.dz.model.Translation;
-import io.github.Redouane59.dz.model.adjective.AdjectiveRoot;
-import io.github.Redouane59.dz.model.noun.NounRoot;
-import io.github.Redouane59.dz.model.noun.WordType;
-import io.github.Redouane59.dz.model.verb.Conjugation;
+import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.complement.adjective.Adjective;
+import io.github.Redouane59.dz.model.complement.noun.Noun;
+import io.github.Redouane59.dz.model.sentence.Sentence;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
-import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
@@ -28,118 +29,97 @@ public class SentenceGenerator {
   public List<Sentence> generateRandomSentences() {
     List<Sentence> sentences = new ArrayList<>();
     for (int i = 0; i < bodyArgs.getCount(); i++) {
-      int random = new Random().nextInt(2);
-      if (!bodyArgs.getAdjectives().isEmpty() && !bodyArgs.getNouns().isEmpty()) {
-        switch (random) {
-          case 0:
-            sentences.add(generateRandomVerbNounSentence(bodyArgs.getVerbs(), bodyArgs.getTenses(), bodyArgs.getNouns()));
-          case 1:
-            sentences.add(generateRandomVerbAdjectiveSentence(bodyArgs.getVerbs(), bodyArgs.getTenses(), bodyArgs.getAdjectives()));
-        }
-      } else if (!bodyArgs.getAdjectives().isEmpty()) {
-        sentences.add(generateRandomVerbAdjectiveSentence(bodyArgs.getVerbs(), bodyArgs.getTenses(), bodyArgs.getAdjectives()));
-      } else if (!bodyArgs.getNouns().isEmpty()) {
-        sentences.add(generateRandomVerbNounSentence(bodyArgs.getVerbs(), bodyArgs.getTenses(), bodyArgs.getNouns()));
-      } else {
-        Verb randomVerb = getRandomVerb(bodyArgs.getVerbs());
-        sentences.add(Sentence.builder()
-                              .translations(randomVerb.getRandomConjugation(bodyArgs.getTenses()).getTranslations())
-                              .verbs(List.of(randomVerb.getId()))
-                              .build());
-      }
-
+      sentences.add(generateRandomSentence(bodyArgs.getTenses()));
     }
     return sentences;
   }
 
-  public Sentence generateRandomVerbNounSentence(List<String> verbs, List<Tense> tenses, List<String> nouns) {
-    Verb                    randomVerb        = getRandomVerb(verbs);
-    Conjugation             randomConjugation = randomVerb.getRandomConjugation(tenses);
-    NounRoot                randomNoun        = getRandomNounRoot(nouns, randomVerb);
-    CustomList<Translation> result            = new CustomList<>();
-    // build and add dz sentence
-    String dzVerb       = randomConjugation.getTranslation(Lang.DZ).orElse("*");
-    String nounValue    = randomNoun.getNounValue(true, Lang.DZ).orElse("");
-    String dzComplement = nounValue;
-    String dzSentence   = dzVerb;
-    if (!dzComplement.isEmpty()) {
-      dzSentence += " ";
-      dzSentence += randomVerb.getType().getPlacePreposition(Lang.DZ, nounValue);
-      dzSentence += " ";
-      dzSentence += dzComplement;
+  public Sentence generateRandomSentence(List<Tense> tenses) {
+
+    Sentence sentence = new Sentence();
+    // verb
+    VerbConjugation verbConjugation = getRandomVerb(tenses);
+    sentence.setVerbIds(List.of(verbConjugation.getVerb().getId()));
+    // complement
+    Optional<AbstractWord> complement = getRandomComplement(verbConjugation.getVerb());
+    if (complement.isPresent()) {
+      if (complement.get() instanceof Noun) {
+        sentence.setNounIds(List.of(complement.get().getId()));
+        sentence.addDzTranslation(getNounTranslation(verbConjugation, complement.get(), Lang.DZ));
+        sentence.addFrTranslation(getNounTranslation(verbConjugation, complement.get(), Lang.FR));
+      } else if (complement.get() instanceof Adjective) {
+        sentence.setAdjectiveIds(List.of(complement.get().getId()));
+        sentence.addDzTranslation(getAdjectiveTranslation(verbConjugation.getConjugation(), complement.get(), Lang.DZ));
+        sentence.addFrTranslation(getAdjectiveTranslation(verbConjugation.getConjugation(), complement.get(), Lang.FR));
+      }
+
+    } else {
+      sentence.addDzTranslation(verbConjugation.getConjugation().getDzTranslation());
+      sentence.addFrTranslation(verbConjugation.getConjugation().getFrTranslation());
     }
-    result.add(new Translation(Lang.DZ, dzSentence));
-    // build and add fr sentence
-    String frVerb       = randomConjugation.getTranslation(Lang.FR).orElse("*");
-    String frComplement = randomNoun.getNounValue(true, Lang.FR).orElse("");
-    String frSentence   = frVerb;
-    if (!frComplement.isEmpty()) {
-      frComplement = randomNoun.getGender().getFrArticle() + " " + frComplement;
-      frSentence += " ";
-      frSentence += randomVerb.getType().getPlacePreposition(Lang.FR);
-      frSentence += " ";
-      frSentence += frComplement;
-    }
-    result.add(new Translation(Lang.FR, frSentence));
-    return Sentence.builder()
-                   .translations(result)
-                   .nounIds(List.of(randomNoun.getId()))
-                   .verbs(List.of(randomVerb.getId())).build();
+
+    return sentence;
+
   }
 
-  public Sentence generateRandomVerbAdjectiveSentence(List<String> verbs, List<Tense> tenses, List<String> adjectives) {
-    Verb                    randomVerb        = getRandomVerb(verbs);
-    AdjectiveRoot           randomAdjective   = getRandomAdjectiveRoot(adjectives);
-    Conjugation             randomConjugation = randomVerb.getRandomConjugation(tenses);
-    CustomList<Translation> result            = new CustomList<>();
-    // build and add dz sentence
-    String dzSentence = randomConjugation.getTranslation(Lang.DZ).orElse("*")
-                        + " "
-                        + randomAdjective.getAdjective(randomConjugation.getPerson().getGender(), randomConjugation.getPerson().isSingular())
-                                         .getTranslation(Lang.DZ).orElse("");
+  public String getNounTranslation(VerbConjugation verbConjugation, AbstractWord complement, Lang lang) {
+    String complementValue = complement.getTranslationBySingular(true, lang).getValue();
+    String result          = verbConjugation.getConjugation().getTranslationValue(lang);
+    result += " ";
+    result += verbConjugation.getVerb().getVerbType().getPlacePreposition(lang);
+    result += " ";
+    if (lang == Lang.FR) {
+      result += complement.getWordBySingular(verbConjugation.getConjugation().isSingular(), Lang.FR).getGender().getFrArticle() + " ";
+    }
+    result += complementValue;
 
-    result.add(new Translation(Lang.DZ, dzSentence));
-    // build and add fr sentence
-    String frSentence = randomConjugation.getTranslation(Lang.FR).orElse("*")
-                        + " "
-                        + randomAdjective.getAdjective(randomConjugation.getPerson().getGender(), randomConjugation.getPerson().isSingular())
-                                         .getTranslation(Lang.FR).orElse("");
-
-    result.add(new Translation(Lang.FR, frSentence));
-    return Sentence.builder()
-                   .translations(result)
-                   .verbs(List.of(randomVerb.getId()))
-                   .adjectiveIds(List.of(randomAdjective.getId()))
-                   .build();
+    return result;
   }
 
-  public Verb getRandomVerb(List<String> verbIds) {
-    List<Verb> verbs = DB.VERBS.stream().filter(o -> verbIds.contains(o.getId())).collect(Collectors.toList());
+  public String getAdjectiveTranslation(PossessiveWord conjugation, AbstractWord complement, Lang lang) {
+    String complementValue = complement.getTranslationByGender(conjugation.getGender(), conjugation.isSingular(), lang).getValue();
+    return conjugation.getTranslationValue(lang) + " " + complementValue;
+  }
+
+  public VerbConjugation getRandomVerb(List<Tense> tenses) {
     // get all the possible verbs
-    List<Verb> matchingVerbs = verbs.stream().filter(o -> o.getComplements().contains(WordType.PLACE)).collect(Collectors.toList());
+    List<Verb> matchingVerbs = DB.VERBS.stream()
+                                       //  .filter(complement::contains)
+                                       .filter(o -> o.getRandomConjugation(tenses).isPresent()).collect(Collectors.toList());
     // pick a random verb
-    return matchingVerbs.get(new Random().nextInt(matchingVerbs.size()));
+    if (matchingVerbs.isEmpty()) {
+      System.err.println("No verb found with matching given verbs & tenses");
+      return new VerbConjugation();
+    }
+    Verb           randomVerb        = matchingVerbs.get(new Random().nextInt(matchingVerbs.size()));
+    PossessiveWord randomConjugation = randomVerb.getRandomConjugation(tenses).get();
+    return new VerbConjugation(randomVerb, randomConjugation);
   }
 
-  public NounRoot getRandomNounRoot(List<String> nounIds, Verb verb) {
-    List<NounRoot> nounRoots = DB.NOUNS.stream().filter(o -> nounIds.contains(o.getId())).collect(Collectors.toList());
 
-    if (nounRoots.isEmpty()) {
-      return new NounRoot();
+  public Optional<AbstractWord> getRandomComplement(Verb verb) {
+    List<? extends AbstractWord> allComplements = Stream.concat(DB.NOUNS.stream(), DB.ADJECTIVES.stream())
+                                                        .collect(Collectors.toList());
+    // get all the possible complements
+    List<? extends AbstractWord> matchingComplements = allComplements.stream()
+                                                                     .filter(o -> verb.getPossibleComplements().contains(o.getWordType()))
+                                                                     .collect(Collectors.toList());
+    if (matchingComplements.isEmpty()) {
+      System.err.println("no complement found");
+      return Optional.empty();
     }
-    // get all the possible complements nouns
-    List<NounRoot> matchingNouns = nounRoots.stream().filter(o -> verb.getComplements().contains(o.getType())).collect(Collectors.toList());
-    // pick a random noun
-    return matchingNouns.get(new Random().nextInt(matchingNouns.size()));
+
+    // pick a random root
+    return Optional.of(matchingComplements.get(new Random().nextInt(matchingComplements.size())));
   }
 
-  public AdjectiveRoot getRandomAdjectiveRoot(List<String> adjectiveIds) {
-    List<AdjectiveRoot> adjectives = DB.ADJECTIVES.stream().filter(o -> adjectiveIds.contains(o.getId())).collect(Collectors.toList());
+  @AllArgsConstructor
+  @NoArgsConstructor
+  @Getter
+  public static class VerbConjugation {
 
-    if (adjectives.isEmpty()) {
-      return new AdjectiveRoot();
-    }
-    return adjectives.get(new Random().nextInt(adjectives.size()));
+    private Verb           verb;
+    private PossessiveWord conjugation;
   }
 
 }
