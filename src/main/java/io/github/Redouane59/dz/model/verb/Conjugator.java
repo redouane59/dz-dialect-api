@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Conjugator {
 
-  private final List<PossessiveWord> conjugations = new ArrayList<>();
-  private       Tense                tense;
+  private final List<Conjugation> conjugations = new ArrayList<>();
+  private       Tense             tense;
 
   public PossessiveWord getConjugationByCriteria(Gender gender, boolean singular) {
     PossessiveWord result = null;

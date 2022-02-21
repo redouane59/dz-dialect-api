@@ -9,9 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @Getter
+@Setter
 public class AbstractWord {
 
   private final List<GenderedWord> values = new ArrayList<>();
@@ -19,9 +21,14 @@ public class AbstractWord {
   @JsonProperty("word_type")
   private       WordType           wordType;
 
+  public String getTranslationValueByGender(Gender gender, boolean isSingular, Lang lang) {
+    return getTranslationByGender(gender, isSingular, lang).getValue();
+  }
+
   public Translation getTranslationByGender(Gender gender, boolean isSingular, Lang lang) {
-    return getValues().stream().filter(o -> (o.getGender() == gender) || (gender == Gender.X && o.getGender() == Gender.M))
+    return getValues().stream()
                       .filter(o -> o.isSingular() == isSingular)
+                      .filter(o -> (o.getGender() == gender || gender == Gender.X))
                       .map(o -> o.getTranslationByLang(lang).get())
                       .findAny()
                       .orElseThrow();

@@ -4,5 +4,6 @@ public enum WordType {
 
   VERB,
   PLACE,
-  ADJECTIVE
+  ADJECTIVE,
+  QUESTION
 }

@@ -5,13 +5,12 @@ import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.generator.SentenceGenerator;
-import io.github.Redouane59.dz.model.sentence.Sentence;
 import io.github.Redouane59.dz.model.sentence.Sentences;
 import io.github.Redouane59.dz.model.verb.Tense;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.entity.ContentType;
@@ -37,13 +36,11 @@ public class SentenceGeneratorAPI implements HttpFunction {
       }
       System.out.println(httpRequest.getQueryParameters());
       SentenceGenerator sentenceGenerator = new SentenceGenerator(bodyArgs);
-      List<Sentence>    sentenceList      = sentenceGenerator.generateRandomSentences();
-      Sentences result = Sentences.builder().sentences(sentenceList)
-                                  .count(sentenceList.size()).build();
+      Sentences         result            = sentenceGenerator.generateRandomSentences();
       httpResponse.setContentType(ContentType.APPLICATION_JSON.getMimeType());
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
-      writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(List.of(e.getMessage())).build()));
+      writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
       httpResponse.setStatusCode(400);
     } finally {
       LOGGER.debug("service finished");

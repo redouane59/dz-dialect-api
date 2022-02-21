@@ -3,7 +3,6 @@ package io.github.Redouane59.dz.model.verb;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -21,7 +20,7 @@ public class Verb extends AbstractWord {
   @JsonProperty("verb_type")
   private VerbType         verbType;
 
-  public Optional<PossessiveWord> getRandomConjugation(List<Tense> tenses) {
+  public Optional<Conjugation> getRandomConjugation(List<Tense> tenses) {
     // get all possible conjugation
     List<Conjugator> matchingConjugator = conjugators.stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());
     if (matchingConjugator.isEmpty()) {
