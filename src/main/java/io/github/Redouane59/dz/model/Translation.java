@@ -32,7 +32,7 @@ public class Translation {
     String                frString      = "";
     dzString = dzTranslation.orElse(new Translation()).getValue();
     frString = frTranslation.orElse(new Translation()).getValue();
-    return dzString + " -> " + frString;
+    return (dzString + " -> " + frString).replace("  ", " ");
   }
 
 }

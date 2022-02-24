@@ -6,7 +6,8 @@ import java.util.List;
 
 public class Config {
 
-  public static final ObjectMapper    OBJECT_MAPPER     = new ObjectMapper();
-  public static       List<Lang>      DISPLAY_PROUNOUNS = List.of(Lang.FR);
-  public static       List<Character> VOWELS            = List.of('a', 'e', 'é', 'è', 'i', 'o', 'ô', 'u', 'h');
+  public static final ObjectMapper    OBJECT_MAPPER      = new ObjectMapper();
+  public static       List<Lang>      DISPLAY_PROUNOUNS  = List.of(Lang.FR);
+  public static       List<Lang>      DISPLAY_STATE_VERB = List.of(Lang.FR);
+  public static       List<Character> VOWELS             = List.of('a', 'e', 'é', 'è', 'i', 'o', 'ô', 'u', 'h');
 }

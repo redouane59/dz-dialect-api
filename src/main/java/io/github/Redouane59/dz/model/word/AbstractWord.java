@@ -7,6 +7,7 @@ import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.WordType;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -41,14 +42,13 @@ public class AbstractWord {
                       .orElseThrow();
   }
 
-  public Translation getTranslationBySingular(boolean isSingular, Lang lang) {
+  public Optional<Translation> getTranslationBySingular(boolean isSingular, Lang lang) {
     return getValues().stream()
                       .filter(o -> o.isSingular() == isSingular)
                       .map(o -> o.getTranslationByLang(lang).get())
-                      .findAny()
-                      .orElseThrow();
+                      .findAny();
   }
-
+  
   public String getFrValue(Gender gender, boolean isSingular) {
     return this.getTranslationByGender(gender, isSingular, Lang.FR).getValue();
   }

@@ -13,7 +13,6 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.http.entity.ContentType;
 
 @Slf4j
 public class SentenceGeneratorAPI implements HttpFunction {
@@ -37,7 +36,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
       System.out.println(httpRequest.getQueryParameters());
       SentenceGenerator sentenceGenerator = new SentenceGenerator(bodyArgs);
       Sentences         result            = sentenceGenerator.generateRandomSentences();
-      httpResponse.setContentType(ContentType.APPLICATION_JSON.getMimeType());
+      httpResponse.setContentType("application/json;charset=iso-8859-1");
+      httpResponse.appendHeader("content-type", "application/json;charset=iso-8859-1");
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
@@ -48,4 +48,5 @@ public class SentenceGeneratorAPI implements HttpFunction {
   }
 
 // gcloud functions deploy generate-sentence --entry-point io.github.Redouane59.dz.function.SentenceGeneratorAPI --runtime java11 --trigger-http --memory 128MB --timeout=20 --allow-unauthenticated
+
 }

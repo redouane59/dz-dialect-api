@@ -238,7 +238,7 @@
           {
             "possession": "OTHER",
             "gender": "X",
-            "singular": true,
+            "singular": false,
             "translations": [
               {
                 "lang": "FR",

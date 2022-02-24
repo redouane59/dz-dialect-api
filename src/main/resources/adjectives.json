@@ -31,12 +31,26 @@
         ]
       },
       {
-        "gender": "X",
+        "gender": "M",
         "singular": false,
         "translations": [
           {
             "lang": "FR",
             "value": "petits"
+          },
+          {
+            "lang": "DZ",
+            "value": "sghaar"
+          }
+        ]
+      },
+      {
+        "gender": "F",
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "petites"
           },
           {
             "lang": "DZ",
@@ -79,12 +93,26 @@
         ]
       },
       {
-        "gender": "X",
+        "gender": "M",
         "singular": false,
         "translations": [
           {
             "lang": "FR",
             "value": "grands"
+          },
+          {
+            "lang": "DZ",
+            "value": "kbar"
+          }
+        ]
+      },
+      {
+        "gender": "F",
+        "singular": false,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "grandes"
           },
           {
             "lang": "DZ",
