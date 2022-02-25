@@ -15,7 +15,7 @@ public class RandomGeneratorTest {
   @Test
   public void generateAllTest() {
     System.out.println("ALL");
-    SentenceGenerator sentenceGenerator = new SentenceGenerator(BodyArgs.builder().count(20).build());
+    SentenceGenerator sentenceGenerator = new SentenceGenerator(BodyArgs.builder().count(30).build());
     Sentences         result            = sentenceGenerator.generateRandomSentences();
     for (Sentence sentence : result.getSentences()) {
       assertNotNull(sentence);
@@ -53,9 +53,9 @@ public class RandomGeneratorTest {
   public void generateNoNounTest() {
     System.out.println("NO NOUN");
     SentenceGenerator
-              sentenceGenerator =
+        sentenceGenerator =
         new SentenceGenerator(BodyArgs.builder().count(20).wordTypes(List.of(WordType.VERB, WordType.ADJECTIVE)).build());
-    Sentences result            = sentenceGenerator.generateRandomSentences();
+    Sentences result = sentenceGenerator.generateRandomSentences();
     for (Sentence sentence : result.getSentences()) {
       assertNotNull(sentence);
       System.out.println(Translation.printTranslations(sentence.getTranslations()));

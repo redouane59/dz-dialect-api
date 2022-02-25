@@ -4,13 +4,13 @@ import static io.github.Redouane59.dz.model.WordType.PLACE;
 
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.helper.Config;
-import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.Sentence;
 import io.github.Redouane59.dz.model.verb.Conjugation;
+import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -35,21 +35,21 @@ public abstract class AbstractSentenceGenerator {
 
   public Optional<VerbConjugation> getRandomVerb() {
     // get all the possible verbs
-    List<Verb> matchingVerbs = DB.VERBS.stream()
+    List<Verb> matchingVerbs = bodyArgs.getVerbsFromIds().stream()
                                        //  .filter(complement::contains)
-                                       .filter(o -> o.getRandomConjugation(bodyArgs.getTenses()).isPresent()).collect(Collectors.toList());
+                                       .filter(o -> o.getRandomConjugationByTenses(bodyArgs.getTenses()).isPresent()).collect(Collectors.toList());
     // pick a random verb
     if (matchingVerbs.isEmpty()) {
       System.err.println("No verb found with matching given verbs & tenses");
       return Optional.empty();
     }
     Verb        randomVerb        = matchingVerbs.get(new Random().nextInt(matchingVerbs.size()));
-    Conjugation randomConjugation = randomVerb.getRandomConjugation(bodyArgs.getTenses()).get();
+    Conjugation randomConjugation = randomVerb.getRandomConjugation(randomVerb.getRandomConjugator(bodyArgs.getTenses()).get()).get();
     return Optional.of(new VerbConjugation(randomVerb, randomConjugation));
   }
 
   public Optional<Verb> getRandomInfinitiveVerb(VerbType verbType) {
-    List<Verb> matchingVerbs = DB.VERBS.stream().filter(o -> o.getVerbType() == verbType).collect(Collectors.toList());
+    List<Verb> matchingVerbs = bodyArgs.getVerbsFromIds().stream().filter(o -> o.getVerbType() == verbType).collect(Collectors.toList());
     if (matchingVerbs.isEmpty()) {
       return Optional.empty();
     }
@@ -58,7 +58,7 @@ public abstract class AbstractSentenceGenerator {
 
   public Optional<Noun> getRandomNoun(Verb verb) {
     // get all the possible complements
-    List<Noun> matchingComplements = DB.NOUNS.stream()
+    List<Noun> matchingComplements = bodyArgs.getNounsFromIds().stream()
                                              .filter(o -> verb.getPossibleComplements().contains(o.getWordType()))
                                              .filter(o -> bodyArgs.getWordTypes().contains(o.getWordType()))
                                              .collect(Collectors.toList());
@@ -66,7 +66,20 @@ public abstract class AbstractSentenceGenerator {
       System.err.println("no complement found");
       return Optional.empty();
     }
+    // pick a random root
+    return Optional.of(matchingComplements.get(new Random().nextInt(matchingComplements.size())));
+  }
 
+  public Optional<Noun> getRandomNoun(Verb verb, WordType wordType) {
+    // get all the possible complements
+    List<Noun> matchingComplements = bodyArgs.getNounsFromIds().stream()
+                                             .filter(o -> verb.getPossibleComplements().contains(wordType))
+                                             .filter(o -> bodyArgs.getWordTypes().contains(o.getWordType()))
+                                             .collect(Collectors.toList());
+    if (matchingComplements.isEmpty()) {
+      System.err.println("no complement found");
+      return Optional.empty();
+    }
     // pick a random root
     return Optional.of(matchingComplements.get(new Random().nextInt(matchingComplements.size())));
   }
@@ -80,11 +93,11 @@ public abstract class AbstractSentenceGenerator {
     List<? extends AbstractWord> allComplements = new ArrayList<>();
 
     if (bodyArgs.getWordTypes().contains(PLACE)) {
-      allComplements = Stream.concat(allComplements.stream(), DB.NOUNS.stream())
+      allComplements = Stream.concat(allComplements.stream(), bodyArgs.getNounsFromIds().stream())
                              .collect(Collectors.toList());
     }
     if (bodyArgs.getWordTypes().contains(WordType.ADJECTIVE)) {
-      allComplements = Stream.concat(allComplements.stream(), DB.ADJECTIVES.stream())
+      allComplements = Stream.concat(allComplements.stream(), bodyArgs.getAdjectivesFromIds().stream())
                              .collect(Collectors.toList());
     }
 
@@ -106,7 +119,7 @@ public abstract class AbstractSentenceGenerator {
     String result = "";
     // adding pronoun is lang is on the config
     if (Config.DISPLAY_PROUNOUNS.contains(lang)) {
-      result += conjugation.getPersonalPronoun(lang);
+      result += conjugation.getPersonalPronoun(lang, false);
       result += " ";
     }
     // adding conjugation
@@ -116,7 +129,7 @@ public abstract class AbstractSentenceGenerator {
 
 
   public Optional<AbstractWord> getRandomComplement() {
-    List<? extends AbstractWord> allComplements = Stream.concat(DB.NOUNS.stream(), DB.ADJECTIVES.stream())
+    List<? extends AbstractWord> allComplements = Stream.concat(bodyArgs.getNounsFromIds().stream(), bodyArgs.getAdjectivesFromIds().stream())
                                                         .collect(Collectors.toList());
     return Optional.of(allComplements.get(new Random().nextInt(allComplements.size())));
   }
@@ -129,7 +142,21 @@ public abstract class AbstractSentenceGenerator {
   }
 
   public Optional<Adjective> getRandomAdjective() {
-    return Optional.of(DB.ADJECTIVES.get(new Random().nextInt(DB.ADJECTIVES.size())));
+    return Optional.of(bodyArgs.getAdjectivesFromIds().get(new Random().nextInt(bodyArgs.getAdjectivesFromIds().size())));
+  }
+
+  public Tense getRandomTense() {
+    int randomNb = new Random().nextInt(3);
+    switch (randomNb) {
+      case 0:
+        return Tense.PAST;
+      case 1:
+        return Tense.PRESENT;
+      case 2:
+        return Tense.FUTURE;
+      default:
+        return Tense.PRESENT;
+    }
   }
 
   @AllArgsConstructor

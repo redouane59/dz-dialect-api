@@ -20,7 +20,11 @@ public class SentenceGenerator {
   private final int                                       MAX_COUNT  = 30;
   private       BodyArgs                                  bodyArgs   = BodyArgs.builder().build();
   private       List<? extends AbstractSentenceGenerator> generators = List.of(
-      new NounVerbAdjectiveGenerator(), new PronounVerbAdjectiveGenerator(), new PronounVerbPlaceGenerator());
+      new NounVerbAdjectiveGenerator() //,
+      //   new PronounVerbAdjectiveGenerator(),
+      //   new PronounVerbPlaceGenerator(),
+      //  new QuestionVerbSubjectGenerator()
+  );
 
   public SentenceGenerator(BodyArgs bodyArgs) {
     this.bodyArgs = bodyArgs;

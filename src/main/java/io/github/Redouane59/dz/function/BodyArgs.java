@@ -3,6 +3,8 @@ package io.github.Redouane59.dz.function;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
+import io.github.Redouane59.dz.model.complement.adjective.Adjective;
+import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -27,7 +29,19 @@ public class BodyArgs {
   private List<String>   adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toList());
   @Builder.Default
   @JsonProperty("word_types")
-  private List<WordType> wordTypes  = List.of(WordType.PLACE, WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION);
+  private List<WordType> wordTypes  = List.of(WordType.PLACE, WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.PERSON);
   @Builder.Default
   private int            count      = 1;
+
+  public List<Verb> getVerbsFromIds() {
+    return DB.VERBS.stream().filter(o -> verbs.contains(o.getId())).collect(Collectors.toList());
+  }
+
+  public List<Noun> getNounsFromIds() {
+    return DB.NOUNS.stream().filter(o -> nouns.contains(o.getId())).collect(Collectors.toList());
+  }
+
+  public List<Adjective> getAdjectivesFromIds() {
+    return DB.ADJECTIVES.stream().filter(o -> adjectives.contains(o.getId())).collect(Collectors.toList());
+  }
 }

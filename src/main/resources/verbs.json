@@ -251,11 +251,141 @@
             ]
           }
         ]
+      },
+      {
+        "tense": "FUTURE",
+        "conjugations": [
+          {
+            "possession": "I",
+            "gender": "X",
+            "singular": true,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "serai"
+              },
+              {
+                "lang": "DZ",
+                "value": "nkoun"
+              }
+            ]
+          },
+          {
+            "possession": "YOU",
+            "gender": "M",
+            "singular": true,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "seras"
+              },
+              {
+                "lang": "DZ",
+                "value": "tkoun"
+              }
+            ]
+          },
+          {
+            "possession": "YOU",
+            "gender": "F",
+            "singular": true,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "seras"
+              },
+              {
+                "lang": "DZ",
+                "value": "tkoun"
+              }
+            ]
+          },
+          {
+            "possession": "OTHER",
+            "gender": "M",
+            "singular": true,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "sera"
+              },
+              {
+                "lang": "DZ",
+                "value": "ykoun"
+              }
+            ]
+          },
+          {
+            "possession": "OTHER",
+            "gender": "F",
+            "singular": true,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "sera"
+              },
+              {
+                "lang": "DZ",
+                "value": "tkoun"
+              }
+            ]
+          },
+          {
+            "possession": "I",
+            "gender": "X",
+            "singular": false,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "serons"
+              },
+              {
+                "lang": "DZ",
+                "value": "nkounou"
+              }
+            ]
+          },
+          {
+            "possession": "YOU",
+            "gender": "X",
+            "singular": false,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "serez"
+              },
+              {
+                "lang": "DZ",
+                "value": "tkounou"
+              }
+            ]
+          },
+          {
+            "possession": "OTHER",
+            "gender": "X",
+            "singular": false,
+            "translations": [
+              {
+                "lang": "FR",
+                "value": "seront"
+              },
+              {
+                "lang": "DZ",
+                "value": "ykounou"
+              }
+            ]
+          }
+        ]
       }
     ],
     "possible_complements": [
       "PLACE",
-      "ADJECTIVE"
+      "ADJECTIVE",
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "WHERE"
     ],
     "verb_type": "STATE"
   }

@@ -39,11 +39,11 @@ public abstract class Word {
   }
 
   public void addFrTranslation(String value) {
-    this.translations.add(new Translation(Lang.FR, cleanFrString(value)));
+    this.translations.add(new Translation(Lang.FR, cleanString(value)));
   }
 
-  public String cleanFrString(String value) {
-    return value.replace("' ", "'");
+  public String cleanString(String value) {
+    return value.replace("' ", "'").replace("  ", " ");
   }
 
   @JsonProperty("dz_value")
@@ -52,7 +52,7 @@ public abstract class Word {
   }
 
   public void addDzTranslation(String value) {
-    this.translations.add(new Translation(Lang.DZ, value));
+    this.translations.add(new Translation(Lang.DZ, cleanString(value)));
   }
 
 }

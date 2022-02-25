@@ -1,6 +1,7 @@
 package io.github.Redouane59.dz.model.generator;
 
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.Sentence;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -20,7 +21,7 @@ public class PronounVerbPlaceGenerator extends AbstractSentenceGenerator {
 
     sentence.setVerbIds(List.of(verbConjugation.get().getVerb().getId()));
 
-    Optional<Noun> noun = getRandomNoun(verbConjugation.get().getVerb());
+    Optional<Noun> noun = getRandomNoun(verbConjugation.get().getVerb(), WordType.PLACE);
     if (noun.isPresent()) {
       sentence.setNounIds(List.of(noun.get().getId()));
       sentence.addDzTranslation(getPronounVerbNounTranslation(verbConjugation.get(), noun.get(), Lang.DZ));
@@ -37,9 +38,9 @@ public class PronounVerbPlaceGenerator extends AbstractSentenceGenerator {
 
     String result = getProunounVerbString(verbConjugation.getConjugation(), lang);
     result += " ";
-    result += verbConjugation.getVerb().getVerbType().getPlacePreposition(lang);
+    result += verbConjugation.getVerb().getVerbType().getPlacePreposition(lang, noun);
     result += " ";
-    result += complement.getWordBySingular(verbConjugation.getConjugation().isSingular(), Lang.FR).getGender().getTranslationValue(lang) + " ";
+    result += complement.getWordBySingular(verbConjugation.getConjugation().isSingular(), Lang.FR).getGender().getTranslationValue(lang, noun) + " ";
     result += noun;
 
     return result;

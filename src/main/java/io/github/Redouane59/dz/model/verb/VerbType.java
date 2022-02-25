@@ -1,5 +1,6 @@
 package io.github.Redouane59.dz.model.verb;
 
+import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
 import java.util.List;
@@ -17,17 +18,15 @@ public enum VerbType {
     this.placePrepositions = placePropositions;
   }
 
-  public String getPlacePreposition(Lang lang) {
+  private String getPlacePreposition(Lang lang) {
     return this.getPlacePrepositions().stream().filter(o -> o.getLang() == lang).findAny().orElseThrow().getValue();
   }
 
-  /*
   public String getPlacePreposition(Lang lang, String nextNoun) {
-    List<String> consonant = List.of("d", "n", "r", "t", "s", "z", "ch"); // @todo fix for ch
-    if (consonant.contains(nextNoun.substring(0, 1)) && lang == Lang.DZ) {
+    if (Config.CONSONANTS.contains(nextNoun.substring(0, 1)) && lang == Lang.DZ) {
       return "fe";
     }
-    return placePrepositions.getTranslationValue(lang);
-  } */
+    return getPlacePreposition(lang);
+  }
 
 }

@@ -26,6 +26,9 @@ public class Sentence extends Word {
   @JsonProperty("noun_ids")
   @JsonInclude(Include.NON_NULL)
   List<String> nounIds;
+  @JsonProperty("question_ids")
+  @JsonInclude(Include.NON_NULL)
+  List<String> questionIds;
 
   public Sentence(List<Translation> translations) {
     super(translations);

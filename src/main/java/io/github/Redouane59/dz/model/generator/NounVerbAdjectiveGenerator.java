@@ -19,7 +19,7 @@ public class NounVerbAdjectiveGenerator extends AbstractSentenceGenerator {
   public Optional<Sentence> generateSentence() {
     Sentence sentence = new Sentence();
 
-    Optional<Verb> verb = this.getRandomInfinitiveVerb(VerbType.STATE); // @todo add state
+    Optional<Verb> verb = this.getRandomInfinitiveVerb(VerbType.STATE);
     if (verb.isEmpty()) {
       return Optional.empty();
     }
@@ -33,8 +33,9 @@ public class NounVerbAdjectiveGenerator extends AbstractSentenceGenerator {
     Optional<Adjective> adjective = getRandomAdjective();
     if (adjective.isPresent()) {
       sentence.setAdjectiveIds(List.of(adjective.get().getId()));
-      sentence.addDzTranslation(getNounVerbAdjectiveTranslation(randomNoun, verb.get(), adjective.get(), Lang.DZ));
-      sentence.addFrTranslation(getNounVerbAdjectiveTranslation(randomNoun, verb.get(), adjective.get(), Lang.FR));
+      Tense randomTense = getRandomTense();
+      sentence.addDzTranslation(getNounVerbAdjectiveTranslation(randomNoun, verb.get(), adjective.get(), Lang.DZ, randomTense));
+      sentence.addFrTranslation(getNounVerbAdjectiveTranslation(randomNoun, verb.get(), adjective.get(), Lang.FR, randomTense));
     }
     return Optional.of(sentence);
   }
@@ -42,21 +43,21 @@ public class NounVerbAdjectiveGenerator extends AbstractSentenceGenerator {
   private String getNounVerbAdjectiveTranslation(GenderedWord noun,
                                                  final Verb verb,
                                                  final Adjective adjective,
-                                                 final Lang lang) {
-    Tense                 randomTense = getRandomTense();
+                                                 final Lang lang,
+                                                 final Tense randomTense) {
     Optional<Conjugation> conjugation = verb.getConjugationByGenderSingularAndTense(noun.getGender(), noun.isSingular(), randomTense);
     if (conjugation.isEmpty()) {
       //  System.out.println("empty");
-      conjugation = verb.getConjugationByGenderSingularAndTense(Gender.X, noun.isSingular(), getRandomTense());
+      conjugation = verb.getConjugationByGenderSingularAndTense(Gender.X, noun.isSingular(), randomTense);
     }
     String article;
     if (!noun.isSingular()) {
-      article = Gender.X.getTranslationValue(lang);
+      article = Gender.X.getTranslationValue(lang, noun.getTranslationValue(lang));
     } else {
-      article = noun.getGender().getTranslationValue(lang);
+      article = noun.getGender().getTranslationValue(lang, noun.getTranslationValue(lang));
     }
 
-    String conjugatedVerb = verb.getNounConjugation(noun.getGender(), noun.isSingular(), getRandomTense(), lang);
+    String conjugatedVerb = verb.getNounConjugation(noun.getGender(), noun.isSingular(), randomTense, lang);
 
     String accordedAdjectived = adjective.getTranslationByGender(noun.getGender(),
                                                                  conjugation.get().isSingular(),
@@ -70,8 +71,5 @@ public class NounVerbAdjectiveGenerator extends AbstractSentenceGenerator {
     return result;
   }
 
-  // @todo
-  private Tense getRandomTense() {
-    return Tense.PRESENT;
-  }
+
 }
