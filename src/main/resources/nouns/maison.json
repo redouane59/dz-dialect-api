@@ -1,0 +1,34 @@
+{
+  "id": "maison",
+  "word_type": "PLACE",
+  "values": [
+    {
+      "singular": true,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "maison"
+        },
+        {
+          "lang": "DZ",
+          "value": "dar"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "maisons"
+        },
+        {
+          "lang": "DZ",
+          "value": "diar"
+        }
+      ]
+    }
+  ]
+}

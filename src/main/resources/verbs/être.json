@@ -1,0 +1,390 @@
+{
+  "id": "être",
+  "conjugators": [
+    {
+      "tense": "PAST",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "étais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kount"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "étais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kount"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "étais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kounti"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "était"
+            },
+            {
+              "lang": "DZ",
+              "value": "kaan"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "était"
+            },
+            {
+              "lang": "DZ",
+              "value": "kenet"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "était"
+            },
+            {
+              "lang": "DZ",
+              "value": "kouna"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "étiez"
+            },
+            {
+              "lang": "DZ",
+              "value": "kountou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "étaient"
+            },
+            {
+              "lang": "DZ",
+              "value": "kanou"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "suis"
+            },
+            {
+              "lang": "DZ",
+              "value": "rani"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "es"
+            },
+            {
+              "lang": "DZ",
+              "value": "rak"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "es"
+            },
+            {
+              "lang": "DZ",
+              "value": "raki"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est"
+            },
+            {
+              "lang": "DZ",
+              "value": "rahou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est"
+            },
+            {
+              "lang": "DZ",
+              "value": "rahi"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est"
+            },
+            {
+              "lang": "DZ",
+              "value": "rana"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "êtes"
+            },
+            {
+              "lang": "DZ",
+              "value": "rakoum"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sont"
+            },
+            {
+              "lang": "DZ",
+              "value": "rahoum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tense": "FUTURE",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "serai"
+            },
+            {
+              "lang": "DZ",
+              "value": "nkoun"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "seras"
+            },
+            {
+              "lang": "DZ",
+              "value": "tkoun"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "seras"
+            },
+            {
+              "lang": "DZ",
+              "value": "tkoun"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sera"
+            },
+            {
+              "lang": "DZ",
+              "value": "ykoun"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sera"
+            },
+            {
+              "lang": "DZ",
+              "value": "tkoun"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "serons"
+            },
+            {
+              "lang": "DZ",
+              "value": "nkounou"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "serez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tkounou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "seront"
+            },
+            {
+              "lang": "DZ",
+              "value": "ykounou"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_complements": [
+    "PLACE",
+    "ADJECTIVE",
+    "PERSON"
+  ],
+  "possible_questions": [
+    "WHO",
+    "WHERE"
+  ],
+  "verb_type": "STATE"
+}

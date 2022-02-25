@@ -22,7 +22,7 @@ public class VerbDeserializationTest {
   public void verbsDeserializationTest() {
     List<Verb> result = null;
     try {
-      result = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/verbs.json"), new TypeReference<>() {
+      result = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/être.json"), new TypeReference<>() {
       });
     } catch (IOException e) {
       e.printStackTrace();

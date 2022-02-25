@@ -1,0 +1,62 @@
+{
+  "id": "grand",
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grand"
+        },
+        {
+          "lang": "DZ",
+          "value": "kbir"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grande"
+        },
+        {
+          "lang": "DZ",
+          "value": "kbira"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grands"
+        },
+        {
+          "lang": "DZ",
+          "value": "kbar"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grandes"
+        },
+        {
+          "lang": "DZ",
+          "value": "kbar"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

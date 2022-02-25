@@ -1,20 +1,14 @@
 package io.github.Redouane59.dz.function;
 
-import static io.github.Redouane59.dz.helper.Config.OBJECT_MAPPER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import java.io.File;
 import java.io.IOException;
-import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class AdjectiveDeserializationTest {
-
-  List<Adjective> result = OBJECT_MAPPER.readValue(new File("src/main/resources/adjectives.json"), new TypeReference<>() {
-  });
 
   public AdjectiveDeserializationTest() throws IOException {
   }
@@ -22,7 +16,7 @@ public class AdjectiveDeserializationTest {
   @Test
   public void adjectiveDeserializationTest() {
 
-    Adjective adjective = result.get(0);
+    Adjective adjective = DB.ADJECTIVES.get(0);
     assertEquals("petit", adjective.getId());
     assertEquals(3, adjective.getValues().size());
     assertEquals("petit", adjective.getFrValue(Gender.M, true));

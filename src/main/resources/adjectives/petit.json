@@ -1,0 +1,62 @@
+{
+  "id": "petit",
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "petit"
+        },
+        {
+          "lang": "DZ",
+          "value": "sghir"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "petite"
+        },
+        {
+          "lang": "DZ",
+          "value": "sghira"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "petits"
+        },
+        {
+          "lang": "DZ",
+          "value": "sghaar"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "petites"
+        },
+        {
+          "lang": "DZ",
+          "value": "sghaar"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

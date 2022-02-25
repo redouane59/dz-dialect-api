@@ -1,44 +1,60 @@
 package io.github.Redouane59.dz.helper;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class DB {
 
-  public static List<Verb>      VERBS;
-  public static List<Adjective> ADJECTIVES;
-  public static List<Noun>      NOUNS;
+  public static List<Verb>      VERBS      = new ArrayList<>();
+  public static List<Adjective> ADJECTIVES = new ArrayList<>();
+  public static List<Noun>      NOUNS      = new ArrayList<>();
 
   static {
-    try {
-      VERBS = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/verbs.json"), new TypeReference<>() {
-      });
-    } catch (IOException e) {
-      e.printStackTrace();
+    List<String>
+        files =
+        new ArrayList<>(ResourceList.getResources(Pattern.compile(".*verbs.*json")));
+    for (String fileName : files) {
+      try {
+        VERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Verb.class));
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
+    System.out.println(VERBS.size() + " verbs loaded");
   }
 
   static {
-    try {
-      ADJECTIVES = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/adjectives.json"), new TypeReference<>() {
-      });
-    } catch (IOException e) {
-      e.printStackTrace();
+    List<String>
+        files =
+        new ArrayList<>(ResourceList.getResources(Pattern.compile(".*adjectives.*json")));
+    for (String fileName : files) {
+      try {
+        ADJECTIVES.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Adjective.class));
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
+    System.out.println(ADJECTIVES.size() + " adjectives loaded");
   }
 
   static {
-    try {
-      NOUNS = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/nouns.json"), new TypeReference<>() {
-      });
-    } catch (IOException e) {
-      e.printStackTrace();
+    List<String>
+        files =
+        new ArrayList<>(ResourceList.getResources(Pattern.compile(".*nouns.*json")));
+    for (String fileName : files) {
+      try {
+        NOUNS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Noun.class));
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
-  }
+    System.out.println(NOUNS.size() + " nouns loaded");
 
+  }
 }
