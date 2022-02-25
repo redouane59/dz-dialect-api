@@ -19,6 +19,7 @@ public class DB {
     List<String>
         files =
         new ArrayList<>(ResourceList.getResources(Pattern.compile(".*verbs.*json")));
+    System.out.println("verb files size : " + files.size());
     for (String fileName : files) {
       try {
         VERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Verb.class));

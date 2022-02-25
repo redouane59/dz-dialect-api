@@ -2,9 +2,15 @@ package io.github.Redouane59.dz.helper;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import lombok.SneakyThrows;
 
 public class ResourceList {
 
@@ -14,28 +20,20 @@ public class ResourceList {
    * @param pattern the pattern to match
    * @return the resources in the order they are found
    */
+  @SneakyThrows
   public static Collection<String> getResources(
       final Pattern pattern) {
-    final ArrayList<String> retval            = new ArrayList<>();
-    final String            classPath         = System.getProperty("java.class.path", ".");
-    final String[]          classPathElements = classPath.split(System.getProperty("path.separator"));
-    for (final String element : classPathElements) {
-      retval.addAll(getResources(element, pattern));
+
+    final ArrayList<String> retval = new ArrayList<>();
+    Path                    dir    = Paths.get("src/main/resources");
+    List<Path>              paths  = Files.walk(dir).collect(Collectors.toList());
+    for (Path path : paths) {
+      if (path.toFile().isDirectory()) {
+        retval.addAll(getResourcesFromDirectory(path.toFile(), pattern));
+      }
     }
     return retval;
   }
-
-  private static Collection<String> getResources(
-      final String element,
-      final Pattern pattern) {
-    final ArrayList<String> retval = new ArrayList<String>();
-    final File              file   = new File(element);
-    if (file.isDirectory()) {
-      retval.addAll(getResourcesFromDirectory(file, pattern));
-    }
-    return retval;
-  }
-
 
   private static Collection<String> getResourcesFromDirectory(
       final File directory,
