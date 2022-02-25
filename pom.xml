@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>dz.dialect.api</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!--
+          Google Cloud Functions Framework Maven plugin
+
+          This plugin allows you to run Cloud Functions Java code
+          locally. Use the following terminal command to run a
+          given function locally:
+
+          mvn function:run -Drun.functionTarget=your.package.yourFunction
+        -->
+        <artifactId>function-maven-plugin</artifactId>
+        <configuration>
+          <functionTarget>io.github.Redouane59.dz.function.SentenceGeneratorAPI
+          </functionTarget>
+        </configuration>
+        <groupId>com.google.cloud.functions</groupId>
+        <version>0.9.7</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>junit-jupiter-params</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <scope>test</scope>
+      <version>5.4.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>jackson-databind</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>jackson-dataformat-csv</artifactId>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <scope>provided</scope>
+      <version>1.18.22</version>
+    </dependency>
+    <dependency>
+      <artifactId>slf4j-simple</artifactId>
+      <groupId>org.slf4j</groupId>
+      <version>1.7.30</version>
+    </dependency>
+    <dependency>
+      <artifactId>functions-framework-api</artifactId>
+      <groupId>com.google.cloud.functions</groupId>
+      <scope>provided</scope>
+      <version>1.0.4</version>
+    </dependency>
+    <dependency>
+      <artifactId>google-oauth-client</artifactId>
+      <groupId>com.google.oauth-client</groupId>
+      <version>1.32.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>google-api-client</artifactId>
+      <groupId>com.google.api-client</groupId>
+      <version>1.33.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>google-api-services-sheets</artifactId>
+      <groupId>com.google.apis</groupId>
+      <version>v4-rev20210629-1.32.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>gson</artifactId>
+      <groupId>com.google.code.gson</groupId>
+      <version>2.9.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-extensions -->
+    <dependency>
+      <artifactId>google-api-client-extensions</artifactId>
+      <groupId>com.google.api-client</groupId>
+      <version>1.6.0-beta</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
+    <dependency>
+      <artifactId>google-oauth-client-jetty</artifactId>
+      <groupId>com.google.oauth-client</groupId>
+      <version>1.33.1</version>
+    </dependency>
+
+  </dependencies>
+  <groupId>dz.dialect.api</groupId>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+
+  <version>1.0</version>
+
+</project>
