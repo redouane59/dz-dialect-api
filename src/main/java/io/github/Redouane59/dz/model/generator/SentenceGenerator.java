@@ -1,6 +1,7 @@
 package io.github.Redouane59.dz.model.generator;
 
 import io.github.Redouane59.dz.function.BodyArgs;
+import io.github.Redouane59.dz.model.generator.PV.NVA.NVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PV.PVA.PVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PV.PVN.PVNSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.Sentences;
@@ -19,7 +20,8 @@ public class SentenceGenerator {
   private final int                                     MAX_COUNT  = 30;
   private       BodyArgs                                bodyArgs   = BodyArgs.builder().build();
   private       List<? extends AbstractSentenceBuilder> generators = List.of(
-      new PVNSentenceBuilder(), new PVASentenceBuilder()
+      new PVNSentenceBuilder(), new PVASentenceBuilder(),
+      new NVASentenceBuilder()
   );
 
   public SentenceGenerator(BodyArgs bodyArgs) {

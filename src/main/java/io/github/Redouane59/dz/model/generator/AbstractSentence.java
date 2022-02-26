@@ -23,6 +23,7 @@ public abstract class AbstractSentence extends Word {
     for (char c : Config.VOWELS) {
       newResult = newResult.replace("je " + c, "j'" + c);
     }
+    newResult = newResult.replace("l' ", "l'");
     return newResult;
   }
 }

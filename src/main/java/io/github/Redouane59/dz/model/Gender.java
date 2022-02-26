@@ -9,9 +9,9 @@ public enum Gender {
 
   M(List.of(new Translation(Lang.FR, "le"), new Translation(Lang.DZ, "el")),
     List.of(new Translation(Lang.FR, "un"), new Translation(Lang.DZ, "wa7ad"))),
-  F(List.of(new Translation(Lang.FR, "la"), new Translation(Lang.FR, "el")),
+  F(List.of(new Translation(Lang.FR, "la"), new Translation(Lang.DZ, "el")),
     List.of(new Translation(Lang.FR, "une"), new Translation(Lang.DZ, "wa7ad"))),
-  X(List.of(new Translation(Lang.FR, "les"), new Translation(Lang.FR, "")),
+  X(List.of(new Translation(Lang.FR, "les"), new Translation(Lang.DZ, "")),
     List.of(new Translation(Lang.FR, "des"), new Translation(Lang.DZ, "")));
 
   private final List<Translation> articleTranslations;
