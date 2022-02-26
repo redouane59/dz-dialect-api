@@ -1,0 +1,137 @@
+{
+  "id": "avoir",
+  "conjugators": [
+    {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndi"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndek"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndek"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndha"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndna"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndkoum"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndhoum"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_complements": [
+    "PLACE"
+  ],
+  "possible_questions": [
+    "HOW_MANY"
+  ],
+  "verb_type": "ACTION"
+}

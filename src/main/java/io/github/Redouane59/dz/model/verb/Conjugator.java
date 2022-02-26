@@ -1,6 +1,7 @@
 package io.github.Redouane59.dz.model.verb;
 
 import io.github.Redouane59.dz.model.Gender;
+import io.github.Redouane59.dz.model.Possession;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -17,7 +18,16 @@ public class Conjugator {
   public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular) {
 
     return conjugations.stream()
-                       .filter(o -> o.isSingular() == singular && (o.getGender() == gender || gender == Gender.X))
+                       .filter(o -> o.isSingular() == singular && (o.getGender() == gender || o.getGender() == Gender.X))
+                       .findAny();
+
+  }
+
+  public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular, Possession possession) {
+
+    return conjugations.stream()
+                       .filter(o -> o.isSingular() == singular && (o.getGender() == gender || o.getGender() == Gender.X))
+                       .filter(o -> o.getPossession() == possession)
                        .findAny();
 
   }

@@ -35,7 +35,16 @@ public class AbstractWord {
                       .orElseThrow();
   }
 
-  public GenderedWord getWordBySingular(boolean isSingular, Lang lang) {
+  public List<Translation> getTranslationsByGender(Gender gender, boolean isSingular) {
+    return getValues().stream()
+                      .filter(o -> o.isSingular() == isSingular)
+                      .filter(o -> (o.getGender() == gender || gender == Gender.X))
+                      .map(Word::getTranslations)
+                      .findAny()
+                      .orElseThrow();
+  }
+
+  public GenderedWord getWordBySingular(boolean isSingular) {
     return getValues().stream()
                       .filter(o -> o.isSingular() == isSingular)
                       .findAny()
@@ -48,7 +57,7 @@ public class AbstractWord {
                       .map(o -> o.getTranslationByLang(lang).get())
                       .findAny();
   }
-  
+
   public String getFrValue(Gender gender, boolean isSingular) {
     return this.getTranslationByGender(gender, isSingular, Lang.FR).getValue();
   }

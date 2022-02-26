@@ -45,6 +45,10 @@ public class Verb extends AbstractWord {
     return Optional.of(conjugator.getConjugations().get(new Random().nextInt(conjugator.getConjugations().size())));
   }
 
+  public Optional<Conjugator> getConjugationByTense(Tense tense) {
+    return conjugators.stream().filter(o -> o.getTense() == tense).findAny();
+  }
+
   public Optional<Conjugation> getConjugationByGenderSingularAndTense(Gender gender, boolean isSingular, Tense tense) {
     Optional<Conjugator> conjugator = conjugators.stream().filter(o -> o.getTense() == tense)
                                                  .findAny();

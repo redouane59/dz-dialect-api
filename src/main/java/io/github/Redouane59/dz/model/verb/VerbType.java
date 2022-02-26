@@ -10,7 +10,8 @@ import lombok.Getter;
 public enum VerbType {
 
   STATE(List.of(new Translation(Lang.FR, "dans"), new Translation(Lang.DZ, "fel"))),
-  ACTION(List.of(new Translation(Lang.FR, "à"), new Translation(Lang.DZ, "lel")));
+  DEPLACEMENT(List.of(new Translation(Lang.FR, "à"), new Translation(Lang.DZ, "lel"))),
+  ACTION(List.of(new Translation(Lang.FR, ""), new Translation(Lang.DZ, "")));
 
   private final List<Translation> placePrepositions;
 

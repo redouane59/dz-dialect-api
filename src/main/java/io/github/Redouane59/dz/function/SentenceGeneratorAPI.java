@@ -10,7 +10,6 @@ import io.github.Redouane59.dz.model.verb.Tense;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 
@@ -40,7 +39,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
       httpResponse.appendHeader("content-type", "application/json;charset=iso-8859-1");
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
-      writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
+      e.printStackTrace();
+      //writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
       httpResponse.setStatusCode(400);
     } finally {
       LOGGER.debug("service finished");
