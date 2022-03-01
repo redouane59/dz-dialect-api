@@ -26,7 +26,8 @@ public class Conjugator {
   public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular, Possession possession) {
 
     return conjugations.stream()
-                       .filter(o -> o.isSingular() == singular && (o.getGender() == gender || o.getGender() == Gender.X))
+                       .filter(o -> o.isSingular() == singular
+                                    && (o.getGender() == gender || o.getGender() == Gender.X || gender == Gender.X))
                        .filter(o -> o.getPossession() == possession)
                        .findAny();
 

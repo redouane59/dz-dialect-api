@@ -7,18 +7,25 @@ import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Tense;
+import io.github.Redouane59.dz.model.verb.Verb;
+import java.util.Optional;
 
 public class PVSentenceBuilder extends AbstractSentenceBuilder {
 
-  public AbstractSentence generateRandomSentence(BodyArgs bodyArgs) {
-    Tense      randomTense      = WordPicker.getRandomTense();
+  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+    Tense      randomTense      = WordPicker.getRandomTense(bodyArgs.getTenses());
     PVSentence randomPVSentence = new PVSentence();
-    randomPVSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun());
     randomPVSentence.setTense(randomTense);
-    randomPVSentence.setVerb(WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), randomTense).get());
+    Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), randomTense);
+    if (randomVerb.isEmpty()) {
+      System.out.println("No randomVerb found in PV");
+      return Optional.empty();
+    }
+    randomPVSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
+    randomPVSentence.setVerb(randomVerb.get());
     randomPVSentence.addFrTranslation(randomPVSentence.buildSentenceValue(Lang.FR));
     randomPVSentence.addDzTranslation(randomPVSentence.buildSentenceValue(Lang.DZ));
-    return randomPVSentence;
+    return Optional.of(randomPVSentence);
   }
 
 }

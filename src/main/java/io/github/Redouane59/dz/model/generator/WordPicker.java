@@ -16,8 +16,11 @@ public class WordPicker {
 
   public static Random RANDOM = new Random();
 
-  public static Verb pickRandomVerb(List<Verb> verbs) {
-    return verbs.get(RANDOM.nextInt(verbs.size()));
+  public static Optional<Verb> pickRandomVerb(List<Verb> verbs) {
+    if (verbs.isEmpty()) {
+      System.err.println("adjectives list empty");
+    }
+    return Optional.of(verbs.get(RANDOM.nextInt(verbs.size())));
   }
 
   public static Optional<Verb> pickRandomVerb(List<Verb> verbs, Tense tense) {
@@ -44,8 +47,11 @@ public class WordPicker {
   }
 
   public static Optional<Conjugator> pickRandomConjugator(List<Verb> verbs, List<Tense> tenses) {
-    Verb verb = pickRandomVerb(verbs);
-    return verb.getRandomConjugator(tenses);
+    Optional<Verb> verb = pickRandomVerb(verbs);
+    if (verb.isEmpty()) {
+      return Optional.empty();
+    }
+    return verb.get().getRandomConjugator(tenses);
   }
 
   public static Optional<Conjugator> pickRandomConjugator(List<Verb> verbs, List<Tense> tenses, VerbType verbType) {
@@ -56,12 +62,28 @@ public class WordPicker {
     return verb.get().getRandomConjugator(tenses);
   }
 
-  public static Adjective pickRandomAdjective(final List<Adjective> adjectives) {
-    return adjectives.get(RANDOM.nextInt(adjectives.size()));
+  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives) {
+    if (adjectives.isEmpty()) {
+      System.err.println("adjectives list empty");
+      return Optional.empty();
+    }
+    return Optional.of(adjectives.get(RANDOM.nextInt(adjectives.size())));
   }
 
-  public static Noun pickRandomNoun(final List<Noun> nouns) {
-    return nouns.get(RANDOM.nextInt(nouns.size()));
+  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives, WordType wordType) {
+    List<Adjective> matchingAdjectives = adjectives.stream().filter(o -> o.getPossibleNouns().contains(wordType)).collect(Collectors.toList());
+    if (matchingAdjectives.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(matchingAdjectives.get(RANDOM.nextInt(matchingAdjectives.size())));
+  }
+
+  public static Optional<Noun> pickRandomNoun(final List<Noun> nouns) {
+    if (nouns.isEmpty()) {
+      System.err.println("nouns list empty");
+      return Optional.empty();
+    }
+    return Optional.of(nouns.get(RANDOM.nextInt(nouns.size())));
   }
 
   public static Optional<Noun> pickRandomNoun(final List<Noun> nouns, WordType wordType) {
@@ -72,6 +94,9 @@ public class WordPicker {
     return Optional.of(matchingNouns.get(RANDOM.nextInt(matchingNouns.size())));
   }
 
+  public static Tense getRandomTense(List<Tense> tenses) {
+    return tenses.get(RANDOM.nextInt(tenses.size()));
+  }
 
   public static Tense getRandomTense() {
     int randomNb = new Random().nextInt(3);

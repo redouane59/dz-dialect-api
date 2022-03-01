@@ -1,0 +1,263 @@
+{
+  "id": "aller",
+  "conjugators": [
+    {
+      "tense": "PAST",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "suis allé"
+            },
+            {
+              "lang": "DZ",
+              "value": "ro7t"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "es allé"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7t"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "es allée"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7t"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est allé"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est allée"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7et"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est allés"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7na"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "êtes allés"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7tou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sont allés"
+            },
+            {
+              "lang": "DZ",
+              "value": "ra7ou"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vais"
+            },
+            {
+              "lang": "DZ",
+              "value": "nro7"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vas"
+            },
+            {
+              "lang": "DZ",
+              "value": "tro7"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vas"
+            },
+            {
+              "lang": "DZ",
+              "value": "tro7i"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "va"
+            },
+            {
+              "lang": "DZ",
+              "value": "yro7"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "va"
+            },
+            {
+              "lang": "DZ",
+              "value": "tro7"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "va"
+            },
+            {
+              "lang": "DZ",
+              "value": "nro7ou"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "allez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tro7ou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vont"
+            },
+            {
+              "lang": "DZ",
+              "value": "yro7ou"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_complements": [
+    "PLACE"
+  ],
+  "possible_questions": [
+    "WHERE",
+    "WHEN"
+  ],
+  "verb_type": "DEPLACEMENT"
+}

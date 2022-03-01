@@ -1,0 +1,264 @@
+{
+  "id": "vouloir",
+  "conjugators": [
+    {
+      "tense": "PAST",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abite"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abite"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abiti"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ab"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abete"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abina"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abito"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont voulu"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abou"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7ebi"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veut"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7eb"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veut"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "voulez"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veulent"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7ebou"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_complements": [
+    "PLACE",
+    "PERSON",
+    "OBJECT"
+  ],
+  "possible_questions": [
+    "HOW_MANY"
+  ],
+  "verb_type": "ACTION"
+}

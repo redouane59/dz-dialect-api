@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PV.PVA;
+package io.github.Redouane59.dz.model.generator.PVA;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Lang;
@@ -17,9 +17,9 @@ public class PVASentence extends PVSentence {
   @Override
   public String buildSentenceValue(final Lang lang) {
     String pv = super.buildSentenceValue(lang);
-    return pv
-           + " "
-           + adjective.getTranslationByGender(getPersonalProunoun().getGender(), getPersonalProunoun().isSingular(), lang).getValue();
+    return cleanResponse(pv
+                         + " "
+                         + adjective.getTranslationByGender(getPersonalProunoun().getGender(), getPersonalProunoun().isSingular(), lang).getValue());
   }
 
 }

@@ -16,6 +16,8 @@ public enum PersonalProunoun {
   YOU_F(Possession.YOU, true, Gender.F, List.of(new Translation(Lang.FR, "tu"), new Translation(Lang.DZ, "enti"))),
   HE(Possession.OTHER, true, Gender.M, List.of(new Translation(Lang.FR, "il"), new Translation(Lang.DZ, "houwa"))),
   SHE(Possession.OTHER, true, Gender.F, List.of(new Translation(Lang.FR, "elle"), new Translation(Lang.DZ, "hiya"))),
+  //  IT(Possession.OTHER, true, Gender.X, List.of(new Translation(Lang.FR, "ce"), new Translation(Lang.DZ, ""))),
+  //  THERE(Possession.OTHER, true, Gender.X, List.of(new Translation(Lang.FR, "Il y"), new Translation(Lang.DZ, "Kayn"))),
   WE(Possession.I, false, Gender.X, List.of(new Translation(Lang.FR, "on"), new Translation(Lang.DZ, "7na"))),
   YOU_P(Possession.YOU, false, Gender.X, List.of(new Translation(Lang.FR, "vous"), new Translation(Lang.DZ, "ntouma"))),
   THEY_M(Possession.OTHER, false, Gender.M, List.of(new Translation(Lang.FR, "ils"), new Translation(Lang.DZ, "houma"))),
@@ -36,6 +38,11 @@ public enum PersonalProunoun {
 
   public static PersonalProunoun getRandomPersonalPronoun() {
     return PersonalProunoun.values()[new Random().nextInt(PersonalProunoun.values().length - 1)];
+  }
+
+  public static PersonalProunoun getRandomPersonalPronoun(final Verb verb) {
+
+    return getRandomPersonalPronoun();
   }
 
   public String getTranslationValue(Lang lang) {

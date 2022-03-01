@@ -1,0 +1,34 @@
+{
+  "id": "magasin",
+  "word_type": "PLACE",
+  "values": [
+    {
+      "singular": true,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "magasin"
+        },
+        {
+          "lang": "DZ",
+          "value": "7anout"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "magasins"
+        },
+        {
+          "lang": "DZ",
+          "value": "7ouanet"
+        }
+      ]
+    }
+  ]
+}

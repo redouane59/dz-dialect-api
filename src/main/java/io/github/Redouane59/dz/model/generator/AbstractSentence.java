@@ -22,7 +22,9 @@ public abstract class AbstractSentence extends Word {
     // replacing je + vowel with j'+vowel
     for (char c : Config.VOWELS) {
       newResult = newResult.replace("je " + c, "j'" + c);
+      newResult = newResult.replace("ce " + c, "c'" + c);
     }
+    newResult = newResult.replace("à le", "au");
     newResult = newResult.replace("l' ", "l'");
     return newResult;
   }

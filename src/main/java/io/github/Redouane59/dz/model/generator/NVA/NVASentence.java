@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PV.NVA;
+package io.github.Redouane59.dz.model.generator.NVA;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.helper.Config;
@@ -50,13 +50,12 @@ public class NVASentence extends AbstractSentence {
 
     String result = nounWord.getGender().getArticleTranslationValue(lang, nounValue) + " ";
     result += nounValue + " ";
-    if (Config.DISPLAY_STATE_VERB.contains(lang) && tense == Tense.PRESENT) {
+    if (Config.DISPLAY_STATE_VERB.contains(lang) || tense != Tense.PRESENT) {
       result += verbValue + " ";
     }
     result += adjective.getTranslationByGender(nounWord.getGender(), nounWord.isSingular(), lang).getValue();
 
     return cleanResponse(result);
-
   }
 
 }

@@ -1,11 +1,13 @@
-package io.github.Redouane59.dz.function.sentences;
+package io.github.Redouane59.dz.sentences;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.PV.PVSentenceBuilder;
+import java.util.Optional;
 import org.junit.jupiter.api.Test;
 
 public class PVSentenceBuilderTest {
@@ -16,10 +18,11 @@ public class PVSentenceBuilderTest {
   public void generateSentences() {
     int nbTests = 10;
     for (int i = 0; i < nbTests; i++) {
-      AbstractSentence sentence = pvSentenceBuilder.generateRandomSentence(BodyArgs.builder().build());
-      assertNotNull(sentence.buildSentenceValue(Lang.DZ));
-      assertNotNull(sentence.buildSentenceValue(Lang.FR));
-      System.out.println(sentence.getTranslationValue(Lang.DZ) + " -> " + sentence.getTranslationValue(Lang.FR));
+      Optional<AbstractSentence> sentence = pvSentenceBuilder.generateRandomSentence(BodyArgs.builder().build());
+      assertTrue(sentence.isPresent());
+      assertNotNull(sentence.get().buildSentenceValue(Lang.DZ));
+      assertNotNull(sentence.get().buildSentenceValue(Lang.FR));
+      System.out.println(sentence.get().getTranslationValue(Lang.DZ) + " -> " + sentence.get().getTranslationValue(Lang.FR));
     }
   }
 }

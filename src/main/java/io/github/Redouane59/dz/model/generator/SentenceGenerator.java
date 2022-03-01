@@ -1,28 +1,20 @@
 package io.github.Redouane59.dz.model.generator;
 
 import io.github.Redouane59.dz.function.BodyArgs;
-import io.github.Redouane59.dz.model.generator.PV.NVA.NVASentenceBuilder;
-import io.github.Redouane59.dz.model.generator.PV.PVA.PVASentenceBuilder;
-import io.github.Redouane59.dz.model.generator.PV.PVN.PVNSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.Sentences;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
 @NoArgsConstructor
 public class SentenceGenerator {
 
-  private final int                                     MAX_COUNT  = 30;
-  private       BodyArgs                                bodyArgs   = BodyArgs.builder().build();
-  private       List<? extends AbstractSentenceBuilder> generators = List.of(
-      new PVNSentenceBuilder(), new PVASentenceBuilder(),
-      new NVASentenceBuilder()
-  );
+  private final int      MAX_COUNT = 30;
+  private       BodyArgs bodyArgs;
 
   public SentenceGenerator(BodyArgs bodyArgs) {
     this.bodyArgs = bodyArgs;
@@ -37,7 +29,12 @@ public class SentenceGenerator {
       bodyArgs.setCount(MAX_COUNT);
     }
     for (int i = 0; i < bodyArgs.getCount(); i++) {
-      sentenceList.add(generateRandomSentence(bodyArgs));
+      Optional<AbstractSentence> sentence = generateRandomSentence(bodyArgs);
+      if (sentence.isPresent()) {
+        sentenceList.add(sentence.get());
+      } else {
+        // @todo error
+      }
     }
     if (!errors.isEmpty()) {
       result.setErrors(errors);
@@ -47,8 +44,8 @@ public class SentenceGenerator {
     return result;
   }
 
-  public AbstractSentence generateRandomSentence(BodyArgs bodyArgs) {
-    return generators.get(new Random().nextInt(generators.size())).generateRandomSentence(bodyArgs);
+  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+    return bodyArgs.getGenerators().get(new Random().nextInt(bodyArgs.getGenerators().size())).generateRandomSentence(bodyArgs);
   }
 
 }

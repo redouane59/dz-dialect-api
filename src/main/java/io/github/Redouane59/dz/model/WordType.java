@@ -6,5 +6,6 @@ public enum WordType {
   PLACE,
   PERSON,
   ADJECTIVE,
-  QUESTION
+  QUESTION,
+  OBJECT
 }

@@ -1,5 +1,10 @@
 {
   "id": "grand",
+  "possible_nouns": [
+    "PLACE",
+    "PERSON",
+    "OBJECT"
+  ],
   "values": [
     {
       "gender": "M",

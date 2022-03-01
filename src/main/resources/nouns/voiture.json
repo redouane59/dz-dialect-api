@@ -1,0 +1,34 @@
+{
+  "id": "voiture",
+  "word_type": "OBJECT",
+  "values": [
+    {
+      "singular": true,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "voiture"
+        },
+        {
+          "lang": "DZ",
+          "value": "tomobile"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "voitures"
+        },
+        {
+          "lang": "DZ",
+          "value": "tomobile"
+        }
+      ]
+    }
+  ]
+}

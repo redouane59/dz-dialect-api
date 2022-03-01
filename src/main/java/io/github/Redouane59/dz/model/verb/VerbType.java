@@ -9,6 +9,7 @@ import lombok.Getter;
 @Getter
 public enum VerbType {
 
+  // @todo manage en voiture / b
   STATE(List.of(new Translation(Lang.FR, "dans"), new Translation(Lang.DZ, "fel"))),
   DEPLACEMENT(List.of(new Translation(Lang.FR, "à"), new Translation(Lang.DZ, "lel"))),
   ACTION(List.of(new Translation(Lang.FR, ""), new Translation(Lang.DZ, "")));
