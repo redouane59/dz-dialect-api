@@ -1,0 +1,53 @@
+{
+  "id": "bien",
+  "possible_nouns": [
+    "PERSON",
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "bien"
+        },
+        {
+          "lang": "DZ",
+          "value": "mli7"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "bien"
+        },
+        {
+          "lang": "DZ",
+          "value": "mli7a"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "bien"
+        },
+        {
+          "lang": "DZ",
+          "value": "mle7"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

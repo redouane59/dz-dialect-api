@@ -3,10 +3,10 @@ package io.github.Redouane59.dz.model.generator.NVA;
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
@@ -29,7 +29,9 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     nvaSentence.setVerb(randomVerb.get());
-    Optional<Adjective> randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds(), randomNoun.get().getWordType());
+    Optional<Adjective>
+        randomAdjective =
+        WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds(), randomNoun.get().getNounTypes());
     if (randomAdjective.isEmpty()) {
       return Optional.empty();
     }

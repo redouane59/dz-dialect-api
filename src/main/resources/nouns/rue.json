@@ -1,6 +1,9 @@
 {
   "id": "rue",
-  "word_type": "PLACE",
+  "word_type": "NOUN",
+  "noun_types": [
+    "PLACE"
+  ],
   "values": [
     {
       "singular": true,

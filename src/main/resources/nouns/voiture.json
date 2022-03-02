@@ -1,6 +1,9 @@
 {
   "id": "voiture",
-  "word_type": "OBJECT",
+  "word_type": "NOUN",
+  "noun_types": [
+    "OBJECT"
+  ],
   "values": [
     {
       "singular": true,

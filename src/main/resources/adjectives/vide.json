@@ -1,0 +1,66 @@
+{
+  "id": "vide",
+  "possible_nouns": [
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vide"
+        },
+        {
+          "lang": "DZ",
+          "value": "feragh"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vide"
+        },
+        {
+          "lang": "DZ",
+          "value": "fergha"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vides"
+        },
+        {
+          "lang": "DZ",
+          "value": "ferghin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vides"
+        },
+        {
+          "lang": "DZ",
+          "value": "ferghin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

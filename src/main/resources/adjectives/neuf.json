@@ -1,0 +1,66 @@
+{
+  "id": "neuf",
+  "possible_nouns": [
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "neuf"
+        },
+        {
+          "lang": "DZ",
+          "value": "jdid"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "neuve"
+        },
+        {
+          "lang": "DZ",
+          "value": "jdida"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "neufs"
+        },
+        {
+          "lang": "DZ",
+          "value": "jded"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "neuves"
+        },
+        {
+          "lang": "DZ",
+          "value": "jded"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

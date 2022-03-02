@@ -253,9 +253,7 @@
     }
   ],
   "possible_complements": [
-    "PLACE",
-    "PERSON",
-    "OBJECT"
+    "NOUN"
   ],
   "possible_questions": [
     "HOW_MANY"

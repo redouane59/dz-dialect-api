@@ -1,5 +1,5 @@
 {
-  "id": "maison",
+  "id": "rue",
   "word_type": "NOUN",
   "noun_types": [
     "PLACE"
@@ -11,11 +11,11 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "maison"
+          "value": "route"
         },
         {
           "lang": "DZ",
-          "value": "dar"
+          "value": "tri9"
         }
       ]
     },
@@ -25,11 +25,11 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "maisons"
+          "value": "routes"
         },
         {
           "lang": "DZ",
-          "value": "diar"
+          "value": "tor9an"
         }
       ]
     }

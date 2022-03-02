@@ -26,7 +26,7 @@ public enum VerbType {
 
   public String getPlacePreposition(Lang lang, String nextNoun) {
     if (Config.CONSONANTS.contains(nextNoun.substring(0, 1)) && lang == Lang.DZ) {
-      return "fe";
+      return this.getPlacePreposition(lang).substring(0, 2);
     }
     return getPlacePreposition(lang);
   }

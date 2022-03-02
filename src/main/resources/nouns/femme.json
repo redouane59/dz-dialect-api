@@ -1,6 +1,9 @@
 {
   "id": "femme",
-  "word_type": "PERSON",
+  "word_type": "NOUN",
+  "noun_types": [
+    "PERSON"
+  ],
   "values": [
     {
       "singular": true,

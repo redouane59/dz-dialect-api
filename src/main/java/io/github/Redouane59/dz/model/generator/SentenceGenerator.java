@@ -33,7 +33,7 @@ public class SentenceGenerator {
       if (sentence.isPresent()) {
         sentenceList.add(sentence.get());
       } else {
-        // @todo error
+        errors.add("Some sentences were not generated");
       }
     }
     if (!errors.isEmpty()) {

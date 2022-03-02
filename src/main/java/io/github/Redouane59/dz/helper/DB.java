@@ -1,7 +1,7 @@
 package io.github.Redouane59.dz.helper;
 
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.complement.noun.Noun;
+import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.io.File;
 import java.io.IOException;

@@ -1,0 +1,53 @@
+{
+  "id": "proche",
+  "possible_nouns": [
+    "PLACE",
+    "PERSON",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "proche"
+        },
+        {
+          "lang": "DZ",
+          "value": "9rib"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "proche"
+        },
+        {
+          "lang": "DZ",
+          "value": "9riba"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "proches"
+        },
+        {
+          "lang": "DZ",
+          "value": "9rab"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "fermé",
+  "possible_nouns": [
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "fermé"
+        },
+        {
+          "lang": "DZ",
+          "value": "ma3lou9"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "fermée"
+        },
+        {
+          "lang": "DZ",
+          "value": "ma3lou9a"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "fermés"
+        },
+        {
+          "lang": "DZ",
+          "value": "ma3lou9in"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "fermées"
+        },
+        {
+          "lang": "DZ",
+          "value": "ma3lou9in"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

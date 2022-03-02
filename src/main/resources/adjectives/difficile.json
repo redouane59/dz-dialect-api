@@ -1,0 +1,65 @@
+{
+  "id": "difficile",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "wa3ar"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "wa3ra"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "wa3rin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "wa3rin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "chaud",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chaud"
+        },
+        {
+          "lang": "DZ",
+          "value": "skhoun"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chaude"
+        },
+        {
+          "lang": "DZ",
+          "value": "skhouna"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chauds"
+        },
+        {
+          "lang": "DZ",
+          "value": "skhounin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chaudes"
+        },
+        {
+          "lang": "DZ",
+          "value": "skhounin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

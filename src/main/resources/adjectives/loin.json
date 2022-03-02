@@ -1,0 +1,53 @@
+{
+  "id": "loin",
+  "possible_nouns": [
+    "PLACE",
+    "PERSON",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "loin"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3id"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "loin"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3ida"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "loin"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3ed"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

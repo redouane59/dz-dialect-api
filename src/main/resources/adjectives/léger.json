@@ -1,0 +1,66 @@
+{
+  "id": "léger",
+  "possible_nouns": [
+    "PERSON",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "léger"
+        },
+        {
+          "lang": "DZ",
+          "value": "khfif"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "légère"
+        },
+        {
+          "lang": "DZ",
+          "value": "khfifa"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "khfef"
+        },
+        {
+          "lang": "DZ",
+          "value": "kbar"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "légères"
+        },
+        {
+          "lang": "DZ",
+          "value": "khfef"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

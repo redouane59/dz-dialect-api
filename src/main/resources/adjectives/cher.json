@@ -1,0 +1,66 @@
+{
+  "id": "chaud",
+  "possible_nouns": [
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cher"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghali"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chère"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghalia"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chers"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghaliyin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chères"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghaliyin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

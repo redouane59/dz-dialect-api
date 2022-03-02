@@ -1,0 +1,65 @@
+{
+  "id": "gros",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gros"
+        },
+        {
+          "lang": "DZ",
+          "value": "smin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grosse"
+        },
+        {
+          "lang": "DZ",
+          "value": "smina"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gros"
+        },
+        {
+          "lang": "DZ",
+          "value": "smen"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "grosses"
+        },
+        {
+          "lang": "DZ",
+          "value": "smen"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

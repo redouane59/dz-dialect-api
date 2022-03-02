@@ -3,15 +3,16 @@ package io.github.Redouane59.dz.model.generator.PVA;
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
-import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
+import java.util.List;
 import java.util.Optional;
 
 public class PVASentenceBuilder extends AbstractSentenceBuilder {
@@ -32,7 +33,7 @@ public class PVASentenceBuilder extends AbstractSentenceBuilder {
     if (randomPronoun.getPossession() == Possession.OTHER) {
       randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds());
     } else {
-      randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds(), WordType.PERSON);
+      randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds(), List.of(NounType.PERSON));
     }
     if (randomAdjective.isEmpty()) {
       return Optional.empty();

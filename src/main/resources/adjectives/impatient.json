@@ -1,0 +1,65 @@
+{
+  "id": "impatient",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "impatient"
+        },
+        {
+          "lang": "DZ",
+          "value": "m9ala9"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "impatiente"
+        },
+        {
+          "lang": "DZ",
+          "value": "m9al9a"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "impatients"
+        },
+        {
+          "lang": "DZ",
+          "value": "m9al9in"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "impatientes"
+        },
+        {
+          "lang": "DZ",
+          "value": "m9al9in"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

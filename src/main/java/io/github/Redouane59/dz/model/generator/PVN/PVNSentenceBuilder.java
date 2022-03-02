@@ -2,11 +2,11 @@ package io.github.Redouane59.dz.model.generator.PVN;
 
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.complement.noun.Noun;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -22,14 +22,14 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
     if (randomVerb.isEmpty()) {
       randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds()); // without tense
       if (randomVerb.isEmpty()) {
-        System.out.println("No randomVerb found in PVN");
+        System.out.println("No randomVerb found in PVN (2)");
         return Optional.empty();
       }
       randomPVNSentence.setTense(randomVerb.get().getConjugators().get(0).getTense()); // @todo dirty
     }
     randomPVNSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
     randomPVNSentence.setVerb(randomVerb.get());
-    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), WordType.PLACE);
+    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), NounType.PLACE);
     if (randomNoun.isEmpty()) {
       System.out.println("No randomVerb found in PVN");
       return Optional.empty();

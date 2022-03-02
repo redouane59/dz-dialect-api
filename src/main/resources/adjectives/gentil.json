@@ -1,0 +1,65 @@
+{
+  "id": "gentil",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gentil"
+        },
+        {
+          "lang": "DZ",
+          "value": "3a9al"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gentille"
+        },
+        {
+          "lang": "DZ",
+          "value": "3a9la"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gentils"
+        },
+        {
+          "lang": "DZ",
+          "value": "3a9lin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "gentilles"
+        },
+        {
+          "lang": "DZ",
+          "value": "3a9lin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

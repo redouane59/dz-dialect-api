@@ -1,0 +1,65 @@
+{
+  "id": "prêt",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prêt"
+        },
+        {
+          "lang": "DZ",
+          "value": "wedjed"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prête"
+        },
+        {
+          "lang": "DZ",
+          "value": "wejda"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prêts"
+        },
+        {
+          "lang": "DZ",
+          "value": "wejdin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prêtes"
+        },
+        {
+          "lang": "DZ",
+          "value": "wejdin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

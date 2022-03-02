@@ -2,7 +2,7 @@ package io.github.Redouane59.dz.jsonFiles;
 
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.complement.noun.Noun;
+import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.word.GenderedWord;
 import org.junit.jupiter.api.Test;
 

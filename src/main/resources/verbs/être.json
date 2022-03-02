@@ -295,7 +295,7 @@
             },
             {
               "lang": "DZ",
-              "value": "tkoun"
+              "value": "tkouni"
             }
           ]
         },
@@ -378,9 +378,8 @@
     }
   ],
   "possible_complements": [
-    "PLACE",
-    "ADJECTIVE",
-    "PERSON"
+    "NOUN",
+    "ADJECTIVE"
   ],
   "possible_questions": [
     "WHO",

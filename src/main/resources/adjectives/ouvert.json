@@ -1,0 +1,66 @@
+{
+  "id": "ouvert",
+  "possible_nouns": [
+    "PLACE",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ouvert"
+        },
+        {
+          "lang": "DZ",
+          "value": "meftou7"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ouverte"
+        },
+        {
+          "lang": "DZ",
+          "value": "meftou7a"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ouverts"
+        },
+        {
+          "lang": "DZ",
+          "value": "meftou7in"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ouvertes"
+        },
+        {
+          "lang": "DZ",
+          "value": "meftou7in"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

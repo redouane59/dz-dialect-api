@@ -1,0 +1,65 @@
+{
+  "id": "froid",
+  "possible_nouns": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "froid"
+        },
+        {
+          "lang": "DZ",
+          "value": "bared"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "froide"
+        },
+        {
+          "lang": "DZ",
+          "value": "barda"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "froids"
+        },
+        {
+          "lang": "DZ",
+          "value": "bardin"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "froides"
+        },
+        {
+          "lang": "DZ",
+          "value": "bardin"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "lent",
+  "possible_nouns": [
+    "PERSON",
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lent"
+        },
+        {
+          "lang": "DZ",
+          "value": "t9qil"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lente"
+        },
+        {
+          "lang": "DZ",
+          "value": "t9qila"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lents"
+        },
+        {
+          "lang": "DZ",
+          "value": "t9el"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lentes"
+        },
+        {
+          "lang": "DZ",
+          "value": "t9el"
+        }
+      ]
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}
