@@ -5,3 +5,6 @@ This repository is an API which generates random sentences and give translations
 
 ## Swagger 
 https://app.swaggerhub.com/apis/redouane59/dz-dialect-api/1.2.0#/default/get_sentence_generate
+
+## Postman
+https://www.getpostman.com/collections/df04d18a8b6cbde355d2
