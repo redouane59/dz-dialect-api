@@ -8,6 +8,7 @@ import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.noun.NounType;
 import java.io.IOException;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +20,7 @@ public class NounDeserializationTest {
   @Test
   public void nounDeserializationTest() {
 
-    Noun noun1 = DB.NOUNS.get(0);
+    Noun noun1 = DB.NOUNS.stream().filter(o -> o.getId().equals("maison")).findAny().get();
     assertEquals("maison", noun1.getId());
     assertEquals(2, noun1.getValues().size());
     assertTrue(noun1.getValues().get(0).isSingular());
@@ -27,7 +28,8 @@ public class NounDeserializationTest {
     assertEquals(Gender.F, noun1.getValues().get(0).getGender());
     assertEquals("maison", noun1.getValues().get(0).getFrTranslation());
     assertEquals("dar", noun1.getValues().get(0).getDzTranslation());
-    assertEquals(WordType.PLACE, noun1.getWordType());
+    assertEquals(WordType.NOUN, noun1.getWordType());
+    assertEquals(NounType.PLACE, noun1.getNounTypes().get(0));
   }
 
 }

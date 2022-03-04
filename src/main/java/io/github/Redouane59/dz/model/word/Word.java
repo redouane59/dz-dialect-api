@@ -55,4 +55,9 @@ public abstract class Word {
     this.translations.add(new Translation(Lang.DZ, cleanString(value)));
   }
 
+  @Override
+  public String toString() {
+    return this.getTranslationValue(Lang.DZ) + " -> " + this.getTranslationValue(Lang.FR);
+  }
+
 }

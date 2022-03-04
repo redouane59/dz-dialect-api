@@ -5,6 +5,6 @@ public enum WordType {
   VERB,
   ADJECTIVE,
   NOUN,
-  PERSON,
+  ADVERB,
   QUESTION
 }

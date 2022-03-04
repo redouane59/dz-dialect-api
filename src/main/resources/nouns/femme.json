@@ -33,5 +33,25 @@
         }
       ]
     }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "chez la"
+    },
+    {
+      "lang": "DZ",
+      "value": "3and le"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "chez la"
+    },
+    {
+      "lang": "DZ",
+      "value": "3and le"
+    }
   ]
 }

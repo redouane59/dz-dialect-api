@@ -12,13 +12,13 @@ import org.junit.jupiter.api.Test;
 
 public class PVNSentenceBuilderTest {
 
-  PVNSentenceBuilder pvnSentenceBuilder = new PVNSentenceBuilder();
+  PVNSentenceBuilder sentenceBuilder = new PVNSentenceBuilder();
 
   @Test
   public void generateSentences() {
-    int nbTests = 10;
+    int nbTests = 20;
     for (int i = 0; i < nbTests; i++) {
-      Optional<AbstractSentence> sentence = pvnSentenceBuilder.generateRandomSentence(BodyArgs.builder().build());
+      Optional<AbstractSentence> sentence = sentenceBuilder.generateRandomSentence(BodyArgs.builder().build());
       assertTrue(sentence.isPresent());
       assertNotNull(sentence.get().buildSentenceValue(Lang.DZ));
       assertNotNull(sentence.get().buildSentenceValue(Lang.FR));

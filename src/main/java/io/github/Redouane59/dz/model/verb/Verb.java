@@ -3,9 +3,9 @@ package io.github.Redouane59.dz.model.verb;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Gender;
-import io.github.Redouane59.dz.model.InterrogativePronoun;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
+import io.github.Redouane59.dz.model.Question;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import java.util.ArrayList;
@@ -21,12 +21,12 @@ import lombok.NoArgsConstructor;
 public class Verb extends AbstractWord {
 
   @JsonProperty("possible_questions")
-  private final List<InterrogativePronoun> possibleQuestions   = new ArrayList<>();
-  private final List<Conjugator>           conjugators         = new ArrayList<>();
+  private final List<Question>   possibleQuestions   = new ArrayList<>();
+  private final List<Conjugator> conjugators         = new ArrayList<>();
   @JsonProperty("possible_complements")
-  private final List<WordType>             possibleComplements = new ArrayList<>();
+  private final List<WordType>   possibleComplements = new ArrayList<>();
   @JsonProperty("verb_type")
-  private       VerbType                   verbType;
+  private       VerbType         verbType;
 
   public Optional<Conjugator> getRandomConjugator(List<Tense> tenses) {
     List<Conjugator> matchingConjugator = conjugators.stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());

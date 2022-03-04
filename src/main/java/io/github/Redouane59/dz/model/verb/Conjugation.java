@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class Conjugation extends PossessiveWord {
-
-
+  
   public PersonalProunoun getPersonalPronoun() {
     if (isSingular()) {
       if (getPossession() == io.github.Redouane59.dz.model.Possession.I) {

@@ -13,7 +13,7 @@ public class AdjectiveDeserializationTest {
   @Test
   public void adjectiveDeserializationTest() {
 
-    Adjective adjective = DB.ADJECTIVES.get(2);
+    Adjective adjective = DB.ADJECTIVES.stream().filter(o -> o.getId().equals("petit")).findAny().get();
     assertEquals("petit", adjective.getId());
     assertEquals(4, adjective.getValues().size());
     assertEquals("petit", adjective.getFrValue(Gender.M, true));

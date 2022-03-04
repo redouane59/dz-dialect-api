@@ -13,19 +13,25 @@ import java.util.Optional;
 public class PVSentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    Tense      randomTense      = WordPicker.getRandomTense(bodyArgs.getTenses());
-    PVSentence randomPVSentence = new PVSentence();
-    randomPVSentence.setTense(randomTense);
+    Tense      randomTense = WordPicker.getRandomTense(bodyArgs.getTenses());
+    PVSentence pvSentence  = new PVSentence();
+    pvSentence.setTense(randomTense);
     Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), randomTense);
     if (randomVerb.isEmpty()) {
       System.out.println("No randomVerb found in PV");
       return Optional.empty();
     }
-    randomPVSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
-    randomPVSentence.setVerb(randomVerb.get());
-    randomPVSentence.addFrTranslation(randomPVSentence.buildSentenceValue(Lang.FR));
-    randomPVSentence.addDzTranslation(randomPVSentence.buildSentenceValue(Lang.DZ));
-    return Optional.of(randomPVSentence);
+    pvSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
+    pvSentence.setVerb(randomVerb.get());
+    pvSentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
+    pvSentence.addFrTranslation(pvSentence.buildSentenceValue(Lang.FR));
+    pvSentence.addDzTranslation(pvSentence.buildSentenceValue(Lang.DZ));
+    return Optional.of(pvSentence);
+  }
+
+  @Override
+  public boolean isCompatible(final BodyArgs bodyArgs) {
+    return true;
   }
 
 }

@@ -2,7 +2,8 @@
   "id": "voiture",
   "word_type": "NOUN",
   "noun_types": [
-    "OBJECT"
+    "OBJECT",
+    "COMPLEMENT"
   ],
   "values": [
     {
@@ -32,6 +33,26 @@
           "value": "tomobile"
         }
       ]
+    }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "en"
+    },
+    {
+      "lang": "DZ",
+      "value": "fel"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "à la"
+    },
+    {
+      "lang": "DZ",
+      "value": "lel"
     }
   ]
 }

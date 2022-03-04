@@ -2,7 +2,8 @@
   "id": "magasin",
   "word_type": "NOUN",
   "noun_types": [
-    "PLACE"
+    "PLACE",
+    "COMPLEMENT"
   ],
   "values": [
     {
@@ -32,6 +33,26 @@
           "value": "7ouanet"
         }
       ]
+    }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "dans le"
+    },
+    {
+      "lang": "DZ",
+      "value": "fel"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "au"
+    },
+    {
+      "lang": "DZ",
+      "value": "lel"
     }
   ]
 }

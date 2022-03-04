@@ -29,7 +29,7 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
     }
     randomPVNSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
     randomPVNSentence.setVerb(randomVerb.get());
-    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), NounType.PLACE);
+    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), NounType.COMPLEMENT);
     if (randomNoun.isEmpty()) {
       System.out.println("No randomVerb found in PVN");
       return Optional.empty();
@@ -38,6 +38,11 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
     randomPVNSentence.addFrTranslation(randomPVNSentence.buildSentenceValue(Lang.FR));
     randomPVNSentence.addDzTranslation(randomPVNSentence.buildSentenceValue(Lang.DZ));
     return Optional.of(randomPVNSentence);
+  }
+
+  @Override
+  public boolean isCompatible(final BodyArgs bodyArgs) {
+    return true;
   }
 
 }

@@ -2,7 +2,8 @@
   "id": "rue",
   "word_type": "NOUN",
   "noun_types": [
-    "PLACE"
+    "PLACE",
+    "COMPLEMENT"
   ],
   "values": [
     {
@@ -32,6 +33,26 @@
           "value": "tor9an"
         }
       ]
+    }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "sur la"
+    },
+    {
+      "lang": "DZ",
+      "value": "fel"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "sur la"
+    },
+    {
+      "lang": "DZ",
+      "value": "lel"
     }
   ]
 }

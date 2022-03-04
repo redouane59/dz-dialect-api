@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
+import java.util.stream.Collectors;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
@@ -45,7 +46,14 @@ public class SentenceGenerator {
   }
 
   public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    return bodyArgs.getGenerators().get(new Random().nextInt(bodyArgs.getGenerators().size())).generateRandomSentence(bodyArgs);
+    AbstractSentenceBuilder abstractSentenceBuilder = getRandomSentenceBuilder();
+    return abstractSentenceBuilder.generateRandomSentence(bodyArgs);
+  }
+
+  public AbstractSentenceBuilder getRandomSentenceBuilder() {
+    List<? extends AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
+                                                                         .stream().filter(o -> o.isCompatible(bodyArgs)).collect(Collectors.toList());
+    return matchingGenerators.get(new Random().nextInt(matchingGenerators.size()));
   }
 
 }

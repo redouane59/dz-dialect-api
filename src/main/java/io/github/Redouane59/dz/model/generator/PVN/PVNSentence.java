@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.generator.PV.PVSentence;
 import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.noun.NounType;
-import io.github.Redouane59.dz.model.verb.VerbType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,18 +19,19 @@ public class PVNSentence extends PVSentence {
     String result    = super.buildSentenceValue(lang);
     String nounValue = noun.getTranslationBySingular(true, lang).get().getValue();
     result += " ";
-    if (getVerb().getVerbType() == VerbType.STATE || getVerb().getVerbType() == VerbType.DEPLACEMENT) {
-      if (noun.getNounTypes().contains(NounType.PLACE)) {
-        result += getVerb().getVerbType().getPlacePreposition(lang, nounValue);
-      }
-      result += " ";
+    switch (getVerb().getVerbType()) {
+      case STATE:
+        result += noun.getStatePreposition(lang).get().getValue();
+        break;
+      case DEPLACEMENT:
+        result += noun.getDeplacementProposition(lang).get().getValue();
+        break;
+      case ACTION:
+        result += noun.getValues().get(0).getGender().getArticleTranslationValue(lang, nounValue);
+        break;
     }
 
-    if (lang == Lang.FR || (getVerb().getVerbType() != VerbType.STATE
-                            && getVerb().getVerbType() != VerbType.DEPLACEMENT)) {
-      result += noun.getWordBySingular(true).getGender().getArticleTranslationValue(lang, nounValue);
-      result += " ";
-    }
+    result += " ";
     result += nounValue;
 
     return cleanResponse(result); // @todo to set above?

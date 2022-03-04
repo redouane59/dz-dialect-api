@@ -30,7 +30,7 @@ public class VerbDeserializationTest {
     Verb verb1 = result.get(0);
     // verb
     assertEquals("être", verb1.getId());
-    assertTrue(verb1.getPossibleComplements().contains(WordType.PLACE));
+    assertTrue(verb1.getPossibleComplements().contains(WordType.NOUN));
     assertTrue(verb1.getPossibleComplements().contains(WordType.ADJECTIVE));
 
     // conjugator

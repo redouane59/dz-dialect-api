@@ -9,7 +9,6 @@ import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
-import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.List;
@@ -18,17 +17,16 @@ import java.util.Optional;
 public class PVASentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    Tense            randomTense   = WordPicker.getRandomTense(bodyArgs.getTenses());
-    PVASentence      PVASentence   = new PVASentence();
+    PVASentence      pvaSentence   = new PVASentence();
     PersonalProunoun randomPronoun = PersonalProunoun.getRandomPersonalPronoun();
-    PVASentence.setPersonalProunoun(randomPronoun);
-    PVASentence.setTense(randomTense);
-    Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), randomTense, VerbType.STATE);
+    pvaSentence.setPersonalProunoun(randomPronoun);
+    Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), bodyArgs.getTenses(), VerbType.STATE);
     if (randomVerb.isEmpty()) {
       System.out.println("No randomVerb found in PVA");
       return Optional.empty();
     }
-    PVASentence.setVerb(randomVerb.get());
+    pvaSentence.setVerb(randomVerb.get());
+    pvaSentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
     Optional<Adjective> randomAdjective;
     if (randomPronoun.getPossession() == Possession.OTHER) {
       randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds());
@@ -38,10 +36,15 @@ public class PVASentenceBuilder extends AbstractSentenceBuilder {
     if (randomAdjective.isEmpty()) {
       return Optional.empty();
     }
-    PVASentence.setAdjective(randomAdjective.get());
-    PVASentence.addFrTranslation(PVASentence.buildSentenceValue(Lang.FR));
-    PVASentence.addDzTranslation(PVASentence.buildSentenceValue(Lang.DZ));
-    return Optional.of(PVASentence);
+    pvaSentence.setAdjective(randomAdjective.get());
+    pvaSentence.addFrTranslation(pvaSentence.buildSentenceValue(Lang.FR));
+    pvaSentence.addDzTranslation(pvaSentence.buildSentenceValue(Lang.DZ));
+    return Optional.of(pvaSentence);
+  }
+
+  @Override
+  public boolean isCompatible(final BodyArgs bodyArgs) {
+    return (bodyArgs.getVerbsFromIds().stream().anyMatch(v -> v.getVerbType() == VerbType.STATE));
   }
 
 }

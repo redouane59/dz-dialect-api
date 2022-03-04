@@ -3,11 +3,14 @@ package io.github.Redouane59.dz.function;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
+import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.NVA.NVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVA.PVASentenceBuilder;
+import io.github.Redouane59.dz.model.generator.PVAv.PVAvSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVN.PVNSentenceBuilder;
+import io.github.Redouane59.dz.model.generator.QVP.QVPSentenceBuilder;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -32,11 +35,17 @@ public class BodyArgs {
   @Builder.Default
   private List<String>                            adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toList());
   @Builder.Default
+  private List<String>                            adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toList());
+  @Builder.Default
   @JsonProperty("word_types")
   private List<WordType>                          wordTypes  =
-      List.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.PERSON);
+      List.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
   @Builder.Default
-  private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(), new PVASentenceBuilder(), new NVASentenceBuilder());
+  private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(),
+                                                                       new PVASentenceBuilder(),
+                                                                       new NVASentenceBuilder(),
+                                                                       new PVAvSentenceBuilder(),
+                                                                       new QVPSentenceBuilder());
   @Builder.Default
   private int                                     count      = 1;
 
@@ -50,5 +59,9 @@ public class BodyArgs {
 
   public List<Adjective> getAdjectivesFromIds() {
     return DB.ADJECTIVES.stream().filter(o -> adjectives.contains(o.getId())).collect(Collectors.toList());
+  }
+
+  public List<Adverb> getAdverbsFromIds() {
+    return DB.ADVERBS.stream().filter(o -> adverbs.contains(o.getId())).collect(Collectors.toList());
   }
 }

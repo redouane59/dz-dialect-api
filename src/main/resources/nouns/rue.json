@@ -2,7 +2,8 @@
   "id": "rue",
   "word_type": "NOUN",
   "noun_types": [
-    "PLACE"
+    "PLACE",
+    "COMPLEMENT"
   ],
   "values": [
     {
@@ -32,6 +33,26 @@
           "value": "zna9"
         }
       ]
+    }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "dans la"
+    },
+    {
+      "lang": "DZ",
+      "value": "fe"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "dans la"
+    },
+    {
+      "lang": "DZ",
+      "value": "le"
     }
   ]
 }

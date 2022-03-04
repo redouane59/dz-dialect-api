@@ -1,5 +1,7 @@
 package io.github.Redouane59.dz.model.generator;
 
+import io.github.Redouane59.dz.model.Question;
+import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
@@ -25,13 +27,18 @@ public class WordPicker {
   }
 
   public static Optional<Verb> pickRandomVerb(List<Verb> verbs, Tense tense) {
-    return verbs.stream().filter(o -> o.getConjugators().stream().anyMatch(a -> a.getTense() == tense)).findAny();
+    List<Verb> matchingVerbs = verbs.stream().filter(o -> o.getConjugators().stream().anyMatch(a -> a.getTense() == tense))
+                                    .collect(Collectors.toList());
+    if (matchingVerbs.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(matchingVerbs.get(RANDOM.nextInt(matchingVerbs.size())));
   }
 
-  public static Optional<Verb> pickRandomVerb(List<Verb> verbs, Tense tense, VerbType verbType) {
+  public static Optional<Verb> pickRandomVerb(List<Verb> verbs, List<Tense> tenses, VerbType verbType) {
     List<Verb> matchingVerbs = verbs.stream()
                                     .filter(o -> o.getVerbType() == verbType)
-                                    .filter(o -> o.getConjugators().stream().anyMatch(a -> a.getTense() == tense))
+                                    .filter(o -> o.getConjugators().stream().anyMatch(a -> tenses.contains(a.getTense())))
                                     .collect(Collectors.toList());
     if (matchingVerbs.isEmpty()) {
       return Optional.empty();
@@ -63,17 +70,13 @@ public class WordPicker {
     return verb.get().getRandomConjugator(tenses);
   }
 
-  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives) {
-    if (adjectives.isEmpty()) {
-      System.err.println("adjectives list empty");
+  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives, List<NounType> compatibleNouns) {
+    List<Adjective> matchingAdjectives = new ArrayList<>();
+    if (compatibleNouns.isEmpty()) {
+      System.out.println("No compatible noun found");
       return Optional.empty();
     }
-    return Optional.of(adjectives.get(RANDOM.nextInt(adjectives.size())));
-  }
-
-  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives, List<NounType> nounTypes) {
-    List<Adjective> matchingAdjectives = new ArrayList<>();
-    for (NounType nountype : nounTypes) {
+    for (NounType nountype : compatibleNouns) {
       matchingAdjectives.addAll(adjectives.stream().filter(o -> o.getPossibleNouns().contains(nountype)).collect(Collectors.toList()));
     }
     if (matchingAdjectives.isEmpty()) {
@@ -82,12 +85,31 @@ public class WordPicker {
     return Optional.of(matchingAdjectives.get(RANDOM.nextInt(matchingAdjectives.size())));
   }
 
-  public static Optional<Noun> pickRandomNoun(final List<Noun> nouns) {
-    if (nouns.isEmpty()) {
+  public static Optional<Adjective> pickRandomAdjective(final List<Adjective> adjectives) {
+    Optional<List<NounType>> nounTypes = getCompatibleNounsFromAdjectives(adjectives);
+    if (nounTypes.isEmpty()) {
+      return Optional.empty();
+    }
+    return pickRandomAdjective(adjectives, nounTypes.get());
+  }
+
+  public static Optional<List<NounType>> getCompatibleNounsFromAdjectives(final List<Adjective> adjectives) {
+    return adjectives.stream().map(Adjective::getPossibleNouns).findAny();
+  }
+
+  public static Optional<Noun> pickRandomNoun(final List<Noun> nouns, List<NounType> nounTypes) {
+    if (nouns.isEmpty() || nounTypes.isEmpty()) {
       System.err.println("nouns list empty");
       return Optional.empty();
     }
-    return Optional.of(nouns.get(RANDOM.nextInt(nouns.size())));
+    List<Noun> matchingNouns = new ArrayList<>();
+    for (NounType nountype : nounTypes) {
+      matchingNouns.addAll(nouns.stream().filter(o -> o.getNounTypes().contains(nountype)).collect(Collectors.toList()));
+    }
+    if (matchingNouns.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(matchingNouns.get(RANDOM.nextInt(matchingNouns.size())));
   }
 
   public static Optional<Noun> pickRandomNoun(final List<Noun> nouns, NounType wordType) {
@@ -96,6 +118,10 @@ public class WordPicker {
       return Optional.empty();
     }
     return Optional.of(matchingNouns.get(RANDOM.nextInt(matchingNouns.size())));
+  }
+
+  public static Adverb pickRandomAdverb(List<Adverb> adverbs) {
+    return adverbs.get(RANDOM.nextInt(adverbs.size()));
   }
 
   // @todo ponderation by tense
@@ -116,5 +142,11 @@ public class WordPicker {
         return Tense.PRESENT;
     }
   }
+
+
+  public static Question pickRandomInterrogativePronoun(final Verb randomVerb) {
+    return randomVerb.getPossibleQuestions().get(RANDOM.nextInt(randomVerb.getPossibleQuestions().size()));
+  }
+
 
 }

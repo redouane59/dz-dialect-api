@@ -1,0 +1,262 @@
+{
+  "id": "aimer",
+  "conjugators": [
+    {
+      "tense": "PAST",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kount n7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kount t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "kounti t7ebi"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimait"
+            },
+            {
+              "lang": "DZ",
+              "value": "kaan y7eb"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimait"
+            },
+            {
+              "lang": "DZ",
+              "value": "kenet t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimait"
+            },
+            {
+              "lang": "DZ",
+              "value": "kouna n7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimiez"
+            },
+            {
+              "lang": "DZ",
+              "value": "koutou t7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimaient"
+            },
+            {
+              "lang": "DZ",
+              "value": "kanou y7ebou"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimes"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimes"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7ebi"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7eb"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7eb"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimez"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7ebou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aiment"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7ebou"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_complements": [
+    "NOUN"
+  ],
+  "possible_questions": [
+    "WHAT"
+  ],
+  "verb_type": "ACTION"
+}

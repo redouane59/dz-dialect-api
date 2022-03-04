@@ -1,0 +1,57 @@
+{
+  "id": "travail",
+  "word_type": "NOUN",
+  "noun_types": [
+    "COMPLEMENT"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "travail"
+        },
+        {
+          "lang": "DZ",
+          "value": "khedma"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "travail"
+        },
+        {
+          "lang": "DZ",
+          "value": "khedma"
+        }
+      ]
+    }
+  ],
+  "state_preposition": [
+    {
+      "lang": "FR",
+      "value": "au"
+    },
+    {
+      "lang": "DZ",
+      "value": "fel"
+    }
+  ],
+  "deplacement_preposition": [
+    {
+      "lang": "FR",
+      "value": "au"
+    },
+    {
+      "lang": "DZ",
+      "value": "lel"
+    }
+  ]
+}
