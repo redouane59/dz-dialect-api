@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
-import io.github.Redouane59.dz.model.generator.PVAv.PVAvSentenceBuilder;
+import io.github.Redouane59.dz.model.generator.PVD.PVDSentenceBuilder;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 
-public class PVAvSentenceBuilderTest {
+public class PVDSentenceBuilderTest {
 
-  PVAvSentenceBuilder sentenceBuilder = new PVAvSentenceBuilder();
+  PVDSentenceBuilder sentenceBuilder = new PVDSentenceBuilder();
 
   @Test
   public void generateSentences() {
@@ -22,7 +22,7 @@ public class PVAvSentenceBuilderTest {
       assertTrue(sentence.isPresent());
       assertNotNull(sentence.get().buildSentenceValue(Lang.DZ));
       assertNotNull(sentence.get().buildSentenceValue(Lang.FR));
-      System.out.println(sentence.get().buildSentenceValue(Lang.DZ) + " -> " + sentence.get().buildSentenceValue(Lang.FR));
+      System.out.println(sentence.get());
     }
   }
 }

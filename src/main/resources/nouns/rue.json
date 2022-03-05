@@ -2,8 +2,7 @@
   "id": "rue",
   "word_type": "NOUN",
   "noun_types": [
-    "PLACE",
-    "COMPLEMENT"
+    "PLACE"
   ],
   "values": [
     {

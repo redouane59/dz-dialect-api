@@ -2,8 +2,7 @@
   "id": "voiture",
   "word_type": "NOUN",
   "noun_types": [
-    "OBJECT",
-    "COMPLEMENT"
+    "OBJECT"
   ],
   "values": [
     {

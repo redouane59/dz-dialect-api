@@ -3,48 +3,44 @@ package io.github.Redouane59.dz.function;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Possession;
-import io.github.Redouane59.dz.model.WordType;
+import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class VerbDeserializationTest {
 
   @Test
   public void verbsDeserializationTest() {
-    List<Verb> result = null;
+    Verb verb = null;
     try {
-      result = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/être.json"), new TypeReference<>() {
-      });
+      verb = Config.OBJECT_MAPPER.readValue(new File("src/main/resources/verbs/être.json"), Verb.class);
     } catch (IOException e) {
       e.printStackTrace();
     }
-    Verb verb1 = result.get(0);
     // verb
-    assertEquals("être", verb1.getId());
-    assertTrue(verb1.getPossibleComplements().contains(WordType.NOUN));
-    assertTrue(verb1.getPossibleComplements().contains(WordType.ADJECTIVE));
+    assertEquals("être", verb.getId());
+    assertTrue(verb.getPossibleComplements().contains(NounType.PLACE));
+    assertTrue(verb.getPossibleComplements().contains(NounType.PERSON));
 
     // conjugator
-    assertEquals(Tense.PAST, verb1.getConjugators().get(0).getTense());
-    assertEquals(Tense.PRESENT, verb1.getConjugators().get(1).getTense());
+    assertEquals(Tense.PAST, verb.getConjugators().get(0).getTense());
+    assertEquals(Tense.PRESENT, verb.getConjugators().get(1).getTense());
 
     // conjugation
-    PossessiveWord conjugation1 = verb1.getConjugators().get(0).getConjugations().get(0);
+    PossessiveWord conjugation1 = verb.getConjugators().get(0).getConjugations().get(0);
     assertEquals(Possession.I, conjugation1.getPossession());
     assertEquals(Gender.X, conjugation1.getGender());
     assertTrue(conjugation1.isSingular());
 
     // translation
-    assertEquals("j'étais", conjugation1.getFrTranslation());
+    assertEquals("étais", conjugation1.getFrTranslation());
     assertEquals("kount", conjugation1.getDzTranslation());
   }
 }

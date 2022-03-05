@@ -128,7 +128,9 @@
     }
   ],
   "possible_complements": [
-    "NOUN"
+    "PLACE",
+    "OBJECT",
+    "PERSON"
   ],
   "possible_questions": [
     "HOW_MANY",

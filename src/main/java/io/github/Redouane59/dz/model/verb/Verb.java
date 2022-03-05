@@ -6,7 +6,7 @@ import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.Question;
-import io.github.Redouane59.dz.model.WordType;
+import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ public class Verb extends AbstractWord {
   private final List<Question>   possibleQuestions   = new ArrayList<>();
   private final List<Conjugator> conjugators         = new ArrayList<>();
   @JsonProperty("possible_complements")
-  private final List<WordType>   possibleComplements = new ArrayList<>();
+  private final List<NounType>   possibleComplements = new ArrayList<>();
   @JsonProperty("verb_type")
   private       VerbType         verbType;
 

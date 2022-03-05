@@ -1,5 +1,5 @@
 {
-  "id": "aimer",
+  "id": "aider",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,11 +11,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "ai aidé"
             },
             {
               "lang": "DZ",
-              "value": "kount n7eb"
+              "value": "3awent"
             }
           ]
         },
@@ -26,11 +26,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "as aidé"
             },
             {
               "lang": "DZ",
-              "value": "kount t7eb"
+              "value": "3awent"
             }
           ]
         },
@@ -41,11 +41,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "kounti t7ebi"
+              "value": "3awenti"
             }
           ]
         },
@@ -56,11 +56,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "kaan y7eb"
+              "value": "3awen"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "kenet t7eb"
+              "value": "3awnet"
             }
           ]
         },
@@ -86,11 +86,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "on a aidé"
             },
             {
               "lang": "DZ",
-              "value": "kouna n7ebou"
+              "value": "3awena"
             }
           ]
         },
@@ -101,11 +101,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimiez"
+              "value": "avez aidé"
             },
             {
               "lang": "DZ",
-              "value": "koutou t7ebou"
+              "value": "3awentou"
             }
           ]
         },
@@ -116,11 +116,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimaient"
+              "value": "ont aidé"
             },
             {
               "lang": "DZ",
-              "value": "kanou y7ebou"
+              "value": "3awnou"
             }
           ]
         }
@@ -136,11 +136,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "aide"
             },
             {
               "lang": "DZ",
-              "value": "n7eb"
+              "value": "n3awen"
             }
           ]
         },
@@ -151,11 +151,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "aides"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "t3awen"
             }
           ]
         },
@@ -166,11 +166,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "as aidé"
             },
             {
               "lang": "DZ",
-              "value": "t7ebi"
+              "value": "3aweni"
             }
           ]
         },
@@ -181,11 +181,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "y7eb"
+              "value": "y3awen"
             }
           ]
         },
@@ -196,11 +196,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "t3awen"
             }
           ]
         },
@@ -211,11 +211,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "a aidé"
             },
             {
               "lang": "DZ",
-              "value": "n7ebou"
+              "value": "n3awenou"
             }
           ]
         },
@@ -226,11 +226,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimez"
+              "value": "avez aidé"
             },
             {
               "lang": "DZ",
-              "value": "t7ebou"
+              "value": "t3awenou"
             }
           ]
         },
@@ -241,11 +241,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aiment"
+              "value": "ont aidé"
             },
             {
               "lang": "DZ",
-              "value": "y7ebou"
+              "value": "y3awenou"
             }
           ]
         }
@@ -253,12 +253,11 @@
     }
   ],
   "possible_complements": [
-    "PLACE",
-    "OBJECT",
     "PERSON"
   ],
   "possible_questions": [
-    "WHAT"
+    "WHO",
+    "WHEN"
   ],
   "verb_type": "ACTION"
 }

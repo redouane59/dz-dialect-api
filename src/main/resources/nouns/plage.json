@@ -1,5 +1,5 @@
 {
-  "id": "rue",
+  "id": "plage",
   "word_type": "NOUN",
   "noun_types": [
     "PLACE"
@@ -11,25 +11,11 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "route"
+          "value": "plage"
         },
         {
           "lang": "DZ",
-          "value": "tri9"
-        }
-      ]
-    },
-    {
-      "singular": false,
-      "gender": "F",
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "routes"
-        },
-        {
-          "lang": "DZ",
-          "value": "tor9an"
+          "value": "b7ar"
         }
       ]
     }
@@ -37,7 +23,7 @@
   "state_preposition": [
     {
       "lang": "FR",
-      "value": "sur la"
+      "value": "à la"
     },
     {
       "lang": "DZ",
@@ -47,7 +33,7 @@
   "deplacement_preposition": [
     {
       "lang": "FR",
-      "value": "sur la"
+      "value": "à la"
     },
     {
       "lang": "DZ",

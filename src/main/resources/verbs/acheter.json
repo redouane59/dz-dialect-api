@@ -1,5 +1,5 @@
 {
-  "id": "aimer",
+  "id": "acheter",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,11 +11,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "ai acheté"
             },
             {
               "lang": "DZ",
-              "value": "kount n7eb"
+              "value": "chrit"
             }
           ]
         },
@@ -26,11 +26,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "as acheté"
             },
             {
               "lang": "DZ",
-              "value": "kount t7eb"
+              "value": "chrit"
             }
           ]
         },
@@ -41,11 +41,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "as acheté"
             },
             {
               "lang": "DZ",
-              "value": "kounti t7ebi"
+              "value": "chriti"
             }
           ]
         },
@@ -56,11 +56,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "a acheté"
             },
             {
               "lang": "DZ",
-              "value": "kaan y7eb"
+              "value": "chra"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "a acheté"
             },
             {
               "lang": "DZ",
-              "value": "kenet t7eb"
+              "value": "chret"
             }
           ]
         },
@@ -86,11 +86,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "a acheté"
             },
             {
               "lang": "DZ",
-              "value": "kouna n7ebou"
+              "value": "chrina"
             }
           ]
         },
@@ -101,11 +101,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimiez"
+              "value": "avez acheté"
             },
             {
               "lang": "DZ",
-              "value": "koutou t7ebou"
+              "value": "chritou"
             }
           ]
         },
@@ -116,11 +116,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimaient"
+              "value": "ont acheté"
             },
             {
               "lang": "DZ",
-              "value": "kanou y7ebou"
+              "value": "chreou"
             }
           ]
         }
@@ -136,11 +136,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "achète"
             },
             {
               "lang": "DZ",
-              "value": "n7eb"
+              "value": "nechri"
             }
           ]
         },
@@ -151,11 +151,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "achètes"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "techri"
             }
           ]
         },
@@ -166,11 +166,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "achètes"
             },
             {
               "lang": "DZ",
-              "value": "t7ebi"
+              "value": "techri"
             }
           ]
         },
@@ -181,11 +181,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "achète"
             },
             {
               "lang": "DZ",
-              "value": "y7eb"
+              "value": "yechri"
             }
           ]
         },
@@ -196,11 +196,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "achète"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "techri"
             }
           ]
         },
@@ -211,11 +211,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "achète"
             },
             {
               "lang": "DZ",
-              "value": "n7ebou"
+              "value": "nechrou"
             }
           ]
         },
@@ -226,11 +226,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimez"
+              "value": "achetez"
             },
             {
               "lang": "DZ",
-              "value": "t7ebou"
+              "value": "techrou"
             }
           ]
         },
@@ -241,11 +241,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aiment"
+              "value": "achètent"
             },
             {
               "lang": "DZ",
-              "value": "y7ebou"
+              "value": "yechrou"
             }
           ]
         }
@@ -254,11 +254,12 @@
   ],
   "possible_complements": [
     "PLACE",
-    "OBJECT",
-    "PERSON"
+    "OBJECT"
   ],
   "possible_questions": [
-    "WHAT"
+    "HOW_MANY",
+    "WHAT",
+    "WHEN"
   ],
   "verb_type": "ACTION"
 }

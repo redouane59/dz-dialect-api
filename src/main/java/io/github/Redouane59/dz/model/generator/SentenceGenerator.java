@@ -53,6 +53,10 @@ public class SentenceGenerator {
   public AbstractSentenceBuilder getRandomSentenceBuilder() {
     List<? extends AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
                                                                          .stream().filter(o -> o.isCompatible(bodyArgs)).collect(Collectors.toList());
+    if (matchingGenerators.isEmpty()) {
+      System.err.println("no generator found");
+      return null; // @todo clean that
+    }
     return matchingGenerators.get(new Random().nextInt(matchingGenerators.size()));
   }
 

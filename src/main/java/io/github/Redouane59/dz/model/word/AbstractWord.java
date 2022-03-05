@@ -58,13 +58,12 @@ public class AbstractWord {
                       .findAny();
   }
 
-  public String getFrValue(Gender gender, boolean isSingular) {
-    return this.getTranslationByGender(gender, isSingular, Lang.FR).getValue();
-  }
-
   public String getDzValue(Gender gender, boolean isSingular) {
     return this.getTranslationByGender(gender, isSingular, Lang.DZ).getValue();
   }
 
+  public String getFrValue(Gender gender, boolean isSingular) {
+    return this.getTranslationByGender(gender, isSingular, Lang.FR).getValue();
+  }
 
 }

@@ -22,7 +22,7 @@ public class PVSentenceBuilderTest {
       assertTrue(sentence.isPresent());
       assertNotNull(sentence.get().buildSentenceValue(Lang.DZ));
       assertNotNull(sentence.get().buildSentenceValue(Lang.FR));
-      System.out.println(sentence.get().getTranslationValue(Lang.DZ) + " -> " + sentence.get().getTranslationValue(Lang.FR));
+      System.out.println(sentence.get());
     }
   }
 }

@@ -20,9 +20,10 @@ public abstract class AbstractSentence extends Word {
     for (char c : Config.VOWELS) {
       newResult = newResult.replace("je " + c, "j'" + c);
       newResult = newResult.replace("ce " + c, "c'" + c);
-      newResult = newResult.replace("que il", "qu'il");
-      newResult = newResult.replace("que elle", "qu'elle");
     }
+    newResult = newResult.replace("que il", "qu'il");
+    newResult = newResult.replace("que elle", "qu'elle");
+    newResult = newResult.replace("que on", "qu'on");
     newResult = newResult.replace("à le", "au");
     newResult = newResult.replace("l' ", "l'");
     return newResult;

@@ -8,7 +8,7 @@ import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.NVA.NVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVA.PVASentenceBuilder;
-import io.github.Redouane59.dz.model.generator.PVAv.PVAvSentenceBuilder;
+import io.github.Redouane59.dz.model.generator.PVD.PVDSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVN.PVNSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.QVP.QVPSentenceBuilder;
 import io.github.Redouane59.dz.model.noun.Noun;
@@ -44,7 +44,7 @@ public class BodyArgs {
   private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(),
                                                                        new PVASentenceBuilder(),
                                                                        new NVASentenceBuilder(),
-                                                                       new PVAvSentenceBuilder(),
+                                                                       new PVDSentenceBuilder(),
                                                                        new QVPSentenceBuilder());
   @Builder.Default
   private int                                     count      = 1;

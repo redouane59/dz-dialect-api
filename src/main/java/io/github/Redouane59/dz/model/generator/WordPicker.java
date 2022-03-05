@@ -46,6 +46,16 @@ public class WordPicker {
     return Optional.of(matchingVerbs.get(RANDOM.nextInt(matchingVerbs.size())));
   }
 
+  public static Optional<Verb> pickRandomVerb(List<Verb> verbs, List<Tense> tenses) {
+    List<Verb> matchingVerbs = verbs.stream()
+                                    .filter(o -> o.getConjugators().stream().anyMatch(a -> tenses.contains(a.getTense())))
+                                    .collect(Collectors.toList());
+    if (matchingVerbs.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(matchingVerbs.get(RANDOM.nextInt(matchingVerbs.size())));
+  }
+
   public static Optional<Verb> pickRandomVerb(List<Verb> verbs, VerbType verbType) {
     List<Verb> matchingVerbs = verbs.stream().filter(o -> o.getVerbType() == verbType).collect(Collectors.toList());
     if (matchingVerbs.isEmpty()) {
@@ -148,5 +158,15 @@ public class WordPicker {
     return randomVerb.getPossibleQuestions().get(RANDOM.nextInt(randomVerb.getPossibleQuestions().size()));
   }
 
+  public static List<Verb> getCompatibleVerbs(List<Verb> verbs, List<Noun> nouns) {
+    List<Verb> matchingVerbs = new ArrayList<>();
+    for (Noun noun : nouns) {
+      for (NounType nounType : noun.getNounTypes()) {
+        matchingVerbs.addAll(verbs.stream()
+                                  .filter(v -> v.getPossibleComplements().contains(nounType)).collect(Collectors.toList()));
+      }
+    }
+    return matchingVerbs;
+  }
 
 }

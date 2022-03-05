@@ -12,6 +12,7 @@ import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class NVASentenceBuilder extends AbstractSentenceBuilder {
 
@@ -44,7 +45,11 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
   @Override
   public boolean isCompatible(final BodyArgs bodyArgs) {
     Optional<List<NounType>> adjectiveCompatibleNouns = WordPicker.getCompatibleNounsFromAdjectives(bodyArgs.getAdjectivesFromIds());
-    return adjectiveCompatibleNouns.isPresent() && !adjectiveCompatibleNouns.get().isEmpty();
+    if (adjectiveCompatibleNouns.isEmpty() || adjectiveCompatibleNouns.get().isEmpty()) {
+      return false;
+    }
+    List<Verb> stateVerbs = bodyArgs.getVerbsFromIds().stream().filter(v -> v.getVerbType() == VerbType.STATE).collect(Collectors.toList());
+    return !stateVerbs.isEmpty();
   }
 
 

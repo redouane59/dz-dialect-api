@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PVAv;
+package io.github.Redouane59.dz.model.generator.PVD;
 
 import io.github.Redouane59.dz.function.BodyArgs;
 import io.github.Redouane59.dz.model.Lang;
@@ -11,10 +11,10 @@ import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.Optional;
 
-public class PVAvSentenceBuilder extends AbstractSentenceBuilder {
+public class PVDSentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    PVAvSentence     pvavSentence  = new PVAvSentence();
+    PVDSentence      pvavSentence  = new PVDSentence();
     PersonalProunoun randomPronoun = PersonalProunoun.getRandomPersonalPronoun();
     pvavSentence.setPersonalProunoun(randomPronoun);
     Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), bodyArgs.getTenses(), VerbType.STATE);

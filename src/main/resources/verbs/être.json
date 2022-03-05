@@ -378,8 +378,8 @@
     }
   ],
   "possible_complements": [
-    "NOUN",
-    "ADJECTIVE"
+    "PLACE",
+    "PERSON"
   ],
   "possible_questions": [
     "WHO",

@@ -1,5 +1,5 @@
 {
-  "id": "aimer",
+  "id": "partir",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,11 +11,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "suis parti"
             },
             {
               "lang": "DZ",
-              "value": "kount n7eb"
+              "value": "mchit"
             }
           ]
         },
@@ -26,11 +26,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "es parti"
             },
             {
               "lang": "DZ",
-              "value": "kount t7eb"
+              "value": "mchit"
             }
           ]
         },
@@ -41,11 +41,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimais"
+              "value": "es partie"
             },
             {
               "lang": "DZ",
-              "value": "kounti t7ebi"
+              "value": "mchiti"
             }
           ]
         },
@@ -56,11 +56,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "est parti"
             },
             {
               "lang": "DZ",
-              "value": "kaan y7eb"
+              "value": "mcha"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "est partie"
             },
             {
               "lang": "DZ",
-              "value": "kenet t7eb"
+              "value": "mchet"
             }
           ]
         },
@@ -86,11 +86,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimait"
+              "value": "est partis"
             },
             {
               "lang": "DZ",
-              "value": "kouna n7ebou"
+              "value": "mchina"
             }
           ]
         },
@@ -101,26 +101,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimiez"
+              "value": "êtes partis"
             },
             {
               "lang": "DZ",
-              "value": "koutou t7ebou"
+              "value": "mchitou"
             }
           ]
         },
         {
           "possession": "OTHER",
-          "gender": "X",
+          "gender": "M",
           "singular": false,
           "translations": [
             {
               "lang": "FR",
-              "value": "aimaient"
+              "value": "sont partis"
             },
             {
               "lang": "DZ",
-              "value": "kanou y7ebou"
+              "value": "mchaou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sont parties"
+            },
+            {
+              "lang": "DZ",
+              "value": "mchaou"
             }
           ]
         }
@@ -136,11 +151,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "pars"
             },
             {
               "lang": "DZ",
-              "value": "n7eb"
+              "value": "nemchi"
             }
           ]
         },
@@ -151,11 +166,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "pars"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "temchi"
             }
           ]
         },
@@ -166,11 +181,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimes"
+              "value": "pars"
             },
             {
               "lang": "DZ",
-              "value": "t7ebi"
+              "value": "temchi"
             }
           ]
         },
@@ -181,11 +196,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "part"
             },
             {
               "lang": "DZ",
-              "value": "y7eb"
+              "value": "yemchi"
             }
           ]
         },
@@ -196,11 +211,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "part"
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "temchi"
             }
           ]
         },
@@ -211,11 +226,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aime"
+              "value": "part"
             },
             {
               "lang": "DZ",
-              "value": "n7ebou"
+              "value": "nemchou"
             }
           ]
         },
@@ -226,11 +241,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aimez"
+              "value": "partez"
             },
             {
               "lang": "DZ",
-              "value": "t7ebou"
+              "value": "temchou"
             }
           ]
         },
@@ -241,11 +256,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aiment"
+              "value": "partent"
             },
             {
               "lang": "DZ",
-              "value": "y7ebou"
+              "value": "yemchou"
             }
           ]
         }
@@ -258,7 +273,8 @@
     "PERSON"
   ],
   "possible_questions": [
-    "WHAT"
+    "WHERE",
+    "WHEN"
   ],
-  "verb_type": "ACTION"
+  "verb_type": "DEPLACEMENT"
 }

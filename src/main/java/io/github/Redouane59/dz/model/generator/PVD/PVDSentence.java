@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PVAv;
+package io.github.Redouane59.dz.model.generator.PVD;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Lang;
@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PVAvSentence extends PVSentence {
+public class PVDSentence extends PVSentence {
 
   @JsonIgnore
   private Adverb adverb;

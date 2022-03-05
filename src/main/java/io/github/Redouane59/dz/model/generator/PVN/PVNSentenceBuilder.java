@@ -6,30 +6,25 @@ import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
 import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
-import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;
 
 public class PVNSentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    Tense       randomTense       = WordPicker.getRandomTense(bodyArgs.getTenses());
-    PVNSentence randomPVNSentence = new PVNSentence();
-    randomPVNSentence.setTense(randomTense);
-    Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), randomTense);
+    PVNSentence    randomPVNSentence = new PVNSentence();
+    Optional<Verb>
+                   randomVerb        =
+        WordPicker.pickRandomVerb(WordPicker.getCompatibleVerbs(bodyArgs.getVerbsFromIds(), bodyArgs.getNounsFromIds()), bodyArgs.getTenses());
     if (randomVerb.isEmpty()) {
-      randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds()); // without tense
-      if (randomVerb.isEmpty()) {
-        System.out.println("No randomVerb found in PVN (2)");
-        return Optional.empty();
-      }
-      randomPVNSentence.setTense(randomVerb.get().getConjugators().get(0).getTense()); // @todo dirty
+      System.out.println("No randomVerb found in PVN (2)");
+      return Optional.empty();
     }
+    randomPVNSentence.setTense(randomVerb.get().getConjugators().get(0).getTense()); // @todo dirty
     randomPVNSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
     randomPVNSentence.setVerb(randomVerb.get());
-    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), NounType.COMPLEMENT);
+    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), randomVerb.get().getPossibleComplements());
     if (randomNoun.isEmpty()) {
       System.out.println("No randomVerb found in PVN");
       return Optional.empty();
@@ -42,7 +37,7 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
 
   @Override
   public boolean isCompatible(final BodyArgs bodyArgs) {
-    return true;
+    return !WordPicker.getCompatibleVerbs(bodyArgs.getVerbsFromIds(), bodyArgs.getNounsFromIds()).isEmpty();
   }
 
 }
