@@ -3,8 +3,30 @@
 The goal of this project is to make the algerian dialect (dardja) accessible for the many.
 This repository is an API which generates random sentences and give translations in two languages : french & algerian.
 
-## Swagger 
+## Documentation
+
+### Swagger 
 https://app.swaggerhub.com/apis/redouane59/dz-dialect-api/1.2.0#/default/get_sentence_generate
 
-## Postman
+### Postman
 https://www.getpostman.com/collections/df04d18a8b6cbde355d2
+
+## Type of sentences 
+
+### PV
+Personal pronoun + verb
+
+### PVN
+Personal pronoun + verb + noun
+
+### PVA
+Personal pronoun + verb + adjective
+
+### PVD
+Personal pronoun + verb + adveb
+
+### NVA
+Noun + verb + adjective
+
+### QVP
+Interrogative pronoun + verb + personal pronoun 
