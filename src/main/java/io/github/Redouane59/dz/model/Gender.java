@@ -8,11 +8,14 @@ import lombok.Getter;
 public enum Gender {
 
   M(List.of(new Translation(Lang.FR, "le"), new Translation(Lang.DZ, "el")),
-    List.of(new Translation(Lang.FR, "un"), new Translation(Lang.DZ, "wa7ad"))),
+    List.of(new Translation(Lang.FR, "un"), new Translation(Lang.DZ, "wa7ad"))
+  ),
   F(List.of(new Translation(Lang.FR, "la"), new Translation(Lang.DZ, "el")),
-    List.of(new Translation(Lang.FR, "une"), new Translation(Lang.DZ, "wa7ad"))),
+    List.of(new Translation(Lang.FR, "une"), new Translation(Lang.DZ, "wa7ad"))
+  ),
   X(List.of(new Translation(Lang.FR, "les"), new Translation(Lang.DZ, "")),
-    List.of(new Translation(Lang.FR, "des"), new Translation(Lang.DZ, "")));
+    List.of(new Translation(Lang.FR, "des"), new Translation(Lang.DZ, ""))
+  );
 
   private final List<Translation> articleTranslations;
   private final List<Translation> undefinedArticleTranslations;
@@ -23,7 +26,7 @@ public enum Gender {
   }
 
   public String getArticleTranslationValue(Lang lang, String nextWord) {
-    Translation translation = this.getArticleTranslations().stream().filter(o -> o.getLang() == lang).findAny().orElse(new Translation(lang, ""));
+    Translation translation = this.articleTranslations.stream().filter(o -> o.getLang() == lang).findAny().orElse(new Translation(lang, ""));
     if (lang == Lang.FR && Config.VOWELS.contains(nextWord.charAt(0)) && this != X) {
       return "l'";
     } else if (lang == Lang.DZ) {

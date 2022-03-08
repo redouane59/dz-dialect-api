@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.generator.PVD;
 
-import io.github.Redouane59.dz.function.BodyArgs;
+import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+
+import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
@@ -13,7 +15,7 @@ import java.util.Optional;
 
 public class PVDSentenceBuilder extends AbstractSentenceBuilder {
 
-  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     PVDSentence      pvavSentence  = new PVDSentence();
     PersonalProunoun randomPronoun = PersonalProunoun.getRandomPersonalPronoun();
     pvavSentence.setPersonalProunoun(randomPronoun);
@@ -23,7 +25,7 @@ public class PVDSentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     pvavSentence.setVerb(randomVerb.get());
-    pvavSentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
+    pvavSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
 
     Adverb randomAdverb = WordPicker.pickRandomAdverb(bodyArgs.getAdverbsFromIds());
 
@@ -34,7 +36,7 @@ public class PVDSentenceBuilder extends AbstractSentenceBuilder {
   }
 
   @Override
-  public boolean isCompatible(final BodyArgs bodyArgs) {
+  public boolean isCompatible(final GeneratorParameters bodyArgs) {
     return (bodyArgs.getVerbsFromIds().stream().anyMatch(v -> v.getVerbType() == VerbType.STATE));
   }
 

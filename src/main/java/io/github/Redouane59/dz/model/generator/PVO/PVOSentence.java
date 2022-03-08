@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PV;
+package io.github.Redouane59.dz.model.generator.PVO;
 
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
@@ -11,10 +11,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PVSentence extends AbstractSentence {
+public class PVOSentence extends AbstractSentence {
 
 
-  @Override
   public String buildSentenceValue(final Lang lang) {
     String               ppValue    = getPersonalProunoun().getTranslationValue(lang);
     Optional<Conjugator> conjugator = getVerb().getConjugationByTense(getTense());
@@ -25,6 +24,7 @@ public class PVSentence extends AbstractSentence {
     Optional<Conjugation> conjugation = conjugator.get().getConjugationByCriteria(getPersonalProunoun().getGender(),
                                                                                   getPersonalProunoun().isSingular(),
                                                                                   getPersonalProunoun().getPossession());
+
     String verbValue = "";
     if (conjugation.isEmpty()) {
       System.err.println("empty conjugation");
@@ -35,7 +35,13 @@ public class PVSentence extends AbstractSentence {
     if (Config.DISPLAY_PROUNOUNS.contains(lang)) {
       result = ppValue + " ";
     }
+    if (lang == Lang.FR && getVerb().getReflexiveSuffixFr() != null) {
+      result += getVerb().getReflexiveSuffixFr().getSuffixValue(getSuffixPronoun(), verbValue) + " ";
+    }
     result += verbValue;
+    if (lang == Lang.DZ && getVerb().getReflexiveSuffixDz() != null) {
+      result += getVerb().getReflexiveSuffixDz().getSuffixValue(getSuffixPronoun(), verbValue);
+    }
     return cleanResponse(result);
   }
 

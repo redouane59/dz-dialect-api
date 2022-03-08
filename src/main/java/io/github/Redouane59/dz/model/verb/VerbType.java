@@ -7,6 +7,7 @@ public enum VerbType {
 
   STATE,
   DEPLACEMENT,
-  ACTION
+  ACTION,
+  POSSESSION
 
 }

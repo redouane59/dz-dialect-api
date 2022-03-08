@@ -10,6 +10,7 @@ import io.github.Redouane59.dz.model.generator.NVA.NVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVA.PVASentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVD.PVDSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.PVN.PVNSentenceBuilder;
+import io.github.Redouane59.dz.model.generator.PVO.PVOSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.QVP.QVPSentenceBuilder;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
@@ -24,7 +25,7 @@ import lombok.Setter;
 @Builder
 @Getter
 @Setter
-public class BodyArgs {
+public class GeneratorParameters {
 
   @Builder.Default
   private List<Tense>                             tenses     = List.of(Tense.PAST, Tense.PRESENT, Tense.FUTURE);
@@ -45,7 +46,8 @@ public class BodyArgs {
                                                                        new PVASentenceBuilder(),
                                                                        new NVASentenceBuilder(),
                                                                        new PVDSentenceBuilder(),
-                                                                       new QVPSentenceBuilder());
+                                                                       new QVPSentenceBuilder(),
+                                                                       new PVOSentenceBuilder());
   @Builder.Default
   private int                                     count      = 1;
 

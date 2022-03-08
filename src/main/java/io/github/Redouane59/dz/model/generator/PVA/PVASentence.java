@@ -1,8 +1,6 @@
 package io.github.Redouane59.dz.model.generator.PVA;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.generator.PV.PVSentence;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,15 +9,14 @@ import lombok.Setter;
 @Setter
 public class PVASentence extends PVSentence {
 
-  @JsonIgnore
-  private Adjective adjective;
 
   @Override
   public String buildSentenceValue(final Lang lang) {
     String pv = super.buildSentenceValue(lang);
     return cleanResponse(pv
                          + " "
-                         + adjective.getTranslationByGender(getPersonalProunoun().getGender(), getPersonalProunoun().isSingular(), lang).getValue());
+                         + getAdjective().getTranslationByGender(getPersonalProunoun().getGender(), getPersonalProunoun().isSingular(), lang)
+                                         .getValue());
   }
 
 }

@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.generator.PVA;
 
-import io.github.Redouane59.dz.function.BodyArgs;
+import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+
+import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
@@ -16,7 +18,7 @@ import java.util.Optional;
 
 public class PVASentenceBuilder extends AbstractSentenceBuilder {
 
-  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     PVASentence      pvaSentence   = new PVASentence();
     PersonalProunoun randomPronoun = PersonalProunoun.getRandomPersonalPronoun();
     pvaSentence.setPersonalProunoun(randomPronoun);
@@ -26,7 +28,7 @@ public class PVASentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     pvaSentence.setVerb(randomVerb.get());
-    pvaSentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
+    pvaSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
     Optional<Adjective> randomAdjective;
     if (randomPronoun.getPossession() == Possession.OTHER) {
       randomAdjective = WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds());
@@ -43,7 +45,7 @@ public class PVASentenceBuilder extends AbstractSentenceBuilder {
   }
 
   @Override
-  public boolean isCompatible(final BodyArgs bodyArgs) {
+  public boolean isCompatible(final GeneratorParameters bodyArgs) {
     return (bodyArgs.getVerbsFromIds().stream().anyMatch(v -> v.getVerbType() == VerbType.STATE));
   }
 

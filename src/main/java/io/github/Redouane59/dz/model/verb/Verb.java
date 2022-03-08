@@ -27,6 +27,10 @@ public class Verb extends AbstractWord {
   private final List<NounType>   possibleComplements = new ArrayList<>();
   @JsonProperty("verb_type")
   private       VerbType         verbType;
+  @JsonProperty("reflexive_suffix_fr")
+  private       ReflexiveSuffix  reflexiveSuffixFr;
+  @JsonProperty("reflexive_suffix_dz")
+  private       ReflexiveSuffix  reflexiveSuffixDz;
 
   public Optional<Conjugator> getRandomConjugator(List<Tense> tenses) {
     List<Conjugator> matchingConjugator = conjugators.stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());

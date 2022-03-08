@@ -18,6 +18,20 @@
           "value": "bit"
         }
       ]
+    },
+    {
+      "singular": false,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chambres"
+        },
+        {
+          "lang": "DZ",
+          "value": "biout"
+        }
+      ]
     }
   ],
   "state_preposition": [

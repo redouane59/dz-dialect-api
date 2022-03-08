@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.generator.NVA;
 
-import io.github.Redouane59.dz.function.BodyArgs;
+import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+
+import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
@@ -16,7 +18,7 @@ import java.util.stream.Collectors;
 
 public class NVASentenceBuilder extends AbstractSentenceBuilder {
 
-  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     NVASentence    nvaSentence = new NVASentence();
     Optional<Noun> randomNoun  = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), List.of(NounType.PLACE, NounType.PERSON, NounType.OBJECT));
     if (randomNoun.isEmpty()) {
@@ -29,7 +31,7 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     nvaSentence.setVerb(randomVerb.get());
-    nvaSentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
+    nvaSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
     Optional<Adjective>
         randomAdjective =
         WordPicker.pickRandomAdjective(bodyArgs.getAdjectivesFromIds(), randomNoun.get().getNounTypes());
@@ -43,7 +45,7 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
   }
 
   @Override
-  public boolean isCompatible(final BodyArgs bodyArgs) {
+  public boolean isCompatible(final GeneratorParameters bodyArgs) {
     Optional<List<NounType>> adjectiveCompatibleNouns = WordPicker.getCompatibleNounsFromAdjectives(bodyArgs.getAdjectivesFromIds());
     if (adjectiveCompatibleNouns.isEmpty() || adjectiveCompatibleNouns.get().isEmpty()) {
       return false;

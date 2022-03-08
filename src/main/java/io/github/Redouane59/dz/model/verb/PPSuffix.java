@@ -5,10 +5,8 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum Tense {
-  PAST("passé"),
-  PRESENT("présent"),
-  FUTURE("futur");
+public class PPSuffix {
 
-  String id;
+  private PersonalProunoun personalProunoun;
+  private String           suffixValue;
 }

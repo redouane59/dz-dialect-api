@@ -1,5 +1,5 @@
 {
-  "id": "aider",
+  "id": "appeler",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,11 +11,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai aidé"
+              "value": "ai appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awent"
+              "value": "3ayet"
             }
           ]
         },
@@ -26,11 +26,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as aidé"
+              "value": "as appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awent"
+              "value": "3ayet"
             }
           ]
         },
@@ -41,11 +41,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as aidé"
+              "value": "as appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awenti"
+              "value": "3ayeti"
             }
           ]
         },
@@ -56,11 +56,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awen"
+              "value": "3ayet"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awnet"
+              "value": "3aytet"
             }
           ]
         },
@@ -86,11 +86,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awena"
+              "value": "3ayetna"
             }
           ]
         },
@@ -101,11 +101,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez aidé"
+              "value": "avez appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awentou"
+              "value": "3ayetou"
             }
           ]
         },
@@ -116,11 +116,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont aidé"
+              "value": "ont appelé"
             },
             {
               "lang": "DZ",
-              "value": "3awnou"
+              "value": "3aytou"
             }
           ]
         }
@@ -136,11 +136,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "appelle"
             },
             {
               "lang": "DZ",
-              "value": "n3awen"
+              "value": "n3ayet"
             }
           ]
         },
@@ -151,11 +151,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aides"
+              "value": "appelles"
             },
             {
               "lang": "DZ",
-              "value": "t3awen"
+              "value": "t3ayet"
             }
           ]
         },
@@ -166,11 +166,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "appelles"
             },
             {
               "lang": "DZ",
-              "value": "3aweni"
+              "value": "3ayeti"
             }
           ]
         },
@@ -181,11 +181,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "appelle"
             },
             {
               "lang": "DZ",
-              "value": "y3awen"
+              "value": "y3ayet"
             }
           ]
         },
@@ -196,11 +196,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "appelle"
             },
             {
               "lang": "DZ",
-              "value": "t3awen"
+              "value": "t3ayet"
             }
           ]
         },
@@ -211,11 +211,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aidons"
+              "value": "appelle"
             },
             {
               "lang": "DZ",
-              "value": "n3awenou"
+              "value": "n3aytou"
             }
           ]
         },
@@ -226,11 +226,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aidez"
+              "value": "appelez"
             },
             {
               "lang": "DZ",
-              "value": "t3awenou"
+              "value": "t3aytou"
             }
           ]
         },
@@ -241,11 +241,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aident"
+              "value": "appellent"
             },
             {
               "lang": "DZ",
-              "value": "y3awenou"
+              "value": "y3aytou"
             }
           ]
         }
@@ -257,9 +257,10 @@
   ],
   "possible_questions": [
     "WHO",
-    "WHEN"
+    "WHEN",
+    "WHY"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_dz": "LI"
 }

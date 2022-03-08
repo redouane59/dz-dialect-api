@@ -105,7 +105,7 @@
             },
             {
               "lang": "DZ",
-              "value": "koutou t7ebou"
+              "value": "kontou t7ebou"
             }
           ]
         },
@@ -260,5 +260,7 @@
   "possible_questions": [
     "WHAT"
   ],
-  "verb_type": "ACTION"
+  "verb_type": "ACTION",
+  "reflexive_suffix_fr": "LES",
+  "reflexive_suffix_dz": "NI"
 }

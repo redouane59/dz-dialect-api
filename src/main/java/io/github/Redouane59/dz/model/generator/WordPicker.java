@@ -64,6 +64,14 @@ public class WordPicker {
     return Optional.of(matchingVerbs.get(RANDOM.nextInt(matchingVerbs.size())));
   }
 
+  public static Optional<Verb> pickRandomVerb(List<Verb> verbs, boolean isReflexive) {
+    List<Verb> matchingVerbs = verbs.stream().filter(o -> (o.getReflexiveSuffixDz() != null) == isReflexive).collect(Collectors.toList());
+    if (matchingVerbs.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(matchingVerbs.get(RANDOM.nextInt(matchingVerbs.size())));
+  }
+
   public static Optional<Conjugator> pickRandomConjugator(List<Verb> verbs, List<Tense> tenses) {
     Optional<Verb> verb = pickRandomVerb(verbs);
     if (verb.isEmpty()) {
@@ -151,6 +159,19 @@ public class WordPicker {
       default:
         return Tense.PRESENT;
     }
+  }
+
+  /***
+   * returns a tense from available tenses in a given verb and list of tenses
+   */
+  public static Tense getRandomTense(Verb verb, List<Tense> tenses) {
+    List<Tense> matchingTenses = new ArrayList<>();
+    for (Tense tense : tenses) {
+      if (verb.getConjugators().stream().anyMatch(o -> o.getTense() == tense)) {
+        matchingTenses.add(tense);
+      }
+    }
+    return matchingTenses.get(RANDOM.nextInt(matchingTenses.size()));
   }
 
 

@@ -1,8 +1,6 @@
 package io.github.Redouane59.dz.model.generator.PVD;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.generator.PV.PVSentence;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,13 +9,11 @@ import lombok.Setter;
 @Setter
 public class PVDSentence extends PVSentence {
 
-  @JsonIgnore
-  private Adverb adverb;
 
   @Override
   public String buildSentenceValue(final Lang lang) {
     String pv = super.buildSentenceValue(lang);
-    return cleanResponse(pv + " " + adverb.getTranslationValue(lang));
+    return cleanResponse(pv + " " + getAdverb().getTranslationValue(lang));
   }
 
 }

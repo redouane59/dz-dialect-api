@@ -1,5 +1,5 @@
 {
-  "id": "aider",
+  "id": "demander",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,11 +11,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai aidé"
+              "value": "ai demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awent"
+              "value": "saksit"
             }
           ]
         },
@@ -26,11 +26,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as aidé"
+              "value": "as demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awent"
+              "value": "saksit"
             }
           ]
         },
@@ -41,11 +41,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as aidé"
+              "value": "as demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awenti"
+              "value": "saksiti"
             }
           ]
         },
@@ -56,11 +56,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awen"
+              "value": "saksa"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awnet"
+              "value": "sakeset"
             }
           ]
         },
@@ -86,11 +86,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a aidé"
+              "value": "a demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awena"
+              "value": "saksina"
             }
           ]
         },
@@ -101,11 +101,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez aidé"
+              "value": "avez demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awentou"
+              "value": "saksitou"
             }
           ]
         },
@@ -116,11 +116,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont aidé"
+              "value": "ont demandé"
             },
             {
               "lang": "DZ",
-              "value": "3awnou"
+              "value": "saksaou"
             }
           ]
         }
@@ -136,11 +136,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "demande"
             },
             {
               "lang": "DZ",
-              "value": "n3awen"
+              "value": "nsakse"
             }
           ]
         },
@@ -151,11 +151,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aides"
+              "value": "demandes"
             },
             {
               "lang": "DZ",
-              "value": "t3awen"
+              "value": "tsakse"
             }
           ]
         },
@@ -166,11 +166,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "demandes"
             },
             {
               "lang": "DZ",
-              "value": "3aweni"
+              "value": "saksei"
             }
           ]
         },
@@ -181,11 +181,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "demande"
             },
             {
               "lang": "DZ",
-              "value": "y3awen"
+              "value": "ysakse"
             }
           ]
         },
@@ -196,11 +196,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aide"
+              "value": "demande"
             },
             {
               "lang": "DZ",
-              "value": "t3awen"
+              "value": "tsakse"
             }
           ]
         },
@@ -211,11 +211,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aidons"
+              "value": "demande"
             },
             {
               "lang": "DZ",
-              "value": "n3awenou"
+              "value": "nsakseou"
             }
           ]
         },
@@ -226,11 +226,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aidez"
+              "value": "demandez"
             },
             {
               "lang": "DZ",
-              "value": "t3awenou"
+              "value": "tsakseou"
             }
           ]
         },
@@ -241,11 +241,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "aident"
+              "value": "demandent"
             },
             {
               "lang": "DZ",
-              "value": "y3awenou"
+              "value": "ysakiseou"
             }
           ]
         }
@@ -253,13 +253,12 @@
     }
   ],
   "possible_complements": [
-    "PERSON"
   ],
   "possible_questions": [
-    "WHO",
-    "WHEN"
+    "WHAT",
+    "WHY"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": "LEUR",
+  "reflexive_suffix_dz": "I"
 }

@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.generator;
 
-import io.github.Redouane59.dz.function.BodyArgs;
+import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.sentence.Sentences;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SentenceGenerator {
 
-  private final int      MAX_COUNT = 30;
-  private       BodyArgs bodyArgs;
+  private final int                 MAX_COUNT = 30;
+  private       GeneratorParameters bodyArgs;
 
-  public SentenceGenerator(BodyArgs bodyArgs) {
+  public SentenceGenerator(GeneratorParameters bodyArgs) {
     this.bodyArgs = bodyArgs;
   }
 
@@ -45,19 +45,22 @@ public class SentenceGenerator {
     return result;
   }
 
-  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
-    AbstractSentenceBuilder abstractSentenceBuilder = getRandomSentenceBuilder();
-    return abstractSentenceBuilder.generateRandomSentence(bodyArgs);
+  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
+    Optional<AbstractSentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
+    if (abstractSentenceBuilder.isEmpty()) {
+      return Optional.empty();
+    }
+    return abstractSentenceBuilder.get().generateRandomSentence(bodyArgs);
   }
 
-  public AbstractSentenceBuilder getRandomSentenceBuilder() {
+  public Optional<AbstractSentenceBuilder> getRandomSentenceBuilder() {
     List<? extends AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
                                                                          .stream().filter(o -> o.isCompatible(bodyArgs)).collect(Collectors.toList());
     if (matchingGenerators.isEmpty()) {
       System.err.println("no generator found");
-      return null; // @todo clean that
+      return Optional.empty();
     }
-    return matchingGenerators.get(new Random().nextInt(matchingGenerators.size()));
+    return Optional.of(matchingGenerators.get(new Random().nextInt(matchingGenerators.size())));
   }
 
 }

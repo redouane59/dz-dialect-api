@@ -261,5 +261,7 @@
     "WHAT",
     "WHEN"
   ],
-  "verb_type": "ACTION"
+  "verb_type": "ACTION",
+  "reflexive_suffix_fr": "LEUR",
+  "reflexive_suffix_dz": "LI"
 }

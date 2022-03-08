@@ -12,6 +12,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 
@@ -28,8 +29,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
   @Override
   public void service(final HttpRequest httpRequest, final HttpResponse httpResponse) throws IOException {
     LOGGER.debug("service called");
-    BufferedWriter writer   = httpResponse.getWriter();
-    BodyArgs       bodyArgs = BodyArgs.builder().build();
+    BufferedWriter      writer   = httpResponse.getWriter();
+    GeneratorParameters bodyArgs = GeneratorParameters.builder().build();
     try {
       int count = Integer.parseInt(httpRequest.getFirstQueryParameter(countArg).orElse("1"));
       bodyArgs.setCount(count);
@@ -65,7 +66,7 @@ public class SentenceGeneratorAPI implements HttpFunction {
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
       e.printStackTrace();
-      //writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
+      writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));
       httpResponse.setStatusCode(400);
     } finally {
       LOGGER.debug("service finished");

@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.generator.QVP;
 
-import io.github.Redouane59.dz.function.BodyArgs;
+import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+
+import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Question;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
@@ -12,17 +14,17 @@ import java.util.Optional;
 
 public class QVPSentenceBuilder extends AbstractSentenceBuilder {
 
-  public Optional<AbstractSentence> generateRandomSentence(BodyArgs bodyArgs) {
+  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     QVPSentence    sentence   = new QVPSentence();
     Optional<Verb> randomVerb = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), bodyArgs.getTenses());
     if (randomVerb.isEmpty()) {
       System.out.println("No randomVerb found in QVP");
       return Optional.empty();
     }
-    sentence.setTense(randomVerb.get().getRandomConjugator(bodyArgs.getTenses()).get().getTense());
+    sentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
     Question question = WordPicker.pickRandomInterrogativePronoun(randomVerb.get());
     sentence.setQuestion(question);
-    sentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
+    sentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun());
     sentence.setVerb(randomVerb.get());
     sentence.addFrTranslation(sentence.buildSentenceValue(Lang.FR));
     sentence.addDzTranslation(sentence.buildSentenceValue(Lang.DZ));
@@ -30,7 +32,7 @@ public class QVPSentenceBuilder extends AbstractSentenceBuilder {
   }
 
   @Override
-  public boolean isCompatible(final BodyArgs bodyArgs) {
+  public boolean isCompatible(final GeneratorParameters bodyArgs) {
     return true;
   }
 

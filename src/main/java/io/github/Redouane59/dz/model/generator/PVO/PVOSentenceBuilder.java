@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator.PVN;
+package io.github.Redouane59.dz.model.generator.PVO;
 
 import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
 
@@ -7,31 +7,24 @@ import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
-import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;
 
-public class PVNSentenceBuilder extends AbstractSentenceBuilder {
+public class PVOSentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    PVNSentence randomPVNSentence = new PVNSentence();
-    Optional<Verb>
-        randomVerb =
-        WordPicker.pickRandomVerb(WordPicker.getCompatibleVerbs(bodyArgs.getVerbsFromIds(), bodyArgs.getNounsFromIds()), bodyArgs.getTenses());
+    PVOSentence    randomPVNSentence = new PVOSentence();
+    Optional<Verb> randomVerb        = WordPicker.pickRandomVerb(bodyArgs.getVerbsFromIds(), true);
     if (randomVerb.isEmpty()) {
       System.out.println("No randomVerb found in PVN (2)");
       return Optional.empty();
     }
     randomPVNSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
-    randomPVNSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun());
+    PersonalProunoun personalProunoun = PersonalProunoun.getRandomPersonalPronoun();
+    randomPVNSentence.setPersonalProunoun(personalProunoun);
+    randomPVNSentence.setSuffixPronoun(personalProunoun.getRandomDifferentPersonalPronoun());
     randomPVNSentence.setVerb(randomVerb.get());
-    Optional<Noun> randomNoun = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), randomVerb.get().getPossibleComplements());
-    if (randomNoun.isEmpty()) {
-      System.out.println("No randomVerb found in PVN");
-      return Optional.empty();
-    }
-    randomPVNSentence.setNoun(randomNoun.get());
     randomPVNSentence.addFrTranslation(randomPVNSentence.buildSentenceValue(Lang.FR));
     randomPVNSentence.addDzTranslation(randomPVNSentence.buildSentenceValue(Lang.DZ));
     return Optional.of(randomPVNSentence);
@@ -39,7 +32,7 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
 
   @Override
   public boolean isCompatible(final GeneratorParameters bodyArgs) {
-    return !WordPicker.getCompatibleVerbs(bodyArgs.getVerbsFromIds(), bodyArgs.getNounsFromIds()).isEmpty();
+    return bodyArgs.getVerbsFromIds().stream().anyMatch(o -> o.getReflexiveSuffixDz() != null);
   }
 
 }
