@@ -9,6 +9,7 @@ import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.generator.WordPicker;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
+import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.Optional;
 
 public class PVSentenceBuilder extends AbstractSentenceBuilder {
@@ -30,7 +31,8 @@ public class PVSentenceBuilder extends AbstractSentenceBuilder {
 
   @Override
   public boolean isCompatible(final GeneratorParameters bodyArgs) {
-    return true;
+    return (bodyArgs.getVerbsFromIds().stream().noneMatch(v -> v.getPossibleComplements() != null))
+           && (bodyArgs.getVerbsFromIds().stream().noneMatch(v -> v.getVerbType() != VerbType.STATE));
   }
 
 }

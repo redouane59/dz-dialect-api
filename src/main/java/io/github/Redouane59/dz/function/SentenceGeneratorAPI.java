@@ -29,6 +29,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
   @Override
   public void service(final HttpRequest httpRequest, final HttpResponse httpResponse) throws IOException {
     LOGGER.debug("service called");
+    httpResponse.appendHeader("Access-Control-Allow-Origin", "*");
+
     BufferedWriter      writer   = httpResponse.getWriter();
     GeneratorParameters bodyArgs = GeneratorParameters.builder().build();
     try {
