@@ -1,5 +1,6 @@
 package io.github.Redouane59.dz.model.sentence.PVN;
 
+import io.github.Redouane59.dz.model.Article;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.sentence.PV.PVSentence;
 import lombok.Getter;
@@ -25,10 +26,12 @@ public class PVNSentence extends PVSentence {
         result += getNoun().getDeplacementProposition(lang).get().getValue();
         break;
       case ACTION:
-        result += getNoun().getValues().get(0).getGender().getArticleTranslationValue(lang, nounValue);
+        result += Article.getArticle(getNoun().getValues().get(0).getGender(), true, true)
+                         .get().getTranslationValue(lang, nounValue);
         break;
       case POSSESSION:
-        result += getNoun().getValues().get(0).getGender().getUndefinedArticleTranslationValue(lang);
+        result += Article.getArticle(getNoun().getValues().get(0).getGender(), true, false)
+                         .get().getTranslationValue(lang, nounValue);
         break;
     }
 

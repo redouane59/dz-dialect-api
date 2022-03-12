@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.sentences;
+package io.github.Redouane59.dz.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

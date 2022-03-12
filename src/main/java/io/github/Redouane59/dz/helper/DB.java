@@ -25,7 +25,7 @@ public class DB {
       try {
         VERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Verb.class));
       } catch (IOException e) {
-        e.printStackTrace();
+        System.err.println("could not load file " + fileName);
       }
     }
     System.out.println(VERBS.size() + " verbs loaded");
@@ -39,7 +39,7 @@ public class DB {
       try {
         ADJECTIVES.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Adjective.class));
       } catch (IOException e) {
-        e.printStackTrace();
+        System.err.println("could not load file " + fileName);
       }
     }
     System.out.println(ADJECTIVES.size() + " adjectives loaded");
@@ -53,7 +53,7 @@ public class DB {
       try {
         NOUNS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Noun.class));
       } catch (IOException e) {
-        e.printStackTrace();
+        System.err.println("could not load file " + fileName);
       }
     }
     System.out.println(NOUNS.size() + " nouns loaded\n");
@@ -67,7 +67,7 @@ public class DB {
       try {
         ADVERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Adverb.class));
       } catch (IOException e) {
-        e.printStackTrace();
+        System.err.println("could not load file " + fileName);
       }
     }
     System.out.println(ADVERBS.size() + " verbs loaded");

@@ -20,6 +20,9 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
+/*
+Translation values inserted through personal_pronouns.json file
+ */
 public enum PersonalProunoun {
 
   I("1XS"),
@@ -72,6 +75,7 @@ public enum PersonalProunoun {
     return matchingPronouns.get(new Random().nextInt(matchingPronouns.size()));
   }
 
+  // @todo duplicated
   public String getTranslationValue(Lang lang) {
     Optional<Translation> result = translations.stream().filter(o -> o.getLang() == lang).findAny();
     if (result.isEmpty()) {

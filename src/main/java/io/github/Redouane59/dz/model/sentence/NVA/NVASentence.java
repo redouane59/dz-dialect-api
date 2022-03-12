@@ -1,6 +1,7 @@
 package io.github.Redouane59.dz.model.sentence.NVA;
 
 import io.github.Redouane59.dz.helper.Config;
+import io.github.Redouane59.dz.model.Article;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
@@ -39,7 +40,8 @@ public class NVASentence extends AbstractSentence {
       verbValue = conjugation.get().getTranslationValue(lang);
     }
 
-    String result = nounWord.getGender().getArticleTranslationValue(lang, nounValue) + " ";
+    String result = Article.getArticle(nounWord.getGender(), true, true)
+                           .get().getTranslationValue(lang, nounValue) + " ";
     result += nounValue + " ";
     if (Config.DISPLAY_STATE_VERB.contains(lang) || getTense() != Tense.PRESENT) {
       result += verbValue + " ";

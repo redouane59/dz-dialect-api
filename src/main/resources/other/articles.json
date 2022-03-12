@@ -1,0 +1,98 @@
+[
+  {
+    "id": "le",
+    "gender": "M",
+    "defined": true,
+    "singular": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "le"
+      },
+      {
+        "lang": "DZ",
+        "value": "el"
+      }
+    ]
+  },
+  {
+    "id": "la",
+    "gender": "F",
+    "defined": true,
+    "singular": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "la"
+      },
+      {
+        "lang": "DZ",
+        "value": "el"
+      }
+    ]
+  },
+  {
+    "id": "les",
+    "gender": "X",
+    "defined": true,
+    "singular": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "les"
+      },
+      {
+        "lang": "DZ",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "un",
+    "gender": "M",
+    "defined": false,
+    "singular": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "un"
+      },
+      {
+        "lang": "DZ",
+        "value": "wa7ad"
+      }
+    ]
+  },
+  {
+    "id": "une",
+    "gender": "F",
+    "defined": false,
+    "singular": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "une"
+      },
+      {
+        "lang": "DZ",
+        "value": "wa7ad"
+      }
+    ]
+  },
+  {
+    "id": "des",
+    "gender": "X",
+    "defined": false,
+    "singular": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "des"
+      },
+      {
+        "lang": "DZ",
+        "value": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "qui",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "qui"
+      },
+      {
+        "lang": "DZ",
+        "value": "chkoun"
+      }
+    ]
+  },
+  {
+    "id": "quand",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "quand est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "wo9tach"
+      }
+    ]
+  },
+  {
+    "id": "où",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "où est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "win"
+      }
+    ]
+  },
+  {
+    "id": "comment",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "comment est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "kiffech"
+      }
+    ]
+  },
+  {
+    "id": "pourquoi",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "pourquoi est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "wa3lech"
+      }
+    ]
+  },
+  {
+    "id": "combien",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "combien est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "ch7al"
+      }
+    ]
+  },
+  {
+    "id": "quoi",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "qu'est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "wesh"
+      }
+    ]
+  }
+]
