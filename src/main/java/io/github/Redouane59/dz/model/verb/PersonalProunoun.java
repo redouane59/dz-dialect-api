@@ -25,30 +25,28 @@ Translation values inserted through personal_pronouns.json file
  */
 public enum PersonalProunoun {
 
-  I("1XS"),
-  YOU_M("2MS"),
-  YOU_F("2FS"),
-  HE("3MS"),
-  SHE("3FS"),
-  WE("1XP"),
-  YOU_P("2XP"),
-  THEY_M("3MP"),
-  THEY_F("3FP"),
-  UNDEFINED("UNDEFINED");
+  I,
+  YOU_M,
+  YOU_F,
+  HE,
+  SHE,
+  WE,
+  YOU_P,
+  THEY_M,
+  THEY_F,
+  UNDEFINED;
 
-  private final String            id;
-  private       Possession        possession;
-  private       boolean           singular;
-  private       Gender            gender;
-  private       List<Translation> translations;
+  private Possession        possession;
+  private boolean           singular;
+  private Gender            gender;
+  private List<Translation> translations;
 
-  PersonalProunoun(String id) {
-    this.id = id;
+  PersonalProunoun() {
     try {
       File       file              = new File("src/main/resources/other/personal_pronouns.json");
       JsonNode[] personalProunouns = Config.OBJECT_MAPPER.readValue(file, JsonNode[].class);
       for (JsonNode jsonNode : personalProunouns) {
-        if (jsonNode.get("id").asText().equals(id)) {
+        if (jsonNode.get("id").asText().equals(this.name())) {
           this.gender       = Gender.valueOf(jsonNode.get("gender").asText());
           this.possession   = Possession.valueOf(jsonNode.get("possession").asText());
           this.singular     = jsonNode.get("singular").asBoolean();

@@ -1,6 +1,6 @@
 [
   {
-    "id": "qui",
+    "id": "WHO",
     "translations": [
       {
         "lang": "FR",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": "quand",
+    "id": "WHEN",
     "translations": [
       {
         "lang": "FR",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": "où",
+    "id": "WHERE",
     "translations": [
       {
         "lang": "FR",
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "id": "comment",
+    "id": "HOW",
     "translations": [
       {
         "lang": "FR",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": "pourquoi",
+    "id": "WHY",
     "translations": [
       {
         "lang": "FR",
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "id": "combien",
+    "id": "HOW_MANY",
     "translations": [
       {
         "lang": "FR",
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "id": "quoi",
+    "id": "WHAT",
     "translations": [
       {
         "lang": "FR",

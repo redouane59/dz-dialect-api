@@ -11,28 +11,29 @@ import java.util.Optional;
 import lombok.Getter;
 
 @Getter
+/*
+Translation values inserted through articles.json file
+ */
 public enum Article {
-  LE("le"),
-  LA("la"),
-  LES("les"),
-  UN("un"),
-  UNE("une"),
-  DES("des");
+  LE,
+  LA,
+  LES,
+  UN,
+  UNE,
+  DES;
 
-  private final String            id;
-  private       Gender            gender;
-  private       boolean           defined;
-  private       boolean           singular;
-  private       List<Translation> translations;
+  private Gender            gender;
+  private boolean           defined;
+  private boolean           singular;
+  private List<Translation> translations;
 
 
-  Article(String id) {
-    this.id = id;
-    try { // @todo to finish
+  Article() {
+    try {
       File       file              = new File("src/main/resources/other/articles.json");
       JsonNode[] personalProunouns = Config.OBJECT_MAPPER.readValue(file, JsonNode[].class);
       for (JsonNode jsonNode : personalProunouns) {
-        if (jsonNode.get("id").asText().equals(id)) {
+        if (jsonNode.get("id").asText().equals(this.name())) {
           this.gender       = Gender.valueOf(jsonNode.get("gender").asText());
           this.defined      = jsonNode.get("defined").asBoolean();
           this.singular     = jsonNode.get("singular").asBoolean();

@@ -14,7 +14,6 @@ public class ArticleEnumTest {
   @Test
   public void test1() {
     Article le = Article.LE;
-    assertEquals(le.getId(), "le");
     assertEquals(le.getGender(), Gender.M);
     assertTrue(le.isDefined());
     assertTrue(le.isSingular());
@@ -22,7 +21,6 @@ public class ArticleEnumTest {
     assertEquals(le.getTranslationValue(Lang.DZ, "_"), "el");
 
     Article des = Article.DES;
-    assertEquals(des.getId(), "des");
     assertEquals(des.getGender(), Gender.X);
     assertFalse(des.isDefined());
     assertFalse(des.isSingular());

@@ -14,7 +14,6 @@ public class PersonalPronounsEnumTest {
   @Test
   public void test1() {
     PersonalProunoun i = PersonalProunoun.I;
-    assertEquals(i.getId(), "1XS");
     assertEquals(i.getPossession(), Possession.I);
     assertTrue(i.isSingular());
     assertEquals(i.getGender(), Gender.X);
@@ -22,7 +21,6 @@ public class PersonalPronounsEnumTest {
     assertEquals(i.getTranslationValue(Lang.DZ), "ana");
 
     PersonalProunoun y = PersonalProunoun.YOU_M;
-    assertEquals(y.getId(), "2MS");
     assertEquals(y.getPossession(), Possession.YOU);
     assertTrue(y.isSingular());
     assertEquals(y.getGender(), Gender.M);

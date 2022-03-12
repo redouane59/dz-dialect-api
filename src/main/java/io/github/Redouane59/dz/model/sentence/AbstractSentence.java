@@ -70,7 +70,7 @@ public abstract class AbstractSentence extends Word {
   public JsonNode getAdditionalInformations() {
     ObjectNode node = new ObjectMapper().createObjectNode();
     if (personalProunoun != null) {
-      node.put("personal_prounoun", personalProunoun.getId());
+      node.put("personal_prounoun", personalProunoun.name());
     }
     if (verb != null) {
       node.put("verb", verb.getId());
@@ -88,10 +88,10 @@ public abstract class AbstractSentence extends Word {
       node.put("adverb", adverb.getId());
     }
     if (suffixPronoun != null) {
-      node.put("suffix_pronoun", suffixPronoun.getId());
+      node.put("suffix_pronoun", suffixPronoun.name());
     }
     if (question != null) {
-      node.put("question", question.getId());
+      node.put("question", question.name());
     }
     return node;
   }

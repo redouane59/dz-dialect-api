@@ -1,6 +1,6 @@
 [
   {
-    "id": "1XS",
+    "id": "I",
     "possession": "I",
     "singular": true,
     "gender": "X",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": "2MS",
+    "id": "YOU_M",
     "possession": "YOU",
     "singular": true,
     "gender": "M",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": "2FS",
+    "id": "YOU_F",
     "possession": "YOU",
     "singular": true,
     "gender": "F",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": "3MS",
+    "id": "HE",
     "possession": "OTHER",
     "singular": true,
     "gender": "M",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": "3FS",
+    "id": "SHE",
     "possession": "OTHER",
     "singular": true,
     "gender": "F",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": "1XP",
+    "id": "WE",
     "possession": "I",
     "singular": false,
     "gender": "X",
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "id": "2XP",
+    "id": "YOU_P",
     "possession": "YOU",
     "singular": false,
     "gender": "X",
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "id": "3MP",
+    "id": "THEY_M",
     "possession": "OTHER",
     "singular": false,
     "gender": "M",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "id": "3FP",
+    "id": "THEY_F",
     "possession": "OTHER",
     "singular": false,
     "gender": "F",

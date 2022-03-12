@@ -1,6 +1,6 @@
 [
   {
-    "id": "le",
+    "id": "LE",
     "gender": "M",
     "defined": true,
     "singular": true,
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": "la",
+    "id": "LA",
     "gender": "F",
     "defined": true,
     "singular": true,
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": "les",
+    "id": "LES",
     "gender": "X",
     "defined": true,
     "singular": false,
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": "un",
+    "id": "UN",
     "gender": "M",
     "defined": false,
     "singular": true,
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": "une",
+    "id": "UNE",
     "gender": "F",
     "defined": false,
     "singular": true,
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": "des",
+    "id": "DES",
     "gender": "X",
     "defined": false,
     "singular": false,

@@ -19,25 +19,23 @@ Translation values inserted through question.json file
  */
 public enum Question {
 
-  WHO("qui"),
-  WHEN("quand"),
-  WHERE("où"),
-  HOW("comment"),
-  WHY("pourquoi"),
-  HOW_MANY("combien"),
-  WHAT("quoi");
+  WHO,
+  WHEN,
+  WHERE,
+  HOW,
+  WHY,
+  HOW_MANY,
+  WHAT;
 
   private static final List<Question>    VALUES = Collections.unmodifiableList(Arrays.asList(values()));
-  private final        String            id;
   private              List<Translation> translations;
 
-  Question(String id) {
-    this.id = id;
+  Question() {
     try {
       File       file              = new File("src/main/resources/other/questions.json");
       JsonNode[] personalProunouns = Config.OBJECT_MAPPER.readValue(file, JsonNode[].class);
       for (JsonNode jsonNode : personalProunouns) {
-        if (jsonNode.get("id").asText().equals(id)) {
+        if (jsonNode.get("id").asText().equals(this.name())) {
           this.translations = Config.OBJECT_MAPPER.readValue(jsonNode.get("translations").toString(), new TypeReference<List<Translation>>() {
           });
         }
