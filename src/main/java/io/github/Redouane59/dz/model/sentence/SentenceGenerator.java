@@ -1,7 +1,6 @@
-package io.github.Redouane59.dz.model.generator;
+package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
-import io.github.Redouane59.dz.model.sentence.Sentences;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

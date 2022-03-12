@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1XS",
+    "possession": "I",
+    "singular": true,
+    "gender": "X",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "je"
+      },
+      {
+        "lang": "DZ",
+        "value": "ana"
+      }
+    ]
+  },
+  {
+    "id": "2MS",
+    "possession": "YOU",
+    "singular": true,
+    "gender": "M",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "tu"
+      },
+      {
+        "lang": "DZ",
+        "value": "enta"
+      }
+    ]
+  },
+  {
+    "id": "2FS",
+    "possession": "YOU",
+    "singular": true,
+    "gender": "F",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "tu"
+      },
+      {
+        "lang": "DZ",
+        "value": "enti"
+      }
+    ]
+  },
+  {
+    "id": "3MS",
+    "possession": "OTHER",
+    "singular": true,
+    "gender": "M",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "il"
+      },
+      {
+        "lang": "DZ",
+        "value": "houwa"
+      }
+    ]
+  },
+  {
+    "id": "3FS",
+    "possession": "OTHER",
+    "singular": true,
+    "gender": "F",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "elle"
+      },
+      {
+        "lang": "DZ",
+        "value": "hiya"
+      }
+    ]
+  },
+  {
+    "id": "1XP",
+    "possession": "I",
+    "singular": false,
+    "gender": "X",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "on"
+      },
+      {
+        "lang": "DZ",
+        "value": "7na"
+      }
+    ]
+  },
+  {
+    "id": "2XP",
+    "possession": "YOU",
+    "singular": false,
+    "gender": "X",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "vous"
+      },
+      {
+        "lang": "DZ",
+        "value": "ntouma"
+      }
+    ]
+  },
+  {
+    "id": "3MP",
+    "possession": "OTHER",
+    "singular": false,
+    "gender": "M",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "ils"
+      },
+      {
+        "lang": "DZ",
+        "value": "houma"
+      }
+    ]
+  },
+  {
+    "id": "3FP",
+    "possession": "OTHER",
+    "singular": false,
+    "gender": "F",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "elles"
+      },
+      {
+        "lang": "DZ",
+        "value": "houma"
+      }
+    ]
+  }
+]

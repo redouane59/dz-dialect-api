@@ -2,7 +2,6 @@ package io.github.Redouane59.dz.model.sentence;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
 import java.util.List;
 import java.util.Set;
 import lombok.AllArgsConstructor;

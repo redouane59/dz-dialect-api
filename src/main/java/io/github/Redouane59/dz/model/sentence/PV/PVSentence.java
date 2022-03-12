@@ -1,8 +1,8 @@
-package io.github.Redouane59.dz.model.generator.PV;
+package io.github.Redouane59.dz.model.sentence.PV;
 
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
 import io.github.Redouane59.dz.model.verb.Conjugation;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import java.util.Optional;
@@ -11,6 +11,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
+/*
+  Pronoun + Verb
+ */
 public class PVSentence extends AbstractSentence {
 
 

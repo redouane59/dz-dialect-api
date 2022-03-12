@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator;
+package io.github.Redouane59.dz.model.sentence;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;

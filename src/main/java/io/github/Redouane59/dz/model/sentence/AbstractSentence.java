@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.generator;
+package io.github.Redouane59.dz.model.sentence;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -7,10 +7,10 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.Question;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -22,7 +22,6 @@ import lombok.Setter;
 @Setter
 @JsonSerialize(using = AbstractSentenceSerializer.class)
 public abstract class AbstractSentence extends Word {
-
 
   @JsonIgnore
   private PersonalProunoun personalProunoun;
@@ -44,7 +43,7 @@ public abstract class AbstractSentence extends Word {
   @JsonIgnore
   public static String cleanResponse(String result) {
     String newResult = result;
-    // replacing je + vowel with j'+vowel
+    // replacing pronouns & articles ending with a vowel when the next word also start by a vowel
     for (char c : Config.VOWELS) {
       newResult = newResult.replace("je " + c, "j'" + c);
       newResult = newResult.replace("ce " + c, "c'" + c);
@@ -62,33 +61,37 @@ public abstract class AbstractSentence extends Word {
   }
 
   @JsonIgnore
+  /**
+   * Returns a translated sentence based on the different set attributes
+   */
   public abstract String buildSentenceValue(Lang lang);
 
+  // used for serialization
   public JsonNode getAdditionalInformations() {
-    JsonNode node = new ObjectMapper().createObjectNode();
+    ObjectNode node = new ObjectMapper().createObjectNode();
     if (personalProunoun != null) {
-      ((ObjectNode) node).put("personal_prounoun", personalProunoun.getId());
+      node.put("personal_prounoun", personalProunoun.getId());
     }
     if (verb != null) {
-      ((ObjectNode) node).put("verb", verb.getId());
+      node.put("verb", verb.getId());
     }
     if (noun != null) {
-      ((ObjectNode) node).put("noun", noun.getId());
+      node.put("noun", noun.getId());
     }
     if (adjective != null) {
-      ((ObjectNode) node).put("adjective", adjective.getId());
+      node.put("adjective", adjective.getId());
     }
     if (tense != null) {
-      ((ObjectNode) node).put("tense", tense.getId());
+      node.put("tense", tense.getId());
     }
     if (adverb != null) {
-      ((ObjectNode) node).put("adverb", adverb.getId());
+      node.put("adverb", adverb.getId());
     }
     if (suffixPronoun != null) {
-      ((ObjectNode) node).put("suffix_pronoun", suffixPronoun.getId());
+      node.put("suffix_pronoun", suffixPronoun.getId());
     }
     if (question != null) {
-      ((ObjectNode) node).put("question", question.getId());
+      node.put("question", question.getId());
     }
     return node;
   }

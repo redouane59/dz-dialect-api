@@ -1,13 +1,13 @@
-package io.github.Redouane59.dz.model.generator.NVA;
+package io.github.Redouane59.dz.model.sentence.NVA;
 
-import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
-import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
-import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.WordPicker;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.Verb;

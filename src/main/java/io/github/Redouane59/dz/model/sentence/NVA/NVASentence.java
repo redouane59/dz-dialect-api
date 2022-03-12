@@ -1,9 +1,9 @@
-package io.github.Redouane59.dz.model.generator.NVA;
+package io.github.Redouane59.dz.model.sentence.NVA;
 
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
 import io.github.Redouane59.dz.model.verb.Conjugation;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.Tense;
@@ -14,6 +14,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
+
+/*
+  Noun + verb + adjectif
+ */
 public class NVASentence extends AbstractSentence {
 
   @Override

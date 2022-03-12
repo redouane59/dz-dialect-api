@@ -1,13 +1,13 @@
-package io.github.Redouane59.dz.model.generator.QVP;
+package io.github.Redouane59.dz.model.sentence.QVP;
 
-import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.Question;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
-import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
-import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.WordPicker;
+import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;

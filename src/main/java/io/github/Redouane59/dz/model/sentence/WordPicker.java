@@ -1,10 +1,10 @@
-package io.github.Redouane59.dz.model.generator;
+package io.github.Redouane59.dz.model.sentence;
 
-import io.github.Redouane59.dz.model.Question;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
+import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;

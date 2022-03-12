@@ -1,5 +1,7 @@
-package io.github.Redouane59.dz.model;
+package io.github.Redouane59.dz.model.question;
 
+import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Translation;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -9,6 +11,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
+// @todo use json instead of translation
 public enum Question {
 
   WHO("qui", List.of(new Translation(Lang.FR, "qui"), new Translation(Lang.DZ, "chkoun"))),

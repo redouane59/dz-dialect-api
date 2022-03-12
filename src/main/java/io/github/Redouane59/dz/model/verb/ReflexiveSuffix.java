@@ -1,11 +1,16 @@
 package io.github.Redouane59.dz.model.verb;
 
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.RootLang;
 import java.util.List;
 import java.util.Optional;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
+/**
+ * Suffixes associated to a verb that replace a noun in sentences
+ */
+// @todo use json instead of translation
 public enum ReflexiveSuffix {
   LI(Lang.DZ, List.of(
       new PPSuffix(PersonalProunoun.I, "li"),
@@ -77,7 +82,7 @@ public enum ReflexiveSuffix {
     String value = ppSuffix.get().getSuffixValue();
 
     // manage double letters
-    if (lang == Lang.DZ && verbValue.charAt(verbValue.length() - 1) == value.charAt(0)) {
+    if (lang.getRootLang() == RootLang.AR && verbValue.charAt(verbValue.length() - 1) == value.charAt(0)) { // @todo use root lang
       value = value.substring(1);
     }
     return value;

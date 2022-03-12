@@ -2,7 +2,7 @@ package io.github.Redouane59.dz.database;
 
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
 import io.github.Redouane59.dz.model.verb.Verb;
 import org.junit.jupiter.api.Test;
 

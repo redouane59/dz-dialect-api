@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
-import io.github.Redouane59.dz.model.generator.PV.PVSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.PV.PVSentenceBuilder;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 

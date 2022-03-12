@@ -1,14 +1,14 @@
-package io.github.Redouane59.dz.model.generator.PVA;
+package io.github.Redouane59.dz.model.sentence.PVA;
 
-import static io.github.Redouane59.dz.model.generator.WordPicker.getRandomTense;
+import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.generator.AbstractSentence;
-import io.github.Redouane59.dz.model.generator.AbstractSentenceBuilder;
-import io.github.Redouane59.dz.model.generator.WordPicker;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.WordPicker;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
