@@ -29,7 +29,7 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 
 | Name        | Tech           | Repository  | App Link  |
 | ------------- |:-------------:| :-----:| :-----:|
-| [@LounesBadji](https://twitter.com/LounesBadji) |  Angular     | [https://github.com/badjilounes/dz-dialect-app](https://github.com/badjilounes/dz-dialect-app)     | [dz-dialect-app.herokuapp.com](dz-dialect-app.herokuapp.com) |
+| [@LounesBadji](https://twitter.com/LounesBadji) |  Angular     | [https://github.com/badjilounes/dz-dialect-app](https://github.com/badjilounes/dz-dialect-app)     | [dz-dialect-app.herokuapp.com](https://dz-dialect-app.herokuapp.com) |
 | [Samy Iguertsira](https://www.linkedin.com/in/samy-iguertsira-960b40117/) | Python / Django      |     | |
 | [Benaissa NAIMI](https://www.linkedin.com/in/benaissa-naimi-5493a1127/)      | ?|  | |
 | [Anis M. HADDOUCHE](https://www.linkedin.com/in/anis-m-haddouche-phd-a8667175/)      | Machine Learning      | [https://github.com/AnisHdd](https://github.com/AnisHdd)   |
