@@ -23,7 +23,7 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 | NVA | Noun + verb + adjective |
 | QVP | Interrogative pronoun + verb + personal pronoun |
 
-## Contribution sollicitations
+## Contribution solicitations
 
 
 
