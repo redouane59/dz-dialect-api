@@ -33,10 +33,14 @@ Interrogative pronoun + verb + personal pronoun
 
 ## Contribution sollicitations
 
-- [Benaissa NAIMI](https://www.linkedin.com/in/benaissa-naimi-5493a1127/) => 
-- [Anis M. HADDOUCHE](https://www.linkedin.com/in/anis-m-haddouche-phd-a8667175/) =>
-- [Samy Iguertsira](https://www.linkedin.com/in/samy-iguertsira-960b40117/) => Python / Django
-- [@mohamed_mjbr](https://twitter.com/mohamed_mjbr) =>
-- [@Amir__B_](https://twitter.com/Amir__B_) => 
-- [@LounesBadji](https://twitter.com/LounesBadji) => Angular
-- [@ilyesamr](https://twitter.com/ilyesamr) =>
+
+
+| Name        | Tech           | Repo  | Link  |
+| ------------- |:-------------:| :-----:| :-----:|
+| [@LounesBadji](https://twitter.com/LounesBadji) |  Angular     | [https://github.com/badjilounes/dz-dialect-app](https://github.com/badjilounes/dz-dialect-app)     | [dz-dialect-app.herokuapp.com](dz-dialect-app.herokuapp.com) |
+| [Samy Iguertsira](https://www.linkedin.com/in/samy-iguertsira-960b40117/) | Python / Django      |     | |
+| [Benaissa NAIMI](https://www.linkedin.com/in/benaissa-naimi-5493a1127/)      | ?|  | |
+| [Anis M. HADDOUCHE](https://www.linkedin.com/in/anis-m-haddouche-phd-a8667175/)      | Machine Learning      | [https://github.com/AnisHdd]((https://github.com/AnisHdd))   |
+| [@mohamed_mjbr](https://twitter.com/mohamed_mjbr) |  VanillaJS     |     | |
+| [@Amir__B_](https://twitter.com/Amir__B_) |  PHP / JS     |     | |
+| [@ilyesamr](https://twitter.com/ilyesamr) |       |     | |
