@@ -13,23 +13,15 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 
 ## Type of sentences 
 
-### PV
-Personal pronoun + verb
 
-### PVN
-Personal pronoun + verb + noun
-
-### PVA
-Personal pronoun + verb + adjective
-
-### PVD
-Personal pronoun + verb + adveb
-
-### NVA
-Noun + verb + adjective
-
-### QVP
-Interrogative pronoun + verb + personal pronoun 
+| Enum name        | Description           |
+| :-------------: |:-------------:|
+| PV | Personal pronoun + verb |
+| PVN | Personal pronoun + verb + noun |
+| PVA | Personal pronoun + verb + adjective |
+| PVD | Personal pronoun + verb + adveb |
+| NVA | Noun + verb + adjective |
+| QVP | Interrogative pronoun + verb + personal pronoun |
 
 ## Contribution sollicitations
 
