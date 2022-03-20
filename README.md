@@ -36,4 +36,6 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 | [@Amir__B_](https://twitter.com/Amir__B_) |  PHP Laravel / VueJS     | [https://github.com/AmirBouzouina](https://github.com/AmirBouzouina)     | |
 | [@ilyesamr](https://twitter.com/ilyesamr) | JavaScript       |     | |
 | [@mohamed__ka](https://twitter.com/mohamed__ka) | PHP Symfony | |
+| [@slimlapointe](https://twitter.com/slimlapointe) | Angular/NodeJS/Python | [https://github.com/SlimaneBouss](https://github.com/SlimaneBouss) | |
 | [@Sanhajadeter](https://twitter.com/Sanhajadeter) | Design | [https://www.behance.net/kutam](https://www.behance.net/kutam) | |
+
