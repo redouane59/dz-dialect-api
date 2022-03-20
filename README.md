@@ -35,7 +35,7 @@ Interrogative pronoun + verb + personal pronoun
 
 
 
-| Name        | Tech           | Repo  | Link  |
+| Name        | Tech           | Repository  | App Link  |
 | ------------- |:-------------:| :-----:| :-----:|
 | [@LounesBadji](https://twitter.com/LounesBadji) |  Angular     | [https://github.com/badjilounes/dz-dialect-app](https://github.com/badjilounes/dz-dialect-app)     | [dz-dialect-app.herokuapp.com](dz-dialect-app.herokuapp.com) |
 | [Samy Iguertsira](https://www.linkedin.com/in/samy-iguertsira-960b40117/) | Python / Django      |     | |
