@@ -34,7 +34,7 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 | [Benaissa NAIMI](https://www.linkedin.com/in/benaissa-naimi-5493a1127/)      | ?|  | |
 | [Anis M. HADDOUCHE](https://www.linkedin.com/in/anis-m-haddouche-phd-a8667175/)      | Machine Learning      | [https://github.com/AnisHdd](https://github.com/AnisHdd)   |
 | [@mohamed_mjbr](https://twitter.com/mohamed_mjbr) |  VanillaJS     |     | |
-| [@Amir__B_](https://twitter.com/Amir__B_) |  PHP / JS     |     | |
+| [@Amir__B_](https://twitter.com/Amir__B_) |  Laravel / VueJS     |     | |
 | [@ilyesamr](https://twitter.com/ilyesamr) | JavaScript       |     | |
 | [@mohamed__ka](https://twitter.com/mohamed__ka) | | |
 | [@Sanhajadeter](https://twitter.com/Sanhajadeter) | Design | [https://www.behance.net/kutam](https://www.behance.net/kutam) | |
