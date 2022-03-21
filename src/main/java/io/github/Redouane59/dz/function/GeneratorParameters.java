@@ -1,10 +1,12 @@
 package io.github.Redouane59.dz.function;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
+import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.NVA.NVASentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVA.PVASentenceBuilder;
@@ -12,7 +14,6 @@ import io.github.Redouane59.dz.model.sentence.PVD.PVDSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVN.PVNSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVO.PVOSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.QVP.QVPSentenceBuilder;
-import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -42,6 +43,7 @@ public class GeneratorParameters {
   private List<WordType>                          wordTypes  =
       List.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
   @Builder.Default
+  @JsonIgnore
   private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(),
                                                                        new PVASentenceBuilder(),
                                                                        new NVASentenceBuilder(),
@@ -49,20 +51,25 @@ public class GeneratorParameters {
                                                                        new QVPSentenceBuilder(),
                                                                        new PVOSentenceBuilder());
   @Builder.Default
+  @JsonIgnore
   private int                                     count      = 1;
 
+  @JsonIgnore
   public List<Verb> getVerbsFromIds() {
     return DB.VERBS.stream().filter(o -> verbs.contains(o.getId())).collect(Collectors.toList());
   }
 
+  @JsonIgnore
   public List<Noun> getNounsFromIds() {
     return DB.NOUNS.stream().filter(o -> nouns.contains(o.getId())).collect(Collectors.toList());
   }
 
+  @JsonIgnore
   public List<Adjective> getAdjectivesFromIds() {
     return DB.ADJECTIVES.stream().filter(o -> adjectives.contains(o.getId())).collect(Collectors.toList());
   }
 
+  @JsonIgnore
   public List<Adverb> getAdverbsFromIds() {
     return DB.ADVERBS.stream().filter(o -> adverbs.contains(o.getId())).collect(Collectors.toList());
   }

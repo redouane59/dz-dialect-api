@@ -20,6 +20,8 @@
         <configuration>
           <functionTarget>io.github.Redouane59.dz.function.SentenceGeneratorAPI
           </functionTarget>
+          <functionTarget>io.github.Redouane59.dz.function.GetDatabaseElementsAPI
+          </functionTarget>
         </configuration>
         <groupId>com.google.cloud.functions</groupId>
         <version>0.9.7</version>
