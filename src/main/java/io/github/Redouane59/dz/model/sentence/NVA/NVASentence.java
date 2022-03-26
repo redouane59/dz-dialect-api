@@ -23,7 +23,8 @@ public class NVASentence extends AbstractSentence {
 
   @Override
   public String buildSentenceValue(final Lang lang) {
-    GenderedWord         nounWord   = getNoun().getWordBySingular(true);//@todo random singular
+    boolean              isSingular = true; //new Random().nextInt() % 2 == 0;
+    GenderedWord         nounWord   = getNoun().getWordBySingular(isSingular);
     String               nounValue  = nounWord.getTranslationValue(lang);
     Optional<Conjugator> conjugator = getVerb().getConjugationByTense(getTense());
     if (conjugator.isEmpty()) {
@@ -40,7 +41,7 @@ public class NVASentence extends AbstractSentence {
       verbValue = conjugation.get().getTranslationValue(lang);
     }
 
-    String result = Article.getArticle(nounWord.getGender(), true, true)
+    String result = Article.getArticle(nounWord.getGender(), nounWord.isSingular(), true)
                            .get().getTranslationValue(lang, nounValue) + " ";
     result += nounValue + " ";
     if (Config.DISPLAY_STATE_VERB.contains(lang) || getTense() != Tense.PRESENT) {

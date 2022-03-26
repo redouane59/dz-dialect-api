@@ -3,7 +3,7 @@ package io.github.Redouane59.dz.model.complement.adjective;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import java.util.List;
+import java.util.Set;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class Adjective extends AbstractWord {
 
   @JsonProperty("possible_nouns")
-  List<NounType> possibleNouns;
+  Set<NounType> possibleNouns;
 }

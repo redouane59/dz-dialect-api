@@ -2,37 +2,45 @@ package io.github.Redouane59.dz.model.verb;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.Config;
+import io.github.Redouane59.dz.helper.FileHelper;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
+import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @Getter
+@Setter
 public class Verb extends AbstractWord {
 
   @JsonProperty("possible_questions")
-  private final List<Question>   possibleQuestions   = new ArrayList<>();
-  private final List<Conjugator> conjugators         = new ArrayList<>();
+  private final Set<Question>   possibleQuestions   = new HashSet<>();
+  private final Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_complements")
-  private final List<NounType>   possibleComplements = new ArrayList<>();
+  private final Set<NounType>   possibleComplements = new HashSet<>();
   @JsonProperty("verb_type")
-  private       VerbType         verbType;
+  private       VerbType        verbType;
   @JsonProperty("reflexive_suffix_fr")
-  private       ReflexiveSuffix  reflexiveSuffixFr;
+  private       ReflexiveSuffix reflexiveSuffixFr;
   @JsonProperty("reflexive_suffix_dz")
-  private       ReflexiveSuffix  reflexiveSuffixDz;
+  private       ReflexiveSuffix reflexiveSuffixDz;
 
-  public Optional<Conjugator> getRandomConjugator(List<Tense> tenses) {
+  public Verb(String fileName) {
+    List<List<String>> entries = FileHelper.getCsv(fileName, ";");
+  }
+
+  public Optional<Conjugator> getRandomConjugator(Set<Tense> tenses) {
     List<Conjugator> matchingConjugator = conjugators.stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());
     if (matchingConjugator.isEmpty()) {
       return Optional.empty();
@@ -44,7 +52,7 @@ public class Verb extends AbstractWord {
     return Optional.of(conjugator.getConjugations().get(new Random().nextInt(conjugator.getConjugations().size())));
   }
 
-  public Optional<Conjugation> getRandomConjugationByTenses(List<Tense> tenses) {
+  public Optional<Conjugation> getRandomConjugationByTenses(Set<Tense> tenses) {
     Conjugator conjugator = getRandomConjugator(tenses).get();
     return Optional.of(conjugator.getConjugations().get(new Random().nextInt(conjugator.getConjugations().size())));
   }

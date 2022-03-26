@@ -38,19 +38,19 @@ public class SentenceGeneratorAPI implements HttpFunction {
       bodyArgs.setCount(count);
       String tenses = httpRequest.getFirstQueryParameter(tensesArg).orElse(Tense.PAST + "," + Tense.PRESENT + "," + Tense.FUTURE);
       if (!tenses.isEmpty()) {
-        bodyArgs.setTenses(Arrays.stream(tenses.split(",", -1)).map(Tense::valueOf).collect(Collectors.toList()));
+        bodyArgs.setTenses(Arrays.stream(tenses.split(",", -1)).map(Tense::valueOf).collect(Collectors.toSet()));
       }
       if (httpRequest.getFirstQueryParameter(verbsArg).isPresent()) {
         bodyArgs.setVerbs(Arrays.stream(httpRequest.getFirstQueryParameter(verbsArg).get()
-                                                   .split(",", -1)).collect(Collectors.toList()));
+                                                   .split(",", -1)).collect(Collectors.toSet()));
       }
       if (httpRequest.getFirstQueryParameter(nounsArg).isPresent()) {
         bodyArgs.setNouns(Arrays.stream(httpRequest.getFirstQueryParameter(nounsArg).get()
-                                                   .split(",", -1)).collect(Collectors.toList()));
+                                                   .split(",", -1)).collect(Collectors.toSet()));
       }
       if (httpRequest.getFirstQueryParameter(adjectivesArg).isPresent()) {
         bodyArgs.setAdjectives(Arrays.stream(httpRequest.getFirstQueryParameter(adjectivesArg).get()
-                                                        .split(",", -1)).collect(Collectors.toList()));
+                                                        .split(",", -1)).collect(Collectors.toSet()));
       }
       if (httpRequest.getFirstQueryParameter(typesArg).isPresent()) {
         String types = httpRequest.getFirstQueryParameter(typesArg).get();

@@ -18,6 +18,7 @@ import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.Builder;
 import lombok.Getter;
@@ -29,19 +30,19 @@ import lombok.Setter;
 public class GeneratorParameters {
 
   @Builder.Default
-  private List<Tense>                             tenses     = List.of(Tense.PAST, Tense.PRESENT, Tense.FUTURE);
+  private Set<Tense>                              tenses     = Set.of(Tense.PAST, Tense.PRESENT, Tense.FUTURE);
   @Builder.Default
-  private List<String>                            verbs      = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toList());
+  private Set<String>                             verbs      = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
   @Builder.Default
-  private List<String>                            nouns      = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toList());
+  private Set<String>                             nouns      = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private List<String>                            adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toList());
+  private Set<String>                             adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private List<String>                            adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toList());
+  private Set<String>                             adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
-  private List<WordType>                          wordTypes  =
-      List.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
+  private Set<WordType>                           wordTypes  =
+      Set.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
   @Builder.Default
   @JsonIgnore
   private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(),
@@ -55,22 +56,22 @@ public class GeneratorParameters {
   private int                                     count      = 1;
 
   @JsonIgnore
-  public List<Verb> getVerbsFromIds() {
-    return DB.VERBS.stream().filter(o -> verbs.contains(o.getId())).collect(Collectors.toList());
+  public Set<Verb> getVerbsFromIds() {
+    return DB.VERBS.stream().filter(o -> verbs.contains(o.getId())).collect(Collectors.toSet());
   }
 
   @JsonIgnore
-  public List<Noun> getNounsFromIds() {
-    return DB.NOUNS.stream().filter(o -> nouns.contains(o.getId())).collect(Collectors.toList());
+  public Set<Noun> getNounsFromIds() {
+    return DB.NOUNS.stream().filter(o -> nouns.contains(o.getId())).collect(Collectors.toSet());
   }
 
   @JsonIgnore
-  public List<Adjective> getAdjectivesFromIds() {
-    return DB.ADJECTIVES.stream().filter(o -> adjectives.contains(o.getId())).collect(Collectors.toList());
+  public Set<Adjective> getAdjectivesFromIds() {
+    return DB.ADJECTIVES.stream().filter(o -> adjectives.contains(o.getId())).collect(Collectors.toSet());
   }
 
   @JsonIgnore
-  public List<Adverb> getAdverbsFromIds() {
-    return DB.ADVERBS.stream().filter(o -> adverbs.contains(o.getId())).collect(Collectors.toList());
+  public Set<Adverb> getAdverbsFromIds() {
+    return DB.ADVERBS.stream().filter(o -> adverbs.contains(o.getId())).collect(Collectors.toSet());
   }
 }

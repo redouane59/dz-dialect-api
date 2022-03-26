@@ -30,11 +30,11 @@ public class VerbDeserializationTest {
     assertTrue(verb.getPossibleComplements().contains(NounType.PERSON));
 
     // conjugator
-    assertEquals(Tense.PAST, verb.getConjugators().get(0).getTense());
-    assertEquals(Tense.PRESENT, verb.getConjugators().get(1).getTense());
+    assertEquals(Tense.PAST, verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST).findFirst().get().getTense());
 
     // conjugation
-    PossessiveWord conjugation1 = verb.getConjugators().get(0).getConjugations().get(0);
+    PossessiveWord conjugation1 = verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST)
+                                      .findFirst().get().getConjugations().get(0);
     assertEquals(Possession.I, conjugation1.getPossession());
     assertEquals(Gender.X, conjugation1.getGender());
     assertTrue(conjugation1.isSingular());

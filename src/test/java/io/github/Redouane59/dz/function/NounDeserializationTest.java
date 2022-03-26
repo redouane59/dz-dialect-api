@@ -29,7 +29,7 @@ public class NounDeserializationTest {
     assertEquals("maison", noun1.getValues().get(0).getFrTranslation());
     assertEquals("dar", noun1.getValues().get(0).getDzTranslation());
     assertEquals(WordType.NOUN, noun1.getWordType());
-    assertEquals(NounType.PLACE, noun1.getNounTypes().get(0));
+    assertEquals(NounType.PLACE, noun1.getNounTypes().stream().findFirst().get());
   }
 
 }

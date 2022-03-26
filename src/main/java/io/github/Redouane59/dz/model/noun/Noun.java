@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 public class Noun extends AbstractWord {
 
   @JsonProperty("noun_types")
-  private List<NounType>    nounTypes;
+  private Set<NounType>    nounTypes;
   @JsonProperty("state_preposition")
-  private List<Translation> statePreposition;
+  private Set<Translation> statePreposition;
   @JsonProperty("deplacement_preposition")
-  private List<Translation> deplacementPreposition;
+  private Set<Translation> deplacementPreposition;
 
   public Optional<Translation> getStatePreposition(Lang lang) {
     return statePreposition.stream()

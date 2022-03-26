@@ -36,7 +36,7 @@ public class PVOSentenceBuilderTest {
   public void testDemander() {
     PVOSentenceBuilder sentenceBuilder = new PVOSentenceBuilder();
     Verb               demander        = DB.VERBS.stream().filter(x -> x.getId().equals("demander")).findAny().get();
-    for (Conjugation conjugation : demander.getConjugators().get(1).getConjugations()) {
+    for (Conjugation conjugation : demander.getConjugators().stream().findFirst().get().getConjugations()) {
       for (PersonalProunoun personalProunoun : PersonalProunoun.values()) {
         if (personalProunoun != PersonalProunoun.UNDEFINED) {
           PVOSentence pvoSentence = new PVOSentence();
