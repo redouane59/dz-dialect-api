@@ -34,7 +34,7 @@ public class VerbDeserializationTest {
 
     // conjugation
     PossessiveWord conjugation1 = verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST)
-                                      .findFirst().get().getConjugations().get(0);
+                                      .findFirst().get().getConjugations().stream().filter(o -> o.getPossession() == Possession.I).findFirst().get();
     assertEquals(Possession.I, conjugation1.getPossession());
     assertEquals(Gender.X, conjugation1.getGender());
     assertTrue(conjugation1.isSingular());

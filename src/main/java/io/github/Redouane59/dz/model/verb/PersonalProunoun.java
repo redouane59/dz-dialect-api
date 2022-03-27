@@ -64,6 +64,13 @@ public enum PersonalProunoun {
     return PersonalProunoun.values()[new Random().nextInt(PersonalProunoun.values().length - 1)];
   }
 
+  public static PersonalProunoun getPersonalPronounByValue(String frValue, String dzValue) {
+    return Arrays.stream(PersonalProunoun.values())
+                 .filter(o -> o.getTranslationValue(Lang.FR).equals(frValue))
+                 .filter(o -> o.getTranslationValue(Lang.DZ).equals(dzValue))
+                 .findFirst().orElseThrow();
+  }
+
   public PersonalProunoun getRandomDifferentPersonalPronoun() {
     List<PersonalProunoun> matchingPronouns = Collections.unmodifiableList(Arrays.asList(values()))
                                                          .stream()

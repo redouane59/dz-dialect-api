@@ -4,10 +4,12 @@ import io.github.Redouane59.dz.model.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@Setter
 public class GenderedWord extends Word {
 
   private Gender  gender;

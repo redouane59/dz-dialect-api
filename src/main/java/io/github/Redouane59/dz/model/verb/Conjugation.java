@@ -4,8 +4,10 @@ import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
+@Setter
 public class Conjugation extends PossessiveWord {
 
   public PersonalProunoun getPersonalPronoun() {
@@ -36,5 +38,5 @@ public class Conjugation extends PossessiveWord {
     }
     return PersonalProunoun.UNDEFINED;
   }
-  
+
 }

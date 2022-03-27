@@ -6,6 +6,7 @@ import io.github.Redouane59.dz.helper.FileHelper;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -25,19 +26,65 @@ import lombok.Setter;
 public class Verb extends AbstractWord {
 
   @JsonProperty("possible_questions")
-  private final Set<Question>   possibleQuestions   = new HashSet<>();
-  private final Set<Conjugator> conjugators         = new HashSet<>();
+  private Set<Question>   possibleQuestions   = new HashSet<>();
+  private Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_complements")
-  private final Set<NounType>   possibleComplements = new HashSet<>();
+  private Set<NounType>   possibleComplements = new HashSet<>();
   @JsonProperty("verb_type")
-  private       VerbType        verbType;
+  private VerbType        verbType;
   @JsonProperty("reflexive_suffix_fr")
-  private       ReflexiveSuffix reflexiveSuffixFr;
+  private ReflexiveSuffix reflexiveSuffixFr;
   @JsonProperty("reflexive_suffix_dz")
-  private       ReflexiveSuffix reflexiveSuffixDz;
+  private ReflexiveSuffix reflexiveSuffixDz;
 
-  public Verb(String fileName) {
-    List<List<String>> entries = FileHelper.getCsv(fileName, ";");
+  public static Set<Verb> getVerbsFromCSV(String fileName) {
+    List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", true);
+    int                verbInfinitiveIndex   = 0;
+    int                tenseIndex            = 1;
+    int                personalPronounsIndex = 2;
+    String             pronounDelimiter      = "/";
+    int                frValueIndex          = 3;
+    int                dzValueIndex          = 4;
+    Set<Verb>          verbs                 = new HashSet<>();
+
+    for (List<String> values : entries) {
+      Verb           verb    = new Verb();
+      Optional<Verb> verbOpt = verbs.stream().filter(o -> o.getId().equals(values.get(verbInfinitiveIndex))).findFirst();
+      if (verbOpt.isEmpty()) {
+        verb.setId(values.get(verbInfinitiveIndex));
+        verbs.add(verb);
+      } else {
+        verb = verbOpt.get();
+      }
+
+      try {
+        Tense tense = Tense.valueOf(values.get(tenseIndex));
+        PersonalProunoun
+            personalProunoun =
+            PersonalProunoun.getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
+                                                       values.get(personalPronounsIndex).split(pronounDelimiter)[1]);
+        String      frValue     = values.get(frValueIndex);
+        String      dzValue     = values.get(dzValueIndex);
+        Conjugation conjugation = new Conjugation();
+        conjugation.setGender(personalProunoun.getGender());
+        conjugation.setPossession(personalProunoun.getPossession());
+        conjugation.setSingular(personalProunoun.isSingular());
+        conjugation.setTranslations(List.of(new Translation(Lang.FR, frValue), new Translation(Lang.DZ, dzValue)));
+        Optional<Conjugator> conjugatorOpt = verb.getConjugators().stream().filter(o -> o.getTense() == tense).findFirst();
+        Conjugator           conjugator;
+        if (conjugatorOpt.isEmpty()) {
+          conjugator = new Conjugator();
+          conjugator.setTense(tense);
+          verb.getConjugators().add(conjugator);
+        } else {
+          conjugator = conjugatorOpt.get();
+        }
+        conjugator.getConjugations().add(conjugation);
+        System.out.println();
+      } catch (Exception ignored) {
+      }
+    }
+    return verbs;
   }
 
   public Optional<Conjugator> getRandomConjugator(Set<Tense> tenses) {
@@ -49,12 +96,12 @@ public class Verb extends AbstractWord {
   }
 
   public Optional<Conjugation> getRandomConjugation(Conjugator conjugator) {
-    return Optional.of(conjugator.getConjugations().get(new Random().nextInt(conjugator.getConjugations().size())));
+    return conjugator.getConjugations().stream().skip(new Random().nextInt(conjugator.getConjugations().size())).findFirst();
   }
 
   public Optional<Conjugation> getRandomConjugationByTenses(Set<Tense> tenses) {
     Conjugator conjugator = getRandomConjugator(tenses).get();
-    return Optional.of(conjugator.getConjugations().get(new Random().nextInt(conjugator.getConjugations().size())));
+    return conjugator.getConjugations().stream().skip(new Random().nextInt(conjugator.getConjugations().size())).findFirst();
   }
 
   public Optional<Conjugator> getConjugationByTense(Tense tense) {

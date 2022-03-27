@@ -2,18 +2,20 @@ package io.github.Redouane59.dz.model.verb;
 
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Possession;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
 public class Conjugator {
 
-  private final List<Conjugation> conjugations = new ArrayList<>();
-  private       Tense             tense;
+  private final Set<Conjugation> conjugations = new HashSet<>();
+  private       Tense            tense;
 
   public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular) {
 

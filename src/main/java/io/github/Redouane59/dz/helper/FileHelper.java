@@ -8,7 +8,7 @@ import java.util.List;
 
 public class FileHelper {
 
-  public static List<List<String>> getCsv(String fileName, String delimiter) {
+  public static List<List<String>> getCsv(String fileName, String delimiter, boolean removeHeader) {
     List<List<String>> records = new ArrayList<>();
     try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
       String line;
@@ -18,6 +18,9 @@ public class FileHelper {
       }
     } catch (Exception e) {
       System.err.println(e.getMessage());
+    }
+    if (removeHeader) {
+      records.remove(0);
     }
     return records;
   }
