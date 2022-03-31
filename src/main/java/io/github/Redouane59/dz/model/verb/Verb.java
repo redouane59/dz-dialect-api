@@ -1,15 +1,20 @@
 package io.github.Redouane59.dz.model.verb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.helper.FileHelper;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.Translation;
+import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.Word;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
@@ -25,19 +30,23 @@ import lombok.Setter;
 @Setter
 public class Verb extends AbstractWord {
 
+  @JsonIgnore
+  public static final ObjectMapper
+                                      OBJECT_MAPPER       =
+      new ObjectMapper().registerModule(new SimpleModule().addSerializer(Word.class, new WordFromCSVSerializer()));
   @JsonProperty("possible_questions")
-  private Set<Question>   possibleQuestions   = new HashSet<>();
-  private Set<Conjugator> conjugators         = new HashSet<>();
+  private             Set<Question>   possibleQuestions   = new HashSet<>();
+  private             Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_complements")
-  private Set<NounType>   possibleComplements = new HashSet<>();
+  private             Set<NounType>   possibleComplements = new HashSet<>();
   @JsonProperty("verb_type")
-  private VerbType        verbType;
+  private             VerbType        verbType;
   @JsonProperty("reflexive_suffix_fr")
-  private ReflexiveSuffix reflexiveSuffixFr;
+  private             ReflexiveSuffix reflexiveSuffixFr;
   @JsonProperty("reflexive_suffix_dz")
-  private ReflexiveSuffix reflexiveSuffixDz;
+  private             ReflexiveSuffix reflexiveSuffixDz;
 
-  public static Set<Verb> getVerbsFromCSV(String fileName) {
+  public static Set<Verb> deserializeFromCSV(String fileName) {
     List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", true);
     int                verbInfinitiveIndex   = 0;
     int                tenseIndex            = 1;
@@ -56,6 +65,7 @@ public class Verb extends AbstractWord {
       } else {
         verb = verbOpt.get();
       }
+      verb.setWordType(WordType.VERB);
 
       try {
         Tense tense = Tense.valueOf(values.get(tenseIndex));
@@ -63,7 +73,7 @@ public class Verb extends AbstractWord {
             personalProunoun =
             PersonalProunoun.getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
                                                        values.get(personalPronounsIndex).split(pronounDelimiter)[1]);
-        String      frValue     = values.get(frValueIndex);
+        String      frValue     = values.get(frValueIndex); // @todo jackson change deserialization call
         String      dzValue     = values.get(dzValueIndex);
         Conjugation conjugation = new Conjugation();
         conjugation.setGender(personalProunoun.getGender());
@@ -80,7 +90,6 @@ public class Verb extends AbstractWord {
           conjugator = conjugatorOpt.get();
         }
         conjugator.getConjugations().add(conjugation);
-        System.out.println();
       } catch (Exception ignored) {
       }
     }

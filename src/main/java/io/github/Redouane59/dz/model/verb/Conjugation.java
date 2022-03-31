@@ -1,5 +1,6 @@
 package io.github.Redouane59.dz.model.verb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
@@ -10,6 +11,7 @@ import lombok.Setter;
 @Setter
 public class Conjugation extends PossessiveWord {
 
+  @JsonIgnore
   public PersonalProunoun getPersonalPronoun() {
     if (isSingular()) {
       if (getPossession() == io.github.Redouane59.dz.model.Possession.I) {

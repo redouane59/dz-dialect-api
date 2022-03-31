@@ -1,5 +1,7 @@
 package io.github.Redouane59.dz.model.word;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
@@ -17,6 +19,7 @@ import lombok.Setter;
 @Setter
 public class AbstractWord {
 
+  @JsonInclude(Include.NON_EMPTY)
   private final List<GenderedWord> values = new ArrayList<>();
   private       String             id;
   @JsonProperty("word_type")

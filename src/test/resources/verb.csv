@@ -1,37 +1,37 @@
-id,tense,pronoun,frValue,dzValue
-acheter,PAST,je/ana,j'ai acceléré,ghawelt
-acheter,PAST,tu/enta,tu as accéléré,ghawelt
-acheter,PAST,tu/enti,,
-acheter,PAST,il/houwa,il a accéléré,ghawel
-acheter,PAST,elle/hiya,elle a accéléré,ghawelet
-acheter,PAST,on/7na,on a accéléré,ghawelna
-acheter,PAST,vous/ntouma,vous avez accéléré,ghaweltou
-acheter,PAST,ils/houma,ils ont accéléré,ghawlou
-acheter,PAST,elles/houma,,
-acheter,PRESENT,je/ana,j'accélère,ngahwel
-acheter,PRESENT,tu/enta,tu accélères,tghawel
-acheter,PRESENT,tu/enti,,
-acheter,PRESENT,il/houwa,il accélère,yghawel
-acheter,PRESENT,elle/hiya,elle accélère,tghawel
-acheter,PRESENT,on/7na,on accélère,nghawlou
-acheter,PRESENT,vous/ntouma,vous accélérez,tghawlou
-acheter,PRESENT,ils/houma,ils accélerent,yghawlou
-acheter,PRESENT,elles/houma,,
-attendre,PAST,je/ana,j'ai attendu,stenit
-attendre,PAST,tu/enta,tu as attendu,stenit
-attendre,PAST,tu/enti,il a attendu,stena
-attendre,PAST,il/houwa,elle a attendu,stenet
-attendre,PAST,elle/hiya,on a attendu,stenina
-attendre,PAST,on/7na,vous avez attendu,stenitou
-attendre,PAST,vous/ntouma,ils ont attendu,stenaou
-attendre,PAST,ils/houma,,
-attendre,PAST,elles/houma,,
-attendre,PRESENT,je/ana,j'attends,nstena
-attendre,PRESENT,tu/enta,tu attends,tstena
-attendre,PRESENT,tu/enti,il attend,yestena
-attendre,PRESENT,il/houwa,elle attend,tstena
-attendre,PRESENT,elle/hiya,on attend,nestenaou
-attendre,PRESENT,on/7na,vous attendez,testenaou
-attendre,PRESENT,vous/ntouma,ils attendent,yestenaou
-attendre,PRESENT,ils/houma,,
-attendre,PRESENT,elles/houma,,
+verb,tense,pronoun,frValue,dzValue
+acheter,PAST,je/ana,ai acceléré,ghawelt
+acheter,PAST,tu/enta,as accéléré,ghawelt
+acheter,PAST,tu/enti,as accéléré,ghawelti
+acheter,PAST,il/houwa,a accéléré,ghawel
+acheter,PAST,elle/hiya,a accéléré,ghawelet
+acheter,PAST,on/7na,a accéléré,ghawelna
+acheter,PAST,vous/ntouma,avez accéléré,ghaweltou
+acheter,PAST,ils/houma,ont accéléré,ghawlou
+acheter,PAST,elles/houma,ont accéléré,ghawlou
+acheter,PRESENT,je/ana,accélère,ngahwel
+acheter,PRESENT,tu/enta,accélères,tghawel
+acheter,PRESENT,tu/enti,accélères,tghaweli
+acheter,PRESENT,il/houwa,accélère,yghawel
+acheter,PRESENT,elle/hiya,accélère,tghawel
+acheter,PRESENT,on/7na,accélère,nghawlou
+acheter,PRESENT,vous/ntouma,accélérez,tghawlou
+acheter,PRESENT,ils/houma,accélerent,yghawlou
+acheter,PRESENT,elles/houma,accélèrent,yghawlou
+attendre,PAST,je/ana,ai attendu,stenit
+attendre,PAST,tu/enta,as attendu,stenit
+attendre,PAST,tu/enti,as attendu,steniti
+attendre,PAST,il/houwa,a attendu,stena
+attendre,PAST,elle/hiya,a attendu,stenet
+attendre,PAST,on/7na,a attendu,stenina
+attendre,PAST,vous/ntouma,avez attendu,stenitou
+attendre,PAST,ils/houma,ont attendu,stenaou
+attendre,PAST,elles/houma,ont attendu,stenaou
+attendre,PRESENT,je/ana,attends,nstena
+attendre,PRESENT,tu/enta,attends,tstena
+attendre,PRESENT,tu/enti,attends,tstenai
+attendre,PRESENT,il/houwa,attend,yestena
+attendre,PRESENT,elle/hiya,attend,tstena
+attendre,PRESENT,on/7na,attend,nestenaou
+attendre,PRESENT,vous/ntouma,attendez,testenaou
+attendre,PRESENT,ils/houma,attendent,yestenaou
+attendre,PRESENT,elles/houma,attendent,yestenaou

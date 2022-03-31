@@ -1,0 +1,121 @@
+{
+  "id": "attendre",
+  "conjugators": [
+    {
+      "conjugations": [
+        {
+          "gender": "X",
+          "singular": false,
+          "possession": "YOU",
+          "dz_value": "stenaou",
+          "fr_value": "ils ont attendu"
+        },
+        {
+          "gender": "M",
+          "singular": true,
+          "possession": "YOU",
+          "dz_value": "stenit",
+          "fr_value": "tu as attendu"
+        },
+        {
+          "gender": "X",
+          "singular": true,
+          "possession": "I",
+          "dz_value": "stenit",
+          "fr_value": "j'ai attendu"
+        },
+        {
+          "gender": "M",
+          "singular": true,
+          "possession": "OTHER",
+          "dz_value": "stenet",
+          "fr_value": "elle a attendu"
+        },
+        {
+          "gender": "X",
+          "singular": false,
+          "possession": "I",
+          "dz_value": "stenitou",
+          "fr_value": "vous avez attendu"
+        },
+        {
+          "gender": "F",
+          "singular": true,
+          "possession": "YOU",
+          "dz_value": "stena",
+          "fr_value": "il a attendu"
+        },
+        {
+          "gender": "F",
+          "singular": true,
+          "possession": "OTHER",
+          "dz_value": "stenina",
+          "fr_value": "on a attendu"
+        }
+      ],
+      "tense": "PAST"
+    },
+    {
+      "conjugations": [
+        {
+          "gender": "F",
+          "singular": true,
+          "possession": "OTHER",
+          "dz_value": "nestenaou",
+          "fr_value": "on attend"
+        },
+        {
+          "gender": "M",
+          "singular": true,
+          "possession": "OTHER",
+          "dz_value": "tstena",
+          "fr_value": "elle attend"
+        },
+        {
+          "gender": "M",
+          "singular": true,
+          "possession": "YOU",
+          "dz_value": "tstena",
+          "fr_value": "tu attends"
+        },
+        {
+          "gender": "X",
+          "singular": true,
+          "possession": "I",
+          "dz_value": "nstena",
+          "fr_value": "j'attends"
+        },
+        {
+          "gender": "F",
+          "singular": true,
+          "possession": "YOU",
+          "dz_value": "yestena",
+          "fr_value": "il attend"
+        },
+        {
+          "gender": "X",
+          "singular": false,
+          "possession": "I",
+          "dz_value": "testenaou",
+          "fr_value": "vous attendez"
+        },
+        {
+          "gender": "X",
+          "singular": false,
+          "possession": "YOU",
+          "dz_value": "yestenaou",
+          "fr_value": "ils attendent"
+        }
+      ],
+      "tense": "PRESENT"
+    }
+  ],
+  "word_type": "VERB",
+  "possible_questions": [
+  ],
+  "possible_complements": [
+  ],
+  "verb_type": null,
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
+}

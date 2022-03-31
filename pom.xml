@@ -18,9 +18,9 @@
         -->
         <artifactId>function-maven-plugin</artifactId>
         <configuration>
-          <functionTarget>io.github.Redouane59.dz.function.SentenceGeneratorAPI
-          </functionTarget>
           <functionTarget>io.github.Redouane59.dz.function.GetDatabaseElementsAPI
+          </functionTarget>
+          <functionTarget>io.github.Redouane59.dz.function.SentenceGeneratorAPI
           </functionTarget>
         </configuration>
         <groupId>com.google.cloud.functions</groupId>
