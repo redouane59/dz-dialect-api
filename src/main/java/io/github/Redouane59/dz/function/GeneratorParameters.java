@@ -9,6 +9,7 @@ import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.NVA.NVASentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.PV.PVSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVA.PVASentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVD.PVDSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVN.PVNSentenceBuilder;
@@ -45,7 +46,8 @@ public class GeneratorParameters {
       Set.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
   @Builder.Default
   @JsonIgnore
-  private List<? extends AbstractSentenceBuilder> generators = List.of(new PVNSentenceBuilder(),
+  private List<? extends AbstractSentenceBuilder> generators = List.of(new PVSentenceBuilder(),
+                                                                       new PVNSentenceBuilder(),
                                                                        new PVASentenceBuilder(),
                                                                        new NVASentenceBuilder(),
                                                                        new PVDSentenceBuilder(),

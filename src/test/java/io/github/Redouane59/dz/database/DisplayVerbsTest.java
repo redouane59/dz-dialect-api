@@ -22,4 +22,31 @@ public class DisplayVerbsTest {
                                               + o.getFrTranslation()
                                           )))));
   }
+
+  @Test
+  public void displayAllVerbsCSV() {
+    System.out.println("*** Verbs ***");
+    final StringBuilder line = new StringBuilder();
+
+    DB.VERBS.forEach(v -> v.getConjugators().forEach(
+        j -> j.getConjugations().forEach(
+            o -> line.append(AbstractSentence.cleanResponse(
+                v.getId()
+                + ","
+                + j.getTense()
+                + ","
+                + o.getPersonalPronoun().getTranslationValue(Lang.FR)
+                + "/"
+                + o.getPersonalPronoun().getTranslationValue(Lang.DZ)
+                + ","
+                + o.getFrTranslation()
+                + ","
+                + o.getDzTranslation()
+                + "\n"
+            ))
+        )
+    ));
+    System.out.println(line);
+  }
+
 }

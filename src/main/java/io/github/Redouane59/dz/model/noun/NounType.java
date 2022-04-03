@@ -5,6 +5,7 @@ public enum NounType {
   PLACE,
   PERSON,
   OBJECT,
-  TASK
+  TASK,
+  FOOD
 
 }

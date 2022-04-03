@@ -21,7 +21,9 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     NVASentence    nvaSentence = new NVASentence();
-    Optional<Noun> randomNoun  = WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), Set.of(NounType.PLACE, NounType.PERSON, NounType.OBJECT));
+    Optional<Noun>
+                   randomNoun  =
+        WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), Set.of(NounType.PLACE, NounType.PERSON, NounType.OBJECT, NounType.FOOD));
     if (randomNoun.isEmpty()) {
       return Optional.empty();
     }

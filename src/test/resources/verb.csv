@@ -1,37 +1,18 @@
-verb,tense,pronoun,frValue,dzValue
-acheter,PAST,je/ana,ai acceléré,ghawelt
-acheter,PAST,tu/enta,as accéléré,ghawelt
-acheter,PAST,tu/enti,as accéléré,ghawelti
-acheter,PAST,il/houwa,a accéléré,ghawel
-acheter,PAST,elle/hiya,a accéléré,ghawelet
-acheter,PAST,on/7na,a accéléré,ghawelna
-acheter,PAST,vous/ntouma,avez accéléré,ghaweltou
-acheter,PAST,ils/houma,ont accéléré,ghawlou
-acheter,PAST,elles/houma,ont accéléré,ghawlou
-acheter,PRESENT,je/ana,accélère,ngahwel
-acheter,PRESENT,tu/enta,accélères,tghawel
-acheter,PRESENT,tu/enti,accélères,tghaweli
-acheter,PRESENT,il/houwa,accélère,yghawel
-acheter,PRESENT,elle/hiya,accélère,tghawel
-acheter,PRESENT,on/7na,accélère,nghawlou
-acheter,PRESENT,vous/ntouma,accélérez,tghawlou
-acheter,PRESENT,ils/houma,accélerent,yghawlou
-acheter,PRESENT,elles/houma,accélèrent,yghawlou
-attendre,PAST,je/ana,ai attendu,stenit
-attendre,PAST,tu/enta,as attendu,stenit
-attendre,PAST,tu/enti,as attendu,steniti
-attendre,PAST,il/houwa,a attendu,stena
-attendre,PAST,elle/hiya,a attendu,stenet
-attendre,PAST,on/7na,a attendu,stenina
-attendre,PAST,vous/ntouma,avez attendu,stenitou
-attendre,PAST,ils/houma,ont attendu,stenaou
-attendre,PAST,elles/houma,ont attendu,stenaou
-attendre,PRESENT,je/ana,attends,nstena
-attendre,PRESENT,tu/enta,attends,tstena
-attendre,PRESENT,tu/enti,attends,tstenai
-attendre,PRESENT,il/houwa,attend,yestena
-attendre,PRESENT,elle/hiya,attend,tstena
-attendre,PRESENT,on/7na,attend,nestenaou
-attendre,PRESENT,vous/ntouma,attendez,testenaou
-attendre,PRESENT,ils/houma,attendent,yestenaou
-attendre,PRESENT,elles/houma,attendent,yestenaou
+laisser,PRESENT,je/ana,laisse,nkhali
+laisser,PRESENT,tu/enta,laisses,tkhali
+laisser,PRESENT,tu/enti,laisses,tkhali
+laisser,PRESENT,il/houwa,laisse,ykhali
+laisser,PRESENT,elle/hiya,laisse,tkhali
+laisser,PRESENT,on/7na,laisse,nkhaliou
+laisser,PRESENT,vous/ntouma,laissez,tkhaliou
+laisser,PRESENT,ils/houma,laissent,ykhaliou
+laisser,PRESENT,elles/houma,laissent,ykhaliou
+laisser,PAST,je/ana,ai laissé,khalit
+laisser,PAST,tu/enta,as laissé,khalit
+laisser,PAST,tu/enti,as laissé,khaliti
+laisser,PAST,il/houwa,a laissé,khalla
+laisser,PAST,elle/hiya,a laissé,khallat
+laisser,PAST,on/7na,a laissé,khalina
+laisser,PAST,vous/ntouma,avez laissé,khalitou
+laisser,PAST,ils/houma,ont laissé,khallaou
+laisser,PAST,elles/houma,ont laissé,khallaou

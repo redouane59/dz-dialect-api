@@ -89,5 +89,18 @@
         "value": "wesh"
       }
     ]
+  },
+  {
+    "id": "WITH_WHO",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "avec qui est-ce que"
+      },
+      {
+        "lang": "DZ",
+        "value": "m3a men"
+      }
+    ]
   }
 ]

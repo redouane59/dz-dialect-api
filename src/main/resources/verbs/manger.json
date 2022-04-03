@@ -1,5 +1,5 @@
 {
-  "id": "attendre",
+  "id": "manger",
   "conjugators": [
     {
       "conjugations": [
@@ -7,56 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendez"
+              "value": "mange"
             },
             {
               "lang": "DZ",
-              "value": "testenaou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "nstena"
+              "value": "nakoul"
             }
           ],
           "gender": "X",
@@ -67,11 +22,86 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "mange"
             },
             {
               "lang": "DZ",
-              "value": "tstenai"
+              "value": "takoul"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "mange"
+            },
+            {
+              "lang": "DZ",
+              "value": "naklou"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "mange"
+            },
+            {
+              "lang": "DZ",
+              "value": "takoul"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "mangez"
+            },
+            {
+              "lang": "DZ",
+              "value": "taklou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "mangent"
+            },
+            {
+              "lang": "DZ",
+              "value": "klit"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "mange"
+            },
+            {
+              "lang": "DZ",
+              "value": "takouli"
             }
           ],
           "gender": "F",
@@ -82,26 +112,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "mangent"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attendent"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestenaou"
+              "value": "yaklou"
             }
           ],
           "gender": "M",
@@ -112,31 +127,16 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "mange"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "yakoul"
             }
           ],
-          "gender": "F",
+          "gender": "M",
           "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "nestenaou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
+          "singular": true
         }
       ],
       "tense": "PRESENT"
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "as mangé"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
+              "value": "klit"
             }
           ],
           "gender": "F",
@@ -162,41 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez attendu"
+              "value": "as mangé"
             },
             {
               "lang": "DZ",
-              "value": "stenitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenaou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
+              "value": "klit"
             }
           ],
           "gender": "M",
@@ -207,41 +177,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "a mangé"
             },
             {
               "lang": "DZ",
-              "value": "stenet"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenina"
+              "value": "klina"
             }
           ],
           "gender": "X",
@@ -252,11 +192,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai attendu"
+              "value": "a mangé"
             },
             {
               "lang": "DZ",
-              "value": "stenit"
+              "value": "kla"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a mangé"
+            },
+            {
+              "lang": "DZ",
+              "value": "klet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai mangé"
+            },
+            {
+              "lang": "DZ",
+              "value": "klit"
             }
           ],
           "gender": "X",
@@ -267,11 +237,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "avez mangé"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "klitou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont mangé"
+            },
+            {
+              "lang": "DZ",
+              "value": "kleou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont mangé"
+            },
+            {
+              "lang": "DZ",
+              "value": "kleou"
             }
           ],
           "gender": "M",
@@ -285,10 +285,13 @@
   "word_type": "VERB",
   "possible_questions": [
     "WHAT",
-    "WHO"
+    "WHEN",
+    "WHERE",
+    "WITH_WHO",
+    "WHY"
   ],
   "possible_complements": [
-    "PERSON"
+    "FOOD"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",

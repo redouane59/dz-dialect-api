@@ -1,0 +1,23 @@
+{
+  "id": "poisson",
+  "word_type": "NOUN",
+  "noun_types": [
+    "FOOD"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "poisson"
+        },
+        {
+          "lang": "DZ",
+          "value": "7out"
+        }
+      ]
+    }
+  ]
+}

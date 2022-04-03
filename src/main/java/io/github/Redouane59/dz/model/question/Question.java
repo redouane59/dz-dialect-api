@@ -25,7 +25,8 @@ public enum Question {
   HOW,
   WHY,
   HOW_MANY,
-  WHAT;
+  WHAT,
+  WITH_WHO;
 
   private static final List<Question>    VALUES = Collections.unmodifiableList(Arrays.asList(values()));
   private              List<Translation> translations;

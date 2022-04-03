@@ -1,5 +1,5 @@
 {
-  "id": "attendre",
+  "id": "accélérer",
   "conjugators": [
     {
       "conjugations": [
@@ -7,56 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendez"
+              "value": "ai acceléré"
             },
             {
               "lang": "DZ",
-              "value": "testenaou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "nstena"
+              "value": "ghawelt"
             }
           ],
           "gender": "X",
@@ -67,11 +22,86 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "as accéléré"
             },
             {
               "lang": "DZ",
-              "value": "tstenai"
+              "value": "ghawelt"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a accéléré"
+            },
+            {
+              "lang": "DZ",
+              "value": "ghawelet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont accéléré"
+            },
+            {
+              "lang": "DZ",
+              "value": "ghawlou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a accéléré"
+            },
+            {
+              "lang": "DZ",
+              "value": "ghawel"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a accéléré"
+            },
+            {
+              "lang": "DZ",
+              "value": "ghawelna"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as accéléré"
+            },
+            {
+              "lang": "DZ",
+              "value": "ghawelti"
             }
           ],
           "gender": "F",
@@ -82,26 +112,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "ont accéléré"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attendent"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestenaou"
+              "value": "ghawlou"
             }
           ],
           "gender": "M",
@@ -112,34 +127,19 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "avez accéléré"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "nestenaou"
+              "value": "ghaweltou"
             }
           ],
           "gender": "X",
-          "possession": "I",
+          "possession": "YOU",
           "singular": false
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     },
     {
       "conjugations": [
@@ -147,41 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "accélèrent"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenaou"
+              "value": "yghawlou"
             }
           ],
           "gender": "F",
@@ -192,71 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "accélère"
             },
             {
               "lang": "DZ",
-              "value": "stenit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenet"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenina"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
+              "value": "ngahwel"
             }
           ],
           "gender": "X",
@@ -267,30 +177,117 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "accélère"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "yghawel"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélères"
+            },
+            {
+              "lang": "DZ",
+              "value": "tghaweli"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélères"
+            },
+            {
+              "lang": "DZ",
+              "value": "tghawel"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélère"
+            },
+            {
+              "lang": "DZ",
+              "value": "nghawlou"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélerent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yghawlou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélère"
+            },
+            {
+              "lang": "DZ",
+              "value": "tghawel"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "accélérez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tghawlou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT",
-    "WHO"
+    "WHY"
   ],
-  "possible_complements": [
-    "PERSON"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }

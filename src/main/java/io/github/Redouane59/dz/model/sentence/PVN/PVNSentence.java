@@ -26,11 +26,11 @@ public class PVNSentence extends PVSentence {
         result += getNoun().getDeplacementProposition(lang).get().getValue();
         break;
       case ACTION:
-        result += Article.getArticle(getNoun().getValues().get(0).getGender(), true, true)
+        result += Article.getArticle(getNoun().getValues().get(0).getGender(lang), true, true)
                          .get().getTranslationValue(lang, nounValue);
         break;
       case POSSESSION:
-        result += Article.getArticle(getNoun().getValues().get(0).getGender(), true, false)
+        result += Article.getArticle(getNoun().getValues().get(0).getGender(lang), true, false)
                          .get().getTranslationValue(lang, nounValue);
         break;
     }

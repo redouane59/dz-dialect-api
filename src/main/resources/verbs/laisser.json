@@ -1,5 +1,5 @@
 {
-  "id": "attendre",
+  "id": "laisser",
   "conjugators": [
     {
       "conjugations": [
@@ -7,29 +7,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendez"
+              "value": "as laissé"
             },
             {
               "lang": "DZ",
-              "value": "testenaou"
+              "value": "khaliti"
             }
           ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "M",
+          "gender": "F",
           "possession": "YOU",
           "singular": true
         },
@@ -37,26 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "ai laissé"
             },
             {
               "lang": "DZ",
-              "value": "yestena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "nstena"
+              "value": "khalit"
             }
           ],
           "gender": "X",
@@ -67,14 +37,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "as laissé"
             },
             {
               "lang": "DZ",
-              "value": "tstenai"
+              "value": "khalit"
             }
           ],
-          "gender": "F",
+          "gender": "M",
           "possession": "YOU",
           "singular": true
         },
@@ -82,14 +52,44 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "avez laissé"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
+              "value": "khalitou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont laissé"
+            },
+            {
+              "lang": "DZ",
+              "value": "khallaou"
             }
           ],
           "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a laissé"
+            },
+            {
+              "lang": "DZ",
+              "value": "khalla"
+            }
+          ],
+          "gender": "M",
           "possession": "OTHER",
           "singular": true
         },
@@ -97,11 +97,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "a laissé"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "khalina"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont laissé"
+            },
+            {
+              "lang": "DZ",
+              "value": "khallaou"
             }
           ],
           "gender": "M",
@@ -112,34 +127,19 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "a laissé"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "khallat"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "nestenaou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
+          "singular": true
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     },
     {
       "conjugations": [
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "laisses"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
+              "value": "tkhali"
             }
           ],
           "gender": "F",
@@ -162,41 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez attendu"
+              "value": "laisses"
             },
             {
               "lang": "DZ",
-              "value": "stenitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenaou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
+              "value": "tkhali"
             }
           ],
           "gender": "M",
@@ -207,26 +177,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "laissent"
             },
             {
               "lang": "DZ",
-              "value": "stenet"
+              "value": "ykhaliou"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
-          "singular": true
+          "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "laisse"
             },
             {
               "lang": "DZ",
-              "value": "stena"
+              "value": "ykhali"
             }
           ],
           "gender": "M",
@@ -237,11 +207,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "laisse"
             },
             {
               "lang": "DZ",
-              "value": "stenina"
+              "value": "nkhaliou"
             }
           ],
           "gender": "X",
@@ -252,11 +222,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai attendu"
+              "value": "laissent"
             },
             {
               "lang": "DZ",
-              "value": "stenit"
+              "value": "ykhaliou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "laisse"
+            },
+            {
+              "lang": "DZ",
+              "value": "tkhali"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "laisse"
+            },
+            {
+              "lang": "DZ",
+              "value": "nkhali"
             }
           ],
           "gender": "X",
@@ -267,30 +267,27 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "laissez"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "tkhaliou"
             }
           ],
-          "gender": "M",
-          "possession": "OTHER",
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     }
   ],
   "word_type": "VERB",
-  "possible_questions": [
-    "WHAT",
-    "WHO"
-  ],
+  "possible_questions": [],
   "possible_complements": [
-    "PERSON"
+    "OBJECT"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "reflexive_suffix_dz": "NI"
 }

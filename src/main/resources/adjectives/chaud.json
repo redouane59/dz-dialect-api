@@ -1,7 +1,8 @@
 {
   "id": "chaud",
   "possible_nouns": [
-    "PERSON"
+    "PERSON",
+    "FOOD"
   ],
   "values": [
     {

@@ -17,6 +17,8 @@ public class Translation {
   private Lang   lang;
   private String value;
   @JsonInclude(Include.NON_NULL)
+  private Gender gender; // only used for nouns that have different gender in FR/DZ
+  @JsonInclude(Include.NON_NULL)
   @JsonProperty("ar_value")
   private String arValue; // translation written in arabic letters
 

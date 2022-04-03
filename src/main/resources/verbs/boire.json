@@ -1,5 +1,5 @@
 {
-  "id": "attendre",
+  "id": "boire",
   "conjugators": [
     {
       "conjugations": [
@@ -7,11 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendez"
+              "value": "avez bu"
             },
             {
               "lang": "DZ",
-              "value": "testenaou"
+              "value": "chrobtou"
             }
           ],
           "gender": "X",
@@ -22,11 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "as bu"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
+              "value": "chrobt"
             }
           ],
           "gender": "M",
@@ -37,11 +37,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "yestena"
+              "value": "chrob"
             }
           ],
           "gender": "M",
@@ -52,11 +52,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "ai bu"
             },
             {
               "lang": "DZ",
-              "value": "nstena"
+              "value": "chrobt"
             }
           ],
           "gender": "X",
@@ -67,11 +67,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "as bu"
             },
             {
               "lang": "DZ",
-              "value": "tstenai"
+              "value": "chrobti"
             }
           ],
           "gender": "F",
@@ -82,11 +82,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
+              "value": "chrobet"
             }
           ],
           "gender": "F",
@@ -97,11 +97,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "chrobou"
             }
           ],
           "gender": "M",
@@ -112,11 +112,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "chrobou"
             }
           ],
           "gender": "F",
@@ -127,11 +127,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "nestenaou"
+              "value": "chrobna"
             }
           ],
           "gender": "X",
@@ -139,7 +139,7 @@
           "singular": false
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     },
     {
       "conjugations": [
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "bois"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
+              "value": "techrobi"
             }
           ],
           "gender": "F",
@@ -162,11 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez attendu"
+              "value": "buvez"
             },
             {
               "lang": "DZ",
-              "value": "stenitou"
+              "value": "tcherbou"
             }
           ],
           "gender": "X",
@@ -177,11 +177,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "boivent"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "ychrobou"
             }
           ],
           "gender": "F",
@@ -192,11 +192,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "bois"
             },
             {
               "lang": "DZ",
-              "value": "stenit"
+              "value": "techrob"
             }
           ],
           "gender": "M",
@@ -207,11 +207,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "boit"
             },
             {
               "lang": "DZ",
-              "value": "stenet"
+              "value": "techrob"
             }
           ],
           "gender": "F",
@@ -222,11 +222,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "boit"
             },
             {
               "lang": "DZ",
-              "value": "stena"
+              "value": "yechrob"
             }
           ],
           "gender": "M",
@@ -237,11 +237,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "boit"
             },
             {
               "lang": "DZ",
-              "value": "stenina"
+              "value": "nechrobou"
             }
           ],
           "gender": "X",
@@ -252,11 +252,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai attendu"
+              "value": "bois"
             },
             {
               "lang": "DZ",
-              "value": "stenit"
+              "value": "nechrob"
             }
           ],
           "gender": "X",
@@ -267,11 +267,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "boivent"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "ychrobou"
             }
           ],
           "gender": "M",
@@ -279,18 +279,16 @@
           "singular": false
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
     "WHAT",
-    "WHO"
+    "WHY"
   ],
-  "possible_complements": [
-    "PERSON"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }

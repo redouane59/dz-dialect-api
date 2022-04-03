@@ -46,8 +46,8 @@ public class Verb extends AbstractWord {
   @JsonProperty("reflexive_suffix_dz")
   private             ReflexiveSuffix reflexiveSuffixDz;
 
-  public static Set<Verb> deserializeFromCSV(String fileName) {
-    List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", true);
+  public static Set<Verb> deserializeFromCSV(String fileName, boolean removeHeader) {
+    List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", removeHeader);
     int                verbInfinitiveIndex   = 0;
     int                tenseIndex            = 1;
     int                personalPronounsIndex = 2;

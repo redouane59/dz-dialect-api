@@ -63,8 +63,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
       System.out.println(httpRequest.getQueryParameters());
       SentenceGenerator sentenceGenerator = new SentenceGenerator(bodyArgs);
       Sentences         result            = sentenceGenerator.generateRandomSentences();
-      httpResponse.setContentType("application/json;charset=iso-8859-1");
-      httpResponse.appendHeader("content-type", "application/json;charset=iso-8859-1");
+      httpResponse.setContentType("application/json;charset=UTF-8");
+      httpResponse.appendHeader("content-type", "application/json;charset=UTF-8");
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
       e.printStackTrace();

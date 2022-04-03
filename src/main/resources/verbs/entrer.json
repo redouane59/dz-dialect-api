@@ -1,5 +1,5 @@
 {
-  "id": "attendre",
+  "id": "entrer",
   "conjugators": [
     {
       "conjugations": [
@@ -7,56 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendez"
+              "value": "entre"
             },
             {
               "lang": "DZ",
-              "value": "testenaou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "nstena"
+              "value": "nedkhol"
             }
           ],
           "gender": "X",
@@ -67,26 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "entre"
             },
             {
               "lang": "DZ",
-              "value": "tstenai"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstena"
+              "value": "tedkhol"
             }
           ],
           "gender": "F",
@@ -97,11 +37,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "entre"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "yedkhol"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "entre"
+            },
+            {
+              "lang": "DZ",
+              "value": "nedkholou"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "entrent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yedkholou"
             }
           ],
           "gender": "M",
@@ -112,30 +82,60 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attendent"
+              "value": "entres"
             },
             {
               "lang": "DZ",
-              "value": "yestenaou"
+              "value": "tedkhol"
             }
           ],
-          "gender": "F",
-          "possession": "OTHER",
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "entrez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tedkouhlou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "attend"
+              "value": "entres"
             },
             {
               "lang": "DZ",
-              "value": "nestenaou"
+              "value": "tedkholi"
             }
           ],
-          "gender": "X",
-          "possession": "I",
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "entrent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yedkholou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
           "singular": false
         }
       ],
@@ -147,56 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "es rentré"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenaou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
+              "value": "dkhelt"
             }
           ],
           "gender": "M",
@@ -207,56 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
+              "value": "suis rentré"
             },
             {
               "lang": "DZ",
-              "value": "stenet"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenina"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
+              "value": "dkhelt"
             }
           ],
           "gender": "X",
@@ -267,15 +177,105 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "est rentrée"
             },
             {
               "lang": "DZ",
-              "value": "stenaou"
+              "value": "dekhlet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "es rentrée"
+            },
+            {
+              "lang": "DZ",
+              "value": "dkhelti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est rentré"
+            },
+            {
+              "lang": "DZ",
+              "value": "dkhel"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sont rentrées"
+            },
+            {
+              "lang": "DZ",
+              "value": "dekhlou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "est rentrés"
+            },
+            {
+              "lang": "DZ",
+              "value": "dkhelna"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "sont rentrés"
+            },
+            {
+              "lang": "DZ",
+              "value": "dekhlou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "êtes rentrés"
+            },
+            {
+              "lang": "DZ",
+              "value": "dkheltou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         }
       ],
@@ -284,13 +284,14 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT",
-    "WHO"
+    "WHY",
+    "WHEN",
+    "WITH_WHO"
   ],
   "possible_complements": [
-    "PERSON"
+    "PLACE"
   ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "verb_type": "DEPLACEMENT",
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }

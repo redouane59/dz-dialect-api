@@ -1,0 +1,24 @@
+{
+  "id": "assiette",
+  "word_type": "NOUN",
+  "noun_types": [
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "assiette",
+          "gender": "F"
+        },
+        {
+          "lang": "DZ",
+          "value": "tabssi",
+          "gender": "M"
+        }
+      ]
+    }
+  ]
+}

@@ -4,10 +4,10 @@ import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
 import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.WordPicker;
-import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;
@@ -33,7 +33,7 @@ public class QVPSentenceBuilder extends AbstractSentenceBuilder {
 
   @Override
   public boolean isCompatible(final GeneratorParameters bodyArgs) {
-    return true;
+    return (bodyArgs.getVerbsFromIds().stream().anyMatch(v -> !v.getPossibleComplements().isEmpty()));
   }
 
 }

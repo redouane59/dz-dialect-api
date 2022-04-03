@@ -2,6 +2,7 @@ package io.github.Redouane59.dz.model.sentence.NVA;
 
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Article;
+import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
@@ -31,7 +32,8 @@ public class NVASentence extends AbstractSentence {
       System.err.println("empty conjugator");
       return "";
     }
-    Optional<Conjugation> conjugation = conjugator.get().getConjugationByCriteria(nounWord.getGender(),
+    Gender nounGender = nounWord.getGender(lang);
+    Optional<Conjugation> conjugation = conjugator.get().getConjugationByCriteria(nounGender,
                                                                                   nounWord.isSingular(),
                                                                                   Possession.OTHER);
     String verbValue = "";
@@ -41,13 +43,13 @@ public class NVASentence extends AbstractSentence {
       verbValue = conjugation.get().getTranslationValue(lang);
     }
 
-    String result = Article.getArticle(nounWord.getGender(), nounWord.isSingular(), true)
+    String result = Article.getArticle(nounGender, nounWord.isSingular(), true)
                            .get().getTranslationValue(lang, nounValue) + " ";
     result += nounValue + " ";
     if (Config.DISPLAY_STATE_VERB.contains(lang) || getTense() != Tense.PRESENT) {
       result += verbValue + " ";
     }
-    result += getAdjective().getTranslationByGender(nounWord.getGender(), nounWord.isSingular(), lang).getValue();
+    result += getAdjective().getTranslationByGender(nounGender, nounWord.isSingular(), lang).getValue();
 
     return cleanResponse(result);
   }

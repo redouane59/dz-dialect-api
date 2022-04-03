@@ -4,7 +4,8 @@
   "possible_nouns": [
     "PLACE",
     "PERSON",
-    "OBJECT"
+    "OBJECT",
+    "FOOD"
   ],
   "values": [
     {

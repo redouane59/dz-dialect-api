@@ -1,0 +1,23 @@
+{
+  "id": "poulet",
+  "word_type": "NOUN",
+  "noun_types": [
+    "FOOD"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "poulet"
+        },
+        {
+          "lang": "DZ",
+          "value": "djaadj"
+        }
+      ]
+    }
+  ]
+}

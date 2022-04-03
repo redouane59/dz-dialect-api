@@ -1,0 +1,23 @@
+{
+  "id": "nourriture",
+  "word_type": "NOUN",
+  "noun_types": [
+    "FOOD"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "nourriture"
+        },
+        {
+          "lang": "DZ",
+          "value": "maakla"
+        }
+      ]
+    }
+  ]
+}

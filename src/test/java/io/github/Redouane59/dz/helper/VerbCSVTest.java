@@ -25,7 +25,7 @@ public class VerbCSVTest {
   @Test
   public void parseTest() {
     String    fileName = "verb.csv";
-    Set<Verb> verbs    = Verb.deserializeFromCSV(fileName);
+    Set<Verb> verbs    = Verb.deserializeFromCSV(fileName, false);
 
     Set<Conjugator>
         allConjugators =

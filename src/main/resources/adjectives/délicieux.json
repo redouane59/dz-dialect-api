@@ -1,66 +1,65 @@
 {
-  "id": "froid",
+  "id": "délicieux",
+  "word_type": "ADJECTIVE",
   "possible_nouns": [
-    "PERSON",
     "FOOD"
   ],
   "values": [
     {
-      "gender": "M",
       "singular": true,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "froid"
-        },
-        {
-          "lang": "DZ",
-          "value": "bared"
-        }
-      ]
-    },
-    {
-      "gender": "F",
-      "singular": true,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "froide"
-        },
-        {
-          "lang": "DZ",
-          "value": "barda"
-        }
-      ]
-    },
-    {
       "gender": "M",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
-          "value": "froids"
+          "value": "délicieux"
         },
         {
           "lang": "DZ",
-          "value": "bardin"
+          "value": "bnin"
         }
       ]
     },
     {
+      "singular": true,
       "gender": "F",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
-          "value": "froides"
+          "value": "délicieuse"
         },
         {
           "lang": "DZ",
-          "value": "bardin"
+          "value": "bnina"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "M",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "délicieux"
+        },
+        {
+          "lang": "DZ",
+          "value": "bnaan"
+        }
+      ]
+    },
+    {
+      "singular": false,
+      "gender": "F",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "délicieuses"
+        },
+        {
+          "lang": "DZ",
+          "value": "bnaan"
         }
       ]
     }
-  ],
-  "word_type": "ADJECTIVE"
+  ]
 }

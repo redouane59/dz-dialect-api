@@ -2,7 +2,8 @@
   "id": "léger",
   "possible_nouns": [
     "PERSON",
-    "OBJECT"
+    "OBJECT",
+    "FOOD"
   ],
   "values": [
     {
@@ -39,11 +40,11 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "khfef"
+          "value": "légers"
         },
         {
           "lang": "DZ",
-          "value": "kbar"
+          "value": "khfef"
         }
       ]
     },

@@ -2,7 +2,8 @@
   "id": "chaud",
   "possible_nouns": [
     "PLACE",
-    "OBJECT"
+    "OBJECT",
+    "FOOD"
   ],
   "values": [
     {

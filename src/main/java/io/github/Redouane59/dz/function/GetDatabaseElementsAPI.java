@@ -25,9 +25,8 @@ public class GetDatabaseElementsAPI implements HttpFunction {
 
     BufferedWriter writer = httpResponse.getWriter();
     try {
-      GeneratorParameters bodyArgs = GeneratorParameters.builder().build();
-      httpResponse.setContentType("application/json;charset=iso-8859-1");
-      httpResponse.appendHeader("content-type", "application/json;charset=iso-8859-1");
+      httpResponse.setContentType("application/json;charset=UTF-8");
+      httpResponse.appendHeader("content-type", "application/json;charset=UTF-8");
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(GeneratorParameters.builder().build()));
     } catch (Exception e) {
       e.printStackTrace();

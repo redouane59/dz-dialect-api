@@ -17,7 +17,11 @@ public class Conjugation extends PossessiveWord {
       if (getPossession() == io.github.Redouane59.dz.model.Possession.I) {
         return PersonalProunoun.I;
       } else if (getPossession() == Possession.YOU) {
-        return PersonalProunoun.YOU_M;
+        if (getGender() == Gender.F) {
+          return PersonalProunoun.YOU_F;
+        } else {
+          return PersonalProunoun.YOU_M;
+        }
       } else if (getPossession() == Possession.OTHER) {
         if (getGender() == Gender.F) {
           return PersonalProunoun.SHE;
