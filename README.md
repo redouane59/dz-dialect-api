@@ -40,7 +40,9 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 | [@slimlapointe](https://twitter.com/slimlapointe) | Angular/NodeJS/Python | [https://github.com/SlimaneBouss](https://github.com/SlimaneBouss) | |
 | [@dtctv_kudo](https://twitter.com/dtctv_kudo) | Angular | [https://github.com/KarimPlusPlus](https://github.com/KarimPlusPlus) | |
 | [@Sanhajadeter](https://twitter.com/Sanhajadeter) | Design | [https://www.behance.net/kutam](https://www.behance.net/kutam) | |
-| [@El_1730](https://twitter.com/El_1730) | UX/Design | [https://www.behance.net/kutam](https://www.behance.net/kutam) | |
+| [@El_1730](https://twitter.com/El_1730) | UX/Design |  | |
+| [@Lams_v2](https://twitter.com/Lams_v2) | React |  | |
+
 
 
 
