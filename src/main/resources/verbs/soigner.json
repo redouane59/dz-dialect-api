@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "soigner",
   "conjugators": [
     {
       "conjugations": [
@@ -7,56 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "avez soigné"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
+              "value": "dawitou"
             }
           ],
           "gender": "X",
@@ -67,41 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "a soigné"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "dawina"
             }
           ],
           "gender": "X",
@@ -112,11 +37,71 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "ai soigné"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "dawit"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as soigné"
+            },
+            {
+              "lang": "DZ",
+              "value": "dawit"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a soigné"
+            },
+            {
+              "lang": "DZ",
+              "value": "dawa"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont soigné"
+            },
+            {
+              "lang": "DZ",
+              "value": "dawaw"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont soigné"
+            },
+            {
+              "lang": "DZ",
+              "value": "dawaw"
             }
           ],
           "gender": "M",
@@ -127,11 +112,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "as soigné"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "dawiti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a soigné"
+            },
+            {
+              "lang": "DZ",
+              "value": "dawat"
             }
           ],
           "gender": "F",
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "soignes"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "dawi"
             }
           ],
           "gender": "F",
@@ -162,29 +162,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "soignent"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "ydawiw"
             }
           ],
           "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -192,26 +177,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "soignes"
             },
             {
               "lang": "DZ",
-              "value": "ykhali"
+              "value": "dawi"
             }
           ],
           "gender": "M",
-          "possession": "OTHER",
+          "possession": "YOU",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "soigne"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "ndawiw"
             }
           ],
           "gender": "X",
@@ -222,26 +207,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "soigne"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "tdawi"
             }
           ],
           "gender": "F",
@@ -252,11 +222,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "soignent"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "ydawiw"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "soignez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tdawiw"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "soigne"
+            },
+            {
+              "lang": "DZ",
+              "value": "ndawi"
             }
           ],
           "gender": "X",
@@ -267,16 +267,16 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "soigne"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "ydawi"
             }
           ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
         }
       ],
       "tense": "PRESENT"
@@ -284,12 +284,14 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHO",
+    "HOW"
   ],
   "possible_complements": [
-    "OBJECT"
+    "PERSON"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_dz": "NI",
+  "semi_auxiliar": false
 }

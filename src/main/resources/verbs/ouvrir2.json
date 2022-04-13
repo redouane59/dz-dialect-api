@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "ouvrir2",
   "conjugators": [
     {
       "conjugations": [
@@ -7,101 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "a ouvert"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "7elina"
             }
           ],
           "gender": "X",
@@ -112,11 +22,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "as ouvert"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "7eliti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7elitou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7elit"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7elou"
             }
           ],
           "gender": "M",
@@ -127,11 +82,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "as ouvert"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "7elit"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7el"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7elou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a ouvert"
+            },
+            {
+              "lang": "DZ",
+              "value": "7elet"
             }
           ],
           "gender": "F",
@@ -147,56 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "ouvre"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
+              "value": "y7el"
             }
           ],
           "gender": "M",
@@ -207,11 +162,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "ouvres"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "t7el"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ouvre"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7elou"
             }
           ],
           "gender": "X",
@@ -222,26 +192,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "ouvre"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "t7el"
             }
           ],
           "gender": "F",
@@ -252,11 +207,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "ouvrent"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "y7elou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ouvrez"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7elou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ouvrent"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7elou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ouvre"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7el"
             }
           ],
           "gender": "X",
@@ -267,16 +267,16 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "ouvres"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "t7eli"
             }
           ],
-          "gender": "X",
+          "gender": "F",
           "possession": "YOU",
-          "singular": false
+          "singular": true
         }
       ],
       "tense": "PRESENT"
@@ -284,12 +284,15 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHAT",
+    "WHY",
+    "WHEN",
+    "HOW"
   ],
   "possible_complements": [
     "OBJECT"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_dz": "LI"
 }

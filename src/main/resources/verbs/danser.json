@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "danser",
   "conjugators": [
     {
       "conjugations": [
@@ -7,26 +7,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "danse"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
+              "value": "yechta7"
             }
           ],
-          "gender": "F",
-          "possession": "YOU",
+          "gender": "M",
+          "possession": "OTHER",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "ai laissé"
+              "value": "dansent"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "yechet7ou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "dansez"
+            },
+            {
+              "lang": "DZ",
+              "value": "techet7ou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "danse"
+            },
+            {
+              "lang": "DZ",
+              "value": "nechta7"
             }
           ],
           "gender": "X",
@@ -37,11 +67,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "danses"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "techta7"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "danses"
+            },
+            {
+              "lang": "DZ",
+              "value": "techta7"
             }
           ],
           "gender": "M",
@@ -52,26 +97,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez laissé"
+              "value": "dansent"
             },
             {
               "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
+              "value": "yechet7ou"
             }
           ],
           "gender": "F",
@@ -82,64 +112,34 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "danses"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
+              "value": "techat7i"
             }
           ],
-          "gender": "M",
-          "possession": "OTHER",
+          "gender": "F",
+          "possession": "YOU",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "danses"
             },
             {
               "lang": "DZ",
-              "value": "khalina"
+              "value": "nechet7ou"
             }
           ],
           "gender": "X",
           "possession": "I",
           "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallat"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     },
     {
       "conjugations": [
@@ -147,26 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "as dansé"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "chte7t"
             }
           ],
           "gender": "M",
@@ -177,56 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "ont dansé"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhaliou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "chet7ou"
             }
           ],
           "gender": "M",
@@ -237,26 +177,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "ont dansé"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "chet7ou"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
-          "singular": true
+          "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "ai dansé"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "chte7t"
             }
           ],
           "gender": "X",
@@ -267,29 +207,88 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "avez dansé"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "chte7tou"
             }
           ],
           "gender": "X",
           "possession": "YOU",
           "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a dansé"
+            },
+            {
+              "lang": "DZ",
+              "value": "chet7et"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a dansé"
+            },
+            {
+              "lang": "DZ",
+              "value": "chte7na"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a dansé"
+            },
+            {
+              "lang": "DZ",
+              "value": "chte7"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as dansé"
+            },
+            {
+              "lang": "DZ",
+              "value": "chte7ti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHY"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null,
+  "semi_auxiliar": false
 }

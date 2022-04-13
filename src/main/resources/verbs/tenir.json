@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "tenir",
   "conjugators": [
     {
       "conjugations": [
@@ -7,101 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "tient"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "nchedou"
             }
           ],
           "gender": "X",
@@ -112,46 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "tiens"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallat"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        }
-      ],
-      "tense": "PAST"
-    },
-    {
-      "conjugations": [
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "tchedi"
             }
           ],
           "gender": "F",
@@ -162,11 +37,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "tient"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "tched"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tiens"
+            },
+            {
+              "lang": "DZ",
+              "value": "tched"
             }
           ],
           "gender": "M",
@@ -177,11 +67,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "tiennent"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "ichedou"
             }
           ],
           "gender": "F",
@@ -192,11 +82,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "tient"
             },
             {
               "lang": "DZ",
-              "value": "ykhali"
+              "value": "iched"
             }
           ],
           "gender": "M",
@@ -207,26 +97,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "tiens"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "nched"
             }
           ],
           "gender": "X",
           "possession": "I",
-          "singular": false
+          "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "tiennent"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "ichedou"
             }
           ],
           "gender": "M",
@@ -237,41 +127,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "tenez"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissez"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "tchedou"
             }
           ],
           "gender": "X",
@@ -280,11 +140,152 @@
         }
       ],
       "tense": "PRESENT"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedit"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedit"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chedina"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chediti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "ched"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez tenu"
+            },
+            {
+              "lang": "DZ",
+              "value": "cheditou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        }
+      ],
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHAT",
+    "WHY"
   ],
   "possible_complements": [
     "OBJECT"

@@ -26,6 +26,7 @@ public class DB {
         VERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Verb.class));
       } catch (IOException e) {
         System.err.println("could not load file " + fileName);
+        e.printStackTrace();
       }
     }
     System.out.println(VERBS.size() + " verbs loaded");

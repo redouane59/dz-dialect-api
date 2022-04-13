@@ -38,13 +38,15 @@ public class Verb extends AbstractWord {
   private             Set<Question>   possibleQuestions   = new HashSet<>();
   private             Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_complements")
-  private             Set<NounType>   possibleComplements = new HashSet<>();
+  private             Set<NounType>   possibleComplements = new HashSet<>(); // @todo add verbs
   @JsonProperty("verb_type")
   private             VerbType        verbType;
   @JsonProperty("reflexive_suffix_fr")
   private             ReflexiveSuffix reflexiveSuffixFr;
   @JsonProperty("reflexive_suffix_dz")
   private             ReflexiveSuffix reflexiveSuffixDz;
+  @JsonProperty("semi_auxiliar")
+  private             boolean         semiAuxiliar; // conjugated verb + infinitive verb
 
   public static Set<Verb> deserializeFromCSV(String fileName, boolean removeHeader) {
     List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", removeHeader);
@@ -54,6 +56,7 @@ public class Verb extends AbstractWord {
     String             pronounDelimiter      = "/";
     int                frValueIndex          = 3;
     int                dzValueIndex          = 4;
+    int                dzValueArIndex        = 5;
     Set<Verb>          verbs                 = new HashSet<>();
 
     for (List<String> values : entries) {
@@ -66,6 +69,7 @@ public class Verb extends AbstractWord {
         verb = verbOpt.get();
       }
       verb.setWordType(WordType.VERB);
+      verb.setVerbType(VerbType.ACTION);
 
       try {
         Tense tense = Tense.valueOf(values.get(tenseIndex));
@@ -73,13 +77,18 @@ public class Verb extends AbstractWord {
             personalProunoun =
             PersonalProunoun.getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
                                                        values.get(personalPronounsIndex).split(pronounDelimiter)[1]);
-        String      frValue     = values.get(frValueIndex); // @todo jackson change deserialization call
-        String      dzValue     = values.get(dzValueIndex);
+        String frValue   = values.get(frValueIndex);
+        String dzValue   = values.get(dzValueIndex);
+        String dzValueAr = null;
+        if (values.size() > dzValueArIndex) {
+          dzValueAr = values.get(dzValueArIndex);
+        }
         Conjugation conjugation = new Conjugation();
         conjugation.setGender(personalProunoun.getGender());
         conjugation.setPossession(personalProunoun.getPossession());
         conjugation.setSingular(personalProunoun.isSingular());
-        conjugation.setTranslations(List.of(new Translation(Lang.FR, frValue), new Translation(Lang.DZ, dzValue)));
+        conjugation.setTranslations(List.of(new Translation(Lang.FR, frValue),
+                                            new Translation(Lang.DZ, dzValue, dzValueAr)));
         Optional<Conjugator> conjugatorOpt = verb.getConjugators().stream().filter(o -> o.getTense() == tense).findFirst();
         Conjugator           conjugator;
         if (conjugatorOpt.isEmpty()) {

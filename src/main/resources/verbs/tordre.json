@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "tordre",
   "conjugators": [
     {
       "conjugations": [
@@ -7,26 +7,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "tordez"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
+              "value": "t3awdjou"
             }
           ],
-          "gender": "F",
+          "gender": "X",
           "possession": "YOU",
-          "singular": true
+          "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "ai laissé"
+              "value": "tordent"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "y3awdjou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tords"
+            },
+            {
+              "lang": "DZ",
+              "value": "n3awedj"
             }
           ],
           "gender": "X",
@@ -37,11 +52,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "tords"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "t3awedj"
             }
           ],
           "gender": "M",
@@ -52,26 +67,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez laissé"
+              "value": "tordent"
             },
             {
               "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
+              "value": "y3awdjou"
             }
           ],
           "gender": "F",
@@ -82,11 +82,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "tords"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
+              "value": "t3awdji"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tord"
+            },
+            {
+              "lang": "DZ",
+              "value": "y3awedj"
             }
           ],
           "gender": "M",
@@ -97,11 +112,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "tord"
             },
             {
               "lang": "DZ",
-              "value": "khalina"
+              "value": "n3awdjou"
             }
           ],
           "gender": "X",
@@ -112,26 +127,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "tord"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallat"
+              "value": "t3awedj"
             }
           ],
           "gender": "F",
@@ -139,7 +139,7 @@
           "singular": true
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     },
     {
       "conjugations": [
@@ -147,71 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "a tordu"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "3awedjna"
             }
           ],
           "gender": "X",
@@ -222,11 +162,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "avez tordu"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "3awedjtou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont tordu"
+            },
+            {
+              "lang": "DZ",
+              "value": "3awdjou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as tordu"
+            },
+            {
+              "lang": "DZ",
+              "value": "3awedjt"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont tordu"
+            },
+            {
+              "lang": "DZ",
+              "value": "3awdjou"
             }
           ],
           "gender": "M",
@@ -237,11 +222,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "a tordu"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "3awdjet"
             }
           ],
           "gender": "F",
@@ -252,11 +237,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "a tordu"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "3awedj"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai tordu"
+            },
+            {
+              "lang": "DZ",
+              "value": "3awedjt"
             }
           ],
           "gender": "X",
@@ -267,29 +267,28 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "as tordu"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "3awedjti"
             }
           ],
-          "gender": "X",
+          "gender": "F",
           "possession": "YOU",
-          "singular": false
+          "singular": true
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHY"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null,
+  "semi_auxiliar": false
 }

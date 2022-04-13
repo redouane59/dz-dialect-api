@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "lire",
   "conjugators": [
     {
       "conjugations": [
@@ -7,86 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "il lit"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
+              "value": "ye9ra"
             }
           ],
           "gender": "M",
@@ -97,11 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "nous lisons"
             },
             {
               "lang": "DZ",
-              "value": "khalina"
+              "value": "ne9raw"
             }
           ],
           "gender": "X",
@@ -112,61 +37,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "tu lis"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallat"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        }
-      ],
-      "tense": "PAST"
-    },
-    {
-      "conjugations": [
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "te9ra"
             }
           ],
           "gender": "M",
@@ -177,56 +52,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "tu lis"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "te9ray"
             }
           ],
           "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
+          "possession": "YOU",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "ils lisent"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "ye9raw"
             }
           ],
           "gender": "M",
@@ -237,26 +82,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "elles lisent"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "ye9raw"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
-          "singular": true
+          "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "je lis"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "ne9ra"
             }
           ],
           "gender": "X",
@@ -267,11 +112,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "elle lit"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "te9ra"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vous lisez"
+            },
+            {
+              "lang": "DZ",
+              "value": "te9raw"
             }
           ],
           "gender": "X",
@@ -280,16 +140,156 @@
         }
       ],
       "tense": "PRESENT"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tu as lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9riti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "il a lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9ra"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9raw"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "nous avons lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9rina"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "elles ont lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9raw"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tu as lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9rit"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "j'ai lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9rit"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "elle a lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9rat"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vous avez lu"
+            },
+            {
+              "lang": "DZ",
+              "value": "9ritou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        }
+      ],
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHAT",
+    "WHY"
   ],
   "possible_complements": [
-    "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }

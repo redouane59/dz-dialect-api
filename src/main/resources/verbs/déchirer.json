@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "déchirer",
   "conjugators": [
     {
       "conjugations": [
@@ -7,26 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "ai dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
+              "value": "9ete3t"
             }
           ],
           "gender": "X",
@@ -37,14 +22,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "as dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "9ete3ti"
             }
           ],
-          "gender": "M",
+          "gender": "F",
           "possession": "YOU",
           "singular": true
         },
@@ -52,26 +37,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez laissé"
+              "value": "ont dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khalitou"
+              "value": "9et3ou"
             }
           ],
-          "gender": "X",
-          "possession": "YOU",
+          "gender": "M",
+          "possession": "OTHER",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "ont dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "9et3ou"
             }
           ],
           "gender": "F",
@@ -82,11 +67,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
+              "value": "9et3et"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a dechiré"
+            },
+            {
+              "lang": "DZ",
+              "value": "9ete3"
             }
           ],
           "gender": "M",
@@ -97,11 +97,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khalina"
+              "value": "9ete3na"
             }
           ],
           "gender": "X",
@@ -112,31 +112,31 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "as dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "9ete3t"
             }
           ],
           "gender": "M",
-          "possession": "OTHER",
-          "singular": false
+          "possession": "YOU",
+          "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "avez dechiré"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "9ete3tou"
             }
           ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         }
       ],
       "tense": "PAST"
@@ -147,56 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "dechire"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
+              "value": "y9ete3"
             }
           ],
           "gender": "M",
@@ -207,11 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "dechire"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "n9et3ou"
             }
           ],
           "gender": "X",
@@ -222,26 +177,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "dechire"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "t9ete3"
             }
           ],
           "gender": "F",
@@ -252,31 +192,91 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "dechires"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
+              "value": "t9et3i"
             }
           ],
-          "gender": "X",
-          "possession": "I",
+          "gender": "F",
+          "possession": "YOU",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "dechirez"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "t9et3ou"
             }
           ],
           "gender": "X",
           "possession": "YOU",
           "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "dechirent "
+            },
+            {
+              "lang": "DZ",
+              "value": "y9et3ou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "dechirent "
+            },
+            {
+              "lang": "DZ",
+              "value": "y9et3ou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "dechires"
+            },
+            {
+              "lang": "DZ",
+              "value": "t9ete3"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "dechire"
+            },
+            {
+              "lang": "DZ",
+              "value": "n9ete3"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
         }
       ],
       "tense": "PRESENT"
@@ -286,10 +286,9 @@
   "possible_questions": [
     "WHAT"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null,
+  "semi_auxiliar": false
 }

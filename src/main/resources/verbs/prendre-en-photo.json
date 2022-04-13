@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "prendre-en-photo",
   "conjugators": [
     {
       "conjugations": [
@@ -7,11 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "as pris en photo"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
+              "value": "ssewerti"
             }
           ],
           "gender": "F",
@@ -22,59 +22,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai laissé"
+              "value": "ont pris en photo"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
+              "value": "ssewrou"
             }
           ],
           "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -82,26 +37,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a pris en photo"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "ssewerna"
             }
           ],
           "gender": "X",
@@ -112,14 +52,59 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "avez pris en photo"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "ssewertou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai pris en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "ssewert"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a pris en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "ssewret"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont pris en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "ssewrou"
+            }
+          ],
+          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -127,15 +112,30 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a pris en photo"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "ssewer"
             }
           ],
-          "gender": "F",
+          "gender": "M",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as pris en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "ssewert"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
           "singular": true
         }
       ],
@@ -147,116 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "prends en photo"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhaliou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
+              "value": "nssewer"
             }
           ],
           "gender": "X",
@@ -267,15 +162,120 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "prenent en photo"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "issewrou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prenent en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "issewrou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prend en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "tssewer"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prend en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "isewer"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prends en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "tssewer"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prends en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "tssewri"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prenez en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "tssewrou"
             }
           ],
           "gender": "X",
           "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "prend en photo"
+            },
+            {
+              "lang": "DZ",
+              "value": "nssewrou"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
           "singular": false
         }
       ],
@@ -284,10 +284,11 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHO",
+    "WHY"
   ],
   "possible_complements": [
-    "OBJECT"
+    "PERSON"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",

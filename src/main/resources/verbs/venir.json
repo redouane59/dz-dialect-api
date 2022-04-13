@@ -1,5 +1,5 @@
 {
-  "id": "arriver",
+  "id": "venir",
   "conjugators": [
     {
       "tense": "PAST",
@@ -11,7 +11,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "suis arrivé"
+              "value": "suis venu"
             },
             {
               "lang": "DZ",
@@ -26,7 +26,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "es arrivé"
+              "value": "es venu"
             },
             {
               "lang": "DZ",
@@ -41,7 +41,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "es arrivée"
+              "value": "es venue"
             },
             {
               "lang": "DZ",
@@ -56,7 +56,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "est arrivé"
+              "value": "est venu"
             },
             {
               "lang": "DZ",
@@ -71,7 +71,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "est arrivée"
+              "value": "est venue"
             },
             {
               "lang": "DZ",
@@ -86,7 +86,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "est arrivé"
+              "value": "est venus"
             },
             {
               "lang": "DZ",
@@ -101,7 +101,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "êtes arrivés"
+              "value": "êtes venus"
             },
             {
               "lang": "DZ",
@@ -116,11 +116,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "sont arrivés"
+              "value": "sont venus"
             },
             {
               "lang": "DZ",
-              "value": "djeou"
+              "value": "djaw"
             }
           ]
         },
@@ -131,11 +131,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "sont arrivées"
+              "value": "sont venues"
             },
             {
               "lang": "DZ",
-              "value": "djeou"
+              "value": "djaw"
             }
           ]
         }
@@ -151,7 +151,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrive"
+              "value": "viens"
             },
             {
               "lang": "DZ",
@@ -166,7 +166,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrives"
+              "value": "viens"
             },
             {
               "lang": "DZ",
@@ -181,7 +181,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrives"
+              "value": "viens"
             },
             {
               "lang": "DZ",
@@ -196,7 +196,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrive"
+              "value": "vient"
             },
             {
               "lang": "DZ",
@@ -211,7 +211,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrive"
+              "value": "vient"
             },
             {
               "lang": "DZ",
@@ -226,7 +226,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrive"
+              "value": "vient"
             },
             {
               "lang": "DZ",
@@ -241,7 +241,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrivez"
+              "value": "venez"
             },
             {
               "lang": "DZ",
@@ -256,7 +256,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "arrivent"
+              "value": "viennent"
             },
             {
               "lang": "DZ",

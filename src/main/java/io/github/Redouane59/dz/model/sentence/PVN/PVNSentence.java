@@ -18,6 +18,10 @@ public class PVNSentence extends PVSentence {
     String result    = super.buildSentenceValue(lang);
     String nounValue = getNoun().getTranslationBySingular(true, lang).get().getValue();
     result += " ";
+    if (getVerb().getVerbType() == null) {
+      System.err.println("verb type null");
+      return "";
+    }
     switch (getVerb().getVerbType()) {
       case STATE:
         result += getNoun().getStatePreposition(lang).get().getValue();

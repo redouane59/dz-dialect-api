@@ -261,6 +261,7 @@
     "WHAT"
   ],
   "verb_type": "ACTION",
+  "semi_auxiliar": true,
   "reflexive_suffix_fr": "LES",
   "reflexive_suffix_dz": "NI"
 }

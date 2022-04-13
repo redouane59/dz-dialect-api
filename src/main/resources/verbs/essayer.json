@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "essayer",
   "conjugators": [
     {
       "conjugations": [
@@ -7,41 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "as essayé"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
+              "value": "djarrebt"
             }
           ],
           "gender": "M",
@@ -52,26 +22,41 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez laissé"
+              "value": "a essayé"
             },
             {
               "lang": "DZ",
-              "value": "khalitou"
+              "value": "djarrbet"
             }
           ],
-          "gender": "X",
-          "possession": "YOU",
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont essayé "
+            },
+            {
+              "lang": "DZ",
+              "value": "djarrbou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "ont essayé "
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "djarrbou"
             }
           ],
           "gender": "F",
@@ -82,26 +67,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a essayé"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "djarrebna"
             }
           ],
           "gender": "X",
@@ -112,30 +82,60 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "avez essayé"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "djarrebtou"
             }
           ],
-          "gender": "M",
-          "possession": "OTHER",
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "a essayé"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "djarreb"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai essayé "
+            },
+            {
+              "lang": "DZ",
+              "value": "djarrebt"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as essayé"
+            },
+            {
+              "lang": "DZ",
+              "value": "djarrebti"
             }
           ],
           "gender": "F",
-          "possession": "OTHER",
+          "possession": "YOU",
           "singular": true
         }
       ],
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "essayes"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "tdjarrbi"
             }
           ],
           "gender": "F",
@@ -162,101 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "essaye"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhaliou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
+              "value": "ndjarreb"
             }
           ],
           "gender": "X",
@@ -267,15 +177,105 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "essayes"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "djarreb"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essayent"
+            },
+            {
+              "lang": "DZ",
+              "value": " ydjarrbou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essayez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tdjarrbou"
             }
           ],
           "gender": "X",
           "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essaye"
+            },
+            {
+              "lang": "DZ",
+              "value": "tdjarreb"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essaye"
+            },
+            {
+              "lang": "DZ",
+              "value": "ydjarreb"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essaye"
+            },
+            {
+              "lang": "DZ",
+              "value": "ndjarrbou"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "essayent"
+            },
+            {
+              "lang": "DZ",
+              "value": "ydjarrbou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
           "singular": false
         }
       ],
@@ -284,12 +284,12 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
+    "WHY",
     "WHAT"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_dz": "NI",
+  "semi_auxiliar": false
 }

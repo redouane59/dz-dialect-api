@@ -261,5 +261,6 @@
     "WHERE",
     "WHEN"
   ],
+  "semi_auxiliar": true,
   "verb_type": "DEPLACEMENT"
 }

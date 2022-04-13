@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "cuisiner",
   "conjugators": [
     {
       "conjugations": [
@@ -7,74 +7,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "cuisinent"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
+              "value": "itaybou"
             }
           ],
           "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -82,26 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "cuisine"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "ntaybou"
             }
           ],
           "gender": "X",
@@ -112,14 +37,44 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "cuisine"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "itayeb"
             }
           ],
           "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cuisines"
+            },
+            {
+              "lang": "DZ",
+              "value": "taybi"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cuisinent"
+            },
+            {
+              "lang": "DZ",
+              "value": "itaybou"
+            }
+          ],
+          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -127,19 +82,64 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "cuisinez"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "taybou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cuisine"
+            },
+            {
+              "lang": "DZ",
+              "value": "ntayeb"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cuisine"
+            },
+            {
+              "lang": "DZ",
+              "value": "tayeb"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cuisines"
+            },
+            {
+              "lang": "DZ",
+              "value": "tayeb"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
           "singular": true
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     },
     {
       "conjugations": [
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "as cuisiné"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "tayebti"
             }
           ],
           "gender": "F",
@@ -162,101 +162,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "ai cuisiné"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhali"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhaliou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
+              "value": "tayebt"
             }
           ],
           "gender": "X",
@@ -267,29 +177,119 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "a cuisiné"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "tayebna"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "tayeb"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "taybou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "taybet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "tayebtou"
             }
           ],
           "gender": "X",
           "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "tayebt"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont cuisiné"
+            },
+            {
+              "lang": "DZ",
+              "value": "taybou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
           "singular": false
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHAT",
+    "WHEN",
+    "WHY"
   ],
   "possible_complements": [
-    "OBJECT"
+    "FOOD"
   ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "verb_type": "ACTION"
 }

@@ -179,7 +179,6 @@ public class WordPicker {
 
 
   public static Question pickRandomInterrogativePronoun(final Verb randomVerb) {
-    //  return randomVerb.getPossibleQuestions().get(RANDOM.nextInt(randomVerb.getPossibleQuestions().size()));
     return randomVerb.getPossibleQuestions().stream().skip(new Random().nextInt(randomVerb.getPossibleQuestions().size())).findFirst().orElse(null);
   }
 

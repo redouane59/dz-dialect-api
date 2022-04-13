@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "écrire",
   "conjugators": [
     {
       "conjugations": [
@@ -7,26 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "j'écris"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
+              "value": "nekteb"
             }
           ],
           "gender": "X",
@@ -37,41 +22,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "elles écrivent"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
+              "value": "yeketdou"
             }
           ],
           "gender": "F",
@@ -82,41 +37,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "ils écrivent"
             },
             {
               "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
+              "value": "yeketdou"
             }
           ],
           "gender": "M",
@@ -127,46 +52,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "tu écris"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        }
-      ],
-      "tense": "PAST"
-    },
-    {
-      "conjugations": [
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisses"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
+              "value": "tekteb"
             }
           ],
           "gender": "M",
@@ -177,29 +67,29 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "tu écris"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "teketbi"
             }
           ],
           "gender": "F",
-          "possession": "OTHER",
-          "singular": false
+          "possession": "YOU",
+          "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "elle écrit"
             },
             {
               "lang": "DZ",
-              "value": "ykhali"
+              "value": "tekteb"
             }
           ],
-          "gender": "M",
+          "gender": "F",
           "possession": "OTHER",
           "singular": true
         },
@@ -207,11 +97,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "nous écrivons"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "neketbou"
             }
           ],
           "gender": "X",
@@ -222,56 +112,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "il écrit"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "yekteb"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "vous écrivez"
             },
             {
               "lang": "DZ",
-              "value": "nkhali"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laissez"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "teketbou"
             }
           ],
           "gender": "X",
@@ -280,16 +140,155 @@
         }
       ],
       "tense": "PRESENT"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tu as écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ktebti"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "elles ont écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ketbou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "vous avez écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ktebtou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "il a écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "kteb"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "j'ai écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ktebt"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ketbou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "elle a écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ketbet"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "tu as écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ktebt"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "nous avaons écrit"
+            },
+            {
+              "lang": "DZ",
+              "value": "ktebna"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        }
+      ],
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHAT",
+    "WHY"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": "LEUR",
+  "reflexive_suffix_dz": "LI"
 }

@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "énerver-se",
   "conjugators": [
     {
       "conjugations": [
@@ -7,11 +7,56 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "s'est énervée"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
+              "value": "t9el9et"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "se sont énervés"
+            },
+            {
+              "lang": "DZ",
+              "value": "t9el9ou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "t'es énervé"
+            },
+            {
+              "lang": "DZ",
+              "value": "t9ele9t"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "t'es énervée"
+            },
+            {
+              "lang": "DZ",
+              "value": "t9ele9ti"
             }
           ],
           "gender": "F",
@@ -22,11 +67,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai laissé"
+              "value": "se sont énervées"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
+              "value": "t9el9ou"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "me suis énervé"
+            },
+            {
+              "lang": "DZ",
+              "value": "t9ele9t"
             }
           ],
           "gender": "X",
@@ -37,71 +97,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "s'est énervés"
             },
             {
               "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalina"
+              "value": "t9ele9na"
             }
           ],
           "gender": "X",
@@ -112,31 +112,31 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "s'est énervé"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "t9ele9"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
-          "singular": false
+          "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "vous êtes énervés"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "t9ele9tou"
             }
           ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         }
       ],
       "tense": "PAST"
@@ -147,11 +147,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "vous énervez"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "tet9el9ou"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "t'énerves"
+            },
+            {
+              "lang": "DZ",
+              "value": "tet9el9i"
             }
           ],
           "gender": "F",
@@ -162,11 +177,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "t'énerves"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "tet9ele9"
             }
           ],
           "gender": "M",
@@ -177,11 +192,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "s'énervent"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "yet9el9ou"
             }
           ],
           "gender": "F",
@@ -192,14 +207,14 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "s'énerve"
             },
             {
               "lang": "DZ",
-              "value": "ykhali"
+              "value": "tet9ele9"
             }
           ],
-          "gender": "M",
+          "gender": "F",
           "possession": "OTHER",
           "singular": true
         },
@@ -207,11 +222,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "s'énerve"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "net9el9ou"
             }
           ],
           "gender": "X",
@@ -222,41 +237,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "m'énerve"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
+              "value": "net9ele9"
             }
           ],
           "gender": "X",
@@ -267,15 +252,30 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "s'énerve"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "yet9ele9"
             }
           ],
-          "gender": "X",
-          "possession": "YOU",
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "s'énervent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yet9el9ou"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
           "singular": false
         }
       ],
@@ -284,12 +284,11 @@
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHY"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }
+

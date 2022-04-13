@@ -27,4 +27,10 @@ public class Translation {
     this.value = value;
   }
 
+  public Translation(Lang lang, String value, String arValue) {
+    this.lang    = lang;
+    this.value   = value;
+    this.arValue = arValue;
+  }
+
 }

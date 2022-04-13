@@ -1,5 +1,5 @@
 {
-  "id": "laisser",
+  "id": "commencer",
   "conjugators": [
     {
       "conjugations": [
@@ -7,86 +7,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as laissé"
+              "value": "commence"
             },
             {
               "lang": "DZ",
-              "value": "khaliti"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalit"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalitou"
-            }
-          ],
-          "gender": "X",
-          "possession": "YOU",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khallaw"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a laissé"
-            },
-            {
-              "lang": "DZ",
-              "value": "khalla"
+              "value": "yebda"
             }
           ],
           "gender": "M",
@@ -97,11 +22,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "commences"
             },
             {
               "lang": "DZ",
-              "value": "khalina"
+              "value": "tbday"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "commence"
+            },
+            {
+              "lang": "DZ",
+              "value": "nebdaw"
             }
           ],
           "gender": "X",
@@ -112,14 +52,29 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont laissé"
+              "value": "commence"
             },
             {
               "lang": "DZ",
-              "value": "khallaw"
+              "value": "nebda"
             }
           ],
-          "gender": "M",
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "commencent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yebdaw"
+            }
+          ],
+          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -127,19 +82,64 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a laissé"
+              "value": "commences"
             },
             {
               "lang": "DZ",
-              "value": "khallat"
+              "value": "tbda"
+            }
+          ],
+          "gender": "M",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "commence"
+            },
+            {
+              "lang": "DZ",
+              "value": "tebda"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
           "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "commencez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tbdaw"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "commencent"
+            },
+            {
+              "lang": "DZ",
+              "value": "yebdaw"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": false
         }
       ],
-      "tense": "PAST"
+      "tense": "PRESENT"
     },
     {
       "conjugations": [
@@ -147,11 +147,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "as commencé"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "bditi"
             }
           ],
           "gender": "F",
@@ -162,29 +162,29 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisses"
+              "value": "a commencé"
             },
             {
               "lang": "DZ",
-              "value": "tkhali"
+              "value": "bda"
             }
           ],
           "gender": "M",
-          "possession": "YOU",
+          "possession": "OTHER",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "ont commencé"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
+              "value": "bdaw"
             }
           ],
-          "gender": "F",
+          "gender": "M",
           "possession": "OTHER",
           "singular": false
         },
@@ -192,26 +192,26 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "avez commencé"
             },
             {
               "lang": "DZ",
-              "value": "ykhali"
+              "value": "bditou"
             }
           ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "laisse"
+              "value": "a commencé"
             },
             {
               "lang": "DZ",
-              "value": "nkhaliou"
+              "value": "bdina"
             }
           ],
           "gender": "X",
@@ -222,41 +222,11 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissent"
+              "value": "ai commencé"
             },
             {
               "lang": "DZ",
-              "value": "ykhaliou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "tkhali"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "laisse"
-            },
-            {
-              "lang": "DZ",
-              "value": "nkhali"
+              "value": "bdit"
             }
           ],
           "gender": "X",
@@ -267,29 +237,59 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "laissez"
+              "value": "as commencé"
             },
             {
               "lang": "DZ",
-              "value": "tkhaliou"
+              "value": "bdit"
             }
           ],
-          "gender": "X",
+          "gender": "M",
           "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a commencé"
+            },
+            {
+              "lang": "DZ",
+              "value": "bdat"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont commencé"
+            },
+            {
+              "lang": "DZ",
+              "value": "bdaw"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
           "singular": false
         }
       ],
-      "tense": "PRESENT"
+      "tense": "PAST"
     }
   ],
   "word_type": "VERB",
   "possible_questions": [
-    "WHAT"
+    "WHEN",
+    "WHERE",
+    "WHO"
   ],
-  "possible_complements": [
-    "OBJECT"
-  ],
+  "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }
