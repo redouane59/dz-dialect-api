@@ -81,10 +81,13 @@ public enum ReflexiveSuffix {
 
     String value = ppSuffix.get().getSuffixValue();
 
-    // manage double letters
-    if (lang.getRootLang() == RootLang.AR && verbValue.charAt(verbValue.length() - 1) == value.charAt(0)) { // @todo use root lang
+    if (lang.getRootLang() == RootLang.AR &&
+        (verbValue.charAt(verbValue.length() - 1) == value.charAt(0)    // manage double letters
+         || verbValue.charAt(verbValue.length() - 1) == 'e' && value.charAt(0) == 'i') // manage i + ek
+    ) {
       value = value.substring(1);
     }
+
     return value;
   }
 

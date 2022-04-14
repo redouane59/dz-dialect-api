@@ -285,8 +285,7 @@
   "word_type": "VERB",
   "possible_questions": [
     "WHAT",
-    "HOW",
-    "WHO"
+    "HOW"
   ],
   "possible_complements": [],
   "verb_type": "ACTION",

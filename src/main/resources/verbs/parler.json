@@ -289,6 +289,6 @@
   "possible_complements": [
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "LI"
+  "reflexive_suffix_fr": null,
+  "reflexive_suffix_dz": null
 }

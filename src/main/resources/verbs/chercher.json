@@ -291,7 +291,8 @@
   ],
   "possible_complements": [
     "PERSON",
-    "PLACE"
+    "PLACE",
+    "FOOD"
   ],
   "verb_type": "ACTION",
   "reflexive_suffix_fr": "LES",
