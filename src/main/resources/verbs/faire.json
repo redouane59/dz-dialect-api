@@ -104,7 +104,7 @@
               "value": "dert"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -259,7 +259,7 @@
               "value": "dir"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,13 +282,13 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT",
     "HOW"
   ],
-  "possible_complements": [],
+  "possible_complements": [
+    "FOOD"
+  ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "LI"
+  "indirect_complement": true
 }

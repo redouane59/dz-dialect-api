@@ -59,7 +59,7 @@
               "value": "skent"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -274,7 +274,7 @@
               "value": "teskon"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -282,13 +282,13 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHERE",
     "WITH_WHO"
   ],
   "possible_complements": [
-    "PLACE"
+    "PLACE",
+    "ADVERB"
   ],
   "verb_type": "ACTION"
 }

@@ -29,7 +29,7 @@
               "value": "takoul"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -169,7 +169,7 @@
               "value": "klit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT",
     "WHEN",
@@ -291,9 +290,10 @@
     "WHY"
   ],
   "possible_complements": [
-    "FOOD"
+    "FOOD",
+    "ADVERB"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "direct_complement": true,
+  "object_only": true
 }

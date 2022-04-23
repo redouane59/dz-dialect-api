@@ -7,16 +7,17 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "avez bu"
+              "value": "as bu"
             },
             {
               "lang": "DZ",
-              "value": "chrobtou"
+              "value": "chrobti",
+              "ar_value": "شروبتي"
             }
           ],
-          "gender": "X",
+          "gender": "F",
           "possession": "YOU",
-          "singular": false
+          "singular": true
         },
         {
           "translations": [
@@ -26,10 +27,11 @@
             },
             {
               "lang": "DZ",
-              "value": "chrobt"
+              "value": "chrobt",
+              "ar_value": "شروبت"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -41,12 +43,13 @@
             },
             {
               "lang": "DZ",
-              "value": "chrob"
+              "value": "chrobna",
+              "ar_value": "شْربنا"
             }
           ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
+          "gender": "X",
+          "possession": "I",
+          "singular": false
         },
         {
           "translations": [
@@ -56,7 +59,8 @@
             },
             {
               "lang": "DZ",
-              "value": "chrobt"
+              "value": "chrobt",
+              "ar_value": "شروبت"
             }
           ],
           "gender": "X",
@@ -67,16 +71,17 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as bu"
+              "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "chrobti"
+              "value": "chorbou",
+              "ar_value": "شربو"
             }
           ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
         },
         {
           "translations": [
@@ -86,7 +91,8 @@
             },
             {
               "lang": "DZ",
-              "value": "chrobet"
+              "value": "chorbet",
+              "ar_value": "شربت"
             }
           ],
           "gender": "F",
@@ -97,46 +103,49 @@
           "translations": [
             {
               "lang": "FR",
+              "value": "avez bu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chrobtou",
+              "ar_value": "شْربتو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
               "value": "a bu"
             },
             {
               "lang": "DZ",
-              "value": "chrobou"
+              "value": "chorbou",
+              "ar_value": "شربو"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a bu"
+            },
+            {
+              "lang": "DZ",
+              "value": "chrob",
+              "ar_value": "شرب"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a bu"
-            },
-            {
-              "lang": "DZ",
-              "value": "chrobou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a bu"
-            },
-            {
-              "lang": "DZ",
-              "value": "chrobna"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
+          "singular": true
         }
       ],
       "tense": "PAST"
@@ -147,11 +156,76 @@
           "translations": [
             {
               "lang": "FR",
+              "value": "boivent"
+            },
+            {
+              "lang": "DZ",
+              "value": "ychorbou",
+              "ar_value": "يشربو"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
               "value": "bois"
             },
             {
               "lang": "DZ",
-              "value": "techrobi"
+              "value": "techrob",
+              "ar_value": "تشرب"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "boit"
+            },
+            {
+              "lang": "DZ",
+              "value": "nechorbou",
+              "ar_value": "نَشريو"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "boit"
+            },
+            {
+              "lang": "DZ",
+              "value": "techrob",
+              "ar_value": "تشرب"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "bois"
+            },
+            {
+              "lang": "DZ",
+              "value": "techrobi",
+              "ar_value": "تشربي"
             }
           ],
           "gender": "F",
@@ -166,7 +240,8 @@
             },
             {
               "lang": "DZ",
-              "value": "tcherbou"
+              "value": "tcherbou",
+              "ar_value": "تشربو"
             }
           ],
           "gender": "X",
@@ -181,10 +256,11 @@
             },
             {
               "lang": "DZ",
-              "value": "ychrobou"
+              "value": "ychorbou",
+              "ar_value": "يشربو"
             }
           ],
-          "gender": "F",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -196,67 +272,8 @@
             },
             {
               "lang": "DZ",
-              "value": "techrob"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "boit"
-            },
-            {
-              "lang": "DZ",
-              "value": "techrob"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "boit"
-            },
-            {
-              "lang": "DZ",
-              "value": "yechrob"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "boit"
-            },
-            {
-              "lang": "DZ",
-              "value": "nechrobou"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "bois"
-            },
-            {
-              "lang": "DZ",
-              "value": "nechrob"
+              "value": "nechrob",
+              "ar_value": "نشرب"
             }
           ],
           "gender": "X",
@@ -267,28 +284,20 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "boivent"
+              "value": "boit"
             },
             {
               "lang": "DZ",
-              "value": "ychrobou"
+              "value": "yechrob",
+              "ar_value": "يشرب"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
-          "singular": false
+          "singular": true
         }
       ],
       "tense": "PRESENT"
     }
-  ],
-  "word_type": "VERB",
-  "possible_questions": [
-    "WHAT",
-    "WHY"
-  ],
-  "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  ]
 }

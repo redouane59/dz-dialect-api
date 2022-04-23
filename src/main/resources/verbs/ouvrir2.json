@@ -89,7 +89,7 @@
               "value": "7elit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -169,7 +169,7 @@
               "value": "t7el"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT",
     "WHY",
@@ -293,6 +292,6 @@
     "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "LI"
+  "direct_complement": true,
+  "object_only": true
 }

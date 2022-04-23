@@ -11,11 +11,28 @@
             },
             {
               "lang": "DZ",
-              "value": "nbedel"
+              "value": "bedel",
+              "ar_value": "بدل"
             }
           ],
           "gender": "X",
-          "possession": "I",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "change"
+            },
+            {
+              "lang": "DZ",
+              "value": "bedli",
+              "ar_value": "بدلي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
           "singular": true
         },
         {
@@ -26,28 +43,19 @@
             },
             {
               "lang": "DZ",
-              "value": "tbedlou"
+              "value": "bedlou",
+              "ar_value": "بدلو"
             }
           ],
           "gender": "X",
           "possession": "YOU",
           "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "changent"
-            },
-            {
-              "lang": "DZ",
-              "value": "ybedlou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
+        }
+      ],
+      "tense": "IMPERATIVE"
+    },
+    {
+      "conjugations": [
         {
           "translations": [
             {
@@ -56,22 +64,8 @@
             },
             {
               "lang": "DZ",
-              "value": "tbedel"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "change"
-            },
-            {
-              "lang": "DZ",
-              "value": "nbedlou"
+              "value": "nbedlou",
+              "ar_value": "نبدلو"
             }
           ],
           "gender": "X",
@@ -82,15 +76,64 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "changent"
+              "value": "changes"
             },
             {
               "lang": "DZ",
-              "value": "ybedlou"
+              "value": "tbedli",
+              "ar_value": "تبدلي"
             }
           ],
           "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "changes"
+            },
+            {
+              "lang": "DZ",
+              "value": "tbedel",
+              "ar_value": "تبدل"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "change"
+            },
+            {
+              "lang": "DZ",
+              "value": "tbedel",
+              "ar_value": "تبدل"
+            }
+          ],
+          "gender": "M",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "changez"
+            },
+            {
+              "lang": "DZ",
+              "value": "tbedlou",
+              "ar_value": "تبدلو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
           "singular": false
         },
         {
@@ -101,7 +144,8 @@
             },
             {
               "lang": "DZ",
-              "value": "tbedel"
+              "value": "tbedel",
+              "ar_value": "تبدل"
             }
           ],
           "gender": "F",
@@ -112,31 +156,49 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "changes"
+              "value": "change"
             },
             {
               "lang": "DZ",
-              "value": "tbedli"
+              "value": "nbedel",
+              "ar_value": "نبدل"
             }
           ],
-          "gender": "F",
-          "possession": "YOU",
+          "gender": "X",
+          "possession": "I",
           "singular": true
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "changes"
+              "value": "changent"
             },
             {
               "lang": "DZ",
-              "value": "tbedel"
+              "value": "ybedlou",
+              "ar_value": "إبدلو"
             }
           ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "changent"
+            },
+            {
+              "lang": "DZ",
+              "value": "ybedlou",
+              "ar_value": "إبدلو"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
         }
       ],
       "tense": "PRESENT"
@@ -147,75 +209,32 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai changé"
+              "value": "ont changé"
             },
             {
               "lang": "DZ",
-              "value": "bedelt"
+              "value": "bedlou",
+              "ar_value": "بدلو"
             }
           ],
           "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a changé"
-            },
-            {
-              "lang": "DZ",
-              "value": "bedel"
-            }
-          ],
-          "gender": "M",
           "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a changé"
-            },
-            {
-              "lang": "DZ",
-              "value": "bedelna"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "as changé"
+              "value": "ai changé"
             },
             {
               "lang": "DZ",
-              "value": "bedelt"
+              "value": "bedelt",
+              "ar_value": "بدلت"
             }
           ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a changé"
-            },
-            {
-              "lang": "DZ",
-              "value": "bedlet"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
+          "gender": "X",
+          "possession": "I",
           "singular": true
         },
         {
@@ -226,7 +245,8 @@
             },
             {
               "lang": "DZ",
-              "value": "bedeltou"
+              "value": "bedeltou",
+              "ar_value": "بدلتو"
             }
           ],
           "gender": "X",
@@ -237,11 +257,44 @@
           "translations": [
             {
               "lang": "FR",
+              "value": "ont changé"
+            },
+            {
+              "lang": "DZ",
+              "value": "bedlou",
+              "ar_value": "بدلو"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
               "value": "as changé"
             },
             {
               "lang": "DZ",
-              "value": "bedelti"
+              "value": "bedelt",
+              "ar_value": "بدلت"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as changé"
+            },
+            {
+              "lang": "DZ",
+              "value": "bedelti",
+              "ar_value": "بدلتي"
             }
           ],
           "gender": "F",
@@ -252,45 +305,52 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont changé"
+              "value": "a changé"
             },
             {
               "lang": "DZ",
-              "value": "bedlou"
+              "value": "bedlet",
+              "ar_value": "بدلات"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a changé"
+            },
+            {
+              "lang": "DZ",
+              "value": "bedelna",
+              "ar_value": "بدلنا"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
           "singular": false
         },
         {
           "translations": [
             {
               "lang": "FR",
-              "value": "ont changé"
+              "value": "a changé"
             },
             {
               "lang": "DZ",
-              "value": "bedlou"
+              "value": "bedel",
+              "ar_value": "بدل"
             }
           ],
           "gender": "M",
           "possession": "OTHER",
-          "singular": false
+          "singular": true
         }
       ],
       "tense": "PAST"
     }
-  ],
-  "word_type": "VERB",
-  "possible_questions": [
-    "WHAT",
-    "WHY",
-    "HOW",
-    "WHO"
-  ],
-  "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  ]
 }

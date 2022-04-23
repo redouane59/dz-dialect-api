@@ -44,7 +44,7 @@
               "value": "ti7"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -154,7 +154,7 @@
               "value": "te7t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,12 +282,11 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHERE"
   ],
-  "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "possible_complements": [
+    "ADVERB"
+  ],
+  "verb_type": "ACTION"
 }

@@ -4,14 +4,16 @@ import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
-import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.ISentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.WordPicker;
+import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;
 
-public class PVSentenceBuilder extends AbstractSentenceBuilder {
+public class PVSentenceBuilder implements ISentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     PVSentence     pvSentence = new PVSentence();
@@ -20,19 +22,23 @@ public class PVSentenceBuilder extends AbstractSentenceBuilder {
       System.out.println("No randomVerb found in PV");
       return Optional.empty();
     }
-    pvSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
-    pvSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun());
     pvSentence.setVerb(randomVerb.get());
-    pvSentence.addFrTranslation(pvSentence.buildSentenceValue(Lang.FR));
-    pvSentence.addDzTranslation(pvSentence.buildSentenceValue(Lang.DZ));
+    pvSentence.setPersonalProunoun(PersonalProunoun.getRandomPersonalPronoun(randomVerb.get()));
+    pvSentence.setTense(getRandomTense(randomVerb.get(), bodyArgs.getTenses()));
+    Translation frTransation = pvSentence.buildSentenceValue(Lang.FR);
+    pvSentence.addTranslation(Lang.FR, frTransation.getValue());
+    Translation dzTranslation = pvSentence.buildSentenceValue(Lang.DZ);
+    pvSentence.addTranslation(Lang.DZ, dzTranslation.getValue(), dzTranslation.getArValue());
     return Optional.of(pvSentence);
   }
 
   @Override
   public boolean isCompatible(final GeneratorParameters bodyArgs) {
-    return true;
-//    return (bodyArgs.getVerbsFromIds().stream().noneMatch(v -> v.getPossibleComplements() != null))
-//           && (bodyArgs.getVerbsFromIds().stream().noneMatch(v -> v.getVerbType() != VerbType.STATE));
+    return bodyArgs.getVerbsFromIds().stream().map(Verb::getConjugators)
+                   .map(c -> c.stream()
+                              .filter(v -> bodyArgs.getTenses().contains(v.getTense()))
+                              .map(Conjugator::getConjugations))
+                   .findAny().isPresent();
   }
 
 }

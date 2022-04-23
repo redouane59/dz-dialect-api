@@ -14,7 +14,7 @@
               "value": "itaybou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -134,7 +134,7 @@
               "value": "tayeb"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -259,7 +259,7 @@
               "value": "tayebt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -274,7 +274,7 @@
               "value": "taybou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         }
@@ -282,14 +282,17 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT",
     "WHEN",
     "WHY"
   ],
   "possible_complements": [
-    "FOOD"
+    "FOOD",
+    "ADVERB"
   ],
-  "verb_type": "ACTION"
+  "verb_type": "ACTION",
+  "indirect_complement": true,
+  "direct_complement": true,
+  "object_only": true
 }

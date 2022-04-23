@@ -59,7 +59,7 @@
               "value": "tched"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -214,7 +214,7 @@
               "value": "chedit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT",
     "WHY"
@@ -291,6 +290,5 @@
     "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "direct_complement": true
 }

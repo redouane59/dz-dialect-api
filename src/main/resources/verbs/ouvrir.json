@@ -104,7 +104,7 @@
               "value": "tefte7"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -154,7 +154,7 @@
               "value": "fte7t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "HOW",
     "WHY"
@@ -291,6 +290,6 @@
     "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "LI"
+  "direct_complement": true,
+  "object_only": true
 }

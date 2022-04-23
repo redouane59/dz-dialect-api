@@ -44,7 +44,7 @@
               "value": "t9ele9t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -184,7 +184,7 @@
               "value": "tet9ele9"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,13 +282,10 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY"
   ],
   "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "verb_type": "ACTION"
 }
 

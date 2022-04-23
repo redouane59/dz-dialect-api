@@ -74,7 +74,7 @@
               "value": "khrejt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -154,7 +154,7 @@
               "value": "tokhrej"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY",
     "WHEN",
@@ -291,7 +290,5 @@
   "possible_complements": [
     "PLACE"
   ],
-  "verb_type": "DEPLACEMENT",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "verb_type": "DEPLACEMENT"
 }

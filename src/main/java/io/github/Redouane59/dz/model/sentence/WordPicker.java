@@ -48,6 +48,17 @@ public class WordPicker {
     return matchingVerbs.stream().skip(RANDOM.nextInt(matchingVerbs.size())).findFirst();
   }
 
+  public static Optional<Verb> pickRandomVerbAdverbCompatible(Set<Verb> verbs, Set<Tense> tenses) {
+    Set<Verb> matchingVerbs = verbs.stream()
+                                   .filter(o -> o.getVerbType() == VerbType.STATE || o.getPossibleComplements().contains(NounType.ADVERB))
+                                   .filter(o -> o.getConjugators().stream().anyMatch(a -> tenses.contains(a.getTense())))
+                                   .collect(Collectors.toSet());
+    if (matchingVerbs.isEmpty()) {
+      return Optional.empty();
+    }
+    return matchingVerbs.stream().skip(RANDOM.nextInt(matchingVerbs.size())).findFirst();
+  }
+
   public static Optional<Verb> pickRandomVerb(Set<Verb> verbs, Set<Tense> tenses) {
     Set<Verb> matchingVerbs = verbs.stream()
                                    .filter(o -> o.getConjugators().stream().anyMatch(a -> tenses.contains(a.getTense())))
@@ -66,8 +77,10 @@ public class WordPicker {
     return matchingVerbs.stream().skip(RANDOM.nextInt(matchingVerbs.size())).findFirst();
   }
 
-  public static Optional<Verb> pickRandomVerb(Set<Verb> verbs, boolean isReflexive) {
-    Set<Verb> matchingVerbs = verbs.stream().filter(o -> (o.getReflexiveSuffixDz() != null) == isReflexive).collect(Collectors.toSet());
+  public static Optional<Verb> pickRandomIndirectOrDirectVerb(Set<Verb> verbs) {
+    Set<Verb> matchingVerbs = verbs.stream().filter(v -> v.isIndirectComplement() || v.isDirectComplement())
+                                   // .filter(o -> !o.getPossibleComplements().isEmpty())
+                                   .collect(Collectors.toSet());
     if (matchingVerbs.isEmpty()) {
       return Optional.empty();
     }
@@ -173,7 +186,6 @@ public class WordPicker {
         matchingTenses.add(tense);
       }
     }
-    // return matchingTenses.get(RANDOM.nextInt(matchingTenses.size()));
     return matchingTenses.stream().skip(RANDOM.nextInt(matchingTenses.size())).findFirst().orElse(null);
   }
 

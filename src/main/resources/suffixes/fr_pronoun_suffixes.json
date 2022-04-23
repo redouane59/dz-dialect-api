@@ -1,0 +1,58 @@
+[
+  {
+    "id": "I",
+    "gender": "X",
+    "possession": "I",
+    "singular": true,
+    "direct_value": "me",
+    "indirect_value": "me"
+  },
+  {
+    "id": "YOU_S",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": true,
+    "direct_value": "te",
+    "indirect_value": "te"
+  },
+  {
+    "id": "HE",
+    "gender": "M",
+    "possession": "OTHER",
+    "singular": true,
+    "direct_value": "le",
+    "indirect_value": "lui"
+  },
+  {
+    "id": "SHE",
+    "gender": "F",
+    "possession": "OTHER",
+    "singular": true,
+    "direct_value": "la",
+    "indirect_value": "lui"
+  },
+  {
+    "id": "WE",
+    "gender": "X",
+    "possession": "I",
+    "singular": false,
+    "direct_value": "nous",
+    "indirect_value": "nous"
+  },
+  {
+    "id": "YOU_P",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": false,
+    "direct_value": "vous",
+    "indirect_value": "vous"
+  },
+  {
+    "id": "THEY",
+    "gender": "X",
+    "possession": "OTHER",
+    "singular": false,
+    "direct_value": "les",
+    "indirect_value": "leur"
+  }
+]

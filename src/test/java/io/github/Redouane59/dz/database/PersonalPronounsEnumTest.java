@@ -13,7 +13,7 @@ public class PersonalPronounsEnumTest {
 
   @Test
   public void test1() {
-    PersonalProunoun i = PersonalProunoun.I;
+    PersonalProunoun i = PersonalProunoun.I_M;
     assertEquals(i.getPossession(), Possession.I);
     assertTrue(i.isSingular());
     assertEquals(i.getGender(), Gender.X);

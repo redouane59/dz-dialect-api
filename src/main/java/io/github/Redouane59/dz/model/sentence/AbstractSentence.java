@@ -7,10 +7,12 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.question.Question;
+import io.github.Redouane59.dz.model.verb.GenericSuffixes.Suffix;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -38,11 +40,13 @@ public abstract class AbstractSentence extends Word {
   @JsonIgnore
   private PersonalProunoun suffixPronoun;
   @JsonIgnore
+  private Suffix           suffix;
+  @JsonIgnore
   private Question         question;
 
   @JsonIgnore
-  public static String cleanResponse(String result) {
-    String newResult = result;
+  public static Translation cleanResponse(Translation translation) {
+    String newResult = translation.getValue();
     // replacing pronouns & articles ending with a vowel when the next word also start by a vowel
     for (char c : Config.VOWELS) {
       newResult = newResult.replace("je " + c, "j'" + c);
@@ -57,20 +61,22 @@ public abstract class AbstractSentence extends Word {
     newResult = newResult.replace("que on", "qu'on");
     newResult = newResult.replace("à le", "au");
     newResult = newResult.replace("l' ", "l'");
-    return newResult;
+
+    return new Translation(translation.getLang(), newResult, translation.getArValue());
+
   }
 
   @JsonIgnore
   /**
    * Returns a translated sentence based on the different set attributes
    */
-  public abstract String buildSentenceValue(Lang lang);
+  public abstract Translation buildSentenceValue(Lang lang);
 
   // used for serialization
   public JsonNode getAdditionalInformations() {
     ObjectNode node = new ObjectMapper().createObjectNode();
     if (personalProunoun != null) {
-      node.put("personal_prounoun", personalProunoun.name());
+      node.put("personal_prounoun", personalProunoun.getTranslationValue(Lang.FR));
     }
     if (verb != null) {
       node.put("verb", verb.getId());

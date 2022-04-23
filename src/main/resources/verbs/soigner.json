@@ -59,7 +59,7 @@
               "value": "dawit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -184,7 +184,7 @@
               "value": "dawi"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHO",
     "HOW"
@@ -291,7 +290,6 @@
     "PERSON"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI",
-  "semi_auxiliar": false
+  "semi_auxiliar": false,
+  "direct_complement": true
 }

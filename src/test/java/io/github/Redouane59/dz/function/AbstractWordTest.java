@@ -19,15 +19,15 @@ public class AbstractWordTest {
     abstractWord.setWordType(WordType.ADJECTIVE);
     GenderedWord grand = new GenderedWord(Gender.M, true);
     grand.addFrTranslation("grand");
-    grand.addDzTranslation("kbir");
+    grand.addDzTranslation("kbir", "*");
     abstractWord.getValues().add(grand);
     GenderedWord grande = new GenderedWord(Gender.F, true);
     grande.addFrTranslation("grande");
-    grande.addDzTranslation("kbira");
+    grande.addDzTranslation("kbira", "*");
     abstractWord.getValues().add(grande);
     GenderedWord grands = new GenderedWord(Gender.X, false);
     grands.addFrTranslation("grands");
-    grands.addDzTranslation("kbar");
+    grands.addDzTranslation("kbar", "*");
     abstractWord.getValues().add(grands);
   }
 

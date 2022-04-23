@@ -14,7 +14,7 @@
               "value": "t7et"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -199,7 +199,7 @@
               "value": "7etit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHERE",
     "WHY"
@@ -292,6 +291,6 @@
     "FOOD"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "direct_complement": true,
+  "object_only": true
 }

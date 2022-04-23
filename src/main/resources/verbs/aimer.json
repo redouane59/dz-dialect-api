@@ -2,57 +2,40 @@
   "id": "aimer",
   "conjugators": [
     {
-      "tense": "PAST",
       "conjugations": [
         {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ebit",
+              "ar_value": "حبيت"
+            }
+          ],
+          "gender": "X",
           "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ebit",
+              "ar_value": "حبيت"
+            }
+          ],
           "gender": "X",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aimais"
-            },
-            {
-              "lang": "DZ",
-              "value": "kount n7eb"
-            }
-          ]
-        },
-        {
           "possession": "YOU",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aimais"
-            },
-            {
-              "lang": "DZ",
-              "value": "kount t7eb"
-            }
-          ]
+          "singular": true
         },
         {
-          "possession": "YOU",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aimais"
-            },
-            {
-              "lang": "DZ",
-              "value": "kounti t7ebi"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "M",
-          "singular": true,
           "translations": [
             {
               "lang": "FR",
@@ -60,14 +43,15 @@
             },
             {
               "lang": "DZ",
-              "value": "kaan y7eb"
+              "value": "7eb",
+              "ar_value": "حبْ"
             }
-          ]
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
         },
         {
-          "possession": "OTHER",
-          "gender": "F",
-          "singular": true,
           "translations": [
             {
               "lang": "FR",
@@ -75,29 +59,15 @@
             },
             {
               "lang": "DZ",
-              "value": "kenet t7eb"
+              "value": "7ebina",
+              "ar_value": "حبينا"
             }
-          ]
-        },
-        {
+          ],
+          "gender": "X",
           "possession": "I",
-          "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aimait"
-            },
-            {
-              "lang": "DZ",
-              "value": "kouna n7ebou"
-            }
-          ]
+          "singular": false
         },
         {
-          "possession": "YOU",
-          "gender": "X",
-          "singular": false,
           "translations": [
             {
               "lang": "FR",
@@ -105,14 +75,47 @@
             },
             {
               "lang": "DZ",
-              "value": "kontou t7ebou"
+              "value": "7ebitou",
+              "ar_value": "حبيتو"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         },
         {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimait"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ebet",
+              "ar_value": "حبت"
+            }
+          ],
+          "gender": "F",
           "possession": "OTHER",
-          "gender": "X",
-          "singular": false,
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimais"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ebiti",
+              "ar_value": "حبيت"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -120,34 +123,20 @@
             },
             {
               "lang": "DZ",
-              "value": "kanou y7ebou"
+              "value": "7ebou",
+              "ar_value": "حبو"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
         }
-      ]
+      ],
+      "tense": "PAST"
     },
     {
-      "tense": "PRESENT",
       "conjugations": [
         {
-          "possession": "I",
-          "gender": "X",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aime"
-            },
-            {
-              "lang": "DZ",
-              "value": "n7eb"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "M",
-          "singular": true,
           "translations": [
             {
               "lang": "FR",
@@ -155,14 +144,31 @@
             },
             {
               "lang": "DZ",
-              "value": "t7eb"
+              "value": "t7ebi",
+              "ar_value": "تحبي"
             }
-          ]
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
         },
         {
-          "possession": "YOU",
-          "gender": "F",
-          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7eb",
+              "ar_value": "نْحب"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -170,74 +176,47 @@
             },
             {
               "lang": "DZ",
-              "value": "t7ebi"
+              "value": "t7eb",
+              "ar_value": "تحب"
             }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aime"
-            },
-            {
-              "lang": "DZ",
-              "value": "y7eb"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aime"
-            },
-            {
-              "lang": "DZ",
-              "value": "t7eb"
-            }
-          ]
-        },
-        {
-          "possession": "I",
+          ],
           "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "aime"
-            },
-            {
-              "lang": "DZ",
-              "value": "n7ebou"
-            }
-          ]
-        },
-        {
           "possession": "YOU",
-          "gender": "X",
-          "singular": false,
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
-              "value": "aimez"
+              "value": "aime"
             },
             {
               "lang": "DZ",
-              "value": "t7ebou"
+              "value": "t7eb",
+              "ar_value": "تحب"
             }
-          ]
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
         },
         {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "y7eb",
+              "ar_value": "إحب"
+            }
+          ],
+          "gender": "M",
           "possession": "OTHER",
-          "gender": "X",
-          "singular": false,
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -245,23 +224,48 @@
             },
             {
               "lang": "DZ",
-              "value": "y7ebou"
+              "value": "y7ebou",
+              "ar_value": "إحبو"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aimez"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7ebou",
+              "ar_value": "تحبو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "aime"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7ebou",
+              "ar_value": "نْحبو"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
         }
-      ]
+      ],
+      "tense": "PRESENT"
     }
-  ],
-  "possible_complements": [
-    "PLACE",
-    "OBJECT",
-    "PERSON"
-  ],
-  "possible_questions": [
-    "WHAT"
-  ],
-  "verb_type": "ACTION",
-  "semi_auxiliar": true,
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  ]
 }

@@ -5,6 +5,7 @@ import io.github.Redouane59.dz.model.Article;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
 import io.github.Redouane59.dz.model.verb.Conjugation;
 import io.github.Redouane59.dz.model.verb.Conjugator;
@@ -23,14 +24,14 @@ import lombok.Setter;
 public class NVASentence extends AbstractSentence {
 
   @Override
-  public String buildSentenceValue(final Lang lang) {
+  public Translation buildSentenceValue(final Lang lang) {
     boolean              isSingular = true; //new Random().nextInt() % 2 == 0;
     GenderedWord         nounWord   = getNoun().getWordBySingular(isSingular);
     String               nounValue  = nounWord.getTranslationValue(lang);
     Optional<Conjugator> conjugator = getVerb().getConjugationByTense(getTense());
     if (conjugator.isEmpty()) {
       System.err.println("empty conjugator");
-      return "";
+      return new Translation(lang, "");
     }
     Gender nounGender = nounWord.getGender(lang);
     Optional<Conjugation> conjugation = conjugator.get().getConjugationByCriteria(nounGender,
@@ -51,7 +52,7 @@ public class NVASentence extends AbstractSentence {
     }
     result += getAdjective().getTranslationByGender(nounGender, nounWord.isSingular(), lang).getValue();
 
-    return cleanResponse(result);
+    return new Translation(lang, result);
   }
 
 }

@@ -104,7 +104,7 @@
               "value": "9ssemt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -184,7 +184,7 @@
               "value": "te9ssem"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY",
     "HOW"
@@ -291,6 +290,7 @@
     "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "indirect_complement": true,
+  "direct_complement": true,
+  "object_only": true
 }

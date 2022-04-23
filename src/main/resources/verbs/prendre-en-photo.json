@@ -134,7 +134,7 @@
               "value": "ssewert"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -229,7 +229,7 @@
               "value": "tssewer"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHO",
     "WHY"
@@ -291,6 +290,5 @@
     "PERSON"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "direct_complement": true
 }

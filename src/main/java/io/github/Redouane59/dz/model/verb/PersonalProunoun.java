@@ -25,13 +25,16 @@ Translation values inserted through personal_pronouns.json file
  */
 public enum PersonalProunoun {
 
-  I,
+  I_M,
+  I_F,
   YOU_M,
   YOU_F,
   HE,
   SHE,
-  WE,
-  YOU_P,
+  WE_M,
+  WE_F,
+  YOU_PM,
+  YOU_PF,
   THEY_M,
   THEY_F,
   UNDEFINED;
@@ -61,6 +64,15 @@ public enum PersonalProunoun {
   }
 
   public static PersonalProunoun getRandomPersonalPronoun() {
+    return PersonalProunoun.values()[new Random().nextInt(PersonalProunoun.values().length - 1)];
+  }
+
+  public static PersonalProunoun getRandomPersonalPronoun(Verb verb) {
+    // @todo to developed for matching conjugations
+   /* return Arrays.stream(PersonalProunoun.values())
+                 .filter(o -> verb.getConjugators().stream()
+                     .filter(c -> c.getConjugations().stream()
+                         .filter(x -> x.getPersonalPronoun() == o) */
     return PersonalProunoun.values()[new Random().nextInt(PersonalProunoun.values().length - 1)];
   }
 

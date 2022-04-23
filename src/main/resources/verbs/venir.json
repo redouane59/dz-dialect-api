@@ -268,7 +268,8 @@
     }
   ],
   "possible_complements": [
-    "PLACE"
+    "PLACE",
+    "ADVERB"
   ],
   "possible_questions": [
     "WHEN"

@@ -2,137 +2,8 @@
   "id": "appeler",
   "conjugators": [
     {
-      "tense": "PAST",
       "conjugations": [
         {
-          "possession": "I",
-          "gender": "X",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayeti"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3aytet"
-            }
-          ]
-        },
-        {
-          "possession": "I",
-          "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayetna"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "avez appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayetou"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont appelé"
-            },
-            {
-              "lang": "DZ",
-              "value": "3aytou"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tense": "PRESENT",
-      "conjugations": [
-        {
-          "possession": "I",
-          "gender": "X",
-          "singular": true,
           "translations": [
             {
               "lang": "FR",
@@ -140,89 +11,15 @@
             },
             {
               "lang": "DZ",
-              "value": "n3ayet"
+              "value": "3aytti",
+              "ar_value": "عايتي"
             }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "appelles"
-            },
-            {
-              "lang": "DZ",
-              "value": "t3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
+          ],
           "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "appelles"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ayeti"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "appelle"
-            },
-            {
-              "lang": "DZ",
-              "value": "y3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "appelle"
-            },
-            {
-              "lang": "DZ",
-              "value": "t3ayet"
-            }
-          ]
-        },
-        {
-          "possession": "I",
-          "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "appelle"
-            },
-            {
-              "lang": "DZ",
-              "value": "n3aytou"
-            }
-          ]
-        },
-        {
           "possession": "YOU",
-          "gender": "X",
-          "singular": false,
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -230,14 +27,249 @@
             },
             {
               "lang": "DZ",
-              "value": "t3aytou"
+              "value": "3ayttou",
+              "ar_value": "عايتو"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         },
         {
-          "possession": "OTHER",
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelle"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayett",
+              "ar_value": "عايت"
+            }
+          ],
           "gender": "X",
-          "singular": false,
+          "possession": "YOU",
+          "singular": true
+        }
+      ],
+      "tense": "IMPERATIVE"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayetna",
+              "ar_value": "عايتنا"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3aytou",
+              "ar_value": "عايتو"
+            }
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayet",
+              "ar_value": "عايت"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "avez appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayetou",
+              "ar_value": "عايتو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3aytet",
+              "ar_value": "عايتت"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayet",
+              "ar_value": "عايت"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayeti",
+              "ar_value": "عايتي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as appelé"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayet",
+              "ar_value": "عايت"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        }
+      ],
+      "tense": "PAST"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelles"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ayeti",
+              "ar_value": "عايتي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelle"
+            },
+            {
+              "lang": "DZ",
+              "value": "y3ayet",
+              "ar_value": "عايات"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelle"
+            },
+            {
+              "lang": "DZ",
+              "value": "n3aytou",
+              "ar_value": "نعايتو"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelle"
+            },
+            {
+              "lang": "DZ",
+              "value": "n3ayet",
+              "ar_value": "نعايت"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelles"
+            },
+            {
+              "lang": "DZ",
+              "value": "t3ayet",
+              "ar_value": "تعايت"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -245,22 +277,48 @@
             },
             {
               "lang": "DZ",
-              "value": "y3aytou"
+              "value": "y3aytou",
+              "ar_value": "يعايتو"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelez"
+            },
+            {
+              "lang": "DZ",
+              "value": "t3aytou",
+              "ar_value": "تعايتو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "appelle"
+            },
+            {
+              "lang": "DZ",
+              "value": "t3ayet",
+              "ar_value": "تعايت"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
         }
-      ]
+      ],
+      "tense": "PRESENT"
     }
-  ],
-  "possible_complements": [
-    "PERSON"
-  ],
-  "possible_questions": [
-    "WHO",
-    "WHEN",
-    "WHY"
-  ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "LI"
+  ]
 }

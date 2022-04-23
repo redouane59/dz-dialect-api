@@ -5,7 +5,7 @@ import io.github.Redouane59.dz.model.sentence.PV.PVSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVA.PVASentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVD.PVDSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.PVN.PVNSentenceBuilder;
-import io.github.Redouane59.dz.model.sentence.PVO.PVOSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.PVSO.PVSOSentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.QVP.QVPSentenceBuilder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,8 +19,8 @@ public enum SentenceType {
   NVA(new NVASentenceBuilder()),
   PVN(new PVNSentenceBuilder()),
   QVP(new QVPSentenceBuilder()),
-  PVO(new PVOSentenceBuilder());
+  PVOS(new PVSOSentenceBuilder());
 
-  private AbstractSentenceBuilder sentenceBuilder;
+  private ISentenceBuilder sentenceBuilder;
 
 }

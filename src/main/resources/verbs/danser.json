@@ -67,7 +67,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "danses"
+              "value": "danse"
             },
             {
               "lang": "DZ",
@@ -89,7 +89,7 @@
               "value": "techta7"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -127,7 +127,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "danses"
+              "value": "danse"
             },
             {
               "lang": "DZ",
@@ -154,7 +154,7 @@
               "value": "chte7t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,13 +282,12 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY"
   ],
-  "possible_complements": [],
+  "possible_complements": [
+    "ADVERB"
+  ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null,
   "semi_auxiliar": false
 }

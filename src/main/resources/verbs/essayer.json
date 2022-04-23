@@ -14,7 +14,7 @@
               "value": "djarrebt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -184,7 +184,7 @@
               "value": "djarreb"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,14 +282,13 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY",
     "WHAT"
   ],
   "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI",
-  "semi_auxiliar": false
+  "semi_auxiliar": false,
+  "direct_complement": true,
+  "object_only": true
 }

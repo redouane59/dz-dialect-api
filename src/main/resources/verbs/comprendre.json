@@ -29,7 +29,7 @@
               "value": "fahmou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -37,7 +37,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "comprend"
+              "value": "comprends"
             },
             {
               "lang": "DZ",
@@ -104,7 +104,7 @@
               "value": "fhamt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -199,7 +199,7 @@
               "value": "fhamt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -229,7 +229,7 @@
               "value": "fahmou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -282,12 +282,9 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT"
   ],
   "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "verb_type": "ACTION"
 }

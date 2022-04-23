@@ -104,7 +104,7 @@
               "value": "tfahem"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -274,7 +274,7 @@
               "value": "fahemt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -282,13 +282,11 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHEN",
     "WHY"
   ],
   "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "LI"
+  "indirect_complement": true
 }

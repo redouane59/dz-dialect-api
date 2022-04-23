@@ -15,7 +15,11 @@ public class Conjugation extends PossessiveWord {
   public PersonalProunoun getPersonalPronoun() {
     if (isSingular()) {
       if (getPossession() == io.github.Redouane59.dz.model.Possession.I) {
-        return PersonalProunoun.I;
+        if (getGender() == Gender.F) {
+          return PersonalProunoun.I_F;
+        } else {
+          return PersonalProunoun.I_M;
+        }
       } else if (getPossession() == Possession.YOU) {
         if (getGender() == Gender.F) {
           return PersonalProunoun.YOU_F;
@@ -31,9 +35,13 @@ public class Conjugation extends PossessiveWord {
       }
     } else {
       if (getPossession() == io.github.Redouane59.dz.model.Possession.I) {
-        return PersonalProunoun.WE;
+        return PersonalProunoun.WE_M;
       } else if (getPossession() == io.github.Redouane59.dz.model.Possession.YOU) {
-        return PersonalProunoun.YOU_P;
+        if (getGender() == Gender.F) {
+          return PersonalProunoun.YOU_PF;
+        } else {
+          return PersonalProunoun.YOU_PM;
+        }
       } else if (getPossession() == io.github.Redouane59.dz.model.Possession.OTHER) {
         if (getGender() == Gender.F) {
           return PersonalProunoun.THEY_F;

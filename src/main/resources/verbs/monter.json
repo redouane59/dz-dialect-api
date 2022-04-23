@@ -134,7 +134,7 @@
               "value": "tla3t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -199,7 +199,7 @@
               "value": "tetla3"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,14 +282,11 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHERE",
     "WHY",
     "WHEN"
   ],
   "possible_complements": [],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "verb_type": "ACTION"
 }

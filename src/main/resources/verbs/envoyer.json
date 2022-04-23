@@ -253,11 +253,12 @@
     }
   ],
   "possible_complements": [
+    "OBJECT"
   ],
   "possible_questions": [
     "WHAT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "LI"
+  "indirect_complement": true,
+  "direct_complement": true
 }

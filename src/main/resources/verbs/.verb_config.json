@@ -1,0 +1,178 @@
+[
+  {
+    "id": "accélérer",
+    "possible_questions": [
+      "WHY"
+    ],
+    "possible_complements": [],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "acheter",
+    "possible_complements": [
+      "PLACE",
+      "OBJECT"
+    ],
+    "possible_questions": [
+      "HOW_MANY",
+      "WHAT",
+      "WHEN"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true,
+    "direct_complement": true,
+    "object_only": true
+  },
+  {
+    "id": "aider",
+    "verb_type": "ACTION",
+    "possible_complements": [
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "WHEN"
+    ],
+    "direct_complement": true
+  },
+  {
+    "id": "aimer",
+    "possible_complements": [
+      "PLACE",
+      "OBJECT",
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHAT"
+    ],
+    "verb_type": "ACTION",
+    "semi_auxiliar": true,
+    "direct_complement": true
+  },
+  {
+    "id": "aller",
+    "possible_complements": [
+      "PLACE",
+      "OBJECT",
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHERE",
+      "WHEN"
+    ],
+    "semi_auxiliar": true,
+    "verb_type": "DEPLACEMENT"
+  },
+  {
+    "id": "appeler",
+    "possible_complements": [
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "WHEN",
+      "WHY"
+    ],
+    "verb_type": "ACTION",
+    "direct_complement": true,
+    "dz_opposite_complement": true
+  },
+  {
+    "id": "apporter",
+    "possible_questions": [
+      "WHAT"
+    ],
+    "possible_complements": [
+      "FOOD",
+      "OBJECT"
+    ],
+    "verb_type": "ACTION",
+    "semi_auxiliar": false,
+    "indirect_complement": true,
+    "direct_complement": true
+  },
+  {
+    "id": "arriver",
+    "possible_questions": [
+      "WHEN"
+    ],
+    "possible_complements": [],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "attendre",
+    "possible_questions": [
+      "WHAT",
+      "WHO"
+    ],
+    "possible_complements": [
+      "PERSON",
+      "ADVERB"
+    ],
+    "verb_type": "ACTION",
+    "direct_complement": true
+  },
+  {
+    "id": "avoir",
+    "possible_complements": [
+      "PLACE",
+      "OBJECT"
+    ],
+    "possible_questions": [
+      "HOW_MANY"
+    ],
+    "verb_type": "POSSESSION"
+  },
+  {
+    "id": "boire",
+    "possible_questions": [
+      "WHAT",
+      "WHY"
+    ],
+    "possible_complements": [
+      "ADVERB"
+    ],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "changer",
+    "possible_questions": [
+      "WHAT",
+      "WHY",
+      "HOW",
+      "WHO"
+    ],
+    "possible_complements": [],
+    "verb_type": "ACTION",
+    "direct_complement": true,
+    "object_only": true
+  },
+  {
+    "id": "chanter",
+    "possible_questions": [
+      "WHAT",
+      "WHY"
+    ],
+    "possible_complements": [
+      "ADVERB"
+    ],
+    "verb_type": "ACTION",
+    "semi_auxiliar": false
+  },
+  {
+    "id": "chercher",
+    "possible_questions": [
+      "WHAT",
+      "WHO",
+      "WHERE",
+      "HOW"
+    ],
+    "possible_complements": [
+      "PERSON",
+      "PLACE",
+      "FOOD"
+    ],
+    "verb_type": "ACTION",
+    "dz_no_suffix": true
+  }
+]

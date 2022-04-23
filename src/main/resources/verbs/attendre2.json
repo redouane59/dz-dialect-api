@@ -7,11 +7,92 @@
           "translations": [
             {
               "lang": "FR",
+              "value": "attends"
+            },
+            {
+              "lang": "DZ",
+              "value": "testenay",
+              "ar_value": "تاستناي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attend"
+            },
+            {
+              "lang": "DZ",
+              "value": "nestenaw",
+              "ar_value": "نستناو"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attends"
+            },
+            {
+              "lang": "DZ",
+              "value": "nstena",
+              "ar_value": "نستانا"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attends"
+            },
+            {
+              "lang": "DZ",
+              "value": "testena",
+              "ar_value": "تستنا"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attend"
+            },
+            {
+              "lang": "DZ",
+              "value": "yestena",
+              "ar_value": "يستنا"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
               "value": "attendez"
             },
             {
               "lang": "DZ",
-              "value": "testenaw"
+              "value": "testenaw",
+              "ar_value": "تستناو"
             }
           ],
           "gender": "X",
@@ -22,61 +103,17 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "attends"
+              "value": "attendent"
             },
             {
               "lang": "DZ",
-              "value": "tstena"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "nstena"
+              "value": "yestenaw",
+              "ar_value": "يستناو"
             }
           ],
           "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attends"
-            },
-            {
-              "lang": "DZ",
-              "value": "tstenai"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
+          "possession": "OTHER",
+          "singular": false
         },
         {
           "translations": [
@@ -86,7 +123,8 @@
             },
             {
               "lang": "DZ",
-              "value": "tstena"
+              "value": "testena",
+              "ar_value": "تستنا"
             }
           ],
           "gender": "F",
@@ -101,41 +139,12 @@
             },
             {
               "lang": "DZ",
-              "value": "yestenaw"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attendent"
-            },
-            {
-              "lang": "DZ",
-              "value": "yestenaw"
+              "value": "yestenaw",
+              "ar_value": "يستناو"
             }
           ],
           "gender": "F",
           "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "attend"
-            },
-            {
-              "lang": "DZ",
-              "value": "nestenaw"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
           "singular": false
         }
       ],
@@ -147,16 +156,17 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as attendu"
+              "value": "ont attendu"
             },
             {
               "lang": "DZ",
-              "value": "steniti"
+              "value": "stenaw",
+              "ar_value": "ستناو"
             }
           ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
         },
         {
           "translations": [
@@ -166,7 +176,8 @@
             },
             {
               "lang": "DZ",
-              "value": "stenitou"
+              "value": "stenitou",
+              "ar_value": "ستنيتو"
             }
           ],
           "gender": "X",
@@ -177,15 +188,16 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont attendu"
+              "value": "a attendu"
             },
             {
               "lang": "DZ",
-              "value": "stenaw"
+              "value": "stenina",
+              "ar_value": "ستنينا"
             }
           ],
-          "gender": "F",
-          "possession": "OTHER",
+          "gender": "X",
+          "possession": "I",
           "singular": false
         },
         {
@@ -196,10 +208,43 @@
             },
             {
               "lang": "DZ",
-              "value": "stenit"
+              "value": "stenit",
+              "ar_value": "ستنيت"
             }
           ],
-          "gender": "M",
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai attendu"
+            },
+            {
+              "lang": "DZ",
+              "value": "stenit",
+              "ar_value": "ستنيت"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as attendu"
+            },
+            {
+              "lang": "DZ",
+              "value": "steniti",
+              "ar_value": "ستنيتي"
+            }
+          ],
+          "gender": "F",
           "possession": "YOU",
           "singular": true
         },
@@ -211,7 +256,24 @@
             },
             {
               "lang": "DZ",
-              "value": "stenet"
+              "value": "stena",
+              "ar_value": "ستنا"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a attendu"
+            },
+            {
+              "lang": "DZ",
+              "value": "stenat",
+              "ar_value": "ستنات"
             }
           ],
           "gender": "F",
@@ -222,75 +284,73 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stena"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenina"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai attendu"
-            },
-            {
-              "lang": "DZ",
-              "value": "stenit"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
               "value": "ont attendu"
             },
             {
               "lang": "DZ",
-              "value": "stenaw"
+              "value": "stenaw",
+              "ar_value": "ستناو"
             }
           ],
-          "gender": "M",
+          "gender": "F",
           "possession": "OTHER",
           "singular": false
         }
       ],
       "tense": "PAST"
+    },
+    {
+      "conjugations": [
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attends"
+            },
+            {
+              "lang": "DZ",
+              "value": "essena",
+              "ar_value": "أسَنَى"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attendez"
+            },
+            {
+              "lang": "DZ",
+              "value": "essenaw",
+              "ar_value": "أسناو"
+            }
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "attends"
+            },
+            {
+              "lang": "DZ",
+              "value": "essenay",
+              "ar_value": "أسَناي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
+        }
+      ],
+      "tense": "IMPERATIVE"
     }
-  ],
-  "word_type": "VERB",
-  "possible_questions": [
-    "WHAT",
-    "WHO"
-  ],
-  "possible_complements": [
-    "PERSON"
-  ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  ]
 }

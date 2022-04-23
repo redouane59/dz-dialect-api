@@ -104,7 +104,7 @@
               "value": "telbess"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -199,7 +199,7 @@
               "value": "lbesst"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,15 +282,14 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "HOW",
     "WHY",
     "WHERE"
   ],
-  "possible_complements": [],
+  "possible_complements": [
+    "ADVERB"
+  ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null,
   "semi_auxiliar": false
 }

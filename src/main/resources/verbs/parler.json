@@ -59,7 +59,7 @@
               "value": "tahdar"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -177,7 +177,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as parlé"
+              "value": "a parlé"
             },
             {
               "lang": "DZ",
@@ -244,7 +244,7 @@
               "value": "hdart"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -252,7 +252,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as parlé"
+              "value": "a parlé"
             },
             {
               "lang": "DZ",
@@ -267,7 +267,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "as parlé"
+              "value": "a parlé"
             },
             {
               "lang": "DZ",
@@ -282,13 +282,11 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WITH_WHO"
   ],
   "possible_complements": [
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "indirect_complement": true
 }

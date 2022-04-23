@@ -44,7 +44,7 @@
               "value": "tessre9"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -229,7 +229,7 @@
               "value": "sre9t"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY",
     "WHAT"
@@ -292,7 +291,8 @@
     "FOOD"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null,
-  "semi_auxiliar": false
+  "semi_auxiliar": false,
+  "indirect_complement": true,
+  "direct_complement": true,
+  "object_only": true
 }

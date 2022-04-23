@@ -30,7 +30,7 @@ public class Conjugator {
     return conjugations.stream()
                        .filter(o -> o.isSingular() == singular
                                     && (o.getGender() == gender || o.getGender() == Gender.X || gender == Gender.X))
-                       .filter(o -> o.getPossession() == possession)
+                       .filter(o -> o.getPossession() == possession || this.getTense() == Tense.IMPERATIVE)
                        .findAny();
 
   }

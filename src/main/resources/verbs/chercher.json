@@ -11,11 +11,60 @@
             },
             {
               "lang": "DZ",
-              "value": "i7awess"
+              "value": "n7awssou",
+              "ar_value": "نْحوسو"
             }
           ],
-          "gender": "M",
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cherche"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7awess",
+              "ar_value": "تْحَوَسْ"
+            }
+          ],
+          "gender": "F",
           "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cherche"
+            },
+            {
+              "lang": "DZ",
+              "value": "n7awess",
+              "ar_value": "نْحَوَسْ"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "cherches"
+            },
+            {
+              "lang": "DZ",
+              "value": "t7awssi",
+              "ar_value": "تْحَوْسي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
           "singular": true
         },
         {
@@ -26,10 +75,11 @@
             },
             {
               "lang": "DZ",
-              "value": "i7awssou"
+              "value": "i7awssou",
+              "ar_value": "إيحوسو"
             }
           ],
-          "gender": "F",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -41,57 +91,13 @@
             },
             {
               "lang": "DZ",
-              "value": "t7awssou"
+              "value": "t7awssou",
+              "ar_value": "تْحوسو"
             }
           ],
           "gender": "X",
           "possession": "YOU",
           "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "cherches"
-            },
-            {
-              "lang": "DZ",
-              "value": "t7awssi"
-            }
-          ],
-          "gender": "F",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "cherches"
-            },
-            {
-              "lang": "DZ",
-              "value": "t7awess"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "cherche"
-            },
-            {
-              "lang": "DZ",
-              "value": "t7awess"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
         },
         {
           "translations": [
@@ -101,10 +107,11 @@
             },
             {
               "lang": "DZ",
-              "value": "i7awssou"
+              "value": "i7awssou",
+              "ar_value": "إيحوسو"
             }
           ],
-          "gender": "M",
+          "gender": "F",
           "possession": "OTHER",
           "singular": false
         },
@@ -112,16 +119,17 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "cherche"
+              "value": "cherches"
             },
             {
               "lang": "DZ",
-              "value": "n7awssou"
+              "value": "t7awess",
+              "ar_value": "تْحَوَسْ"
             }
           ],
           "gender": "X",
-          "possession": "I",
-          "singular": false
+          "possession": "YOU",
+          "singular": true
         },
         {
           "translations": [
@@ -131,11 +139,12 @@
             },
             {
               "lang": "DZ",
-              "value": "n7awess"
+              "value": "i7awess",
+              "ar_value": "إيحَوَسْ"
             }
           ],
-          "gender": "X",
-          "possession": "I",
+          "gender": "M",
+          "possession": "OTHER",
           "singular": true
         }
       ],
@@ -147,119 +156,15 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ont cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awssou"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
               "value": "as cherché"
             },
             {
               "lang": "DZ",
-              "value": "7awess"
-            }
-          ],
-          "gender": "M",
-          "possession": "YOU",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awessna"
+              "value": "7awesst",
+              "ar_value": "حَوَسْت"
             }
           ],
           "gender": "X",
-          "possession": "I",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awsset"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awess"
-            }
-          ],
-          "gender": "M",
-          "possession": "OTHER",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awesst"
-            }
-          ],
-          "gender": "X",
-          "possession": "I",
-          "singular": true
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ont cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awssou"
-            }
-          ],
-          "gender": "F",
-          "possession": "OTHER",
-          "singular": false
-        },
-        {
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "as cherché"
-            },
-            {
-              "lang": "DZ",
-              "value": "7awessti"
-            }
-          ],
-          "gender": "F",
           "possession": "YOU",
           "singular": true
         },
@@ -271,30 +176,128 @@
             },
             {
               "lang": "DZ",
-              "value": "7awesstou"
+              "value": "7awesstou",
+              "ar_value": "حَوَسْتو"
             }
           ],
           "gender": "X",
           "possession": "YOU",
           "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awesst",
+              "ar_value": "حَوَسْت"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awsset",
+              "ar_value": "حَوْسَتْ"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awssou",
+              "ar_value": "حَوْسو"
+            }
+          ],
+          "gender": "F",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awess",
+              "ar_value": "حَوَسْ"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ont cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awssou",
+              "ar_value": "حَوْسو"
+            }
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awessna",
+              "ar_value": "حَوَسْنا"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "as cherché"
+            },
+            {
+              "lang": "DZ",
+              "value": "7awessti",
+              "ar_value": "حَوَسْتي"
+            }
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
         }
       ],
       "tense": "PAST"
     }
-  ],
-  "word_type": "VERB",
-  "possible_questions": [
-    "WHAT",
-    "WHO",
-    "WHERE",
-    "HOW"
-  ],
-  "possible_complements": [
-    "PERSON",
-    "PLACE",
-    "FOOD"
-  ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "LI"
+  ]
 }

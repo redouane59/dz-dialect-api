@@ -29,7 +29,7 @@
               "value": "3arfou"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "OTHER",
           "singular": false
         },
@@ -67,7 +67,7 @@
           "translations": [
             {
               "lang": "FR",
-              "value": "ai conu"
+              "value": "ai connu"
             },
             {
               "lang": "DZ",
@@ -119,7 +119,7 @@
               "value": "3reft"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -274,7 +274,7 @@
               "value": "ta3ref"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHO",
     "HOW"
@@ -292,6 +291,5 @@
     "OBJECT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "I"
+  "direct_complement": true
 }

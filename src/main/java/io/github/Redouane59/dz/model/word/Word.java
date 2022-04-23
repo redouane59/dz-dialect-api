@@ -13,8 +13,8 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
 @Setter
+@Getter
 public abstract class Word {
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -33,15 +33,6 @@ public abstract class Word {
     return getTranslationByLang(lang).orElse(new Translation(lang, "")).getValue();
   }
 
-  @JsonProperty("fr_value")
-  public String getFrTranslation() {
-    return getTranslationValue(Lang.FR);
-  }
-
-  public void addFrTranslation(String value) {
-    this.translations.add(new Translation(Lang.FR, cleanString(value)));
-  }
-
   public String cleanString(String value) {
     return value.replace("' ", "'").replace("  ", " ");
   }
@@ -51,8 +42,32 @@ public abstract class Word {
     return getTranslationValue(Lang.DZ);
   }
 
-  public void addDzTranslation(String value) {
-    this.translations.add(new Translation(Lang.DZ, cleanString(value)));
+  @JsonProperty("dz_value_ar")
+  public String getDzTranslationAr() {
+    return (getTranslationByLang(Lang.DZ).orElse(new Translation(Lang.DZ, "", ""))).getArValue();
+  }
+
+  @Deprecated
+  public void addDzTranslation(String value, String arValue) {
+    this.translations.add(new Translation(Lang.DZ, cleanString(value), arValue));
+  }
+
+  @JsonProperty("fr_value")
+  public String getFrTranslation() {
+    return getTranslationValue(Lang.FR);
+  }
+
+  @Deprecated
+  public void addFrTranslation(String value) {
+    this.translations.add(new Translation(Lang.FR, cleanString(value)));
+  }
+
+  public void addTranslation(Lang lang, String value) {
+    this.translations.add(new Translation(lang, cleanString(value)));
+  }
+
+  public void addTranslation(Lang lang, String value, String arValue) {
+    this.translations.add(new Translation(lang, cleanString(value), cleanString(arValue)));
   }
 
   @Override

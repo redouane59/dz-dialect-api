@@ -119,7 +119,7 @@
               "value": "tedi"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -184,7 +184,7 @@
               "value": "dit"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,12 +282,15 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHAT"
   ],
-  "possible_complements": [],
+  "possible_complements": [
+    "OBJECT",
+    "FOOD"
+  ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LES",
-  "reflexive_suffix_dz": "NI"
+  "indirect_complement": true,
+  "direct_complement": true,
+  "object_only": true
 }

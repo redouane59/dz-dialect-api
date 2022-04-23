@@ -29,7 +29,7 @@
               "value": "93edt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -154,7 +154,7 @@
               "value": "t93od"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,15 +282,13 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHY",
     "WHERE"
   ],
   "possible_complements": [
-    "PLACE"
+    "PLACE",
+    "ADVERB"
   ],
-  "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null
+  "verb_type": "ACTION"
 }

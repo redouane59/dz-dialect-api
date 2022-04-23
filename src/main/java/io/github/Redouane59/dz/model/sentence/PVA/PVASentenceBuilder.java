@@ -5,10 +5,11 @@ import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
-import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.ISentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.WordPicker;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -16,7 +17,7 @@ import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.Optional;
 import java.util.Set;
 
-public class PVASentenceBuilder extends AbstractSentenceBuilder {
+public class PVASentenceBuilder implements ISentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     PVASentence      pvaSentence   = new PVASentence();
@@ -39,8 +40,9 @@ public class PVASentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     pvaSentence.setAdjective(randomAdjective.get());
-    pvaSentence.addFrTranslation(pvaSentence.buildSentenceValue(Lang.FR));
-    pvaSentence.addDzTranslation(pvaSentence.buildSentenceValue(Lang.DZ));
+    pvaSentence.addFrTranslation(pvaSentence.buildSentenceValue(Lang.FR).getValue());
+    Translation dzTranslation = pvaSentence.buildSentenceValue(Lang.DZ);
+    pvaSentence.addDzTranslation(dzTranslation.getValue(), dzTranslation.getArValue());
     return Optional.of(pvaSentence);
   }
 

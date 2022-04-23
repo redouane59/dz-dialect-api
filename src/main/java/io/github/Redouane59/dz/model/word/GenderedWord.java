@@ -9,11 +9,11 @@ import lombok.Setter;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
 @Setter
+@Getter
 public class GenderedWord extends Word {
 
-  private Gender  gender;
+  private Gender  gender; // to split between pronouns and noun which can change depending on the lang
   private boolean singular;
 
   public Gender getGender(Lang lang) {
@@ -28,7 +28,7 @@ public class GenderedWord extends Word {
   @Override
   public String toString() {
     String result = super.toString();
-    result += " (" + this.getGender() + "/";
+    result += " (" + this.gender + "/";
     if (this.isSingular()) {
       result += "sg";
     } else {

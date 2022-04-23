@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.helper.FileHelper;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
@@ -34,17 +33,23 @@ public class Verb extends AbstractWord {
   public static final ObjectMapper
                                       OBJECT_MAPPER       =
       new ObjectMapper().registerModule(new SimpleModule().addSerializer(Word.class, new WordFromCSVSerializer()));
+  private             Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_questions")
   private             Set<Question>   possibleQuestions   = new HashSet<>();
-  private             Set<Conjugator> conjugators         = new HashSet<>();
   @JsonProperty("possible_complements")
   private             Set<NounType>   possibleComplements = new HashSet<>(); // @todo add verbs
   @JsonProperty("verb_type")
   private             VerbType        verbType;
-  @JsonProperty("reflexive_suffix_fr")
-  private             ReflexiveSuffix reflexiveSuffixFr;
-  @JsonProperty("reflexive_suffix_dz")
-  private             ReflexiveSuffix reflexiveSuffixDz;
+  @JsonProperty("indirect_complement")
+  private             boolean         indirectComplement; // ex: je LUI donne quelque chose.
+  @JsonProperty("direct_complement")
+  private             boolean         directComplement; // ex: je LE donne.
+  @JsonProperty("dz_opposite_complement")
+  private             boolean         dzOppositeComplement; // ex: je l'appelle / n3ayetlou
+  @JsonProperty("object_only")
+  private             boolean         objectOnly; // true : verbe ouvrir
+  @JsonProperty("dz_no_suffix")
+  private             boolean         dzNoSuffix;
   @JsonProperty("semi_auxiliar")
   private             boolean         semiAuxiliar; // conjugated verb + infinitive verb
 
@@ -84,7 +89,12 @@ public class Verb extends AbstractWord {
           dzValueAr = values.get(dzValueArIndex);
         }
         Conjugation conjugation = new Conjugation();
-        conjugation.setGender(personalProunoun.getGender());
+        if (personalProunoun.getPossession() == Possession.YOU || (personalProunoun.getPossession() == Possession.OTHER
+                                                                   && personalProunoun.isSingular())) {
+          conjugation.setGender(personalProunoun.getGender());
+        } else {
+          conjugation.setGender(Gender.X); // @todo to improve
+        }
         conjugation.setPossession(personalProunoun.getPossession());
         conjugation.setSingular(personalProunoun.isSingular());
         conjugation.setTranslations(List.of(new Translation(Lang.FR, frValue),
@@ -103,6 +113,19 @@ public class Verb extends AbstractWord {
       }
     }
     return verbs;
+  }
+
+  // to manage the fact that two files are needed to import a verb (see DB.java)
+  public void importConfig(Verb other) {
+    this.possibleQuestions    = other.getPossibleQuestions();
+    this.possibleComplements  = other.getPossibleComplements();
+    this.verbType             = other.getVerbType();
+    this.indirectComplement   = other.isIndirectComplement();
+    this.directComplement     = other.isDirectComplement();
+    this.dzOppositeComplement = other.isDzOppositeComplement();
+    this.objectOnly           = other.isObjectOnly();
+    this.dzNoSuffix           = other.isDzNoSuffix();
+    this.semiAuxiliar         = other.isSemiAuxiliar();
   }
 
   public Optional<Conjugator> getRandomConjugator(Set<Tense> tenses) {
@@ -135,26 +158,4 @@ public class Verb extends AbstractWord {
     return conjugator.get().getConjugationByCriteria(gender, isSingular);
   }
 
-  public String getNounConjugation(Gender gender, boolean singular, Tense tense, Lang lang) {
-
-    if (!Config.DISPLAY_STATE_VERB.contains(lang) && tense == Tense.PRESENT) {
-      return "";
-    }
-    Optional<Conjugator> conjugator = conjugators.stream()
-                                                 .filter(o -> o.getTense() == tense).findAny();
-    if (conjugator.isEmpty()) {
-      return "";
-    }
-
-    Optional<Conjugation> conjugation = conjugator.get().getConjugations().stream()
-                                                  .filter(o -> o.isSingular() == singular)
-                                                  .filter(o -> o.getGender() == gender || gender == Gender.X || !singular)
-                                                  .filter(o -> o.getPossession() == Possession.OTHER)
-                                                  .findAny();
-
-    if (conjugation.isPresent()) {
-      return conjugation.get().getTranslationValue(lang);
-    }
-    return "";
-  }
 }

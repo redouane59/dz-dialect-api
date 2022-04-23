@@ -4,15 +4,16 @@ import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.sentence.AbstractSentence;
-import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
-import io.github.Redouane59.dz.model.sentence.WordPicker;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.sentence.AbstractSentence;
+import io.github.Redouane59.dz.model.sentence.ISentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.WordPicker;
 import io.github.Redouane59.dz.model.verb.PersonalProunoun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.util.Optional;
 
-public class PVNSentenceBuilder extends AbstractSentenceBuilder {
+public class PVNSentenceBuilder implements ISentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     PVNSentence randomPVNSentence = new PVNSentence();
@@ -32,8 +33,9 @@ public class PVNSentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     randomPVNSentence.setNoun(randomNoun.get());
-    randomPVNSentence.addFrTranslation(randomPVNSentence.buildSentenceValue(Lang.FR));
-    randomPVNSentence.addDzTranslation(randomPVNSentence.buildSentenceValue(Lang.DZ));
+    randomPVNSentence.addFrTranslation(randomPVNSentence.buildSentenceValue(Lang.FR).getValue());
+    Translation dzTranslation = randomPVNSentence.buildSentenceValue(Lang.DZ);
+    randomPVNSentence.addDzTranslation(dzTranslation.getValue(), dzTranslation.getArValue());
     return Optional.of(randomPVNSentence);
   }
 

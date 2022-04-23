@@ -7,8 +7,10 @@ import lombok.Getter;
 @Getter
 public enum Tense {
   PAST("passé"),
+  PAST2("passé2"), // @todo dev verbs
   PRESENT("présent"),
-  FUTURE("futur");
+  FUTURE("futur"),
+  IMPERATIVE("impératif");
 
   String id;
 }

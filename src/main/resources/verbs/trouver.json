@@ -59,7 +59,7 @@
               "value": "sebt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -244,7 +244,7 @@
               "value": "tssib"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -282,7 +282,6 @@
       "tense": "PRESENT"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "HOW",
     "WHERE",
@@ -290,7 +289,6 @@
   ],
   "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": null,
-  "reflexive_suffix_dz": null,
-  "semi_auxiliar": false
+  "semi_auxiliar": false,
+  "direct_complement": true
 }

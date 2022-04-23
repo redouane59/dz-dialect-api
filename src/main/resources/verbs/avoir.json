@@ -2,27 +2,8 @@
   "id": "avoir",
   "conjugators": [
     {
-      "tense": "PRESENT",
       "conjugations": [
         {
-          "possession": "I",
-          "gender": "X",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "ai"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ndi"
-            }
-          ]
-        },
-        {
-          "possession": "YOU",
-          "gender": "M",
-          "singular": true,
           "translations": [
             {
               "lang": "FR",
@@ -30,14 +11,47 @@
             },
             {
               "lang": "DZ",
-              "value": "3ndek"
+              "value": "3ndek",
+              "ar_value": "عندك"
             }
-          ]
+          ],
+          "gender": "F",
+          "possession": "YOU",
+          "singular": true
         },
         {
-          "possession": "YOU",
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndou",
+              "ar_value": "عندو"
+            }
+          ],
+          "gender": "M",
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndha",
+              "ar_value": "عندها"
+            }
+          ],
           "gender": "F",
-          "singular": true,
+          "possession": "OTHER",
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -45,59 +59,15 @@
             },
             {
               "lang": "DZ",
-              "value": "3ndek"
+              "value": "3ndek",
+              "ar_value": "عندك"
             }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "M",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ndou"
-            }
-          ]
-        },
-        {
-          "possession": "OTHER",
-          "gender": "F",
-          "singular": true,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ndha"
-            }
-          ]
-        },
-        {
-          "possession": "I",
+          ],
           "gender": "X",
-          "singular": false,
-          "translations": [
-            {
-              "lang": "FR",
-              "value": "a"
-            },
-            {
-              "lang": "DZ",
-              "value": "3ndna"
-            }
-          ]
-        },
-        {
           "possession": "YOU",
-          "gender": "X",
-          "singular": false,
+          "singular": true
+        },
+        {
           "translations": [
             {
               "lang": "FR",
@@ -105,14 +75,15 @@
             },
             {
               "lang": "DZ",
-              "value": "3ndkoum"
+              "value": "3ndkoum",
+              "ar_value": "عندكوم"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "YOU",
+          "singular": false
         },
         {
-          "possession": "OTHER",
-          "gender": "X",
-          "singular": false,
           "translations": [
             {
               "lang": "FR",
@@ -120,19 +91,48 @@
             },
             {
               "lang": "DZ",
-              "value": "3ndhoum"
+              "value": "3ndhoum",
+              "ar_value": "عندهوم"
             }
-          ]
+          ],
+          "gender": "X",
+          "possession": "OTHER",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "a"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndna",
+              "ar_value": "عندنا"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": false
+        },
+        {
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "ai"
+            },
+            {
+              "lang": "DZ",
+              "value": "3ndi",
+              "ar_value": "عندي"
+            }
+          ],
+          "gender": "X",
+          "possession": "I",
+          "singular": true
         }
-      ]
+      ],
+      "tense": "PRESENT"
     }
-  ],
-  "possible_complements": [
-    "PLACE",
-    "OBJECT"
-  ],
-  "possible_questions": [
-    "HOW_MANY"
-  ],
-  "verb_type": "POSSESSION"
+  ]
 }

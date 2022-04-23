@@ -4,11 +4,12 @@ import static io.github.Redouane59.dz.model.sentence.WordPicker.getRandomTense;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.sentence.AbstractSentence;
-import io.github.Redouane59.dz.model.sentence.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.ISentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.WordPicker;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
@@ -17,12 +18,12 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class NVASentenceBuilder extends AbstractSentenceBuilder {
+public class NVASentenceBuilder implements ISentenceBuilder {
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    NVASentence    nvaSentence = new NVASentence();
+    NVASentence nvaSentence = new NVASentence();
     Optional<Noun>
-                   randomNoun  =
+        randomNoun =
         WordPicker.pickRandomNoun(bodyArgs.getNounsFromIds(), Set.of(NounType.PLACE, NounType.PERSON, NounType.OBJECT, NounType.FOOD));
     if (randomNoun.isEmpty()) {
       return Optional.empty();
@@ -42,8 +43,9 @@ public class NVASentenceBuilder extends AbstractSentenceBuilder {
       return Optional.empty();
     }
     nvaSentence.setAdjective(randomAdjective.get());
-    nvaSentence.addFrTranslation(nvaSentence.buildSentenceValue(Lang.FR));
-    nvaSentence.addDzTranslation(nvaSentence.buildSentenceValue(Lang.DZ));
+    nvaSentence.addFrTranslation(nvaSentence.buildSentenceValue(Lang.FR).getValue());
+    Translation dzTranslation = nvaSentence.buildSentenceValue(Lang.DZ);
+    nvaSentence.addDzTranslation(dzTranslation.getValue(), dzTranslation.getArValue());
     return Optional.of(nvaSentence);
   }
 

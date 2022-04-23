@@ -45,16 +45,18 @@ public class SentenceGenerator {
   }
 
   public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    Optional<AbstractSentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
+    Optional<ISentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
     if (abstractSentenceBuilder.isEmpty()) {
       return Optional.empty();
     }
     return abstractSentenceBuilder.get().generateRandomSentence(bodyArgs);
   }
 
-  public Optional<AbstractSentenceBuilder> getRandomSentenceBuilder() {
-    List<? extends AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
-                                                                         .stream().filter(o -> o.isCompatible(bodyArgs)).collect(Collectors.toList());
+  public Optional<ISentenceBuilder> getRandomSentenceBuilder() {
+    List<ISentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
+                                                                      .stream()
+                                                                      .filter(o -> o.isCompatible(bodyArgs))
+                                                                      .collect(Collectors.toList());
     if (matchingGenerators.isEmpty()) {
       System.err.println("no generator found");
       return Optional.empty();

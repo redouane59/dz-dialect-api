@@ -258,6 +258,5 @@
     "WHAT"
   ],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "LI"
+  "indirect_complement": true
 }

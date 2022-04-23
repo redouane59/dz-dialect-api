@@ -1,5 +1,6 @@
 package io.github.Redouane59.dz.function;
 
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.google.cloud.functions.HttpFunction;
 import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
@@ -36,7 +37,10 @@ public class SentenceGeneratorAPI implements HttpFunction {
     try {
       int count = Integer.parseInt(httpRequest.getFirstQueryParameter(countArg).orElse("1"));
       bodyArgs.setCount(count);
-      String tenses = httpRequest.getFirstQueryParameter(tensesArg).orElse(Tense.PAST + "," + Tense.PRESENT + "," + Tense.FUTURE);
+      String
+          tenses =
+          httpRequest.getFirstQueryParameter(tensesArg)
+                     .orElse(Tense.PAST + "," + Tense.PAST2 + "," + Tense.PRESENT + "," + Tense.FUTURE + "," + Tense.IMPERATIVE);
       if (!tenses.isEmpty()) {
         bodyArgs.setTenses(Arrays.stream(tenses.split(",", -1)).map(Tense::valueOf).collect(Collectors.toSet()));
       }
@@ -65,6 +69,7 @@ public class SentenceGeneratorAPI implements HttpFunction {
       Sentences         result            = sentenceGenerator.generateRandomSentences();
       httpResponse.setContentType("application/json;charset=UTF-8");
       httpResponse.appendHeader("content-type", "application/json;charset=UTF-8");
+      Config.OBJECT_MAPPER.getFactory().configure(JsonGenerator.Feature.ESCAPE_NON_ASCII, true);
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
     } catch (Exception e) {
       e.printStackTrace();

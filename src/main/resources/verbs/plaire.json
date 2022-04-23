@@ -74,7 +74,7 @@
               "value": "ta3djeb"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         },
@@ -274,7 +274,7 @@
               "value": "3djebt"
             }
           ],
-          "gender": "M",
+          "gender": "X",
           "possession": "YOU",
           "singular": true
         }
@@ -282,13 +282,11 @@
       "tense": "PAST"
     }
   ],
-  "word_type": "VERB",
   "possible_questions": [
     "WHO",
     "WHY"
   ],
   "possible_complements": [],
   "verb_type": "ACTION",
-  "reflexive_suffix_fr": "LEUR",
-  "reflexive_suffix_dz": "NI"
+  "indirect_complement": true
 }

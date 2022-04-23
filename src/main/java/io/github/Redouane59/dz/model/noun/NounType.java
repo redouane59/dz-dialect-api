@@ -6,6 +6,7 @@ public enum NounType {
   PERSON,
   OBJECT,
   TASK,
-  FOOD
+  FOOD,
+  ADVERB // dirty
 
 }

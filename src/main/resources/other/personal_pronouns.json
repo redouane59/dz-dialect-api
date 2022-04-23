@@ -1,9 +1,25 @@
 [
   {
-    "id": "I",
+    "id": "I_M",
     "possession": "I",
     "singular": true,
-    "gender": "X",
+    "gender": "M",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "je"
+      },
+      {
+        "lang": "DZ",
+        "value": "ana"
+      }
+    ]
+  },
+  {
+    "id": "I_F",
+    "possession": "I",
+    "singular": true,
+    "gender": "F",
     "translations": [
       {
         "lang": "FR",
@@ -80,10 +96,10 @@
     ]
   },
   {
-    "id": "WE",
+    "id": "WE_M",
     "possession": "I",
     "singular": false,
-    "gender": "X",
+    "gender": "M",
     "translations": [
       {
         "lang": "FR",
@@ -96,10 +112,42 @@
     ]
   },
   {
-    "id": "YOU_P",
+    "id": "WE_F",
+    "possession": "I",
+    "singular": false,
+    "gender": "F",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "on"
+      },
+      {
+        "lang": "DZ",
+        "value": "7na"
+      }
+    ]
+  },
+  {
+    "id": "YOU_PM",
     "possession": "YOU",
     "singular": false,
-    "gender": "X",
+    "gender": "M",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "vous"
+      },
+      {
+        "lang": "DZ",
+        "value": "ntouma"
+      }
+    ]
+  },
+  {
+    "id": "YOU_PF",
+    "possession": "YOU",
+    "singular": false,
+    "gender": "F",
     "translations": [
       {
         "lang": "FR",

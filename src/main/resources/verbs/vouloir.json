@@ -130,12 +130,14 @@
   "possible_complements": [
     "PLACE",
     "OBJECT",
-    "PERSON"
+    "PERSON",
+    "FOOD"
   ],
   "possible_questions": [
     "HOW_MANY",
     "WHAT"
   ],
   "semi_auxiliar": true,
-  "verb_type": "ACTION"
+  "verb_type": "ACTION",
+  "direct_complement": true
 }
