@@ -4,6 +4,7 @@
     "gender": "M",
     "defined": true,
     "singular": true,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -11,7 +12,8 @@
       },
       {
         "lang": "DZ",
-        "value": "el"
+        "value": "el",
+        "ar_value": "ال"
       }
     ]
   },
@@ -20,6 +22,7 @@
     "gender": "F",
     "defined": true,
     "singular": true,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -27,7 +30,8 @@
       },
       {
         "lang": "DZ",
-        "value": "el"
+        "value": "el",
+        "ar_value": "ال"
       }
     ]
   },
@@ -36,6 +40,7 @@
     "gender": "X",
     "defined": true,
     "singular": false,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -43,7 +48,8 @@
       },
       {
         "lang": "DZ",
-        "value": ""
+        "value": "",
+        "ar_value": ""
       }
     ]
   },
@@ -52,6 +58,7 @@
     "gender": "M",
     "defined": false,
     "singular": true,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -59,7 +66,8 @@
       },
       {
         "lang": "DZ",
-        "value": ""
+        "value": "",
+        "ar_value": ""
       }
     ]
   },
@@ -68,6 +76,7 @@
     "gender": "F",
     "defined": false,
     "singular": true,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -75,7 +84,8 @@
       },
       {
         "lang": "DZ",
-        "value": ""
+        "value": "",
+        "ar_value": ""
       }
     ]
   },
@@ -84,6 +94,7 @@
     "gender": "X",
     "defined": false,
     "singular": false,
+    "possession": "OTHER",
     "translations": [
       {
         "lang": "FR",
@@ -91,7 +102,8 @@
       },
       {
         "lang": "DZ",
-        "value": ""
+        "value": "",
+        "ar_value": ""
       }
     ]
   }

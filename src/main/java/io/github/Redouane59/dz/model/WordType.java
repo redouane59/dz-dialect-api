@@ -12,7 +12,9 @@ public enum WordType {
   ADJECTIVE("adjective"),
   NOUN("noun"),
   ADVERB("adverb"),
-  QUESTION("question");
+  QUESTION("question"),
+  PRONOUN("pronoun"),
+  ARTICLE("article");
 
   private String value;
 

@@ -54,7 +54,7 @@ public class GenericSuffixes {
 
   @Getter
   @Builder
-  public static class Suffix {
+  public static class Suffix { // @todo make extends possessiveword
 
     private Gender     gender;
     private boolean    singular;

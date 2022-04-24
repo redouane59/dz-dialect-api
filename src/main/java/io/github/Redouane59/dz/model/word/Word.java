@@ -18,7 +18,7 @@ import lombok.Setter;
 public abstract class Word {
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-  private List<Translation> translations = new ArrayList<>();
+  private List<Translation> translations = new ArrayList<>(); // @todo set instead
 
   public Optional<Translation> getTranslationByLang(Lang lang) {
     for (Translation t : translations) {
@@ -34,6 +34,12 @@ public abstract class Word {
   }
 
   public String cleanString(String value) {
+    if (value == null) {
+      return value;
+    }
+    if (value.startsWith(" ")) {
+      value = value.substring(1);
+    }
     return value.replace("' ", "'").replace("  ", " ");
   }
 
@@ -72,7 +78,7 @@ public abstract class Word {
 
   @Override
   public String toString() {
-    return this.getTranslationValue(Lang.DZ) + " -> " + this.getTranslationValue(Lang.FR);
+    return this.getTranslationValue(Lang.DZ) + " | " + this.getDzTranslationAr() + " -> " + this.getTranslationValue(Lang.FR);
   }
 
 }

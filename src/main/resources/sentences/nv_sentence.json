@@ -1,0 +1,20 @@
+{
+  "id": "NV",
+  "fr_sequence": [
+    "ARTICLE",
+    "NOUN",
+    "VERB"
+  ],
+  "ar_sequence": [
+    "ARTICLE",
+    "NOUN",
+    "VERB"
+  ],
+  "subject_position": 1,
+  "tenses": [
+    "PAST",
+    "PAST2",
+    "PRESENT",
+    "FUTURE"
+  ]
+}

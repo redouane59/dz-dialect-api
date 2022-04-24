@@ -1,0 +1,17 @@
+{
+  "id": "PV",
+  "fr_sequence": [
+    "PRONOUN",
+    "VERB"
+  ],
+  "ar_sequence": [
+    "VERB"
+  ],
+  "subject_position": 0,
+  "tenses": [
+    "PAST",
+    "PAST2",
+    "PRESENT",
+    "FUTURE"
+  ]
+}

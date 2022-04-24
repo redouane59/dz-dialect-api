@@ -174,5 +174,17 @@
     ],
     "verb_type": "ACTION",
     "dz_no_suffix": true
+  },
+  {
+    "id": "être",
+    "possible_complements": [
+      "PLACE",
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "WHERE"
+    ],
+    "verb_type": "STATE"
   }
 ]

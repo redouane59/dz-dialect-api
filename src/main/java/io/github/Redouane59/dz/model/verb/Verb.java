@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.verb;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
@@ -12,6 +14,7 @@ import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
+import io.github.Redouane59.dz.model.verb.PersonalPronouns.PersonalPronoun;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Word;
 import java.util.HashSet;
@@ -27,6 +30,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@JsonInclude(Include.NON_DEFAULT)
 public class Verb extends AbstractWord {
 
   @JsonIgnore
@@ -52,6 +56,7 @@ public class Verb extends AbstractWord {
   private             boolean         dzNoSuffix;
   @JsonProperty("semi_auxiliar")
   private             boolean         semiAuxiliar; // conjugated verb + infinitive verb
+  private             WordType        wordType            = WordType.VERB;
 
   public static Set<Verb> deserializeFromCSV(String fileName, boolean removeHeader) {
     List<List<String>> entries               = FileHelper.getCsv(Verb.class.getClassLoader().getResource(fileName).getPath(), ",", removeHeader);
@@ -73,14 +78,12 @@ public class Verb extends AbstractWord {
       } else {
         verb = verbOpt.get();
       }
-      verb.setWordType(WordType.VERB);
-      verb.setVerbType(VerbType.ACTION);
 
       try {
         Tense tense = Tense.valueOf(values.get(tenseIndex));
-        PersonalProunoun
+        PersonalPronoun
             personalProunoun =
-            PersonalProunoun.getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
+            PersonalPronouns.getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
                                                        values.get(personalPronounsIndex).split(pronounDelimiter)[1]);
         String frValue   = values.get(frValueIndex);
         String dzValue   = values.get(dzValueIndex);
@@ -89,8 +92,9 @@ public class Verb extends AbstractWord {
           dzValueAr = values.get(dzValueArIndex);
         }
         Conjugation conjugation = new Conjugation();
-        if (personalProunoun.getPossession() == Possession.YOU || (personalProunoun.getPossession() == Possession.OTHER
-                                                                   && personalProunoun.isSingular())) {
+        if ((personalProunoun.getPossession() == Possession.YOU && personalProunoun.isSingular()) || (personalProunoun.getPossession()
+                                                                                                      == Possession.OTHER
+                                                                                                      && personalProunoun.isSingular())) {
           conjugation.setGender(personalProunoun.getGender());
         } else {
           conjugation.setGender(Gender.X); // @todo to improve
@@ -149,13 +153,16 @@ public class Verb extends AbstractWord {
     return conjugators.stream().filter(o -> o.getTense() == tense).findAny();
   }
 
-  public Optional<Conjugation> getConjugationByGenderSingularAndTense(Gender gender, boolean isSingular, Tense tense) {
+  public Optional<Conjugation> getConjugationByGenderSingularPossessionAndTense(Gender gender,
+                                                                                boolean isSingular,
+                                                                                Possession possession,
+                                                                                Tense tense) {
     Optional<Conjugator> conjugator = conjugators.stream().filter(o -> o.getTense() == tense)
                                                  .findAny();
     if (conjugator.isEmpty()) {
       return Optional.empty();
     }
-    return conjugator.get().getConjugationByCriteria(gender, isSingular);
+    return conjugator.get().getConjugationByCriteria(gender, isSingular, possession);
   }
 
 }

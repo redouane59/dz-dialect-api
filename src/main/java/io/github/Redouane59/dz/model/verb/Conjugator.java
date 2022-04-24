@@ -17,20 +17,13 @@ public class Conjugator {
   private final Set<Conjugation> conjugations = new HashSet<>();
   private       Tense            tense;
 
-  public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular) {
-
-    return conjugations.stream()
-                       .filter(o -> o.isSingular() == singular && (o.getGender() == gender || o.getGender() == Gender.X))
-                       .findAny();
-
-  }
-
   public Optional<Conjugation> getConjugationByCriteria(Gender gender, boolean singular, Possession possession) {
 
     return conjugations.stream()
-                       .filter(o -> o.isSingular() == singular
-                                    && (o.getGender() == gender || o.getGender() == Gender.X || gender == Gender.X))
+                       .filter(o -> o.isSingular() == singular)
                        .filter(o -> o.getPossession() == possession || this.getTense() == Tense.IMPERATIVE)
+                       .filter(o -> o.getGender() == gender || o.getGender() == Gender.X || gender == Gender.X ||
+                                    (gender == Gender.F && !singular))
                        .findAny();
 
   }

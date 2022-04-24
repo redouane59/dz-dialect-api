@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "radjel"
+          "value": "radjel",
+          "ar_value": "رجل"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "rdjal"
+          "value": "rdjal",
+          "ar_value": "رجال"
         }
       ]
     }

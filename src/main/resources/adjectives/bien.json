@@ -16,7 +16,8 @@
         },
         {
           "lang": "DZ",
-          "value": "mli7"
+          "value": "mli7",
+          "ar_value": ""
         }
       ]
     },
@@ -30,7 +31,8 @@
         },
         {
           "lang": "DZ",
-          "value": "mli7a"
+          "value": "mli7a",
+          "ar_value": ""
         }
       ]
     },
@@ -44,7 +46,8 @@
         },
         {
           "lang": "DZ",
-          "value": "mle7"
+          "value": "mle7",
+          "ar_value": ""
         }
       ]
     }

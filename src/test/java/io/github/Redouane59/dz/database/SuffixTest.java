@@ -84,14 +84,14 @@ public class SuffixTest {
     assertEquals(suffix.getGender(), Gender.M);
     assertEquals(suffix.getPossession(), Possession.OTHER);
     assertTrue(suffix.isSingular());
-    assertEquals(suffix.getDirectValue(), "nou");
+    assertEquals(suffix.getDirectValue(), "ou");
     assertEquals(suffix.getIndirectValue(), "lou");
 
     suffix = DB.DZ_SUFFIXES.getSuffix(Gender.F, Possession.OTHER, true);
     assertEquals(suffix.getGender(), Gender.F);
     assertEquals(suffix.getPossession(), Possession.OTHER);
     assertTrue(suffix.isSingular());
-    assertEquals(suffix.getDirectValue(), "nha");
+    assertEquals(suffix.getDirectValue(), "ha");
     assertEquals(suffix.getIndirectValue(), "lha");
 
     suffix = DB.DZ_SUFFIXES.getSuffix(Gender.X, Possession.I, false);
@@ -105,14 +105,14 @@ public class SuffixTest {
     assertEquals(suffix.getGender(), Gender.X);
     assertEquals(suffix.getPossession(), Possession.YOU);
     assertFalse(suffix.isSingular());
-    assertEquals(suffix.getDirectValue(), "nkoum");
+    assertEquals(suffix.getDirectValue(), "koum");
     assertEquals(suffix.getIndirectValue(), "lkoum");
 
     suffix = DB.DZ_SUFFIXES.getSuffix(Gender.X, Possession.OTHER, false);
     assertEquals(suffix.getGender(), Gender.X);
     assertEquals(suffix.getPossession(), Possession.OTHER);
     assertFalse(suffix.isSingular());
-    assertEquals(suffix.getDirectValue(), "nhoum");
+    assertEquals(suffix.getDirectValue(), "houm");
     assertEquals(suffix.getIndirectValue(), "lhoum");
   }
 }

@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "mra"
+          "value": "mra",
+          "ar_value": "مر"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "nsa"
+          "value": "nsa",
+          "ar_value": "نسا"
         }
       ]
     }

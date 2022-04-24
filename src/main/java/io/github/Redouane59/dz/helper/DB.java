@@ -1,9 +1,11 @@
 package io.github.Redouane59.dz.helper;
 
+import io.github.Redouane59.dz.model.Articles;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.verb.GenericSuffixes;
+import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.io.File;
 import java.io.IOException;
@@ -12,15 +14,18 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class DB {
 
-  public static Set<Verb>       VERBS       = new HashSet<>();
-  public static Set<Adjective>  ADJECTIVES  = new HashSet<>();
-  public static Set<Noun>       NOUNS       = new HashSet<>();
-  public static Set<Adverb>     ADVERBS     = new HashSet<>();
-  public static GenericSuffixes FR_SUFFIXES = new GenericSuffixes("src/main/resources/suffixes/fr_pronoun_suffixes.json");
-  public static GenericSuffixes DZ_SUFFIXES = new GenericSuffixes("src/main/resources/suffixes/dz_pronoun_suffixes1.json");
+  public static Set<Verb>        VERBS             = new HashSet<>();
+  public static Set<Adjective>   ADJECTIVES        = new HashSet<>();
+  public static Set<Noun>        NOUNS             = new HashSet<>();
+  public static Set<Adverb>      ADVERBS           = new HashSet<>();
+  public static GenericSuffixes  FR_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/fr_pronoun_suffixes.json");
+  public static GenericSuffixes  DZ_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/dz_pronoun_suffixes1.json");
+  public static Articles         ARTICLES          = new Articles("src/main/resources/other/articles.json");
+  public static PersonalPronouns PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
 
   static {
     // verb configurations
@@ -34,7 +39,8 @@ public class DB {
     // verb translations
     Set<String>
         files =
-        new HashSet<>(ResourceList.getResources(Pattern.compile(".*verbs.*json")));
+        new HashSet<>(ResourceList.getResources(Pattern.compile(".*verbs.*json")))
+            .stream().filter(o -> !o.contains(".verb_config.json")).collect(Collectors.toSet());
     for (String fileName : files) {
       try {
         Verb           verb              = Config.OBJECT_MAPPER.readValue(new File(fileName), Verb.class);
@@ -42,7 +48,7 @@ public class DB {
         if (verbConfiguration.isPresent()) {
           verb.importConfig(verbConfiguration.get());
         } else {
-          System.err.println("no configuration found for verb " + verb.getId());
+          //System.err.println("no configuration found for verb " + verb.getId());
         }
         VERBS.add(verb);
       } catch (IOException e) {

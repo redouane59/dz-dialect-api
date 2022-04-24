@@ -1,0 +1,19 @@
+{
+  "id": "NVA",
+  "fr_sequence": [
+    "ARTICLE",
+    "NOUN",
+    "VERB",
+    "ADJECTIVE"
+  ],
+  "ar_sequence": [
+    "ARTICLE",
+    "NOUN",
+    "ADJECTIVE"
+  ],
+  "subject_position": 1,
+  "tenses": [
+    "PRESENT"
+  ],
+  "verb_type": "STATE"
+}

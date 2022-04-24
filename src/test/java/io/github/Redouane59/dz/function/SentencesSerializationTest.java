@@ -1,26 +1,15 @@
 package io.github.Redouane59.dz.function;
 
-import static io.github.Redouane59.dz.helper.Config.OBJECT_MAPPER;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.Translation;
-import io.github.Redouane59.dz.model.sentence.AbstractSentence;
-import io.github.Redouane59.dz.model.sentence.PVA.PVASentence;
 import io.github.Redouane59.dz.model.sentence.Sentences;
-import java.util.ArrayList;
-import java.util.List;
-import org.junit.jupiter.api.Test;
+import io.github.Redouane59.dz.model.word.Sentence;
 
 public class SentencesSerializationTest {
 
-  AbstractSentence sentence1;
-  AbstractSentence sentence2;
-  Sentences        sentences;
+  Sentence  sentence1;
+  Sentence  sentence2;
+  Sentences sentences;
 
-  public SentencesSerializationTest() {
+ /* public SentencesSerializationTest() {
     List<Translation> translations = new ArrayList<>();
     translations.add(new Translation(Lang.FR, "je suis petit"));
     translations.add(new Translation(Lang.DZ, "rani sghir"));
@@ -55,6 +44,6 @@ public class SentencesSerializationTest {
     JsonNode jsonNode = OBJECT_MAPPER.readValue(serializedSentences, JsonNode.class);
     assertEquals(2, jsonNode.get("count").asInt());
     assertEquals(2, jsonNode.get("sentences").size());
-  }
+  }*/
 
 }

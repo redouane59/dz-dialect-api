@@ -1,6 +1,8 @@
 package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
+import io.github.Redouane59.dz.model.sentence.V2.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.word.Sentence;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -21,15 +23,15 @@ public class SentenceGenerator {
   }
 
   public Sentences generateRandomSentences() {
-    Sentences              result       = new Sentences();
-    Set<String>            errors       = new HashSet<>();
-    List<AbstractSentence> sentenceList = new ArrayList<>();
+    Sentences      result       = new Sentences();
+    Set<String>    errors       = new HashSet<>();
+    List<Sentence> sentenceList = new ArrayList<>();
     if (bodyArgs.getCount() > MAX_COUNT) {
       result.setErrors(Set.of("max count limit (" + MAX_COUNT + ") reached with count=" + bodyArgs.getCount()));
       bodyArgs.setCount(MAX_COUNT);
     }
     for (int i = 0; i < bodyArgs.getCount(); i++) {
-      Optional<AbstractSentence> sentence = generateRandomSentence(bodyArgs);
+      Optional<? extends Sentence> sentence = generateRandomSentence(bodyArgs);
       if (sentence.isPresent()) {
         sentenceList.add(sentence.get());
       } else {
@@ -44,19 +46,19 @@ public class SentenceGenerator {
     return result;
   }
 
-  public Optional<AbstractSentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    Optional<ISentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
+  public Optional<Sentence> generateRandomSentence(GeneratorParameters bodyArgs) {
+    Optional<AbstractSentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
     if (abstractSentenceBuilder.isEmpty()) {
       return Optional.empty();
     }
-    return abstractSentenceBuilder.get().generateRandomSentence(bodyArgs);
+    return abstractSentenceBuilder.get().generate(bodyArgs);
   }
 
-  public Optional<ISentenceBuilder> getRandomSentenceBuilder() {
-    List<ISentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
-                                                                      .stream()
-                                                                      .filter(o -> o.isCompatible(bodyArgs))
-                                                                      .collect(Collectors.toList());
+  public Optional<AbstractSentenceBuilder> getRandomSentenceBuilder() {
+    List<AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
+                                                               .stream()
+                                                               .filter(o -> o.isCompatible(bodyArgs))
+                                                               .collect(Collectors.toList());
     if (matchingGenerators.isEmpty()) {
       System.err.println("no generator found");
       return Optional.empty();

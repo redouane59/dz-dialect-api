@@ -2,6 +2,7 @@ package io.github.Redouane59.dz.database;
 
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.Verb;
 import org.junit.jupiter.api.Test;
 
@@ -15,8 +16,8 @@ public class DisplayVerbsTest {
                                           .forEach(o -> System.out.println(
                                               o.getDzTranslation()
                                               + " -> "
-                                              + o.getPersonalPronoun()
-                                                 .getTranslationValue(Lang.FR)
+                                              + PersonalPronouns.getPronounByCriterion(o.getGender(), o.getPossession(), o.isSingular()).get()
+                                                                .getTranslationValue(Lang.FR)
                                               + " "
                                               + o.getFrTranslation()
                                           ))));
@@ -34,9 +35,9 @@ public class DisplayVerbsTest {
                 + ","
                 + j.getTense()
                 + ","
-                + o.getPersonalPronoun().getTranslationValue(Lang.FR)
+                + PersonalPronouns.getPronounByCriterion(o.getGender(), o.getPossession(), o.isSingular()).get().getTranslationValue(Lang.FR)
                 + "/"
-                + o.getPersonalPronoun().getTranslationValue(Lang.DZ)
+                + PersonalPronouns.getPronounByCriterion(o.getGender(), o.getPossession(), o.isSingular()).get().getTranslationValue(Lang.DZ)
                 + ","
                 + o.getFrTranslation()
                 + ","
