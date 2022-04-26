@@ -9,6 +9,7 @@
   "ar_sequence": [
     "ARTICLE",
     "NOUN",
+    "VERB",
     "ADJECTIVE"
   ],
   "subject_position": 1,

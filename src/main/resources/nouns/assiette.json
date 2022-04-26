@@ -19,6 +19,21 @@
           "gender": "M"
         }
       ]
+    },
+    {
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "assiettes",
+          "gender": "F"
+        },
+        {
+          "lang": "DZ",
+          "value": "tabassa",
+          "gender": "M"
+        }
+      ]
     }
   ]
 }

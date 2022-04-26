@@ -1,0 +1,25 @@
+{
+  "id": "PV",
+  "fr_sequence": [
+    "PRONOUN",
+    "VERB",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "subject_position": 0,
+  "tenses": [
+    "PAST",
+    "PAST2",
+    "PRESENT",
+    "FUTURE"
+  ],
+  "verb_type": "POSSESSION",
+  "noun_types": [
+    "OBJECT"
+  ]
+}

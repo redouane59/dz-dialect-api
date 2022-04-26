@@ -35,7 +35,7 @@ public class AbstractWord {
                       .filter(o -> (o.getGender(lang) == gender || gender == Gender.X || o.getGender(lang) == Gender.X))
                       .map(o -> o.getTranslationByLang(lang).get())
                       .findAny()
-                      .orElseThrow();
+                      .orElse(new Translation(lang, ""));
   }
 
   public GenderedWord getWordBySingular(boolean isSingular) {
@@ -43,6 +43,18 @@ public class AbstractWord {
                       .filter(o -> o.isSingular() == isSingular)
                       .findAny()
                       .orElseThrow();
+  }
+
+  public GenderedWord getWordByGenderAndSingular(Gender gender, Lang lang, boolean isSingular) {
+    Optional<GenderedWord> result = getValues().stream()
+                                               .filter(o -> o.getGender(lang) == gender || o.getGender(lang) == Gender.X)
+                                               .filter(o -> o.isSingular() == isSingular)
+                                               .findAny();
+    if (result.isEmpty()) {
+      System.err.println("no word found");
+      return null;
+    }
+    return result.get();
   }
 
   public Optional<Translation> getTranslationBySingular(boolean isSingular, Lang lang) {

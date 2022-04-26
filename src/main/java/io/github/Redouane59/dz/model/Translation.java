@@ -61,6 +61,9 @@ public class Translation {
       newValue = newValue.replace("à le", "au");
       newValue = newValue.replace("l' ", "l'");
     }
+    if (newValue.startsWith(" ")) {
+      newValue = newValue.substring(1);
+    }
     // @todo add iou -> ih
     return newValue;
   }

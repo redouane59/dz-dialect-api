@@ -1,7 +1,7 @@
 package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
-import io.github.Redouane59.dz.model.sentence.V2.AbstractSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
 import io.github.Redouane59.dz.model.word.Sentence;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -47,18 +47,18 @@ public class SentenceGenerator {
   }
 
   public Optional<Sentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    Optional<AbstractSentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
+    Optional<SentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
     if (abstractSentenceBuilder.isEmpty()) {
       return Optional.empty();
     }
     return abstractSentenceBuilder.get().generate(bodyArgs);
   }
 
-  public Optional<AbstractSentenceBuilder> getRandomSentenceBuilder() {
-    List<AbstractSentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
-                                                               .stream()
-                                                               .filter(o -> o.isCompatible(bodyArgs))
-                                                               .collect(Collectors.toList());
+  public Optional<SentenceBuilder> getRandomSentenceBuilder() {
+    List<SentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
+                                                       .stream()
+                                                       .filter(o -> o.isCompatible(bodyArgs))
+                                                       .collect(Collectors.toList());
     if (matchingGenerators.isEmpty()) {
       System.err.println("no generator found");
       return Optional.empty();

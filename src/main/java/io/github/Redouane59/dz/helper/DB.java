@@ -18,14 +18,14 @@ import java.util.stream.Collectors;
 
 public class DB {
 
-  public static Set<Verb>        VERBS             = new HashSet<>();
-  public static Set<Adjective>   ADJECTIVES        = new HashSet<>();
-  public static Set<Noun>        NOUNS             = new HashSet<>();
-  public static Set<Adverb>      ADVERBS           = new HashSet<>();
-  public static GenericSuffixes  FR_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/fr_pronoun_suffixes.json");
-  public static GenericSuffixes  DZ_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/dz_pronoun_suffixes1.json");
-  public static Articles         ARTICLES          = new Articles("src/main/resources/other/articles.json");
-  public static PersonalPronouns PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
+  public final static Set<Verb>        VERBS             = new HashSet<>();
+  public final static Set<Adjective>   ADJECTIVES        = new HashSet<>();
+  public final static Set<Noun>        NOUNS             = new HashSet<>();
+  public final static Set<Adverb>      ADVERBS           = new HashSet<>();
+  public final static GenericSuffixes  FR_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/fr_pronoun_suffixes.json");
+  public final static GenericSuffixes  DZ_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/dz_pronoun_suffixes1.json");
+  public final static Articles         ARTICLES          = new Articles("src/main/resources/other/articles.json");
+  public final static PersonalPronouns PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
 
   static {
     // verb configurations

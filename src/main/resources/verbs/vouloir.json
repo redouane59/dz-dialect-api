@@ -2,6 +2,131 @@
   "id": "vouloir",
   "conjugators": [
     {
+      "tense": "PRESENT",
+      "conjugations": [
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abite"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abite"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veux"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abiti"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "M",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veut"
+            },
+            {
+              "lang": "DZ",
+              "value": "7ab"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "F",
+          "singular": true,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veut"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abete"
+            }
+          ]
+        },
+        {
+          "possession": "I",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veut"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abina"
+            }
+          ]
+        },
+        {
+          "possession": "YOU",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "voulez"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abitou"
+            }
+          ]
+        },
+        {
+          "possession": "OTHER",
+          "gender": "X",
+          "singular": false,
+          "translations": [
+            {
+              "lang": "FR",
+              "value": "veulent"
+            },
+            {
+              "lang": "DZ",
+              "value": "7abou"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "tense": "PAST",
       "conjugations": [
         {

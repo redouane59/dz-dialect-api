@@ -7,9 +7,7 @@ import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.sentence.V2.AbstractSentenceBuilder;
-import io.github.Redouane59.dz.model.sentence.V2.NVSentenceBuilder;
-import io.github.Redouane59.dz.model.sentence.V2.PVSentenceBuilder;
+import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -26,28 +24,29 @@ import lombok.Setter;
 public class GeneratorParameters {
 
   @Builder.Default
-  private Set<Tense>                    tenses     = Set.of(Tense.PAST, Tense.PAST2, Tense.PRESENT, Tense.FUTURE, Tense.IMPERATIVE);
+  private Set<Tense>            tenses     = Set.of(Tense.PAST, Tense.PAST2, Tense.PRESENT, Tense.FUTURE, Tense.IMPERATIVE);
   @Builder.Default
-  private Set<String>                   verbs      = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
+  private Set<String>           verbs      = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>                   nouns      = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>           nouns      = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>                   adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>           adjectives = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>                   adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
+  private Set<String>           adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
-  private Set<WordType>                 wordTypes  =
+  private Set<WordType>         wordTypes  =
       Set.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
   @Builder.Default
   @JsonIgnore
-  private int                           count      = 1;
+  private int                   count      = 1;
   @Builder.Default
   @JsonIgnore
-  private List<AbstractSentenceBuilder> generators = List.of(
-      //   new PVSentenceBuilder(),
-      new NVSentenceBuilder(),
-      new PVSentenceBuilder()
+  private List<SentenceBuilder> generators = List.of(
+      new SentenceBuilder("nva_sentence.json")
+
+      // new NVSentenceBuilder(),
+      // new PVSentenceBuilder()
        /*   ,new PVNSentenceBuilder(),
           new PVASentenceBuilder(),
           new NVASentenceBuilder(),
