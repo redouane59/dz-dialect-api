@@ -8,17 +8,13 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum SentenceType {
 
-  NVA(new SentenceBuilder("nva_sentence.json"));
-  // PV(new PVSentenceBuilder()),
-  // NV(new NVSentenceBuilder()),
-  // PV(new PVSentenceBuilder())
-/*  ,
-  PVA(new PVASentenceBuilder()),
-  PVD(new PVDSentenceBuilder()),
-  NVA(new NVASentenceBuilder()),
-  PVN(new PVNSentenceBuilder()),
-  QVP(new QVPSentenceBuilder()),
-  PVOS(new PVSOSentenceBuilder())*/
+  NV(new SentenceBuilder("nv_sentence.json")),
+  NVA(new SentenceBuilder("nva_sentence.json")),
+  PV(new SentenceBuilder("pv_sentence.json")),
+  PVA(new SentenceBuilder("pva_sentence.json")),
+  PVN(new SentenceBuilder("pvn_sentence.json")),
+  V(new SentenceBuilder("v_sentence.json"));
+
 
   private SentenceBuilder sentenceBuilder;
 

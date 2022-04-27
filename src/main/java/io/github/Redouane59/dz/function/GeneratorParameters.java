@@ -7,6 +7,7 @@ import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.sentence.SentenceType;
 import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -43,16 +44,12 @@ public class GeneratorParameters {
   @Builder.Default
   @JsonIgnore
   private List<SentenceBuilder> generators = List.of(
-      new SentenceBuilder("nva_sentence.json")
-
-      // new NVSentenceBuilder(),
-      // new PVSentenceBuilder()
-       /*   ,new PVNSentenceBuilder(),
-          new PVASentenceBuilder(),
-          new NVASentenceBuilder(),
-          new PVDSentenceBuilder(),
-          new QVPSentenceBuilder(),
-          new PVSOSentenceBuilder() */
+      SentenceType.NV.getSentenceBuilder(),
+      SentenceType.NVA.getSentenceBuilder(),
+      SentenceType.PV.getSentenceBuilder(),
+      SentenceType.PVA.getSentenceBuilder(),
+      SentenceType.PVN.getSentenceBuilder(),
+      SentenceType.V.getSentenceBuilder()
   );
 
 
