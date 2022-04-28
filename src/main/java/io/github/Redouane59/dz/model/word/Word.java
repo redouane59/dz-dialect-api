@@ -15,7 +15,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public abstract class Word {
+public class Word {
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   private List<Translation> translations = new ArrayList<>(); // @todo set instead

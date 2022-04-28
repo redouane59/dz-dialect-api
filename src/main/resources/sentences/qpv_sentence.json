@@ -1,13 +1,12 @@
 {
-  "id": "NV",
+  "id": "QPV",
   "fr_sequence": [
-    "ARTICLE",
-    "NOUN",
+    "QUESTION",
+    "PRONOUN",
     "VERB"
   ],
   "ar_sequence": [
-    "ARTICLE",
-    "NOUN",
+    "QUESTION",
     "VERB"
   ],
   "subject_position": 1,
@@ -16,8 +15,5 @@
     "PAST2",
     "PRESENT",
     "FUTURE"
-  ],
-  "noun_types": [
-    "PERSON"
   ]
 }

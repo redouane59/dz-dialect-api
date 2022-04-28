@@ -4,7 +4,6 @@ import io.github.Redouane59.dz.model.Articles;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.verb.GenericSuffixes;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.io.File;
@@ -22,8 +21,6 @@ public class DB {
   public final static Set<Adjective>   ADJECTIVES        = new HashSet<>();
   public final static Set<Noun>        NOUNS             = new HashSet<>();
   public final static Set<Adverb>      ADVERBS           = new HashSet<>();
-  public final static GenericSuffixes  FR_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/fr_pronoun_suffixes.json");
-  public final static GenericSuffixes  DZ_SUFFIXES       = new GenericSuffixes("src/main/resources/suffixes/dz_pronoun_suffixes1.json");
   public final static Articles         ARTICLES          = new Articles("src/main/resources/other/articles.json");
   public final static PersonalPronouns PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
 

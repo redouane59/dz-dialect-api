@@ -1,5 +1,5 @@
 {
-  "id": "difficile",
+  "id": "facile",
   "possible_nouns": [
     "PERSON",
     "TASK"
@@ -11,11 +11,11 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "difficile"
+          "value": "facile"
         },
         {
           "lang": "DZ",
-          "value": "wa3ar"
+          "value": "sehel"
         }
       ]
     },
@@ -25,39 +25,25 @@
       "translations": [
         {
           "lang": "FR",
-          "value": "difficile"
+          "value": "facile"
         },
         {
           "lang": "DZ",
-          "value": "wa3ra"
+          "value": "sehla"
         }
       ]
     },
     {
-      "gender": "M",
+      "gender": "X",
       "singular": false,
       "translations": [
         {
           "lang": "FR",
-          "value": "difficiles"
+          "value": "faciles"
         },
         {
           "lang": "DZ",
-          "value": "wa3rin"
-        }
-      ]
-    },
-    {
-      "gender": "F",
-      "singular": false,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "difficiles"
-        },
-        {
-          "lang": "DZ",
-          "value": "wa3rin"
+          "value": "sehlin"
         }
       ]
     }

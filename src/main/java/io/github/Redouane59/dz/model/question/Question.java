@@ -1,22 +1,20 @@
 package io.github.Redouane59.dz.model.question;
 
+import static io.github.Redouane59.dz.model.sentence.WordPicker.RANDOM;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import io.github.Redouane59.dz.helper.Config;
-import io.github.Redouane59.dz.model.Lang;
-import io.github.Redouane59.dz.model.Translation;
+import io.github.Redouane59.dz.model.word.Word;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 import lombok.Getter;
 
-@Getter
 /*
 Translation values inserted through question.json file
  */
+@Getter
 public enum Question {
 
   WHO,
@@ -28,17 +26,19 @@ public enum Question {
   WHAT,
   WITH_WHO;
 
-  private static final List<Question>    VALUES = Collections.unmodifiableList(Arrays.asList(values()));
-  private              List<Translation> translations;
+  private Word word;
 
   Question() {
     try {
-      File       file              = new File("src/main/resources/other/questions.json");
-      JsonNode[] personalProunouns = Config.OBJECT_MAPPER.readValue(file, JsonNode[].class);
+      File file = new File("src/main/resources/other/questions.json");
+      JsonNode[] personalProunouns =
+          Config.OBJECT_MAPPER.readValue(file, JsonNode[].class);
       for (JsonNode jsonNode : personalProunouns) {
+        Word word = new Word();
+        word.setTranslations(Config.OBJECT_MAPPER.readValue(jsonNode.get("translations").toString(), new TypeReference<>() {
+        }));
         if (jsonNode.get("id").asText().equals(this.name())) {
-          this.translations = Config.OBJECT_MAPPER.readValue(jsonNode.get("translations").toString(), new TypeReference<List<Translation>>() {
-          });
+          this.word = word;
         }
       }
     } catch (IOException e) {
@@ -48,13 +48,7 @@ public enum Question {
   }
 
   public static Question getRandomInterrogativeProunoun() {
-    return VALUES.get(new Random().nextInt(VALUES.size()));
-  }
-
-  // @todo duplicate
-  public String getTranslationValue(Lang lang) {
-    return getTranslations()
-        .stream().filter(o -> o.getLang() == lang).findAny().get().getValue();
+    return Arrays.stream(values()).skip(RANDOM.nextInt(values().length)).findFirst().get();
   }
 
 }

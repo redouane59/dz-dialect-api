@@ -8,7 +8,8 @@
       },
       {
         "lang": "DZ",
-        "value": "chkoun"
+        "value": "chkoun",
+        "ar_value": "شكون"
       }
     ]
   },
@@ -21,7 +22,8 @@
       },
       {
         "lang": "DZ",
-        "value": "wo9tach"
+        "value": "wo9tach",
+        "ar_value": "وقتاش"
       }
     ]
   },
@@ -34,7 +36,8 @@
       },
       {
         "lang": "DZ",
-        "value": "win"
+        "value": "win",
+        "ar_value": "وين"
       }
     ]
   },
@@ -47,7 +50,8 @@
       },
       {
         "lang": "DZ",
-        "value": "kiffech"
+        "value": "kiffech",
+        "ar_value": "كيفاش"
       }
     ]
   },
@@ -60,7 +64,8 @@
       },
       {
         "lang": "DZ",
-        "value": "wa3lech"
+        "value": "wa3lech",
+        "ar_value": "وعلاش"
       }
     ]
   },
@@ -73,7 +78,8 @@
       },
       {
         "lang": "DZ",
-        "value": "ch7al"
+        "value": "ch7al",
+        "ar_value": "شحال"
       }
     ]
   },
@@ -86,7 +92,8 @@
       },
       {
         "lang": "DZ",
-        "value": "wesh"
+        "value": "wesh",
+        "ar_value": "واش"
       }
     ]
   },
@@ -99,7 +106,8 @@
       },
       {
         "lang": "DZ",
-        "value": "m3a men"
+        "value": "m3a men",
+        "ar_value": "معا من"
       }
     ]
   }

@@ -1,23 +1,20 @@
 {
-  "id": "NV",
+  "id": "NVD",
   "fr_sequence": [
     "ARTICLE",
     "NOUN",
-    "VERB"
+    "VERB",
+    "ADVERB"
   ],
   "ar_sequence": [
     "ARTICLE",
     "NOUN",
-    "VERB"
+    "VERB",
+    "ADVERB"
   ],
   "subject_position": 1,
   "tenses": [
-    "PAST",
-    "PAST2",
-    "PRESENT",
-    "FUTURE"
+    "PRESENT"
   ],
-  "noun_types": [
-    "PERSON"
-  ]
+  "verb_type": "STATE"
 }

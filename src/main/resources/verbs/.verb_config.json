@@ -58,7 +58,8 @@
     ],
     "possible_questions": [
       "WHERE",
-      "WHEN"
+      "WHEN",
+      "WITH_WHO"
     ],
     "semi_auxiliar": true,
     "verb_type": "DEPLACEMENT"
@@ -151,7 +152,8 @@
     "id": "chanter",
     "possible_questions": [
       "WHAT",
-      "WHY"
+      "WHY",
+      "WITH_WHO"
     ],
     "possible_complements": [
       "ADVERB"
@@ -183,7 +185,8 @@
     ],
     "possible_questions": [
       "WHO",
-      "WHERE"
+      "WHERE",
+      "WITH_WHO"
     ],
     "verb_type": "STATE"
   }

@@ -19,6 +19,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+// @todo switch to enum
 public class PersonalPronouns {
 
   @Getter

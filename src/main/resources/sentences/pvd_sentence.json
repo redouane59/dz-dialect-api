@@ -1,0 +1,17 @@
+{
+  "id": "NVD",
+  "fr_sequence": [
+    "PRONOUN",
+    "VERB",
+    "ADVERB"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "ADVERB"
+  ],
+  "subject_position": 0,
+  "tenses": [
+    "PRESENT"
+  ],
+  "verb_type": "STATE"
+}

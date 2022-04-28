@@ -9,15 +9,19 @@ public class GenerateSentenceV2Test {
 
   @Test
   public void testGenericSentenceBuilder() {
-    int nbTries = 5;
+    int nbTries = 30;
 
     List<String> schemaNames = List.of(
-        //      "nv_sentence.json",
-        "nva_sentence.json"
-        //      , "pv_sentence.json"
-        //      , "pva_sentence.json"
-        //      , "pvn_sentence.json"
-        //      , "v_sentence.json"
+        //    "qpv_sentence.json",
+        // "nvd_sentence.json",
+        // "pvd_sentence.json",
+        "nvs_sentence.json"
+        //    , "nv_sentence.json"
+        //    , "nva_sentence.json"
+        //    , "pv_sentence.json"
+        //    , "pva_sentence.json"
+        //    , "pvn_sentence.json"
+        //    , "v_sentence.json"
     );
     System.out.println();
     for (String schema : schemaNames) {

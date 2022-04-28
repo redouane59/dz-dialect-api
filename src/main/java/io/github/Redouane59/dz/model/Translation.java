@@ -41,8 +41,8 @@ public class Translation {
     // replacing pronouns & articles ending with a vowel when the next word also start by a vowel
     if (lang == Lang.FR) {
       for (char c : Config.VOWELS) {
-        newValue = newValue.replace(" je " + c, "j'" + c);
-        newValue = newValue.replace(" ce " + c, "c'" + c);
+        newValue = newValue.replace(" je " + c, " j'" + c);
+        newValue = newValue.replace(" ce " + c, " c'" + c);
         newValue = newValue.replace(" me " + c, " m'" + c);
         newValue = newValue.replace(" te " + c, " t'" + c);
         newValue = newValue.replace(" le " + c, " l'" + c);

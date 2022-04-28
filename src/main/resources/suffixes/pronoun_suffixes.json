@@ -1,0 +1,254 @@
+[
+  {
+    "id": "I_D",
+    "gender": "X",
+    "possession": "I",
+    "singular": true,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "me"
+      },
+      {
+        "lang": "DZ",
+        "value": "ni",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "YOU_S_D",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": true,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "te"
+      },
+      {
+        "lang": "DZ",
+        "value": "nek",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "HE_D",
+    "gender": "M",
+    "possession": "OTHER",
+    "singular": true,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "le"
+      },
+      {
+        "lang": "DZ",
+        "value": "ou",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "SHE_D",
+    "gender": "F",
+    "possession": "OTHER",
+    "singular": true,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "la"
+      },
+      {
+        "lang": "DZ",
+        "value": "ha",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "WE_D",
+    "gender": "X",
+    "possession": "I",
+    "singular": false,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "nous"
+      },
+      {
+        "lang": "DZ",
+        "value": "na",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "YOU_P_D",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": false,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "vous"
+      },
+      {
+        "lang": "DZ",
+        "value": "koum",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "THEY_D",
+    "gender": "X",
+    "possession": "OTHER",
+    "singular": false,
+    "is_direct": true,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "les"
+      },
+      {
+        "lang": "DZ",
+        "value": "houm",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "I_I",
+    "gender": "X",
+    "possession": "I",
+    "singular": true,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "me"
+      },
+      {
+        "lang": "DZ",
+        "value": "li",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "YOU_S_I",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": true,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "te"
+      },
+      {
+        "lang": "DZ",
+        "value": "lek",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "HE_I",
+    "gender": "M",
+    "possession": "OTHER",
+    "singular": true,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "lui"
+      },
+      {
+        "lang": "DZ",
+        "value": "lou",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "SHE_I",
+    "gender": "F",
+    "possession": "OTHER",
+    "singular": true,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "lui"
+      },
+      {
+        "lang": "DZ",
+        "value": "lha",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "WE_I",
+    "gender": "X",
+    "possession": "I",
+    "singular": false,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "nous"
+      },
+      {
+        "lang": "DZ",
+        "value": "lna",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "YOU_P_I",
+    "gender": "X",
+    "possession": "YOU",
+    "singular": false,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "vous"
+      },
+      {
+        "lang": "DZ",
+        "value": "lkoum",
+        "ar_value": ""
+      }
+    ]
+  },
+  {
+    "id": "THEY_I",
+    "gender": "X",
+    "possession": "OTHER",
+    "singular": false,
+    "is_direct": false,
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "leur"
+      },
+      {
+        "lang": "DZ",
+        "value": "lhoum",
+        "ar_value": ""
+      }
+    ]
+  }
+]

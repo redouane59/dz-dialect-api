@@ -14,6 +14,7 @@ public enum Possession {
     return Arrays.stream(values()).skip(RANDOM.nextInt(values().length)).findFirst().get();
   }
 
+  // @todo authorize other->other
   public static Possession getRandomPosession(Possession possession) {
     return Arrays.stream(values()).filter(o -> o != possession).skip(RANDOM.nextInt(values().length - 1)).findFirst().get();
   }

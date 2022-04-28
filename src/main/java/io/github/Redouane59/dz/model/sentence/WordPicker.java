@@ -4,7 +4,6 @@ import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
-import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -187,11 +186,6 @@ public class WordPicker {
       }
     }
     return matchingTenses.stream().skip(RANDOM.nextInt(matchingTenses.size())).findFirst().orElse(null);
-  }
-
-
-  public static Question pickRandomInterrogativePronoun(final Verb randomVerb) {
-    return randomVerb.getPossibleQuestions().stream().skip(new Random().nextInt(randomVerb.getPossibleQuestions().size())).findFirst().orElse(null);
   }
 
   public static Set<Verb> getCompatibleVerbs(Set<Verb> verbs, Set<Noun> nouns) {

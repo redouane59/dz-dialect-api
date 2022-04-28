@@ -14,7 +14,8 @@ public enum WordType {
   ADVERB("adverb"),
   QUESTION("question"),
   PRONOUN("pronoun"),
-  ARTICLE("article");
+  ARTICLE("article"),
+  SUFFIX("suffix");
 
   private String value;
 
