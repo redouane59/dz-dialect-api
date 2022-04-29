@@ -57,12 +57,13 @@ public enum SuffixEnum {
     }
   }
 
-  public static Suffix getRandomSuffix(final Possession other) {
+  public static Suffix getRandomSuffix(final Possession other, boolean isDirect) {
     Gender     randomGender     = Gender.getRandomGender();
     boolean    randomSingular   = RANDOM.nextBoolean();
     Possession randomPossession = Possession.getRandomPosession(other);
 
     return Arrays.stream(values())
+                 .filter(s -> s.getSuffix().isDirect() == isDirect)
                  .filter(s -> s.getSuffix().isSingular() == randomSingular)
                  .filter(s -> s.getSuffix().getPossession() == randomPossession)
                  .filter(s -> s.getSuffix().getGender() == randomGender || s.getSuffix().getGender() == Gender.X || randomGender == Gender.X)

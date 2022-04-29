@@ -13,8 +13,8 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
+@Setter
 public class Word {
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -33,12 +33,16 @@ public class Word {
     return getTranslationByLang(lang).orElse(new Translation(lang, "")).getValue();
   }
 
+  // @todo mix with other method cleanValue
   public String cleanString(String value) {
     if (value == null) {
       return value;
     }
     if (value.startsWith(" ")) {
       value = value.substring(1);
+    }
+    if (value.endsWith(" ")) {
+      value = value.substring(0, value.length() - 1);
     }
     return value.replace("' ", "'").replace("  ", " ");
   }

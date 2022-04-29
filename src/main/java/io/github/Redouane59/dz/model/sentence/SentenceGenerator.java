@@ -47,11 +47,16 @@ public class SentenceGenerator {
   }
 
   public Optional<Sentence> generateRandomSentence(GeneratorParameters bodyArgs) {
-    Optional<SentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
-    if (abstractSentenceBuilder.isEmpty()) {
+    try {
+      Optional<SentenceBuilder> abstractSentenceBuilder = getRandomSentenceBuilder();
+      if (abstractSentenceBuilder.isEmpty()) {
+        return Optional.empty();
+      }
+      return abstractSentenceBuilder.get().generate(bodyArgs);
+    } catch (Exception e) {
+      e.printStackTrace();
       return Optional.empty();
     }
-    return abstractSentenceBuilder.get().generate(bodyArgs);
   }
 
   public Optional<SentenceBuilder> getRandomSentenceBuilder() {

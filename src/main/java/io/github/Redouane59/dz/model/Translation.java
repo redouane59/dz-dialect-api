@@ -62,9 +62,13 @@ public class Translation {
       newValue = newValue.replace("l' ", "l'");
     } else if (lang == Lang.DZ) {
       newValue = newValue.replace("ouou", "ouh");
+      newValue = newValue.replace("aek", "ak");
     }
     if (newValue.startsWith(" ")) {
       newValue = newValue.substring(1);
+    }
+    if (newValue.endsWith(" ")) {
+      newValue = newValue.substring(0, newValue.length() - 1);
     }
     // @todo add iou -> ih
     return newValue;
