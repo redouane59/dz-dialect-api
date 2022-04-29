@@ -60,6 +60,8 @@ public class Translation {
       newValue = newValue.replace("que on", "qu'on");
       newValue = newValue.replace("à le", "au");
       newValue = newValue.replace("l' ", "l'");
+    } else if (lang == Lang.DZ) {
+      newValue = newValue.replace("ouou", "ouh");
     }
     if (newValue.startsWith(" ")) {
       newValue = newValue.substring(1);

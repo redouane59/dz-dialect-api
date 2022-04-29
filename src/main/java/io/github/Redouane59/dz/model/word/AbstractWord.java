@@ -45,16 +45,16 @@ public class AbstractWord {
                       .orElseThrow();
   }
 
-  public GenderedWord getWordByGenderAndSingular(Gender gender, Lang lang, boolean isSingular) {
+  public Optional<GenderedWord> getWordByGenderAndSingular(Gender gender, Lang lang, boolean isSingular) {
     Optional<GenderedWord> result = getValues().stream()
                                                .filter(o -> o.getGender(lang) == gender || o.getGender(lang) == Gender.X)
                                                .filter(o -> o.isSingular() == isSingular)
                                                .findAny();
     if (result.isEmpty()) {
       System.err.println("no word found");
-      return null;
+      return Optional.empty();
     }
-    return result.get();
+    return result;
   }
 
   public Optional<Translation> getTranslationBySingular(boolean isSingular, Lang lang) {

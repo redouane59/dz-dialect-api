@@ -20,24 +20,28 @@
       ]
     }
   ],
-  "state_preposition": [
-    {
-      "lang": "FR",
-      "value": "à la"
-    },
-    {
-      "lang": "DZ",
-      "value": "fel"
-    }
-  ],
-  "deplacement_preposition": [
-    {
-      "lang": "FR",
-      "value": "à la"
-    },
-    {
-      "lang": "DZ",
-      "value": "lel"
-    }
-  ]
+  "state_preposition": {
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "à la"
+      },
+      {
+        "lang": "DZ",
+        "value": "fel"
+      }
+    ]
+  },
+  "deplacement_preposition": {
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "à la"
+      },
+      {
+        "lang": "DZ",
+        "value": "lel"
+      }
+    ]
+  }
 }

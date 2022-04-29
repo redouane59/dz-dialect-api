@@ -8,13 +8,17 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum SentenceType {
 
-  NV(new SentenceBuilder("nv_sentence.json")),
-  NVA(new SentenceBuilder("nva_sentence.json")),
-  PV(new SentenceBuilder("pv_sentence.json")),
-  PVA(new SentenceBuilder("pva_sentence.json")),
-  PVN(new SentenceBuilder("pvn_sentence.json")),
-  V(new SentenceBuilder("v_sentence.json"));
-
+  NV(new SentenceBuilder("src/main/resources/sentences/nv_sentence.json")),
+  NVA(new SentenceBuilder("src/main/resources/sentences/nva_sentence.json")),
+  NVS(new SentenceBuilder("src/main/resources/sentences/nvs_sentence.json")),
+  PV(new SentenceBuilder("src/main/resources/sentences/pv_sentence.json")),
+  PVA(new SentenceBuilder("src/main/resources/sentences/pva_sentence.json")),
+  PVD(new SentenceBuilder("src/main/resources/sentences/pvd_sentence.json")),
+  NVD(new SentenceBuilder("src/main/resources/sentences/nvd_sentence.json")),
+  PVN(new SentenceBuilder("src/main/resources/sentences/pvn_sentence.json")),
+  PVN_DEP(new SentenceBuilder("src/main/resources/sentences/pvn_deplacement_sentence.json")),
+  PVN3_STA(new SentenceBuilder("src/main/resources/sentences/pvn_state_sentence.json")),
+  V(new SentenceBuilder("src/main/resources/sentences/v_sentence.json"));
 
   private SentenceBuilder sentenceBuilder;
 

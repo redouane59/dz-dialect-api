@@ -13,5 +13,5 @@ public class Config {
   public static List<Character> VOWELS                    = List.of('a', 'e', 'é', 'è', 'i', 'o', 'ô', 'u', 'h');
   // remove the L if this letter is after
   public static List<String>    CONSONANTS                = List.of("d", "n", "r", "t", "s", "z", "ch");
-  public static boolean         SERIALIZE_ADDITIONAL_INFO = false;
+  public static boolean         SERIALIZE_ADDITIONAL_INFO = true;
 }

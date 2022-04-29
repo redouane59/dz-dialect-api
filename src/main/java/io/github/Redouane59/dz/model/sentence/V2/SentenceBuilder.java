@@ -24,9 +24,11 @@ import io.github.Redouane59.dz.model.verb.SuffixEnum;
 import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
+import io.github.Redouane59.dz.model.verb.VerbType;
 import io.github.Redouane59.dz.model.word.GenderedWord;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import io.github.Redouane59.dz.model.word.Sentence;
+import io.github.Redouane59.dz.model.word.Sentence.SentenceContent;
 import io.github.Redouane59.dz.model.word.Word;
 import java.io.File;
 import java.util.Arrays;
@@ -40,10 +42,13 @@ public class SentenceBuilder {
 
   Map<WordType, Word> wordMapFr;
   Map<WordType, Word> wordMapAr;
-  private SentenceSchema schema;
-  private Noun           nounSubject;
-  private Question       question;
-  private Suffix         suffix;
+  private SentenceContent     sentenceContent;
+  private SentenceSchema      schema;
+  private Noun                nounSubject;
+  private Verb                abstractVerb;
+  private Question            question;
+  private Suffix              suffix;
+  private GeneratorParameters bodyArgs;
 
   public SentenceBuilder(String filePath) {
     try {
@@ -54,10 +59,17 @@ public class SentenceBuilder {
   }
 
   public Optional<Sentence> generate(GeneratorParameters bodyArgs) {
-    fillWordMapsFromSchema();
+    this.bodyArgs   = bodyArgs;
+    sentenceContent = SentenceContent.builder().build();
+    boolean resultOk = fillWordMapsFromSchema();
+    if (!resultOk) {
+      System.err.println("no sentence generated");
+      return Optional.empty();
+    }
     Sentence sentence = new Sentence();
     sentence.getTranslations().add(generateArTranslation(Lang.DZ));
     sentence.getTranslations().add(generateFrTranslation());
+    sentence.setContent(sentenceContent);
     return Optional.of(sentence);
   }
 
@@ -65,7 +77,7 @@ public class SentenceBuilder {
     return true;
   }
 
-  public void fillWordMapsFromSchema() {
+  public boolean fillWordMapsFromSchema() {
     PossessiveWord subject = null;
     wordMapFr = new ArrayMap<>();
     wordMapAr = new ArrayMap<>();
@@ -74,6 +86,7 @@ public class SentenceBuilder {
       switch (wordType) {
         case PRONOUN:
           PossessiveWord pronoun = getPronoun();
+          sentenceContent.setPronoun((PersonalPronoun) pronoun);
           wordMapFr.put(wordType, pronoun);
           wordMapAr.put(wordType, pronoun);
           if (schema.getSubjectPosition() == i) {
@@ -81,10 +94,27 @@ public class SentenceBuilder {
           }
           break;
         case NOUN:
-          PossessiveWord noun = getNoun();
-          Word article = getArticle(noun, Lang.FR);
-          wordMapFr.put(WordType.ARTICLE, article);
-          wordMapAr.put(WordType.ARTICLE, article);
+          Optional<Noun> abstractNoun = getAbstractNoun();
+          if (abstractNoun.isEmpty()) {
+            return false;
+          }
+          this.nounSubject = abstractNoun.get();
+          PossessiveWord noun = new PossessiveWord(abstractNoun.get().getWordBySingular(true));
+          Optional<Article> article = getArticle(noun, Lang.FR);
+          if (article.isEmpty()) {
+            return false;
+          }
+          if (abstractVerb.getVerbType() == VerbType.DEPLACEMENT) {
+            wordMapFr.put(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition());
+            wordMapAr.put(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition());
+          } else if (abstractVerb.getVerbType() == VerbType.STATE) {
+            wordMapFr.put(WordType.PREPOSITION, abstractNoun.get().getStatePreposition());
+            wordMapAr.put(WordType.PREPOSITION, abstractNoun.get().getStatePreposition());
+          } else { // @todo dirty
+            wordMapFr.put(WordType.ARTICLE, article.get());
+            wordMapAr.put(WordType.ARTICLE, article.get());
+          }
+          sentenceContent.setNoun(nounSubject);
           wordMapFr.put(wordType, noun);
           wordMapAr.put(wordType, noun);
           if (schema.getSubjectPosition() == i) {
@@ -92,22 +122,32 @@ public class SentenceBuilder {
           }
           break;
         case VERB:
-          Verb verb = getAbstractVerb();
-          wordMapFr.put(wordType, getVerbConjugation(verb, subject, Lang.FR));
-          wordMapAr.put(wordType, getVerbConjugation(verb, subject, Lang.DZ));
+          Optional<Verb> abstractVerbOpt = getAbstractVerb();
+          if (abstractVerbOpt.isEmpty()) {
+            return false;
+          }
+          abstractVerb = getAbstractVerb().get();
+          sentenceContent.setVerb(abstractVerb);
+          wordMapFr.put(wordType, getVerbConjugation(abstractVerb, subject, Lang.FR));
+          wordMapAr.put(wordType, getVerbConjugation(abstractVerb, subject, Lang.DZ));
           break;
         case ADJECTIVE:
-          Adjective adjective = getAbstractAdjective(subject);
-          wordMapFr.put(wordType, getAdjective(adjective, subject, Lang.FR));
-          wordMapAr.put(wordType, getAdjective(adjective, subject, Lang.DZ));
+          Optional<Adjective> adjective = getAbstractAdjective(subject);
+          if (adjective.isEmpty()) {
+            return false;
+          }
+          wordMapFr.put(wordType, getAdjective(adjective.get(), subject, Lang.FR).get());
+          wordMapAr.put(wordType, getAdjective(adjective.get(), subject, Lang.DZ).get());
           break;
         case ADVERB:
           Adverb adverb = getAdverb();
+          sentenceContent.setAdverb(adverb);
           wordMapFr.put(wordType, adverb);
           wordMapAr.put(wordType, adverb);
           break;
         case QUESTION:
           question = getQuestion();
+          sentenceContent.setQuestion(question);
           wordMapFr.put(wordType, question.getWord());
           wordMapAr.put(wordType, question.getWord());
         case SUFFIX:
@@ -116,6 +156,7 @@ public class SentenceBuilder {
           wordMapAr.put(wordType, suffix);
       }
     }
+    return true;
   }
 
   private Suffix getSuffix(PossessiveWord s) {
@@ -127,7 +168,7 @@ public class SentenceBuilder {
   }
 
   private Adverb getAdverb() {
-    return DB.ADVERBS.stream().skip(RANDOM.nextInt(DB.ADVERBS.size())).findFirst().get();
+    return bodyArgs.getAdverbsFromIds().stream().skip(RANDOM.nextInt(bodyArgs.getAdverbsFromIds().size())).findFirst().get();
   }
 
   private Translation generateFrTranslation() {
@@ -147,9 +188,18 @@ public class SentenceBuilder {
       if (wordType == WordType.SUFFIX) {
         sentenceValue.deleteCharAt(sentenceValue.length() - 1);
         sentenceValueAr.deleteCharAt(sentenceValueAr.length() - 1);
+        if (abstractVerb.isDzOppositeComplement()) {
+          sentenceValue.append(SuffixEnum.getOppositeSuffix(suffix).getTranslationValue(lang));
+          sentenceValueAr.append(SuffixEnum.getOppositeSuffix(suffix).getTranslationByLang(Lang.DZ).get().getArValue());
+
+        } else {
+          sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
+          sentenceValueAr.append(wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue());
+        }
+      } else {
+        sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
+        sentenceValueAr.append(wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue());
       }
-      sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
-      sentenceValueAr.append(wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue());
       sentenceValue.append(" ");
       sentenceValueAr.append(" ");
     }
@@ -178,16 +228,17 @@ public class SentenceBuilder {
     return PersonalPronouns.getRandomPersonalPronoun();
   }
 
-  private GenderedWord getArticle(PossessiveWord noun, Lang lang) {
+  private Optional<Article> getArticle(PossessiveWord noun, Lang lang) {
     Optional<Article> article = Articles.getArticleByCriterion(noun.getGender(lang), noun.getPossession(), noun.isSingular(), true);
     if (article.isEmpty()) {
       System.err.println("empty article");
+      return Optional.empty();
     }
-    return article.get();
+    return article;
   }
 
-  private Verb getAbstractVerb() {
-    Set<Verb> verbs = DB.VERBS;
+  private Optional<Verb> getAbstractVerb() {
+    Set<Verb> verbs = bodyArgs.getVerbsFromIds();
 
     verbs = verbs.stream().filter(v -> v.getConjugators().stream()
                                         .anyMatch(c -> c.getConjugations().stream()
@@ -212,17 +263,16 @@ public class SentenceBuilder {
       System.err.println("no verbs matching criterion");
     }
 
-    return verbs.stream().skip(RANDOM.nextInt(verbs.size()))
-                .findFirst()
-                .get();
+    return verbs.stream().skip(RANDOM.nextInt(verbs.size())).findFirst();
   }
 
   private PossessiveWord getVerbConjugation(Verb verb, PossessiveWord subject, Lang lang) {
-    Tense tense = Tense.PRESENT;
+    Tense tense = Tense.PRESENT; // @todo update
     if (subject == null) {
       subject = PersonalPronouns.getRandomPersonalPronoun(true);
       tense   = Tense.IMPERATIVE;
     }
+    sentenceContent.setTense(tense);
     Optional<Conjugation>
         conjugation =
         verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
@@ -236,47 +286,49 @@ public class SentenceBuilder {
     return conjugation.get();
   }
 
-  private PossessiveWord getNoun() {
-    Set<Noun> nouns = DB.NOUNS;
+  private Optional<Noun> getAbstractNoun() {
+    Set<Noun> nouns = bodyArgs.getNounsFromIds();
     if (!schema.getNounTypes().isEmpty()) {
       nouns = nouns.stream().filter(n -> n.getNounTypes().stream()
                                           .anyMatch(n2 -> schema.getNounTypes().contains(n2))).collect(Collectors.toSet());
     }
     if (nouns.isEmpty()) {
       System.err.println("nouns is empty");
+      return Optional.empty();
     }
-    Noun noun = nouns.stream().skip(RANDOM.nextInt(nouns.size())).findFirst().get();
-    this.nounSubject = noun;
-    return new PossessiveWord(noun.getWordBySingular(true));
+    return nouns.stream().skip(RANDOM.nextInt(nouns.size())).findFirst();
   }
 
-  private GenderedWord getAdjective(Adjective adjective, PossessiveWord subject, Lang lang) {
+  private Optional<GenderedWord> getAdjective(Adjective adjective, PossessiveWord subject, Lang lang) {
     if (subject == null) {
       System.err.println("null subject");
+      return Optional.empty();
     }
     return adjective.getWordByGenderAndSingular(subject.getGender(lang), lang, subject.isSingular());
   }
 
-  private Adjective getAbstractAdjective(PossessiveWord subject) {
+  private Optional<Adjective> getAbstractAdjective(PossessiveWord subject) {
     Set<NounType> nounTypes = new HashSet<>();
     if (subject instanceof PersonalPronoun) {
       nounTypes.add(NounType.PERSON);
     } else {
       nounTypes.addAll(nounSubject.getNounTypes());
     }
-    Set<Adjective> adjectives = DB.ADJECTIVES;
+    Set<Adjective> adjectives = bodyArgs.getAdjectivesFromIds();
     if (!nounTypes.isEmpty()) {
       adjectives = adjectives.stream().filter(a -> a.getPossibleNouns().stream()
                                                     .anyMatch(nounTypes::contains)).collect(Collectors.toSet());
     }
     if (adjectives.isEmpty()) {
       System.err.println("adjectives empty");
+      return Optional.empty();
     }
     Optional<Adjective> adjectiveOpt = adjectives.stream().skip(RANDOM.nextInt(adjectives.size())).findFirst();
     if (adjectiveOpt.isEmpty()) {
       System.err.println("adjective empty");
+      return Optional.empty();
     }
-    return adjectiveOpt.get();
+    return adjectiveOpt;
   }
 
 

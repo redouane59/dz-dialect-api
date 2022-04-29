@@ -15,7 +15,8 @@ public enum WordType {
   QUESTION("question"),
   PRONOUN("pronoun"),
   ARTICLE("article"),
-  SUFFIX("suffix");
+  SUFFIX("suffix"),
+  PREPOSITION("preposition"); // à la / au
 
   private String value;
 

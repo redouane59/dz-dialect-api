@@ -16,6 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
+// @todo add moi/toi/lui/nous/vous/leur
 public enum SuffixEnum {
   I_D,
   YOU_S_D,
@@ -65,6 +66,15 @@ public enum SuffixEnum {
                  .filter(s -> s.getSuffix().isSingular() == randomSingular)
                  .filter(s -> s.getSuffix().getPossession() == randomPossession)
                  .filter(s -> s.getSuffix().getGender() == randomGender || s.getSuffix().getGender() == Gender.X || randomGender == Gender.X)
+                 .findFirst().get().getSuffix();
+  }
+
+  public static Suffix getOppositeSuffix(Suffix suffix) {
+    return Arrays.stream(values())
+                 .filter(s -> s.getSuffix().isSingular() == suffix.isSingular())
+                 .filter(s -> s.getSuffix().getPossession() == suffix.getPossession())
+                 .filter(s -> s.getSuffix().getGender() == suffix.getGender())
+                 .filter(s -> s.getSuffix().isDirect() != suffix.isDirect)
                  .findFirst().get().getSuffix();
   }
 

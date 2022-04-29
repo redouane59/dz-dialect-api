@@ -34,24 +34,28 @@
       ]
     }
   ],
-  "state_preposition": [
-    {
-      "lang": "FR",
-      "value": "dans la"
-    },
-    {
-      "lang": "DZ",
-      "value": "fe"
-    }
-  ],
-  "deplacement_preposition": [
-    {
-      "lang": "FR",
-      "value": "dans la"
-    },
-    {
-      "lang": "DZ",
-      "value": "le"
-    }
-  ]
+  "state_preposition": {
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "dans la"
+      },
+      {
+        "lang": "DZ",
+        "value": "fe"
+      }
+    ]
+  },
+  "deplacement_preposition": {
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "dans la"
+      },
+      {
+        "lang": "DZ",
+        "value": "le"
+      }
+    ]
+  }
 }
