@@ -30,7 +30,7 @@ public class Translation {
 
   public Translation(Lang lang, String value, String arValue) {
     this(lang, value);
-    this.arValue = arValue;
+    this.arValue = cleanValue(arValue);
   }
 
   public String cleanValue(String value) {
@@ -61,16 +61,12 @@ public class Translation {
       newValue = newValue.replace("à le", "au");
       newValue = newValue.replace("l' ", "l'");
     } else if (lang == Lang.DZ) {
+      // suffixes
       newValue = newValue.replace("ouou", "ouh");
+      newValue = newValue.replace("liou", "lih");
       newValue = newValue.replace("aek", "ak");
     }
-    if (newValue.startsWith(" ")) {
-      newValue = newValue.substring(1);
-    }
-    if (newValue.endsWith(" ")) {
-      newValue = newValue.substring(0, newValue.length() - 1);
-    }
-    // @todo add iou -> ih
+    newValue = newValue.trim();
     return newValue;
   }
 

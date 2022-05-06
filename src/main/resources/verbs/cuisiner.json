@@ -293,6 +293,5 @@
   ],
   "verb_type": "ACTION",
   "indirect_complement": true,
-  "direct_complement": true,
   "object_only": true
 }

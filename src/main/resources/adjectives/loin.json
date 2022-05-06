@@ -7,8 +7,21 @@
   ],
   "values": [
     {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "loin"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3id",
+          "ar_value": "بعيد"
+        }
+      ],
       "gender": "M",
-      "singular": true,
+      "singular": true
+    },
+    {
       "translations": [
         {
           "lang": "FR",
@@ -16,27 +29,14 @@
         },
         {
           "lang": "DZ",
-          "value": "b3id"
+          "value": "b3ida",
+          "ar_value": "بعيدا"
         }
-      ]
-    },
-    {
+      ],
       "gender": "F",
-      "singular": true,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "loin"
-        },
-        {
-          "lang": "DZ",
-          "value": "b3ida"
-        }
-      ]
+      "singular": true
     },
     {
-      "gender": "X",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -44,9 +44,12 @@
         },
         {
           "lang": "DZ",
-          "value": "b3ed"
+          "value": "b3ad",
+          "ar_value": "بعاد"
         }
-      ]
+      ],
+      "gender": "X",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

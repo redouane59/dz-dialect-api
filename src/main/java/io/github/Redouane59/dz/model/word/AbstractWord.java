@@ -20,10 +20,10 @@ import lombok.Setter;
 public class AbstractWord {
 
   @JsonInclude(Include.NON_EMPTY)
-  private final List<GenderedWord> values = new ArrayList<>();
-  private       String             id;
+  private List<GenderedWord> values = new ArrayList<>();
+  private String             id;
   @JsonProperty("word_type")
-  private       WordType           wordType;
+  private WordType           wordType;
 
   public String getTranslationValueByGender(Gender gender, boolean isSingular, Lang lang) {
     return getTranslationByGender(gender, isSingular, lang).getValue();

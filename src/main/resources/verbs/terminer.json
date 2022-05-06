@@ -289,5 +289,6 @@
   ],
   "possible_complements": [],
   "verb_type": "ACTION",
-  "direct_complement": true
+  "direct_complement": true,
+  "object_only": true
 }

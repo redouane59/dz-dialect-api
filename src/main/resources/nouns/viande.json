@@ -7,15 +7,16 @@
   "values": [
     {
       "singular": true,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
-          "value": "viande"
+          "value": "viande",
+          "gender": "F"
         },
         {
           "lang": "DZ",
-          "value": "7em"
+          "value": "7em",
+          "gender": "M"
         }
       ]
     }

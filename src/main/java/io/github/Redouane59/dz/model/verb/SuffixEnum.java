@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.verb;
 
-import static io.github.Redouane59.dz.model.sentence.WordPicker.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -57,10 +57,10 @@ public enum SuffixEnum {
     }
   }
 
-  public static Suffix getRandomSuffix(final Possession other, boolean isDirect) {
+  public static Suffix getRandomSuffix(final Possession other, boolean isDirect, boolean objectOnly) {
     Gender     randomGender     = Gender.getRandomGender();
     boolean    randomSingular   = RANDOM.nextBoolean();
-    Possession randomPossession = Possession.getRandomPosession(other);
+    Possession randomPossession = Possession.getRandomPosession(other, objectOnly);
 
     return Arrays.stream(values())
                  .filter(s -> s.getSuffix().isDirect() == isDirect)

@@ -1,7 +1,6 @@
 package io.github.Redouane59.dz.model.sentence.V2;
 
 import static io.github.Redouane59.dz.helper.Config.OBJECT_MAPPER;
-import static io.github.Redouane59.dz.model.sentence.WordPicker.RANDOM;
 
 import com.google.api.client.util.ArrayMap;
 import io.github.Redouane59.dz.function.GeneratorParameters;
@@ -17,6 +16,7 @@ import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
+import io.github.Redouane59.dz.model.sentence.SentenceType;
 import io.github.Redouane59.dz.model.verb.Conjugation;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns;
@@ -36,11 +36,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+// @todo split this class in two
 public class SentenceBuilder {
 
+  public static Random RANDOM = new Random();
   Map<WordType, Word> wordMapFr;
   Map<WordType, Word> wordMapAr;
   private SentenceContent     sentenceContent;
@@ -82,6 +85,7 @@ public class SentenceBuilder {
     PossessiveWord subject = null;
     wordMapFr = new ArrayMap<>();
     wordMapAr = new ArrayMap<>();
+    sentenceContent.setSentenceType(SentenceType.valueOf(schema.getId()));
     for (int i = 0; i < schema.getFrSequence().size(); i++) {
       WordType wordType = schema.getFrSequence().get(i);
       switch (wordType) {
@@ -95,7 +99,7 @@ public class SentenceBuilder {
           }
           break;
         case NOUN:
-          Optional<Noun> abstractNoun = getAbstractNoun();
+          Optional<Noun> abstractNoun = getAbstractNoun(abstractVerb);
           if (abstractNoun.isEmpty()) {
             return false;
           }
@@ -175,17 +179,10 @@ public class SentenceBuilder {
     return true;
   }
 
-  private Optional<Suffix> getSuffix(PossessiveWord copySuffix, Verb verb) {
+  private Optional<Suffix> getSuffix(PossessiveWord copySuffix, Verb abstractVerb) {
     boolean isDirect;
-    if (verb.isDirectComplement()) {
-      isDirect = true;
-    } else if (verb.isIndirectComplement()) {
-      isDirect = false;
-    } else {
-      System.err.println("nor direct or indirect verb " + verb.getId());
-      return Optional.empty();
-    }
-    return Optional.of(SuffixEnum.getRandomSuffix(copySuffix.getPossession(), isDirect));
+    isDirect = !schema.getFrSequence().contains(WordType.NOUN);
+    return Optional.of(SuffixEnum.getRandomSuffix(copySuffix.getPossession(), isDirect, abstractVerb.isObjectOnly()));
   }
 
   private Question getQuestion() {
@@ -211,6 +208,7 @@ public class SentenceBuilder {
     StringBuilder sentenceValueAr = new StringBuilder();
     for (WordType wordType : schema.getArSequence()) {
       if (wordType == WordType.SUFFIX) {
+        // @todo manage transformation here iou -> ih
         sentenceValue.deleteCharAt(sentenceValue.length() - 1);
         sentenceValueAr.deleteCharAt(sentenceValueAr.length() - 1);
         if (abstractVerb.isDzOppositeComplement()) {
@@ -222,7 +220,12 @@ public class SentenceBuilder {
         }
       } else {
         sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
-        sentenceValueAr.append(wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue());
+        String arValue = wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue();
+        if (arValue != null) {
+          sentenceValueAr.append(arValue);
+        } else {
+          sentenceValueAr.append(" ٠٠٠ ");
+        }
       }
       sentenceValue.append(" ");
       sentenceValueAr.append(" ");
@@ -264,10 +267,11 @@ public class SentenceBuilder {
   private Optional<Verb> getAbstractVerb() {
     Set<Verb> verbs = bodyArgs.getVerbsFromIds();
 
-    verbs = verbs.stream().filter(v -> v.getConjugators().stream()
+    // arab translation
+ /*   verbs = verbs.stream().filter(v -> v.getConjugators().stream()
                                         .anyMatch(c -> c.getConjugations().stream()
                                                         .anyMatch(x -> x.getDzTranslationAr() != null))).collect(Collectors.toSet());
-
+*/
     if (schema.getTenses() != null) {
       verbs = verbs.stream()
                    .filter(v -> v.getConjugators().stream().anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
@@ -280,7 +284,13 @@ public class SentenceBuilder {
       verbs = verbs.stream().filter(v -> v.getPossibleQuestions().contains(question)).collect(Collectors.toSet());
     }
     if (schema.getFrSequence().contains(WordType.SUFFIX)) {
-      verbs = verbs.stream().filter(v -> v.isDirectComplement() || v.isIndirectComplement()).collect(Collectors.toSet());
+      if (schema.getFrSequence().contains(WordType.NOUN)) {
+        verbs = verbs.stream().filter(Verb::isIndirectComplement)
+                     .filter(v -> !v.getPossibleComplements().isEmpty())
+                     .collect(Collectors.toSet());
+      } else {
+        verbs = verbs.stream().filter(Verb::isDirectComplement).collect(Collectors.toSet());
+      }
     }
     if (verbs.size() == 0) {
       System.err.println("no verbs matching criterion");
@@ -308,11 +318,16 @@ public class SentenceBuilder {
     return conjugation.get();
   }
 
-  private Optional<Noun> getAbstractNoun() {
+  private Optional<Noun> getAbstractNoun(Verb abstractVerb) {
     Set<Noun> nouns = bodyArgs.getNounsFromIds();
     if (!schema.getNounTypes().isEmpty()) {
       nouns = nouns.stream().filter(n -> n.getNounTypes().stream()
                                           .anyMatch(n2 -> schema.getNounTypes().contains(n2))).collect(Collectors.toSet());
+    }
+    // case where the noun is the complement
+    if (abstractVerb != null) {
+      nouns = nouns.stream().filter(n -> n.getNounTypes().stream()
+                                          .anyMatch(n2 -> abstractVerb.getPossibleComplements().contains(n2))).collect(Collectors.toSet());
     }
     if (nouns.isEmpty()) {
       System.err.println("nouns is empty");
@@ -332,7 +347,7 @@ public class SentenceBuilder {
   private Optional<Adjective> getAbstractAdjective(PossessiveWord subject) {
     Set<NounType> nounTypes = new HashSet<>();
     if (subject instanceof PersonalPronoun) {
-      nounTypes.add(NounType.PERSON);
+      nounTypes.add(NounType.PERSON); // @todo manage il/ils + verb + adjective
     } else {
       nounTypes.addAll(nounSubject.getNounTypes());
     }

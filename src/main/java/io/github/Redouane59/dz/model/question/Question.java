@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.question;
 
-import static io.github.Redouane59.dz.model.sentence.WordPicker.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;

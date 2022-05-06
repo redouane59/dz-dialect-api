@@ -291,6 +291,6 @@
     "FOOD"
   ],
   "verb_type": "ACTION",
-  "direct_complement": true,
+  "indirect_complement": true,
   "object_only": true
 }

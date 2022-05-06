@@ -1,8 +1,10 @@
 package io.github.Redouane59.dz.model;
 
-import static io.github.Redouane59.dz.model.sentence.WordPicker.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
 
 import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public enum Possession {
 
@@ -15,8 +17,14 @@ public enum Possession {
   }
 
   // @todo authorize other->other
-  public static Possession getRandomPosession(Possession possession) {
-    return Arrays.stream(values()).filter(o -> o != possession).skip(RANDOM.nextInt(values().length - 1)).findFirst().get();
+  public static Possession getRandomPosession(Possession possession, boolean objectOnly) {
+    Set<Possession> matchingPossession = Set.of(values());
+    if (!objectOnly) {
+      matchingPossession = matchingPossession.stream().filter(o -> o != possession).collect(Collectors.toSet());
+    } else {
+      matchingPossession = matchingPossession.stream().filter(o -> o == Possession.OTHER).collect(Collectors.toSet());
+    }
+    return matchingPossession.stream().skip(RANDOM.nextInt(matchingPossession.size())).findFirst().get();
   }
 
 }

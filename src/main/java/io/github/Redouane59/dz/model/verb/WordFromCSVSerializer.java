@@ -23,7 +23,9 @@ public class WordFromCSVSerializer extends StdSerializer<Word> {
     jsonGenerator.writeStartObject();
     jsonGenerator.writeObjectField("translations", word.getTranslations());
     jsonGenerator.writeObjectField("gender", ((GenderedWord) word).getGender());
-    jsonGenerator.writeObjectField("possession", ((PossessiveWord) word).getPossession());
+    if (((PossessiveWord) word).getPossession() != null) {
+      jsonGenerator.writeObjectField("possession", ((PossessiveWord) word).getPossession());
+    }
     jsonGenerator.writeObjectField("singular", ((PossessiveWord) word).isSingular());
     jsonGenerator.writeEndObject();
   }

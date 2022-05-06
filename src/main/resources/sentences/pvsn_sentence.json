@@ -1,0 +1,20 @@
+{
+  "id": "PVSN",
+  "fr_sequence": [
+    "PRONOUN",
+    "SUFFIX",
+    "VERB",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "SUFFIX",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "tenses": [
+    "PRESENT"
+  ],
+  "subject_position": 0
+}

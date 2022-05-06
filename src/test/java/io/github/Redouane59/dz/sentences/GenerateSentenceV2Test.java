@@ -16,19 +16,22 @@ public class GenerateSentenceV2Test {
 
   @Test
   public void testGenericSentenceBuilder() throws JsonProcessingException {
-    int nbTries = 30;
+    int nbTries = 50;
 
-    List<SentenceType> sentenceTypes = List.of(SentenceType.PVS);
+    List<SentenceType> sentenceTypes = List.of(SentenceType.PVA);
     //  List<SentenceType> sentenceTypes = List.of(SentenceType.values());
     System.out.println();
     for (SentenceType sentenceType : sentenceTypes) {
       SentenceBuilder sentenceBuilder = sentenceType.getSentenceBuilder();
       for (int i = 0; i < nbTries; i++) {
         Optional<Sentence> sentence = sentenceBuilder.generate(GeneratorParameters.builder()
-                                                                                  .verbs(Set.of("attendre"))
+                                                                                  //                .verbs(Set.of("attendre"))
                                                                                   .tenses(Set.of(Tense.PRESENT)).build());
         if (sentence.isPresent()) {
-          System.out.println(sentence.get().getTranslationValue(Lang.FR) + " -> " + sentence.get().getTranslationValue(Lang.DZ));
+          if (sentence.get().getDzTranslationAr() != null && !sentence.get().getDzTranslationAr().contains("null")) {
+            System.out.println(sentence.get().getTranslationValue(Lang.FR) + " -> " + sentence.get().getTranslationValue(Lang.DZ)
+                               + " | " + sentence.get().getDzTranslationAr());
+          }
         } else {
           System.out.println("-");
         }
