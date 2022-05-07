@@ -30,19 +30,19 @@ public class SentenceGenerator {
       result.setErrors(Set.of("max count limit (" + MAX_COUNT + ") reached with count=" + bodyArgs.getCount()));
       bodyArgs.setCount(MAX_COUNT);
     }
-    for (int i = 0; i < bodyArgs.getCount(); i++) {
-      Optional<? extends Sentence> sentence = generateRandomSentence(bodyArgs);
-      if (sentence.isPresent()) {
-        sentenceList.add(sentence.get());
-      } else {
-        errors.add("Some sentences were not generated");
+    for (int i = 0; i < bodyArgs.getCount() * 2; i++) {
+      if (sentenceList.size() >= bodyArgs.getCount()) {
+        break;
       }
-    }
-    if (!errors.isEmpty()) {
-      result.setErrors(errors);
+      Optional<Sentence> sentence = generateRandomSentence(bodyArgs);
+      sentence.ifPresent(sentenceList::add);
     }
     result.setSentences(sentenceList);
     result.setCount(sentenceList.size());
+    if (result.getSentences().size() < bodyArgs.getCount()) {
+      errors.add("Some sentences were not generated");
+    }
+    result.setErrors(errors);
     return result;
   }
 
@@ -60,6 +60,7 @@ public class SentenceGenerator {
   }
 
   public Optional<SentenceBuilder> getRandomSentenceBuilder() {
+    // @todo add criterion to avoid non matching sentenceBuilder
     List<SentenceBuilder> matchingGenerators = bodyArgs.getGenerators()
                                                        .stream()
                                                        .filter(o -> o.isCompatible(bodyArgs))

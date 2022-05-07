@@ -1,0 +1,70 @@
+{
+  "id": "difficile",
+  "possible_nouns": [
+    "PERSON",
+    "TASK"
+  ],
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "s3ib",
+          "ar_value": "صعيب"
+        }
+      ],
+      "gender": "M",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficile"
+        },
+        {
+          "lang": "DZ",
+          "value": "s3iba",
+          "ar_value": "صعيبا"
+        }
+      ],
+      "gender": "F",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficiles"
+        },
+        {
+          "lang": "DZ",
+          "value": "s3ab",
+          "ar_value": "صْعاب"
+        }
+      ],
+      "gender": "M",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficiles"
+        },
+        {
+          "lang": "DZ",
+          "value": "s3ab",
+          "ar_value": "صْعاب"
+        }
+      ],
+      "gender": "F",
+      "singular": false
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

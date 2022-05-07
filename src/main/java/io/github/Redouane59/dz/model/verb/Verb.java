@@ -113,7 +113,8 @@ public class Verb extends AbstractWord {
           conjugator = conjugatorOpt.get();
         }
         conjugator.getConjugations().add(conjugation);
-      } catch (Exception ignored) {
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
       }
     }
     return verbs;

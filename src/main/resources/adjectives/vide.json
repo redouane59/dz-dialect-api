@@ -6,8 +6,6 @@
   ],
   "values": [
     {
-      "gender": "M",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +13,14 @@
         },
         {
           "lang": "DZ",
-          "value": "feragh"
+          "value": "faregh",
+          "ar_value": "فارغ"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -29,27 +28,14 @@
         },
         {
           "lang": "DZ",
-          "value": "fergha"
+          "value": "fergha",
+          "ar_value": "فارغا"
         }
-      ]
-    },
-    {
-      "gender": "M",
-      "singular": false,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "vides"
-        },
-        {
-          "lang": "DZ",
-          "value": "ferghin"
-        }
-      ]
-    },
-    {
+      ],
       "gender": "F",
-      "singular": false,
+      "singular": true
+    },
+    {
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +43,27 @@
         },
         {
           "lang": "DZ",
-          "value": "ferghin"
+          "value": "ferghin",
+          "ar_value": "فراغين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vides"
+        },
+        {
+          "lang": "DZ",
+          "value": "ferghin",
+          "ar_value": "فراغين"
+        }
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

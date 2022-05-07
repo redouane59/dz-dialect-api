@@ -14,8 +14,9 @@ public class ParseCSVTest {
 
   @Test
   public void parseVerbTest() {
-    String    fileName = "verbs.csv";
-    Set<Verb> verbs    = Verb.deserializeFromCSV(fileName, true);
+    String fileName = "verbs.csv";
+    System.out.println(DB.PERSONAL_PRONOUNS);
+    Set<Verb> verbs = Verb.deserializeFromCSV(fileName, true);
 
     verbs.forEach(o -> {
       ObjectMapper mapper = new ObjectMapper();

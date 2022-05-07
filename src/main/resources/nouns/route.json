@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "tri9"
+          "value": "tri9",
+          "ar_value": "طْريق"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "tor9an"
+          "value": "tor9an",
+          "ar_value": "طرقان"
         }
       ]
     }

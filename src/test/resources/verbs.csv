@@ -1,25 +1,19 @@
-verb,tense,pronoun,frValue,dzValue,dzValueAr
-être,FUTURE,je/ana,serai,nkoun,نكون
-être,FUTURE,tu/enta,seras,tkoun,تكون
-être,FUTURE,tu/enti,seras,tkouni,تكوني
-être,FUTURE,il/houwa,sera,ykoun,إكون
-être,FUTURE,elle/hiya,sera,tkoun,تكون
-être,FUTURE,on/7na,sera,nkounou,نكونو
-être,FUTURE,vous/ntouma,serez,tkounou,تكونو
-être,FUTURE,ils/houma,seront,ykounou,إكونو
-être,PAST,je/ana,étais,kount,كونت
-être,PAST,tu/enta,étais,kount,كونت
-être,PAST,tu/enta,étais,kounti,كونتي
-être,PAST,il/houwa,était,kaan,كان
-être,PAST,elle/hiya,était,kenet,كانت
-être,PAST,on/7na,était,kouna,كونا
-être,PAST,vous/ntouma,étiez,kountou,كونتو
-être,PAST,ils/houma,étaient,kanou,كانو
-être,PRESENT,je/ana,suis,rani,راني
-être,PRESENT,tu/enta,es,rak,راك
-être,PRESENT,tu/enti,es,raki,راكي
-être,PRESENT,il/houwa,est,rahou,راهو
-être,PRESENT,elle/hiya,est,rahi,راهي
-être,PRESENT,on/7na,est,rana,رانا
-être,PRESENT,vous/ntouma,êtes,rakoum,راكم
-être,PRESENT,ils/houma,sont,rahoum,راهوم
+verb,	tense,	pronoun,	frValue,	dzValue,	dzValueAr
+commencer,PAST,je/ana,ai commencé,bdit,بْديت
+commencer,PAST,tu/enta,as commencé,bdit,بْديت
+commencer,PAST,tu/enti,as commencé,bditi,بْديتي
+commencer,PAST,il/houwa,a commencé,bda,بْدا
+commencer,PAST,elle/hiya,a commencé,bdat,بدات
+commencer,PAST,on/7na,a commencé,bdina,بدينا
+commencer,PAST,vous/ntouma,avez commencé,bditou,بْديتو
+commencer,PAST,ils/houma,ont commencé,bdaw,بْداو
+commencer,PAST,elles/houma,ont commencé,bdaw,بْداو
+commencer,PRESENT,je/ana,commence,nebda,نبدا
+commencer,PRESENT,tu/enta,commences,tbda,تبدا
+commencer,PRESENT,tu/enti,commences,tbday,تبداي
+commencer,PRESENT,il/houwa,commence,yebda,يبدا
+commencer,PRESENT,elle/hiya,commence,tebda,تبدا
+commencer,PRESENT,on/7na,commence,nebdaw,نبداو
+commencer,PRESENT,vous/ntouma,commencez,tbdaw,تبداو
+commencer,PRESENT,ils/houma,commencent,yebdaw,يبداو
+commencer,PRESENT,elles/houma,commencent,yebdaw,يبداو

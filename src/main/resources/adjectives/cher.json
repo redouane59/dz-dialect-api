@@ -16,7 +16,8 @@
         },
         {
           "lang": "DZ",
-          "value": "ghali"
+          "value": "ghali",
+          "ar_value": "غالي"
         }
       ]
     },
@@ -30,7 +31,8 @@
         },
         {
           "lang": "DZ",
-          "value": "ghalia"
+          "value": "ghalia",
+          "ar_value": "غاليا"
         }
       ]
     },
@@ -44,7 +46,8 @@
         },
         {
           "lang": "DZ",
-          "value": "ghaliyin"
+          "value": "ghaliyin",
+          "ar_value": "غاليين"
         }
       ]
     },
@@ -58,7 +61,8 @@
         },
         {
           "lang": "DZ",
-          "value": "ghaliyin"
+          "value": "ghaliyin",
+          "ar_value": "غاليين"
         }
       ]
     }

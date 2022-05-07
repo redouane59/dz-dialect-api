@@ -1,6 +1,9 @@
 package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -19,8 +22,13 @@ public enum SentenceType {
   PVN(new SentenceBuilder("src/main/resources/sentences/pvn_sentence.json")),
   PVN_DEP(new SentenceBuilder("src/main/resources/sentences/pvn_deplacement_sentence.json")),
   PVN3_STA(new SentenceBuilder("src/main/resources/sentences/pvn_state_sentence.json")),
+  QPV(new SentenceBuilder("src/main/resources/sentences/qpv_sentence.json")),
   V(new SentenceBuilder("src/main/resources/sentences/v_sentence.json"));
 
   private SentenceBuilder sentenceBuilder;
+
+  public static List<SentenceBuilder> getSentenceBuilders() {
+    return Arrays.stream(values()).map(SentenceType::getSentenceBuilder).collect(Collectors.toList());
+  }
 
 }

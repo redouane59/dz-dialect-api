@@ -6,8 +6,6 @@
   ],
   "values": [
     {
-      "gender": "M",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +13,14 @@
         },
         {
           "lang": "DZ",
-          "value": "bared"
+          "value": "bared",
+          "ar_value": "بارد"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -29,13 +28,14 @@
         },
         {
           "lang": "DZ",
-          "value": "barda"
+          "value": "barda",
+          "ar_value": "باردا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "gender": "M",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -43,13 +43,14 @@
         },
         {
           "lang": "DZ",
-          "value": "bardin"
+          "value": "bardin",
+          "ar_value": "باردين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "gender": "F",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +58,12 @@
         },
         {
           "lang": "DZ",
-          "value": "bardin"
+          "value": "bardin",
+          "ar_value": "باردين"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

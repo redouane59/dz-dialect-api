@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "zon9a"
+          "value": "zon9a",
+          "ar_value": "زنقا"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "zna9"
+          "value": "zna9",
+          "ar_value": "زْنق"
         }
       ]
     }

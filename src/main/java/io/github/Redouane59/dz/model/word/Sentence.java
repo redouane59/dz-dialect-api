@@ -43,7 +43,7 @@ public class Sentence extends Word {
       node.put("adjective", this.content.getAdjective().getId());
     }
     if (this.content.getTense() != null) {
-      node.put("tense", this.content.getTense().getId());
+      node.put("tense", this.content.getTense().name());
     }
     if (this.content.getAdverb() != null) {
       node.put("adverb", this.content.getAdverb().getId());

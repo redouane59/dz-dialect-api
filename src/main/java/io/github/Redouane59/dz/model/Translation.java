@@ -61,10 +61,7 @@ public class Translation {
       newValue = newValue.replace("à le", "au");
       newValue = newValue.replace("l' ", "l'");
     } else if (lang == Lang.DZ) {
-      // suffixes
-      newValue = newValue.replace("ouou", "ouh");
-      newValue = newValue.replace("liou", "lih");
-      newValue = newValue.replace("aek", "ak");
+      // suffixes managed in suffix class
     }
     newValue = newValue.trim();
     return newValue;

@@ -6,8 +6,66 @@
   ],
   "values": [
     {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cher"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghali",
+          "ar_value": "غالي"
+        }
+      ],
       "gender": "M",
-      "singular": true,
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chère"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghalia",
+          "ar_value": "غاليا"
+        }
+      ],
+      "gender": "F",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chers"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghaliyin",
+          "ar_value": "غاليين"
+        }
+      ],
+      "gender": "M",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chères"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghaliyin",
+          "ar_value": "غاليين"
+        }
+      ],
+      "gender": "F",
+      "singular": false
+    },
+    {
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +73,14 @@
         },
         {
           "lang": "DZ",
-          "value": "skhoun"
+          "value": "skhoun",
+          "ar_value": "سْخون"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -29,13 +88,14 @@
         },
         {
           "lang": "DZ",
-          "value": "skhouna"
+          "value": "skhouna",
+          "ar_value": "سْخونا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "gender": "M",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -43,13 +103,14 @@
         },
         {
           "lang": "DZ",
-          "value": "skhounin"
+          "value": "skhounin",
+          "ar_value": "سْخونين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "gender": "F",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +118,12 @@
         },
         {
           "lang": "DZ",
-          "value": "skhounin"
+          "value": "skhounin",
+          "ar_value": "سْخونين"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

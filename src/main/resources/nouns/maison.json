@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "dar"
+          "value": "dar",
+          "ar_value": "دار"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "diar"
+          "value": "diar",
+          "ar_value": "دْيار"
         }
       ]
     }

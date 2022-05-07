@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "7anout"
+          "value": "7anout",
+          "ar_value": "حانوت"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "7ouanet"
+          "value": "7ouanet",
+          "ar_value": "حْوانت"
         }
       ]
     }

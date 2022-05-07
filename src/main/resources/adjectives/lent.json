@@ -6,8 +6,6 @@
   ],
   "values": [
     {
-      "gender": "M",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +13,14 @@
         },
         {
           "lang": "DZ",
-          "value": "t9qil"
+          "value": "t9qil",
+          "ar_value": "تْقيل"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -29,13 +28,14 @@
         },
         {
           "lang": "DZ",
-          "value": "t9qila"
+          "value": "t9qila",
+          "ar_value": "تقيلا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "gender": "M",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -43,13 +43,14 @@
         },
         {
           "lang": "DZ",
-          "value": "t9el"
+          "value": "t9el",
+          "ar_value": "تقال"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "gender": "F",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +58,12 @@
         },
         {
           "lang": "DZ",
-          "value": "t9el"
+          "value": "t9el",
+          "ar_value": "تقال"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

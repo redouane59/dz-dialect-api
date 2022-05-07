@@ -5,8 +5,6 @@
   ],
   "values": [
     {
-      "gender": "M",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -14,13 +12,14 @@
         },
         {
           "lang": "DZ",
-          "value": "m9ala9"
+          "value": "m9ala9",
+          "ar_value": "مْقلق"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -28,13 +27,14 @@
         },
         {
           "lang": "DZ",
-          "value": "m9al9a"
+          "value": "m9al9a",
+          "ar_value": "مْقلقا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "gender": "M",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -42,13 +42,14 @@
         },
         {
           "lang": "DZ",
-          "value": "m9al9in"
+          "value": "m9al9in",
+          "ar_value": "مْقلقين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "gender": "F",
-      "singular": false,
       "translations": [
         {
           "lang": "FR",
@@ -56,9 +57,12 @@
         },
         {
           "lang": "DZ",
-          "value": "m9al9in"
+          "value": "m9al9in",
+          "ar_value": "مْقلقين"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

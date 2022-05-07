@@ -35,6 +35,7 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
@@ -208,15 +209,20 @@ public class SentenceBuilder {
     StringBuilder sentenceValueAr = new StringBuilder();
     for (WordType wordType : schema.getArSequence()) {
       if (wordType == WordType.SUFFIX) {
-        // @todo manage transformation here iou -> ih
+        String suffixDzValue;
         sentenceValue.deleteCharAt(sentenceValue.length() - 1);
         sentenceValueAr.deleteCharAt(sentenceValueAr.length() - 1);
         if (abstractVerb.isDzOppositeComplement()) {
-          sentenceValue.append(SuffixEnum.getOppositeSuffix(suffix).getTranslationValue(lang));
+          suffixDzValue = SuffixEnum.getOppositeSuffix(suffix).getTranslationValue(lang);
           sentenceValueAr.append(SuffixEnum.getOppositeSuffix(suffix).getTranslationByLang(Lang.DZ).get().getArValue());
         } else {
-          sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
+          suffixDzValue = wordMapAr.get(wordType).getTranslationValue(lang);
           sentenceValueAr.append(wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue());
+        }
+        sentenceValue.append(suffixDzValue);
+        // manage transformation here iou -> ih, ouou->ou, etc.
+        for (Entry<String, String> m : SuffixEnum.RULE_MAP.entrySet()) {
+          sentenceValue = new StringBuilder(sentenceValue.toString().replace(m.getKey(), m.getValue()));
         }
       } else {
         sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
@@ -245,7 +251,11 @@ public class SentenceBuilder {
       }
     }
     if (schema.getFrSequence().size() == 1 && schema.getFrSequence().get(0) == WordType.VERB) {
-      result += "!";
+      if (arabValue) {
+        result += "!\u200F";
+      } else {
+        result += "!";
+      }
     }
     return result;
   }
@@ -276,12 +286,22 @@ public class SentenceBuilder {
       verbs = verbs.stream()
                    .filter(v -> v.getConjugators().stream().anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
               Collectors.toSet());
+      if (verbs.size() == 0) {
+        System.out.println("no verb found based on tenses");
+      }
     }
     if (schema.getVerbType() != null) {
+      System.out.println(verbs.size() + " verbs before verb type check");
       verbs = verbs.stream().filter(v -> v.getVerbType() == schema.getVerbType()).collect(Collectors.toSet());
+      if (verbs.size() == 0) {
+        System.out.println("no verb found based on type (" + schema.getVerbType() + " expected");
+      }
     }
     if (schema.getFrSequence().contains(WordType.QUESTION)) {
       verbs = verbs.stream().filter(v -> v.getPossibleQuestions().contains(question)).collect(Collectors.toSet());
+      if (verbs.size() == 0) {
+        System.out.println("no verb found based on question");
+      }
     }
     if (schema.getFrSequence().contains(WordType.SUFFIX)) {
       if (schema.getFrSequence().contains(WordType.NOUN)) {
@@ -291,11 +311,13 @@ public class SentenceBuilder {
       } else {
         verbs = verbs.stream().filter(Verb::isDirectComplement).collect(Collectors.toSet());
       }
+      if (verbs.size() == 0) {
+        System.out.println("no verb found based on suffix");
+      }
     }
     if (verbs.size() == 0) {
-      System.err.println("no verbs matching criterion");
+      return Optional.empty();
     }
-
     return verbs.stream().skip(RANDOM.nextInt(verbs.size())).findFirst();
   }
 
@@ -341,6 +363,7 @@ public class SentenceBuilder {
       System.err.println("null subject");
       return Optional.empty();
     }
+    // @todo check if object or person
     return adjective.getWordByGenderAndSingular(subject.getGender(lang), lang, subject.isSingular());
   }
 

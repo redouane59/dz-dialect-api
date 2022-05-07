@@ -110,5 +110,19 @@
         "ar_value": "معا من"
       }
     ]
+  },
+  {
+    "id": "FROM_WHERE",
+    "translations": [
+      {
+        "lang": "FR",
+        "value": "d'où"
+      },
+      {
+        "lang": "DZ",
+        "value": "m'win",
+        "ar_value": "وينْ"
+      }
+    ]
   }
 ]

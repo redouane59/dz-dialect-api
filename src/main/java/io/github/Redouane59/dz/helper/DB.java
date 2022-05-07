@@ -29,7 +29,7 @@ public class DB {
     Verb[] verbConfigurations = new Verb[]{};
     try {
       verbConfigurations =
-          Config.OBJECT_MAPPER.readValue(new File(DB.class.getClassLoader().getResource("verbs/.verb_config.json").getPath()), Verb[].class);
+          Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/verbs/.verb_config.json"), Verb[].class);
     } catch (Exception e) {
       System.err.println("could not load verb configurations " + e.getMessage());
     }

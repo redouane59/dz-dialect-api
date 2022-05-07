@@ -6,8 +6,6 @@
   ],
   "values": [
     {
-      "singular": true,
-      "gender": "M",
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +13,14 @@
         },
         {
           "lang": "DZ",
-          "value": "bnin"
+          "value": "bnin",
+          "ar_value": "بْنين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "singular": true,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
@@ -29,13 +28,14 @@
         },
         {
           "lang": "DZ",
-          "value": "bnina"
+          "value": "bnina",
+          "ar_value": "بنينا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "singular": false,
-      "gender": "M",
       "translations": [
         {
           "lang": "FR",
@@ -43,13 +43,14 @@
         },
         {
           "lang": "DZ",
-          "value": "bnaan"
+          "value": "bnaan",
+          "ar_value": "بنان"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "singular": false,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +58,12 @@
         },
         {
           "lang": "DZ",
-          "value": "bnaan"
+          "value": "bnaan",
+          "ar_value": "بنان"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ]
 }

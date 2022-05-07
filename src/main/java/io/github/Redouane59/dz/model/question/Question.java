@@ -24,7 +24,8 @@ public enum Question {
   WHY,
   HOW_MANY,
   WHAT,
-  WITH_WHO;
+  WITH_WHO,
+  FROM_WHERE;
 
   private Word word;
 

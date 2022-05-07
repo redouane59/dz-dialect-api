@@ -13,6 +13,7 @@ public class Noun extends AbstractWord {
 
   @JsonProperty("noun_types")
   private Set<NounType> nounTypes;
+  // @todo use enum instead of direct word to avoid duplication
   @JsonProperty("state_preposition")
   private Word          statePreposition;
   @JsonProperty("deplacement_preposition")

@@ -1,0 +1,72 @@
+{
+  "id": "long",
+  "possible_nouns": [
+    "PLACE",
+    "PERSON",
+    "OBJECT",
+    "FOOD"
+  ],
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "long"
+        },
+        {
+          "lang": "DZ",
+          "value": "touil",
+          "ar_value": "طْويل"
+        }
+      ],
+      "gender": "M",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "longue"
+        },
+        {
+          "lang": "DZ",
+          "value": "touila",
+          "ar_value": "طويلا"
+        }
+      ],
+      "gender": "F",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "longs"
+        },
+        {
+          "lang": "DZ",
+          "value": "toual",
+          "ar_value": "طْوال"
+        }
+      ],
+      "gender": "M",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "longues"
+        },
+        {
+          "lang": "DZ",
+          "value": "toual",
+          "ar_value": "طْوال"
+        }
+      ],
+      "gender": "F",
+      "singular": false
+    }
+  ],
+  "word_type": "ADJECTIVE"
+}

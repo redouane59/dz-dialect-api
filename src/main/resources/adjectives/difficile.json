@@ -6,8 +6,6 @@
   ],
   "values": [
     {
-      "gender": "M",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -15,13 +13,14 @@
         },
         {
           "lang": "DZ",
-          "value": "wa3ar"
+          "value": "wa3ar",
+          "ar_value": "واعر"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "gender": "F",
-      "singular": true,
       "translations": [
         {
           "lang": "FR",
@@ -29,27 +28,14 @@
         },
         {
           "lang": "DZ",
-          "value": "wa3ra"
+          "value": "wa3ra",
+          "ar_value": "واعرا"
         }
-      ]
-    },
-    {
-      "gender": "M",
-      "singular": false,
-      "translations": [
-        {
-          "lang": "FR",
-          "value": "difficiles"
-        },
-        {
-          "lang": "DZ",
-          "value": "wa3rin"
-        }
-      ]
-    },
-    {
+      ],
       "gender": "F",
-      "singular": false,
+      "singular": true
+    },
+    {
       "translations": [
         {
           "lang": "FR",
@@ -57,9 +43,27 @@
         },
         {
           "lang": "DZ",
-          "value": "wa3rin"
+          "value": "wa3rin",
+          "ar_value": "واعرين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "difficiles"
+        },
+        {
+          "lang": "DZ",
+          "value": "wa3rin",
+          "ar_value": "واعرين"
+        }
+      ],
+      "gender": "F",
+      "singular": false
     }
   ],
   "word_type": "ADJECTIVE"

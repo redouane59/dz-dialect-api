@@ -27,7 +27,7 @@ paths:
             default: true
       responses:
         '200':
-          description: Composition
+          description: Sentence
 
 servers:
   - url: 'localhost:8080'

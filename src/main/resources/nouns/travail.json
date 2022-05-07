@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "khedma"
+          "value": "khedma",
+          "ar_value": "خدما"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "khedma"
+          "value": "khedma",
+          "ar_value": "خدما"
         }
       ]
     }

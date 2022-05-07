@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "bit"
+          "value": "bit",
+          "ar_value": "بيت"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "biout"
+          "value": "biout",
+          "ar_value": "بْيوت"
         }
       ]
     }

@@ -9,8 +9,6 @@
   ],
   "values": [
     {
-      "singular": true,
-      "gender": "M",
       "translations": [
         {
           "lang": "FR",
@@ -19,13 +17,13 @@
         {
           "lang": "DZ",
           "value": "chbeb",
-          "ar_value": ""
+          "ar_value": "شْباب"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": true
     },
     {
-      "singular": true,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
@@ -34,13 +32,13 @@
         {
           "lang": "DZ",
           "value": "chebba",
-          "ar_value": ""
+          "ar_value": "شابا"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": true
     },
     {
-      "singular": false,
-      "gender": "M",
       "translations": [
         {
           "lang": "FR",
@@ -49,13 +47,13 @@
         {
           "lang": "DZ",
           "value": "chebbin",
-          "ar_value": ""
+          "ar_value": "شابين"
         }
-      ]
+      ],
+      "gender": "M",
+      "singular": false
     },
     {
-      "singular": false,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
@@ -64,9 +62,11 @@
         {
           "lang": "DZ",
           "value": "chebbin",
-          "ar_value": ""
+          "ar_value": "شابين"
         }
-      ]
+      ],
+      "gender": "F",
+      "singular": false
     }
   ]
 }

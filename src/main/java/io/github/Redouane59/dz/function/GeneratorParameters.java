@@ -36,21 +36,13 @@ public class GeneratorParameters {
   private Set<String>           adverbs    = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
-  private Set<WordType>         wordTypes  =
-      Set.of(WordType.VERB, WordType.ADJECTIVE, WordType.QUESTION, WordType.ADVERB);
+  private Set<WordType>         wordTypes  = Set.of(WordType.values());
   @Builder.Default
   @JsonIgnore
   private int                   count      = 1;
   @Builder.Default
   @JsonIgnore
-  private List<SentenceBuilder> generators = List.of(
-      SentenceType.NV.getSentenceBuilder(),
-      SentenceType.NVA.getSentenceBuilder(),
-      SentenceType.PV.getSentenceBuilder(),
-      SentenceType.PVA.getSentenceBuilder(),
-      SentenceType.PVN.getSentenceBuilder(),
-      SentenceType.V.getSentenceBuilder()
-  );
+  private List<SentenceBuilder> generators = SentenceType.getSentenceBuilders();
 
 
   @JsonIgnore

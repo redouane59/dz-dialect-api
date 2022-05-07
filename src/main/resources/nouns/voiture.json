@@ -15,7 +15,8 @@
         },
         {
           "lang": "DZ",
-          "value": "tomobile"
+          "value": "tomobile",
+          "ar_value": "طوموبيل"
         }
       ]
     },
@@ -29,7 +30,8 @@
         },
         {
           "lang": "DZ",
-          "value": "tomobile"
+          "value": "tomobile",
+          "ar_value": "طوموبيل"
         }
       ]
     }

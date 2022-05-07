@@ -12,6 +12,7 @@ import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,7 +34,8 @@ public enum SuffixEnum {
   YOU_P_I,
   THEY_I;
 
-  private Suffix suffix;
+  public static final Map<String, String> RULE_MAP = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak");
+  private             Suffix              suffix;
 
   SuffixEnum() {
     try {
