@@ -16,10 +16,10 @@ public class GenerateSentenceV2Test {
 
   @Test
   public void testGenericSentenceBuilder() throws JsonProcessingException {
-    int nbTries = 50;
+    int nbTries = 3;
 
-    List<SentenceType> sentenceTypes = List.of(SentenceType.PVD);
-    //  List<SentenceType> sentenceTypes = List.of(SentenceType.values());
+    // List<SentenceType> sentenceTypes = List.of(SentenceType.QPVA);
+    List<SentenceType> sentenceTypes = List.of(SentenceType.values());
     System.out.println();
     for (SentenceType sentenceType : sentenceTypes) {
       SentenceBuilder sentenceBuilder = sentenceType.getSentenceBuilder();
@@ -30,7 +30,8 @@ public class GenerateSentenceV2Test {
         if (sentence.isPresent()) {
           if (sentence.get().getDzTranslationAr() != null && !sentence.get().getDzTranslationAr().contains("null")) {
             System.out.println(sentence.get().getTranslationValue(Lang.FR) + " -> " + sentence.get().getTranslationValue(Lang.DZ)
-                               + " | " + sentence.get().getDzTranslationAr());
+                               //    + " | " + sentence.get().getDzTranslationAr()
+            );
           }
         } else {
           System.out.println("-");

@@ -12,7 +12,6 @@ import io.github.Redouane59.dz.model.verb.Tense;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
@@ -59,8 +58,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
       if (httpRequest.getFirstQueryParameter(typesArg).isPresent()) {
         String types = httpRequest.getFirstQueryParameter(typesArg).get();
         if (!types.isEmpty()) {
-          List<SentenceType> sentenceTypes = Arrays.stream(types.split(",", -1)).map(SentenceType::valueOf).collect(Collectors.toList());
-          bodyArgs.setGenerators(sentenceTypes.stream().map(SentenceType::getSentenceBuilder).collect(Collectors.toList()));
+          Set<SentenceType> sentenceTypes = Arrays.stream(types.split(",", -1)).map(SentenceType::valueOf).collect(Collectors.toSet());
+          bodyArgs.setSentenceTypes(sentenceTypes);
         }
       }
 

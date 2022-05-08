@@ -40,8 +40,11 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
+import lombok.Getter;
 
 // @todo split this class in two
+// @todo manage negative sentences
+@Getter
 public class SentenceBuilder {
 
   public static Random RANDOM = new Random();
@@ -76,10 +79,6 @@ public class SentenceBuilder {
     sentence.getTranslations().add(generateFrTranslation());
     sentence.setContent(sentenceContent);
     return Optional.of(sentence);
-  }
-
-  public boolean isCompatible(GeneratorParameters bodyArgs) {
-    return true;
   }
 
   public boolean fillWordMapsFromSchema() {
@@ -291,10 +290,9 @@ public class SentenceBuilder {
       }
     }
     if (schema.getVerbType() != null) {
-      System.out.println(verbs.size() + " verbs before verb type check");
       verbs = verbs.stream().filter(v -> v.getVerbType() == schema.getVerbType()).collect(Collectors.toSet());
       if (verbs.size() == 0) {
-        System.out.println("no verb found based on type (" + schema.getVerbType() + " expected");
+        System.out.println("no verb found based on type (" + schema.getVerbType() + " expected)");
       }
     }
     if (schema.getFrSequence().contains(WordType.QUESTION)) {
