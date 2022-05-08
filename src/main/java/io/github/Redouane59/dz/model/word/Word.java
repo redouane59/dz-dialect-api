@@ -3,9 +3,9 @@ package io.github.Redouane59.dz.model.word;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +18,7 @@ import lombok.Setter;
 public class Word {
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-  private List<Translation> translations = new ArrayList<>(); // @todo set instead
+  private Set<Translation> translations = new HashSet<>();
 
   public Optional<Translation> getTranslationByLang(Lang lang) {
     for (Translation t : translations) {
@@ -33,19 +33,6 @@ public class Word {
     return getTranslationByLang(lang).orElse(new Translation(lang, "")).getValue();
   }
 
-  // @todo mix with other method cleanValue
-  public String cleanString(String value) {
-    if (value == null) {
-      return value;
-    }
-    if (value.startsWith(" ")) {
-      value = value.substring(1);
-    }
-    if (value.endsWith(" ")) {
-      value = value.substring(0, value.length() - 1);
-    }
-    return value.replace("' ", "'").replace("  ", " ");
-  }
 
   @JsonProperty("dz_value")
   public String getDzTranslation() {
@@ -59,7 +46,7 @@ public class Word {
 
   @Deprecated
   public void addDzTranslation(String value, String arValue) {
-    this.translations.add(new Translation(Lang.DZ, cleanString(value), arValue));
+    this.translations.add(new Translation(Lang.DZ, value, arValue));
   }
 
   @JsonProperty("fr_value")
@@ -69,15 +56,15 @@ public class Word {
 
   @Deprecated
   public void addFrTranslation(String value) {
-    this.translations.add(new Translation(Lang.FR, cleanString(value)));
+    this.translations.add(new Translation(Lang.FR, value));
   }
 
   public void addTranslation(Lang lang, String value) {
-    this.translations.add(new Translation(lang, cleanString(value)));
+    this.translations.add(new Translation(lang, value));
   }
 
   public void addTranslation(Lang lang, String value, String arValue) {
-    this.translations.add(new Translation(lang, cleanString(value), cleanString(arValue)));
+    this.translations.add(new Translation(lang, value, arValue));
   }
 
   @Override

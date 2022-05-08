@@ -57,8 +57,8 @@ public class Adjective extends AbstractWord {
         PossessiveWord adjective = new PossessiveWord();
         adjective.setSingular(singular);
         adjective.setGender(gender);
-        adjective.setTranslations(List.of(new Translation(Lang.FR, frValue),
-                                          new Translation(Lang.DZ, dzValue, dzValueAr)));
+        adjective.setTranslations(Set.of(new Translation(Lang.FR, frValue),
+                                         new Translation(Lang.DZ, dzValue, dzValueAr)));
         abstractAdjective.getValues().add(adjective);
       } catch (Exception e) {
         e.printStackTrace();

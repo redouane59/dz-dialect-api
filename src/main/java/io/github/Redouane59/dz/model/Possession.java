@@ -16,11 +16,10 @@ public enum Possession {
     return Arrays.stream(values()).skip(RANDOM.nextInt(values().length)).findFirst().get();
   }
 
-  // @todo authorize other->other
   public static Possession getRandomPosession(Possession possession, boolean objectOnly) {
     Set<Possession> matchingPossession = Set.of(values());
     if (!objectOnly) {
-      matchingPossession = matchingPossession.stream().filter(o -> o != possession).collect(Collectors.toSet());
+      matchingPossession = matchingPossession.stream().filter(o -> o != possession || possession == Possession.OTHER).collect(Collectors.toSet());
     } else {
       matchingPossession = matchingPossession.stream().filter(o -> o == Possession.OTHER).collect(Collectors.toSet());
     }

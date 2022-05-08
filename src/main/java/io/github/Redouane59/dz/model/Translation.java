@@ -38,6 +38,7 @@ public class Translation {
       return "";
     }
     String newValue = value;
+    newValue = newValue.replace("' ", "'").replace("  ", " ");
     // replacing pronouns & articles ending with a vowel when the next word also start by a vowel
     if (lang == Lang.FR) {
       for (char c : Config.VOWELS) {

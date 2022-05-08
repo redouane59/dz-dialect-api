@@ -41,7 +41,7 @@ public class Verb extends AbstractWord {
   @JsonProperty("possible_questions")
   private             Set<Question>   possibleQuestions   = new HashSet<>();
   @JsonProperty("possible_complements")
-  private             Set<NounType>   possibleComplements = new HashSet<>(); // @todo add verbs
+  private             Set<NounType>   possibleComplements = new HashSet<>(); // @todo add verbs for PVV/NVV sentences
   @JsonProperty("verb_type")
   private             VerbType        verbType;
   @JsonProperty("indirect_complement")
@@ -101,8 +101,8 @@ public class Verb extends AbstractWord {
         }
         conjugation.setPossession(personalProunoun.getPossession());
         conjugation.setSingular(personalProunoun.isSingular());
-        conjugation.setTranslations(List.of(new Translation(Lang.FR, frValue),
-                                            new Translation(Lang.DZ, dzValue, dzValueAr)));
+        conjugation.setTranslations(Set.of(new Translation(Lang.FR, frValue),
+                                           new Translation(Lang.DZ, dzValue, dzValueAr)));
         Optional<Conjugator> conjugatorOpt = verb.getConjugators().stream().filter(o -> o.getTense() == tense).findFirst();
         Conjugator           conjugator;
         if (conjugatorOpt.isEmpty()) {

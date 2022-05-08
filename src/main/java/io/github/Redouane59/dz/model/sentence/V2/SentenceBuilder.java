@@ -304,13 +304,20 @@ public class SentenceBuilder {
     if (schema.getFrSequence().contains(WordType.SUFFIX)) {
       if (schema.getFrSequence().contains(WordType.NOUN)) {
         verbs = verbs.stream().filter(Verb::isIndirectComplement)
-                     .filter(v -> !v.getPossibleComplements().isEmpty())
                      .collect(Collectors.toSet());
       } else {
         verbs = verbs.stream().filter(Verb::isDirectComplement).collect(Collectors.toSet());
       }
       if (verbs.size() == 0) {
         System.out.println("no verb found based on suffix");
+      }
+    }
+    if (schema.getFrSequence().contains(WordType.NOUN)) {
+      verbs = verbs.stream().filter(v -> !v.getPossibleComplements().isEmpty())
+                   .filter(v -> v.getPossibleComplements().size() > 1 || !v.getPossibleComplements().contains(NounType.ADVERB)) // @todo dirty
+                   .collect(Collectors.toSet());
+      if (verbs.size() == 0) {
+        System.out.println("no verb found based on noun complements");
       }
     }
     if (verbs.size() == 0) {
@@ -361,14 +368,13 @@ public class SentenceBuilder {
       System.err.println("null subject");
       return Optional.empty();
     }
-    // @todo check if object or person
     return adjective.getWordByGenderAndSingular(subject.getGender(lang), lang, subject.isSingular());
   }
 
   private Optional<Adjective> getAbstractAdjective(PossessiveWord subject) {
     Set<NounType> nounTypes = new HashSet<>();
     if (subject instanceof PersonalPronoun) {
-      nounTypes.add(NounType.PERSON); // @todo manage il/ils + verb + adjective
+      nounTypes.add(NounType.PERSON);
     } else {
       nounTypes.addAll(nounSubject.getNounTypes());
     }
