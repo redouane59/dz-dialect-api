@@ -19,12 +19,14 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class SentenceGeneratorAPI implements HttpFunction {
 
-  private final String countArg      = "count";
-  private final String tensesArg     = "tenses";
-  private final String verbsArg      = "verbs";
-  private final String adjectivesArg = "adjectives";
-  private final String nounsArg      = "nouns";
-  private final String typesArg      = "types";
+  private final String countArg       = "count";
+  private final String tensesArg      = "tenses";
+  private final String verbsArg       = "verbs";
+  private final String adjectivesArg  = "adjectives";
+  private final String nounsArg       = "nouns";
+  private final String typesArg       = "types";
+  private final String affirmationArg = "affirmation";
+  private final String negationArg    = "negation";
 
   @Override
   public void service(final HttpRequest httpRequest, final HttpResponse httpResponse) throws IOException {
@@ -61,6 +63,12 @@ public class SentenceGeneratorAPI implements HttpFunction {
           Set<SentenceType> sentenceTypes = Arrays.stream(types.split(",", -1)).map(SentenceType::valueOf).collect(Collectors.toSet());
           bodyArgs.setSentenceTypes(sentenceTypes);
         }
+      }
+      if (httpRequest.getFirstQueryParameter(affirmationArg).isPresent()) {
+        bodyArgs.setPossibleAffirmation(Boolean.parseBoolean(httpRequest.getFirstQueryParameter(affirmationArg).get()));
+      }
+      if (httpRequest.getFirstQueryParameter(negationArg).isPresent()) {
+        bodyArgs.setPossibleNegation(Boolean.parseBoolean(httpRequest.getFirstQueryParameter(negationArg).get()));
       }
 
       System.out.println(httpRequest.getQueryParameters());

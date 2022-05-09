@@ -13,5 +13,6 @@
     "PAST2",
     "PRESENT",
     "FUTURE"
-  ]
+  ],
+  "possible_negation": true
 }

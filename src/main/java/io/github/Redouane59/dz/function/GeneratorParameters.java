@@ -23,24 +23,26 @@ import lombok.Setter;
 public class GeneratorParameters {
 
   @Builder.Default
-  private Set<Tense>        tenses        = Set.of(Tense.PAST, Tense.PAST2, Tense.PRESENT, Tense.FUTURE, Tense.IMPERATIVE);
+  private Set<Tense>        tenses              = Set.of(Tense.PAST, Tense.PAST2, Tense.PRESENT, Tense.FUTURE, Tense.IMPERATIVE);
   @Builder.Default
-  private Set<String>       verbs         = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
+  private Set<String>       verbs               = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>       nouns         = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>       nouns               = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>       adjectives    = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>       adjectives          = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>       adverbs       = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
+  private Set<String>       adverbs             = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
-  private Set<WordType>     wordTypes     = Set.of(WordType.values());
+  private Set<WordType>     wordTypes           = Set.of(WordType.values());
   @Builder.Default
   @JsonIgnore
-  private int               count         = 1;
+  private int               count               = 1;
   @Builder.Default
   @JsonIgnore
-  private Set<SentenceType> sentenceTypes = Set.of(SentenceType.values());
+  private Set<SentenceType> sentenceTypes       = Set.of(SentenceType.values());
+  private boolean           possibleAffirmation = true;
+  private boolean           possibleNegation    = true;
 
 
   @JsonIgnore

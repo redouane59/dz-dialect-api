@@ -48,12 +48,15 @@ public class Translation {
         newValue = newValue.replace(" te " + c, " t'" + c);
         newValue = newValue.replace(" le " + c, " l'" + c);
         newValue = newValue.replace(" la " + c, " l'" + c);
+        newValue = newValue.replace(" ne " + c, " n'" + c);
         if (newValue.startsWith("le " + c)) {
           newValue = newValue.replace("le " + c, " l'" + c);
         } else if (newValue.startsWith("la " + c)) {
           newValue = newValue.replace("la " + c, " l'" + c);
         } else if (newValue.startsWith("je " + c)) {
           newValue = newValue.replace("je " + c, "j'" + c);
+        } else if (newValue.startsWith("ne " + c)) {
+          newValue = newValue.replace("ne " + c, "n'" + c);
         }
       }
       newValue = newValue.replace("que il", "qu'il");

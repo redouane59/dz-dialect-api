@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.sentence.V2;
+package io.github.Redouane59.dz.model.sentence;
 
 import static io.github.Redouane59.dz.helper.Config.OBJECT_MAPPER;
 
@@ -15,8 +15,6 @@ import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.question.Question;
-import io.github.Redouane59.dz.model.sentence.SentenceSchema;
-import io.github.Redouane59.dz.model.sentence.SentenceType;
 import io.github.Redouane59.dz.model.verb.Conjugation;
 import io.github.Redouane59.dz.model.verb.Conjugator;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns;
@@ -43,7 +41,6 @@ import java.util.stream.Collectors;
 import lombok.Getter;
 
 // @todo split this class in two
-// @todo manage negative sentences
 @Getter
 public class SentenceBuilder {
 
@@ -83,9 +80,19 @@ public class SentenceBuilder {
 
   public boolean fillWordMapsFromSchema() {
     PossessiveWord subject = null;
-    wordMapFr = new ArrayMap<>();
-    wordMapAr = new ArrayMap<>();
+    abstractVerb = null;
+    nounSubject  = null;
+    question     = null;
+    wordMapFr    = new ArrayMap<>();
+    wordMapAr    = new ArrayMap<>();
     sentenceContent.setSentenceType(SentenceType.valueOf(schema.getId()));
+    if (schema.isPossibleNegation()) {
+      if (bodyArgs.isPossibleNegation() && bodyArgs.isPossibleAffirmation()) {
+        sentenceContent.setNegation(RANDOM.nextBoolean());
+      } else if (bodyArgs.isPossibleNegation()) {
+        sentenceContent.setNegation(true);
+      }
+    }
     for (int i = 0; i < schema.getFrSequence().size(); i++) {
       WordType wordType = schema.getFrSequence().get(i);
       switch (wordType) {
@@ -179,24 +186,17 @@ public class SentenceBuilder {
     return true;
   }
 
-  private Optional<Suffix> getSuffix(PossessiveWord copySuffix, Verb abstractVerb) {
-    boolean isDirect;
-    isDirect = !schema.getFrSequence().contains(WordType.NOUN);
-    return Optional.of(SuffixEnum.getRandomSuffix(copySuffix.getPossession(), isDirect, abstractVerb.isObjectOnly()));
-  }
-
-  private Question getQuestion() {
-    return Arrays.stream(Question.values()).skip(RANDOM.nextInt(Question.values().length)).findFirst().get();
-  }
-
-  private Adverb getAdverb() {
-    return bodyArgs.getAdverbsFromIds().stream().skip(RANDOM.nextInt(bodyArgs.getAdverbsFromIds().size())).findFirst().get();
-  }
 
   private Translation generateFrTranslation() {
     StringBuilder sentenceValue = new StringBuilder();
     for (WordType wordType : schema.getFrSequence()) {
+      if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+        sentenceValue.append("ne ");
+      }
       sentenceValue.append(wordMapFr.get(wordType).getTranslationValue(Lang.FR));
+      if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+        sentenceValue.append(" pas");
+      }
       sentenceValue.append(" ");
     }
     sentenceValue.append(completeSentence(false));
@@ -224,12 +224,21 @@ public class SentenceBuilder {
           sentenceValue = new StringBuilder(sentenceValue.toString().replace(m.getKey(), m.getValue()));
         }
       } else {
+        // @todo verb être + adj
+        if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+          sentenceValue.append("ma ");
+          sentenceValueAr.append("ما ");
+        }
         sentenceValue.append(wordMapAr.get(wordType).getTranslationValue(lang));
         String arValue = wordMapAr.get(wordType).getTranslationByLang(lang).get().getArValue();
         if (arValue != null) {
           sentenceValueAr.append(arValue);
         } else {
           sentenceValueAr.append(" ٠٠٠ ");
+        }
+        if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+          sentenceValue.append("ch ");
+          sentenceValueAr.append("ش");
         }
       }
       sentenceValue.append(" ");
@@ -257,6 +266,21 @@ public class SentenceBuilder {
       }
     }
     return result;
+  }
+
+
+  private Optional<Suffix> getSuffix(PossessiveWord copySuffix, Verb abstractVerb) {
+    boolean isDirect;
+    isDirect = !schema.getFrSequence().contains(WordType.NOUN);
+    return Optional.of(SuffixEnum.getRandomSuffix(copySuffix.getPossession(), isDirect, abstractVerb.isObjectOnly()));
+  }
+
+  private Question getQuestion() {
+    return Arrays.stream(Question.values()).skip(RANDOM.nextInt(Question.values().length)).findFirst().get();
+  }
+
+  private Adverb getAdverb() {
+    return bodyArgs.getAdverbsFromIds().stream().skip(RANDOM.nextInt(bodyArgs.getAdverbsFromIds().size())).findFirst().get();
   }
 
   private PossessiveWord getPronoun() {

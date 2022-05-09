@@ -3,8 +3,8 @@ package io.github.Redouane59.dz.sentences;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.sentence.SentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.SentenceType;
-import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.word.Sentence;
 import java.util.List;
@@ -16,21 +16,22 @@ public class GenerateSentenceV2Test {
 
   @Test
   public void testGenericSentenceBuilder() throws JsonProcessingException {
-    int nbTries = 3;
+    int nbTries = 4;
 
-    // List<SentenceType> sentenceTypes = List.of(SentenceType.QPVA);
-    List<SentenceType> sentenceTypes = List.of(SentenceType.values());
+    List<SentenceType> sentenceTypes = List.of(SentenceType.NV, SentenceType.PV, SentenceType.PVSN, SentenceType.PVN_DEP, SentenceType.V);
+    //List<SentenceType> sentenceTypes = List.of(SentenceType.values());
     System.out.println();
     for (SentenceType sentenceType : sentenceTypes) {
       SentenceBuilder sentenceBuilder = sentenceType.getSentenceBuilder();
       for (int i = 0; i < nbTries; i++) {
-        Optional<Sentence> sentence = sentenceBuilder.generate(GeneratorParameters.builder()
+        Optional<Sentence> sentence = sentenceBuilder.generate(GeneratorParameters.builder().possibleNegation(true)
+                                                                                  .possibleAffirmation(false)
                                                                                   //                .verbs(Set.of("attendre"))
                                                                                   .tenses(Set.of(Tense.PRESENT)).build());
         if (sentence.isPresent()) {
           if (sentence.get().getDzTranslationAr() != null && !sentence.get().getDzTranslationAr().contains("null")) {
             System.out.println(sentence.get().getTranslationValue(Lang.FR) + " -> " + sentence.get().getTranslationValue(Lang.DZ)
-                               //    + " | " + sentence.get().getDzTranslationAr()
+                               + " | " + sentence.get().getDzTranslationAr()
             );
           }
         } else {

@@ -19,5 +19,6 @@
   ],
   "noun_types": [
     "PERSON"
-  ]
+  ],
+  "possible_negation": true
 }

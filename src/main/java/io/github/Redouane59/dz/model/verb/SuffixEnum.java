@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.verb;
 
-import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -34,7 +34,8 @@ public enum SuffixEnum {
   YOU_P_I,
   THEY_I;
 
-  public static final Map<String, String> RULE_MAP = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak");
+  public static final Map<String, String> RULE_MAP = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak",
+                                                            "wou", "wah");
   private             Suffix              suffix;
 
   SuffixEnum() {

@@ -28,5 +28,7 @@ public class SentenceSchema {
   private VerbType       verbType;
   @JsonProperty("noun_types")
   private List<NounType> nounTypes = new ArrayList<>();
+  @JsonProperty("possible_negation")
+  private boolean        possibleNegation;
 
 }

@@ -1,6 +1,5 @@
 package io.github.Redouane59.dz.model.sentence;
 
-import io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

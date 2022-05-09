@@ -73,6 +73,7 @@ public class Sentence extends Word {
     private Noun            noun;
     private Tense           tense;
     private SentenceType    sentenceType;
+    private boolean         negation;
   }
 
 }

@@ -8,5 +8,6 @@
   ],
   "tenses": [
     "IMPERATIVE"
-  ]
+  ],
+  "possible_negation": true
 }

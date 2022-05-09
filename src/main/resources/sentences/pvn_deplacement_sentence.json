@@ -21,5 +21,6 @@
   "verb_type": "DEPLACEMENT",
   "noun_types": [
     "PLACE"
-  ]
+  ],
+  "possible_negation": true
 }

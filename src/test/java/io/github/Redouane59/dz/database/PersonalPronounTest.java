@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.database;
 
-import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import io.github.Redouane59.dz.helper.DB;

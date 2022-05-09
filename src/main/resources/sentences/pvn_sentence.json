@@ -21,5 +21,6 @@
   "verb_type": "POSSESSION",
   "noun_types": [
     "OBJECT"
-  ]
+  ],
+  "possible_negation": true
 }

@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model;
 
-import static io.github.Redouane59.dz.model.sentence.V2.SentenceBuilder.RANDOM;
+import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 
 import java.util.Arrays;
 import java.util.Set;
