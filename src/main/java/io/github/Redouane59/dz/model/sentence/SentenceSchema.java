@@ -30,5 +30,7 @@ public class SentenceSchema {
   private List<NounType> nounTypes = new ArrayList<>();
   @JsonProperty("possible_negation")
   private boolean        possibleNegation;
+  @JsonProperty("definitive_adjective")
+  private boolean        definitiveAdjective; // when pronoun replace verb, ex: ana kbir
 
 }

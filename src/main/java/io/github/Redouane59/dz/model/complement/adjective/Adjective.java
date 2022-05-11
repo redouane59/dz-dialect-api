@@ -22,6 +22,8 @@ public class Adjective extends AbstractWord {
   // @todo split in two as Verbs for translation & config
   @JsonProperty("possible_nouns")
   Set<NounType> possibleNouns;
+  private boolean temporal;
+  private boolean definitive;
 
   public static Set<Adjective> deserializeFromCSV(final String fileName, final boolean removeHeader) {
     List<List<String>> entries          = FileHelper.getCsv(Adjective.class.getClassLoader().getResource(fileName).getPath(), ",", removeHeader);

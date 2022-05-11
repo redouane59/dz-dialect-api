@@ -16,9 +16,9 @@ public class GenerateSentenceV2Test {
 
   @Test
   public void testGenericSentenceBuilder() throws JsonProcessingException {
-    int nbTries = 4;
+    int nbTries = 10;
 
-    List<SentenceType> sentenceTypes = List.of(SentenceType.NV, SentenceType.PV, SentenceType.PVSN, SentenceType.PVN_DEP, SentenceType.V);
+    List<SentenceType> sentenceTypes = List.of(SentenceType.PVA_TEMP, SentenceType.PVA_DEF);
     //List<SentenceType> sentenceTypes = List.of(SentenceType.values());
     System.out.println();
     for (SentenceType sentenceType : sentenceTypes) {

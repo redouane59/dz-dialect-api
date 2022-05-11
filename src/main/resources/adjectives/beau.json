@@ -1,6 +1,5 @@
 {
   "id": "beau",
-  "word_type": "ADJECTIVE",
   "possible_nouns": [
     "PLACE",
     "PERSON",
@@ -68,5 +67,7 @@
       "gender": "F",
       "singular": false
     }
-  ]
+  ],
+  "temporal": true,
+  "definitive": true
 }

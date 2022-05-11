@@ -1,6 +1,5 @@
 {
   "id": "délicieux",
-  "word_type": "ADJECTIVE",
   "possible_nouns": [
     "FOOD"
   ],
@@ -65,5 +64,6 @@
       "gender": "F",
       "singular": false
     }
-  ]
+  ],
+  "temporal": true
 }

@@ -1,12 +1,12 @@
 {
-  "id": "PVA",
+  "id": "PVA_DEF",
   "fr_sequence": [
     "PRONOUN",
     "VERB",
     "ADJECTIVE"
   ],
   "ar_sequence": [
-    "VERB",
+    "PRONOUN",
     "ADJECTIVE"
   ],
   "subject_position": 0,
@@ -15,5 +15,6 @@
     "PAST2",
     "PRESENT"
   ],
-  "verb_type": "STATE"
+  "verb_type": "STATE",
+  "definitive_adjective": true
 }

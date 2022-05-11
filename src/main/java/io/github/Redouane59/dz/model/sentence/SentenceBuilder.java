@@ -406,11 +406,22 @@ public class SentenceBuilder {
     if (!nounTypes.isEmpty()) {
       adjectives = adjectives.stream().filter(a -> a.getPossibleNouns().stream()
                                                     .anyMatch(nounTypes::contains)).collect(Collectors.toSet());
+      if (adjectives.isEmpty()) {
+        System.err.println("adjectives empty after noun types");
+        return Optional.empty();
+      }
+    }
+
+    if (schema.isDefinitiveAdjective()) {
+      adjectives = adjectives.stream().filter(Adjective::isDefinitive).collect(Collectors.toSet());
+    } else {
+      adjectives = adjectives.stream().filter(Adjective::isTemporal).collect(Collectors.toSet());
     }
     if (adjectives.isEmpty()) {
-      System.err.println("adjectives empty");
+      System.err.println("adjectives empty after is definitive");
       return Optional.empty();
     }
+    
     Optional<Adjective> adjectiveOpt = adjectives.stream().skip(RANDOM.nextInt(adjectives.size())).findFirst();
     if (adjectiveOpt.isEmpty()) {
       System.err.println("adjective empty");
