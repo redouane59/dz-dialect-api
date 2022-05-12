@@ -4,6 +4,7 @@ import io.github.Redouane59.dz.model.Articles;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.Verb;
 import java.io.File;
@@ -17,12 +18,13 @@ import java.util.stream.Collectors;
 
 public class DB {
 
-  public final static Set<Verb>        VERBS             = new HashSet<>();
-  public final static Set<Adjective>   ADJECTIVES        = new HashSet<>();
-  public final static Set<Noun>        NOUNS             = new HashSet<>();
-  public final static Set<Adverb>      ADVERBS           = new HashSet<>();
-  public final static Articles         ARTICLES          = new Articles("src/main/resources/other/articles.json");
-  public final static PersonalPronouns PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
+  public final static Set<Verb>           VERBS             = new HashSet<>();
+  public final static Set<Adjective>      ADJECTIVES        = new HashSet<>();
+  public final static Set<Noun>           NOUNS             = new HashSet<>();
+  public final static Set<Adverb>         ADVERBS           = new HashSet<>();
+  public final static Articles            ARTICLES          = new Articles("src/main/resources/other/articles.json");
+  public final static PersonalPronouns    PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
+  public final static Set<SentenceSchema> SENTENCE_SCHEMAS  = new HashSet<>();
 
   static {
     // verb configurations
@@ -96,6 +98,18 @@ public class DB {
       }
     }
     System.out.println(ADVERBS.size() + " verbs loaded");
+  }
+
+  static {
+    Set<String> files = new HashSet<>(ResourceList.getResources(Pattern.compile(".*sentences.*json")));
+    for (String fileName : files) {
+      try {
+        SENTENCE_SCHEMAS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), SentenceSchema.class));
+      } catch (IOException e) {
+        System.err.println("could not load file " + fileName);
+      }
+    }
+    System.out.println(SENTENCE_SCHEMAS.size() + " sentences builders loaded");
   }
 
 }

@@ -41,22 +41,22 @@ public class Translation {
     newValue = newValue.replace("' ", "'").replace("  ", " ");
     // replacing pronouns & articles ending with a vowel when the next word also start by a vowel
     if (lang == Lang.FR) {
-      for (char c : Config.VOWELS) {
-        newValue = newValue.replace(" je " + c, " j'" + c);
-        newValue = newValue.replace(" ce " + c, " c'" + c);
-        newValue = newValue.replace(" me " + c, " m'" + c);
-        newValue = newValue.replace(" te " + c, " t'" + c);
-        newValue = newValue.replace(" le " + c, " l'" + c);
-        newValue = newValue.replace(" la " + c, " l'" + c);
-        newValue = newValue.replace(" ne " + c, " n'" + c);
-        if (newValue.startsWith("le " + c)) {
-          newValue = newValue.replace("le " + c, " l'" + c);
-        } else if (newValue.startsWith("la " + c)) {
-          newValue = newValue.replace("la " + c, " l'" + c);
-        } else if (newValue.startsWith("je " + c)) {
-          newValue = newValue.replace("je " + c, "j'" + c);
-        } else if (newValue.startsWith("ne " + c)) {
-          newValue = newValue.replace("ne " + c, "n'" + c);
+      for (char v : Config.VOWELS) {
+        newValue = newValue.replace(" je " + v, " j'" + v);
+        newValue = newValue.replace(" ce " + v, " c'" + v);
+        newValue = newValue.replace(" me " + v, " m'" + v);
+        newValue = newValue.replace(" te " + v, " t'" + v);
+        newValue = newValue.replace(" le " + v, " l'" + v);
+        newValue = newValue.replace(" la " + v, " l'" + v);
+        newValue = newValue.replace(" ne " + v, " n'" + v);
+        if (newValue.startsWith("le " + v)) {
+          newValue = newValue.replace("le " + v, " l'" + v);
+        } else if (newValue.startsWith("la " + v)) {
+          newValue = newValue.replace("la " + v, " l'" + v);
+        } else if (newValue.startsWith("je " + v)) {
+          newValue = newValue.replace("je " + v, "j'" + v);
+        } else if (newValue.startsWith("ne " + v)) {
+          newValue = newValue.replace("ne " + v, "n'" + v);
         }
       }
       newValue = newValue.replace("que il", "qu'il");

@@ -2,9 +2,10 @@ package io.github.Redouane59.dz.sentences;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.Redouane59.dz.function.GeneratorParameters;
+import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.sentence.SentenceBuilder;
-import io.github.Redouane59.dz.model.sentence.SentenceType;
+import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.word.Sentence;
 import java.util.List;
@@ -18,14 +19,14 @@ public class GenerateSentenceV2Test {
   public void testGenericSentenceBuilder() throws JsonProcessingException {
     int nbTries = 10;
 
-    List<SentenceType> sentenceTypes = List.of(SentenceType.PVA_TEMP, SentenceType.PVA_DEF);
-    //List<SentenceType> sentenceTypes = List.of(SentenceType.values());
+    List<String> schemaIds = List.of("PVS");
     System.out.println();
-    for (SentenceType sentenceType : sentenceTypes) {
-      SentenceBuilder sentenceBuilder = sentenceType.getSentenceBuilder();
+    for (String schemaId : schemaIds) {
+      SentenceSchema  sentenceSchema  = DB.SENTENCE_SCHEMAS.stream().filter(o -> o.getId().equals(schemaId)).findAny().get();
+      SentenceBuilder sentenceBuilder = new SentenceBuilder(sentenceSchema);
       for (int i = 0; i < nbTries; i++) {
         Optional<Sentence> sentence = sentenceBuilder.generate(GeneratorParameters.builder().possibleNegation(true)
-                                                                                  .possibleAffirmation(false)
+                                                                                  .possibleAffirmation(true)
                                                                                   //                .verbs(Set.of("attendre"))
                                                                                   .tenses(Set.of(Tense.PRESENT)).build());
         if (sentence.isPresent()) {

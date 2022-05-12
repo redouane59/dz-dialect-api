@@ -6,7 +6,6 @@ import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.sentence.SentenceGenerator;
-import io.github.Redouane59.dz.model.sentence.SentenceType;
 import io.github.Redouane59.dz.model.sentence.Sentences;
 import io.github.Redouane59.dz.model.verb.Tense;
 import java.io.BufferedWriter;
@@ -60,8 +59,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
       if (httpRequest.getFirstQueryParameter(typesArg).isPresent()) {
         String types = httpRequest.getFirstQueryParameter(typesArg).get();
         if (!types.isEmpty()) {
-          Set<SentenceType> sentenceTypes = Arrays.stream(types.split(",", -1)).map(SentenceType::valueOf).collect(Collectors.toSet());
-          bodyArgs.setSentenceTypes(sentenceTypes);
+          Set<String> sentenceTypes = Arrays.stream(types.split(",", -1)).collect(Collectors.toSet());
+          bodyArgs.setSentenceSchemas(sentenceTypes);
         }
       }
       if (httpRequest.getFirstQueryParameter(affirmationArg).isPresent()) {

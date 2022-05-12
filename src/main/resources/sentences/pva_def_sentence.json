@@ -16,5 +16,6 @@
     "PRESENT"
   ],
   "verb_type": "STATE",
-  "definitive_adjective": true
+  "definitive_adjective": true,
+  "possible_negation": true
 }

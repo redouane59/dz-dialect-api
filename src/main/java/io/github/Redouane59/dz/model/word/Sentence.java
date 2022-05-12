@@ -9,8 +9,8 @@ import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.question.Question;
+import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.sentence.SentenceSerializer;
-import io.github.Redouane59.dz.model.sentence.SentenceType;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns.PersonalPronoun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
@@ -54,8 +54,8 @@ public class Sentence extends Word {
     if (this.content.getQuestion() != null) {
       node.put("question", this.content.getQuestion().name());
     }
-    if (this.content.getSentenceType() != null) {
-      node.put("sentence_type", this.content.getSentenceType().name());
+    if (this.content.getSentenceSchema() != null) {
+      node.put("sentence_type", this.content.getSentenceSchema().getId());
     }
     return node;
   }
@@ -72,7 +72,7 @@ public class Sentence extends Word {
     private Adjective       adjective;
     private Noun            noun;
     private Tense           tense;
-    private SentenceType    sentenceType;
+    private SentenceSchema  sentenceSchema;
     private boolean         negation;
   }
 

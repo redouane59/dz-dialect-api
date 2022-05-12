@@ -49,28 +49,30 @@ public class SentenceGenerator {
 
   public Optional<Sentence> generateRandomSentence(GeneratorParameters bodyArgs) {
     try {
-      Optional<SentenceType> abstractSentenceBuilder = getRandomSentenceType();
-      if (abstractSentenceBuilder.isEmpty()) {
+      Optional<SentenceSchema> sentenceSchema = getRandomSentenceSchema();
+      if (sentenceSchema.isEmpty()) {
         return Optional.empty();
       }
-      return abstractSentenceBuilder.get().getSentenceBuilder().generate(bodyArgs);
+      SentenceBuilder sentenceBuilder = new SentenceBuilder(sentenceSchema.get());
+      return sentenceBuilder.generate(bodyArgs);
     } catch (Exception e) {
       e.printStackTrace();
       return Optional.empty();
     }
   }
 
-  public Optional<SentenceType> getRandomSentenceType() {
+
+  public Optional<SentenceSchema> getRandomSentenceSchema() {
     Set<VerbType> verbTypes = bodyArgs.getVerbsFromIds().stream().map(Verb::getVerbType).collect(Collectors.toSet());
-    List<SentenceType> matchingSentenceType = bodyArgs.getSentenceTypes().stream()
-                                                      .filter(o -> o.getSentenceBuilder().getSchema().getVerbType() == null
-                                                                   || verbTypes.contains(o.getSentenceBuilder().getSchema().getVerbType()))
-                                                      .collect(Collectors.toList());
-    if (matchingSentenceType.isEmpty()) {
-      System.err.println("no sentence type found");
+    List<SentenceSchema> matchingSentenceSchema = bodyArgs.getSentenceSchemasFromIds().stream()
+                                                          .filter(o -> o.getVerbType() == null
+                                                                       || verbTypes.contains(o.getVerbType()))
+                                                          .collect(Collectors.toList());
+    if (matchingSentenceSchema.isEmpty()) {
+      System.err.println("No sentence schema found with verb types " + verbTypes);
       return Optional.empty();
     }
-    return Optional.of(matchingSentenceType.get(new Random().nextInt(matchingSentenceType.size())));
+    return Optional.of(matchingSentenceSchema.get(new Random().nextInt(matchingSentenceSchema.size())));
   }
 
 }
