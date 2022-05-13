@@ -16,5 +16,6 @@
   "tenses": [
     "PRESENT"
   ],
-  "verb_type": "STATE"
+  "verb_type": "STATE",
+  "possible_negation": true
 }

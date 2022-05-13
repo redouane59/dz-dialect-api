@@ -67,6 +67,13 @@ public class PersonalPronouns {
     }
   }
 
+  public static PersonalPronoun getRandomImperativePersonalPronoun() {
+    List<PersonalPronoun> objectPronoun = personalPronouns.stream()
+                                                          .filter(o -> o.getPossession() == Possession.YOU).collect(Collectors.toList());
+    return objectPronoun.stream().skip(RANDOM.nextInt(objectPronoun.size())).findFirst().get();
+
+  }
+
   public static PersonalPronoun getPersonalPronounByValue(String frValue, String dzValue) {
     return personalPronouns.stream()
                            .filter(o -> o.getTranslationValue(Lang.FR).equals(frValue))

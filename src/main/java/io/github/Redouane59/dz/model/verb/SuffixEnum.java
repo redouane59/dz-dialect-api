@@ -12,6 +12,7 @@ import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,20 +20,22 @@ import lombok.Setter;
 @Getter
 // @todo add moi/toi/lui/nous/vous/leur
 public enum SuffixEnum {
-  I_D,
-  YOU_S_D,
-  HE_D,
-  SHE_D,
-  WE_D,
-  YOU_P_D,
-  THEY_D,
-  I_I,
-  YOU_S_I,
-  HE_I,
-  SHE_I,
-  WE_I,
-  YOU_P_I,
-  THEY_I;
+  I_D, // me
+  YOU_S_D, // te
+  HE_D, // le
+  SHE_D, // la
+  WE_D, // nous
+  YOU_P_D, // vous
+  THEY_D, // les
+  I_I, // me
+  YOU_S_I, // te
+  HE_I, // lui
+  SHE_I, // lui
+  WE_I, // nous
+  YOU_P_I, // vous
+  THEY_I; // leur
+  // I_IMP_D // -moi
+  // I_IMP_I // -moi
 
   public static final Map<String, String> RULE_MAP = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak",
                                                             "wou", "wah");
@@ -64,6 +67,25 @@ public enum SuffixEnum {
     Gender     randomGender     = Gender.getRandomGender();
     boolean    randomSingular   = RANDOM.nextBoolean();
     Possession randomPossession = Possession.getRandomPosession(other, objectOnly);
+
+    return Arrays.stream(values())
+                 .filter(s -> s.getSuffix().isDirect() == isDirect)
+                 .filter(s -> s.getSuffix().isSingular() == randomSingular)
+                 .filter(s -> s.getSuffix().getPossession() == randomPossession)
+                 .filter(s -> s.getSuffix().getGender() == randomGender || s.getSuffix().getGender() == Gender.X || randomGender == Gender.X)
+                 .findFirst().get().getSuffix();
+  }
+
+  public static Suffix getRandomImperativeSuffix(boolean isDirect, boolean objectOnly) {
+    Gender     randomGender   = Gender.getRandomGender();
+    boolean    randomSingular = RANDOM.nextBoolean();
+    Possession randomPossession;
+    if (!objectOnly) {
+      List<Possession> matchingPossessions = List.of(Possession.I, Possession.OTHER);
+      randomPossession = matchingPossessions.get(RANDOM.nextInt(2));
+    } else {
+      randomPossession = Possession.OTHER;
+    }
 
     return Arrays.stream(values())
                  .filter(s -> s.getSuffix().isDirect() == isDirect)

@@ -39,9 +39,11 @@ public class GeneratorParameters {
   @JsonIgnore
   private int           count               = 1;
   @Builder.Default
-  @JsonIgnore
+  @JsonProperty("sentence_schemas")
   private Set<String>   sentenceSchemas     = DB.SENTENCE_SCHEMAS.stream().map(SentenceSchema::getId).collect(Collectors.toSet());
+  @Builder.Default
   private boolean       possibleAffirmation = true;
+  @Builder.Default
   private boolean       possibleNegation    = true;
 
 

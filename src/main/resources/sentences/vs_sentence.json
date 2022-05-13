@@ -1,0 +1,14 @@
+{
+  "id": "VS",
+  "fr_sequence": [
+    "VERB",
+    "SUFFIX"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "SUFFIX"
+  ],
+  "tenses": [
+    "IMPERATIVE"
+  ]
+}

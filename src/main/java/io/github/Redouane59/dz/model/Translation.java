@@ -64,6 +64,7 @@ public class Translation {
       newValue = newValue.replace("que on", "qu'on");
       newValue = newValue.replace("à le", "au");
       newValue = newValue.replace("l' ", "l'");
+      newValue = newValue.replace("-me", "-moi");
     } else if (lang == Lang.DZ) {
       // suffixes managed in suffix class
     }

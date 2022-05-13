@@ -309,8 +309,8 @@
             },
             {
               "lang": "DZ",
-              "value": "djebtou",
-              "ar_value": "جبتو"
+              "value": "djibou",
+              "ar_value": "جيبو"
             }
           ],
           "gender": "X",
@@ -325,11 +325,11 @@
             },
             {
               "lang": "DZ",
-              "value": "djebt",
-              "ar_value": "جبت"
+              "value": "djib",
+              "ar_value": "جيب"
             }
           ],
-          "gender": "X",
+          "gender": "M",
           "possession": "YOU",
           "singular": true
         },
@@ -341,8 +341,8 @@
             },
             {
               "lang": "DZ",
-              "value": "djebt",
-              "ar_value": "جبت"
+              "value": "djibi",
+              "ar_value": "جيبي"
             }
           ],
           "gender": "F",

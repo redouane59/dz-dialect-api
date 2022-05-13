@@ -18,16 +18,16 @@ public class SentenceSchema {
 
   private String         id;
   @JsonProperty("fr_sequence")
-  private List<WordType> frSequence;
+  private List<WordType> frSequence = new ArrayList<>();
   @JsonProperty("ar_sequence")
-  private List<WordType> arSequence;
-  private List<Tense>    tenses;
+  private List<WordType> arSequence = new ArrayList<>();
+  private List<Tense>    tenses     = new ArrayList<>();
   @JsonProperty("subject_position")
   private int            subjectPosition;
   @JsonProperty("verb_type")
   private VerbType       verbType;
   @JsonProperty("noun_types")
-  private List<NounType> nounTypes = new ArrayList<>();
+  private List<NounType> nounTypes  = new ArrayList<>();
   @JsonProperty("possible_negation")
   private boolean        possibleNegation;
   @JsonProperty("definitive_adjective")

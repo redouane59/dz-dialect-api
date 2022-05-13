@@ -1,7 +1,5 @@
 package io.github.Redouane59.dz.model.sentence;
 
-import static io.github.Redouane59.dz.helper.Config.OBJECT_MAPPER;
-
 import com.google.api.client.util.ArrayMap;
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.Articles.Article;
@@ -13,6 +11,7 @@ import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.question.Question;
 import io.github.Redouane59.dz.model.verb.Conjugator;
+import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.PersonalPronouns.PersonalPronoun;
 import io.github.Redouane59.dz.model.verb.SuffixEnum;
 import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
@@ -23,7 +22,7 @@ import io.github.Redouane59.dz.model.word.PossessiveWord;
 import io.github.Redouane59.dz.model.word.Sentence;
 import io.github.Redouane59.dz.model.word.Sentence.SentenceContent;
 import io.github.Redouane59.dz.model.word.Word;
-import java.io.File;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Optional;
@@ -35,26 +34,17 @@ import lombok.Getter;
 @Getter
 public class SentenceBuilder {
 
-  public static Random RANDOM = new Random();
+  public static Random         RANDOM = new Random();
+  private final SentenceSchema schema;
   Map<WordType, Word> wordMapFr;
   Map<WordType, Word> wordMapAr;
   private SentenceContent       sentenceContent;
-  private SentenceSchema        schema;
   private Noun                  nounSubject;
   private Verb                  abstractVerb;
   private Question              question;
   private Suffix                suffix;
   private GeneratorParameters   bodyArgs;
   private SentenceBuilderHelper helper;
-
-  @Deprecated
-  public SentenceBuilder(String filePath) {
-    try {
-      schema = OBJECT_MAPPER.readValue(new File(filePath), SentenceSchema.class);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
 
   public SentenceBuilder(SentenceSchema sentenceSchema) {
     this.schema = sentenceSchema;
@@ -145,16 +135,40 @@ public class SentenceBuilder {
           }
           abstractVerb = abstractVerbOpt.get();
           sentenceContent.setVerb(abstractVerb);
-          Set<Tense> availableTenses = abstractVerb.getConjugators().stream().map(Conjugator::getTense)
-                                                   .filter(t -> bodyArgs.getTenses().contains(t))
-                                                   .filter(t -> t != Tense.IMPERATIVE)
-                                                   .collect(Collectors.toSet());
+          Set<Tense> availableTenses = new HashSet<>();
+          if (!schema.getTenses().isEmpty()) {
+            if (schema.getTenses().contains(Tense.IMPERATIVE)) { // @todo use present
+              availableTenses.add(Tense.IMPERATIVE);
+            } else {
+              availableTenses = abstractVerb.getConjugators().stream().map(Conjugator::getTense)
+                                            .filter(t -> bodyArgs.getTenses().contains(t))
+                                            .filter(t -> schema.getTenses().contains(t))
+                                            .collect(Collectors.toSet());
+            }
+          } else {
+            availableTenses = abstractVerb.getConjugators().stream().map(Conjugator::getTense)
+                                          .filter(t -> bodyArgs.getTenses().contains(t))
+                                          .filter(t -> t != Tense.IMPERATIVE)
+                                          .collect(Collectors.toSet());
+          }
+
           Tense tense = availableTenses.stream().skip(RANDOM.nextInt(availableTenses.size())).findFirst().get();
           sentenceContent.setTense(tense);
-          wordMapFr.put(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.FR));
-          wordMapAr.put(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.DZ));
+          if (tense != Tense.IMPERATIVE) {
+            wordMapFr.put(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.FR));
+            wordMapAr.put(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.DZ));
+          } else {
+            PersonalPronoun randomPronoun = PersonalPronouns.getRandomImperativePersonalPronoun();
+            wordMapFr.put(wordType, helper.getImperativeVerbConjugation(abstractVerb, randomPronoun, Lang.FR, sentenceContent.isNegation()));
+            wordMapAr.put(wordType, helper.getImperativeVerbConjugation(abstractVerb, randomPronoun, Lang.DZ, sentenceContent.isNegation()));
+          }
           if (schema.getFrSequence().contains(WordType.SUFFIX)) {
-            Optional<Suffix> suffixOpt = helper.getSuffix(subject, abstractVerb);
+            Optional<Suffix> suffixOpt;
+            if (sentenceContent.getTense() == Tense.IMPERATIVE) {
+              suffixOpt = helper.getImperativeSuffix(abstractVerb.isObjectOnly());
+            } else {
+              suffixOpt = helper.getSuffix(subject.getPossession(), abstractVerb.isObjectOnly());
+            }
             if (suffixOpt.isEmpty()) {
               return false;
             }
@@ -191,6 +205,10 @@ public class SentenceBuilder {
   private Translation generateFrTranslation() {
     StringBuilder sentenceValue = new StringBuilder();
     for (WordType wordType : schema.getFrSequence()) {
+      if (wordType == WordType.SUFFIX && sentenceContent.getTense() == Tense.IMPERATIVE) { // add imperative condition
+        sentenceValue.deleteCharAt(sentenceValue.length() - 1);
+        sentenceValue.append("-");
+      }
       if (wordType == WordType.VERB && sentenceContent.isNegation()) {
         sentenceValue.append("ne ");
       }
@@ -198,6 +216,7 @@ public class SentenceBuilder {
       if (wordType == WordType.VERB && sentenceContent.isNegation()) {
         sentenceValue.append(" pas");
       }
+
       sentenceValue.append(" ");
     }
     sentenceValue.append(completeSentence(false));

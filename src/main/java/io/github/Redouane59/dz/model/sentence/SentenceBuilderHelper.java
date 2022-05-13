@@ -7,6 +7,8 @@ import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Articles;
 import io.github.Redouane59.dz.model.Articles.Article;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Possession;
+import io.github.Redouane59.dz.model.RootLang;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
@@ -35,10 +37,15 @@ public class SentenceBuilderHelper {
   GeneratorParameters bodyArgs;
   SentenceSchema      schema;
 
-  public Optional<Suffix> getSuffix(PossessiveWord copySuffix, Verb abstractVerb) {
+  public Optional<Suffix> getSuffix(Possession possession, boolean isObjectOnly) {
     boolean isDirect;
     isDirect = !schema.getFrSequence().contains(WordType.NOUN);
-    return Optional.of(SuffixEnum.getRandomSuffix(copySuffix.getPossession(), isDirect, abstractVerb.isObjectOnly()));
+    return Optional.of(SuffixEnum.getRandomSuffix(possession, isDirect, isObjectOnly));
+  }
+
+  public Optional<Suffix> getImperativeSuffix(boolean isObjectOnly) {
+    boolean isDirect = !schema.getFrSequence().contains(WordType.NOUN);
+    return Optional.of(SuffixEnum.getRandomImperativeSuffix(isDirect, isObjectOnly));
   }
 
   public Question getQuestion() {
@@ -119,8 +126,28 @@ public class SentenceBuilderHelper {
   public PossessiveWord getVerbConjugation(Verb verb, PossessiveWord subject, Tense tense, Lang lang) {
 
     if (subject == null) {
-      subject = PersonalPronouns.getRandomPersonalPronoun(true);
+      subject = PersonalPronouns.getRandomPersonalPronoun(true); // @todo KO
       tense   = Tense.IMPERATIVE;
+    }
+    Optional<Conjugation>
+        conjugation =
+        verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
+                                                              subject.isSingular(),
+                                                              subject.getPossession(),
+                                                              tense);
+    if (conjugation.isEmpty()) {
+      System.err.println("no conjugation found for");
+      return null;
+    }
+    return conjugation.get();
+  }
+
+  public PossessiveWord getImperativeVerbConjugation(Verb verb, PersonalPronoun subject, Lang lang, boolean isNegative) {
+    Tense tense;
+    if (isNegative && lang.getRootLang() == RootLang.AR) {
+      tense = Tense.PRESENT; // to manage exception in arabic
+    } else {
+      tense = Tense.IMPERATIVE;
     }
     Optional<Conjugation>
         conjugation =
