@@ -6,7 +6,7 @@ import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import io.github.Redouane59.dz.model.word.GenderedWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import org.junit.jupiter.api.Test;
 
 public class AbstractWordTest {
@@ -17,17 +17,23 @@ public class AbstractWordTest {
     abstractWord = new AbstractWord();
     abstractWord.setId("grand");
     abstractWord.setWordType(WordType.ADJECTIVE);
-    GenderedWord grand = new GenderedWord(Gender.M, true);
+    Conjugation grand = new Conjugation();
+    grand.setGender(Gender.M);
+    grand.setSingular(true);
     grand.addFrTranslation("grand");
     grand.addDzTranslation("kbir", "*");
     abstractWord.getValues().add(grand);
-    GenderedWord grande = new GenderedWord(Gender.F, true);
+    Conjugation grande = new Conjugation();
+    grande.setGender(Gender.F);
+    grande.setSingular(true);
     grande.addFrTranslation("grande");
     grande.addDzTranslation("kbira", "*");
     abstractWord.getValues().add(grande);
-    GenderedWord grands = new GenderedWord(Gender.X, false);
+    Conjugation grands = new Conjugation();
     grands.addFrTranslation("grands");
     grands.addDzTranslation("kbar", "*");
+    grands.setGender(Gender.X);
+    grands.setSingular(false);
     abstractWord.getValues().add(grands);
   }
 

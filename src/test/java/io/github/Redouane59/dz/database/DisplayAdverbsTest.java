@@ -20,9 +20,9 @@ public class DisplayAdverbsTest {
     DB.ADVERBS.forEach(n ->
                            line.append(n.getId())
                                .append(",")
-                               .append(n.getTranslationValue(Lang.FR))
+                               .append(n.getValues().get(0).getTranslationValue(Lang.FR))
                                .append(",")
-                               .append(n.getTranslationValue(Lang.DZ))
+                               .append(n.getValues().get(0).getTranslationValue(Lang.DZ))
                                .append("\n"));
 
     System.out.println(line);

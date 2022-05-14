@@ -1,0 +1,291 @@
+{
+  "id": "danser",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danse"
+        },
+        {
+          "lang": "DZ",
+          "value": "yechta7"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "dansent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yechet7ou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "dansez"
+        },
+        {
+          "lang": "DZ",
+          "value": "techet7ou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danse"
+        },
+        {
+          "lang": "DZ",
+          "value": "nechta7"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danse"
+        },
+        {
+          "lang": "DZ",
+          "value": "techta7"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danses"
+        },
+        {
+          "lang": "DZ",
+          "value": "techta7"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "dansent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yechet7ou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danses"
+        },
+        {
+          "lang": "DZ",
+          "value": "techat7i"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "danse"
+        },
+        {
+          "lang": "DZ",
+          "value": "nechet7ou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7t"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont dansé"
+},
+{
+"lang": "DZ",
+"value": "chet7ou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont dansé"
+},
+{
+"lang": "DZ",
+"value": "chet7ou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7t"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7tou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a dansé"
+},
+{
+"lang": "DZ",
+"value": "chet7et"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7na"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as dansé"
+},
+{
+"lang": "DZ",
+"value": "chte7ti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHY"
+],
+"possible_complements": [
+"ADVERB"
+],
+"verb_type": "ACTION",
+"semi_auxiliar": false
+}

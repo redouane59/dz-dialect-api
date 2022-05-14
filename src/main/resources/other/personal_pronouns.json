@@ -1,0 +1,266 @@
+[
+  {
+    "id": "I_M",
+    "values": [
+      {
+        "possession": "I",
+        "singular": true,
+        "gender": "M",
+        "index": 1,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "je"
+          },
+          {
+            "lang": "DZ",
+            "value": "ana",
+            "ar_value": "ان"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "I_F",
+    "values": [
+      {
+        "possession": "I",
+        "singular": true,
+        "gender": "F",
+        "index": 2,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "je"
+          },
+          {
+            "lang": "DZ",
+            "value": "ana",
+            "ar_value": "ان"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "YOU_M",
+    "values": [
+      {
+        "possession": "YOU",
+        "singular": true,
+        "gender": "M",
+        "index": 3,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "tu"
+          },
+          {
+            "lang": "DZ",
+            "value": "enta",
+            "ar_value": "انتَ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "YOU_F",
+    "values": [
+      {
+        "possession": "YOU",
+        "singular": true,
+        "gender": "F",
+        "index": 4,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "tu (f.)"
+          },
+          {
+            "lang": "DZ",
+            "value": "enti",
+            "ar_value": "انتِ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HE",
+    "values": [
+      {
+        "possession": "OTHER",
+        "singular": true,
+        "gender": "M",
+        "index": 5,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "il"
+          },
+          {
+            "lang": "DZ",
+            "value": "houwa",
+            "ar_value": "هو"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SHE",
+    "values": [
+      {
+        "possession": "OTHER",
+        "singular": true,
+        "gender": "F",
+        "index": 6,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "elle"
+          },
+          {
+            "lang": "DZ",
+            "value": "hiya",
+            "ar_value": "هي"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WE_M",
+    "values": [
+      {
+        "possession": "I",
+        "singular": false,
+        "gender": "M",
+        "index": 8,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "on"
+          },
+          {
+            "lang": "DZ",
+            "value": "7na",
+            "ar_value": "حن"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WE_F",
+    "values": [
+      {
+        "possession": "I",
+        "singular": false,
+        "gender": "F",
+        "index": 9,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "on"
+          },
+          {
+            "lang": "DZ",
+            "value": "7na",
+            "ar_value": "حن"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "YOU_M_P",
+    "values": [
+      {
+        "possession": "YOU",
+        "singular": false,
+        "gender": "M",
+        "index": 10,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "vous"
+          },
+          {
+            "lang": "DZ",
+            "value": "ntouma",
+            "ar_value": "أنتما"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "YOU_F_P",
+    "values": [
+      {
+        "possession": "YOU",
+        "singular": false,
+        "gender": "F",
+        "index": 11,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "vous"
+          },
+          {
+            "lang": "DZ",
+            "value": "ntouma",
+            "ar_value": "أنتما"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "THEY_M",
+    "values": [
+      {
+        "possession": "OTHER",
+        "singular": false,
+        "gender": "M",
+        "index": 12,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "ils"
+          },
+          {
+            "lang": "DZ",
+            "value": "houma",
+            "ar_value": "هُمَا"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "THEY_F",
+    "values": [
+      {
+        "possession": "OTHER",
+        "singular": false,
+        "gender": "F",
+        "index": 13,
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "elles"
+          },
+          {
+            "lang": "DZ",
+            "value": "houma",
+            "ar_value": "هُمَا"
+          }
+        ]
+      }
+    ]
+  }
+]

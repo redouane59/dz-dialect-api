@@ -1,15 +1,19 @@
 {
   "id": "en_dessous",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "en dessous"
-    },
-    {
-      "lang": "DZ",
-      "value": "mel ta7t",
-      "ar_value": "مالتحت"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "en dessous"
+        },
+        {
+          "lang": "DZ",
+          "value": "mel ta7t",
+          "ar_value": "مالتحت"
+        }
+      ]
     }
   ]
 }

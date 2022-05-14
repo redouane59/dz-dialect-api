@@ -1,19 +1,325 @@
-verb,	tense,	pronoun,	frValue,	dzValue,	dzValueAr
-commencer,PAST,je/ana,ai commencé,bdit,بْديت
-commencer,PAST,tu/enta,as commencé,bdit,بْديت
-commencer,PAST,tu/enti,as commencé,bditi,بْديتي
-commencer,PAST,il/houwa,a commencé,bda,بْدا
-commencer,PAST,elle/hiya,a commencé,bdat,بدات
-commencer,PAST,on/7na,a commencé,bdina,بدينا
-commencer,PAST,vous/ntouma,avez commencé,bditou,بْديتو
-commencer,PAST,ils/houma,ont commencé,bdaw,بْداو
-commencer,PAST,elles/houma,ont commencé,bdaw,بْداو
-commencer,PRESENT,je/ana,commence,nebda,نبدا
-commencer,PRESENT,tu/enta,commences,tbda,تبدا
-commencer,PRESENT,tu/enti,commences,tbday,تبداي
-commencer,PRESENT,il/houwa,commence,yebda,يبدا
-commencer,PRESENT,elle/hiya,commence,tebda,تبدا
-commencer,PRESENT,on/7na,commence,nebdaw,نبداو
-commencer,PRESENT,vous/ntouma,commencez,tbdaw,تبداو
-commencer,PRESENT,ils/houma,commencent,yebdaw,يبداو
-commencer,PRESENT,elles/houma,commencent,yebdaw,يبداو
+verb,tense,pronoun,frValue,dzValue,dzValueAr,Pronoun order
+accélérer,IMPERATIVE,tu/enta,accélère,ghawel,غاول,2
+accélérer,IMPERATIVE,tu/enti,accélère,ghaweli,غاولي,3
+accélérer,IMPERATIVE,vous/ntouma,accélèrez,ghawlou,غاولو,7
+accélérer,PAST,je/ana,ai acceléré,ghawelt,غاوَلْت,1
+accélérer,PAST,tu/enta,as accéléré,ghawelt,غاوَلْت,2
+accélérer,PAST,tu/enti,as accéléré,ghawelti,غاوَلْتي,3
+accélérer,PAST,il/houwa,a accéléré,ghawel,غاول,4
+accélérer,PAST,elle/hiya,a accéléré,ghaw'let,غاوْلَت,5
+accélérer,PAST,on/7na,a accéléré,ghawelna,غاولنا,6
+accélérer,PAST,vous/ntouma,avez accéléré,ghaweltou,غاولتو,7
+accélérer,PAST,ils/houma,ont accéléré,ghawlou,غاولو,8
+accélérer,PAST,elles/houma,ont accéléré,ghawlou,غاولو,9
+accélérer,PRESENT,je/ana,accélère,ngahwel,نْغاول,1
+accélérer,PRESENT,tu/enta,accélères,tghawel,تْغاول,2
+accélérer,PRESENT,tu/enti,accélères,tghawli,تغاولي,3
+accélérer,PRESENT,il/houwa,accélère,yghawel,إيغاول,4
+accélérer,PRESENT,elle/hiya,accélère,tghawel,تْغاول,5
+accélérer,PRESENT,on/7na,accélère,nghawlou,نْغاولو,6
+accélérer,PRESENT,vous/ntouma,accélérez,tghawlou,تغاولو,7
+accélérer,PRESENT,ils/houma,accélerent,yghawlou,إيغاولو,8
+accélérer,PRESENT,elles/houma,accélèrent,yghawlou,إيغاولو,9
+acheter,IMPERATIVE,tu/enta,achète,achri,اشري,2
+acheter,IMPERATIVE,tu/enti,achète,achri,اشري,3
+acheter,IMPERATIVE,vous/ntouma,achetez,achriw,اشريوْ,7
+acheter,PAST,je/ana,ai acheté,chrit,شْريت,1
+acheter,PAST,tu/enta,as acheté,chrit,شْريت,2
+acheter,PAST,tu/enti,as acheté,chriti,شْريتي,3
+acheter,PAST,il/houwa,a acheté,chra,شْرا,4
+acheter,PAST,elle/hiya,a acheté,chret,شرات,5
+acheter,PAST,on/7na,a acheté,chrina,شْرينا,6
+acheter,PAST,vous/ntouma,avez acheté,chritou,شريتو,7
+acheter,PAST,ils/houma,ont acheté,chraw,شراو,8
+acheter,PRESENT,je/ana,achète,nechri,نشري,1
+acheter,PRESENT,tu/enta,achètes,techri,تشري,2
+acheter,PRESENT,tu/enti,achètes,techri,تشري,3
+acheter,PRESENT,il/houwa,achète,yechri,يشري,4
+acheter,PRESENT,elle/hiya,achète,techri,تشري,5
+acheter,PRESENT,on/7na,achète,nechrou,نشرو,6
+acheter,PRESENT,vous/ntouma,achetez,techrou,تشرو,7
+acheter,PRESENT,ils/houma,achètent,yechrou,تشرو,8
+aider,IMPERATIVE,tu/enta,aide,3awan,عاون,2
+aider,IMPERATIVE,tu/enti,aide,3awni,عاوني,3
+aider,IMPERATIVE,vous/ntouma,aidez,3awnou,عاونو,7
+aider,PAST,je/ana,ai aidé,3awent,عاونت,1
+aider,PAST,tu/enta,as aidé,3awent,عاونت,2
+aider,PAST,tu/enti,as aidé,3awenti,عاونتي,3
+aider,PAST,il/houwa,a aidé,3awen,عاون,4
+aider,PAST,elle/hiya,a aidé,3awnet,عاونت,5
+aider,PAST,on/7na,a aidé,3awena,عاونا,6
+aider,PAST,vous/ntouma,avez aidé,3awentou,عاونتو,7
+aider,PAST,ils/houma,ont aidé,3awnou,عاونو,8
+aider,PRESENT,je/ana,aide,n3awen,نعاون,1
+aider,PRESENT,tu/enta,aides,t3awen,تعاون,2
+aider,PRESENT,tu/enti,aides,t3aweni,تعاوني,3
+aider,PRESENT,il/houwa,aide,y3awen,إعاون,4
+aider,PRESENT,elle/hiya,aide,t3awen,تْعاون,5
+aider,PRESENT,on/7na,aide,n3awenou,نْعاونو,6
+aider,PRESENT,vous/ntouma,aidez,t3awenou,تْعاونو,7
+aider,PRESENT,ils/houma,aident,y3awenou,إعاونو,8
+aimer,PAST,je/ana,aimais,7ebit,حبيت,1
+aimer,PAST,tu/enta,aimais,7ebit,حبيت,2
+aimer,PAST,tu/enti,aimais,7ebiti,حبيت,3
+aimer,PAST,il/houwa,aimait,7eb,حبْ,4
+aimer,PAST,elle/hiya,aimait,7ebet,حبت,5
+aimer,PAST,on/7na,aimait,7ebina,حبينا,6
+aimer,PAST,vous/ntouma,aimiez,7ebitou,حبيتو,7
+aimer,PAST,ils/houma,aimaient,7ebou,حبو,8
+aimer,PRESENT,je/ana,aime,n7eb,نْحب,1
+aimer,PRESENT,tu/enta,aimes,t7eb,تحب,2
+aimer,PRESENT,tu/enti,aimes,t7ebi,تحبي,3
+aimer,PRESENT,il/houwa,aime,y7eb,إحب,4
+aimer,PRESENT,elle/hiya,aime,t7eb,تحب,5
+aimer,PRESENT,on/7na,aime,n7ebou,نْحبو,6
+aimer,PRESENT,vous/ntouma,aimez,t7ebou,تحبو,7
+aimer,PRESENT,ils/houma,aiment,y7ebou,إحبو,8
+aller,IMPERATIVE,tu/enta,vas,rou7,روح,2
+aller,IMPERATIVE,tu/enti,vas,rou7i,روحي,3
+aller,IMPERATIVE,vous/ntouma,allez,rou7ou,روحو,7
+aller,PAST2,je/ana,suis allé,ro7t,روحت,1
+aller,PAST2,tu/enta,es allé,ra7t,راحت,2
+aller,PAST2,tu/enti,es allée,ro7ti,روحتي,3
+aller,PAST2,il/houwa,est allé,ra7,راح,4
+aller,PAST2,elle/hiya,est allée,ra7et,راحت,5
+aller,PAST2,on/7na,est allés,ra7na,راحنا,6
+aller,PAST2,vous/ntouma,êtes allés,ra7tou,راحتو,7
+aller,PAST2,ils/houma,sont allés,ra7ou,راحو,8
+aller,PRESENT,je/ana,vais,nro7,نروح,1
+aller,PRESENT,tu/enta,vas,tro7,تروح,2
+aller,PRESENT,tu/enti,vas,tro7i,تروحي,3
+aller,PRESENT,il/houwa,va,yro7,إروح,4
+aller,PRESENT,elle/hiya,va,tro7,تروح,5
+aller,PRESENT,on/7na,va,nro7ou,نروحو,6
+aller,PRESENT,vous/ntouma,allez,tro7ou,تروحو,7
+aller,PRESENT,ils/houma,vont,yro7ou,إروحو,8
+appeler,IMPERATIVE,tu/enta,appelle,3ayett,عايت,2
+appeler,IMPERATIVE,tu/enti,appelle,3aytti,عايتي,3
+appeler,IMPERATIVE,vous/ntouma,appelez,3ayttou,عايتو,7
+appeler,PAST,je/ana,ai appelé,3ayet,عايت,1
+appeler,PAST,tu/enta,as appelé,3ayet,عايت,2
+appeler,PAST,tu/enti,as appelé,3ayeti,عايتي,3
+appeler,PAST,il/houwa,a appelé,3ayet,عايت,4
+appeler,PAST,elle/hiya,a appelé,3aytet,عايتت,5
+appeler,PAST,on/7na,a appelé,3ayetna,عايتنا,6
+appeler,PAST,vous/ntouma,avez appelé,3ayetou,عايتو,7
+appeler,PAST,ils/houma,ont appelé,3aytou,عايتو,8
+appeler,PRESENT,je/ana,appelle,n3ayet,نعايت,1
+appeler,PRESENT,tu/enta,appelles,t3ayet,تعايت,2
+appeler,PRESENT,tu/enti,appelles,3ayeti,عايتي,3
+appeler,PRESENT,il/houwa,appelle,y3ayet,عايات,4
+appeler,PRESENT,elle/hiya,appelle,t3ayet,تعايت,5
+appeler,PRESENT,on/7na,appelle,n3aytou,نعايتو,6
+appeler,PRESENT,vous/ntouma,appelez,t3aytou,تعايتو,7
+appeler,PRESENT,ils/houma,appellent,y3aytou,يعايتو,8
+apporter,IMPERATIVE,tu/enta,apporte,djib,جيب,2
+apporter,IMPERATIVE,tu/enti,apporte,djibi,جيبي,3
+apporter,IMPERATIVE,vous/ntouma,apportez,djibou,جيبو,7
+apporter,PAST,je/ana,ai apporté,djebt,جبت,1
+apporter,PAST,tu/enta,as apporté,djebt,جبت,2
+apporter,PAST,tu/enti,as apporté,djebti,جبتي,3
+apporter,PAST,il/houwa,a apporté,djab,جاب,4
+apporter,PAST,elle/hiya,a apporté,djabet,جابت,5
+apporter,PAST,on/7na,a apporté,djebna,جبنا,6
+apporter,PAST,vous/ntouma,avez apporté,djebtou,جبتو,7
+apporter,PAST,ils/houma,ont apporté ,djabou,جابو,8
+apporter,PAST,elles/houma,ont apporté ,djabou,جابو,9
+apporter,PRESENT,je/ana,apporte,ndjib,نجيب,1
+apporter,PRESENT,tu/enta,apportes,djib,دجيب,2
+apporter,PRESENT,tu/enti,apportes,djibi,دجيبي,3
+apporter,PRESENT,il/houwa,apporte,ydjib,إجيب,4
+apporter,PRESENT,elle/hiya,apporte,djib,جيب,5
+apporter,PRESENT,on/7na,apporte,ndjibou,نجيبو,6
+apporter,PRESENT,vous/ntouma,apportez,tdjibou,تجيبو,7
+apporter,PRESENT,ils/houma,apportent,ydjibou,إجيبو,8
+apporter,PRESENT,elles/houma,apportent,ydjibou,إجيبو,9
+arriver,PAST2,je/ana,suis arrivé,l7e9to,لحقتو,1
+arriver,PAST2,tu/enta,es arrivé,l7e9t,لحقت,2
+arriver,PAST2,tu/enti,es arrivée,l7e9ti,لحقتي,3
+arriver,PAST2,il/houwa,est arrivé,l7e9,لحاق,4
+arriver,PAST2,elle/hiya,est arrivée,le79et,لاحقت,5
+arriver,PAST2,on/7na,est arrivé,l7e9na,لحقنا,6
+arriver,PAST2,vous/ntouma,êtes arrivés,l7e9to,لحقتو,7
+arriver,PAST2,ils/houma,sont arrivés,le79o,لحقو,8
+arriver,PAST2,elles/houma,sont arrivées,le79o,لحقو,9
+arriver,PRESENT,je/ana,arrive,nel7e9,نالحق,1
+arriver,PRESENT,tu/enta,arrives,tel7e9,تالحق,2
+arriver,PRESENT,tu/enti,arrives,tele79I,تالحقي,3
+arriver,PRESENT,il/houwa,arrive,yel7e9,يالحق,4
+arriver,PRESENT,elle/hiya,arrive,tel7e9,تالحق,5
+arriver,PRESENT,on/7na,arrive,nele79o,نلحقو,6
+arriver,PRESENT,vous/ntouma,arrivez,tele79o,تالحقو,7
+arriver,PRESENT,ils/houma,arrivent,yele79o,يالحقو,8
+attendre,IMPERATIVE,tu/enta,attends,essena,أسَنَى,2
+attendre,IMPERATIVE,tu/enti,attends,essenay,أسَناي,3
+attendre,IMPERATIVE,vous/ntouma,attendez,essenaw,أسناو,7
+attendre,PAST,je/ana,ai attendu,stenit,ستنيت,1
+attendre,PAST,tu/enta,as attendu,stenit,ستنيت,2
+attendre,PAST,tu/enti,as attendu,steniti,ستنيتي,3
+attendre,PAST,il/houwa,a attendu,stena,ستنا,4
+attendre,PAST,elle/hiya,a attendu,stenat,ستنات,5
+attendre,PAST,on/7na,a attendu,stenina,ستنينا,6
+attendre,PAST,vous/ntouma,avez attendu,stenitou,ستنيتو,7
+attendre,PAST,ils/houma,ont attendu,stenaw,ستناو,8
+attendre,PAST,elles/houma,ont attendu,stenaw,ستناو,9
+attendre,PRESENT,je/ana,attends,nstena,نستانا,1
+attendre,PRESENT,tu/enta,attends,testena,تستنا,2
+attendre,PRESENT,tu/enti,attends,testenay,تاستناي,3
+attendre,PRESENT,il/houwa,attend,yestena,يستنا,4
+attendre,PRESENT,elle/hiya,attend,testena,تستنا,5
+attendre,PRESENT,on/7na,attend,nestenaw,نستناو,6
+attendre,PRESENT,vous/ntouma,attendez,testenaw,تستناو,7
+attendre,PRESENT,ils/houma,attendent,yestenaw,يستناو,8
+attendre,PRESENT,elles/houma,attendent,yestenaw,يستناو,9
+avoir,PRESENT,je/ana,ai,3ndi,عندي,1
+avoir,PRESENT,tu/enta,as,3ndek,عندك,2
+avoir,PRESENT,tu/enti,as,3ndek,عندك,3
+avoir,PRESENT,il/houwa,a,3ndou,عندو,4
+avoir,PRESENT,elle/hiya,a,3ndha,عندها,5
+avoir,PRESENT,on/7na,a,3ndna,عندنا,6
+avoir,PRESENT,vous/ntouma,avez,3ndkoum,عندكوم,7
+avoir,PRESENT,ils/houma,ont,3ndhoum,عندهوم,8
+boire,PAST,je/ana,ai bu,chrobt,شروبت,1
+boire,PAST,tu/enta,as bu,chrobt,شروبت,2
+boire,PAST,tu/enti,as bu,chrobti,شروبتي,3
+boire,PAST,il/houwa,a bu,chrob,شرب,4
+boire,PAST,elle/hiya,a bu,chorbet,شربت,5
+boire,PAST,on/7na,a bu,chrobna,شْربنا,6
+boire,PAST,vous/ntouma,avez bu,chrobtou,شْربتو,7
+boire,PAST,ils/houma,a bu,chorbou,شربو,8
+boire,PAST,elles/houma,a bu,chorbou,شربو,9
+boire,PRESENT,je/ana,bois,nechrob,نشرب,1
+boire,PRESENT,tu/enta,bois,techrob,تشرب,2
+boire,PRESENT,tu/enti,bois,techrobi,تشربي,3
+boire,PRESENT,il/houwa,boit,yechrob,يشرب,4
+boire,PRESENT,elle/hiya,boit,techrob,تشرب,5
+boire,PRESENT,on/7na,boit,nechorbou,نَشريو,6
+boire,PRESENT,vous/ntouma,buvez,tcherbou,تشربو,7
+boire,PRESENT,ils/houma,boivent,ychorbou,يشربو,8
+boire,PRESENT,elles/houma,boivent,ychorbou,يشربو,9
+boire,IMPERATIVE,tu/enta,bois,echrab,اشرب,2
+boire,IMPERATIVE,tu/enti,bois,echarbi,اشربي,3
+boire,IMPERATIVE,vous/ntouma,buvez,echarbou,اشربو,7
+changer,IMPERATIVE,tu/enta,change,bedel,بدل,2
+changer,IMPERATIVE,tu/enti,change,bedli,بدلي,3
+changer,IMPERATIVE,vous/ntouma,changez,bedlou,بدلو,7
+changer,PAST,je/ana,ai changé,bedelt,بدلت,1
+changer,PAST,tu/enta,as changé,bedelt,بدلت,2
+changer,PAST,tu/enti,as changé,bedelti,بدلتي,3
+changer,PAST,il/houwa,a changé,bedel,بدل,4
+changer,PAST,elle/hiya,a changé,bedlet,بدلات,5
+changer,PAST,on/7na,a changé,bedelna,بدلنا,6
+changer,PAST,vous/ntouma,avez changé,bedeltou,بدلتو,7
+changer,PAST,ils/houma,ont changé,bedlou,بدلو,8
+changer,PAST,elles/houma,ont changé,bedlou,بدلو,9
+changer,PRESENT,je/ana,change,nbedel,نبدل,1
+changer,PRESENT,tu/enta,changes,tbedel,تبدل,2
+changer,PRESENT,tu/enti,changes,tbedli,تبدلي,3
+changer,PRESENT,il/houwa,change,tbedel,تبدل,4
+changer,PRESENT,elle/hiya,change,tbedel,تبدل,5
+changer,PRESENT,on/7na,change,nbedlou,نبدلو,6
+changer,PRESENT,vous/ntouma,changez,tbedlou,تبدلو,7
+changer,PRESENT,ils/houma,changent,ybedlou,إبدلو,8
+changer,PRESENT,elles/houma,changent,ybedlou,إبدلو,9
+chanter,PAST,je/ana,ai chanté,ghenit,غننيت,1
+chanter,PAST,tu/enta,as chanté,ghenit,غننيت,2
+chanter,PAST,tu/enti,as chanté,gheniti,غننيتي,3
+chanter,PAST,il/houwa,a chanté,ghena,غنا,4
+chanter,PAST,elle/hiya,a chanté,ghenat,غنات,5
+chanter,PAST,on/7na,a chanté,ghenina,غنينا,6
+chanter,PAST,vous/ntouma,avez chanté,ghenitou,غنيتو,7
+chanter,PAST,ils/houma,ont chanté,ghenaw,غناو,8
+chanter,PAST,elles/houma,ont chanté,ghenaw,غناو,9
+chanter,PRESENT,je/ana,chante,ngheni,نْغني,1
+chanter,PRESENT,tu/enta,chantes ,tgheni,تْغني,2
+chanter,PRESENT,tu/enti,chantes ,tgheni,تْغني,3
+chanter,PRESENT,il/houwa,chante,ygheni,إيغني,4
+chanter,PRESENT,elle/hiya,chante,tgheni,تْغني,5
+chanter,PRESENT,on/7na,chante,nghenou,نْغنو,6
+chanter,PRESENT,vous/ntouma,chantez,tghenou,تغنو,7
+chanter,PRESENT,ils/houma,chantent,yghenou,إيغنو,8
+chanter,PRESENT,elles/houma,chantent,yghenou,إيغنو,9
+chercher,PAST,je/ana,ai cherché,7awesst,حَوَسْت,1
+chercher,PAST,tu/enta,as cherché,7awesst,حَوَسْت,2
+chercher,PAST,tu/enti,as cherché,7awessti,حَوَسْتي,3
+chercher,PAST,il/houwa,a cherché,7awess,حَوَسْ,4
+chercher,PAST,elle/hiya,a cherché,7awsset,حَوْسَتْ,5
+chercher,PAST,on/7na,a cherché,7awessna,حَوَسْنا,6
+chercher,PAST,vous/ntouma,avez cherché,7awesstou,حَوَسْتو,7
+chercher,PAST,ils/houma,ont cherché,7awssou,حَوْسو,8
+chercher,PAST,elles/houma,ont cherché,7awssou,حَوْسو,9
+chercher,PRESENT,je/ana,cherche,n7awess,نْحَوَسْ,1
+chercher,PRESENT,tu/enta,cherches,t7awess,تْحَوَسْ,2
+chercher,PRESENT,tu/enti,cherches,t7awssi,تْحَوْسي,3
+chercher,PRESENT,il/houwa,cherche,i7awess,إيحَوَسْ,4
+chercher,PRESENT,elle/hiya,cherche,t7awess,تْحَوَسْ,5
+chercher,PRESENT,on/7na,cherche,n7awssou,نْحوسو,6
+chercher,PRESENT,vous/ntouma,cherchez,t7awssou,تْحوسو,7
+chercher,PRESENT,ils/houma,cherchent,i7awssou,إيحوسو,8
+chercher,PRESENT,elles/houma,cherchent,i7awssou,إيحوسو,9
+être,FUTURE,je/ana,serai,nkoun,نكون,1
+être,FUTURE,tu/enta,seras,tkoun,تكون,2
+être,FUTURE,tu/enti,seras,tkouni,تكوني,3
+être,FUTURE,il/houwa,sera,ykoun,إكون,4
+être,FUTURE,elle/hiya,sera,tkoun,تكون,5
+être,FUTURE,on/7na,sera,nkounou,نكونو,6
+être,FUTURE,vous/ntouma,serez,tkounou,تكونو,7
+être,FUTURE,ils/houma,seront,ykounou,إكونو,8
+être,PAST,je/ana,étais,kount,كونت,1
+être,PAST,tu/enta,étais,kount,كونت,2
+être,PAST,tu/enti,étais,kounti,كونتي,3
+être,PAST,il/houwa,était,kaan,كان,4
+être,PAST,elle/hiya,était,kenet,كانت,5
+être,PAST,on/7na,était,kouna,كونا,6
+être,PAST,vous/ntouma,étiez,kountou,كونتو,7
+être,PAST,ils/houma,étaient,kanou,كانو,8
+être,PRESENT,je/ana,suis,rani,راني,1
+être,PRESENT,tu/enta,es,rak,راك,2
+être,PRESENT,tu/enti,es,raki,راكي,3
+être,PRESENT,il/houwa,est,rahou,راهو,4
+être,PRESENT,elle/hiya,est,rahi,راهي,5
+être,PRESENT,on/7na,est,rana,رانا,6
+être,PRESENT,vous/ntouma,êtes,rakoum,راكم,7
+être,PRESENT,ils/houma,sont,rahoum,راهوم,8
+être,PRESENT,elles/houma,sont,rahoum,راهوم,9
+commencer,PAST,je/ana,ai commencé,bdit,بْديت,1
+commencer,PAST,tu/enta,as commencé,bdit,بْديت,2
+commencer,PAST,tu/enti,as commencé,bditi,بْديتي,3
+commencer,PAST,il/houwa,a commencé,bda,بْدا,4
+commencer,PAST,elle/hiya,a commencé,bdat,بدات,5
+commencer,PAST,on/7na,a commencé,bdina,بدينا,6
+commencer,PAST,vous/ntouma,avez commencé,bditou,بْديتو,7
+commencer,PAST,ils/houma,ont commencé,bdaw,بْداو,8
+commencer,PAST,elles/houma,ont commencé,bdaw,بْداو,9
+commencer,PRESENT,je/ana,commence,nebda,نبدا,1
+commencer,PRESENT,tu/enta,commences,tbda,تبدا,2
+commencer,PRESENT,tu/enti,commences,tbday,تبداي,3
+commencer,PRESENT,il/houwa,commence,yebda,يبدا,4
+commencer,PRESENT,elle/hiya,commence,tebda,تبدا,5
+commencer,PRESENT,on/7na,commence,nebdaw,نبداو,6
+commencer,PRESENT,vous/ntouma,commencez,tbdaw,تبداو,7
+commencer,PRESENT,ils/houma,commencent,yebdaw,يبداو,8
+commencer,PRESENT,elles/houma,commencent,yebdaw,يبداو,9
+comprendre,PAST,je/ana,ai compris,fhamt,فهامت,1
+comprendre,PAST,tu/enta,a compris,fhamt,فهامت,2
+comprendre,PAST,tu/enti,as compris,fhamti,فهامتي,3
+venir,IMPERATIVE,tu/enta,viens,arwa7,ارواح,2
+venir,IMPERATIVE,tu/enti,viens,arwa7i,ارواحي,3
+venir,IMPERATIVE,vous/ntouma,venez,arwa7ou,ارواحو,7
+venir,PAST2,je/ana,suis venu,djit,جيت,1
+venir,PAST2,tu/enta,es venu,djit,جيت,2
+venir,PAST2,tu/enti,es venue,djiti,جيتي,3
+venir,PAST2,il/houwa,est venus,dja,جا,4
+venir,PAST2,elle/hiya,est venue,djet,جات,5
+venir,PAST2,on/7na,est venus,djina,جينا,6
+venir,PAST2,vous/ntouma,êtes venus,djitou,جيتو,7
+venir,PAST2,ils/houma,sont venus,djaw,جاو,8
+venir,PAST2,elles/houma,sont venues,djaw,جاو,9
+venir,PRESENT,je/ana,viens,ndji,نْجي,1
+venir,PRESENT,tu/enta,viens,tdji,تْجي,2
+venir,PRESENT,tu/enti,vient,tdji,تْجي,3
+venir,PRESENT,il/houwa,vient,ydji,إيجي,4
+venir,PRESENT,elle/hiya,vient,tdji,تْجي,5
+venir,PRESENT,on/7na,vient,ndjiou,نْجيوْ,6
+venir,PRESENT,vous/ntouma,venez,tdjiou,تٍجيوْ,7
+venir,PRESENT,ils/houma,viennent,ydjiou,إيجيوْ,8

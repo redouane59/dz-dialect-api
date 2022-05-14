@@ -64,6 +64,10 @@ public class SentenceGenerator {
 
   public Optional<SentenceSchema> getRandomSentenceSchema() {
     Set<VerbType> verbTypes = bodyArgs.getVerbsFromIds().stream().map(Verb::getVerbType).collect(Collectors.toSet());
+    if (bodyArgs.getSentenceSchemasFromIds().isEmpty()) {
+      System.err.println("no schema found in arguments");
+      return Optional.empty();
+    }
     List<SentenceSchema> matchingSentenceSchema = bodyArgs.getSentenceSchemasFromIds().stream()
                                                           .filter(o -> o.getVerbType() == null
                                                                        || verbTypes.contains(o.getVerbType()))

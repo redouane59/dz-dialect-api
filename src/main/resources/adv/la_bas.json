@@ -1,15 +1,19 @@
 {
   "id": "la_bas",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "là-bas"
-    },
-    {
-      "lang": "DZ",
-      "value": "el hih",
-      "ar_value": "الهيهْ"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "là-bas"
+        },
+        {
+          "lang": "DZ",
+          "value": "el hih",
+          "ar_value": "الهيهْ"
+        }
+      ]
     }
   ]
 }

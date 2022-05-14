@@ -7,6 +7,7 @@ public enum NounType {
   OBJECT,
   TASK,
   FOOD,
-  ADVERB // dirty
+  ADVERB, // @todo dirty
+  VERB // dirty
 
 }

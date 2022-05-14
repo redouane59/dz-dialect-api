@@ -1,15 +1,19 @@
 {
   "id": "avec_elle",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec elle"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3aha",
-      "ar_value": "مْعاها"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec elle"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3aha",
+          "ar_value": "مْعاها"
+        }
+      ]
     }
   ]
 }

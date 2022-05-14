@@ -1,0 +1,261 @@
+{
+  "id": "demander",
+  "tense": "PAST",
+  "values": [
+    {
+      "possession": "I",
+      "gender": "X",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksit"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksit"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksiti"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksa"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sakeset"
+        }
+      ]
+    },
+    {
+      "possession": "I",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksina"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksitou"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont demandé"
+        },
+        {
+          "lang": "DZ",
+          "value": "saksaou"
+        }
+      ]
+    }
+  ]
+},
+{
+"tense": "PRESENT",
+"values": [
+{
+"possession": "I",
+"gender": "X",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "demande"
+},
+{
+"lang": "DZ",
+"value": "nsakse"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "M",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "demandes"
+},
+{
+"lang": "DZ",
+"value": "tsakse"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "F",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "demandes"
+},
+{
+"lang": "DZ",
+"value": "saksei"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "M",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "demande"
+},
+{
+"lang": "DZ",
+"value": "ysakse"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "F",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "demande"
+},
+{
+"lang": "DZ",
+"value": "tsakse"
+}
+]
+},
+{
+"possession": "I",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "demande"
+},
+{
+"lang": "DZ",
+"value": "nsaksiw"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "demandez"
+},
+{
+"lang": "DZ",
+"value": "tsaksiw"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "demandent"
+},
+{
+"lang": "DZ",
+"value": "ysakisiw"
+}
+]
+}
+]
+}
+],
+"possible_complements": [
+],
+"possible_questions": [
+"WHAT",
+"WHY"
+],
+"verb_type": "ACTION",
+"indirect_complement": true
+}

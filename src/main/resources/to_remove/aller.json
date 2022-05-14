@@ -1,0 +1,322 @@
+{
+  "id": "aller",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "allez"
+        },
+        {
+          "lang": "DZ",
+          "value": "rou7ou",
+          "ar_value": "روحو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vas"
+        },
+        {
+          "lang": "DZ",
+          "value": "rou7i",
+          "ar_value": "روحي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vas"
+        },
+        {
+          "lang": "DZ",
+          "value": "rou7",
+          "ar_value": "روح"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    }
+  ],
+  "tense": "IMPERATIVE"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "es allé"
+},
+{
+"lang": "DZ",
+"value": "ra7t",
+"ar_value": "راحت"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "est allée"
+},
+{
+"lang": "DZ",
+"value": "ra7et",
+"ar_value": "راحت"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "suis allé"
+},
+{
+"lang": "DZ",
+"value": "ro7t",
+"ar_value": "روحت"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "est allé"
+},
+{
+"lang": "DZ",
+"value": "ra7",
+"ar_value": "راح"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "sont allés"
+},
+{
+"lang": "DZ",
+"value": "ra7ou",
+"ar_value": "راحو"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "est allés"
+},
+{
+"lang": "DZ",
+"value": "ra7na",
+"ar_value": "راحنا"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "es allée"
+},
+{
+"lang": "DZ",
+"value": "ro7ti",
+"ar_value": "روحتي"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "êtes allés"
+},
+{
+"lang": "DZ",
+"value": "ra7tou",
+"ar_value": "راحتو"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+}
+],
+"tense": "PAST2"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "va"
+},
+{
+"lang": "DZ",
+"value": "yro7",
+"ar_value": "إروح"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "vont"
+},
+{
+"lang": "DZ",
+"value": "yro7ou",
+"ar_value": "إروحو"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "vas"
+},
+{
+"lang": "DZ",
+"value": "tro7",
+"ar_value": "تروح"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "vais"
+},
+{
+"lang": "DZ",
+"value": "nro7",
+"ar_value": "نروح"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "allez"
+},
+{
+"lang": "DZ",
+"value": "tro7ou",
+"ar_value": "تروحو"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "vas"
+},
+{
+"lang": "DZ",
+"value": "tro7i",
+"ar_value": "تروحي"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "va"
+},
+{
+"lang": "DZ",
+"value": "nro7ou",
+"ar_value": "نروحو"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "va"
+},
+{
+"lang": "DZ",
+"value": "tro7",
+"ar_value": "تروح"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+}
+],
+"tense": "PRESENT"
+}
+]
+}

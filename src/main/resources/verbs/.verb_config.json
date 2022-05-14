@@ -39,7 +39,8 @@
     "possible_complements": [
       "PLACE",
       "OBJECT",
-      "PERSON"
+      "PERSON",
+      "VERB"
     ],
     "possible_questions": [
       "WHAT"
@@ -192,9 +193,20 @@
     "id": "commencer",
     "possible_questions": [
       "WHEN",
-      "WHERE",
-      "WHO"
+      "WHERE"
     ],
     "verb_type": "ACTION"
+  },
+  {
+    "id": "venir",
+    "possible_complements": [
+      "PLACE",
+      "ADVERB",
+      "VERB"
+    ],
+    "possible_questions": [
+      "WHEN"
+    ],
+    "verb_type": "DEPLACEMENT"
   }
 ]

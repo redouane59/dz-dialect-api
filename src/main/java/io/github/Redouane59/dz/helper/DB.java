@@ -1,16 +1,16 @@
 package io.github.Redouane59.dz.helper;
 
 import io.github.Redouane59.dz.model.Articles;
-import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
-import io.github.Redouane59.dz.model.verb.PersonalPronouns;
 import io.github.Redouane59.dz.model.verb.Verb;
+import io.github.Redouane59.dz.model.word.AbstractWord;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -18,13 +18,14 @@ import java.util.stream.Collectors;
 
 public class DB {
 
-  public final static Set<Verb>           VERBS             = new HashSet<>();
-  public final static Set<Adjective>      ADJECTIVES        = new HashSet<>();
-  public final static Set<Noun>           NOUNS             = new HashSet<>();
-  public final static Set<Adverb>         ADVERBS           = new HashSet<>();
-  public final static Articles            ARTICLES          = new Articles("src/main/resources/other/articles.json");
-  public final static PersonalPronouns    PERSONAL_PRONOUNS = new PersonalPronouns("src/main/resources/other/personal_pronounsV2.json");
-  public final static Set<SentenceSchema> SENTENCE_SCHEMAS  = new HashSet<>();
+  public final static Set<Verb>           VERBS                = new HashSet<>();
+  public final static Set<Adjective>      ADJECTIVES           = new HashSet<>();
+  public final static Set<Noun>           NOUNS                = new HashSet<>();
+  public final static Set<AbstractWord>   ADVERBS              = new HashSet<>();
+  public final static Articles            ARTICLES             = new Articles("src/main/resources/other/articles.json");
+  public final static Set<AbstractWord>   PERSONAL_PRONOUNS_V3 = new HashSet<>();
+  public final static Set<SentenceSchema> SENTENCE_SCHEMAS     = new HashSet<>();
+  public final static Set<AbstractWord>   QUESTIONS            = new HashSet<>();
 
   static {
     // verb configurations
@@ -34,6 +35,7 @@ public class DB {
           Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/verbs/.verb_config.json"), Verb[].class);
     } catch (Exception e) {
       System.err.println("could not load verb configurations " + e.getMessage());
+      e.printStackTrace();
     }
     // verb translations
     Set<String>
@@ -92,12 +94,12 @@ public class DB {
         new HashSet<>(ResourceList.getResources(Pattern.compile(".*adv.*json")));
     for (String fileName : files) {
       try {
-        ADVERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), Adverb.class));
+        ADVERBS.add(Config.OBJECT_MAPPER.readValue(new File(fileName), AbstractWord.class));
       } catch (IOException e) {
         System.err.println("could not load file " + fileName);
       }
     }
-    System.out.println(ADVERBS.size() + " verbs loaded");
+    System.out.println(ADVERBS.size() + " adverbs loaded");
   }
 
   static {
@@ -110,6 +112,25 @@ public class DB {
       }
     }
     System.out.println(SENTENCE_SCHEMAS.size() + " sentences builders loaded");
+  }
+
+  static {
+    try {
+      QUESTIONS.addAll(List.of(Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/other/questions.json"), AbstractWord[].class)));
+    } catch (IOException e) {
+      System.err.println("could not load file ");
+    }
+    System.out.println(QUESTIONS.size() + " questions loaded");
+  }
+
+  static {
+    try {
+      PERSONAL_PRONOUNS_V3.addAll(List.of(Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/other/personal_pronouns.json"),
+                                                                         AbstractWord[].class)));
+    } catch (IOException e) {
+      System.err.println("could not load file ");
+    }
+    System.out.println(QUESTIONS.size() + " personal pronouns loaded");
   }
 
 }

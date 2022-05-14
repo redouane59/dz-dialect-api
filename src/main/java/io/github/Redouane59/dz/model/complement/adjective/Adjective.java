@@ -7,7 +7,7 @@ import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import io.github.Redouane59.dz.model.word.PossessiveWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
@@ -56,7 +56,7 @@ public class Adjective extends AbstractWord {
           dzValueAr = values.get(dzValueArIndex);
         }
 
-        PossessiveWord adjective = new PossessiveWord();
+        Conjugation adjective = new Conjugation();
         adjective.setSingular(singular);
         adjective.setGender(gender);
         adjective.setTranslations(Set.of(new Translation(Lang.FR, frValue),

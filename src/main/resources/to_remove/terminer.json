@@ -1,0 +1,292 @@
+{
+  "id": "terminer",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termines"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkemel"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "terminez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkemlou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termine"
+        },
+        {
+          "lang": "DZ",
+          "value": "ikemel"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termine"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkemel"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termines"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkemli"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termine"
+        },
+        {
+          "lang": "DZ",
+          "value": "nkemlou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "terminent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ikemlou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "termine"
+        },
+        {
+          "lang": "DZ",
+          "value": "nkemel"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "terminent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ikemlou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as terminé"
+},
+{
+"lang": "DZ",
+"value": "kemelti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a terminé"
+},
+{
+"lang": "DZ",
+"value": "kemlet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a terminé"
+},
+{
+"lang": "DZ",
+"value": "kemel"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a terminé"
+},
+{
+"lang": "DZ",
+"value": "kemelna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont terminé"
+},
+{
+"lang": "DZ",
+"value": "kemlou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as terminé"
+},
+{
+"lang": "DZ",
+"value": "kemelt"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez terminé"
+},
+{
+"lang": "DZ",
+"value": "kemeltou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai terminé"
+},
+{
+"lang": "DZ",
+"value": "kemelt"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont terminé"
+},
+{
+"lang": "DZ",
+"value": "kemlou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHEN",
+"WHO",
+"WITH_WHO"
+],
+"possible_complements": [],
+"verb_type": "ACTION",
+"direct_complement": true,
+"object_only": true
+}

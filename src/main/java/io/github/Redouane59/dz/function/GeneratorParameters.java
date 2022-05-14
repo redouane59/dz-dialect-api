@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
@@ -31,7 +30,7 @@ public class GeneratorParameters {
   @Builder.Default
   private Set<String>   adjectives          = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>   adverbs             = DB.ADVERBS.stream().map(Adverb::getId).collect(Collectors.toSet());
+  private Set<String>   adverbs             = DB.ADVERBS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
   private Set<WordType> wordTypes           = Set.of(WordType.values());
@@ -39,7 +38,7 @@ public class GeneratorParameters {
   @JsonIgnore
   private int           count               = 1;
   @Builder.Default
-  @JsonProperty("sentence_schemas")
+  @JsonProperty("schemas")
   private Set<String>   sentenceSchemas     = DB.SENTENCE_SCHEMAS.stream().map(SentenceSchema::getId).collect(Collectors.toSet());
   @Builder.Default
   private boolean       possibleAffirmation = true;
@@ -63,7 +62,7 @@ public class GeneratorParameters {
   }
 
   @JsonIgnore
-  public Set<Adverb> getAdverbsFromIds() {
+  public Set<AbstractWord> getAdverbsFromIds() {
     return DB.ADVERBS.stream().filter(o -> adverbs.contains(o.getId())).collect(Collectors.toSet());
   }
 

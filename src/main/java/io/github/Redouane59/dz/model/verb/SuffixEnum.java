@@ -19,6 +19,7 @@ import lombok.Setter;
 
 @Getter
 // @todo add moi/toi/lui/nous/vous/leur
+// @todo AbstractWord
 public enum SuffixEnum {
   I_D, // me
   YOU_S_D, // te

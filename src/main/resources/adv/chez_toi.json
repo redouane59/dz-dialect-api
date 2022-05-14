@@ -1,15 +1,19 @@
 {
   "id": "chez_toi",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez toi"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andek",
-      "ar_value": "عندك"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez toi"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andek",
+          "ar_value": "عندك"
+        }
+      ]
     }
   ]
 }

@@ -14,6 +14,7 @@ public class PossessiveWord extends GenderedWord {
 
   private Possession possession;
 
+  @Deprecated
   public PossessiveWord(GenderedWord genderedWord) {
     super(genderedWord.getGender(), genderedWord.isSingular());
     this.possession = Possession.OTHER;

@@ -1,0 +1,292 @@
+{
+  "id": "tenir",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tient"
+        },
+        {
+          "lang": "DZ",
+          "value": "nchedou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tiens"
+        },
+        {
+          "lang": "DZ",
+          "value": "tchedi"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tient"
+        },
+        {
+          "lang": "DZ",
+          "value": "tched"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tiens"
+        },
+        {
+          "lang": "DZ",
+          "value": "tched"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tiennent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ichedou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tient"
+        },
+        {
+          "lang": "DZ",
+          "value": "iched"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tiens"
+        },
+        {
+          "lang": "DZ",
+          "value": "nched"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tiennent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ichedou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tenez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tchedou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tenu"
+},
+{
+"lang": "DZ",
+"value": "chedet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont tenu"
+},
+{
+"lang": "DZ",
+"value": "chedou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai tenu"
+},
+{
+"lang": "DZ",
+"value": "chedit"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont tenu"
+},
+{
+"lang": "DZ",
+"value": "chedou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as tenu"
+},
+{
+"lang": "DZ",
+"value": "chedit"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tenu"
+},
+{
+"lang": "DZ",
+"value": "chedina"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as tenu"
+},
+{
+"lang": "DZ",
+"value": "chediti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tenu"
+},
+{
+"lang": "DZ",
+"value": "ched"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez tenu"
+},
+{
+"lang": "DZ",
+"value": "cheditou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHAT",
+"WHY"
+],
+"possible_complements": [
+"OBJECT"
+],
+"verb_type": "ACTION",
+"direct_complement": true
+}

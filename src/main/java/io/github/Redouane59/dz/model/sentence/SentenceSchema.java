@@ -6,6 +6,7 @@ import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,9 +19,9 @@ public class SentenceSchema {
 
   private String         id;
   @JsonProperty("fr_sequence")
-  private List<WordType> frSequence = new ArrayList<>();
+  private List<WordType> frSequence = new LinkedList<>();
   @JsonProperty("ar_sequence")
-  private List<WordType> arSequence = new ArrayList<>();
+  private List<WordType> arSequence = new LinkedList<>();
   private List<Tense>    tenses     = new ArrayList<>();
   @JsonProperty("subject_position")
   private int            subjectPosition;

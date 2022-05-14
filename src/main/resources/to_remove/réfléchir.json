@@ -1,0 +1,288 @@
+{
+  "id": "réfléchir",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchit"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkhamem"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchissent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ykhammou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchit"
+        },
+        {
+          "lang": "DZ",
+          "value": "ykhamem"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchissez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkhammou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchit"
+        },
+        {
+          "lang": "DZ",
+          "value": "nkhammou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchissent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ykhammou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchis"
+        },
+        {
+          "lang": "DZ",
+          "value": "nkhamem"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchis"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkhammi"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "réfléchis"
+        },
+        {
+          "lang": "DZ",
+          "value": "tkhamem"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamemt"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamem"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamemna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamemti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamemt"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khahmet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamemtou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont réfléchi"
+},
+{
+"lang": "DZ",
+"value": "khamou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHY"
+],
+"possible_complements": [],
+"verb_type": "ACTION"
+}

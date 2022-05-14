@@ -1,15 +1,19 @@
 {
   "id": "chez_elle",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez elle"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andha",
-      "ar_value": "عندها"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez elle"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andha",
+          "ar_value": "عندها"
+        }
+      ]
     }
   ]
 }

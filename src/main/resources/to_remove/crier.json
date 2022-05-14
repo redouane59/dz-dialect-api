@@ -1,0 +1,289 @@
+{
+  "id": "crier",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crient"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3aytou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3ayet"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "criez"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3aytou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3aytou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3ayet"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cries"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayet"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crient"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3aytou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cries"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayti"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayet"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a crié"
+},
+{
+"lang": "DZ",
+"value": "3aytet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez crié"
+},
+{
+"lang": "DZ",
+"value": "3ayettou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as crié"
+},
+{
+"lang": "DZ",
+"value": "3ayeti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont crié"
+},
+{
+"lang": "DZ",
+"value": "3aytou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont crié"
+},
+{
+"lang": "DZ",
+"value": "3aytou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as crié"
+},
+{
+"lang": "DZ",
+"value": "3ayet"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a crié"
+},
+{
+"lang": "DZ",
+"value": "3ayetna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a crié"
+},
+{
+"lang": "DZ",
+"value": "3ayet"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai crié"
+},
+{
+"lang": "DZ",
+"value": "3ayet"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHY"
+],
+"possible_complements": [],
+"verb_type": "ACTION",
+"semi_auxiliar": false
+}

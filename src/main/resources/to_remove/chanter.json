@@ -1,0 +1,301 @@
+{
+  "id": "chanter",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenit",
+          "ar_value": "غننيت"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenit",
+          "ar_value": "غننيت"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenaw",
+          "ar_value": "غناو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenina",
+          "ar_value": "غنينا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenaw",
+          "ar_value": "غناو"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghena",
+          "ar_value": "غنا"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "gheniti",
+          "ar_value": "غننيتي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenat",
+          "ar_value": "غنات"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez chanté"
+        },
+        {
+          "lang": "DZ",
+          "value": "ghenitou",
+          "ar_value": "غنيتو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    }
+  ],
+  "tense": "PAST"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chante"
+},
+{
+"lang": "DZ",
+"value": "ngheni",
+"ar_value": "نْغني"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chante"
+},
+{
+"lang": "DZ",
+"value": "ygheni",
+"ar_value": "إيغني"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chantez"
+},
+{
+"lang": "DZ",
+"value": "tghenou",
+"ar_value": "تغنو"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chantent"
+},
+{
+"lang": "DZ",
+"value": "yghenou",
+"ar_value": "إيغنو"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chante"
+},
+{
+"lang": "DZ",
+"value": "tgheni",
+"ar_value": "تْغني"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chantent"
+},
+{
+"lang": "DZ",
+"value": "yghenou",
+"ar_value": "إيغنو"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chante"
+},
+{
+"lang": "DZ",
+"value": "nghenou",
+"ar_value": "نْغنو"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chantes "
+},
+{
+"lang": "DZ",
+"value": "tgheni",
+"ar_value": "تْغني"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "chantes "
+},
+{
+"lang": "DZ",
+"value": "tgheni",
+"ar_value": "تْغني"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+}
+],
+"tense": "PRESENT"
+}
+]
+}

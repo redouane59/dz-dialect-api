@@ -1,0 +1,290 @@
+{
+  "id": "lire",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lit"
+        },
+        {
+          "lang": "DZ",
+          "value": "ye9ra"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lit"
+        },
+        {
+          "lang": "DZ",
+          "value": "ne9raw"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lis"
+        },
+        {
+          "lang": "DZ",
+          "value": "te9ra"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lis"
+        },
+        {
+          "lang": "DZ",
+          "value": "te9ray"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lisent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ye9raw"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lisent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ye9raw"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lis"
+        },
+        {
+          "lang": "DZ",
+          "value": "ne9ra"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lit"
+        },
+        {
+          "lang": "DZ",
+          "value": "te9ra"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "lisez"
+        },
+        {
+          "lang": "DZ",
+          "value": "te9raw"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as lu"
+},
+{
+"lang": "DZ",
+"value": "9riti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a lu"
+},
+{
+"lang": "DZ",
+"value": "9ra"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont lu"
+},
+{
+"lang": "DZ",
+"value": "9raw"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a lu"
+},
+{
+"lang": "DZ",
+"value": "9rina"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont lu"
+},
+{
+"lang": "DZ",
+"value": "9raw"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as lu"
+},
+{
+"lang": "DZ",
+"value": "9rit"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai lu"
+},
+{
+"lang": "DZ",
+"value": "9rit"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a lu"
+},
+{
+"lang": "DZ",
+"value": "9rat"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez lu"
+},
+{
+"lang": "DZ",
+"value": "9ritou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHAT",
+"WHY"
+],
+"possible_complements": [
+],
+"verb_type": "ACTION"
+}

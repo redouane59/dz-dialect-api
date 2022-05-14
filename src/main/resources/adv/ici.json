@@ -1,15 +1,19 @@
 {
   "id": "ici",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "ici"
-    },
-    {
-      "lang": "DZ",
-      "value": "hna",
-      "ar_value": "هْنا"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ici"
+        },
+        {
+          "lang": "DZ",
+          "value": "hna",
+          "ar_value": "هْنا"
+        }
+      ]
     }
   ]
 }

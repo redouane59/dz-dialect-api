@@ -1,0 +1,338 @@
+{
+  "id": "venir",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "arwa7ou",
+          "ar_value": "ارواحو"
+        },
+        {
+          "lang": "FR",
+          "value": "venez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "arwa7",
+          "ar_value": "ارواح"
+        },
+        {
+          "lang": "FR",
+          "value": "viens"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "arwa7i",
+          "ar_value": "ارواحي"
+        },
+        {
+          "lang": "FR",
+          "value": "viens"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    }
+  ],
+  "tense": "IMPERATIVE"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djet",
+"ar_value": "جات"
+},
+{
+"lang": "FR",
+"value": "est venue"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djaw",
+"ar_value": "جاو"
+},
+{
+"lang": "FR",
+"value": "sont venues"
+}
+],
+"gender": "X",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djina",
+"ar_value": "جينا"
+},
+{
+"lang": "FR",
+"value": "est venus"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djiti",
+"ar_value": "جيتي"
+},
+{
+"lang": "FR",
+"value": "es venue"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djaw",
+"ar_value": "جاو"
+},
+{
+"lang": "FR",
+"value": "sont venus"
+}
+],
+"gender": "X",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "dja",
+"ar_value": "جا"
+},
+{
+"lang": "FR",
+"value": "est venus"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djit",
+"ar_value": "جيت"
+},
+{
+"lang": "FR",
+"value": "suis venu"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djit",
+"ar_value": "جيت"
+},
+{
+"lang": "FR",
+"value": "es venu"
+}
+],
+"gender": "M",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "djitou",
+"ar_value": "جيتو"
+},
+{
+"lang": "FR",
+"value": "êtes venus"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+}
+],
+"tense": "PAST2"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "ndji",
+"ar_value": "نْجي"
+},
+{
+"lang": "FR",
+"value": "viens"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "ndjiou",
+"ar_value": "نْجيوْ"
+},
+{
+"lang": "FR",
+"value": "vient"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "ydjiou",
+"ar_value": "إيجيوْ"
+},
+{
+"lang": "FR",
+"value": "viennent"
+}
+],
+"gender": "X",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "tdji",
+"ar_value": "تْجي"
+},
+{
+"lang": "FR",
+"value": "viens"
+}
+],
+"gender": "M",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "ydji",
+"ar_value": "إيجي"
+},
+{
+"lang": "FR",
+"value": "vient"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "tdji",
+"ar_value": "تْجي"
+},
+{
+"lang": "FR",
+"value": "vient"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "tdji",
+"ar_value": "تْجي"
+},
+{
+"lang": "FR",
+"value": "vient"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "DZ",
+"value": "tdjiou",
+"ar_value": "تٍجيوْ"
+},
+{
+"lang": "FR",
+"value": "venez"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+}
+],
+"tense": "PRESENT"
+}
+]
+}

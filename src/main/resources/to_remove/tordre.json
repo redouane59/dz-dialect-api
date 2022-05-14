@@ -1,0 +1,289 @@
+{
+  "id": "tordre",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tordez"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awdjou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tordent"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3awdjou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tords"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3awedj"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tords"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awedj"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tordent"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3awdjou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tords"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awdji"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tord"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3awedj"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tord"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3awdjou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "tord"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awedj"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedjna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedjtou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont tordu"
+},
+{
+"lang": "DZ",
+"value": "3awdjou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedjt"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont tordu"
+},
+{
+"lang": "DZ",
+"value": "3awdjou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tordu"
+},
+{
+"lang": "DZ",
+"value": "3awdjet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedj"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedjt"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as tordu"
+},
+{
+"lang": "DZ",
+"value": "3awedjti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHY"
+],
+"possible_complements": [],
+"verb_type": "ACTION",
+"semi_auxiliar": false
+}

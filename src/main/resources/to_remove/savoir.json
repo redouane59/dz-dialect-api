@@ -1,0 +1,289 @@
+{
+  "id": "savoir",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "na3ref"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3ref"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savez"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3arfou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "ya3raf"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3raf"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "na3arfou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ya3arfou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3arfi"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ya3arfou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez su"
+},
+{
+"lang": "DZ",
+"value": "3raftou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont su"
+},
+{
+"lang": "DZ",
+"value": "3arfou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as su"
+},
+{
+"lang": "DZ",
+"value": "3refti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a su"
+},
+{
+"lang": "DZ",
+"value": "3ref"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a su"
+},
+{
+"lang": "DZ",
+"value": "3rafna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont su"
+},
+{
+"lang": "DZ",
+"value": "3arfou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a su"
+},
+{
+"lang": "DZ",
+"value": "3arfet"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as su"
+},
+{
+"lang": "DZ",
+"value": "3reft"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai su"
+},
+{
+"lang": "DZ",
+"value": "3reft"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHAT",
+"HOW"
+],
+"possible_complements": [],
+"verb_type": "ACTION"
+}

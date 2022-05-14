@@ -23,7 +23,7 @@ public class SentenceGeneratorAPI implements HttpFunction {
   private final String verbsArg       = "verbs";
   private final String adjectivesArg  = "adjectives";
   private final String nounsArg       = "nouns";
-  private final String typesArg       = "types";
+  private final String schemaArgs     = "schemas";
   private final String affirmationArg = "affirmation";
   private final String negationArg    = "negation";
 
@@ -56,8 +56,8 @@ public class SentenceGeneratorAPI implements HttpFunction {
         bodyArgs.setAdjectives(Arrays.stream(httpRequest.getFirstQueryParameter(adjectivesArg).get()
                                                         .split(",", -1)).collect(Collectors.toSet()));
       }
-      if (httpRequest.getFirstQueryParameter(typesArg).isPresent()) {
-        String types = httpRequest.getFirstQueryParameter(typesArg).get();
+      if (httpRequest.getFirstQueryParameter(schemaArgs).isPresent()) {
+        String types = httpRequest.getFirstQueryParameter(schemaArgs).get();
         if (!types.isEmpty()) {
           Set<String> sentenceTypes = Arrays.stream(types.split(",", -1)).collect(Collectors.toSet());
           bodyArgs.setSentenceSchemas(sentenceTypes);

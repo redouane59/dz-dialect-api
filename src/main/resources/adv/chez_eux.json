@@ -1,15 +1,19 @@
 {
   "id": "chez_eux",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez eux"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andhoum",
-      "ar_value": "عندهم"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez eux"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andhoum",
+          "ar_value": "عندهم"
+        }
+      ]
     }
   ]
 }

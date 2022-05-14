@@ -1,0 +1,293 @@
+{
+  "id": "soigner",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawitou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawina"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawit"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawit"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawa"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawaw"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawaw"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawiti"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a soigné"
+        },
+        {
+          "lang": "DZ",
+          "value": "dawat"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    }
+  ],
+  "tense": "PAST"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soignes"
+},
+{
+"lang": "DZ",
+"value": "dawi"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soignent"
+},
+{
+"lang": "DZ",
+"value": "ydawiw"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soignes"
+},
+{
+"lang": "DZ",
+"value": "dawi"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soigne"
+},
+{
+"lang": "DZ",
+"value": "ndawiw"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soigne"
+},
+{
+"lang": "DZ",
+"value": "tdawi"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soignent"
+},
+{
+"lang": "DZ",
+"value": "ydawiw"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soignez"
+},
+{
+"lang": "DZ",
+"value": "tdawiw"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soigne"
+},
+{
+"lang": "DZ",
+"value": "ndawi"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "soigne"
+},
+{
+"lang": "DZ",
+"value": "ydawi"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+}
+],
+"tense": "PRESENT"
+}
+],
+"possible_questions": [
+"WHO",
+"HOW"
+],
+"possible_complements": [
+"PERSON"
+],
+"verb_type": "ACTION",
+"semi_auxiliar": false,
+"direct_complement": true
+}

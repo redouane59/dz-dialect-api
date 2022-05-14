@@ -1,15 +1,19 @@
 {
   "id": "avec_lui",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec lui"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3ah",
-      "ar_value": "مْعاه"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec lui"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3ah",
+          "ar_value": "مْعاه"
+        }
+      ]
     }
   ]
 }

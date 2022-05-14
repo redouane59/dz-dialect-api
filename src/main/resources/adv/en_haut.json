@@ -1,15 +1,19 @@
 {
   "id": "en_haut",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "en haut"
-    },
-    {
-      "lang": "DZ",
-      "value": "el fou9",
-      "ar_value": "الفوق"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "en haut"
+        },
+        {
+          "lang": "DZ",
+          "value": "el fou9",
+          "ar_value": "الفوق"
+        }
+      ]
     }
   ]
 }

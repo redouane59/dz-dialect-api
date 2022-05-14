@@ -1,15 +1,19 @@
 {
   "id": "chez_redouane",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez Redouane"
-    },
-    {
-      "lang": "DZ",
-      "value": "3and Redouane",
-      "ar_value": "عند ردوان"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez Redouane"
+        },
+        {
+          "lang": "DZ",
+          "value": "3and Redouane",
+          "ar_value": "عند ردوان"
+        }
+      ]
     }
   ]
 }

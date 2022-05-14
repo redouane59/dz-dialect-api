@@ -1,5 +1,6 @@
 package io.github.Redouane59.dz.function;
 
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.google.cloud.functions.HttpFunction;
 import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
@@ -27,6 +28,7 @@ public class GetDatabaseElementsAPI implements HttpFunction {
     try {
       httpResponse.setContentType("application/json;charset=UTF-8");
       httpResponse.appendHeader("content-type", "application/json;charset=UTF-8");
+      Config.OBJECT_MAPPER.getFactory().configure(JsonGenerator.Feature.ESCAPE_NON_ASCII, true);
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(GeneratorParameters.builder().build()));
     } catch (Exception e) {
       e.printStackTrace();

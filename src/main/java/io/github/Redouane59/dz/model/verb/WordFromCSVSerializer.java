@@ -3,6 +3,7 @@ package io.github.Redouane59.dz.model.verb;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import io.github.Redouane59.dz.model.word.GenderedWord;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import io.github.Redouane59.dz.model.word.Word;
@@ -27,6 +28,9 @@ public class WordFromCSVSerializer extends StdSerializer<Word> {
       jsonGenerator.writeObjectField("possession", ((PossessiveWord) word).getPossession());
     }
     jsonGenerator.writeObjectField("singular", ((PossessiveWord) word).isSingular());
+    if (word instanceof Conjugation) {
+      jsonGenerator.writeObjectField("tense", ((Conjugation) word).getTense());
+    }
     jsonGenerator.writeEndObject();
   }
 }

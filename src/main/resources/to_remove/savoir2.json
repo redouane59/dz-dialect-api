@@ -1,0 +1,149 @@
+{
+  "id": "savoir2",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalek"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labali"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savent"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalhom"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savez"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalkom"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalha"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sais"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalek"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "savent"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalhom"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "sait"
+        },
+        {
+          "lang": "DZ",
+          "value": "3labalna"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+}
+],
+"possible_questions": [
+"WHAT",
+"HOW"
+],
+"possible_complements": [],
+"verb_type": "ACTION"
+}

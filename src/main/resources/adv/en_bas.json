@@ -1,15 +1,19 @@
 {
   "id": "en_bas",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "en bas"
-    },
-    {
-      "lang": "DZ",
-      "value": "el ta7t",
-      "ar_value": "التحت"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "en bas"
+        },
+        {
+          "lang": "DZ",
+          "value": "el ta7t",
+          "ar_value": "التحت"
+        }
+      ]
     }
   ]
 }

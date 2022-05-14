@@ -1,15 +1,19 @@
 {
   "id": "avec_toi",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec toi"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3ak",
-      "ar_value": "مْعاك"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec toi"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3ak",
+          "ar_value": "مْعاك"
+        }
+      ]
     }
   ]
 }

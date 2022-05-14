@@ -1,15 +1,19 @@
 {
   "id": "chez_vous",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez vous"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andkoum",
-      "ar_value": "عندكم"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez vous"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andkoum",
+          "ar_value": "عندكم"
+        }
+      ]
     }
   ]
 }

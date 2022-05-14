@@ -1,15 +1,19 @@
 {
   "id": "avec_vous",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec vous"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3akoum",
-      "ar_value": "مْعاكم"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec vous"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3akoum",
+          "ar_value": "مْعاكم"
+        }
+      ]
     }
   ]
 }

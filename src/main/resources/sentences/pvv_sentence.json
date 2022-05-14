@@ -1,0 +1,19 @@
+{
+  "id": "PVV",
+  "fr_sequence": [
+    "PRONOUN",
+    "VERB",
+    "VERB"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "VERB"
+  ],
+  "subject_position": 0,
+  "tenses": [
+    "PAST",
+    "PAST2",
+    "PRESENT",
+    "FUTURE"
+  ]
+}

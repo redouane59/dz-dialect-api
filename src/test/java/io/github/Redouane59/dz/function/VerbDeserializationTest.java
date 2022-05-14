@@ -25,7 +25,7 @@ public class VerbDeserializationTest {
     //  assertTrue(verb.getPossibleComplements().contains(NounType.PERSON));
 
     // conjugator
-    assertEquals(Tense.PAST, verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST).findFirst().get().getTense());
+    assertEquals(Tense.PAST, verb.getValues().stream().filter(o -> o.getTense() == Tense.PAST).findFirst().get().getTense());
 
     // conjugation
 /*    PossessiveWord conjugation1 = verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST)

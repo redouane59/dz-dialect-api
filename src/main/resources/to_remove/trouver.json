@@ -1,0 +1,292 @@
+{
+  "id": "trouver",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sabou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sebti"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sabet"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sebt"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sebt"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sab"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sebna"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sabou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez trouvé"
+        },
+        {
+          "lang": "DZ",
+          "value": "sebtou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    }
+  ],
+  "tense": "PAST"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouve"
+},
+{
+"lang": "DZ",
+"value": "yssib"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouvent"
+},
+{
+"lang": "DZ",
+"value": "yssibou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouves"
+},
+{
+"lang": "DZ",
+"value": "tssibi"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouve"
+},
+{
+"lang": "DZ",
+"value": "nssibou"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouve"
+},
+{
+"lang": "DZ",
+"value": "tssib"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouvez"
+},
+{
+"lang": "DZ",
+"value": "tssibou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouves"
+},
+{
+"lang": "DZ",
+"value": "tssib"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouve"
+},
+{
+"lang": "DZ",
+"value": "nssib"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "trouvent"
+},
+{
+"lang": "DZ",
+"value": "yssibou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+}
+],
+"tense": "PRESENT"
+}
+],
+"possible_questions": [
+"HOW",
+"WHERE",
+"WHO"
+],
+"possible_complements": [],
+"verb_type": "ACTION",
+"semi_auxiliar": false,
+"direct_complement": true
+}

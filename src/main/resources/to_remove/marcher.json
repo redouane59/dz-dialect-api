@@ -1,0 +1,291 @@
+{
+  "id": "marcher",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marche"
+        },
+        {
+          "lang": "DZ",
+          "value": "temchi"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marchent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yemchou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marche"
+        },
+        {
+          "lang": "DZ",
+          "value": "nemchi"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marchez"
+        },
+        {
+          "lang": "DZ",
+          "value": "temchou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marchent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yemchiw"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marches"
+        },
+        {
+          "lang": "DZ",
+          "value": "temchi"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marche"
+        },
+        {
+          "lang": "DZ",
+          "value": "yemchi"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marches"
+        },
+        {
+          "lang": "DZ",
+          "value": "temchi"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "marche"
+        },
+        {
+          "lang": "DZ",
+          "value": "nemchou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont marché"
+},
+{
+"lang": "DZ",
+"value": "mchaw"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez marché"
+},
+{
+"lang": "DZ",
+"value": "mchitou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as marché"
+},
+{
+"lang": "DZ",
+"value": "mchit"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a marché"
+},
+{
+"lang": "DZ",
+"value": "mcha"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont marché"
+},
+{
+"lang": "DZ",
+"value": "mchaw"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a marché"
+},
+{
+"lang": "DZ",
+"value": "mchina"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai marché"
+},
+{
+"lang": "DZ",
+"value": "mchit"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a marché"
+},
+{
+"lang": "DZ",
+"value": "mchat"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as marché"
+},
+{
+"lang": "DZ",
+"value": "mchiti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+}
+],
+"tense": "PAST"
+}
+],
+"possible_complements": [
+],
+"possible_questions": [
+"WHERE",
+"WHEN"
+],
+"verb_type": "ACTION"
+}
+

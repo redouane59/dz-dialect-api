@@ -1,15 +1,19 @@
 {
   "id": "a_lexterieur",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "à l'exterieur"
-    },
-    {
-      "lang": "DZ",
-      "value": "barra",
-      "ar_value": "بَرا"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "à l'exterieur"
+        },
+        {
+          "lang": "DZ",
+          "value": "barra",
+          "ar_value": "بَرا"
+        }
+      ]
     }
   ]
 }

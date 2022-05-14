@@ -10,21 +10,17 @@ import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.RootLang;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.adverb.Adverb;
 import io.github.Redouane59.dz.model.complement.adjective.Adjective;
 import io.github.Redouane59.dz.model.noun.Noun;
 import io.github.Redouane59.dz.model.noun.NounType;
-import io.github.Redouane59.dz.model.question.Question;
-import io.github.Redouane59.dz.model.verb.Conjugation;
-import io.github.Redouane59.dz.model.verb.PersonalPronouns;
-import io.github.Redouane59.dz.model.verb.PersonalPronouns.PersonalPronoun;
 import io.github.Redouane59.dz.model.verb.SuffixEnum;
 import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
+import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import io.github.Redouane59.dz.model.word.GenderedWord;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -48,17 +44,16 @@ public class SentenceBuilderHelper {
     return Optional.of(SuffixEnum.getRandomImperativeSuffix(isDirect, isObjectOnly));
   }
 
-  public Question getQuestion() {
-    return Arrays.stream(Question.values()).skip(RANDOM.nextInt(Question.values().length)).findFirst().get();
+  public AbstractWord getQuestion() {
+    return DB.QUESTIONS.stream().skip(RANDOM.nextInt(DB.QUESTIONS.size())).findFirst().get();
   }
 
-  public Adverb getAdverb() {
+  public AbstractWord getAdverb() {
     return bodyArgs.getAdverbsFromIds().stream().skip(RANDOM.nextInt(bodyArgs.getAdverbsFromIds().size())).findFirst().get();
   }
 
-  public PossessiveWord getPronoun() {
-    DB.PERSONAL_PRONOUNS.hashCode();
-    return PersonalPronouns.getRandomPersonalPronoun();
+  public AbstractWord getRandomPronoun() {
+    return DB.PERSONAL_PRONOUNS_V3.stream().skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS_V3.size())).findFirst().get();
   }
 
   public Optional<Article> getArticle(PossessiveWord noun, Lang lang) {
@@ -70,7 +65,7 @@ public class SentenceBuilderHelper {
     return article;
   }
 
-  public Optional<Verb> getAbstractVerb(Question question) {
+  public Optional<Verb> getAbstractVerb(AbstractWord question) {
     Set<Verb> verbs = bodyArgs.getVerbsFromIds();
 
     // arab translation
@@ -80,7 +75,7 @@ public class SentenceBuilderHelper {
 */
     if (schema.getTenses() != null) {
       verbs = verbs.stream()
-                   .filter(v -> v.getConjugators().stream().anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
+                   .filter(v -> v.getValues().stream().anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
               Collectors.toSet());
       if (verbs.size() == 0) {
         System.out.println("no verb found based on tenses");
@@ -93,7 +88,7 @@ public class SentenceBuilderHelper {
       }
     }
     if (schema.getFrSequence().contains(WordType.QUESTION)) {
-      verbs = verbs.stream().filter(v -> v.getPossibleQuestions().contains(question)).collect(Collectors.toSet());
+      verbs = verbs.stream().filter(v -> v.getPossibleQuestionIds().contains(question.getId())).collect(Collectors.toSet());
       if (verbs.size() == 0) {
         System.out.println("no verb found based on question");
       }
@@ -123,10 +118,11 @@ public class SentenceBuilderHelper {
     return verbs.stream().skip(RANDOM.nextInt(verbs.size())).findFirst();
   }
 
-  public PossessiveWord getVerbConjugation(Verb verb, PossessiveWord subject, Tense tense, Lang lang) {
+  public Conjugation getVerbConjugation(Verb verb, PossessiveWord subject, Tense tense, Lang lang) {
 
     if (subject == null) {
-      subject = PersonalPronouns.getRandomPersonalPronoun(true); // @todo KO
+      subject =
+          getRandomPronoun().getConjugationByGenderSingularAndPossession(subject.getGender(), subject.isSingular(), Possession.OTHER, lang).get();
       tense   = Tense.IMPERATIVE;
     }
     Optional<Conjugation>
@@ -142,24 +138,17 @@ public class SentenceBuilderHelper {
     return conjugation.get();
   }
 
-  public PossessiveWord getImperativeVerbConjugation(Verb verb, PersonalPronoun subject, Lang lang, boolean isNegative) {
+  public Optional<Conjugation> getImperativeVerbConjugation(Verb verb, Conjugation subject, Lang lang, boolean isNegative) {
     Tense tense;
     if (isNegative && lang.getRootLang() == RootLang.AR) {
       tense = Tense.PRESENT; // to manage exception in arabic
     } else {
       tense = Tense.IMPERATIVE;
     }
-    Optional<Conjugation>
-        conjugation =
-        verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
-                                                              subject.isSingular(),
-                                                              subject.getPossession(),
-                                                              tense);
-    if (conjugation.isEmpty()) {
-      System.err.println("no conjugation found for");
-      return null;
-    }
-    return conjugation.get();
+    return verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
+                                                                 subject.isSingular(),
+                                                                 subject.getPossession(),
+                                                                 tense);
   }
 
   public Optional<Noun> getAbstractNoun(Verb abstractVerb) {
@@ -180,7 +169,7 @@ public class SentenceBuilderHelper {
     return nouns.stream().skip(RANDOM.nextInt(nouns.size())).findFirst();
   }
 
-  public Optional<GenderedWord> getAdjective(Adjective adjective, PossessiveWord subject, Lang lang) {
+  public Optional<? extends GenderedWord> getAdjective(Adjective adjective, PossessiveWord subject, Lang lang) {
     if (subject == null) {
       System.err.println("null subject");
       return Optional.empty();
@@ -188,11 +177,11 @@ public class SentenceBuilderHelper {
     return adjective.getWordByGenderAndSingular(subject.getGender(lang), lang, subject.isSingular());
   }
 
-  public Optional<Adjective> getAbstractAdjective(PossessiveWord subject, Noun nounSubject) {
+  public Optional<Adjective> getAbstractAdjective(AbstractWord subject, Noun nounSubject) {
     Set<NounType> nounTypes = new HashSet<>();
-    if (subject instanceof PersonalPronoun) {
+    if (subject.getWordType() == WordType.PRONOUN) {
       nounTypes.add(NounType.PERSON);
-    } else {
+    } else if (nounSubject != null) {
       nounTypes.addAll(nounSubject.getNounTypes());
     }
     Set<Adjective> adjectives = bodyArgs.getAdjectivesFromIds();
@@ -222,5 +211,6 @@ public class SentenceBuilderHelper {
     }
     return adjectiveOpt;
   }
+
 
 }

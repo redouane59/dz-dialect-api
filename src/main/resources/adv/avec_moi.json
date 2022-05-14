@@ -1,15 +1,19 @@
 {
   "id": "avec_moi",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec moi"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3aya",
-      "ar_value": "مْعايا"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec moi"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3aya",
+          "ar_value": "مْعايا"
+        }
+      ]
     }
   ]
 }

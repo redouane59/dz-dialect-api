@@ -1,0 +1,290 @@
+{
+  "id": "parler",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parlent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yahadrou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont parlé"
+        },
+        {
+          "lang": "DZ",
+          "value": "hadrou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parles"
+        },
+        {
+          "lang": "DZ",
+          "value": "tahadri"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parles"
+        },
+        {
+          "lang": "DZ",
+          "value": "tahdar"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont parlé"
+        },
+        {
+          "lang": "DZ",
+          "value": "hadrou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parle"
+        },
+        {
+          "lang": "DZ",
+          "value": "nahdar"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parle"
+        },
+        {
+          "lang": "DZ",
+          "value": "tahdar"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parlez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tahadrou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parlent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yahadrou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parle"
+        },
+        {
+          "lang": "DZ",
+          "value": "yahdar"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "parle"
+        },
+        {
+          "lang": "DZ",
+          "value": "nahadrou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a parlé"
+},
+{
+"lang": "DZ",
+"value": "hdar"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as parlé"
+},
+{
+"lang": "DZ",
+"value": "hdarti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai parlé"
+},
+{
+"lang": "DZ",
+"value": "hdart"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez parlé"
+},
+{
+"lang": "DZ",
+"value": "hdartou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as parlé"
+},
+{
+"lang": "DZ",
+"value": "hdart"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a parlé"
+},
+{
+"lang": "DZ",
+"value": "hadrat"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a parlé"
+},
+{
+"lang": "DZ",
+"value": "hdarna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WITH_WHO"
+],
+"possible_complements": [
+],
+"verb_type": "ACTION",
+"indirect_complement": true
+}

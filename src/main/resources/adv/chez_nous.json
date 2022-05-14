@@ -1,15 +1,19 @@
 {
   "id": "chez_nous",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez nous"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andna",
-      "ar_value": "عندها"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez nous"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andna",
+          "ar_value": "عندها"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,290 @@
+{
+  "id": "serrer",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serrez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tziyrou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serre"
+        },
+        {
+          "lang": "DZ",
+          "value": "tziyer"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serres"
+        },
+        {
+          "lang": "DZ",
+          "value": "tziyri"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serre"
+        },
+        {
+          "lang": "DZ",
+          "value": "nziyrou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serres"
+        },
+        {
+          "lang": "DZ",
+          "value": "tziyer"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serre"
+        },
+        {
+          "lang": "DZ",
+          "value": "iziyer"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serre"
+        },
+        {
+          "lang": "DZ",
+          "value": "nziyer"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serrent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yziyrou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "serrent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yziyrou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as serré"
+},
+{
+"lang": "DZ",
+"value": "ziyert"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a serré"
+},
+{
+"lang": "DZ",
+"value": "ziyer"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a serré"
+},
+{
+"lang": "DZ",
+"value": "ziyerna"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as serré"
+},
+{
+"lang": "DZ",
+"value": "ziyerti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai serré"
+},
+{
+"lang": "DZ",
+"value": "ziyert"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont serré"
+},
+{
+"lang": "DZ",
+"value": "ziyrou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez serré"
+},
+{
+"lang": "DZ",
+"value": "ziyertou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a serré"
+},
+{
+"lang": "DZ",
+"value": "ziyret"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont serré"
+},
+{
+"lang": "DZ",
+"value": "ziyrou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"HOW",
+"WHY"
+],
+"possible_complements": [],
+"verb_type": "ACTION",
+"semi_auxiliar": false
+}

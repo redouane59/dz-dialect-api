@@ -19,7 +19,7 @@ public class VerbFromCSVSerializer extends StdSerializer<Verb> {
   public void serialize(final Verb verb, final JsonGenerator jsonGenerator, final SerializerProvider serializerProvider) throws IOException {
     jsonGenerator.writeStartObject();
     jsonGenerator.writeStringField("id", verb.getId());
-    jsonGenerator.writeObjectField("conjugators", verb.getConjugators()); // @todo level of word
+    jsonGenerator.writeObjectField("values", verb.getValues());
     jsonGenerator.writeEndObject();
   }
 }

@@ -1,0 +1,292 @@
+{
+  "id": "prendre en photo",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewerti"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewrou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewerna"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewertou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewert"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewret"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewrou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewer"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as pris en photo"
+        },
+        {
+          "lang": "DZ",
+          "value": "ssewert"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    }
+  ],
+  "tense": "PAST"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prends en photo"
+},
+{
+"lang": "DZ",
+"value": "nssewer"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prenent en photo"
+},
+{
+"lang": "DZ",
+"value": "issewrou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prenent en photo"
+},
+{
+"lang": "DZ",
+"value": "issewrou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prend en photo"
+},
+{
+"lang": "DZ",
+"value": "tssewer"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prend en photo"
+},
+{
+"lang": "DZ",
+"value": "isewer"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prends en photo"
+},
+{
+"lang": "DZ",
+"value": "tssewer"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prends en photo"
+},
+{
+"lang": "DZ",
+"value": "tssewri"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prenez en photo"
+},
+{
+"lang": "DZ",
+"value": "tssewrou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "prend en photo"
+},
+{
+"lang": "DZ",
+"value": "nssewrou"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+}
+],
+"tense": "PRESENT"
+}
+],
+"possible_questions": [
+"WHO",
+"WHY"
+],
+"possible_complements": [
+"PERSON"
+],
+"verb_type": "ACTION",
+"direct_complement": true
+}

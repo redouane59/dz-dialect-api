@@ -1,0 +1,293 @@
+{
+  "id": "prendre",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prends"
+        },
+        {
+          "lang": "DZ",
+          "value": "nedi"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prends"
+        },
+        {
+          "lang": "DZ",
+          "value": "tedi"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prennent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yedou"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prennent"
+        },
+        {
+          "lang": "DZ",
+          "value": "yedou"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prend"
+        },
+        {
+          "lang": "DZ",
+          "value": "tedi"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prend"
+        },
+        {
+          "lang": "DZ",
+          "value": "yedi"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prend"
+        },
+        {
+          "lang": "DZ",
+          "value": "nedou"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prends"
+        },
+        {
+          "lang": "DZ",
+          "value": "tedi"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "prenez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tedou"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont pris"
+},
+{
+"lang": "DZ",
+"value": "daw"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont pris"
+},
+{
+"lang": "DZ",
+"value": "daw"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as pris"
+},
+{
+"lang": "DZ",
+"value": "dit"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as pris"
+},
+{
+"lang": "DZ",
+"value": "diti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai pris"
+},
+{
+"lang": "DZ",
+"value": "dit"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a pris"
+},
+{
+"lang": "DZ",
+"value": "da"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a pris"
+},
+{
+"lang": "DZ",
+"value": "dat"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez pris"
+},
+{
+"lang": "DZ",
+"value": "ditou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a pris"
+},
+{
+"lang": "DZ",
+"value": "dina"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHAT"
+],
+"possible_complements": [
+"OBJECT",
+"FOOD"
+],
+"verb_type": "ACTION",
+"indirect_complement": true,
+"object_only": true
+}

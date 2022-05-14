@@ -1,127 +1,172 @@
 [
   {
     "id": "WHO",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "qui"
-      },
-      {
-        "lang": "DZ",
-        "value": "chkoun",
-        "ar_value": "شكون"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "qui"
+          },
+          {
+            "lang": "DZ",
+            "value": "chkoun",
+            "ar_value": "شكون"
+          }
+        ]
       }
     ]
   },
   {
     "id": "WHEN",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "quand est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "wo9tach",
-        "ar_value": "وقتاش"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "quand est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "wo9tach",
+            "ar_value": "وقتاش"
+          }
+        ]
       }
     ]
   },
   {
     "id": "WHERE",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "où est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "win",
-        "ar_value": "وين"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "où est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "win",
+            "ar_value": "وين"
+          }
+        ]
       }
     ]
   },
   {
     "id": "HOW",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "comment est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "kiffech",
-        "ar_value": "كيفاش"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "comment est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "kiffech",
+            "ar_value": "كيفاش"
+          }
+        ]
       }
     ]
   },
   {
     "id": "WHY",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "pourquoi est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "wa3lech",
-        "ar_value": "وعلاش"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "pourquoi est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "wa3lech",
+            "ar_value": "وعلاش"
+          }
+        ]
       }
     ]
   },
   {
     "id": "HOW_MANY",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "combien est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "ch7al",
-        "ar_value": "شحال"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "combien est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "ch7al",
+            "ar_value": "شحال"
+          }
+        ]
       }
     ]
   },
   {
     "id": "WHAT",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "qu'est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "wesh",
-        "ar_value": "واش"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "qu'est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "wesh",
+            "ar_value": "واش"
+          }
+        ]
       }
     ]
   },
   {
     "id": "WITH_WHO",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "avec qui est-ce que"
-      },
-      {
-        "lang": "DZ",
-        "value": "m3a men",
-        "ar_value": "معا من"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "avec qui est-ce que"
+          },
+          {
+            "lang": "DZ",
+            "value": "m3a men",
+            "ar_value": "معا من"
+          }
+        ]
       }
     ]
   },
   {
     "id": "FROM_WHERE",
-    "translations": [
+    "word_type": "QUESTION",
+    "values": [
       {
-        "lang": "FR",
-        "value": "d'où"
-      },
-      {
-        "lang": "DZ",
-        "value": "m'win",
-        "ar_value": "وينْ"
+        "translations": [
+          {
+            "lang": "FR",
+            "value": "d'où"
+          },
+          {
+            "lang": "DZ",
+            "value": "m'win",
+            "ar_value": "وينْ"
+          }
+        ]
       }
     ]
   }

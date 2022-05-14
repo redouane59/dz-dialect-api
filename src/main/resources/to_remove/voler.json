@@ -1,0 +1,296 @@
+{
+  "id": "voler",
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "voles"
+        },
+        {
+          "lang": "DZ",
+          "value": "tesser9i"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "volez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tesser9o"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "voles"
+        },
+        {
+          "lang": "DZ",
+          "value": "tessre9"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vole"
+        },
+        {
+          "lang": "DZ",
+          "value": "nesser9o"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "volent"
+        },
+        {
+          "lang": "DZ",
+          "value": "isser9o"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vole"
+        },
+        {
+          "lang": "DZ",
+          "value": "nessre9"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vole"
+        },
+        {
+          "lang": "DZ",
+          "value": "yessre9"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "volent"
+        },
+        {
+          "lang": "DZ",
+          "value": "isser9o"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": false
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vole"
+        },
+        {
+          "lang": "DZ",
+          "value": "tessre9"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true
+    }
+  ],
+  "tense": "PRESENT"
+},
+{
+"values": [
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a volé"
+},
+{
+"lang": "DZ",
+"value": "sre9"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as volé"
+},
+{
+"lang": "DZ",
+"value": "sre9ti"
+}
+],
+"gender": "F",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "avez volé"
+},
+{
+"lang": "DZ",
+"value": "sre9tou"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a volé"
+},
+{
+"lang": "DZ",
+"value": "ser9et"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "a volé"
+},
+{
+"lang": "DZ",
+"value": "sre8na"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "as volé"
+},
+{
+"lang": "DZ",
+"value": "sre9t"
+}
+],
+"gender": "X",
+"possession": "YOU",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont volé"
+},
+{
+"lang": "DZ",
+"value": "ser9ou"
+}
+],
+"gender": "M",
+"possession": "OTHER",
+"singular": false
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ai volé"
+},
+{
+"lang": "DZ",
+"value": "sre9t"
+}
+],
+"gender": "X",
+"possession": "I",
+"singular": true
+},
+{
+"translations": [
+{
+"lang": "FR",
+"value": "ont volé"
+},
+{
+"lang": "DZ",
+"value": "ser9ou"
+}
+],
+"gender": "F",
+"possession": "OTHER",
+"singular": false
+}
+],
+"tense": "PAST"
+}
+],
+"possible_questions": [
+"WHY",
+"WHAT"
+],
+"possible_complements": [
+"OBJECT",
+"FOOD"
+],
+"verb_type": "ACTION",
+"semi_auxiliar": false,
+"indirect_complement": true,
+"direct_complement": true,
+"object_only": true
+}

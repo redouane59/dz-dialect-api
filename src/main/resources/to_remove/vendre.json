@@ -1,0 +1,261 @@
+{
+  "id": "vendre",
+  "tense": "PAST",
+  "values": [
+    {
+      "possession": "I",
+      "gender": "X",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3t"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3t"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3ti"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "baa3"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "ba3et"
+        }
+      ]
+    },
+    {
+      "possession": "I",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3na"
+        }
+      ]
+    },
+    {
+      "possession": "YOU",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3tou"
+        }
+      ]
+    },
+    {
+      "possession": "OTHER",
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont vendu"
+        },
+        {
+          "lang": "DZ",
+          "value": "baa3ou"
+        }
+      ]
+    }
+  ]
+},
+{
+"tense": "PRESENT",
+"values": [
+{
+"possession": "I",
+"gender": "X",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "vends"
+},
+{
+"lang": "DZ",
+"value": "nbe3"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "M",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "vends"
+},
+{
+"lang": "DZ",
+"value": "tbe3"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "F",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "vends"
+},
+{
+"lang": "DZ",
+"value": "tbe3i"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "M",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "vend"
+},
+{
+"lang": "DZ",
+"value": "ybe3"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "F",
+"singular": true,
+"translations": [
+{
+"lang": "FR",
+"value": "vend"
+},
+{
+"lang": "DZ",
+"value": "tbe3i"
+}
+]
+},
+{
+"possession": "I",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "vend"
+},
+{
+"lang": "DZ",
+"value": "nbe3ou"
+}
+]
+},
+{
+"possession": "YOU",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "vendez"
+},
+{
+"lang": "DZ",
+"value": "tbe3ou"
+}
+]
+},
+{
+"possession": "OTHER",
+"gender": "X",
+"singular": false,
+"translations": [
+{
+"lang": "FR",
+"value": "vendent"
+},
+{
+"lang": "DZ",
+"value": "ybe3ou"
+}
+]
+}
+]
+}
+],
+"possible_complements": [
+],
+"possible_questions": [
+"WHAT"
+],
+"verb_type": "ACTION",
+"indirect_complement": true,
+"object_only": true
+}

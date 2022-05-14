@@ -1,15 +1,19 @@
 {
   "id": "avec_eux",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "avec eux"
-    },
-    {
-      "lang": "DZ",
-      "value": "m3ahoum",
-      "ar_value": "مْعاهُم"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avec eux"
+        },
+        {
+          "lang": "DZ",
+          "value": "m3ahoum",
+          "ar_value": "مْعاهُم"
+        }
+      ]
     }
   ]
 }

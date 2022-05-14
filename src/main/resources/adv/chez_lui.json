@@ -1,15 +1,19 @@
 {
   "id": "chez_lui",
   "word_type": "ADVERB",
-  "translations": [
+  "values": [
     {
-      "lang": "FR",
-      "value": "chez lui"
-    },
-    {
-      "lang": "DZ",
-      "value": "3andou",
-      "ar_value": "عندو"
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "chez lui"
+        },
+        {
+          "lang": "DZ",
+          "value": "3andou",
+          "ar_value": "عندو"
+        }
+      ]
     }
   ]
 }
