@@ -4,17 +4,14 @@ import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.DB;
-import io.github.Redouane59.dz.model.Articles;
-import io.github.Redouane59.dz.model.Articles.Article;
+import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.RootLang;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.noun.NounType;
-import io.github.Redouane59.dz.model.verb.SuffixEnum;
-import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
+import io.github.Redouane59.dz.model.complement.Adjective;
+import io.github.Redouane59.dz.model.complement.Noun;
+import io.github.Redouane59.dz.model.complement.NounType;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -22,6 +19,7 @@ import io.github.Redouane59.dz.model.word.Conjugation;
 import io.github.Redouane59.dz.model.word.GenderedWord;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -33,15 +31,58 @@ public class SentenceBuilderHelper {
   GeneratorParameters bodyArgs;
   SentenceSchema      schema;
 
-  public Optional<Suffix> getSuffix(Possession possession, boolean isObjectOnly) {
-    boolean isDirect;
-    isDirect = !schema.getFrSequence().contains(WordType.NOUN);
-    return Optional.of(SuffixEnum.getRandomSuffix(possession, isDirect, isObjectOnly));
+  public static Conjugation getRandomSuffix(final Possession other, boolean isDirect, boolean objectOnly) {
+    Gender       randomGender     = Gender.getRandomGender();
+    boolean      randomSingular   = RANDOM.nextBoolean();
+    Possession   randomPossession = Possession.getRandomPosession(other, objectOnly);
+    AbstractWord baseSuffix;
+    if (isDirect) {
+      baseSuffix = DB.DIRECT_SUFFIXES;
+    } else {
+      baseSuffix = DB.INDIRECT_SUFFIXES;
+    }
+    return baseSuffix.getValues().stream()
+                     .filter(s -> s.isSingular() == randomSingular)
+                     .filter(s -> s.getPossession() == randomPossession)
+                     .filter(s -> s.getGender() == randomGender || s.getGender() == Gender.X || randomGender == Gender.X)
+                     .findFirst().get();
   }
 
-  public Optional<Suffix> getImperativeSuffix(boolean isObjectOnly) {
+  public static Conjugation getRandomImperativeSuffix(boolean isDirect, boolean objectOnly) {
+    Gender     randomGender   = Gender.getRandomGender();
+    boolean    randomSingular = RANDOM.nextBoolean();
+    Possession randomPossession;
+    if (!objectOnly) {
+      List<Possession> matchingPossessions = List.of(Possession.I, Possession.OTHER);
+      randomPossession = matchingPossessions.get(RANDOM.nextInt(2));
+    } else {
+      randomPossession = Possession.OTHER;
+    }
+
+    AbstractWord baseSuffix;
+
+    if (isDirect) {
+      baseSuffix = DB.DIRECT_SUFFIXES;
+    } else {
+      baseSuffix = DB.INDIRECT_SUFFIXES;
+    }
+
+    return baseSuffix.getValues().stream()
+                     .filter(s -> s.isSingular() == randomSingular)
+                     .filter(s -> s.getPossession() == randomPossession)
+                     .filter(s -> s.getGender() == randomGender || s.getGender() == Gender.X || randomGender == Gender.X)
+                     .findFirst().get();
+  }
+
+  public Optional<Conjugation> getSuffix(Possession possession, boolean isObjectOnly) {
+    boolean isDirect;
+    isDirect = !schema.getFrSequence().contains(WordType.NOUN);
+    return Optional.of(getRandomSuffix(possession, isDirect, isObjectOnly));
+  }
+
+  public Optional<Conjugation> getImperativeSuffix(boolean isObjectOnly) {
     boolean isDirect = !schema.getFrSequence().contains(WordType.NOUN);
-    return Optional.of(SuffixEnum.getRandomImperativeSuffix(isDirect, isObjectOnly));
+    return Optional.of(getRandomImperativeSuffix(isDirect, isObjectOnly));
   }
 
   public AbstractWord getQuestion() {
@@ -53,11 +94,11 @@ public class SentenceBuilderHelper {
   }
 
   public AbstractWord getRandomPronoun() {
-    return DB.PERSONAL_PRONOUNS_V3.stream().skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS_V3.size())).findFirst().get();
+    return DB.PERSONAL_PRONOUNS.stream().skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS.size())).findFirst().get();
   }
 
-  public Optional<Article> getArticle(PossessiveWord noun, Lang lang) {
-    Optional<Article> article = Articles.getArticleByCriterion(noun.getGender(lang), noun.getPossession(), noun.isSingular(), true);
+  public Optional<Conjugation> getArticle(PossessiveWord noun, Lang lang) {
+    Optional<Conjugation> article = AbstractWord.getDefinedArticleByCriterion(noun.getGender(lang), noun.isSingular());
     if (article.isEmpty()) {
       System.err.println("empty article");
       return Optional.empty();

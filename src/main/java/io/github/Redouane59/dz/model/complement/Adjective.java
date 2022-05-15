@@ -1,11 +1,10 @@
-package io.github.Redouane59.dz.model.complement.adjective;
+package io.github.Redouane59.dz.model.complement;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.helper.FileHelper;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
-import io.github.Redouane59.dz.model.noun.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Conjugation;
 import java.util.HashSet;

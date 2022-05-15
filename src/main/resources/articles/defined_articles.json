@@ -1,0 +1,50 @@
+{
+  "id": "DEFINED_ARTICLES",
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "le"
+        },
+        {
+          "lang": "DZ",
+          "value": "el",
+          "ar_value": "ال"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "la"
+        },
+        {
+          "lang": "DZ",
+          "value": "el",
+          "ar_value": "ال"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "les"
+        },
+        {
+          "lang": "DZ",
+          "value": "",
+          "ar_value": ""
+        }
+      ]
+    }
+  ]
+}

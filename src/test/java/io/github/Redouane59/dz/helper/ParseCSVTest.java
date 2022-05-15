@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
+import io.github.Redouane59.dz.model.complement.Adjective;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.WordFromCSVSerializer;
 import io.github.Redouane59.dz.model.word.Word;
@@ -19,7 +19,7 @@ public class ParseCSVTest {
   @Test
   public void parseVerbTest() {
     String fileName = "verbs.csv";
-    System.out.println(DB.PERSONAL_PRONOUNS_V3);
+    System.out.println(DB.PERSONAL_PRONOUNS);
     Verb      verb  = new Verb();
     Set<Verb> verbs = verb.deserializeFromCSV(fileName, true);
 

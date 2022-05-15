@@ -1,0 +1,117 @@
+{
+  "id": "DIRECT_PRONOUN_SUFFIXES",
+  "values": [
+    {
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "me"
+        },
+        {
+          "lang": "DZ",
+          "value": "ni",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "possession": "YOU",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "te"
+        },
+        {
+          "lang": "DZ",
+          "value": "ek",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "le"
+        },
+        {
+          "lang": "DZ",
+          "value": "ou",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "la"
+        },
+        {
+          "lang": "DZ",
+          "value": "ha",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "nous"
+        },
+        {
+          "lang": "DZ",
+          "value": "na",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vous"
+        },
+        {
+          "lang": "DZ",
+          "value": "koum",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "les"
+        },
+        {
+          "lang": "DZ",
+          "value": "houm",
+          "ar_value": ""
+        }
+      ]
+    }
+  ]
+}

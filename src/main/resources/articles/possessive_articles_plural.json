@@ -1,0 +1,149 @@
+{
+  "id": "DEFINED_ARTICLES",
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "possession": "I",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "notre"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3na",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "possession": "I",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "notre"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3na",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "possession": "I",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "nos"
+        },
+        {
+          "lang": "DZ",
+          "value": "tawa3na",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": true,
+      "possession": "YOU",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "votre"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3koum",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "possession": "YOU",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "votre"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3koum",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "possession": "YOU",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "vos"
+        },
+        {
+          "lang": "DZ",
+          "value": "tawa3koum",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "M",
+      "singular": true,
+      "possession": "OTHER",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "leur"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3houm",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "possession": "YOU",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "leur"
+        },
+        {
+          "lang": "DZ",
+          "value": "ta3houm",
+          "ar_value": "?"
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "possession": "YOU",
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "leurs"
+        },
+        {
+          "lang": "DZ",
+          "value": "tawa3houm",
+          "ar_value": "?"
+        }
+      ]
+    }
+  ]
+}

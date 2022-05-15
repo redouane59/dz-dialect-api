@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.noun.NounType;
+import io.github.Redouane59.dz.model.complement.Noun;
+import io.github.Redouane59.dz.model.complement.NounType;
 import java.io.IOException;
 import org.junit.jupiter.api.Test;
 

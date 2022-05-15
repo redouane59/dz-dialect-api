@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Gender;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
+import io.github.Redouane59.dz.model.complement.Adjective;
 import org.junit.jupiter.api.Test;
 
 public class AdjectiveDeserializationTest {

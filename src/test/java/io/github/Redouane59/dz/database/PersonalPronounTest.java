@@ -16,7 +16,7 @@ public class PersonalPronounTest {
       System.out.println(pronoun.getFrTranslation() + " / " + pronoun.getDzTranslation());
     } */
 
-    Set<AbstractWord> x = DB.PERSONAL_PRONOUNS_V3;
+    Set<AbstractWord> x = DB.PERSONAL_PRONOUNS;
     System.out.println(x);
 
   }

@@ -1,14 +1,12 @@
 package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
-import io.github.Redouane59.dz.model.Articles.Article;
+import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.verb.SuffixEnum;
-import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
+import io.github.Redouane59.dz.model.complement.Adjective;
+import io.github.Redouane59.dz.model.complement.Noun;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
@@ -41,7 +39,7 @@ public class SentenceBuilder {
   private Noun                  nounSubject;
   private Verb                  abstractVerb;
   private AbstractWord          abstractQuestion;
-  private Suffix                suffix;
+  private Conjugation           suffix;
   private GeneratorParameters   bodyArgs;
   private SentenceBuilderHelper helper;
 
@@ -107,7 +105,7 @@ public class SentenceBuilder {
           }
           this.nounSubject = abstractNoun.get();
           PossessiveWord noun = new PossessiveWord(abstractNoun.get().getWordBySingular(true));
-          Optional<Article> article = helper.getArticle(noun, Lang.FR);
+          Optional<Conjugation> article = helper.getArticle(noun, Lang.FR);
           if (article.isEmpty()) {
             return false;
           }
@@ -141,7 +139,7 @@ public class SentenceBuilder {
           sentenceContent.setVerb(abstractVerb);
           Set<Tense> availableTenses = new HashSet<>();
           if (!schema.getTenses().isEmpty()) {
-            if (schema.getTenses().contains(Tense.IMPERATIVE)) { // @todo use present
+            if (schema.getTenses().contains(Tense.IMPERATIVE)) {
               availableTenses.add(Tense.IMPERATIVE);
             } else {
               availableTenses = abstractVerb.getValues().stream().map(Conjugation::getTense)
@@ -175,7 +173,7 @@ public class SentenceBuilder {
             wordListAr.add(new WordTypeWordTuple(wordType, arConjugation.get(), i));
           }
           if (schema.getFrSequence().contains(WordType.SUFFIX)) {
-            Optional<Suffix> suffixOpt;
+            Optional<Conjugation> suffixOpt;
             if (sentenceContent.getTense() == Tense.IMPERATIVE) {
               suffixOpt = helper.getImperativeSuffix(abstractVerb.isObjectOnly());
             } else {
@@ -247,15 +245,15 @@ public class SentenceBuilder {
         sentenceValue.deleteCharAt(sentenceValue.length() - 1);
         sentenceValueAr.deleteCharAt(sentenceValueAr.length() - 1);
         if (abstractVerb.isDzOppositeComplement()) {
-          suffixDzValue = SuffixEnum.getOppositeSuffix(suffix).getTranslationValue(lang);
-          sentenceValueAr.append(SuffixEnum.getOppositeSuffix(suffix).getTranslationByLang(Lang.DZ).get().getArValue());
+          suffixDzValue = AbstractWord.getOppositeSuffix(suffix).getTranslationValue(lang);
+          sentenceValueAr.append(AbstractWord.getOppositeSuffix(suffix).getTranslationByLang(Lang.DZ).get().getArValue());
         } else {
           suffixDzValue = getFirstWordFromWordTypeFr(wordType, i).getTranslationValue(lang);
           sentenceValueAr.append(getFirstWordFromWordTypeFr(wordType, i).getTranslationByLang(lang).get().getArValue());
         }
         sentenceValue.append(suffixDzValue);
         // manage transformation here iou -> ih, ouou->ou, etc.
-        for (Entry<String, String> m : SuffixEnum.RULE_MAP.entrySet()) {
+        for (Entry<String, String> m : DB.RULE_MAP.entrySet()) {
           sentenceValue = new StringBuilder(sentenceValue.toString().replace(m.getKey(), m.getValue()));
         }
       } else {

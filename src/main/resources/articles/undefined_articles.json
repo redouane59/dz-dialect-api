@@ -1,0 +1,50 @@
+{
+  "id": "UNDEFINED_ARTICLES",
+  "values": [
+    {
+      "gender": "M",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "un"
+        },
+        {
+          "lang": "DZ",
+          "value": "",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "F",
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "une"
+        },
+        {
+          "lang": "DZ",
+          "value": "",
+          "ar_value": ""
+        }
+      ]
+    },
+    {
+      "gender": "X",
+      "singular": false,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "des"
+        },
+        {
+          "lang": "DZ",
+          "value": "",
+          "ar_value": ""
+        }
+      ]
+    }
+  ]
+}

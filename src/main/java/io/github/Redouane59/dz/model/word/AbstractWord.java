@@ -25,28 +25,52 @@ import lombok.Setter;
 public class AbstractWord {
 
   @JsonInclude(Include.NON_EMPTY)
-  private List<Conjugation> values = new ArrayList<>(); // @todo use set ?
+  private List<Conjugation> values = new ArrayList<>(); // @todo use <? extends Word> instead ?
   private String            id;
   @JsonProperty("word_type")
   private WordType          wordType;
 
   public static Optional<Conjugation> getPersonalPronoun(Gender gender, boolean isSingular, Possession possession) {
-    Optional<Conjugation> result = DB.PERSONAL_PRONOUNS_V3.stream()
-                                                          .map(o -> o.getValues().get(0))//@todo dirty ?
-                                                          .filter(o -> o.isSingular() == isSingular)
-                                                          .filter(o -> o.getPossession() == possession)
-                                                          .filter(o -> o.getGender() == gender || gender == Gender.X || o.getGender() == Gender.X)
-                                                          .findAny();
+    Optional<Conjugation> result = DB.PERSONAL_PRONOUNS.stream()
+                                                       .map(o -> o.getValues().get(0))//@todo dirty ?
+                                                       .filter(o -> o.isSingular() == isSingular)
+                                                       .filter(o -> o.getPossession() == possession)
+                                                       .filter(o -> o.getGender() == gender || gender == Gender.X || o.getGender() == Gender.X)
+                                                       .findAny();
     return result;
 
   }
 
   public static Conjugation getRandomImperativePersonalPronoun() {
-    List<Conjugation> compatiblePronouns = DB.PERSONAL_PRONOUNS_V3.stream()
-                                                                  .map(o -> o.getValues().get(0))
-                                                                  .filter(o -> o.getPossession() == Possession.YOU).collect(Collectors.toList());
+    List<Conjugation> compatiblePronouns = DB.PERSONAL_PRONOUNS.stream()
+                                                               .map(o -> o.getValues().get(0))
+                                                               .filter(o -> o.getPossession() == Possession.YOU).collect(Collectors.toList());
     return compatiblePronouns.stream().skip(RANDOM.nextInt(compatiblePronouns.size()))
                              .findAny().get();
+  }
+
+  // @todo not the right place ?
+  public static Optional<Conjugation> getDefinedArticleByCriterion(Gender gender, boolean singular) {
+    return DB.DEFINED_ARTICLES.getValues().stream()
+                              .filter(a -> a.isSingular() == singular)
+                              .filter(a -> a.getGender() == gender || a.getGender() == Gender.X || gender == Gender.X)
+                              .findAny();
+  }
+
+  public static Conjugation getOppositeSuffix(Conjugation suffix) {
+    if (DB.INDIRECT_SUFFIXES.getValues().contains(suffix)) {
+      return DB.DIRECT_SUFFIXES.getValues().stream()
+                               .filter(s -> s.isSingular() == suffix.isSingular())
+                               .filter(s -> s.getPossession() == suffix.getPossession())
+                               .filter(s -> s.getGender() == suffix.getGender())
+                               .findFirst().get();
+    } else {
+      return DB.INDIRECT_SUFFIXES.getValues().stream()
+                                 .filter(s -> s.isSingular() == suffix.isSingular())
+                                 .filter(s -> s.getPossession() == suffix.getPossession())
+                                 .filter(s -> s.getGender() == suffix.getGender())
+                                 .findFirst().get();
+    }
   }
 
   public String getTranslationValueByGender(Gender gender, boolean isSingular, Lang lang) {
@@ -110,7 +134,6 @@ public class AbstractWord {
                       .filter(o -> o.getTranslationValue(Lang.DZ).contains(dzValue))
                       .findFirst().orElseThrow();
   }
-
 
   public Conjugation getRandomConjugation() {
     return getValues().stream().skip(RANDOM.nextInt(getValues().size())).findFirst().get();

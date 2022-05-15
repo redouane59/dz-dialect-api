@@ -2,10 +2,10 @@ package io.github.Redouane59.dz.model.sentence;
 
 import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.noun.Noun;
-import io.github.Redouane59.dz.model.verb.SuffixEnum.Suffix;
+import io.github.Redouane59.dz.model.complement.Noun;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import io.github.Redouane59.dz.model.word.Sentence;
 import io.github.Redouane59.dz.model.word.Sentence.SentenceContent;
 import io.github.Redouane59.dz.model.word.Word;
@@ -28,7 +28,7 @@ public class SentenceBuilderV2 {
   private Noun                  nounSubject;
   private Verb                  abstractVerb;
   private Word                  question;
-  private Suffix                suffix;
+  private Conjugation           suffix;
   private GeneratorParameters   bodyArgs;
   private SentenceBuilderHelper helper;
 

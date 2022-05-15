@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.noun;
+package io.github.Redouane59.dz.model.complement;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.Redouane59.dz.model.word.AbstractWord;

@@ -12,7 +12,7 @@ import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.WordType;
-import io.github.Redouane59.dz.model.noun.NounType;
+import io.github.Redouane59.dz.model.complement.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Conjugation;
 import io.github.Redouane59.dz.model.word.Word;
@@ -143,7 +143,7 @@ public class Verb extends AbstractWord {
                                               .filter(o -> o.getGender() == gender || gender == Gender.X || o.getGender() == Gender.X)
                                               .findAny();
     return result;
-    
+
   }
 
 }

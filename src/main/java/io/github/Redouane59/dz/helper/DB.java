@@ -1,8 +1,7 @@
 package io.github.Redouane59.dz.helper;
 
-import io.github.Redouane59.dz.model.Articles;
-import io.github.Redouane59.dz.model.complement.adjective.Adjective;
-import io.github.Redouane59.dz.model.noun.Noun;
+import io.github.Redouane59.dz.model.complement.Adjective;
+import io.github.Redouane59.dz.model.complement.Noun;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
@@ -11,6 +10,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -18,14 +18,63 @@ import java.util.stream.Collectors;
 
 public class DB {
 
-  public final static Set<Verb>           VERBS                = new HashSet<>();
-  public final static Set<Adjective>      ADJECTIVES           = new HashSet<>();
-  public final static Set<Noun>           NOUNS                = new HashSet<>();
-  public final static Set<AbstractWord>   ADVERBS              = new HashSet<>();
-  public final static Articles            ARTICLES             = new Articles("src/main/resources/other/articles.json");
-  public final static Set<AbstractWord>   PERSONAL_PRONOUNS_V3 = new HashSet<>();
-  public final static Set<SentenceSchema> SENTENCE_SCHEMAS     = new HashSet<>();
-  public final static Set<AbstractWord>   QUESTIONS            = new HashSet<>();
+  public final static Set<Verb>           VERBS             = new HashSet<>();
+  public final static Set<Adjective>      ADJECTIVES        = new HashSet<>();
+  public final static Set<Noun>           NOUNS             = new HashSet<>();
+  public final static Set<AbstractWord>   ADVERBS           = new HashSet<>();
+  public final static Set<AbstractWord>   PERSONAL_PRONOUNS = new HashSet<>();
+  public final static Set<SentenceSchema> SENTENCE_SCHEMAS  = new HashSet<>();
+  public final static Set<AbstractWord>   QUESTIONS         = new HashSet<>();
+  // @todo to move somewhere else ?
+  public static final Map<String, String> RULE_MAP          = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak",
+                                                                     "wou", "wah");
+  public static       AbstractWord        DEFINED_ARTICLES; // @todo set of articles instead ?
+  public static       AbstractWord        UNDEFINED_ARTICLES;
+  public static       AbstractWord        POSSESSIVE_ARTICLES;
+  public static       AbstractWord        DIRECT_SUFFIXES;
+  public static       AbstractWord        INDIRECT_SUFFIXES;
+
+  static {
+    try {
+      DIRECT_SUFFIXES = Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/suffixes/direct_pronoun_suffixes.json"), AbstractWord.class);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  static {
+    try {
+      INDIRECT_SUFFIXES =
+          Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/suffixes/indirect_pronoun_suffixes.json"), AbstractWord.class);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  static {
+    try {
+      DEFINED_ARTICLES = Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/articles/defined_articles.json"), AbstractWord.class);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  static {
+    try {
+      POSSESSIVE_ARTICLES =
+          Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/articles/possessive_articles_singular.json"), AbstractWord.class);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  static {
+    try {
+      UNDEFINED_ARTICLES = Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/articles/undefined_articles.json"), AbstractWord.class);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 
   static {
     // verb configurations
@@ -125,12 +174,13 @@ public class DB {
 
   static {
     try {
-      PERSONAL_PRONOUNS_V3.addAll(List.of(Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/other/personal_pronouns.json"),
-                                                                         AbstractWord[].class)));
+      PERSONAL_PRONOUNS.addAll(List.of(Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/other/personal_pronouns.json"),
+                                                                      AbstractWord[].class)));
     } catch (IOException e) {
       System.err.println("could not load file ");
     }
     System.out.println(QUESTIONS.size() + " personal pronouns loaded");
   }
+
 
 }

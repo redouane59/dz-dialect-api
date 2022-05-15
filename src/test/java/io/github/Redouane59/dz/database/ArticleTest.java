@@ -1,25 +1,39 @@
 package io.github.Redouane59.dz.database;
 
-import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import io.github.Redouane59.dz.helper.DB;
-import io.github.Redouane59.dz.model.Articles;
-import io.github.Redouane59.dz.model.Articles.Article;
-import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import org.junit.jupiter.api.Test;
 
+// @todo leur leurs missing
 public class ArticleTest {
 
   @Test
-  public void testArticles() {
-    Articles articles = DB.ARTICLES;
+  public void testDefinedArticles() {
+    AbstractWord articles = DB.DEFINED_ARTICLES;
     assertNotNull(articles);
-    Article randomArticle = Articles.getArticles().stream().skip(RANDOM.nextInt(Articles.getArticles().size())).findFirst().get();
-    assertNotNull(randomArticle.getGender());
-    assertNotNull(randomArticle.getPossession());
-    assertNotNull(randomArticle.getTranslations());
-    assertNotNull(randomArticle.getTranslationValue(Lang.FR));
-    assertNotNull(randomArticle.getTranslationValue(Lang.DZ));
+    for (Conjugation c : articles.getValues()) {
+      System.out.println(c.getFrTranslation() + " -> " + c.getDzTranslation());
+    }
+  }
+
+  @Test
+  public void testPossessiveArticles() {
+    AbstractWord articles = DB.POSSESSIVE_ARTICLES;
+    assertNotNull(articles);
+    for (Conjugation c : articles.getValues()) {
+      System.out.println(c.getFrTranslation() + " -> " + c.getDzTranslation());
+    }
+  }
+
+  @Test
+  public void testUndefinedArticles() {
+    AbstractWord articles = DB.UNDEFINED_ARTICLES;
+    assertNotNull(articles);
+    for (Conjugation c : articles.getValues()) {
+      System.out.println(c.getFrTranslation() + " -> " + c.getDzTranslation());
+    }
   }
 }

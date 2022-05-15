@@ -1,4 +1,4 @@
-package io.github.Redouane59.dz.model.noun;
+package io.github.Redouane59.dz.model.complement;
 
 public enum NounType {
 

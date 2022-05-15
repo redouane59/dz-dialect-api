@@ -1,7 +1,10 @@
 package io.github.Redouane59.dz.function;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.WordType;
@@ -53,5 +56,12 @@ public class AbstractWordTest {
   public void testPword() {
     assertEquals("grands", abstractWord.getTranslationValueByGender(Gender.X, false, Lang.FR));
     assertEquals("kbar", abstractWord.getTranslationValueByGender(Gender.X, false, Lang.DZ));
+  }
+
+  @Test
+  public void testGetOppositeSuffix() {
+    Conjugation oppositeSuffix = AbstractWord.getOppositeSuffix(DB.DIRECT_SUFFIXES.getValues().get(0));
+    assertNotNull(oppositeSuffix);
+    assertNotEquals(oppositeSuffix, DB.DIRECT_SUFFIXES.getValues().get(0));
   }
 }
