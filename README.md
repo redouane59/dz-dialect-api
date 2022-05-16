@@ -21,6 +21,7 @@ https://www.getpostman.com/collections/df04d18a8b6cbde355d2
 | [@LounesBadji](https://twitter.com/LounesBadji) |  Angular     | [https://github.com/badjilounes/dz-dialect-app](https://github.com/badjilounes/dz-dialect-app)     | [dz-dialect-app.herokuapp.com](https://dz-dialect-app.herokuapp.com) |
 
 
-
+## UML
+https://app.diagrams.net/#G1bpMP7GJkqC-DHMOziAa0nz54tWMliIre
 
 
