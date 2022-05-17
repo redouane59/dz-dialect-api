@@ -7,6 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Possession;
 import io.github.Redouane59.dz.model.word.AbstractWord;
+import io.github.Redouane59.dz.model.word.Conjugation;
+import io.github.Redouane59.dz.model.word.GenderedWord;
+import io.github.Redouane59.dz.model.word.PossessiveWord;
+import io.github.Redouane59.dz.model.word.Word;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class AbstractWordTest {
@@ -59,6 +65,17 @@ public class AbstractWordTest {
   public void getRandomImperativePronounTest() {
     for (int i = 0; i < 10; i++) {
       assertEquals(Possession.YOU, AbstractWord.getRandomImperativePersonalPronoun().getPossession());
+    }
+  }
+
+  @Test
+  public void testCast() {
+    List<? super Word> myList = new ArrayList<>();
+    myList.add(new PossessiveWord());
+    myList.add(new GenderedWord());
+    myList.add(new Conjugation());
+    for (Object o : myList) {
+      System.out.println(o);
     }
   }
 }
