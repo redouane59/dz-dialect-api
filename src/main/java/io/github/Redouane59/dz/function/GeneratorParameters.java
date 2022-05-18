@@ -45,7 +45,6 @@ public class GeneratorParameters {
   @Builder.Default
   private boolean       possibleNegation    = true;
 
-
   @JsonIgnore
   public Set<Verb> getVerbsFromIds() {
     return DB.VERBS.stream().filter(o -> verbs.contains(o.getId())).collect(Collectors.toSet());

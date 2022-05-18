@@ -17,6 +17,7 @@ import lombok.NoArgsConstructor;
 public class SentenceGenerator {
 
   private final int                 MAX_COUNT = 30;
+  private final Set<String>         errors    = new HashSet<>();
   private       GeneratorParameters bodyArgs;
 
   public SentenceGenerator(GeneratorParameters bodyArgs) {
@@ -25,7 +26,6 @@ public class SentenceGenerator {
 
   public Sentences generateRandomSentences() {
     Sentences      result       = new Sentences();
-    Set<String>    errors       = new HashSet<>();
     List<Sentence> sentenceList = new ArrayList<>();
     if (bodyArgs.getCount() > MAX_COUNT) {
       errors.add("max count limit (" + MAX_COUNT + ") reached with count=" + bodyArgs.getCount());
@@ -40,7 +40,7 @@ public class SentenceGenerator {
     }
     result.setSentences(sentenceList);
     result.setCount(sentenceList.size());
-    if (result.getSentences().size() < bodyArgs.getCount()) {
+    if (result.getSentences().size() < bodyArgs.getCount() && result.getSentences().size() > 1) {
       errors.add("Some sentences were not generated");
     }
     result.setErrors(errors);
@@ -51,6 +51,7 @@ public class SentenceGenerator {
     try {
       Optional<SentenceSchema> sentenceSchema = getRandomSentenceSchema();
       if (sentenceSchema.isEmpty()) {
+        errors.add("unable to found matching sentence schema based on entries : " + bodyArgs.getSentenceSchemas());
         return Optional.empty();
       }
       SentenceBuilder sentenceBuilder = new SentenceBuilder(sentenceSchema.get());
@@ -65,7 +66,6 @@ public class SentenceGenerator {
   public Optional<SentenceSchema> getRandomSentenceSchema() {
     Set<VerbType> verbTypes = bodyArgs.getVerbsFromIds().stream().map(Verb::getVerbType).collect(Collectors.toSet());
     if (bodyArgs.getSentenceSchemasFromIds().isEmpty()) {
-      System.err.println("no schema found in arguments");
       return Optional.empty();
     }
     List<SentenceSchema> matchingSentenceSchema = bodyArgs.getSentenceSchemasFromIds().stream()

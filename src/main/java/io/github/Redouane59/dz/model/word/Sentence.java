@@ -11,12 +11,15 @@ import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.sentence.SentenceSerializer;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
+import java.util.ArrayList;
+import java.util.List;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 @JsonSerialize(using = SentenceSerializer.class)
 @Setter
+@Getter
 public class Sentence extends Word {
 
   private SentenceContent content;
@@ -30,26 +33,26 @@ public class Sentence extends Word {
     if (content.getPronoun() != null) {
       node.put("personal_prounoun", this.content.getPronoun().getTranslationValue(Lang.FR));
     }
-    if (this.content.getVerb() != null) {
-      node.put("verb", this.content.getVerb().getId());
+    if (this.content.getAbstractVerb() != null) {
+      node.put("verb", this.content.getAbstractVerb().getId());
     }
-    if (this.content.getNoun() != null) {
-      node.put("noun", this.content.getNoun().getId());
+    if (this.content.getAbstractNoun() != null) {
+      node.put("noun", this.content.getAbstractNoun().getId());
     }
-    if (this.content.getAdjective() != null) {
-      node.put("adjective", this.content.getAdjective().getId());
+    if (this.content.getAbstractAdjective() != null) {
+      node.put("adjective", this.content.getAbstractAdjective().getId());
     }
     if (this.content.getTense() != null) {
       node.put("tense", this.content.getTense().name());
     }
-    if (this.content.getAdverb() != null) {
-      node.put("adverb", this.content.getAdverb().getId());
+    if (this.content.getAbstractAdverb() != null) {
+      node.put("adverb", this.content.getAbstractAdverb().getId());
     }
 /*    if (this.content.getSuffixPronoun() != null) {
       node.put("suffix_pronoun", this.content.getSuffixPronoun().name());
     }*/
-    if (this.content.getQuestion() != null) {
-      node.put("question", this.content.getQuestion().getId());
+    if (this.content.getAbstractQuestion() != null) {
+      node.put("question", this.content.getAbstractQuestion().getId());
     }
     if (this.content.getSentenceSchema() != null) {
       node.put("sentence_type", this.content.getSentenceSchema().getId());
@@ -62,15 +65,17 @@ public class Sentence extends Word {
   @Builder
   public static class SentenceContent {
 
-    private Verb           verb;
+    private Verb           abstractVerb;
     private PossessiveWord pronoun;
-    private AbstractWord   adverb;
-    private AbstractWord   question;
-    private Adjective      adjective;
-    private Noun           noun;
+    private AbstractWord   abstractAdverb;
+    private AbstractWord   abstractQuestion;
+    private Adjective      abstractAdjective;
+    private Noun           abstractNoun;
     private Tense          tense;
     private SentenceSchema sentenceSchema;
     private boolean        negation;
+    @Builder.Default
+    private List<String>   randomFrWords = new ArrayList<>();
   }
 
 }
