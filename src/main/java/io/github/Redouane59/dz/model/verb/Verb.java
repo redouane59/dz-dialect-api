@@ -15,6 +15,7 @@ import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.NounType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Conjugation;
+import io.github.Redouane59.dz.model.word.PossessiveWord;
 import io.github.Redouane59.dz.model.word.Word;
 import java.util.HashSet;
 import java.util.List;
@@ -80,10 +81,10 @@ public class Verb extends AbstractWord {
 
       try {
         Tense tense = Tense.valueOf(values.get(tenseIndex));
-        Conjugation
+        PossessiveWord
             personalProunoun =
             getPersonalPronounByValue(values.get(personalPronounsIndex).split(pronounDelimiter)[0],
-                                      values.get(personalPronounsIndex).split(pronounDelimiter)[1]);
+                                      values.get(personalPronounsIndex).split(pronounDelimiter)[1]).get();
         String frValue   = values.get(frValueIndex);
         String dzValue   = values.get(dzValueIndex);
         String dzValueAr = null;
@@ -125,19 +126,22 @@ public class Verb extends AbstractWord {
   }
 
   public Optional<Conjugation> getRandomConjugationByTenses(Set<Tense> tenses) {
-    List<Conjugation> matchingConjugation = getValues().stream().filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());
+    List<Conjugation> matchingConjugation = getValues().stream().map(o -> (Conjugation) o)
+                                                       .filter(o -> tenses.contains(o.getTense())).collect(Collectors.toList());
     return matchingConjugation.stream().skip(new Random().nextInt(matchingConjugation.size())).findFirst();
   }
 
   public Optional<Conjugation> getConjugationByTense(Tense tense) {
-    return getValues().stream().filter(o -> o.getTense() == tense).findAny();
+    return getValues().stream().map(o -> (Conjugation) o)
+                      .filter(o -> o.getTense() == tense).findAny();
   }
 
   public Optional<Conjugation> getConjugationByGenderSingularPossessionAndTense(Gender gender,
                                                                                 boolean isSingular,
                                                                                 Possession possession,
                                                                                 Tense tense) {
-    Optional<Conjugation> result = getValues().stream().filter(o -> o.getTense() == tense)
+    Optional<Conjugation> result = getValues().stream().map(o -> (Conjugation) o)
+                                              .filter(o -> o.getTense() == tense)
                                               .filter(o -> o.isSingular() == isSingular)
                                               .filter(o -> o.getPossession() == possession)
                                               .filter(o -> o.getGender() == gender || gender == Gender.X || o.getGender() == Gender.X)

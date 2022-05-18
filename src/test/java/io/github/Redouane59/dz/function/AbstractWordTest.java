@@ -10,6 +10,8 @@ import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Conjugation;
+import io.github.Redouane59.dz.model.word.PossessiveWord;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
 public class AbstractWordTest {
@@ -60,7 +62,9 @@ public class AbstractWordTest {
 
   @Test
   public void testGetOppositeSuffix() {
-    Conjugation oppositeSuffix = AbstractWord.getOppositeSuffix(DB.DIRECT_SUFFIXES.getValues().get(0));
+    PossessiveWord
+        oppositeSuffix =
+        AbstractWord.getOppositeSuffix(DB.DIRECT_SUFFIXES.getValues().stream().map(o -> (PossessiveWord) o).collect(Collectors.toList()).get(0));
     assertNotNull(oppositeSuffix);
     assertNotEquals(oppositeSuffix, DB.DIRECT_SUFFIXES.getValues().get(0));
   }

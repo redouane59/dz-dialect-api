@@ -12,6 +12,7 @@ import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import io.github.Redouane59.dz.model.word.Conjugation;
+import io.github.Redouane59.dz.model.word.GenderedWord;
 import io.github.Redouane59.dz.model.word.PossessiveWord;
 import io.github.Redouane59.dz.model.word.Sentence;
 import io.github.Redouane59.dz.model.word.Sentence.SentenceContent;
@@ -39,7 +40,7 @@ public class SentenceBuilder {
   private Noun                  nounSubject;
   private Verb                  abstractVerb;
   private AbstractWord          abstractQuestion;
-  private Conjugation           suffix;
+  private PossessiveWord        suffix;
   private GeneratorParameters   bodyArgs;
   private SentenceBuilderHelper helper;
 
@@ -105,7 +106,7 @@ public class SentenceBuilder {
           }
           this.nounSubject = abstractNoun.get();
           PossessiveWord noun = new PossessiveWord(abstractNoun.get().getWordBySingular(true));
-          Optional<Conjugation> article = helper.getArticle(noun, Lang.FR);
+          Optional<GenderedWord> article = helper.getArticle(noun, Lang.FR);
           if (article.isEmpty()) {
             return false;
           }
@@ -142,13 +143,13 @@ public class SentenceBuilder {
             if (schema.getTenses().contains(Tense.IMPERATIVE)) {
               availableTenses.add(Tense.IMPERATIVE);
             } else {
-              availableTenses = abstractVerb.getValues().stream().map(Conjugation::getTense)
+              availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
                                             .filter(t -> bodyArgs.getTenses().contains(t))
                                             .filter(t -> schema.getTenses().contains(t))
                                             .collect(Collectors.toSet());
             }
           } else {
-            availableTenses = abstractVerb.getValues().stream().map(Conjugation::getTense)
+            availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
                                           .filter(t -> bodyArgs.getTenses().contains(t))
                                           .filter(t -> t != Tense.IMPERATIVE)
                                           .collect(Collectors.toSet());
@@ -156,11 +157,14 @@ public class SentenceBuilder {
 
           Tense tense = availableTenses.stream().skip(RANDOM.nextInt(availableTenses.size())).findFirst().get();
           sentenceContent.setTense(tense);
+          if (tense == Tense.PAST || tense == Tense.PAST2) {
+            sentenceContent.setNegation(false);
+          }
           if (tense != Tense.IMPERATIVE) {
             wordListFr.add(new WordTypeWordTuple(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.FR), i));
             wordListAr.add(new WordTypeWordTuple(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.DZ), i));
           } else {
-            Conjugation randomPronoun = AbstractWord.getRandomImperativePersonalPronoun();
+            PossessiveWord randomPronoun = AbstractWord.getRandomImperativePersonalPronoun();
             Optional<Conjugation> frConjugation = helper.getImperativeVerbConjugation(abstractVerb,
                                                                                       randomPronoun,
                                                                                       Lang.FR,
@@ -173,7 +177,7 @@ public class SentenceBuilder {
             wordListAr.add(new WordTypeWordTuple(wordType, arConjugation.get(), i));
           }
           if (schema.getFrSequence().contains(WordType.SUFFIX)) {
-            Optional<Conjugation> suffixOpt;
+            Optional<PossessiveWord> suffixOpt;
             if (sentenceContent.getTense() == Tense.IMPERATIVE) {
               suffixOpt = helper.getImperativeSuffix(abstractVerb.isObjectOnly());
             } else {
@@ -199,13 +203,13 @@ public class SentenceBuilder {
         case ADVERB:
           AbstractWord adverb = helper.getAdverb();
           sentenceContent.setAdverb(adverb);
-          wordListFr.add(new WordTypeWordTuple(wordType, adverb.getValues().get(0), i));
-          wordListAr.add(new WordTypeWordTuple(wordType, adverb.getValues().get(0), i));
+          wordListFr.add(new WordTypeWordTuple(wordType, (Word) adverb.getValues().get(0), i));
+          wordListAr.add(new WordTypeWordTuple(wordType, (Word) adverb.getValues().get(0), i));
           break;
         case QUESTION:
           abstractQuestion = helper.getQuestion();
           sentenceContent.setQuestion(abstractQuestion);
-          Word question = abstractQuestion.getValues().get(0);
+          Word question = (Word) abstractQuestion.getValues().get(0); // @todo wtf ?
           wordListFr.add(new WordTypeWordTuple(wordType, question, i));
           wordListAr.add(new WordTypeWordTuple(wordType, question, i));
       }
@@ -221,11 +225,15 @@ public class SentenceBuilder {
         sentenceValue.deleteCharAt(sentenceValue.length() - 1);
         sentenceValue.append("-");
       }
-      if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+      if (wordType == WordType.VERB
+          && sentenceContent.isNegation()
+          && sentenceContent.getTense() != Tense.PAST
+          && sentenceContent.getTense() != Tense.PAST2) {
         sentenceValue.append("ne ");
       }
       sentenceValue.append(getFirstWordFromWordTypeFr(wordType, i).getTranslationValue(Lang.FR));
-      if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+      if (wordType == WordType.VERB
+          && sentenceContent.isNegation()) { // @todo manage negative for past
         sentenceValue.append(" pas");
       }
 

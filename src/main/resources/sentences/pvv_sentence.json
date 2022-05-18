@@ -15,5 +15,6 @@
     "PAST2",
     "PRESENT",
     "FUTURE"
-  ]
+  ],
+  "verb_type": "DOUBLE"
 }

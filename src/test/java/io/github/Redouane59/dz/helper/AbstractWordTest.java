@@ -76,6 +76,8 @@ public class AbstractWordTest {
     myList.add(new Conjugation());
     for (Object o : myList) {
       System.out.println(o);
+      Word casto = (Word) o;
+      casto.getDzTranslation();
     }
   }
 }

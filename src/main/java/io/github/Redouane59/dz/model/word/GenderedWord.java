@@ -2,6 +2,8 @@ package io.github.Redouane59.dz.model.word;
 
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
+import io.github.Redouane59.dz.model.Translation;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +17,12 @@ public class GenderedWord extends Word {
 
   private Gender  gender; // to split between pronouns and noun which can change depending on the lang
   private boolean singular;
+
+  public GenderedWord(Set<Translation> translations, Gender gender, boolean singular) {
+    super(translations);
+    this.gender   = gender;
+    this.singular = singular;
+  }
 
   public Gender getGender(Lang lang) {
     if (this.getTranslationByLang(lang).isEmpty()) {

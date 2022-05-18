@@ -208,5 +208,70 @@
       "WHEN"
     ],
     "verb_type": "DEPLACEMENT"
+  },
+  {
+    "id": "comprendre",
+    "possible_complements": [
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHAT"
+    ],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "connaître",
+    "possible_complements": [
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "HOW",
+      "WHY"
+    ],
+    "verb_type": "ACTION",
+    "direct_complement": true
+  },
+  {
+    "id": "crier",
+    "possible_questions": [
+      "WHY"
+    ],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "connaître",
+    "possible_complements": [
+      "PERSON"
+    ],
+    "possible_questions": [
+      "WHO",
+      "HOW"
+    ],
+    "verb_type": "ACTION",
+    "direct_complement": true
+  },
+  {
+    "id": "cuisiner",
+    "possible_questions": [
+      "WHAT",
+      "WHEN",
+      "WHY"
+    ],
+    "possible_complements": [
+      "FOOD",
+      "ADVERB"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true,
+    "object_only": true
+  },
+  {
+    "id": "dire",
+    "possible_questions": [
+      "WHAT"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true
   }
 ]

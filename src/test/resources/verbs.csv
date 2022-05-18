@@ -265,14 +265,14 @@ chercher,PRESENT,elles/houma,cherchent,i7awssou,إيحوسو,9
 être,FUTURE,on/7na,sera,nkounou,نكونو,6
 être,FUTURE,vous/ntouma,serez,tkounou,تكونو,7
 être,FUTURE,ils/houma,seront,ykounou,إكونو,8
-être,PAST,je/ana,étais,kount,كونت,1
-être,PAST,tu/enta,étais,kount,كونت,2
-être,PAST,tu/enti,étais,kounti,كونتي,3
-être,PAST,il/houwa,était,kaan,كان,4
-être,PAST,elle/hiya,était,kenet,كانت,5
-être,PAST,on/7na,était,kouna,كونا,6
-être,PAST,vous/ntouma,étiez,kountou,كونتو,7
-être,PAST,ils/houma,étaient,kanou,كانو,8
+être,PAST2,je/ana,étais,kount,كونت,1
+être,PAST2,tu/enta,étais,kount,كونت,2
+être,PAST2,tu/enti,étais,kounti,كونتي,3
+être,PAST2,il/houwa,était,kaan,كان,4
+être,PAST2,elle/hiya,était,kenet,كانت,5
+être,PAST2,on/7na,était,kouna,كونا,6
+être,PAST2,vous/ntouma,étiez,kountou,كونتو,7
+être,PAST2,ils/houma,étaient,kanou,كانو,8
 être,PRESENT,je/ana,suis,rani,راني,1
 être,PRESENT,tu/enta,es,rak,راك,2
 être,PRESENT,tu/enti,es,raki,راكي,3
@@ -323,3 +323,91 @@ venir,PRESENT,elle/hiya,vient,tdji,تْجي,5
 venir,PRESENT,on/7na,vient,ndjiou,نْجيوْ,6
 venir,PRESENT,vous/ntouma,venez,tdjiou,تٍجيوْ,7
 venir,PRESENT,ils/houma,viennent,ydjiou,إيجيوْ,8
+comprendre,PAST,il/houwa,a compris,fham,فْهمْ,4
+comprendre,PAST,elle/hiya,a compris,fahmet,فَهمتْ,5
+comprendre,PAST,on/7na,a compris,fhamna,فْهمْنا,6
+comprendre,PAST,vous/ntouma,avez compris,fhamtou,فْهمْتو,7
+comprendre,PAST,ils/houma,ont compris,fahmou,فَهْمو,8
+comprendre,PAST,elles/houma,ont compris,fahmou,فَهْمو,9
+comprendre,PRESENT,je/ana,comprend,fhamt,فْهَمْت,1
+comprendre,PRESENT,tu/enta,comprends,fhamt,فْهَمْت,2
+comprendre,PRESENT,tu/enti,comprends,fhamti,فْهَمْتِ,3
+comprendre,PRESENT,il/houwa,comprend,fham,فْهَمْ,4
+comprendre,PRESENT,elle/hiya,comprend,fahmet,فَهْمت,5
+comprendre,PRESENT,on/7na,comprend,fhamna,فْهَمْنا,6
+comprendre,PRESENT,vous/ntouma,comprenez,fhamtou,فْهَمتو,7
+comprendre,PRESENT,ils/houma,comprennent,fahmou,فَهْمو,8
+comprendre,PRESENT,elles/houma,comprennent,fahmou,فَهْمو,9
+connaître,PAST,je/ana,ai connu,3reft,عْرفت,1
+connaître,PAST,tu/enta,as connu,3reft,عْرفت,2
+connaître,PAST,tu/enti,as connu,3refti,عْرفتِ,3
+connaître,PAST,il/houwa,a connu,3ref,عْرف,4
+connaître,PAST,elle/hiya,a connu,3arfet,عَرْفت,5
+connaître,PAST,on/7na,a connu,3rafna,عْرَفنا,6
+connaître,PAST,vous/ntouma,avez connu,3raftou,عْرَفتو,7
+connaître,PAST,ils/houma,ont connu,3arfou,عَرْفو,8
+connaître,PAST,elles/houma,ont connu,3arfou,عَرْفو,9
+connaître,PRESENT,je/ana,connais,na3ref,نَعْرف,1
+connaître,PRESENT,tu/enta,connais,ta3ref,تَعْرف,2
+connaître,PRESENT,tu/enti,connais,ta3arfi,تَعْرفِ,3
+connaître,PRESENT,il/houwa,connaît,ya3raf,يَعْرف,4
+connaître,PRESENT,elle/hiya,connaît,ta3raf,تَعْرف,5
+connaître,PRESENT,on/7na,connaît,na3arfou,نَعرفو,6
+connaître,PRESENT,vous/ntouma,connaissez,ta3arfou,تَعرفو,7
+connaître,PRESENT,ils/houma,connaissent,ya3arfou,يَعرفو,8
+connaître,PRESENT,elles/houma,connaissent,ya3arfou,يَعرفو,9
+crier,PAST,je/ana,ai crié,3ayet,عَيّط,1
+crier,PAST,tu/enta,as crié,3ayet,عَيّط,2
+crier,PAST,tu/enti,as crié,3ayeti,عَيّطِ,3
+crier,PAST,il/houwa,a crié,3ayet,عَيّط,4
+crier,PAST,elle/hiya,a crié,3aytet,عَيّطت,5
+crier,PAST,on/7na,a crié,3ayetna,عَيّطنا,6
+crier,PAST,vous/ntouma,avez crié,3ayettou,عَيّطو,7
+crier,PAST,ils/houma,ont crié,3aytou,عَيْطو,8
+crier,PAST,elles/houma,ont crié,3aytou,عَيْطو,9
+crier,PRESENT,je/ana,crie,n3ayet,نْعيّط,1
+crier,PRESENT,tu/enta,cries,t3ayet,تْعَيّط,2
+crier,PRESENT,tu/enti,cries,t3ayti,تْعَيّطِ,3
+crier,PRESENT,il/houwa,crie,y3ayet,يْعيّط,4
+crier,PRESENT,elle/hiya,crie,t3ayet,تْعيّط,5
+crier,PRESENT,on/7na,crie,n3aytou,نْعَيطو,6
+crier,PRESENT,vous/ntouma,criez,t3aytou,تْعَيطو,7
+crier,PRESENT,ils/houma,crient,y3aytou,يْعَيطو,8
+crier,PRESENT,elles/houma,crient,y3aytou,يْعَيطو,9
+cuisiner,PAST,je/ana,ai cuisiné,tayebt,طيّبت,1
+cuisiner,PAST,tu/enta,as cuisiné,tayebt,طيّبت,2
+cuisiner,PAST,tu/enti,as cuisiné,tayebti,طيّبتِ,3
+cuisiner,PAST,il/houwa,a cuisiné,tayeb,طيّب,4
+cuisiner,PAST,elle/hiya,a cuisiné,taybet,طيْبت,5
+cuisiner,PAST,on/7na,a cuisiné,tayebna,طَيّبنا,6
+cuisiner,PAST,vous/ntouma,avez cuisiné,tayebtou,طَيّبتو,7
+cuisiner,PAST,ils/houma,ont cuisiné,taybou,طَيْبو,8
+cuisiner,PAST,elles/houma,ont cuisiné,taybou,طَيْبو,9
+cuisiner,PRESENT,je/ana,cuisine,ntayeb,نْطيّب,1
+cuisiner,PRESENT,tu/enta,cuisines,tayeb,طيّب,2
+cuisiner,PRESENT,tu/enti,cuisines,taybi,طيّبِ,3
+cuisiner,PRESENT,il/houwa,cuisine,itayeb,يْطيّب,4
+cuisiner,PRESENT,elle/hiya,cuisine,tayeb,طيّب,5
+cuisiner,PRESENT,on/7na,cuisine,ntaybou,نْطيْبو,6
+cuisiner,PRESENT,vous/ntouma,cuisinez,taybou,طيْبو,7
+cuisiner,PRESENT,ils/houma,cuisinent,itaybou,يْطيّبو,8
+cuisiner,PRESENT,elles/houma,cuisinent,itaybou,يْطيّبو,9
+dire,IMPERATIVE,tu/enta,dis,9oul,قل,2
+dire,IMPERATIVE,tu/enti,dis,9ouli,قلي,3
+dire,IMPERATIVE,vous/ntouma,dites,9oulou,قلوا,7
+dire,PAST,je/ana,ai dit,9olt,قلت,1
+dire,PAST,tu/enta,as dit,9olt,قلي,2
+dire,PAST,tu/enti,as dit,9olti,قلتي,3
+dire,PAST,il/houwa,a dit,9al,قال,4
+dire,PAST,elle/hiya,a dit,9alet,قالت,5
+dire,PAST,on/7na,a dit,9elna,قلنا,6
+dire,PAST,vous/ntouma,avez dit,9eltou,قلتو,7
+dire,PAST,ils/houma,ont dit,9elou,قالو,8
+dire,PRESENT,je/ana,dis,n9ol,نقول,1
+dire,PRESENT,tu/enta,dis,t9ol,تقول,2
+dire,PRESENT,tu/enti,dis,t9oli,تقولي,3
+dire,PRESENT,il/houwa,dit,y9ol,يقول,4
+dire,PRESENT,elle/hiya,dit,t9ol,تقول,5
+dire,PRESENT,on/7na,dit,n9olou,نقولو,6
+dire,PRESENT,vous/ntouma,dites,t9olou,تقولو,7
+dire,PRESENT,ils/houma,disent,y9olou,يقولو,8

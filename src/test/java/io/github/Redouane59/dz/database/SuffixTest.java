@@ -5,7 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.word.AbstractWord;
-import io.github.Redouane59.dz.model.word.Conjugation;
+import io.github.Redouane59.dz.model.word.Word;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
 public class SuffixTest {
@@ -15,7 +16,7 @@ public class SuffixTest {
     AbstractWord suffixes = DB.DIRECT_SUFFIXES;
     assertNotNull(suffixes);
     assertTrue(suffixes.getValues().size() > 0);
-    for (Conjugation suffix : suffixes.getValues()) {
+    for (Word suffix : suffixes.getValues().stream().map(o -> (Word) o).collect(Collectors.toList())) {
       System.out.println(suffix.getFrTranslation() + " -> " + suffix.getDzTranslation());
     }
   }
@@ -25,7 +26,7 @@ public class SuffixTest {
     AbstractWord suffixes = DB.INDIRECT_SUFFIXES;
     assertNotNull(suffixes);
     assertTrue(suffixes.getValues().size() > 0);
-    for (Conjugation suffix : suffixes.getValues()) {
+    for (Word suffix : suffixes.getValues().stream().map(o -> (Word) o).collect(Collectors.toList())) {
       System.out.println(suffix.getFrTranslation() + " -> " + suffix.getDzTranslation());
     }
   }

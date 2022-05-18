@@ -31,7 +31,7 @@ public class SentenceBuilderHelper {
   GeneratorParameters bodyArgs;
   SentenceSchema      schema;
 
-  public static Conjugation getRandomSuffix(final Possession other, boolean isDirect, boolean objectOnly) {
+  public static PossessiveWord getRandomSuffix(final Possession other, boolean isDirect, boolean objectOnly) {
     Gender       randomGender     = Gender.getRandomGender();
     boolean      randomSingular   = RANDOM.nextBoolean();
     Possession   randomPossession = Possession.getRandomPosession(other, objectOnly);
@@ -41,14 +41,14 @@ public class SentenceBuilderHelper {
     } else {
       baseSuffix = DB.INDIRECT_SUFFIXES;
     }
-    return baseSuffix.getValues().stream()
+    return baseSuffix.getValues().stream().map(o -> (PossessiveWord) o)
                      .filter(s -> s.isSingular() == randomSingular)
                      .filter(s -> s.getPossession() == randomPossession)
                      .filter(s -> s.getGender() == randomGender || s.getGender() == Gender.X || randomGender == Gender.X)
                      .findFirst().get();
   }
 
-  public static Conjugation getRandomImperativeSuffix(boolean isDirect, boolean objectOnly) {
+  public static PossessiveWord getRandomImperativeSuffix(boolean isDirect, boolean objectOnly) {
     Gender     randomGender   = Gender.getRandomGender();
     boolean    randomSingular = RANDOM.nextBoolean();
     Possession randomPossession;
@@ -67,20 +67,20 @@ public class SentenceBuilderHelper {
       baseSuffix = DB.INDIRECT_SUFFIXES;
     }
 
-    return baseSuffix.getValues().stream()
+    return baseSuffix.getValues().stream().map(o -> (PossessiveWord) o)
                      .filter(s -> s.isSingular() == randomSingular)
                      .filter(s -> s.getPossession() == randomPossession)
                      .filter(s -> s.getGender() == randomGender || s.getGender() == Gender.X || randomGender == Gender.X)
                      .findFirst().get();
   }
 
-  public Optional<Conjugation> getSuffix(Possession possession, boolean isObjectOnly) {
+  public Optional<PossessiveWord> getSuffix(Possession possession, boolean isObjectOnly) {
     boolean isDirect;
     isDirect = !schema.getFrSequence().contains(WordType.NOUN);
     return Optional.of(getRandomSuffix(possession, isDirect, isObjectOnly));
   }
 
-  public Optional<Conjugation> getImperativeSuffix(boolean isObjectOnly) {
+  public Optional<PossessiveWord> getImperativeSuffix(boolean isObjectOnly) {
     boolean isDirect = !schema.getFrSequence().contains(WordType.NOUN);
     return Optional.of(getRandomImperativeSuffix(isDirect, isObjectOnly));
   }
@@ -97,8 +97,8 @@ public class SentenceBuilderHelper {
     return DB.PERSONAL_PRONOUNS.stream().skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS.size())).findFirst().get();
   }
 
-  public Optional<Conjugation> getArticle(PossessiveWord noun, Lang lang) {
-    Optional<Conjugation> article = AbstractWord.getDefinedArticleByCriterion(noun.getGender(lang), noun.isSingular());
+  public Optional<GenderedWord> getArticle(PossessiveWord noun, Lang lang) {
+    Optional<GenderedWord> article = AbstractWord.getDefinedArticleByCriterion(noun.getGender(lang), noun.isSingular());
     if (article.isEmpty()) {
       System.err.println("empty article");
       return Optional.empty();
@@ -116,7 +116,7 @@ public class SentenceBuilderHelper {
 */
     if (schema.getTenses() != null) {
       verbs = verbs.stream()
-                   .filter(v -> v.getValues().stream().anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
+                   .filter(v -> v.getValues().stream().map(o -> (Conjugation) o).anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
               Collectors.toSet());
       if (verbs.size() == 0) {
         System.out.println("no verb found based on tenses");
@@ -179,7 +179,7 @@ public class SentenceBuilderHelper {
     return conjugation.get();
   }
 
-  public Optional<Conjugation> getImperativeVerbConjugation(Verb verb, Conjugation subject, Lang lang, boolean isNegative) {
+  public Optional<Conjugation> getImperativeVerbConjugation(Verb verb, PossessiveWord subject, Lang lang, boolean isNegative) {
     Tense tense;
     if (isNegative && lang.getRootLang() == RootLang.AR) {
       tense = Tense.PRESENT; // to manage exception in arabic

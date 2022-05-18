@@ -1,0 +1,89 @@
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "t9qil",
+          "ar_value": "تْقيل"
+        },
+        {
+          "lang": "FR",
+          "value": "lent"
+        }
+      ],
+      "gender": "M",
+      "singular": true,
+      "tense": null
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "t9qila",
+          "ar_value": "تقيلا"
+        },
+        {
+          "lang": "FR",
+          "value": "lente"
+        }
+      ],
+      "gender": "F",
+      "singular": true,
+      "tense": null
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "t9el",
+          "ar_value": "تقال"
+        },
+        {
+          "lang": "FR",
+          "value": "lents"
+        }
+      ],
+      "gender": "M",
+      "singular": false,
+      "tense": null
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "t9el",
+          "ar_value": "تقال"
+        },
+        {
+          "lang": "FR",
+          "value": "lentes"
+        }
+      ],
+      "gender": "F",
+      "singular": false,
+      "tense": null
+    }
+  ],
+  "id": "lent",
+  "temporal": false,
+  "definitive": false,
+  "randomConjugation": {
+    "translations": [
+      {
+        "lang": "DZ",
+        "value": "t9qila",
+        "ar_value": "تقيلا"
+      },
+      {
+        "lang": "FR",
+        "value": "lente"
+      }
+    ],
+    "gender": "F",
+    "singular": true,
+    "tense": null
+  },
+  "word_type": null,
+  "possible_nouns": null
+}

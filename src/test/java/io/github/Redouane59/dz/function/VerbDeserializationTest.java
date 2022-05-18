@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import io.github.Redouane59.dz.helper.Config;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
+import io.github.Redouane59.dz.model.word.Conjugation;
 import java.io.File;
 import java.io.IOException;
 import org.junit.jupiter.api.Test;
@@ -25,7 +26,8 @@ public class VerbDeserializationTest {
     //  assertTrue(verb.getPossibleComplements().contains(NounType.PERSON));
 
     // conjugator
-    assertEquals(Tense.PAST, verb.getValues().stream().filter(o -> o.getTense() == Tense.PAST).findFirst().get().getTense());
+    assertEquals(Tense.PAST,
+                 verb.getValues().stream().map(o -> (Conjugation) o).filter(o -> o.getTense() == Tense.PAST).findFirst().get().getTense());
 
     // conjugation
 /*    PossessiveWord conjugation1 = verb.getConjugators().stream().filter(o -> o.getTense() == Tense.PAST)

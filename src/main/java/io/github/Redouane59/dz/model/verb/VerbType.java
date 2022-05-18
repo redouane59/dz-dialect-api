@@ -8,6 +8,7 @@ public enum VerbType {
   STATE,
   DEPLACEMENT,
   ACTION,
-  POSSESSION
+  POSSESSION,
+  DOUBLE // @to manage verb + verb
 
 }
