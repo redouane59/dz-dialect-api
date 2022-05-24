@@ -94,7 +94,11 @@ public class SentenceBuilderHelper {
   }
 
   public AbstractWord getRandomPronoun() {
-    return DB.PERSONAL_PRONOUNS.stream().skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS.size())).findFirst().get();
+    return DB.PERSONAL_PRONOUNS.stream()
+                               .filter(p -> !p.getId().equals("THEY_F")) // excluding elles when it is the same translation
+                               .skip(RANDOM.nextInt(DB.PERSONAL_PRONOUNS.size() - 1))
+                               .findFirst()
+                               .get();
   }
 
   public Optional<GenderedWord> getArticle(PossessiveWord noun, Lang lang) {
@@ -116,7 +120,11 @@ public class SentenceBuilderHelper {
 */
     if (schema.getTenses() != null) {
       verbs = verbs.stream()
-                   .filter(v -> v.getValues().stream().map(o -> (Conjugation) o).anyMatch(c -> schema.getTenses().contains(c.getTense()))).collect(
+                   .filter(v -> v.getValues()
+                                 .stream()
+                                 .map(o -> (Conjugation) o)
+                                 .map(Conjugation::getTense)
+                                 .anyMatch(c -> schema.getTenses().contains(c.getRootTense()))).collect(
               Collectors.toSet());
       if (verbs.size() == 0) {
         System.out.println("no verb found based on tenses");
@@ -171,7 +179,7 @@ public class SentenceBuilderHelper {
         verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
                                                               subject.isSingular(),
                                                               subject.getPossession(),
-                                                              tense);
+                                                              tense.getRootTense());
     if (conjugation.isEmpty()) {
       System.err.println("no conjugation found for");
       return null;
@@ -189,7 +197,7 @@ public class SentenceBuilderHelper {
     return verb.getConjugationByGenderSingularPossessionAndTense(subject.getGender(lang),
                                                                  subject.isSingular(),
                                                                  subject.getPossession(),
-                                                                 tense);
+                                                                 tense.getRootTense());
   }
 
   public Optional<Noun> getAbstractNoun(Verb abstractVerb) {
@@ -253,5 +261,18 @@ public class SentenceBuilderHelper {
     return adjectiveOpt;
   }
 
+  public Set<String> splitSentenceInWords(String frSentence) {
+    Set<String> result = new HashSet<>();
+    long        count  = frSentence.chars().filter(ch -> ch == '-').count();
+    for (int i = 0; i < count; i++) {
+      result.add("-");
+    }
+    count = frSentence.chars().filter(ch -> ch == '\'').count();
+    for (int i = 0; i < count; i++) {
+      result.add("'");
+    }
+    result.addAll(List.of(frSentence.split("[-' ]")));
+    return result;
+  }
 
 }

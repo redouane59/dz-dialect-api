@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
-import io.github.Redouane59.dz.model.verb.Tense;
+import io.github.Redouane59.dz.model.verb.RootTense;
 import java.io.File;
 import java.io.IOException;
 import org.junit.jupiter.api.Test;
@@ -24,10 +24,9 @@ public class SentenceSchemaTest {
     assertEquals(WordType.ARTICLE, nvSchema.getFrSequence().get(0));
     assertEquals(WordType.NOUN, nvSchema.getFrSequence().get(1));
     assertEquals(WordType.VERB, nvSchema.getFrSequence().get(2));
-    assertTrue(nvSchema.getTenses().contains(Tense.PAST));
-    assertTrue(nvSchema.getTenses().contains(Tense.PAST2));
-    assertTrue(nvSchema.getTenses().contains(Tense.PRESENT));
-    assertTrue(nvSchema.getTenses().contains(Tense.FUTURE));
+    assertTrue(nvSchema.getTenses().contains(RootTense.PRESENT));
+    assertTrue(nvSchema.getTenses().contains(RootTense.PAST));
+    assertTrue(nvSchema.getTenses().contains(RootTense.FUTURE));
   }
 
 }

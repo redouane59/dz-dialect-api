@@ -1,0 +1,25 @@
+{
+  "id": "quelque chose",
+  "word_type": "NOUN",
+  "noun_types": [
+    "OBJECT"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "quelque chose",
+          "gender": "X"
+        },
+        {
+          "lang": "DZ",
+          "value": "kech 7eja",
+          "ar_value": "",
+          "gender": "X"
+        }
+      ]
+    }
+  ]
+}

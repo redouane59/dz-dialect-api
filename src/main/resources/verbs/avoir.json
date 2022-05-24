@@ -1,1 +1,294 @@
-{"values":[{"translations":[{"lang":"FR","value":"ai"},{"lang":"DZ","value":"3ndi","ar_value":"عندي"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"as"},{"lang":"DZ","value":"3ndek","ar_value":"عندك"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"as"},{"lang":"DZ","value":"3ndek","ar_value":"عندك"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"a"},{"lang":"DZ","value":"3ndou","ar_value":"عندو"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"a"},{"lang":"DZ","value":"3ndha","ar_value":"عندها"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"a"},{"lang":"DZ","value":"3ndna","ar_value":"عندنا"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"avez"},{"lang":"DZ","value":"3ndkoum","ar_value":"عندكوم"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"ont"},{"lang":"DZ","value":"3ndhoum","ar_value":"عندهوم"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"avoir"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndi",
+          "ar_value": "عندي"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndek",
+          "ar_value": "عندك"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndek",
+          "ar_value": "عندك"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndou",
+          "ar_value": "عندو"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndha",
+          "ar_value": "عندها"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndna",
+          "ar_value": "عندنا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndkoum",
+          "ar_value": "عندكوم"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ndhoum",
+          "ar_value": "عندهوم"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndi",
+          "ar_value": "كان عندي"
+        },
+        {
+          "lang": "FR",
+          "value": "ai eu"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndek",
+          "ar_value": "كان عندك"
+        },
+        {
+          "lang": "FR",
+          "value": "as eu"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan3ndek",
+          "ar_value": "كان عندك"
+        },
+        {
+          "lang": "FR",
+          "value": "as eu"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndou",
+          "ar_value": "كان عندو"
+        },
+        {
+          "lang": "FR",
+          "value": "a eu"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndha",
+          "ar_value": "كان عندها"
+        },
+        {
+          "lang": "FR",
+          "value": "a eu"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndna",
+          "ar_value": "كان عندنا"
+        },
+        {
+          "lang": "FR",
+          "value": "a eu"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndkoum",
+          "ar_value": "كان عندكوم"
+        },
+        {
+          "lang": "FR",
+          "value": "avez eu"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndhoum",
+          "ar_value": "كان عندهوم"
+        },
+        {
+          "lang": "FR",
+          "value": "ont eu"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont eu"
+        },
+        {
+          "lang": "DZ",
+          "value": "kaan 3ndhoum",
+          "ar_value": "كان عندهم"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST"
+    }
+  ],
+  "id": "avoir"
+}

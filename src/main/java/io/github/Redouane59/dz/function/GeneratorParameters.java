@@ -6,44 +6,54 @@ import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.Adjective;
 import io.github.Redouane59.dz.model.complement.Noun;
+import io.github.Redouane59.dz.model.level.Level;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
-import io.github.Redouane59.dz.model.verb.Tense;
+import io.github.Redouane59.dz.model.verb.RootTense;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class GeneratorParameters {
 
   @Builder.Default
-  private Set<Tense>    tenses              = Set.of(Tense.PAST, Tense.PAST2, Tense.PRESENT, Tense.FUTURE, Tense.IMPERATIVE);
+  private Set<RootTense> tenses              = Set.of(RootTense.PAST, RootTense.PRESENT, RootTense.FUTURE, RootTense.IMPERATIVE);
   @Builder.Default
-  private Set<String>   verbs               = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
+  private Set<String>    verbs               = DB.VERBS.stream().map(Verb::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>   nouns               = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>    nouns               = DB.NOUNS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>   adjectives          = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>    adjectives          = DB.ADJECTIVES.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
-  private Set<String>   adverbs             = DB.ADVERBS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
+  private Set<String>    adverbs             = DB.ADVERBS.stream().map(AbstractWord::getId).collect(Collectors.toSet());
   @Builder.Default
   @JsonProperty("word_types")
-  private Set<WordType> wordTypes           = Set.of(WordType.values());
+  private Set<WordType>  wordTypes           = Set.of(WordType.values());
   @Builder.Default
   @JsonIgnore
-  private int           count               = 1;
+  private int            count               = 1;
   @Builder.Default
   @JsonProperty("schemas")
-  private Set<String>   sentenceSchemas     = DB.SENTENCE_SCHEMAS.stream().map(SentenceSchema::getId).collect(Collectors.toSet());
+  private Set<String>    sentenceSchemas     = DB.SENTENCE_SCHEMAS.stream().map(SentenceSchema::getId).collect(Collectors.toSet());
   @Builder.Default
-  private boolean       possibleAffirmation = true;
+  @JsonProperty("possible_affirmation")
+  private boolean        possibleAffirmation = true;
   @Builder.Default
-  private boolean       possibleNegation    = true;
+  @JsonProperty("possible_negation")
+  private boolean        possibleNegation    = true;
+  @Builder.Default
+  private List<Level>    levels              = DB.LEVELS;
 
   @JsonIgnore
   public Set<Verb> getVerbsFromIds() {

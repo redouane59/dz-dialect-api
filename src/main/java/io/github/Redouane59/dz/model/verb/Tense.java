@@ -5,12 +5,13 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
+// @todo add root tense
 public enum Tense {
-  PAST("passé"),
-  PAST2("passé2"), // @todo dev verbs
-  PRESENT("présent"),
-  FUTURE("futur"),
-  IMPERATIVE("impératif");
+  PAST(RootTense.PAST),
+  PAST2(RootTense.PAST), // @todo dev verbs
+  PRESENT(RootTense.PRESENT),
+  FUTURE(RootTense.FUTURE),
+  IMPERATIVE(RootTense.IMPERATIVE);
 
-  String id;
+  RootTense rootTense;
 }

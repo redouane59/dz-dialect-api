@@ -273,5 +273,101 @@
     ],
     "verb_type": "ACTION",
     "indirect_complement": true
+  },
+  {
+    "id": "descendre",
+    "possible_questions": [
+      "WHY",
+      "HOW",
+      "WITH_WHO",
+      "WHERE"
+    ],
+    "possible_complements": [
+      "PLACE"
+    ],
+    "verb_type": "DEPLACEMENT"
+  },
+  {
+    "id": "demander",
+    "possible_questions": [
+      "WHAT",
+      "WHY"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true
+  },
+  {
+    "id": "dormir",
+    "possible_questions": [
+      "WHY",
+      "WHERE",
+      "WHEN",
+      "WITH_WHO"
+    ],
+    "possible_complements": [
+      "ADVERB"
+    ],
+    "verb_type": "ACTION"
+  },
+  {
+    "id": "danser",
+    "possible_questions": [
+      "WHY"
+    ],
+    "possible_complements": [
+      "ADVERB"
+    ],
+    "verb_type": "ACTION",
+    "semi_auxiliar": false
+  },
+  {
+    "id": "douter",
+    "possible_questions": [
+      "WHY"
+    ]
+  },
+  {
+    "id": "écrire",
+    "possible_questions": [
+      "WHAT",
+      "WHY"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true
+  },
+  {
+    "id": "essayer",
+    "possible_questions": [
+      "WHY",
+      "WHAT"
+    ],
+    "possible_complements": [],
+    "verb_type": "ACTION",
+    "direct_complement": true,
+    "object_only": true
+  },
+  {
+    "id": "envoyer",
+    "possible_complements": [
+      "OBJECT"
+    ],
+    "possible_questions": [
+      "WHAT"
+    ],
+    "verb_type": "ACTION",
+    "indirect_complement": true,
+    "direct_complement": true
+  },
+  {
+    "id": "entrer",
+    "possible_questions": [
+      "WHY",
+      "WHEN",
+      "WITH_WHO"
+    ],
+    "possible_complements": [
+      "PLACE"
+    ],
+    "verb_type": "DEPLACEMENT"
   }
 ]

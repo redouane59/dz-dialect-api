@@ -45,7 +45,7 @@
         "translations": [
           {
             "lang": "FR",
-            "value": "où est-ce que"
+            "value": "où"
           },
           {
             "lang": "DZ",
@@ -64,7 +64,7 @@
         "translations": [
           {
             "lang": "FR",
-            "value": "comment est-ce que"
+            "value": "comment"
           },
           {
             "lang": "DZ",
@@ -83,7 +83,7 @@
         "translations": [
           {
             "lang": "FR",
-            "value": "pourquoi est-ce que"
+            "value": "pourquoi"
           },
           {
             "lang": "DZ",
@@ -102,7 +102,7 @@
         "translations": [
           {
             "lang": "FR",
-            "value": "combien est-ce que"
+            "value": "combien"
           },
           {
             "lang": "DZ",
@@ -140,7 +140,7 @@
         "translations": [
           {
             "lang": "FR",
-            "value": "avec qui est-ce que"
+            "value": "avec qui"
           },
           {
             "lang": "DZ",

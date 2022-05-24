@@ -29,7 +29,6 @@ public class DisplayNounsTest {
         }
       }
     }
-    // @todo why cast not working here
     DB.NOUNS.forEach(n -> n.getValues().stream().map(o -> (GenderedWord) o).forEach(v ->
                                                                                         line.append(n.getId())
                                                                                             .append(",")

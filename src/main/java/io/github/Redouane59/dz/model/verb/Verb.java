@@ -139,9 +139,9 @@ public class Verb extends AbstractWord {
   public Optional<Conjugation> getConjugationByGenderSingularPossessionAndTense(Gender gender,
                                                                                 boolean isSingular,
                                                                                 Possession possession,
-                                                                                Tense tense) {
+                                                                                RootTense tense) {
     Optional<Conjugation> result = getValues().stream().map(o -> (Conjugation) o)
-                                              .filter(o -> o.getTense() == tense)
+                                              .filter(o -> o.getTense().getRootTense() == tense)
                                               .filter(o -> o.isSingular() == isSingular)
                                               .filter(o -> o.getPossession() == possession)
                                               .filter(o -> o.getGender() == gender || gender == Gender.X || o.getGender() == Gender.X)

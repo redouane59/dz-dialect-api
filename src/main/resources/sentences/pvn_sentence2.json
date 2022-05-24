@@ -1,0 +1,25 @@
+{
+  "id": "PVN2",
+  "fr_sequence": [
+    "PRONOUN",
+    "VERB",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "ar_sequence": [
+    "VERB",
+    "ARTICLE",
+    "NOUN"
+  ],
+  "subject_position": 0,
+  "tenses": [
+    "PAST",
+    "PRESENT",
+    "FUTURE"
+  ],
+  "verb_type": "ACTION",
+  "noun_types": [
+    "PERSON"
+  ],
+  "possible_negation": true
+}

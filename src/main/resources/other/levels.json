@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "description": "verbe être (présent)",
+    "parameters": {
+      "verbs": [
+        "être"
+      ],
+      "tenses": [
+        "PRESENT"
+      ],
+      "nouns": null,
+      "adjectives": null,
+      "adverbs": null,
+      "word_types": null,
+      "schemas": [
+        "PV"
+      ],
+      "possible_negation": false
+    }
+  },
+  {
+    "id": 2,
+    "description": "verbe avoir (présent)",
+    "parameters": {
+      "verbs": [
+        "avoir"
+      ],
+      "tenses": [
+        "PRESENT"
+      ],
+      "nouns": null,
+      "adjectives": null,
+      "adverbs": null,
+      "word_types": null,
+      "schemas": [
+        "PV"
+      ],
+      "possible_negation": false
+    }
+  },
+  {
+    "id": 3,
+    "description": "verbe être et avoir (présent)",
+    "parameters": {
+      "verbs": [
+        "avoir",
+        "être"
+      ],
+      "tenses": [
+        "PRESENT"
+      ],
+      "nouns": null,
+      "adjectives": null,
+      "adverbs": null,
+      "word_types": null,
+      "schemas": [
+        "PV"
+      ],
+      "possible_negation": false
+    }
+  },
+  {
+    "id": 4,
+    "description": "adjectifs temporaires",
+    "parameters": {
+      "verbs": [
+        "être"
+      ],
+      "tenses": [
+        "PRESENT"
+      ],
+      "nouns": null,
+      "adverbs": null,
+      "word_types": null,
+      "schemas": [
+        "PVA_TEMP"
+      ],
+      "possible_negation": false
+    }
+  },
+  {
+    "id": 5,
+    "description": "adjectifs définitifs",
+    "parameters": {
+      "verbs": [
+        "être"
+      ],
+      "tenses": [
+        "PRESENT"
+      ],
+      "nouns": null,
+      "adverbs": null,
+      "word_types": null,
+      "schemas": [
+        "PVA_DEF"
+      ],
+      "possible_negation": false
+    }
+  }
+]

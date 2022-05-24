@@ -1,0 +1,311 @@
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekit",
+          "ar_value": "شَكِّيت"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekit",
+          "ar_value": "شَكِّيت"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekiti",
+          "ar_value": "شَكِّيتِ"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chek",
+          "ar_value": "شَكّ"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "cheket",
+          "ar_value": "شَكَّت"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekina",
+          "ar_value": "شَكِّينا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekitou",
+          "ar_value": "شَكِّيتو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekou",
+          "ar_value": "شَكّو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont douté"
+        },
+        {
+          "lang": "DZ",
+          "value": "chekou",
+          "ar_value": "شَكّو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doute"
+        },
+        {
+          "lang": "DZ",
+          "value": "nchek",
+          "ar_value": "نشك"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doutes"
+        },
+        {
+          "lang": "DZ",
+          "value": "tchek",
+          "ar_value": "تشك"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doutes"
+        },
+        {
+          "lang": "DZ",
+          "value": "tcheki",
+          "ar_value": "تشكي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doute"
+        },
+        {
+          "lang": "DZ",
+          "value": "ychek",
+          "ar_value": "يشك"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doute"
+        },
+        {
+          "lang": "DZ",
+          "value": "tchek",
+          "ar_value": "تشك"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doute"
+        },
+        {
+          "lang": "DZ",
+          "value": "nchekou",
+          "ar_value": "نشُكو"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doutez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tchekou",
+          "ar_value": "تشُكو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doutent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ychekou",
+          "ar_value": "يشُكو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "doutent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ychekou",
+          "ar_value": "يشُكو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    }
+  ],
+  "id": "douter"
+}

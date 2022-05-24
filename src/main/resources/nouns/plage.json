@@ -7,16 +7,17 @@
   "values": [
     {
       "singular": true,
-      "gender": "F",
       "translations": [
         {
           "lang": "FR",
-          "value": "plage"
+          "value": "plage",
+          "gender": "F"
         },
         {
           "lang": "DZ",
           "value": "b7ar",
-          "ar_value": "بْحَرْ"
+          "ar_value": "بْحَرْ",
+          "gender": "M"
         }
       ]
     }

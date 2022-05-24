@@ -68,6 +68,7 @@ public class Translation {
     } else if (lang == Lang.DZ) {
       // suffixes managed in suffix class
     }
+    newValue = newValue.replace("  ", " ");
     newValue = newValue.trim();
     return newValue;
   }

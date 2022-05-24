@@ -11,8 +11,8 @@ import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.sentence.SentenceSerializer;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -75,7 +75,7 @@ public class Sentence extends Word {
     private SentenceSchema sentenceSchema;
     private boolean        negation;
     @Builder.Default
-    private List<String>   randomFrWords = new ArrayList<>();
+    private Set<String>    randomFrWords = new HashSet<>();
   }
 
 }

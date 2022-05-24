@@ -6,7 +6,7 @@ import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.sentence.SentenceBuilder;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
-import io.github.Redouane59.dz.model.verb.Tense;
+import io.github.Redouane59.dz.model.verb.RootTense;
 import io.github.Redouane59.dz.model.word.Sentence;
 import java.util.List;
 import java.util.Optional;
@@ -28,7 +28,7 @@ public class GenerateSentenceTest {
         Optional<Sentence> sentence = sentenceBuilder.generate(GeneratorParameters.builder().possibleNegation(true)
                                                                                   .possibleAffirmation(true)
                                                                                   //                .verbs(Set.of("attendre"))
-                                                                                  .tenses(Set.of(Tense.PRESENT)).build());
+                                                                                  .tenses(Set.of(RootTense.PRESENT)).build());
         if (sentence.isPresent()) {
           if (sentence.get().getDzTranslationAr() != null && !sentence.get().getDzTranslationAr().contains("null")) {
             System.out.println(sentence.get().getTranslationValue(Lang.FR) + " -> " + sentence.get().getTranslationValue(Lang.DZ)

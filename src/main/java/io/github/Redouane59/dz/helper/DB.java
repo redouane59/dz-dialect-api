@@ -2,11 +2,13 @@ package io.github.Redouane59.dz.helper;
 
 import io.github.Redouane59.dz.model.complement.Adjective;
 import io.github.Redouane59.dz.model.complement.Noun;
+import io.github.Redouane59.dz.model.level.Level;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.word.AbstractWord;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -25,9 +27,11 @@ public class DB {
   public final static Set<AbstractWord>   PERSONAL_PRONOUNS = new HashSet<>();
   public final static Set<SentenceSchema> SENTENCE_SCHEMAS  = new HashSet<>();
   public final static Set<AbstractWord>   QUESTIONS         = new HashSet<>();
+  public final static Set<AbstractWord>   UNDEFINED_WORDS   = new HashSet<>();
   // @todo to move somewhere else ?
   public static final Map<String, String> RULE_MAP          = Map.of("ouou", "ouh", "iou", "ih", "aek", "ak",
                                                                      "wou", "wah");
+  public static       List<Level>         LEVELS            = new ArrayList<>();
   public static       AbstractWord        DEFINED_ARTICLES; // @todo set of articles instead ?
   public static       AbstractWord        UNDEFINED_ARTICLES;
   public static       AbstractWord        POSSESSIVE_ARTICLES;
@@ -183,5 +187,13 @@ public class DB {
     System.out.println(QUESTIONS.size() + " personal pronouns loaded");
   }
 
+  static {
+    try {
+      LEVELS = List.of(Config.OBJECT_MAPPER.readValue(new File("./src/main/resources/other/levels.json"), Level[].class));
+    } catch (Exception e) {
+      System.err.println("could not load levels " + e.getMessage());
+      e.printStackTrace();
+    }
+  }
 
 }

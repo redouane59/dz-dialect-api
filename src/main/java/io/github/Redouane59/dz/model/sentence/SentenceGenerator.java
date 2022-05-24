@@ -71,6 +71,9 @@ public class SentenceGenerator {
     List<SentenceSchema> matchingSentenceSchema = bodyArgs.getSentenceSchemasFromIds().stream()
                                                           .filter(o -> o.getVerbType() == null
                                                                        || verbTypes.contains(o.getVerbType()))
+                                                          .filter(o -> o.getTenses()
+                                                                        .stream()
+                                                                        .anyMatch(t -> bodyArgs.getTenses().contains(t)))
                                                           .collect(Collectors.toList());
     if (matchingSentenceSchema.isEmpty()) {
       System.err.println("No sentence schema found with verb types " + verbTypes);

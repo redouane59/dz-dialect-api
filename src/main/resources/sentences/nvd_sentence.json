@@ -13,6 +13,11 @@
     "ADVERB"
   ],
   "subject_position": 1,
+  "noun_types": [
+    "PERSON",
+    "FOOD",
+    "OBJECT"
+  ],
   "tenses": [
     "PRESENT"
   ],

@@ -62,7 +62,7 @@ public class AbstractWord {
     return DB.DEFINED_ARTICLES.getValues().stream()
                               .map(o -> (GenderedWord) o)
                               .filter(a -> a.isSingular() == singular)
-                              .filter(a -> a.getGender() == gender || a.getGender() == Gender.X || gender == Gender.X)
+                              .filter(a -> a.getGender() == gender/* || a.getGender() == Gender.X || gender == Gender.X*/)
                               .findAny();
   }
 
@@ -114,7 +114,9 @@ public class AbstractWord {
   public Optional<? extends GenderedWord> getWordByGenderAndSingular(Gender gender, Lang lang, boolean isSingular) {
     Optional<? extends GenderedWord> result = getValues().stream()
                                                          .map(o -> (GenderedWord) o)
-                                                         .filter(o -> o.getGender(lang) == gender || o.getGender(lang) == Gender.X)
+                                                         .filter(o -> o.getGender(lang) == gender
+                                                                      || o.getGender(lang) == Gender.X
+                                                                      || gender == Gender.X)
                                                          .filter(o -> o.isSingular() == isSingular)
                                                          .findAny();
     if (result.isEmpty()) {

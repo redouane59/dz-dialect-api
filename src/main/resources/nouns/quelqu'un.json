@@ -1,0 +1,25 @@
+{
+  "id": "quelqu'un",
+  "word_type": "NOUN",
+  "noun_types": [
+    "PERSON"
+  ],
+  "values": [
+    {
+      "singular": true,
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "quelqu'un",
+          "gender": "X"
+        },
+        {
+          "lang": "DZ",
+          "value": "kech wa7ad",
+          "ar_value": "",
+          "gender": "X"
+        }
+      ]
+    }
+  ]
+}
