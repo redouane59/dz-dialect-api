@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.DB;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.level.Level;
 import io.github.Redouane59.dz.model.sentence.SentenceBuilder;
 import io.github.Redouane59.dz.model.word.Sentence;

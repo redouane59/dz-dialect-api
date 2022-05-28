@@ -2,8 +2,8 @@ package io.github.Redouane59.dz.model.sentence;
 
 import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.DB;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.Gender;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Possession;

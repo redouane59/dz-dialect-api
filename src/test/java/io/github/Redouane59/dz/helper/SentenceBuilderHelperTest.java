@@ -2,7 +2,6 @@ package io.github.Redouane59.dz.helper;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.model.sentence.SentenceBuilderHelper;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package io.github.Redouane59.dz.model.sentence;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.DB;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.Translation;
 import io.github.Redouane59.dz.model.WordType;
@@ -63,14 +63,23 @@ public class SentenceBuilder {
     Sentence sentence = new Sentence();
     sentence.getTranslations().add(generateArTranslation(Lang.DZ));
     Translation frTranslation = generateFrTranslation();
+    Translation dzTranslation = generateArTranslation(Lang.DZ);
     sentence.getTranslations().add(frTranslation);
+    // word_propositions part
     sentenceContent.setRandomFrWords(helper.splitSentenceInWords(frTranslation.getValue()));
+    sentenceContent.setRandomArWords(helper.splitSentenceInWords(dzTranslation.getValue()));
     // generating a second random sentence
     sentence.setContent(sentenceContent);
+    addRandomWordPropositions(sentence);
+    return Optional.of(sentence);
+  }
+
+  private void addRandomWordPropositions(Sentence sentence) {
     fillWordListFromSchema();
     sentence.getContent().getRandomFrWords().addAll(helper.splitSentenceInWords(generateFrTranslation().getValue()));
+    sentence.getContent().getRandomArWords().addAll(helper.splitSentenceInWords(generateArTranslation(Lang.DZ).getValue()));
     Collections.shuffle(sentence.getContent().getRandomFrWords());
-    return Optional.of(sentence);
+    Collections.shuffle(sentence.getContent().getRandomArWords());
   }
 
   private void resetAttributes() {
@@ -79,6 +88,7 @@ public class SentenceBuilder {
     abstractQuestion = null;
     wordListFr       = new ArrayList<>();
     wordListAr       = new ArrayList<>();
+    sentenceContent  = SentenceContent.builder().build();
     sentenceContent.setSentenceSchema(schema);
     if (schema.isPossibleNegation()) {
       if (bodyArgs.isPossibleNegation() && bodyArgs.isPossibleAffirmation()) {
@@ -93,7 +103,6 @@ public class SentenceBuilder {
   private boolean fillWordListFromSchema() {
     PossessiveWord subject         = null;
     AbstractWord   abstractSubject = null;
-    sentenceContent = SentenceContent.builder().build();
     resetAttributes();
     for (int i = 0; i < schema.getFrSequence().size(); i++) {
       WordType wordType = schema.getFrSequence().get(i);

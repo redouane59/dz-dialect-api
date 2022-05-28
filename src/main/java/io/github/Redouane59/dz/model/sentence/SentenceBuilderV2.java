@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.sentence;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.Noun;
 import io.github.Redouane59.dz.model.verb.Verb;

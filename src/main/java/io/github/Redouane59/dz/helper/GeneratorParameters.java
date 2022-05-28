@@ -1,8 +1,7 @@
-package io.github.Redouane59.dz.function;
+package io.github.Redouane59.dz.helper;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.github.Redouane59.dz.helper.DB;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.complement.Adjective;
 import io.github.Redouane59.dz.model.complement.Noun;

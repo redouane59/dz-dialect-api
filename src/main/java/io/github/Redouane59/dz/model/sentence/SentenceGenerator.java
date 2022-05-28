@@ -1,7 +1,7 @@
 package io.github.Redouane59.dz.model.sentence;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.Config;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.verb.Verb;
 import io.github.Redouane59.dz.model.verb.VerbType;
 import io.github.Redouane59.dz.model.word.Sentence;

@@ -1,6 +1,6 @@
 package io.github.Redouane59.dz.model.level;
 
-import io.github.Redouane59.dz.function.GeneratorParameters;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

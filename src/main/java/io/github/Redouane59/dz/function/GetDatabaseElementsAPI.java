@@ -5,6 +5,7 @@ import com.google.cloud.functions.HttpFunction;
 import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
 import io.github.Redouane59.dz.helper.Config;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.WordType;
 import io.github.Redouane59.dz.model.sentence.Sentences;
 import java.io.BufferedWriter;

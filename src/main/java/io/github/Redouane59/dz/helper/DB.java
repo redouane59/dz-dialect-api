@@ -24,7 +24,7 @@ public class DB {
   public final static Set<Adjective>      ADJECTIVES        = new HashSet<>();
   public final static Set<Noun>           NOUNS             = new HashSet<>();
   public final static Set<AbstractWord>   ADVERBS           = new HashSet<>();
-  public final static Set<AbstractWord>   PERSONAL_PRONOUNS = new HashSet<>();
+  public final static Set<AbstractWord>   PERSONAL_PRONOUNS = new HashSet<>(); // @todo add X for you
   public final static Set<SentenceSchema> SENTENCE_SCHEMAS  = new HashSet<>();
   public final static Set<AbstractWord>   QUESTIONS         = new HashSet<>();
   public final static Set<AbstractWord>   UNDEFINED_WORDS   = new HashSet<>();

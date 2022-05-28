@@ -3,8 +3,8 @@ package io.github.Redouane59.dz.sentences;
 import static io.github.Redouane59.dz.model.sentence.SentenceBuilder.RANDOM;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.github.Redouane59.dz.function.GeneratorParameters;
 import io.github.Redouane59.dz.helper.DB;
+import io.github.Redouane59.dz.helper.GeneratorParameters;
 import io.github.Redouane59.dz.model.Lang;
 import io.github.Redouane59.dz.model.sentence.SentenceBuilderV2;
 import io.github.Redouane59.dz.model.sentence.SentenceSchema;
