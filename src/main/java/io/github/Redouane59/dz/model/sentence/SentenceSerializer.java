@@ -29,9 +29,17 @@ public class SentenceSerializer extends StdSerializer<Sentence> {
       jgen.writeObjectField("additional_information", sentence.getAdditionalInformations());
     }
     if (Config.SERIALIZE_WORD_PROPOSITIONS) {
-      jgen.writeFieldName("word_propositions");
+      //fr
+      jgen.writeFieldName("word_propositions_fr");
       jgen.writeStartArray();
       for (String s : sentence.getContent().getRandomFrWords()) {
+        jgen.writeString(s);
+      }
+      jgen.writeEndArray();
+      //ar
+      jgen.writeFieldName("word_propositions_ar");
+      jgen.writeStartArray();
+      for (String s : sentence.getContent().getRandomArWords()) {
         jgen.writeString(s);
       }
       jgen.writeEndArray();

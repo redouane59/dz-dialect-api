@@ -12,4 +12,5 @@ public class Config {
   public static List<String>    CONSONANTS                  = List.of("d", "n", "r", "t", "s", "z", "ch");
   public static boolean         SERIALIZE_ADDITIONAL_INFO   = true;
   public static boolean         SERIALIZE_WORD_PROPOSITIONS = true;
+  public static int             MAX_GENERATION_COUNT        = 30;
 }

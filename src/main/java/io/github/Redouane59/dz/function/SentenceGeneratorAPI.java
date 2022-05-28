@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 
+
 @Slf4j
 public class SentenceGeneratorAPI implements HttpFunction {
 
@@ -27,6 +28,7 @@ public class SentenceGeneratorAPI implements HttpFunction {
     BufferedWriter      writer   = httpResponse.getWriter();
     GeneratorParameters bodyArgs = GeneratorParameters.builder().build();
     try {
+
       Optional<String> count = httpRequest.getFirstQueryParameter("count");
       count.ifPresent(s -> bodyArgs.setCount(Integer.parseInt(s)));
       Optional<String> schema = httpRequest.getFirstQueryParameter("schemas");
@@ -54,6 +56,7 @@ public class SentenceGeneratorAPI implements HttpFunction {
       httpResponse.setContentType("application/json;charset=UTF-8");
       Config.OBJECT_MAPPER.getFactory().configure(JsonGenerator.Feature.ESCAPE_NON_ASCII, true);
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(result));
+
     } catch (Exception e) {
       e.printStackTrace();
       writer.write(Config.OBJECT_MAPPER.writeValueAsString(Sentences.builder().errors(Set.of(e.getMessage())).build()));

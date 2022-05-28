@@ -139,7 +139,7 @@ public class DB {
         System.err.println("could not load file " + fileName);
       }
     }
-    System.out.println(NOUNS.size() + " nouns loaded\n");
+    System.out.println(NOUNS.size() + " nouns loaded");
   }
 
   static {

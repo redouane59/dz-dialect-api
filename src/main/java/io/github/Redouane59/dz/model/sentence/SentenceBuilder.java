@@ -19,6 +19,7 @@ import io.github.Redouane59.dz.model.word.Sentence;
 import io.github.Redouane59.dz.model.word.Sentence.SentenceContent;
 import io.github.Redouane59.dz.model.word.Word;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map.Entry;
@@ -68,6 +69,7 @@ public class SentenceBuilder {
     sentence.setContent(sentenceContent);
     fillWordListFromSchema();
     sentence.getContent().getRandomFrWords().addAll(helper.splitSentenceInWords(generateFrTranslation().getValue()));
+    Collections.shuffle(sentence.getContent().getRandomFrWords());
     return Optional.of(sentence);
   }
 

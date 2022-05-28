@@ -11,8 +11,9 @@ import io.github.Redouane59.dz.model.sentence.SentenceSchema;
 import io.github.Redouane59.dz.model.sentence.SentenceSerializer;
 import io.github.Redouane59.dz.model.verb.Tense;
 import io.github.Redouane59.dz.model.verb.Verb;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.annotation.XmlRootElement;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +21,7 @@ import lombok.Setter;
 @JsonSerialize(using = SentenceSerializer.class)
 @Setter
 @Getter
+@XmlRootElement(name = "Sentence")
 public class Sentence extends Word {
 
   private SentenceContent content;
@@ -75,7 +77,9 @@ public class Sentence extends Word {
     private SentenceSchema sentenceSchema;
     private boolean        negation;
     @Builder.Default
-    private Set<String>    randomFrWords = new HashSet<>();
+    private List<String>   randomFrWords = new ArrayList<>();
+    @Builder.Default
+    private List<String>   randomArWords = new ArrayList<>();
   }
 
 }
