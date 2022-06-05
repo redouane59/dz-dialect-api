@@ -1,1 +1,358 @@
-{"values":[{"translations":[{"lang":"DZ","value":"ah'bat","ar_value":"اَهْبِط"},{"lang":"FR","value":"descends"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"ahabti","ar_value":"اَهَبْطي"},{"lang":"FR","value":"descends"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"ahabtou","ar_value":"اَهَبْطو"},{"lang":"FR","value":"descendez"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"7bet","ar_value":"حْبَط"},{"lang":"FR","value":"suis descendu"}],"gender":"X","possession":"I","singular":true,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7bet","ar_value":"حْبَط"},{"lang":"FR","value":"es descendu"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7beti","ar_value":"حْبَطِ"},{"lang":"FR","value":"es descendue"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7bet","ar_value":"حْبَط"},{"lang":"FR","value":"est descendu"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7ebtet","ar_value":"حَبْطَت"},{"lang":"FR","value":"est descendue"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7betna","ar_value":"حَبْطَت"},{"lang":"FR","value":"est descendus"}],"gender":"X","possession":"I","singular":false,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7betou","ar_value":"حْبَطْنا"},{"lang":"FR","value":"êtes descendus"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7ebtou","ar_value":"حَبْطو"},{"lang":"FR","value":"sont descendus"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"7ebtou","ar_value":"حَبْطو"},{"lang":"FR","value":"sont descendues"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST2"},{"translations":[{"lang":"DZ","value":"ne7bet","ar_value":"نَحْبط"},{"lang":"FR","value":"descends"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"te7bet","ar_value":"تَحْبط"},{"lang":"FR","value":"descends"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"te7ebti","ar_value":"تَحَبْطي"},{"lang":"FR","value":"descends"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ye7bet","ar_value":"يَحَبْط"},{"lang":"FR","value":"descend"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"te7bet","ar_value":"تَحْبط"},{"lang":"FR","value":"descend"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ne7abtou","ar_value":"نَحَبْطو"},{"lang":"FR","value":"descend"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"te7abtou","ar_value":"تَحَبْطو"},{"lang":"FR","value":"descendez"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ye7abtou","ar_value":"يَحَبْطو"},{"lang":"FR","value":"descendent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ye7abtou","ar_value":"يَحَبْطو"},{"lang":"FR","value":"descendent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"descendre"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ah'bat",
+          "ar_value": "اَهْبِط"
+        },
+        {
+          "lang": "FR",
+          "value": "descends"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ahabti",
+          "ar_value": "اَهَبْطي"
+        },
+        {
+          "lang": "FR",
+          "value": "descends"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ahabtou",
+          "ar_value": "اَهَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "descendez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7bet",
+          "ar_value": "حْبَط"
+        },
+        {
+          "lang": "FR",
+          "value": "suis descendu"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7bet",
+          "ar_value": "حْبَط"
+        },
+        {
+          "lang": "FR",
+          "value": "es descendu"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7beti",
+          "ar_value": "حْبَطِ"
+        },
+        {
+          "lang": "FR",
+          "value": "es descendue"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7bet",
+          "ar_value": "حْبَط"
+        },
+        {
+          "lang": "FR",
+          "value": "est descendu"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7ebtet",
+          "ar_value": "حَبْطَت"
+        },
+        {
+          "lang": "FR",
+          "value": "est descendue"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7betna",
+          "ar_value": "حَبْطَت"
+        },
+        {
+          "lang": "FR",
+          "value": "est descendus"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7betou",
+          "ar_value": "حْبَطْنا"
+        },
+        {
+          "lang": "FR",
+          "value": "êtes descendus"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7ebtou",
+          "ar_value": "حَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "sont descendus"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "7ebtou",
+          "ar_value": "حَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "sont descendues"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_ETRE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ne7bet",
+          "ar_value": "نَحْبط"
+        },
+        {
+          "lang": "FR",
+          "value": "descends"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "te7bet",
+          "ar_value": "تَحْبط"
+        },
+        {
+          "lang": "FR",
+          "value": "descends"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "te7ebti",
+          "ar_value": "تَحَبْطي"
+        },
+        {
+          "lang": "FR",
+          "value": "descends"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ye7bet",
+          "ar_value": "يَحَبْط"
+        },
+        {
+          "lang": "FR",
+          "value": "descend"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "te7bet",
+          "ar_value": "تَحْبط"
+        },
+        {
+          "lang": "FR",
+          "value": "descend"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ne7abtou",
+          "ar_value": "نَحَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "descend"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "te7abtou",
+          "ar_value": "تَحَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "descendez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ye7abtou",
+          "ar_value": "يَحَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "descendent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ye7abtou",
+          "ar_value": "يَحَبْطو"
+        },
+        {
+          "lang": "FR",
+          "value": "descendent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense":"PRESENT"}],"id":"descendre"}

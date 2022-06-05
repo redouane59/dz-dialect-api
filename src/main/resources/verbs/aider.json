@@ -1,1 +1,323 @@
-{"values":[{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"3awan","ar_value":"عاون"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"3awni","ar_value":"عاوني"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"aidez"},{"lang":"DZ","value":"3awnou","ar_value":"عاونو"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"ai aidé"},{"lang":"DZ","value":"3awent","ar_value":"عاونت"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as aidé"},{"lang":"DZ","value":"3awent","ar_value":"عاونت"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as aidé"},{"lang":"DZ","value":"3awenti","ar_value":"عاونتي"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a aidé"},{"lang":"DZ","value":"3awen","ar_value":"عاون"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a aidé"},{"lang":"DZ","value":"3awnet","ar_value":"عاونت"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a aidé"},{"lang":"DZ","value":"3awena","ar_value":"عاونا"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"avez aidé"},{"lang":"DZ","value":"3awentou","ar_value":"عاونتو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont aidé"},{"lang":"DZ","value":"3awnou","ar_value":"عاونو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"n3awen","ar_value":"نعاون"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aides"},{"lang":"DZ","value":"t3awen","ar_value":"تعاون"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aides"},{"lang":"DZ","value":"t3aweni","ar_value":"تعاوني"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"y3awen","ar_value":"إعاون"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"t3awen","ar_value":"تْعاون"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aide"},{"lang":"DZ","value":"n3awenou","ar_value":"نْعاونو"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aidez"},{"lang":"DZ","value":"t3awenou","ar_value":"تْعاونو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"aident"},{"lang":"DZ","value":"y3awenou","ar_value":"إعاونو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"aider"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awan",
+          "ar_value": "عاون"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awni",
+          "ar_value": "عاوني"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aidez"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awnou",
+          "ar_value": "عاونو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awent",
+          "ar_value": "عاونت"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awent",
+          "ar_value": "عاونت"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awenti",
+          "ar_value": "عاونتي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awen",
+          "ar_value": "عاون"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awnet",
+          "ar_value": "عاونت"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awena",
+          "ar_value": "عاونا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awentou",
+          "ar_value": "عاونتو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont aidé"
+        },
+        {
+          "lang": "DZ",
+          "value": "3awnou",
+          "ar_value": "عاونو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3awen",
+          "ar_value": "نعاون"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aides"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awen",
+          "ar_value": "تعاون"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aides"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3aweni",
+          "ar_value": "تعاوني"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3awen",
+          "ar_value": "إعاون"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awen",
+          "ar_value": "تْعاون"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aide"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3awenou",
+          "ar_value": "نْعاونو"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aidez"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3awenou",
+          "ar_value": "تْعاونو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "aident"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3awenou",
+          "ar_value": "إعاونو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular":false,"tense":"PRESENT"}],"id":"aider"}

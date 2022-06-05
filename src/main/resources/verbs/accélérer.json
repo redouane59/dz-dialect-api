@@ -1,1 +1,356 @@
-{"values":[{"translations":[{"lang":"DZ","value":"ghawel","ar_value":"غاول"},{"lang":"FR","value":"accélère"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"ghaweli","ar_value":"غاولي"},{"lang":"FR","value":"accélère"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"ghawlou","ar_value":"غاولو"},{"lang":"FR","value":"accélèrez"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"ghawelt","ar_value":"غاوَلْت"},{"lang":"FR","value":"ai acceléré"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawelt","ar_value":"غاوَلْت"},{"lang":"FR","value":"as accéléré"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawelti","ar_value":"غاوَلْتي"},{"lang":"FR","value":"as accéléré"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawel","ar_value":"غاول"},{"lang":"FR","value":"a accéléré"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghaw'let","ar_value":"غاوْلَت"},{"lang":"FR","value":"a accéléré"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawelna","ar_value":"غاولنا"},{"lang":"FR","value":"a accéléré"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghaweltou","ar_value":"غاولتو"},{"lang":"FR","value":"avez accéléré"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawlou","ar_value":"غاولو"},{"lang":"FR","value":"ont accéléré"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ghawlou","ar_value":"غاولو"},{"lang":"FR","value":"ont accéléré"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"ngahwel","ar_value":"نْغاول"},{"lang":"FR","value":"accélère"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tghawel","ar_value":"تْغاول"},{"lang":"FR","value":"accélères"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tghawli","ar_value":"تغاولي"},{"lang":"FR","value":"accélères"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yghawel","ar_value":"إيغاول"},{"lang":"FR","value":"accélère"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tghawel","ar_value":"تْغاول"},{"lang":"FR","value":"accélère"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"nghawlou","ar_value":"نْغاولو"},{"lang":"FR","value":"accélère"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tghawlou","ar_value":"تغاولو"},{"lang":"FR","value":"accélérez"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yghawlou","ar_value":"إيغاولو"},{"lang":"FR","value":"accélerent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yghawlou","ar_value":"إيغاولو"},{"lang":"FR","value":"accélèrent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"accélérer"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawel",
+          "ar_value": "غاول"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghaweli",
+          "ar_value": "غاولي"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawlou",
+          "ar_value": "غاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "accélèrez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawelt",
+          "ar_value": "غاوَلْت"
+        },
+        {
+          "lang": "FR",
+          "value": "ai acceléré"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawelt",
+          "ar_value": "غاوَلْت"
+        },
+        {
+          "lang": "FR",
+          "value": "as accéléré"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawelti",
+          "ar_value": "غاوَلْتي"
+        },
+        {
+          "lang": "FR",
+          "value": "as accéléré"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawel",
+          "ar_value": "غاول"
+        },
+        {
+          "lang": "FR",
+          "value": "a accéléré"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghaw'let",
+          "ar_value": "غاوْلَت"
+        },
+        {
+          "lang": "FR",
+          "value": "a accéléré"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawelna",
+          "ar_value": "غاولنا"
+        },
+        {
+          "lang": "FR",
+          "value": "a accéléré"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghaweltou",
+          "ar_value": "غاولتو"
+        },
+        {
+          "lang": "FR",
+          "value": "avez accéléré"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawlou",
+          "ar_value": "غاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "ont accéléré"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ghawlou",
+          "ar_value": "غاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "ont accéléré"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ngahwel",
+          "ar_value": "نْغاول"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tghawel",
+          "ar_value": "تْغاول"
+        },
+        {
+          "lang": "FR",
+          "value": "accélères"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tghawli",
+          "ar_value": "تغاولي"
+        },
+        {
+          "lang": "FR",
+          "value": "accélères"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yghawel",
+          "ar_value": "إيغاول"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tghawel",
+          "ar_value": "تْغاول"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "nghawlou",
+          "ar_value": "نْغاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "accélère"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tghawlou",
+          "ar_value": "تغاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "accélérez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yghawlou",
+          "ar_value": "إيغاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "accélerent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yghawlou",
+          "ar_value": "إيغاولو"
+        },
+        {
+          "lang": "FR",
+          "value": "accélèrent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER","singular":false,"tense":"PRESENT"}],"id":"accélérer"}

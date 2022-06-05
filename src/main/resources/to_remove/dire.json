@@ -1,6 +1,6 @@
 {
   "id": "dire",
-  "tense": "PAST",
+  "tense": "PAST_AVOIR",
   "values": [
     {
       "possession": "I",

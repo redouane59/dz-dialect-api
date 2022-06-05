@@ -11,7 +11,7 @@
   ],
   "subject_position": 0,
   "tenses": [
-    "PAST",
+    "PAST_AVOIR",
     "PRESENT"
   ],
   "verb_type": "STATE",

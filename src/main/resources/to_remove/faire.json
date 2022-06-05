@@ -137,7 +137,7 @@
       "singular": true
     }
   ],
-  "tense": "PAST"
+  "tense": "PAST_AVOIR"
 },
 {
 "values": [
@@ -254,7 +254,7 @@
 },
 {
 "lang": "DZ",
-"value": "dir"
+"value": "tdir"
 }
 ],
 "gender": "X",

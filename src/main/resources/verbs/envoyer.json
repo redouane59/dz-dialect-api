@@ -1,1 +1,356 @@
-{"values":[{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"eb3ath","ar_value":"ابعث"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"eba3thi","ar_value":"ابعثي"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"envoyez"},{"lang":"DZ","value":"eba3thou","ar_value":"ابعثو"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"ai envoyé"},{"lang":"DZ","value":"b3at","ar_value":"بْعثت"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as envoyé"},{"lang":"DZ","value":"b3at","ar_value":"بْعثت"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as envoyé"},{"lang":"DZ","value":"b3ati","ar_value":"بْعثتي"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a envoyé"},{"lang":"DZ","value":"b3at","ar_value":"بْعثت"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a envoyé"},{"lang":"DZ","value":"ba3tet","ar_value":"بعثت"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a envoyé"},{"lang":"DZ","value":"b3atna","ar_value":"بعثنا"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"avez envoyé"},{"lang":"DZ","value":"b3atou","ar_value":"بعثتو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont envoyé"},{"lang":"DZ","value":"be3tou","ar_value":"بعثو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont envoyé"},{"lang":"DZ","value":"be3tou","ar_value":"بعثو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"nb3at","ar_value":"نبعث"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoies"},{"lang":"DZ","value":"tb3at","ar_value":"تبعث"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoies"},{"lang":"DZ","value":"tb3ati","ar_value":"تبعثي"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"yb3at","ar_value":"يبعث"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"tb3at","ar_value":"تبعث"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoie"},{"lang":"DZ","value":"nb3atou","ar_value":"نبعثو"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoyez"},{"lang":"DZ","value":"tba3tou","ar_value":"تبعثو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoient"},{"lang":"DZ","value":"yb3atou","ar_value":"يبعثو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"envoient"},{"lang":"DZ","value":"yb3atou","ar_value":"يبعثو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"envoyer"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "eb3ath",
+          "ar_value": "ابعث"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "eba3thi",
+          "ar_value": "ابعثي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoyez"
+        },
+        {
+          "lang": "DZ",
+          "value": "eba3thou",
+          "ar_value": "ابعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3at",
+          "ar_value": "بْعثت"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3at",
+          "ar_value": "بْعثت"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3ati",
+          "ar_value": "بْعثتي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3at",
+          "ar_value": "بْعثت"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "ba3tet",
+          "ar_value": "بعثت"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3atna",
+          "ar_value": "بعثنا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "b3atou",
+          "ar_value": "بعثتو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3tou",
+          "ar_value": "بعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont envoyé"
+        },
+        {
+          "lang": "DZ",
+          "value": "be3tou",
+          "ar_value": "بعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "nb3at",
+          "ar_value": "نبعث"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoies"
+        },
+        {
+          "lang": "DZ",
+          "value": "tb3at",
+          "ar_value": "تبعث"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoies"
+        },
+        {
+          "lang": "DZ",
+          "value": "tb3ati",
+          "ar_value": "تبعثي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "yb3at",
+          "ar_value": "يبعث"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "tb3at",
+          "ar_value": "تبعث"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoie"
+        },
+        {
+          "lang": "DZ",
+          "value": "nb3atou",
+          "ar_value": "نبعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoyez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tba3tou",
+          "ar_value": "تبعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoient"
+        },
+        {
+          "lang": "DZ",
+          "value": "yb3atou",
+          "ar_value": "يبعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "envoient"
+        },
+        {
+          "lang": "DZ",
+          "value": "yb3atou",
+          "ar_value": "يبعثو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER","singular":false,"tense":"PRESENT"}],"id":"envoyer"}

@@ -151,7 +151,7 @@
       "gender": "X",
       "possession": "I",
       "singular": true,
-      "tense": "PAST"
+      "tense": "PAST_AVOIR"
     },
     {
       "translations": [
@@ -168,7 +168,7 @@
       "gender": "M",
       "possession": "YOU",
       "singular": true,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -185,7 +185,7 @@
       "gender": "F",
       "possession": "YOU",
       "singular": true,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -202,7 +202,7 @@
       "gender": "M",
       "possession": "OTHER",
       "singular": true,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -219,7 +219,7 @@
       "gender": "F",
       "possession": "OTHER",
       "singular": true,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -236,7 +236,7 @@
       "gender": "X",
       "possession": "I",
       "singular": false,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -253,7 +253,7 @@
       "gender": "X",
       "possession": "YOU",
       "singular": false,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [
@@ -270,7 +270,7 @@
       "gender": "X",
       "possession": "OTHER",
       "singular": false,
-      "tense": "PAST2"
+      "tense": "PAST_ETRE"
     },
     {
       "translations": [

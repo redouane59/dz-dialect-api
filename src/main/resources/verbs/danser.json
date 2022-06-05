@@ -1,1 +1,305 @@
-{"values":[{"translations":[{"lang":"DZ","value":"chte7t","ar_value":"شْطَحْت"},{"lang":"FR","value":"ai dansé"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chte7t","ar_value":"شْطَحْت"},{"lang":"FR","value":"as dansé"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chte7ti","ar_value":"شْطَحْتِ"},{"lang":"FR","value":"as dansé"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chte7","ar_value":"شْطَحْ"},{"lang":"FR","value":"a dansé"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chet7et","ar_value":"شَطْحَت"},{"lang":"FR","value":"a dansé"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chte7na","ar_value":"شَطْحَنا"},{"lang":"FR","value":"a dansé"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chte7tou","ar_value":"شْطَحتو"},{"lang":"FR","value":"avez dansé"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chet7ou","ar_value":"شَطْحتو"},{"lang":"FR","value":"ont dansé"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"chet7ou","ar_value":"شَطْحتو"},{"lang":"FR","value":"ont dansé"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"nechta7","ar_value":"نَشْطح"},{"lang":"FR","value":"danse"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"techta7","ar_value":"تَشْطح"},{"lang":"FR","value":"danses"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"techat7i","ar_value":"تَشَّطْحي"},{"lang":"FR","value":"danses"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yechta7","ar_value":"يَشْطح"},{"lang":"FR","value":"danse"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"techta7","ar_value":"تَشْطح"},{"lang":"FR","value":"danse"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"nechet7ou","ar_value":"نَشَّطْحو"},{"lang":"FR","value":"danse"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"techet7ou","ar_value":"تَشَّطْحو"},{"lang":"FR","value":"dansez"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yechet7ou","ar_value":"يَشَّطْحُو"},{"lang":"FR","value":"dansent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"yechet7ou","ar_value":"يَشَّطْحُو"},{"lang":"FR","value":"dansent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"danser"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7t",
+          "ar_value": "شْطَحْت"
+        },
+        {
+          "lang": "FR",
+          "value": "ai dansé"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7t",
+          "ar_value": "شْطَحْت"
+        },
+        {
+          "lang": "FR",
+          "value": "as dansé"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7ti",
+          "ar_value": "شْطَحْتِ"
+        },
+        {
+          "lang": "FR",
+          "value": "as dansé"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7",
+          "ar_value": "شْطَحْ"
+        },
+        {
+          "lang": "FR",
+          "value": "a dansé"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chet7et",
+          "ar_value": "شَطْحَت"
+        },
+        {
+          "lang": "FR",
+          "value": "a dansé"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7na",
+          "ar_value": "شَطْحَنا"
+        },
+        {
+          "lang": "FR",
+          "value": "a dansé"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chte7tou",
+          "ar_value": "شْطَحتو"
+        },
+        {
+          "lang": "FR",
+          "value": "avez dansé"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chet7ou",
+          "ar_value": "شَطْحتو"
+        },
+        {
+          "lang": "FR",
+          "value": "ont dansé"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "chet7ou",
+          "ar_value": "شَطْحتو"
+        },
+        {
+          "lang": "FR",
+          "value": "ont dansé"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "nechta7",
+          "ar_value": "نَشْطح"
+        },
+        {
+          "lang": "FR",
+          "value": "danse"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "techta7",
+          "ar_value": "تَشْطح"
+        },
+        {
+          "lang": "FR",
+          "value": "danses"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "techat7i",
+          "ar_value": "تَشَّطْحي"
+        },
+        {
+          "lang": "FR",
+          "value": "danses"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yechta7",
+          "ar_value": "يَشْطح"
+        },
+        {
+          "lang": "FR",
+          "value": "danse"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "techta7",
+          "ar_value": "تَشْطح"
+        },
+        {
+          "lang": "FR",
+          "value": "danse"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "nechet7ou",
+          "ar_value": "نَشَّطْحو"
+        },
+        {
+          "lang": "FR",
+          "value": "danse"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "techet7ou",
+          "ar_value": "تَشَّطْحو"
+        },
+        {
+          "lang": "FR",
+          "value": "dansez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yechet7ou",
+          "ar_value": "يَشَّطْحُو"
+        },
+        {
+          "lang": "FR",
+          "value": "dansent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "yechet7ou",
+          "ar_value": "يَشَّطْحُو"
+        },
+        {
+          "lang": "FR",
+          "value": "dansent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER","singular":false,"tense":"PRESENT"}],"id":"danser"}

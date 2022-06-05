@@ -1,1 +1,362 @@
-{"values":[{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"jarab","ar_value":"جرب"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"jarbi","ar_value":"جربي"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"essayez"},{"lang":"DZ","value":"jarbou","ar_value":"جربو"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"FR","value":"ai essayé"},{"lang":"DZ","value":"djarrebt","ar_value":"جربت"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as essayé"},{"lang":"DZ","value":"djarrebt","ar_value":"جربت"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as essayé"},{"lang":"DZ","value":"djarrebti","ar_value":"جربتي"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a essayé"},{"lang":"DZ","value":"djarreb","ar_value":"جرب"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a essayé"},{"lang":"DZ","value":"djarrbet","ar_value":"جربت"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a essayé"},{"lang":"DZ","value":"djarrebna","ar_value":"جربنا"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"avez essayé"},{"lang":"DZ","value":"djarrebtou","ar_value":"جربتو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont essayé"},{"lang":"DZ","value":"djarrbou","ar_value":"جربو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont essayé"},{"lang":"DZ","value":"djarrbou","ar_value":"جربو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"ndjarreb","ar_value":"نجرب"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essayes"},{"lang":"DZ","value":"ndjarreb","ar_value":"تجرب"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essayes"},{"lang":"DZ","value":"tdjarrbi","ar_value":"تجربي"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"ydjarreb","ar_value":"يجرب"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"tdjarreb","ar_value":"تجرب"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essaye"},{"lang":"DZ","value":"ndjarrbou","ar_value":"نجربو"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essayez"},{"lang":"DZ","value":"tdjarrbou","ar_value":"تجربو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essayent"},{"lang":"DZ","value":"ydjarrbou","ar_value":"يجربو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"essayent"},{"lang":"DZ","value":"ydjarrbou","ar_value":"يجربو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"essayer"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "jarab",
+          "ar_value": "جرب"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "jarbi",
+          "ar_value": "جربي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayez"
+        },
+        {
+          "lang": "DZ",
+          "value": "jarbou",
+          "ar_value": "جربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrebt",
+          "ar_value": "جربت"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrebt",
+          "ar_value": "جربت"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrebti",
+          "ar_value": "جربتي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarreb",
+          "ar_value": "جرب"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrbet",
+          "ar_value": "جربت"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrebna",
+          "ar_value": "جربنا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrebtou",
+          "ar_value": "جربتو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrbou",
+          "ar_value": "جربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont essayé"
+        },
+        {
+          "lang": "DZ",
+          "value": "djarrbou",
+          "ar_value": "جربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "ndjarreb",
+          "ar_value": "نجرب"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayes"
+        },
+        {
+          "lang": "DZ",
+          "value": "tdjarreb",
+          "ar_value": "تجرب"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayes"
+        },
+        {
+          "lang": "DZ",
+          "value": "tdjarrbi",
+          "ar_value": "تجربي"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "ydjarreb",
+          "ar_value": "يجرب"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "tdjarreb",
+          "ar_value": "تجرب"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essaye"
+        },
+        {
+          "lang": "DZ",
+          "value": "ndjarrbou",
+          "ar_value": "نجربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayez"
+        },
+        {
+          "lang": "DZ",
+          "value": "tdjarrbou",
+          "ar_value": "تجربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ydjarrbou",
+          "ar_value": "يجربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "essayent"
+        },
+        {
+          "lang": "DZ",
+          "value": "ydjarrbou",
+          "ar_value": "يجربو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    }
+  ],
+  "id": "essayer"
+}

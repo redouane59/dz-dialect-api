@@ -7,8 +7,8 @@ import lombok.Getter;
 @Getter
 // @todo add root tense
 public enum Tense {
-  PAST(RootTense.PAST),
-  PAST2(RootTense.PAST), // @todo dev verbs
+  PAST_AVOIR(RootTense.PAST),
+  PAST_ETRE(RootTense.PAST), // @todo dev verbs
   PRESENT(RootTense.PRESENT),
   FUTURE(RootTense.FUTURE),
   IMPERATIVE(RootTense.IMPERATIVE);

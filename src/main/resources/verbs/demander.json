@@ -1,1 +1,328 @@
-{"values":[{"translations":[{"lang":"DZ","value":"se9ssi","ar_value":"سَقْسِي"},{"lang":"FR","value":"demande"}],"gender":"M","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"se9ssi","ar_value":"سَقْسِي"},{"lang":"FR","value":"demande"}],"gender":"F","possession":"YOU","singular":true,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"se9ssiw","ar_value":"سَقْسِيو"},{"lang":"FR","value":"demandez"}],"gender":"X","possession":"YOU","singular":false,"tense":"IMPERATIVE"},{"translations":[{"lang":"DZ","value":"sa9sit","ar_value":"سَقْسِيت"},{"lang":"FR","value":"ai demandé"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"se9sit","ar_value":"سَقْسِيت"},{"lang":"FR","value":"as demandé"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"se9siti","ar_value":"سَقْسِيتِ"},{"lang":"FR","value":"as demandé"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"se9sat","ar_value":"سَقْسَات"},{"lang":"FR","value":"a demandé"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"se9sat","ar_value":"سَقْسَات"},{"lang":"FR","value":"a demandé"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"sa9sina","ar_value":"سَقْسِينا"},{"lang":"FR","value":"a demandé"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"sa9sitou","ar_value":"سَقْسِيتو"},{"lang":"FR","value":"avez demandé"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"se9saw","ar_value":"سَقْساو"},{"lang":"FR","value":"ont demandé"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"DZ","value":"nsa9ssi","ar_value":"نْسَقْسي"},{"lang":"FR","value":"demande"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"se9saw","ar_value":"سَقساو"},{"lang":"FR","value":"demandes"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"sa9ssi","ar_value":"سَقْسِي"},{"lang":"FR","value":"demandes"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ysa9ssi","ar_value":"يْسَقسيو"},{"lang":"FR","value":"demande"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tsa9ssi","ar_value":"تْسَقْسِي"},{"lang":"FR","value":"demande"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"nsa9ssou","ar_value":"نْسَقْسيو"},{"lang":"FR","value":"demande"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"tse9ssiw","ar_value":"تْسَقْسِيو"},{"lang":"FR","value":"demandez"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"DZ","value":"ysa9ssiw","ar_value":"يْسَقسيو"},{"lang":"FR","value":"demandent"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"demander"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9ssi",
+          "ar_value": "سَقْسِي"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9ssi",
+          "ar_value": "سَقْسِي"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9ssiw",
+          "ar_value": "سَقْسِيو"
+        },
+        {
+          "lang": "FR",
+          "value": "demandez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "IMPERATIVE"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "sa9sit",
+          "ar_value": "سَقْسِيت"
+        },
+        {
+          "lang": "FR",
+          "value": "ai demandé"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9sit",
+          "ar_value": "سَقْسِيت"
+        },
+        {
+          "lang": "FR",
+          "value": "as demandé"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9siti",
+          "ar_value": "سَقْسِيتِ"
+        },
+        {
+          "lang": "FR",
+          "value": "as demandé"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9sat",
+          "ar_value": "سَقْسَات"
+        },
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9sat",
+          "ar_value": "سَقْسَات"
+        },
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "sa9sina",
+          "ar_value": "سَقْسِينا"
+        },
+        {
+          "lang": "FR",
+          "value": "a demandé"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "sa9sitou",
+          "ar_value": "سَقْسِيتو"
+        },
+        {
+          "lang": "FR",
+          "value": "avez demandé"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "se9saw",
+          "ar_value": "سَقْساو"
+        },
+        {
+          "lang": "FR",
+          "value": "ont demandé"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "nsa9ssi",
+          "ar_value": "نْسَقْسي"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tsa9ssi",
+          "ar_value": "تْسَقْسِي"
+        },
+        {
+          "lang": "FR",
+          "value": "demandes"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tsa9ssi",
+          "ar_value": "تْسَقْسِي"
+        },
+        {
+          "lang": "FR",
+          "value": "demandes"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ysa9ssi",
+          "ar_value": "يْسَقسيو"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tsa9ssi",
+          "ar_value": "تْسَقْسِي"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "nsa9ssou",
+          "ar_value": "نْسَقْسيو"
+        },
+        {
+          "lang": "FR",
+          "value": "demande"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "tse9ssiw",
+          "ar_value": "تْسَقْسِيو"
+        },
+        {
+          "lang": "FR",
+          "value": "demandez"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "DZ",
+          "value": "ysa9ssiw",
+          "ar_value": "يْسَقسيو"
+        },
+        {
+          "lang": "FR",
+          "value": "demandent"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    }
+  ],
+  "id": "demander"
+}

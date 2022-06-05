@@ -1,1 +1,305 @@
-{"values":[{"translations":[{"lang":"FR","value":"ai crié"},{"lang":"DZ","value":"3ayet","ar_value":"عَيّط"}],"gender":"X","possession":"I","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as crié"},{"lang":"DZ","value":"3ayet","ar_value":"عَيّط"}],"gender":"M","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"as crié"},{"lang":"DZ","value":"3ayeti","ar_value":"عَيّطِ"}],"gender":"F","possession":"YOU","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a crié"},{"lang":"DZ","value":"3ayet","ar_value":"عَيّط"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a crié"},{"lang":"DZ","value":"3aytet","ar_value":"عَيّطت"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PAST"},{"translations":[{"lang":"FR","value":"a crié"},{"lang":"DZ","value":"3ayetna","ar_value":"عَيّطنا"}],"gender":"X","possession":"I","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"avez crié"},{"lang":"DZ","value":"3ayettou","ar_value":"عَيّطو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont crié"},{"lang":"DZ","value":"3aytou","ar_value":"عَيْطو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"ont crié"},{"lang":"DZ","value":"3aytou","ar_value":"عَيْطو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PAST"},{"translations":[{"lang":"FR","value":"crie"},{"lang":"DZ","value":"n3ayet","ar_value":"نْعيّط"}],"gender":"X","possession":"I","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"cries"},{"lang":"DZ","value":"t3ayet","ar_value":"تْعَيّط"}],"gender":"M","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"cries"},{"lang":"DZ","value":"t3ayti","ar_value":"تْعَيّطِ"}],"gender":"F","possession":"YOU","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"crie"},{"lang":"DZ","value":"y3ayet","ar_value":"يْعيّط"}],"gender":"M","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"crie"},{"lang":"DZ","value":"t3ayet","ar_value":"تْعيّط"}],"gender":"F","possession":"OTHER","singular":true,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"crie"},{"lang":"DZ","value":"n3aytou","ar_value":"نْعَيطو"}],"gender":"X","possession":"I","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"criez"},{"lang":"DZ","value":"t3aytou","ar_value":"تْعَيطو"}],"gender":"X","possession":"YOU","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"crient"},{"lang":"DZ","value":"y3aytou","ar_value":"يْعَيطو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"},{"translations":[{"lang":"FR","value":"crient"},{"lang":"DZ","value":"y3aytou","ar_value":"يْعَيطو"}],"gender":"X","possession":"OTHER","singular":false,"tense":"PRESENT"}],"id":"crier"}
+{
+  "values": [
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ai crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayet",
+          "ar_value": "عَيّط"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayet",
+          "ar_value": "عَيّط"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "as crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayeti",
+          "ar_value": "عَيّطِ"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayet",
+          "ar_value": "عَيّط"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3aytet",
+          "ar_value": "عَيّطت"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "a crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayetna",
+          "ar_value": "عَيّطنا"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "avez crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3ayettou",
+          "ar_value": "عَيّطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3aytou",
+          "ar_value": "عَيْطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "ont crié"
+        },
+        {
+          "lang": "DZ",
+          "value": "3aytou",
+          "ar_value": "عَيْطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PAST_AVOIR"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3ayet",
+          "ar_value": "نْعيّط"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cries"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayet",
+          "ar_value": "تْعَيّط"
+        }
+      ],
+      "gender": "M",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "cries"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayti",
+          "ar_value": "تْعَيّطِ"
+        }
+      ],
+      "gender": "F",
+      "possession": "YOU",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3ayet",
+          "ar_value": "يْعيّط"
+        }
+      ],
+      "gender": "M",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3ayet",
+          "ar_value": "تْعيّط"
+        }
+      ],
+      "gender": "F",
+      "possession": "OTHER",
+      "singular": true,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crie"
+        },
+        {
+          "lang": "DZ",
+          "value": "n3aytou",
+          "ar_value": "نْعَيطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "I",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "criez"
+        },
+        {
+          "lang": "DZ",
+          "value": "t3aytou",
+          "ar_value": "تْعَيطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "YOU",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crient"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3aytou",
+          "ar_value": "يْعَيطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER",
+      "singular": false,
+      "tense": "PRESENT"
+    },
+    {
+      "translations": [
+        {
+          "lang": "FR",
+          "value": "crient"
+        },
+        {
+          "lang": "DZ",
+          "value": "y3aytou",
+          "ar_value": "يْعَيطو"
+        }
+      ],
+      "gender": "X",
+      "possession": "OTHER","singular":false,"tense":"PRESENT"}],"id":"crier"}

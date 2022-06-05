@@ -1,2 +1,379 @@
 verb,tense,pronoun,frValue,dzValue,dzValueAr,Pronoun order
-avoir,PAST,elles/houma,ont eu,kan 3ndhoum,كان عندهم	,9
+essayer2,IMPERATIVE,tu/enta,essaye,siyi,سيي,2
+essayer2,IMPERATIVE,tu/enti,essaye,siyi,سيي,3
+essayer2,IMPERATIVE,vous/ntouma,essayez,siyiw,سيِّيو,7
+essayer2,PAST_AVOIR,je/ana,ai essayé ,siyit,سيِّيت,1
+essayer2,PAST_AVOIR,tu/enta,as essayé,siyit,سيِّيت,2
+essayer2,PAST_AVOIR,tu/enti,as essayé,siyiti,سيِّيتِ,3
+essayer2,PAST_AVOIR,il/houwa,a essayé,siya,سيّا,4
+essayer2,PAST_AVOIR,elle/hiya,a essayé,siyat,سيّات,5
+essayer2,PAST_AVOIR,on/7na,a essayé,siyina,سيِّينا,6
+essayer2,PAST_AVOIR,vous/ntouma,avez essayé,siyitou,سيِّيتو,7
+essayer2,PAST_AVOIR,ils/houma,ont essayé ,siyaw,سيِّاو,8
+essayer2,PAST_AVOIR,elles/houma,ont essayé ,siyaw,سيِّاو,9
+essayer2,PRESENT,je/ana,essaye,nsiyi,نسيّي,1
+essayer2,PRESENT,tu/enta,essayes,tsiyi,تسيّي,2
+essayer2,PRESENT,tu/enti,essayes,tsiyi,تسيّي,3
+essayer2,PRESENT,il/houwa,essaye,ysiyi,يْسيّي,4
+essayer2,PRESENT,elle/hiya,essaye,tsiyi,تسيّي,5
+essayer2,PRESENT,on/7na,essaye,nsiyou,نْسيّو,6
+essayer2,PRESENT,vous/ntouma,essayez,tsiyou,تْسيّيو,7
+essayer2,PRESENT,ils/houma,essayent,ysiyou,يْسيّيو,8
+essayer2,PRESENT,elles/houma,essayent,ysiyou,يْسيّيو,9
+expliquer,IMPERATIVE,tu/enta,explique,faham,فَهَّم,2
+expliquer,IMPERATIVE,tu/enti,explique,fahmet,فَهْمت,3
+expliquer,IMPERATIVE,vous/ntouma,expliquez,fahmou,فَهْمو,7
+expliquer,PAST_AVOIR,je/ana,ai expliqué,fahemt,فَهَّمْت,1
+expliquer,PAST_AVOIR,tu/enta,as expliqué,fahemt,فَهَّمْت,2
+expliquer,PAST_AVOIR,tu/enti,as expliqué,fahemti,فَهّمتي,3
+expliquer,PAST_AVOIR,il/houwa,a expliqué,fahem,فَهّم,4
+expliquer,PAST_AVOIR,elle/hiya,a expliqué,fahmet,فَهْمت,5
+expliquer,PAST_AVOIR,on/7na,a expliqué,fahemna,فَهَّمنا,6
+expliquer,PAST_AVOIR,vous/ntouma,avez expliqué,fahemtou,فَهَّمتو,7
+expliquer,PAST_AVOIR,ils/houma,ont expliqué,fahmou,فَهْمو,8
+expliquer,PAST_AVOIR,elles/houma,ont expliqué,fahmou,فَهْمو,9
+expliquer,PRESENT,je/ana,explique,nfahem,نْفّهم,1
+expliquer,PRESENT,tu/enta,expliques,tfahem,تْفَهم,2
+expliquer,PRESENT,tu/enti,expliques,tfahemi,تْفَهمي,3
+expliquer,PRESENT,il/houwa,explique,yfahem,يْفَهم,4
+expliquer,PRESENT,elle/hiya,explique,tfahem,تْفَهم,5
+expliquer,PRESENT,on/7na,explique,nfahmou,نْفَهمو,6
+expliquer,PRESENT,vous/ntouma,expliquez,tefahmou,تْفَهمو,7
+expliquer,PRESENT,ils/houma,expliquent,yefahmou,يْفَهمو,8
+expliquer,PRESENT,elles/houma,expliquent,yefhmou,يْفَهمو,9
+faire,IMPERATIVE,tu/enta,fais,dir,دير,2
+faire,IMPERATIVE,tu/enti,fais,diri,ديري,3
+faire,IMPERATIVE,vous/ntouma,faites,dirou,ديرو,7
+faire,PAST_AVOIR,je/ana,ai fait,dert,درت,1
+faire,PAST_AVOIR,tu/enta,as fait,dert,درت,2
+faire,PAST_AVOIR,tu/enti,as fait,derti,درتي,3
+faire,PAST_AVOIR,il/houwa,a fait,dar,دار,4
+faire,PAST_AVOIR,elle/hiya,a fait,daret,دارت,5
+faire,PAST_AVOIR,on/7na,a fait,derna,درنا,6
+faire,PAST_AVOIR,vous/ntouma,avez fait,dertou,درتو,7
+faire,PAST_AVOIR,ils/houma,ont fait,darou,دارو,8
+faire,PAST_AVOIR,elles/houma,ont fait,darou,دارو,9
+faire,PRESENT,je/ana,fais,ndir,ندير,1
+faire,PRESENT,tu/enta,fais,tdir,تْدير,2
+faire,PRESENT,tu/enti,fais,diri,ديري,3
+faire,PRESENT,il/houwa,fait,idir,يْدير,4
+faire,PRESENT,elle/hiya,fait,dir,دِير,5
+faire,PRESENT,on/7na,fait,ndirou,نديرو,6
+faire,PRESENT,vous/ntouma,faites,dirou,دِيرو,7
+faire,PRESENT,ils/houma,font,idirou,يديرو,8
+faire,PRESENT,elles/houma,font,idirou,يديرو,9
+fermer,IMPERATIVE,tu/enta,ferme,aghla9,اغْلق,2
+fermer,IMPERATIVE,tu/enti,ferme,aghal9i,اغْلقي,3
+fermer,IMPERATIVE,vous/ntouma,fermez,aghal9ou,اغْلقو,7
+fermer,PAST_AVOIR,je/ana,ai fermé,ghle9t,غْلَقت,1
+fermer,PAST_AVOIR,tu/enta,as fermé,ghle9t,غْلَقت,2
+fermer,PAST_AVOIR,tu/enti,as fermé,ghle9ti,غْلَقتي,3
+fermer,PAST_AVOIR,il/houwa,a fermé,ghle9,غْلَق,4
+fermer,PAST_AVOIR,elle/hiya,a fermé,ghel9et,غَلْقت,5
+fermer,PAST_AVOIR,on/7na,a fermé,ghle9na,غْلَقنا,6
+fermer,PAST_AVOIR,vous/ntouma,avez fermé,ghle9tou,غْلَقتو,7
+fermer,PAST_AVOIR,ils/houma,ont fermé,ghel9ou,غْلَقو,8
+fermer,PAST_AVOIR,elles/houma,ont fermé,ghel9ou,غْلَقو,9
+fermer,PRESENT,je/ana,ferme,neghle9,نَغْلق,1
+fermer,PRESENT,tu/enta,fermes,teghle9,تَغْلق,2
+fermer,PRESENT,tu/enti,fermes,teghel9i,تَغْلقي,3
+fermer,PRESENT,il/houwa,ferme,yeghle9,يَغْلق,4
+fermer,PRESENT,elle/hiya,ferme,teghle9,تَغْلق,5
+fermer,PRESENT,on/7na,ferme,neghel9ou,نَغَلقو,6
+fermer,PRESENT,vous/ntouma,fermez,teghel9ou,تَغَّلقو,7
+fermer,PRESENT,ils/houma,ferment,yeghel9ou,يَغَّلقو,8
+fermer,PRESENT,elles/houma,ferment,yeghel9ou,يَغَّلقو,9
+finir,IMPERATIVE,tu/enta,finis,kammall,كَمّل,2
+finir,IMPERATIVE,tu/enti,finis,kamli,كملي,3
+finir,IMPERATIVE,vous/ntouma,finissez,kamlou,كملو,7
+finir,PAST_AVOIR,je/ana,ai fini,kemelt,كملت,1
+finir,PAST_AVOIR,tu/enta,as fini,kemelt,كملت,2
+finir,PAST_AVOIR,tu/enti,as fini,kemelti,كملتي,3
+finir,PAST_AVOIR,il/houwa,a fini,kemel,كمل,4
+finir,PAST_AVOIR,elle/hiya,a fini,kemlet,كملت,5
+finir,PAST_AVOIR,on/7na,avons fini,kemelna,كملنا,6
+finir,PAST_AVOIR,vous/ntouma,avez fini,kemeltou,كملتو,7
+finir,PAST_AVOIR,ils/houma,ont fini,kemlou,كملو,8
+finir,PAST_AVOIR,elles/houma,ont fini,kemlou,كملو,9
+finir,PRESENT,je/ana,finis,nekeml,نكمل,1
+finir,PRESENT,tu/enta,finis,tkemel,تكمل,2
+finir,PRESENT,tu/enti,finis,tkemli,نتكملي,3
+finir,PRESENT,il/houwa,finit,ikemel,يكمل,4
+finir,PRESENT,elle/hiya,finit,tkemel,تكمل,5
+finir,PRESENT,on/7na,finit,nekmlou,نكملو,6
+finir,PRESENT,vous/ntouma,finissez,tkemlou,تكملو,7
+finir,PRESENT,ils/houma,finissent,ikemlou,يكملو,8
+finir,PRESENT,elles/houma,finissent,ikemlou,يكملو,9
+habiter,PAST_AVOIR,je/ana,ai habité,skent,سكنت,1
+habiter,PAST_AVOIR,tu/enta,as habité,skent,سكنت,2
+habiter,PAST_AVOIR,tu/enti,as habité,skenti,سكنتي,3
+habiter,PAST_AVOIR,il/houwa,a habité,sken,سكن,4
+habiter,PAST_AVOIR,elle/hiya,a habité,seknet,سكنت,5
+habiter,PAST_AVOIR,on/7na,a habité,skena,سكنا,6
+habiter,PAST_AVOIR,vous/ntouma,avez habité,skentou,سكنتو,7
+habiter,PAST_AVOIR,ils/houma,ont habité,seknou,سكنو,8
+habiter,PAST_AVOIR,elles/houma,ont habité,seknou,سكنو,9
+habiter,PRESENT,je/ana,habite,neskon,نسكن,1
+habiter,PRESENT,tu/enta,habites,teskon,تسكن,2
+habiter,PRESENT,tu/enti,habite,tesokni,تسكني,3
+habiter,PRESENT,il/houwa,habite,yeskon,يسكن,4
+habiter,PRESENT,elle/hiya,habite,teskon,تسكن,5
+habiter,PRESENT,on/7na,habite,nessoknou,نسكنو,6
+habiter,PRESENT,vous/ntouma,habitez,tessoknou,تسكنو,7
+habiter,PRESENT,ils/houma,habitent,yessoknou,يسكنو,8
+habiter,PRESENT,elles/houma,habitent,yessoknou,يسكنو,9
+laisser,IMPERATIVE,tu/enta,laisse,khelli,خلي,2
+laisser,IMPERATIVE,tu/enti,laisse,khelli,خلي,3
+laisser,IMPERATIVE,vous/ntouma,laissez,khelliw,خليو,7
+laisser,PAST_AVOIR,je/ana,ai laissé,khalit,حليت,1
+laisser,PAST_AVOIR,tu/enta,as laissé,khalit,خليت,2
+laisser,PAST_AVOIR,tu/enti,as laissé,khaliti,خليتي,3
+laisser,PAST_AVOIR,il/houwa,a laissé,khalla,خلا,4
+laisser,PAST_AVOIR,elle/hiya,a laissé,khallat,خلات,5
+laisser,PAST_AVOIR,on/7na,a laissé,khalina,خلينا,6
+laisser,PAST_AVOIR,vous/ntouma,avez laissé,khalitou,خليتو,7
+laisser,PAST_AVOIR,ils/houma,ont laissé,khallaw,خلاو,8
+laisser,PAST_AVOIR,elles/houma,ont laissé,khallaw,خلاو,9
+laisser,PRESENT,je/ana,laisse,nkhali,نخلي,1
+laisser,PRESENT,tu/enta,laisses,tkhali,تخلي,2
+laisser,PRESENT,tu/enti,laisses,tkhali,تخلي,3
+laisser,PRESENT,il/houwa,laisse,ykhali,يخلي,4
+laisser,PRESENT,elle/hiya,laisse,tkhali,تخلي,5
+laisser,PRESENT,on/7na,laisse,nkhaliw,نخليو,6
+laisser,PRESENT,vous/ntouma,laissez,tkhaliw,تخليو,7
+laisser,PRESENT,ils/houma,laissent,ykhaliw,يخليو,8
+laisser,PRESENT,elles/houma,laissent,ykhaliw,يخليو,9
+lire,IMPERATIVE,tu/enta,lis,a9ra,اقرى,2
+lire,IMPERATIVE,tu/enti,lis,a9ray,اقري,3
+lire,IMPERATIVE,vous/ntouma,lisez,a9raw,اقرو,7
+lire,PAST_AVOIR,je/ana,ai lu,9rit,قريت,1
+lire,PAST_AVOIR,tu/enta,as lu,9rit,قريت,2
+lire,PAST_AVOIR,tu/enti,as lu,9riti,قريتي,3
+lire,PAST_AVOIR,il/houwa,a lu,9ra,قرا,4
+lire,PAST_AVOIR,elle/hiya,a lu,9rat,قرات,5
+lire,PAST_AVOIR,on/7na,a lu,9rina,قرينا,6
+lire,PAST_AVOIR,vous/ntouma,avez lu,9ritou,قريتو,7
+lire,PAST_AVOIR,ils/houma,ont lu,9raw,قراو,8
+lire,PAST_AVOIR,elles/houma,ont lu,9raw,قراو,9
+lire,PRESENT,je/ana,lis,ne9ra,نقرا,1
+lire,PRESENT,tu/enta,lis,te9ra,تقرا,2
+lire,PRESENT,tu/enti,lis,te9ray,تقراي,3
+lire,PRESENT,il/houwa,lit,ye9ra,يقرا,4
+lire,PRESENT,elle/hiya,lit,te9ra,تقرا,5
+lire,PRESENT,on/7na,lisons,ne9raw,نقراو,6
+lire,PRESENT,vous/ntouma,lisez,te9raw,تقراو,7
+lire,PRESENT,ils/houma,lisent,ye9raw,يقراو,8
+lire,PRESENT,elles/houma,lisent,ye9raw,يقراو,9
+manger,IMPERATIVE,tu/enta,mange,koul,كول,2
+manger,IMPERATIVE,tu/enti,mange,kouli,كولي,3
+manger,IMPERATIVE,vous/ntouma,mangez,koulou,كولو,7
+manger,PAST_AVOIR,je/ana,ai mangé,klit,كليت,1
+manger,PAST_AVOIR,tu/enta,as mangé,klit,كليت,2
+manger,PAST_AVOIR,tu/enti,as mangé,kliti,كليتي,3
+manger,PAST_AVOIR,il/houwa,a mangé,kla,كلا,4
+manger,PAST_AVOIR,elle/hiya,a mangé,klet,كلات,5
+manger,PAST_AVOIR,on/7na,a mangé,klina,كلينا,6
+manger,PAST_AVOIR,vous/ntouma,avez mangé,klitou,كليتو,7
+manger,PAST_AVOIR,ils/houma,ont mangé,klaw,كلاو,8
+manger,PAST_AVOIR,elles/houma,ont mangé,klaw,كلاو,9
+manger,PRESENT,je/ana,mange,nakoul,نكل,1
+manger,PRESENT,tu/enta,manges,takoul,تكل,2
+manger,PRESENT,tu/enti,manges,takouli,تكلي,3
+manger,PRESENT,il/houwa,mange,yakoul,يكل,4
+manger,PRESENT,elle/hiya,mange,takoul,تكل,5
+manger,PRESENT,on/7na,mange,naklou,نكلو,6
+manger,PRESENT,vous/ntouma,mangez,taklou,تكلو,7
+manger,PRESENT,ils/houma,mangent,yaklou,يكلو,8
+manger,PRESENT,elles/houma,mangent,yaklou,يكلو,9
+marcher,PAST_AVOIR,je/ana,ai marché,mchit,مشيت,1
+marcher,PAST_AVOIR,tu/enta,as marché,mchit,مشيت,2
+marcher,PAST_AVOIR,tu/enti,as marché,mchiti,مشيتي,3
+marcher,PAST_AVOIR,il/houwa,a marché,mcha,مشا,4
+marcher,PAST_AVOIR,elle/hiya,a marché,mchat,مشات,5
+marcher,PAST_AVOIR,on/7na,a marché,mchina,مشينا,6
+marcher,PAST_AVOIR,vous/ntouma,avez marché,mchitou,مشيتو,7
+marcher,PAST_AVOIR,ils/houma,ont marché,mchaw,مشاو,8
+marcher,PAST_AVOIR,elles/houma,ont marché,mchaw,مشاو,9
+marcher,PRESENT,je/ana,marche,nemchi,نمشي,1
+marcher,PRESENT,tu/enta,marches,temchi,تمشي,2
+marcher,PRESENT,tu/enti,marches,temchi,تمشي,3
+marcher,PRESENT,il/houwa,marche,yemchi,يمشي,4
+marcher,PRESENT,elle/hiya,marche,temchi,تمشي,5
+marcher,PRESENT,on/7na,marche,nemchou,نمشو,6
+marcher,PRESENT,vous/ntouma,marchez,temchou,تمشو,7
+marcher,PRESENT,ils/houma,marchent,yemchiw,يمشيو,8
+marcher,PRESENT,elles/houma,marchent,yemchou,يمشو,9
+monter,IMPERATIVE,tu/enta,monte,atla3,اطلع,2
+monter,IMPERATIVE,tu/enti,monte,atal3i,اطلعي,3
+monter,IMPERATIVE,vous/ntouma,montez,atal3ou,اطلعو,7
+monter,PAST_ETRE,je/ana,suis monté,tla3t,طْلعت,1
+monter,PAST_ETRE,tu/enta,es monté,tla3t,طْلعت,2
+monter,PAST_ETRE,tu/enti,es montée,tla3ti,طلعتي,3
+monter,PAST_ETRE,il/houwa,est monté,tla3,طْلعْ,4
+monter,PAST_ETRE,elle/hiya,est montée,tal3et,طَلعت,5
+monter,PAST_ETRE,on/7na,est montés,tle3na,طْلعنا,6
+monter,PAST_ETRE,vous/ntouma,êtes montés,tle3tou,طْلعتو,7
+monter,PAST_ETRE,ils/houma,sont montés,tel3ou,طَلعو,8
+monter,PAST_ETRE,elles/houma,sont montées,tel3ou,طَلعو,9
+monter,PRESENT,je/ana,monte,netla3,نطلع,1
+monter,PRESENT,tu/enta,montes,tetla3,تطلع,2
+monter,PRESENT,tu/enti,montes,tetal3i,تطلعي,3
+monter,PRESENT,il/houwa,monte,yetla3,يطلع,4
+monter,PRESENT,elle/hiya,monte,tetla3,تطلع,5
+monter,PRESENT,on/7na,monte,netal3ou,نطلعو,6
+monter,PRESENT,vous/ntouma,montez,tetal3ou,تطلعو,7
+monter,PRESENT,ils/houma,montent,yetal3ou,يطلعو,8
+monter,PRESENT,elles/houma,montent,yetal3ou,يطلعو,9
+montrer,IMPERATIVE,tu/enta,montre,wari,وري,2
+montrer,IMPERATIVE,tu/enti,montre,wari,وري,3
+montrer,IMPERATIVE,vous/ntouma,montrez,wariw,وَرِيوْ,7
+montrer,PAST_AVOIR,je/ana,ai montré,werit,وريتْ,1
+montrer,PAST_AVOIR,tu/enta,as montré,werit,وريتْ,2
+montrer,PAST_AVOIR,tu/enti,as montré,weriti,وريتي,3
+montrer,PAST_AVOIR,il/houwa,a montré,wera,وَرا,4
+montrer,PAST_AVOIR,elle/hiya,a montré,werat,وَراتْ,5
+montrer,PAST_AVOIR,on/7na,a montré,werina,وَرينا,6
+montrer,PAST_AVOIR,vous/ntouma,avez montré,weritou,وَريتو,7
+montrer,PAST_AVOIR,ils/houma,ont montré,werou,وَرّوا,8
+montrer,PAST_AVOIR,elles/houma,ont montré,werou,وَرّوا,9
+montrer,PRESENT,je/ana,montre,nweri,نْوَري,1
+montrer,PRESENT,tu/enta,montres,tweri,تْوري,2
+montrer,PRESENT,tu/enti,montres,tweri,تْوري,3
+montrer,PRESENT,il/houwa,montre,iweri,إيوَري,4
+montrer,PRESENT,elle/hiya,montre,tweri,تْوري,5
+montrer,PRESENT,on/7na,montre,nwerou,نورو,6
+montrer,PRESENT,vous/ntouma,montrez,twerou,تورو,7
+montrer,PRESENT,ils/houma,montrent,iwerou,يورو,8
+montrer,PRESENT,elles/houma,montrent,iwerou,يورو,9
+ouvrir,IMPERATIVE,tu/enta,ouvre,aftah/7al,افتحْ,2
+ouvrir,IMPERATIVE,tu/enti,ouvre,afathi/7ali,افَتحي,3
+ouvrir,IMPERATIVE,vous/ntouma,ouvrez,afahou/7alou,افَتحو,7
+ouvrir,PAST_AVOIR,je/ana,ai ouvert,fte7t,فْتحتْ,1
+ouvrir,PAST_AVOIR,tu/enta,as ouvert,fte7t,فْتحتْ,2
+ouvrir,PAST_AVOIR,tu/enti,as ouvert,fte7ti,فْتحتي,3
+ouvrir,PAST_AVOIR,il/houwa,a ouvert,fte7,فْتَحْ,4
+ouvrir,PAST_AVOIR,elle/hiya,a ouvert,fet7et,فَتحَتْ,5
+ouvrir,PAST_AVOIR,on/7na,a ouvert,fte7na,فْتحنا,6
+ouvrir,PAST_AVOIR,vous/ntouma,avez ouvert,fte7tou,فتحتو,7
+ouvrir,PAST_AVOIR,ils/houma,ont ouvert,fet7ou,فَتحو,8
+ouvrir,PAST_AVOIR,elles/houma,ont ouvert,fet7ou,فَتحو,9
+ouvrir,PRESENT,je/ana,ouvre,nefte7,نَفتحْ,1
+ouvrir,PRESENT,tu/enta,ouvres,tefte7,تَفتحْ,2
+ouvrir,PRESENT,tu/enti,ouvres,tefet7i,تَفتحي,3
+ouvrir,PRESENT,il/houwa,ouvre,yefte7,يفتحْ,4
+ouvrir,PRESENT,elle/hiya,ouvre,tefte7,تَفتحْ,5
+ouvrir,PRESENT,on/7na,ouvre,nefet7ou,نَفتحو,6
+ouvrir,PRESENT,vous/ntouma,ouvrez,tefet7ou,تفتحو,7
+ouvrir,PRESENT,ils/houma,ouvrent,yefet7ou,يَفتحو,8
+ouvrir,PRESENT,elles/houma,ouvrent,yefet7ou,يَفتحو,9
+ouvrir2,PAST_AVOIR,je/ana,ai ouvert,7elit,حلّيت,1
+ouvrir2,PAST_AVOIR,tu/enta,as ouvert,7elit,حلّيت,2
+ouvrir2,PAST_AVOIR,tu/enti,as ouvert,7eliti,حلّيتي,3
+ouvrir2,PAST_AVOIR,il/houwa,a ouvert,7el,حل,4
+ouvrir2,PAST_AVOIR,elle/hiya,a ouvert,7elet,حلّت,5
+ouvrir2,PAST_AVOIR,on/7na,a ouvert,7elina,حلّينا,6
+ouvrir2,PAST_AVOIR,vous/ntouma,avez ouvert,7elitou,حلّيتوا,7
+ouvrir2,PAST_AVOIR,ils/houma,ont ouvert,7elou,حلّوا,8
+ouvrir2,PAST_AVOIR,elles/houma,ont ouvert,7elou,حلّوا,9
+ouvrir2,PRESENT,je/ana,ouvre,n7el,نْحل,1
+ouvrir2,PRESENT,tu/enta,ouvres,t7el,تْحل,2
+ouvrir2,PRESENT,tu/enti,ouvres,t7eli,تْحلّي,3
+ouvrir2,PRESENT,il/houwa,ouvre,y7el,يْحل,4
+ouvrir2,PRESENT,elle/hiya,ouvre,t7el,تْحل,5
+ouvrir2,PRESENT,on/7na,ouvre,n7elou,نْحلوا,6
+ouvrir2,PRESENT,vous/ntouma,ouvrez,t7elou,تْحلوا,7
+ouvrir2,PRESENT,ils/houma,ouvrent,y7elou,يْحلوا,8
+ouvrir2,PRESENT,elles/houma,ouvrent,y7elou,يْحلوا,9
+parler,PAST_AVOIR,je/ana,ai parlé,hdart,هْدرت,1
+parler,PAST_AVOIR,tu/enta,as parlé,hdart,هْدرت,2
+parler,PAST_AVOIR,tu/enti,as parlé,hdarti,هْدرت,3
+parler,PAST_AVOIR,il/houwa,a parlé,hdar,هْدر,4
+parler,PAST_AVOIR,elle/hiya,a parlé,hadrat,هَدْرت,5
+parler,PAST_AVOIR,on/7na,a parlé,hdarna,هْدَرنا,6
+parler,PAST_AVOIR,vous/ntouma,avez parlé,hdartou,هْدرتوا,7
+parler,PRESENT,je/ana,parle,nahdar,نهْدر,1
+parler,PRESENT,tu/enta,parles,tahdar,تَهْدر,2
+parler,PRESENT,tu/enti,parles,tahadri,تَهْدري,3
+parler,PRESENT,il/houwa,parle,yahdar,يَهْدر,4
+parler,PRESENT,elle/hiya,parle,tahdar,تَهْدر,5
+parler,PRESENT,on/7na,parle,nahadrou,نَهَّدْرو,6
+parler,PRESENT,vous/ntouma,parlez,tahadrou,تًهَّدْرو,7
+parler,PRESENT,ils/houma,parlent,yahadrou,يَهّدْرو,8
+parler,PRESENT,ils/houma,ont parlé,hadrou,هَدْْرو,8
+parler,PRESENT,elles/houma,parlent,yahadrou,يَهّدْرو,9
+parler,PRESENT,elles/houma,ont parlé,hadrou,هدْرو,9
+partager,IMPERATIVE,tu/enta,partage,a9sam,أقسم,2
+partager,IMPERATIVE,tu/enti,partage,a9asmi,أقسمي,3
+partager,IMPERATIVE,vous/ntouma,partagez,a9asmou,أقْسمو,7
+partager,PAST_AVOIR,je/ana,ai partagé,9ssemt,قْسَمْت,1
+partager,PAST_AVOIR,tu/enta,as partagé,9ssemt,قْسَمْت,2
+partager,PAST_AVOIR,tu/enti,as partagé,9ssemti,قْسَمْتي,3
+partager,PAST_AVOIR,il/houwa,a partagé,9ssem,قْسَمْ,4
+partager,PAST_AVOIR,elle/hiya,a partagé,9essmet,قَسْمَت,5
+partager,PAST_AVOIR,on/7na,a partagé,9ssemna,قْسَمْنا,6
+partager,PAST_AVOIR,vous/ntouma,avez partagé,9ssemtou,قْسَمْتو,7
+partager,PAST_AVOIR,ils/houma,ont partagé,9essmou,قَسْمو,8
+partager,PAST_AVOIR,elles/houma,ont partagé,9essmou,قَسْمو,9
+partager,PRESENT,je/ana,partage,ne9ssem,نَقْسَم,1
+partager,PRESENT,tu/enta,partages,te9ssem,تَقْسَم,2
+partager,PRESENT,tu/enti,partages,te9essmi,تَقْسمي,3
+partager,PRESENT,il/houwa,partage,ye9ssem,يَقْسم,4
+partager,PRESENT,elle/hiya,partage,te9ssem,تَقْسَم,5
+partager,PRESENT,on/7na,partage,ne9essmou,نَقّسْمو,6
+partager,PRESENT,vous/ntouma,partagez,te9essmou,تقّسْمو,7
+partager,PRESENT,ils/houma,partagent,ye9essmou,يقّسْمو,8
+partager,PRESENT,elles/houma,partagent,ye9essmou,يقّسْمو,9
+payer,PAST_AVOIR,je/ana,ai payé,khalasst,خَلّصْت,1
+payer,PAST_AVOIR,tu/enta,as payé,khalasst,خَلّصْت,2
+payer,PAST_AVOIR,tu/enti,as payé,khalassti,خَلّصْتِ,3
+payer,PAST_AVOIR,il/houwa,a payé,khalass,خَلّصْ,4
+payer,PAST_AVOIR,elle/hiya,a payé,khalssate,خَلْصَت,5
+payer,PAST_AVOIR,on/7na,a payé,khalasna,خَلّصْنا,6
+payer,PAST_AVOIR,vous/ntouma,avez payé,khalastou,خَلّصتو,7
+payer,PAST_AVOIR,ils/houma,ont payé,khalssou,خَلْصو,8
+payer,PAST_AVOIR,elles/houma,ont payé,khalssou,خَلْصو,9
+payer,PRESENT,je/ana,paye,nkhalass,نْخَلص,1
+payer,PRESENT,tu/enta,payes,tkhalass,تْخَلص,2
+payer,PRESENT,tu/enti,payes,tkhalassi,تْخَلصي,3
+payer,PRESENT,il/houwa,paye,ikhalass,يْخَلص,4
+payer,PRESENT,elle/hiya,paye,tkhalass,تْخَلص,5
+payer,PRESENT,on/7na,paye,nkhalssou,نْخَلصو,6
+payer,PRESENT,vous/ntouma,payez,tkhalassou,تْخَلصو,7
+payer,PRESENT,ils/houma,payent,ikhalssou,يْخَلصو,8
+payer,PRESENT,elles/houma,payent,ikhalssou,يْخَلصو,9
+penser,PAST_AVOIR,je/ana,ai pensé,khamemt,خَمّمْت,1
+penser,PAST_AVOIR,tu/enta,as pensé,khamemt,خَمّمْت,2
+penser,PAST_AVOIR,tu/enti,as pensé,khamemti,خَمّمْتِ,3
+penser,PAST_AVOIR,il/houwa,a pensé,khamem,خَمّمْ,4
+penser,PAST_AVOIR,elle/hiya,a pensé,khamet,خَمّت,5
+penser,PAST_AVOIR,on/7na,a pensé,khamemna,خَمّمْنا,6
+penser,PAST_AVOIR,vous/ntouma,avez pensé,khamemtou,خَمّمْتو,7
+penser,PAST_AVOIR,ils/houma,ont pensé,khammou,خَمّمو,8
+penser,PAST_AVOIR,elles/houma,ont pensé,khammou,خَمّمو,9
+penser,PRESENT,je/ana,pense,nkhamem,نْخَمّم,1
+penser,PRESENT,tu/enta,penses,tkhamem,تْخَمّم,2
+penser,PRESENT,tu/enti,penses,tkhammi,تْخَمّي,3
+penser,PRESENT,il/houwa,pense,ikhamem,يْخَمّم,4
+penser,PRESENT,elle/hiya,pense,tkhamem,تْخَمّم,5
+penser,PRESENT,on/7na,pense,nkhamou,نْخَمّو,6
+penser,PRESENT,vous/ntouma,pensez,tkhamou,تْخَمّو,7
+penser,PRESENT,ils/houma,pensent,ikhamou,يْخَمّو,8
+penser,PRESENT,elles/houma,pensent,ikhamou,يْخَمّو,9
+plaire,PAST_AVOIR,je/ana,ai plu,3djebt,عْجَبت,1
+plaire,PAST_AVOIR,tu/enta,as plu,3djebt,عْجَبت,2
+plaire,PAST_AVOIR,tu/enti,as plu,3djebti,عْجَبتِ,3
+plaire,PAST_AVOIR,il/houwa,a plu,3djeb,عْجَب,4
+plaire,PAST_AVOIR,elle/hiya,a plu,3edjbet,عَجْبَت,5
+plaire,PAST_AVOIR,on/7na,a plu,3djebna,عْجَبْنا,6
+plaire,PAST_AVOIR,vous/ntouma,avez plu,3djebtou,عْجَبْتو,7
+plaire,PAST_AVOIR,ils/houma,ont plu,3edjbou,عَجْبو,8
+plaire,PAST_AVOIR,elles/houma,ont plu,3edjbou,عَجْبو,9
+plaire,PRESENT,je/ana,plais,na3djeb,نَعْجب,1
+plaire,PRESENT,tu/enta,plais,ta3djeb,تَعْجب,2
+plaire,PRESENT,tu/enti,plais,ta3edjbi,تَعْجبي,3
+plaire,PRESENT,il/houwa,plaît,ya3djeb,يَعْجب,4
+plaire,PRESENT,elle/hiya,plaît,ta3djeb,تَعْجب,5
+plaire,PRESENT,on/7na,plaît,ne3adjbou,نعّجْبوا,6
+plaire,PRESENT,vous/ntouma,plaisez,te3adjbou,تعّجْبوا,7
+plaire,PRESENT,ils/houma,plaisent,ye3adjbou,يعّجْبوا,8
+plaire,PRESENT,elles/houma,plaisent,ye3adjbou,يعّجْبوا,9

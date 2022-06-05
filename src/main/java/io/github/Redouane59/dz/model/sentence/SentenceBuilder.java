@@ -39,6 +39,8 @@ public class SentenceBuilder {
   private final SentenceSchema schema;
   List<WordTypeWordTuple> wordListFr;
   List<WordTypeWordTuple> wordListAr;
+  PossessiveWord          subject         = null;
+  AbstractWord            abstractSubject = null;
   private SentenceContent       sentenceContent;
   private Noun                  nounSubject;
   private Verb                  abstractVerb;
@@ -86,6 +88,8 @@ public class SentenceBuilder {
     abstractVerb     = null;
     nounSubject      = null;
     abstractQuestion = null;
+    subject          = null;
+    abstractSubject  = null;
     wordListFr       = new ArrayList<>();
     wordListAr       = new ArrayList<>();
     sentenceContent  = SentenceContent.builder().build();
@@ -101,149 +105,182 @@ public class SentenceBuilder {
 
   // @todo split FR & DZ
   private boolean fillWordListFromSchema() {
-    PossessiveWord subject         = null;
-    AbstractWord   abstractSubject = null;
     resetAttributes();
-    for (int i = 0; i < schema.getFrSequence().size(); i++) {
-      WordType wordType = schema.getFrSequence().get(i);
+    for (int index = 0; index < schema.getFrSequence().size(); index++) {
+      WordType wordType = schema.getFrSequence().get(index);
+      boolean  worked;
       switch (wordType) {
         case PRONOUN:
-          AbstractWord abstractPronoun = helper.getRandomPronoun();
-          PossessiveWord pronoun = abstractPronoun.getRandomConjugation();
-          sentenceContent.setPronoun(pronoun);
-          wordListFr.add(new WordTypeWordTuple(wordType, pronoun, i));
-          wordListAr.add(new WordTypeWordTuple(wordType, pronoun, i));
-          if (schema.getSubjectPosition() == i) {
-            subject         = pronoun;
-            abstractSubject = abstractPronoun;
-          }
+          buildPronoun(index);
           break;
         case NOUN:
-          Optional<Noun> abstractNoun = helper.getAbstractNoun(abstractVerb);
-          if (abstractNoun.isEmpty()) {
+          worked = buildNoun(index);
+          if (!worked) {
             return false;
-          }
-          this.nounSubject = abstractNoun.get();
-          PossessiveWord noun = new PossessiveWord(abstractNoun.get().getWordBySingular(true));
-          Optional<GenderedWord> frArticle = helper.getArticle(noun, Lang.FR);
-          Optional<GenderedWord> dzArticle = helper.getArticle(noun, Lang.DZ);
-/*          if (article.isEmpty()) {
-            return false;
-          }*/
-          if (abstractVerb != null && schema.getFrSequence().contains(WordType.PREPOSITION)) {
-            if (abstractVerb.getVerbType() == VerbType.DEPLACEMENT) {
-              wordListFr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition(), i));
-              wordListAr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition(), i));
-            } else if (abstractVerb.getVerbType() == VerbType.STATE) {
-              wordListFr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getStatePreposition(), i));
-              wordListAr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getStatePreposition(), i));
-            }
-          } // @todo dirty
-          if (getFirstWordFromWordTypeFr(WordType.PREPOSITION, i) == null) {
-            if (frArticle.isPresent()) {
-              wordListFr.add(new WordTypeWordTuple(WordType.ARTICLE, frArticle.get(), i));
-            }
-            if (dzArticle.isPresent()) {
-              wordListAr.add(new WordTypeWordTuple(WordType.ARTICLE, dzArticle.get(), i));
-            }
-          }
-
-          sentenceContent.setAbstractNoun(nounSubject);
-          wordListFr.add(new WordTypeWordTuple(wordType, noun, i));
-          wordListAr.add(new WordTypeWordTuple(wordType, noun, i));
-          if (schema.getSubjectPosition() == i) {
-            subject         = noun;
-            abstractSubject = nounSubject;
           }
           break;
         case VERB:
-          Optional<Verb> abstractVerbOpt = helper.getAbstractVerb(abstractQuestion);
-          if (abstractVerbOpt.isEmpty()) {
+          worked = buildVerb(index);
+          if (!worked) {
             return false;
-          }
-          abstractVerb = abstractVerbOpt.get();
-          sentenceContent.setAbstractVerb(abstractVerb);
-          Set<Tense> availableTenses = new HashSet<>();
-          if (!schema.getTenses().isEmpty()) {
-            if (schema.getTenses().contains(RootTense.IMPERATIVE)) {
-              availableTenses.add(Tense.IMPERATIVE);
-            } else {
-              availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
-                                            .filter(t -> bodyArgs.getTenses().contains(t.getRootTense()))
-                                            .filter(t -> schema.getTenses().contains(t.getRootTense()))
-                                            .collect(Collectors.toSet());
-            }
-          } else {
-            availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
-                                          .filter(t -> bodyArgs.getTenses().contains(t.getRootTense()))
-                                          .filter(t -> t != Tense.IMPERATIVE)
-                                          .collect(Collectors.toSet());
-          }
-          if (availableTenses.isEmpty()) {
-            System.err.println("no tenses found");
-            return false;
-          }
-          Tense tense = availableTenses.stream().skip(RANDOM.nextInt(availableTenses.size())).findFirst().get();
-          sentenceContent.setTense(tense);
-          if (tense == Tense.PAST || tense == Tense.PAST2) {
-            sentenceContent.setNegation(false);
-          }
-          if (tense != Tense.IMPERATIVE) {
-            wordListFr.add(new WordTypeWordTuple(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.FR), i));
-            wordListAr.add(new WordTypeWordTuple(wordType, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.DZ), i));
-          } else {
-            PossessiveWord randomPronoun = AbstractWord.getRandomImperativePersonalPronoun();
-            Optional<Conjugation> frConjugation = helper.getImperativeVerbConjugation(abstractVerb,
-                                                                                      randomPronoun,
-                                                                                      Lang.FR,
-                                                                                      sentenceContent.isNegation());
-            wordListFr.add(new WordTypeWordTuple(wordType, frConjugation.get(), i));
-            Optional<Conjugation> arConjugation = helper.getImperativeVerbConjugation(abstractVerb,
-                                                                                      randomPronoun,
-                                                                                      Lang.DZ,
-                                                                                      sentenceContent.isNegation());
-            wordListAr.add(new WordTypeWordTuple(wordType, arConjugation.get(), i));
-          }
-          if (schema.getFrSequence().contains(WordType.SUFFIX)) {
-            Optional<PossessiveWord> suffixOpt;
-            if (sentenceContent.getTense() == Tense.IMPERATIVE) {
-              suffixOpt = helper.getImperativeSuffix(abstractVerb.isObjectOnly());
-            } else {
-              suffixOpt = helper.getSuffix(subject.getPossession(), abstractVerb.isObjectOnly());
-            }
-            if (suffixOpt.isEmpty()) {
-              return false;
-            }
-            suffix = suffixOpt.get();
-            wordListFr.add(new WordTypeWordTuple(WordType.SUFFIX, suffix, i));
-            wordListAr.add(new WordTypeWordTuple(WordType.SUFFIX, suffix, i));
           }
           break;
         case ADJECTIVE:
-          Optional<Adjective> adjective = helper.getAbstractAdjective(abstractSubject, nounSubject);
-          if (adjective.isEmpty()) {
+          worked = buildAdjective(index);
+          if (!worked) {
             return false;
           }
-          sentenceContent.setAbstractAdjective(adjective.get());
-          wordListFr.add(new WordTypeWordTuple(wordType, helper.getAdjective(adjective.get(), subject, Lang.FR).get(), i));
-          wordListAr.add(new WordTypeWordTuple(wordType, helper.getAdjective(adjective.get(), subject, Lang.DZ).get(), i));
           break;
         case ADVERB:
-          AbstractWord adverb = helper.getAdverb();
-          sentenceContent.setAbstractAdverb(adverb);
-          wordListFr.add(new WordTypeWordTuple(wordType, (Word) adverb.getValues().get(0), i));
-          wordListAr.add(new WordTypeWordTuple(wordType, (Word) adverb.getValues().get(0), i));
+          builAdverb(index);
           break;
         case QUESTION:
-          abstractQuestion = helper.getQuestion();
-          sentenceContent.setAbstractQuestion(abstractQuestion);
-          Word question = (Word) abstractQuestion.getValues().get(0);
-          wordListFr.add(new WordTypeWordTuple(wordType, question, i));
-          wordListAr.add(new WordTypeWordTuple(wordType, question, i));
+          buildQuestion(index);
+          break;
       }
     }
     return true;
   }
+
+  private boolean buildPronoun(int index) {
+    AbstractWord   abstractPronoun = helper.getRandomPronoun();
+    PossessiveWord pronoun         = abstractPronoun.getRandomConjugation();
+    sentenceContent.setPronoun(pronoun);
+    wordListFr.add(new WordTypeWordTuple(WordType.PRONOUN, pronoun, index));
+    wordListAr.add(new WordTypeWordTuple(WordType.PRONOUN, pronoun, index));
+    if (schema.getSubjectPosition() == index) {
+      subject         = pronoun;
+      abstractSubject = abstractPronoun;
+    }
+    return true;
+  }
+
+  private boolean buildNoun(int index) {
+    Optional<Noun> abstractNoun = helper.getAbstractNoun(abstractVerb);
+    if (abstractNoun.isEmpty()) {
+      return false;
+    }
+    this.nounSubject = abstractNoun.get();
+    PossessiveWord         noun      = new PossessiveWord(abstractNoun.get().getWordBySingular(true));
+    Optional<GenderedWord> frArticle = helper.getArticle(noun, Lang.FR);
+    Optional<GenderedWord> dzArticle = helper.getArticle(noun, Lang.DZ);
+    if (abstractVerb != null && schema.getFrSequence().contains(WordType.PREPOSITION)) {
+      if (abstractVerb.getVerbType() == VerbType.DEPLACEMENT) {
+        wordListFr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition(), index));
+        wordListAr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getDeplacementPreposition(), index));
+      } else if (abstractVerb.getVerbType() == VerbType.STATE) {
+        wordListFr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getStatePreposition(), index));
+        wordListAr.add(new WordTypeWordTuple(WordType.PREPOSITION, abstractNoun.get().getStatePreposition(), index));
+      }
+    } // @todo dirty
+    if (getFirstWordFromWordTypeFr(WordType.PREPOSITION, index) == null) {
+      frArticle.ifPresent(genderedWord -> wordListFr.add(new WordTypeWordTuple(WordType.ARTICLE, genderedWord, index)));
+      dzArticle.ifPresent(genderedWord -> wordListAr.add(new WordTypeWordTuple(WordType.ARTICLE, genderedWord, index)));
+    }
+
+    sentenceContent.setAbstractNoun(nounSubject);
+    wordListFr.add(new WordTypeWordTuple(WordType.NOUN, noun, index));
+    wordListAr.add(new WordTypeWordTuple(WordType.NOUN, noun, index));
+    if (schema.getSubjectPosition() == index) {
+      subject         = noun;
+      abstractSubject = nounSubject;
+    }
+    return true;
+  }
+
+  private boolean buildVerb(int index) {
+    Optional<Verb> abstractVerbOpt = helper.getAbstractVerb(abstractQuestion);
+    if (abstractVerbOpt.isEmpty()) {
+      return false;
+    }
+    abstractVerb = abstractVerbOpt.get();
+    sentenceContent.setAbstractVerb(abstractVerb);
+    Set<Tense> availableTenses = new HashSet<>();
+    if (!schema.getTenses().isEmpty()) {
+      if (schema.getTenses().contains(RootTense.IMPERATIVE)) {
+        availableTenses.add(Tense.IMPERATIVE);
+      } else {
+        availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
+                                      .filter(t -> bodyArgs.getTenses().contains(t.getRootTense()))
+                                      .filter(t -> schema.getTenses().contains(t.getRootTense()))
+                                      .collect(Collectors.toSet());
+      }
+    } else {
+      availableTenses = abstractVerb.getValues().stream().map(o -> (Conjugation) o).map(Conjugation::getTense)
+                                    .filter(t -> bodyArgs.getTenses().contains(t.getRootTense()))
+                                    .filter(t -> t != Tense.IMPERATIVE)
+                                    .collect(Collectors.toSet());
+    }
+    if (availableTenses.isEmpty()) {
+      System.err.println("no tenses found");
+      return false;
+    }
+    Tense tense = availableTenses.stream().skip(RANDOM.nextInt(availableTenses.size())).findFirst().get();
+    sentenceContent.setTense(tense);
+    if (tense == Tense.PAST_AVOIR || tense == Tense.PAST_ETRE) {
+      sentenceContent.setNegation(false);
+    }
+    if (tense != Tense.IMPERATIVE) {
+      wordListFr.add(new WordTypeWordTuple(WordType.VERB, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.FR), index));
+      wordListAr.add(new WordTypeWordTuple(WordType.VERB, helper.getVerbConjugation(abstractVerb, subject, tense, Lang.DZ), index));
+    } else {
+      PossessiveWord randomPronoun = AbstractWord.getRandomImperativePersonalPronoun();
+      Optional<Conjugation> frConjugation = helper.getImperativeVerbConjugation(abstractVerb,
+                                                                                randomPronoun,
+                                                                                Lang.FR,
+                                                                                sentenceContent.isNegation());
+      wordListFr.add(new WordTypeWordTuple(WordType.VERB, frConjugation.get(), index));
+      Optional<Conjugation> arConjugation = helper.getImperativeVerbConjugation(abstractVerb,
+                                                                                randomPronoun,
+                                                                                Lang.DZ,
+                                                                                sentenceContent.isNegation());
+      wordListAr.add(new WordTypeWordTuple(WordType.VERB, arConjugation.get(), index));
+    }
+    if (schema.getFrSequence().contains(WordType.SUFFIX)) {
+      Optional<PossessiveWord> suffixOpt;
+      if (sentenceContent.getTense() == Tense.IMPERATIVE) {
+        suffixOpt = helper.getImperativeSuffix(abstractVerb.isObjectOnly());
+      } else {
+        suffixOpt = helper.getSuffix(subject.getPossession(), abstractVerb.isObjectOnly());
+      }
+      if (suffixOpt.isEmpty()) {
+        return false;
+      }
+      suffix = suffixOpt.get();
+      wordListFr.add(new WordTypeWordTuple(WordType.SUFFIX, suffix, index));
+      wordListAr.add(new WordTypeWordTuple(WordType.SUFFIX, suffix, index));
+    }
+    return true;
+  }
+
+  private boolean buildAdjective(int index) {
+    Optional<Adjective> adjective = helper.getAbstractAdjective(abstractSubject, nounSubject);
+    if (adjective.isEmpty()) {
+      return false;
+    }
+    sentenceContent.setAbstractAdjective(adjective.get());
+    wordListFr.add(new WordTypeWordTuple(WordType.ADJECTIVE, helper.getAdjective(adjective.get(), subject, Lang.FR).get(), index));
+    wordListAr.add(new WordTypeWordTuple(WordType.ADJECTIVE, helper.getAdjective(adjective.get(), subject, Lang.DZ).get(), index));
+    return true;
+  }
+
+  private boolean builAdverb(int index) {
+    AbstractWord adverb = helper.getAdverb();
+    sentenceContent.setAbstractAdverb(adverb);
+    wordListFr.add(new WordTypeWordTuple(WordType.ADVERB, (Word) adverb.getValues().get(0), index));
+    wordListAr.add(new WordTypeWordTuple(WordType.ADVERB, (Word) adverb.getValues().get(0), index));
+    return true;
+  }
+
+  private boolean buildQuestion(int index) {
+    abstractQuestion = helper.getQuestion();
+    sentenceContent.setAbstractQuestion(abstractQuestion);
+    Word question = (Word) abstractQuestion.getValues().get(0);
+    wordListFr.add(new WordTypeWordTuple(WordType.QUESTION, question, index));
+    wordListAr.add(new WordTypeWordTuple(WordType.QUESTION, question, index));
+    return true;
+  }
+
 
   private Translation generateFrTranslation() {
     StringBuilder sentenceValue = new StringBuilder();
@@ -255,8 +292,7 @@ public class SentenceBuilder {
       }
       if (wordType == WordType.VERB
           && sentenceContent.isNegation()
-          && sentenceContent.getTense() != Tense.PAST
-          && sentenceContent.getTense() != Tense.PAST2) {
+          && sentenceContent.getTense().getRootTense() != RootTense.PAST) {
         sentenceValue.append("ne "); // @todo use Traduction class and remove it
       }
       Word w = getFirstWordFromWordTypeFr(wordType, i);
@@ -264,7 +300,8 @@ public class SentenceBuilder {
         sentenceValue.append(w.getTranslationValue(Lang.FR));
       }
       if (wordType == WordType.VERB
-          && sentenceContent.isNegation()) { // @todo manage negative for past
+          && sentenceContent.isNegation()
+          && sentenceContent.getTense().getRootTense() != RootTense.PAST) {
         sentenceValue.append(" pas");
       }
 
@@ -296,7 +333,7 @@ public class SentenceBuilder {
           sentenceValue = new StringBuilder(sentenceValue.toString().replace(m.getKey(), m.getValue()));
         }
       } else {
-        if (sentenceContent.isNegation()) {
+        if (sentenceContent.isNegation() && sentenceContent.getTense().getRootTense() != RootTense.PAST) {
           if (wordType == WordType.VERB) {
             sentenceValue.append("ma ");
             sentenceValueAr.append("ما ");
@@ -313,7 +350,7 @@ public class SentenceBuilder {
           arValue = w.getTranslationByLang(lang).get().getArValue();
         }
         sentenceValueAr.append(Objects.requireNonNullElse(arValue, " ٠٠٠ "));
-        if (wordType == WordType.VERB && sentenceContent.isNegation()) {
+        if (wordType == WordType.VERB && sentenceContent.isNegation() && sentenceContent.getTense().getRootTense() != RootTense.PAST) {
           if (sentenceContent.getAbstractAdjective() == null || sentenceContent.getAbstractAdjective().isTemporal()) {
             sentenceValue.append("ch ");
             sentenceValueAr.append("ش");
